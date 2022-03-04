@@ -1,0 +1,8 @@
+{
+  "type": "mdx",
+  "permalink": "/docs/hello",
+  "source": "@site/src/pages/docs/hello.md",
+  "title": "Hello",
+  "description": "---",
+  "frontMatter": {}
+}
