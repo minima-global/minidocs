@@ -22,7 +22,7 @@ const sidebars = {
     {
       type: "category",
       label: "Tutorial",
-      items: ["hello", "test"],
+      items: ["hello", "test", "another"],
     },
     {
       type: "category",
