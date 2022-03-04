@@ -22,7 +22,7 @@
               "unversionedId": "hello",
               "id": "hello",
               "title": "Hello",
-              "description": "This is my first Docusaurs document!",
+              "description": "This is my first Minima document!",
               "source": "@site/docs/hello.md",
               "sourceDirName": ".",
               "slug": "/hello",

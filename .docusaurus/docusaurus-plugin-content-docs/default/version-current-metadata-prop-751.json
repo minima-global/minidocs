@@ -54,7 +54,7 @@
     "hello": {
       "id": "hello",
       "title": "Hello",
-      "description": "This is my first Docusaurs document!",
+      "description": "This is my first Minima document!",
       "sidebar": "tutorialSidebar"
     },
     "intro": {
