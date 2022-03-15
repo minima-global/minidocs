@@ -1,40 +1,41 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Minima",
-  tagline: "Documentation",
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "minidocs", // Usually your repo name.
+  title: 'Minima Documentation',
+  tagline: 'Dinosaurs are cool',
+  url: 'https://arnimedia.github.io',
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
+  organizationName: 'arnimedia', // Usually your GitHub org/user name.
+  projectName: 'arnimedia.github.io', // Usually your repo name.
+
+  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
 
   presets: [
     [
-      "classic",
+      'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: 'https://github.com/arnimedia/arnimedia.github.io.git',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            'https://github.com/arnimedia/arnimedia.github.io.git',
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
@@ -44,70 +45,92 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Minima Documentation",
+        title: 'Minima Documentation',
         logo: {
-          alt: "Minidocs Logo",
-          src: "img/icons.svg",
+          alt: 'Minima',
+          src: 'img/logo.svg',
         },
         items: [
+          // {
+          //   type: 'doc',
+          //   docId: 'about/vision',
+          //   position: 'left',
+          //   label: 'Vision',
+          // },
+          // {
+          //   type: 'doc',
+          //   docId: 'learn',
+          //   position: 'left',
+          //   label: 'Learn',
+          // },
+          // {
+          //   type: 'doc',
+          //   docId: 'runanode/get_started_in_3_steps',
+          //   position: 'left',
+          //   label: 'Run a node',
+          // },
+          // {
+          //   type: 'doc',
+          //   docId: 'minimaincentiveprogram',
+          //   position: 'left',
+          //   label: 'Incentive Program',
+          // },
+          {to: 'docs/about/vision', label: 'Vision', position: 'left'},
+          {to: 'docs/learn/networkoverview', label: 'Learn', position: 'left'},
+          {to: 'docs/runanode/get_started_in_3_steps', label: 'Run a node', position: 'left'},
+          {to: 'docs/minimaincentiveprogram', label: 'Incentive Program', position: 'left'},
           {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "Tutorial",
+            href: 'https://minima.global/get-involved#community',
+            label: 'Community',
+            position: 'right',
           },
-          { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/minima-global",
-            label: "GitHub",
-            position: "right",
+            href: 'https://github.com/minima-global',
+            label: 'GitHub',
+            position: 'right',
           },
         ],
       },
       footer: {
-        style: "dark",
+        style: 'dark',
         links: [
           {
-            title: "Docs",
+            title: 'Docs',
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: 'Introduction',
+                to: 'docs/about/vision',
               },
             ],
           },
           {
-            title: "Community",
+            title: 'Community',
             items: [
               {
-                label: "Website",
-                href: "https://minima.global/",
+                label: 'Discord',
+                href: 'https://discord.gg/minima',
               },
               {
-                label: "Discord",
-                href: "https://discord.gg/ZmJdmshmTF",
+                label: 'Telegram',
+                href: 'https://t.me/Minima_Global',
               },
               {
-                label: "Twitter",
-                href: "https://twitter.com/Minima_Global",
+                label: 'Twitter',
+                href: 'https://twitter.com/Minima_Global',
               },
             ],
           },
           {
-            title: "More",
+            title: 'Devs',
             items: [
               {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                label: 'GitHub',
+                href: 'https://github.com/minima-global',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `All rights reserved Minima Ltd © ${new Date().getFullYear()}`,
       },
       prism: {
         theme: lightCodeTheme,

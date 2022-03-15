@@ -1,0 +1,26 @@
+{
+  "unversionedId": "runanode/mac",
+  "id": "runanode/mac",
+  "title": "Mac",
+  "description": "How to download and Install Minima on your Mac",
+  "source": "@site/docs/runanode/mac.md",
+  "sourceDirName": "runanode",
+  "slug": "/runanode/mac",
+  "permalink": "/docs/runanode/mac",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/runanode/mac.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Windows",
+    "permalink": "/docs/runanode/windows"
+  },
+  "next": {
+    "title": "Linux Desktop",
+    "permalink": "/docs/runanode/linux_desktop"
+  }
+}

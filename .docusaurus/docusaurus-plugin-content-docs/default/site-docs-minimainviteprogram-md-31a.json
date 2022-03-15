@@ -1,0 +1,26 @@
+{
+  "unversionedId": "minimainviteprogram",
+  "id": "minimainviteprogram",
+  "title": "Invite Program",
+  "description": "What is the Minima Invite Program?",
+  "source": "@site/docs/minimainviteprogram.md",
+  "sourceDirName": ".",
+  "slug": "/minimainviteprogram",
+  "permalink": "/docs/minimainviteprogram",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimainviteprogram.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "General",
+    "permalink": "/docs/incentiveprogramtermsandconditions/general"
+  },
+  "next": {
+    "title": "Get started in 3 steps",
+    "permalink": "/docs/runanode/get_started_in_3_steps"
+  }
+}

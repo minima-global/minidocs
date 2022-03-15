@@ -1,0 +1,26 @@
+{
+  "unversionedId": "runanode/windows",
+  "id": "runanode/windows",
+  "title": "Windows",
+  "description": "How to download and Install Minima on your Windows PC",
+  "source": "@site/docs/runanode/windows.md",
+  "sourceDirName": "runanode",
+  "slug": "/runanode/windows",
+  "permalink": "/docs/runanode/windows",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/runanode/windows.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Android v9 and up",
+    "permalink": "/docs/runanode/android_v9_and_up"
+  },
+  "next": {
+    "title": "Mac",
+    "permalink": "/docs/runanode/mac"
+  }
+}

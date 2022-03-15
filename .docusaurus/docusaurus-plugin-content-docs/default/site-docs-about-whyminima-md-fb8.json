@@ -1,0 +1,26 @@
+{
+  "unversionedId": "about/whyminima",
+  "id": "about/whyminima",
+  "title": "Why Minima?",
+  "description": "Minima was born out of the desire to achieve what Bitcoin originally sought to achieve; a truly decentralized, censorship resistant, peer-to-peer, electronic cash system. Over time, Bitcoin mining has become more centralized due to its competitive nature and game theory suggests this is only headed in one direction, towards centralization.",
+  "source": "@site/docs/about/whyminima.md",
+  "sourceDirName": "about",
+  "slug": "/about/whyminima",
+  "permalink": "/docs/about/whyminima",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/about/whyminima.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "What is Minima?",
+    "permalink": "/docs/about/whatisminima"
+  },
+  "next": {
+    "title": "Why use Minima?",
+    "permalink": "/docs/about/whyuseminima"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "learn/tokenscolouredcoins",
+  "id": "learn/tokenscolouredcoins",
+  "title": "Tokens (Coloured Coins)",
+  "description": "Minima is the native coin for the Minima blockchain. Each UTxO is defined as a coin and therefore a coin can be worth any amount of Minima.",
+  "source": "@site/docs/learn/tokenscolouredcoins.md",
+  "sourceDirName": "learn",
+  "slug": "/learn/tokenscolouredcoins",
+  "permalink": "/docs/learn/tokenscolouredcoins",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/learn/tokenscolouredcoins.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quantum Security",
+    "permalink": "/docs/learn/quantumsecurity"
+  },
+  "next": {
+    "title": "Smart Contracts",
+    "permalink": "/docs/learn/smartcontracts"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "learn/transactions",
+  "id": "learn/transactions",
+  "title": "Transactions",
+  "description": "Transaction Outputs & Inputs",
+  "source": "@site/docs/learn/transactions.md",
+  "sourceDirName": "learn",
+  "slug": "/learn/transactions",
+  "permalink": "/docs/learn/transactions",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/learn/transactions.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Core Concepts",
+    "permalink": "/docs/learn/coreconcepts"
+  },
+  "next": {
+    "title": "MMR Database",
+    "permalink": "/docs/learn/mmrdatabase"
+  }
+}

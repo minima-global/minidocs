@@ -1,0 +1,26 @@
+{
+  "unversionedId": "learn/mmrdatabase",
+  "id": "learn/mmrdatabase",
+  "title": "MMR Database",
+  "description": "As the blockchain is heavily pruned, users must store proof that their coins (UTxOs) are unspent. This is the role of the MMR database. The MMR (Merkle Mountain Range) proof db is a hash sum tree containing the proofs for all coins, spent (STxOs) or unspent (UTxOs) in the system.",
+  "source": "@site/docs/learn/mmrdatabase.md",
+  "sourceDirName": "learn",
+  "slug": "/learn/mmrdatabase",
+  "permalink": "/docs/learn/mmrdatabase",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/learn/mmrdatabase.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Transactions",
+    "permalink": "/docs/learn/transactions"
+  },
+  "next": {
+    "title": "TxPoW Units (Blocks)",
+    "permalink": "/docs/learn/txpowunits"
+  }
+}

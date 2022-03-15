@@ -129,64 +129,272 @@
     "component": "component---theme-mdx-page-1-f-3-b90",
     "content": "content---markdown-page-393-028"
   },
-  "/my-markdown-page-81e": {
-    "component": "component---theme-mdx-page-1-f-3-b90",
-    "content": "content---my-markdown-page-031-4dc"
-  },
-  "/newPage-383": {
-    "component": "component---site-src-pages-new-page-tsxc-0-d-8bd",
-    "config": "config---5-e-9-4f3"
-  },
-  "/docs-046": {
+  "/docs-b2d": {
     "component": "component---theme-doc-page-1-be-9be",
     "versionMetadata": "versionMetadata---docs-935-398"
   },
-  "/docs/hello-7a8": {
+  "/docs/about/history-c3e": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-hello-9-df-13a"
+    "content": "content---docs-about-history-493-b4d"
   },
-  "/docs/intro-e84": {
+  "/docs/about/terminology-e0b": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-intro-0-e-3-be1"
+    "content": "content---docs-about-terminology-767-f1b"
   },
-  "/docs/test-397": {
+  "/docs/about/vision-5f9": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-test-4-af-7e5"
+    "content": "content---docs-about-vision-2-c-9-9dc"
   },
-  "/docs/tutorial-basics/congratulations-7ef": {
+  "/docs/about/whatisminima-9e3": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-congratulations-822-958"
+    "content": "content---docs-about-whatisminimacb-3-390"
   },
-  "/docs/tutorial-basics/create-a-blog-post-2c8": {
+  "/docs/about/whyminima-9e6": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-create-a-blog-post-533-e85"
+    "content": "content---docs-about-whyminimafb-8-f09"
   },
-  "/docs/tutorial-basics/create-a-document-f0d": {
+  "/docs/about/whyuseminima-01a": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-create-a-document-1-e-4-078"
+    "content": "content---docs-about-whyuseminima-441-5c6"
   },
-  "/docs/tutorial-basics/create-a-page-ca5": {
+  "/docs/ambassador-969": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-create-a-page-5-c-8-e19"
+    "content": "content---docs-ambassadorfad-27a"
   },
-  "/docs/tutorial-basics/deploy-your-site-508": {
+  "/docs/incentiveprogramtermsandconditions/acceptanceoftherisk-a93": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-deploy-your-sitef-55-a3f"
+    "content": "content---docs-incentiveprogramtermsandconditions-acceptanceoftherisk-195-94a"
   },
-  "/docs/tutorial-basics/markdown-features-f90": {
+  "/docs/incentiveprogramtermsandconditions/applicationoftheseterms-9aa": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-markdown-features-18-c-a79"
+    "content": "content---docs-incentiveprogramtermsandconditions-applicationoftheseterms-09-c-ba1"
   },
-  "/docs/tutorial-extras/manage-docs-versions-d64": {
+  "/docs/incentiveprogramtermsandconditions/changestotheseterms-4f4": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-extras-manage-docs-versionsdff-6d4"
+    "content": "content---docs-incentiveprogramtermsandconditions-changestothesetermsdd-6-861"
   },
-  "/docs/tutorial-extras/translate-your-site-16a": {
+  "/docs/incentiveprogramtermsandconditions/compensation-31c": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-extras-translate-your-sitee-44-ddf"
+    "content": "content---docs-incentiveprogramtermsandconditions-compensation-341-531"
   },
-  "/-f49": {
-    "component": "component---site-src-pages-index-tsx-1-df-d3e",
+  "/docs/incentiveprogramtermsandconditions/conditionstoparticipateintheincentiveprogram-a3d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-incentiveprogramtermsandconditions-conditionstoparticipateintheincentiveprogram-463-6e0"
+  },
+  "/docs/incentiveprogramtermsandconditions/feedbackandcontactdetails-570": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-incentiveprogramtermsandconditions-feedbackandcontactdetailsd-3-e-cd3"
+  },
+  "/docs/incentiveprogramtermsandconditions/general-092": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-incentiveprogramtermsandconditions-generala-69-dcb"
+  },
+  "/docs/incentiveprogramtermsandconditions/incentiveprogram-ff7": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-incentiveprogramtermsandconditions-incentiveprogramcaf-b4c"
+  },
+  "/docs/incentiveprogramtermsandconditions/indemnity-781": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-incentiveprogramtermsandconditions-indemnityf-48-8a8"
+  },
+  "/docs/incentiveprogramtermsandconditions/intellectualpropertyrights-f68": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-incentiveprogramtermsandconditions-intellectualpropertyrightsb-9-e-6df"
+  },
+  "/docs/incentiveprogramtermsandconditions/liability-df9": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-incentiveprogramtermsandconditions-liability-15-b-cb9"
+  },
+  "/docs/incentiveprogramtermsandconditions/privacy-988": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-incentiveprogramtermsandconditions-privacy-485-5ec"
+  },
+  "/docs/incentiveprogramtermsandconditions/prohibitedpurpose-ead": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-incentiveprogramtermsandconditions-prohibitedpurposef-27-4f2"
+  },
+  "/docs/incentiveprogramtermsandconditions/taxes-93f": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-incentiveprogramtermsandconditions-taxes-6-db-b41"
+  },
+  "/docs/incentiveprogramtermsandconditions/termination-ab9": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-incentiveprogramtermsandconditions-terminationfe-2-9fb"
+  },
+  "/docs/incentiveprogramtermsandconditions/thirdpartysites-b6c": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-incentiveprogramtermsandconditions-thirdpartysites-064-c88"
+  },
+  "/docs/incentiveprogramtermsandconditions/whoarewe-014": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-incentiveprogramtermsandconditions-whoarewe-9-dd-620"
+  },
+  "/docs/incentiveprogramtermsandconditions/youreligibility-57b": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-incentiveprogramtermsandconditions-youreligibility-33-a-2fe"
+  },
+  "/docs/keypeople/hugofeiler-90c": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-keypeople-hugofeilere-88-191"
+  },
+  "/docs/keypeople/jonmacdonald-e32": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-keypeople-jonmacdonaldc-75-4f4"
+  },
+  "/docs/keypeople/paddycerri-791": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-keypeople-paddycerri-552-b50"
+  },
+  "/docs/learn/coreconcepts-406": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-learn-coreconceptsa-11-e18"
+  },
+  "/docs/learn/mmrdatabase-641": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-learn-mmrdatabase-244-af7"
+  },
+  "/docs/learn/networkoverview-d48": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-learn-networkoverview-5-b-3-a7f"
+  },
+  "/docs/learn/quantumsecurity-57a": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-learn-quantumsecurityf-15-749"
+  },
+  "/docs/learn/smartcontracts-9ef": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-learn-smartcontracts-533-9c6"
+  },
+  "/docs/learn/theblockchain-7ed": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-learn-theblockchain-062-3d1"
+  },
+  "/docs/learn/tokenscolouredcoins-6b9": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-learn-tokenscolouredcoinsec-4-d96"
+  },
+  "/docs/learn/transactions-2cc": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-learn-transactions-46-d-1da"
+  },
+  "/docs/learn/txpowunits-072": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-learn-txpowunits-5-f-4-fce"
+  },
+  "/docs/minimaincentiveprogram-a40": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimaincentiveprogramead-534"
+  },
+  "/docs/minimainviteprogram-8cc": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimainviteprogram-31-a-c80"
+  },
+  "/docs/minimaprivacypolicy-777": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimaprivacypolicy-1-c-2-9ad"
+  },
+  "/docs/minimatermsandconditions-7d8": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimatermsandconditionsd-9-f-e9c"
+  },
+  "/docs/minimawhitepaper/ acascadingchain-b4e": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimawhitepaper-acascadingchaincb-4-760"
+  },
+  "/docs/minimawhitepaper/abstract-e6c": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimawhitepaper-abstract-597-e78"
+  },
+  "/docs/minimawhitepaper/blocksize-a84": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimawhitepaper-blocksizef-17-aba"
+  },
+  "/docs/minimawhitepaper/blockspeed-d8f": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimawhitepaper-blockspeedb-94-d02"
+  },
+  "/docs/minimawhitepaper/conclusion-612": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimawhitepaper-conclusionef-8-ac8"
+  },
+  "/docs/minimawhitepaper/consensusforksandimmutableprotocols-22d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimawhitepaper-consensusforksandimmutableprotocols-193-fd3"
+  },
+  "/docs/minimawhitepaper/energy-d7f": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimawhitepaper-energy-6-c-9-c88"
+  },
+  "/docs/minimawhitepaper/hashcashandburn-a4a": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimawhitepaper-hashcashandburn-7-fb-7da"
+  },
+  "/docs/minimawhitepaper/introduction-3f8": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimawhitepaper-introduction-5-db-d57"
+  },
+  "/docs/minimawhitepaper/maxima-4e7": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimawhitepaper-maxima-7-d-2-012"
+  },
+  "/docs/minimawhitepaper/powvsdistributedpow-46b": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimawhitepaper-powvsdistributedpowc-5-e-a51"
+  },
+  "/docs/minimawhitepaper/quantumsecure-944": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimawhitepaper-quantumsecure-35-f-e89"
+  },
+  "/docs/minimawhitepaper/smartcontractstokensandtransactions-fe3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimawhitepaper-smartcontractstokensandtransactionse-13-3ac"
+  },
+  "/docs/minimawhitepaper/specialthanksto-5ce": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimawhitepaper-specialthankstod-97-dfb"
+  },
+  "/docs/minimawhitepaper/storagelessmmrutxo-4d0": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimawhitepaper-storagelessmmrutxoe-4-b-f7f"
+  },
+  "/docs/minimawhitepaper/thepulsenetwork-e69": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimawhitepaper-thepulsenetwork-8-f-6-bad"
+  },
+  "/docs/minimawhitepaper/txpow-dd7": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-minimawhitepaper-txpowb-56-987"
+  },
+  "/docs/runanode/android_v9_and_up-c0d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-runanode-android-v-9-and-upf-09-e35"
+  },
+  "/docs/runanode/get_started_in_3_steps-ddc": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-runanode-get-started-in-3-steps-2-de-546"
+  },
+  "/docs/runanode/linux_desktop-514": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-runanode-linux-desktopfc-2-0b1"
+  },
+  "/docs/runanode/linux_vps-00d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-runanode-linux-vpse-72-d13"
+  },
+  "/docs/runanode/mac-970": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-runanode-mac-5-c-7-984"
+  },
+  "/docs/runanode/windows-d70": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-runanode-windowsb-92-594"
+  },
+  "/docs/tokendistribution-9e7": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-tokendistribution-953-d6c"
+  },
+  "/-deb": {
+    "component": "component---site-src-pages-index-jsc-4-f-f99",
     "config": "config---5-e-9-4f3"
   }
 }

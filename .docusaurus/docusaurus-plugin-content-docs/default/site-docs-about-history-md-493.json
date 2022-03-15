@@ -1,0 +1,26 @@
+{
+  "unversionedId": "about/history",
+  "id": "about/history",
+  "title": "History",
+  "description": "The History of Minima",
+  "source": "@site/docs/about/history.md",
+  "sourceDirName": "about",
+  "slug": "/about/history",
+  "permalink": "/docs/about/history",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/about/history.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Terminology",
+    "permalink": "/docs/about/terminology"
+  },
+  "next": {
+    "title": "Network Overview",
+    "permalink": "/docs/learn/networkoverview"
+  }
+}

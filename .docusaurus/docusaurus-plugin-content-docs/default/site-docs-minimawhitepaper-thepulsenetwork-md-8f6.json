@@ -1,0 +1,26 @@
+{
+  "unversionedId": "minimawhitepaper/thepulsenetwork",
+  "id": "minimawhitepaper/thepulsenetwork",
+  "title": "The Pulse Network",
+  "description": "Both Minima and Maxima require users to perform a small amount of PoW when sending messages. The more messages, the more PoW. The more PoW, the more secure the network. But what if a user is not sending any messages? Can that user also help to secure the network? What if sending a message is time-critical, and there must be no delay before sending it – say a high-frequency trader? Maxima addresses both these concerns by repurposing existing technology, allowing users to do the work beforehand, and then present that work as proof when sending messages.",
+  "source": "@site/docs/minimawhitepaper/thepulsenetwork.md",
+  "sourceDirName": "minimawhitepaper",
+  "slug": "/minimawhitepaper/thepulsenetwork",
+  "permalink": "/docs/minimawhitepaper/thepulsenetwork",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/thepulsenetwork.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Maxima",
+    "permalink": "/docs/minimawhitepaper/maxima"
+  },
+  "next": {
+    "title": "PoW vs Distributed PoW",
+    "permalink": "/docs/minimawhitepaper/powvsdistributedpow"
+  }
+}

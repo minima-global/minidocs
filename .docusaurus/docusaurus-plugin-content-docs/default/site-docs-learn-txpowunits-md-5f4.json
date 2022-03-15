@@ -1,0 +1,26 @@
+{
+  "unversionedId": "learn/txpowunits",
+  "id": "learn/txpowunits",
+  "title": "TxPoW Units (Blocks)",
+  "description": "Before a transaction can be posted to the network, it must be added to a TxPoW unit with other essential data and ‘mined’.",
+  "source": "@site/docs/learn/txpowunits.md",
+  "sourceDirName": "learn",
+  "slug": "/learn/txpowunits",
+  "permalink": "/docs/learn/txpowunits",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/learn/txpowunits.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "MMR Database",
+    "permalink": "/docs/learn/mmrdatabase"
+  },
+  "next": {
+    "title": "The Blockchain",
+    "permalink": "/docs/learn/theblockchain"
+  }
+}

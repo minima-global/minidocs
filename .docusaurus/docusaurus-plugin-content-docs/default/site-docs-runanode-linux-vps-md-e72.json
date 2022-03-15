@@ -1,0 +1,26 @@
+{
+  "unversionedId": "runanode/linux_vps",
+  "id": "runanode/linux_vps",
+  "title": "Linux VPS",
+  "description": "How to download and Install Minima on your Linux Server/Desktop (Debian OS including Ubuntu)",
+  "source": "@site/docs/runanode/linux_vps.md",
+  "sourceDirName": "runanode",
+  "slug": "/runanode/linux_vps",
+  "permalink": "/docs/runanode/linux_vps",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/runanode/linux_vps.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Linux Desktop",
+    "permalink": "/docs/runanode/linux_desktop"
+  },
+  "next": {
+    "title": "Ambassador Program",
+    "permalink": "/docs/ambassador"
+  }
+}

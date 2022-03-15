@@ -1,0 +1,26 @@
+{
+  "unversionedId": "minimawhitepaper/blockspeed",
+  "id": "minimawhitepaper/blockspeed",
+  "title": "Block Speed",
+  "description": "The security of a transaction is not improved by a faster block speed, since the amount of security is a function of the cumulative PoW of the parent blocks (hash-rates being equal 1 BTC block is worth 4 LTC blocks, since LTC runs 4x faster). A faster chain does increase the granularity of information[6] and allows a user to know sooner when their transaction is secure enough. The longer you wait, the more secure.",
+  "source": "@site/docs/minimawhitepaper/blockspeed.md",
+  "sourceDirName": "minimawhitepaper",
+  "slug": "/minimawhitepaper/blockspeed",
+  "permalink": "/docs/minimawhitepaper/blockspeed",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/blockspeed.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "sidebar_position": 14
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Block Size",
+    "permalink": "/docs/minimawhitepaper/blocksize"
+  },
+  "next": {
+    "title": "Consensus, Forks and Immutable Protocols",
+    "permalink": "/docs/minimawhitepaper/consensusforksandimmutableprotocols"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "incentiveprogramtermsandconditions/taxes",
+  "id": "incentiveprogramtermsandconditions/taxes",
+  "title": "Taxes",
+  "description": "It is your sole responsibility to determine whether, and to what extent, any taxes apply to the participation in the Incentive Program, and to withhold, collect, report and remit the correct amount of tax to the appropriate tax authorities.",
+  "source": "@site/docs/incentiveprogramtermsandconditions/taxes.md",
+  "sourceDirName": "incentiveprogramtermsandconditions",
+  "slug": "/incentiveprogramtermsandconditions/taxes",
+  "permalink": "/docs/incentiveprogramtermsandconditions/taxes",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/taxes.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Termination",
+    "permalink": "/docs/incentiveprogramtermsandconditions/termination"
+  },
+  "next": {
+    "title": "Intellectual property rights",
+    "permalink": "/docs/incentiveprogramtermsandconditions/intellectualpropertyrights"
+  }
+}

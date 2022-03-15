@@ -26,6 +26,11 @@
       "type": "package",
       "name": "@docusaurus/theme-classic",
       "version": "2.0.0-beta.17"
+    },
+    "@cmfcmf/docusaurus-search-local": {
+      "type": "package",
+      "name": "@cmfcmf/docusaurus-search-local",
+      "version": "0.10.0"
     }
   }
 }

@@ -7,8 +7,8 @@
           "versionLabel": "Next",
           "versionPath": "/docs",
           "tagsPath": "/docs/tags",
-          "versionEditUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs",
-          "versionEditUrlLocalized": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/i18n/en/docusaurus-plugin-content-docs/current",
+          "versionEditUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs",
+          "versionEditUrlLocalized": "https://github.com/arnimedia/arnimedia.github.io.git/i18n/en/docusaurus-plugin-content-docs/current",
           "versionBanner": null,
           "versionBadge": false,
           "versionClassName": "docs-version-current",
@@ -19,202 +19,1685 @@
           "contentPathLocalized": "/Users/eliasnemr/projects/documentation/minidocs/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
-              "unversionedId": "hello",
-              "id": "hello",
-              "title": "Hello",
-              "description": "This is my first Minima document!",
-              "source": "@site/docs/hello.md",
-              "sourceDirName": ".",
-              "slug": "/hello",
-              "permalink": "/docs/hello",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/hello.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 3,
-              "frontMatter": {
-                "sidebar_label": "Hi!",
-                "sidebar_position": 3
-              },
-              "sidebar": "tutorialSidebar",
-              "next": {
-                "title": "Test",
-                "permalink": "/docs/test"
-              }
-            },
-            {
-              "unversionedId": "intro",
-              "id": "intro",
-              "title": "Tutorial Intro",
-              "description": "Let's discover Docusaurus in less than 5 minutes.",
-              "source": "@site/docs/intro.md",
-              "sourceDirName": ".",
-              "slug": "/intro",
-              "permalink": "/docs/intro",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 1,
-              "frontMatter": {
-                "sidebar_position": 1
-              }
-            },
-            {
-              "unversionedId": "test",
-              "id": "test",
-              "title": "Test",
-              "description": "Another markdown page",
-              "source": "@site/docs/test.md",
-              "sourceDirName": ".",
-              "slug": "/test",
-              "permalink": "/docs/test",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/test.md",
-              "tags": [],
-              "version": "current",
-              "frontMatter": {},
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Hi!",
-                "permalink": "/docs/hello"
-              },
-              "next": {
-                "title": "Hi!",
-                "permalink": "/docs/hello"
-              }
-            },
-            {
-              "unversionedId": "tutorial-basics/congratulations",
-              "id": "tutorial-basics/congratulations",
-              "title": "Congratulations!",
-              "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
-              "source": "@site/docs/tutorial-basics/congratulations.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/congratulations",
-              "permalink": "/docs/tutorial-basics/congratulations",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/congratulations.md",
+              "unversionedId": "about/history",
+              "id": "about/history",
+              "title": "History",
+              "description": "The History of Minima",
+              "source": "@site/docs/about/history.md",
+              "sourceDirName": "about",
+              "slug": "/about/history",
+              "permalink": "/docs/about/history",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/about/history.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 6,
               "frontMatter": {
                 "sidebar_position": 6
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Terminology",
+                "permalink": "/docs/about/terminology"
+              },
+              "next": {
+                "title": "Network Overview",
+                "permalink": "/docs/learn/networkoverview"
               }
             },
             {
-              "unversionedId": "tutorial-basics/create-a-blog-post",
-              "id": "tutorial-basics/create-a-blog-post",
-              "title": "Create a Blog Post",
-              "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
-              "source": "@site/docs/tutorial-basics/create-a-blog-post.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/create-a-blog-post",
-              "permalink": "/docs/tutorial-basics/create-a-blog-post",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/create-a-blog-post.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 3,
-              "frontMatter": {
-                "sidebar_position": 3
-              }
-            },
-            {
-              "unversionedId": "tutorial-basics/create-a-document",
-              "id": "tutorial-basics/create-a-document",
-              "title": "Create a Document",
-              "description": "Documents are groups of pages connected through:",
-              "source": "@site/docs/tutorial-basics/create-a-document.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/create-a-document",
-              "permalink": "/docs/tutorial-basics/create-a-document",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/create-a-document.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 2,
-              "frontMatter": {
-                "sidebar_position": 2
-              }
-            },
-            {
-              "unversionedId": "tutorial-basics/create-a-page",
-              "id": "tutorial-basics/create-a-page",
-              "title": "Create a Page",
-              "description": "Add Markdown or React files to src/pages to create a standalone page:",
-              "source": "@site/docs/tutorial-basics/create-a-page.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/create-a-page",
-              "permalink": "/docs/tutorial-basics/create-a-page",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/create-a-page.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 1,
-              "frontMatter": {
-                "sidebar_position": 1
-              }
-            },
-            {
-              "unversionedId": "tutorial-basics/deploy-your-site",
-              "id": "tutorial-basics/deploy-your-site",
-              "title": "Deploy your site",
-              "description": "Docusaurus is a static-site-generator (also called Jamstack).",
-              "source": "@site/docs/tutorial-basics/deploy-your-site.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/deploy-your-site",
-              "permalink": "/docs/tutorial-basics/deploy-your-site",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/deploy-your-site.md",
+              "unversionedId": "about/terminology",
+              "id": "about/terminology",
+              "title": "Terminology",
+              "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
+              "source": "@site/docs/about/terminology.md",
+              "sourceDirName": "about",
+              "slug": "/about/terminology",
+              "permalink": "/docs/about/terminology",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/about/terminology.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 5,
               "frontMatter": {
                 "sidebar_position": 5
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Why use Minima?",
+                "permalink": "/docs/about/whyuseminima"
+              },
+              "next": {
+                "title": "History",
+                "permalink": "/docs/about/history"
               }
             },
             {
-              "unversionedId": "tutorial-basics/markdown-features",
-              "id": "tutorial-basics/markdown-features",
-              "title": "Markdown Features",
-              "description": "Docusaurus supports Markdown and a few additional features.",
-              "source": "@site/docs/tutorial-basics/markdown-features.mdx",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/markdown-features",
-              "permalink": "/docs/tutorial-basics/markdown-features",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/markdown-features.mdx",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 4,
-              "frontMatter": {
-                "sidebar_position": 4
-              }
-            },
-            {
-              "unversionedId": "tutorial-extras/manage-docs-versions",
-              "id": "tutorial-extras/manage-docs-versions",
-              "title": "Manage Docs Versions",
-              "description": "Docusaurus can manage multiple versions of your docs.",
-              "source": "@site/docs/tutorial-extras/manage-docs-versions.md",
-              "sourceDirName": "tutorial-extras",
-              "slug": "/tutorial-extras/manage-docs-versions",
-              "permalink": "/docs/tutorial-extras/manage-docs-versions",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-extras/manage-docs-versions.md",
+              "unversionedId": "about/vision",
+              "id": "about/vision",
+              "title": "Vision",
+              "description": "Core philosophy",
+              "source": "@site/docs/about/vision.md",
+              "sourceDirName": "about",
+              "slug": "/about/vision",
+              "permalink": "/docs/about/vision",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/about/vision.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 1,
               "frontMatter": {
                 "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "What is Minima?",
+                "permalink": "/docs/about/whatisminima"
               }
             },
             {
-              "unversionedId": "tutorial-extras/translate-your-site",
-              "id": "tutorial-extras/translate-your-site",
-              "title": "Translate your site",
-              "description": "Let's translate docs/intro.md to French.",
-              "source": "@site/docs/tutorial-extras/translate-your-site.md",
-              "sourceDirName": "tutorial-extras",
-              "slug": "/tutorial-extras/translate-your-site",
-              "permalink": "/docs/tutorial-extras/translate-your-site",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-extras/translate-your-site.md",
+              "unversionedId": "about/whatisminima",
+              "id": "about/whatisminima",
+              "title": "What is Minima?",
+              "description": "The ultra-light Blockchain",
+              "source": "@site/docs/about/whatisminima.md",
+              "sourceDirName": "about",
+              "slug": "/about/whatisminima",
+              "permalink": "/docs/about/whatisminima",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/about/whatisminima.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 2,
               "frontMatter": {
                 "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Vision",
+                "permalink": "/docs/about/vision"
+              },
+              "next": {
+                "title": "Why Minima?",
+                "permalink": "/docs/about/whyminima"
+              }
+            },
+            {
+              "unversionedId": "about/whyminima",
+              "id": "about/whyminima",
+              "title": "Why Minima?",
+              "description": "Minima was born out of the desire to achieve what Bitcoin originally sought to achieve; a truly decentralized, censorship resistant, peer-to-peer, electronic cash system. Over time, Bitcoin mining has become more centralized due to its competitive nature and game theory suggests this is only headed in one direction, towards centralization.",
+              "source": "@site/docs/about/whyminima.md",
+              "sourceDirName": "about",
+              "slug": "/about/whyminima",
+              "permalink": "/docs/about/whyminima",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/about/whyminima.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "What is Minima?",
+                "permalink": "/docs/about/whatisminima"
+              },
+              "next": {
+                "title": "Why use Minima?",
+                "permalink": "/docs/about/whyuseminima"
+              }
+            },
+            {
+              "unversionedId": "about/whyuseminima",
+              "id": "about/whyuseminima",
+              "title": "Why use Minima?",
+              "description": "The world’s first completely decentralized blockchain",
+              "source": "@site/docs/about/whyuseminima.md",
+              "sourceDirName": "about",
+              "slug": "/about/whyuseminima",
+              "permalink": "/docs/about/whyuseminima",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/about/whyuseminima.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Why Minima?",
+                "permalink": "/docs/about/whyminima"
+              },
+              "next": {
+                "title": "Terminology",
+                "permalink": "/docs/about/terminology"
+              }
+            },
+            {
+              "unversionedId": "ambassador",
+              "id": "ambassador",
+              "title": "Ambassador Program",
+              "description": "The Minima Ambassador Program",
+              "source": "@site/docs/ambassador.md",
+              "sourceDirName": ".",
+              "slug": "/ambassador",
+              "permalink": "/docs/ambassador",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/ambassador.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 7,
+              "frontMatter": {
+                "sidebar_position": 7
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Linux VPS",
+                "permalink": "/docs/runanode/linux_vps"
+              },
+              "next": {
+                "title": "Token Distribution",
+                "permalink": "/docs/tokendistribution"
+              }
+            },
+            {
+              "unversionedId": "incentiveprogramtermsandconditions/acceptanceoftherisk",
+              "id": "incentiveprogramtermsandconditions/acceptanceoftherisk",
+              "title": "Acceptance of the risk",
+              "description": "You accept each of the following risks:",
+              "source": "@site/docs/incentiveprogramtermsandconditions/acceptanceoftherisk.md",
+              "sourceDirName": "incentiveprogramtermsandconditions",
+              "slug": "/incentiveprogramtermsandconditions/acceptanceoftherisk",
+              "permalink": "/docs/incentiveprogramtermsandconditions/acceptanceoftherisk",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/acceptanceoftherisk.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 7,
+              "frontMatter": {
+                "sidebar_position": 7
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Prohibited Purpose",
+                "permalink": "/docs/incentiveprogramtermsandconditions/prohibitedpurpose"
+              },
+              "next": {
+                "title": "Termination",
+                "permalink": "/docs/incentiveprogramtermsandconditions/termination"
+              }
+            },
+            {
+              "unversionedId": "incentiveprogramtermsandconditions/applicationoftheseterms",
+              "id": "incentiveprogramtermsandconditions/applicationoftheseterms",
+              "title": "Application of these Terms",
+              "description": "These terms and conditions (Terms) and all policies posted on our website at https://minima.global/incentive-program (Website) set out the terms on which you can access our Website and participate in our Incentive Program (Incentive Program). In order to use our Website and participate in the Incentive Program, you must accept these Terms. By accessing our Website, you confirm that you accept these Terms and you become legally bound by it.",
+              "source": "@site/docs/incentiveprogramtermsandconditions/applicationoftheseterms.md",
+              "sourceDirName": "incentiveprogramtermsandconditions",
+              "slug": "/incentiveprogramtermsandconditions/applicationoftheseterms",
+              "permalink": "/docs/incentiveprogramtermsandconditions/applicationoftheseterms",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/applicationoftheseterms.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Incentive Program",
+                "permalink": "/docs/minimaincentiveprogram"
+              },
+              "next": {
+                "title": "Who are we",
+                "permalink": "/docs/incentiveprogramtermsandconditions/whoarewe"
+              }
+            },
+            {
+              "unversionedId": "incentiveprogramtermsandconditions/changestotheseterms",
+              "id": "incentiveprogramtermsandconditions/changestotheseterms",
+              "title": "Changes to these Terms",
+              "description": "We may amend these Terms at any time. If we amend these Terms, we will publish the updated terms on our Website. You shall be responsible for reviewing and becoming familiar with any such modifications. You waive any right you may have to receive specific notice of such changes.",
+              "source": "@site/docs/incentiveprogramtermsandconditions/changestotheseterms.md",
+              "sourceDirName": "incentiveprogramtermsandconditions",
+              "slug": "/incentiveprogramtermsandconditions/changestotheseterms",
+              "permalink": "/docs/incentiveprogramtermsandconditions/changestotheseterms",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/changestotheseterms.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 11,
+              "frontMatter": {
+                "sidebar_position": 11
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Intellectual property rights",
+                "permalink": "/docs/incentiveprogramtermsandconditions/intellectualpropertyrights"
+              },
+              "next": {
+                "title": "Third Party Sites",
+                "permalink": "/docs/incentiveprogramtermsandconditions/thirdpartysites"
+              }
+            },
+            {
+              "unversionedId": "incentiveprogramtermsandconditions/compensation",
+              "id": "incentiveprogramtermsandconditions/compensation",
+              "title": "Compensation",
+              "description": "You will compensate us in full for any losses or costs, including reasonable legal fees, we incur arising out of your breach of these Terms, your unauthorised participation in the Incentive Program or your breach of any law or the rights of a third party.",
+              "source": "@site/docs/incentiveprogramtermsandconditions/compensation.md",
+              "sourceDirName": "incentiveprogramtermsandconditions",
+              "slug": "/incentiveprogramtermsandconditions/compensation",
+              "permalink": "/docs/incentiveprogramtermsandconditions/compensation",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/compensation.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 15,
+              "frontMatter": {
+                "sidebar_position": 15
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Liability",
+                "permalink": "/docs/incentiveprogramtermsandconditions/liability"
+              },
+              "next": {
+                "title": "Privacy",
+                "permalink": "/docs/incentiveprogramtermsandconditions/privacy"
+              }
+            },
+            {
+              "unversionedId": "incentiveprogramtermsandconditions/conditionstoparticipateintheincentiveprogram",
+              "id": "incentiveprogramtermsandconditions/conditionstoparticipateintheincentiveprogram",
+              "title": "Conditions to participate in the Incentive Program",
+              "description": "To participate in the Incentive Program, you agree that:",
+              "source": "@site/docs/incentiveprogramtermsandconditions/conditionstoparticipateintheincentiveprogram.md",
+              "sourceDirName": "incentiveprogramtermsandconditions",
+              "slug": "/incentiveprogramtermsandconditions/conditionstoparticipateintheincentiveprogram",
+              "permalink": "/docs/incentiveprogramtermsandconditions/conditionstoparticipateintheincentiveprogram",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/conditionstoparticipateintheincentiveprogram.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Incentive Program",
+                "permalink": "/docs/incentiveprogramtermsandconditions/incentiveprogram"
+              },
+              "next": {
+                "title": "Prohibited Purpose",
+                "permalink": "/docs/incentiveprogramtermsandconditions/prohibitedpurpose"
+              }
+            },
+            {
+              "unversionedId": "incentiveprogramtermsandconditions/feedbackandcontactdetails",
+              "id": "incentiveprogramtermsandconditions/feedbackandcontactdetails",
+              "title": "Feedback and contact details",
+              "description": "You may choose to submit comments, bug reports, ideas or other feedback about our Website or the Incentive Program, including without limitation about how to improve the Incentive Program by emailing us. We are free to use such feedback at our discretion and without additional compensation to you and may disclose such feedback to third parties.",
+              "source": "@site/docs/incentiveprogramtermsandconditions/feedbackandcontactdetails.md",
+              "sourceDirName": "incentiveprogramtermsandconditions",
+              "slug": "/incentiveprogramtermsandconditions/feedbackandcontactdetails",
+              "permalink": "/docs/incentiveprogramtermsandconditions/feedbackandcontactdetails",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/feedbackandcontactdetails.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 17,
+              "frontMatter": {
+                "sidebar_position": 17
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Privacy",
+                "permalink": "/docs/incentiveprogramtermsandconditions/privacy"
+              },
+              "next": {
+                "title": "General",
+                "permalink": "/docs/incentiveprogramtermsandconditions/general"
+              }
+            },
+            {
+              "unversionedId": "incentiveprogramtermsandconditions/general",
+              "id": "incentiveprogramtermsandconditions/general",
+              "title": "General",
+              "description": "- Entire agreement: These Terms constitutes the entire agreement between us supersede any previously issued terms and conditions of purchase or supply. If there is ever a conflict between these Terms and any other arrangement or agreement between us, these Terms shall take precedence.",
+              "source": "@site/docs/incentiveprogramtermsandconditions/general.md",
+              "sourceDirName": "incentiveprogramtermsandconditions",
+              "slug": "/incentiveprogramtermsandconditions/general",
+              "permalink": "/docs/incentiveprogramtermsandconditions/general",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/general.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 18,
+              "frontMatter": {
+                "sidebar_position": 18
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Feedback and contact details",
+                "permalink": "/docs/incentiveprogramtermsandconditions/feedbackandcontactdetails"
+              },
+              "next": {
+                "title": "Invite Program",
+                "permalink": "/docs/minimainviteprogram"
+              }
+            },
+            {
+              "unversionedId": "incentiveprogramtermsandconditions/incentiveprogram",
+              "id": "incentiveprogramtermsandconditions/incentiveprogram",
+              "title": "Incentive Program",
+              "description": "The Incentive Program rewards users for downloading our app and running a complete node. In order to participate in the Incentive Program, you need to have a referral invite link (Link) or join the waiting list. Simply downloading a node from our Website does not enrol you into the Incentive Program.",
+              "source": "@site/docs/incentiveprogramtermsandconditions/incentiveprogram.md",
+              "sourceDirName": "incentiveprogramtermsandconditions",
+              "slug": "/incentiveprogramtermsandconditions/incentiveprogram",
+              "permalink": "/docs/incentiveprogramtermsandconditions/incentiveprogram",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/incentiveprogram.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Your eligibility",
+                "permalink": "/docs/incentiveprogramtermsandconditions/youreligibility"
+              },
+              "next": {
+                "title": "Conditions to participate in the Incentive Program",
+                "permalink": "/docs/incentiveprogramtermsandconditions/conditionstoparticipateintheincentiveprogram"
+              }
+            },
+            {
+              "unversionedId": "incentiveprogramtermsandconditions/indemnity",
+              "id": "incentiveprogramtermsandconditions/indemnity",
+              "title": "Indemnity",
+              "description": "You agree to indemnify, defend and hold harmless us and our subsidiaries, affiliates, officers, agents, employees, advertisers, licensors, suppliers or partners from and against any claim, liability, loss, damage (actual and consequential) of any kind or nature, suit, judgment, litigation cost, and lawyers’ fees arising out of or in any way related to (i) your breach of these Terms, (ii) your misuse or unauthorised use of our Website or the Incentive Program, (iii) your violation of applicable laws, rules, regulations or the rights of any third party and (iv) any of your acts or omissions that implicate publicity rights, defamation or invasion of privacy in connection with your use of our Website or participation in the Incentive Program.",
+              "source": "@site/docs/incentiveprogramtermsandconditions/indemnity.md",
+              "sourceDirName": "incentiveprogramtermsandconditions",
+              "slug": "/incentiveprogramtermsandconditions/indemnity",
+              "permalink": "/docs/incentiveprogramtermsandconditions/indemnity",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/indemnity.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 13,
+              "frontMatter": {
+                "sidebar_position": 13
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Third Party Sites",
+                "permalink": "/docs/incentiveprogramtermsandconditions/thirdpartysites"
+              },
+              "next": {
+                "title": "Liability",
+                "permalink": "/docs/incentiveprogramtermsandconditions/liability"
+              }
+            },
+            {
+              "unversionedId": "incentiveprogramtermsandconditions/intellectualpropertyrights",
+              "id": "incentiveprogramtermsandconditions/intellectualpropertyrights",
+              "title": "Intellectual property rights",
+              "description": "We own all intellectual property rights in our Website and the Incentive Program. By accessing our Website and participating in the Incentive Program, you will not infringe any intellectual property rights that:",
+              "source": "@site/docs/incentiveprogramtermsandconditions/intellectualpropertyrights.md",
+              "sourceDirName": "incentiveprogramtermsandconditions",
+              "slug": "/incentiveprogramtermsandconditions/intellectualpropertyrights",
+              "permalink": "/docs/incentiveprogramtermsandconditions/intellectualpropertyrights",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/intellectualpropertyrights.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 10,
+              "frontMatter": {
+                "sidebar_position": 10
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Taxes",
+                "permalink": "/docs/incentiveprogramtermsandconditions/taxes"
+              },
+              "next": {
+                "title": "Changes to these Terms",
+                "permalink": "/docs/incentiveprogramtermsandconditions/changestotheseterms"
+              }
+            },
+            {
+              "unversionedId": "incentiveprogramtermsandconditions/liability",
+              "id": "incentiveprogramtermsandconditions/liability",
+              "title": "Liability",
+              "description": "We (including our parent, subsidiaries, affiliates, directors, agents and employees) shall not be liable to you in contract, tort (including negligence) or otherwise for any business losses, such as loss of data, profits, revenue, business, opportunity, goodwill, reputation or business interruption or for any losses which are not reasonably foreseeable by us arising, directly or indirectly from:",
+              "source": "@site/docs/incentiveprogramtermsandconditions/liability.md",
+              "sourceDirName": "incentiveprogramtermsandconditions",
+              "slug": "/incentiveprogramtermsandconditions/liability",
+              "permalink": "/docs/incentiveprogramtermsandconditions/liability",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/liability.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 14,
+              "frontMatter": {
+                "sidebar_position": 14
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Indemnity",
+                "permalink": "/docs/incentiveprogramtermsandconditions/indemnity"
+              },
+              "next": {
+                "title": "Compensation",
+                "permalink": "/docs/incentiveprogramtermsandconditions/compensation"
+              }
+            },
+            {
+              "unversionedId": "incentiveprogramtermsandconditions/privacy",
+              "id": "incentiveprogramtermsandconditions/privacy",
+              "title": "Privacy",
+              "description": "We are the data controller for your information and we have specific obligations to you under data protection laws. You can find out more about what information we use, what we use it for and who we share it within our Privacy Notice, which can be located here//minima.global/privacy-policy",
+              "source": "@site/docs/incentiveprogramtermsandconditions/privacy.md",
+              "sourceDirName": "incentiveprogramtermsandconditions",
+              "slug": "/incentiveprogramtermsandconditions/privacy",
+              "permalink": "/docs/incentiveprogramtermsandconditions/privacy",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/privacy.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 16,
+              "frontMatter": {
+                "sidebar_position": 16
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Compensation",
+                "permalink": "/docs/incentiveprogramtermsandconditions/compensation"
+              },
+              "next": {
+                "title": "Feedback and contact details",
+                "permalink": "/docs/incentiveprogramtermsandconditions/feedbackandcontactdetails"
+              }
+            },
+            {
+              "unversionedId": "incentiveprogramtermsandconditions/prohibitedpurpose",
+              "id": "incentiveprogramtermsandconditions/prohibitedpurpose",
+              "title": "Prohibited Purpose",
+              "description": "It is prohibited to access our Website or the Incentive Program for any of these purposes (Prohibited Purpose):",
+              "source": "@site/docs/incentiveprogramtermsandconditions/prohibitedpurpose.md",
+              "sourceDirName": "incentiveprogramtermsandconditions",
+              "slug": "/incentiveprogramtermsandconditions/prohibitedpurpose",
+              "permalink": "/docs/incentiveprogramtermsandconditions/prohibitedpurpose",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/prohibitedpurpose.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "sidebar_position": 6
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Conditions to participate in the Incentive Program",
+                "permalink": "/docs/incentiveprogramtermsandconditions/conditionstoparticipateintheincentiveprogram"
+              },
+              "next": {
+                "title": "Acceptance of the risk",
+                "permalink": "/docs/incentiveprogramtermsandconditions/acceptanceoftherisk"
+              }
+            },
+            {
+              "unversionedId": "incentiveprogramtermsandconditions/taxes",
+              "id": "incentiveprogramtermsandconditions/taxes",
+              "title": "Taxes",
+              "description": "It is your sole responsibility to determine whether, and to what extent, any taxes apply to the participation in the Incentive Program, and to withhold, collect, report and remit the correct amount of tax to the appropriate tax authorities.",
+              "source": "@site/docs/incentiveprogramtermsandconditions/taxes.md",
+              "sourceDirName": "incentiveprogramtermsandconditions",
+              "slug": "/incentiveprogramtermsandconditions/taxes",
+              "permalink": "/docs/incentiveprogramtermsandconditions/taxes",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/taxes.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 9,
+              "frontMatter": {
+                "sidebar_position": 9
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Termination",
+                "permalink": "/docs/incentiveprogramtermsandconditions/termination"
+              },
+              "next": {
+                "title": "Intellectual property rights",
+                "permalink": "/docs/incentiveprogramtermsandconditions/intellectualpropertyrights"
+              }
+            },
+            {
+              "unversionedId": "incentiveprogramtermsandconditions/termination",
+              "id": "incentiveprogramtermsandconditions/termination",
+              "title": "Termination",
+              "description": "We can terminate these Terms at any time if:",
+              "source": "@site/docs/incentiveprogramtermsandconditions/termination.md",
+              "sourceDirName": "incentiveprogramtermsandconditions",
+              "slug": "/incentiveprogramtermsandconditions/termination",
+              "permalink": "/docs/incentiveprogramtermsandconditions/termination",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/termination.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 8,
+              "frontMatter": {
+                "sidebar_position": 8
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Acceptance of the risk",
+                "permalink": "/docs/incentiveprogramtermsandconditions/acceptanceoftherisk"
+              },
+              "next": {
+                "title": "Taxes",
+                "permalink": "/docs/incentiveprogramtermsandconditions/taxes"
+              }
+            },
+            {
+              "unversionedId": "incentiveprogramtermsandconditions/thirdpartysites",
+              "id": "incentiveprogramtermsandconditions/thirdpartysites",
+              "title": "Third Party Sites",
+              "description": "We neither own nor control other blockchain networks or any other third party site, product, or service that you might access, visit, or use for the purpose of using our Services (Third Party Sites). You understand and agree that your use of any Third Party Site is subject to any terms of use or privacy policy provided by such Third Party Site. We are not a party to any such agreement. You should review any terms of use and privacy policy provided by such Third Party Site and make whatever investigation you feel necessary with any transaction with any third party. We will not be responsible for the acts or omissions of any Third Party Sites, nor will we be responsible for any damage that you may suffer as a result of your transactions or any other interaction with any Third Party Sites.",
+              "source": "@site/docs/incentiveprogramtermsandconditions/thirdpartysites.md",
+              "sourceDirName": "incentiveprogramtermsandconditions",
+              "slug": "/incentiveprogramtermsandconditions/thirdpartysites",
+              "permalink": "/docs/incentiveprogramtermsandconditions/thirdpartysites",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/thirdpartysites.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 12,
+              "frontMatter": {
+                "sidebar_position": 12
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Changes to these Terms",
+                "permalink": "/docs/incentiveprogramtermsandconditions/changestotheseterms"
+              },
+              "next": {
+                "title": "Indemnity",
+                "permalink": "/docs/incentiveprogramtermsandconditions/indemnity"
+              }
+            },
+            {
+              "unversionedId": "incentiveprogramtermsandconditions/whoarewe",
+              "id": "incentiveprogramtermsandconditions/whoarewe",
+              "title": "Who are we",
+              "description": "We are Minima Global Ltd, a company registered in United Kingdom with company number 11748734 whose registered address is 15 Westferry Circus, London E14 4HD, UK (we / us / our).",
+              "source": "@site/docs/incentiveprogramtermsandconditions/whoarewe.md",
+              "sourceDirName": "incentiveprogramtermsandconditions",
+              "slug": "/incentiveprogramtermsandconditions/whoarewe",
+              "permalink": "/docs/incentiveprogramtermsandconditions/whoarewe",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/whoarewe.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Application of these Terms",
+                "permalink": "/docs/incentiveprogramtermsandconditions/applicationoftheseterms"
+              },
+              "next": {
+                "title": "Your eligibility",
+                "permalink": "/docs/incentiveprogramtermsandconditions/youreligibility"
+              }
+            },
+            {
+              "unversionedId": "incentiveprogramtermsandconditions/youreligibility",
+              "id": "incentiveprogramtermsandconditions/youreligibility",
+              "title": "Your eligibility",
+              "description": "To use our Website and participate in the Incentive Program, you must meet the following criteria:",
+              "source": "@site/docs/incentiveprogramtermsandconditions/youreligibility.md",
+              "sourceDirName": "incentiveprogramtermsandconditions",
+              "slug": "/incentiveprogramtermsandconditions/youreligibility",
+              "permalink": "/docs/incentiveprogramtermsandconditions/youreligibility",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/youreligibility.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Who are we",
+                "permalink": "/docs/incentiveprogramtermsandconditions/whoarewe"
+              },
+              "next": {
+                "title": "Incentive Program",
+                "permalink": "/docs/incentiveprogramtermsandconditions/incentiveprogram"
+              }
+            },
+            {
+              "unversionedId": "keypeople/hugofeiler",
+              "id": "keypeople/hugofeiler",
+              "title": "Hugo Feiler",
+              "description": "Co-Founder & Chief Executive Officer",
+              "source": "@site/docs/keypeople/hugofeiler.md",
+              "sourceDirName": "keypeople",
+              "slug": "/keypeople/hugofeiler",
+              "permalink": "/docs/keypeople/hugofeiler",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/keypeople/hugofeiler.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Paddy Cerri",
+                "permalink": "/docs/keypeople/paddycerri"
+              },
+              "next": {
+                "title": "Jon MacDonald",
+                "permalink": "/docs/keypeople/jonmacdonald"
+              }
+            },
+            {
+              "unversionedId": "keypeople/jonmacdonald",
+              "id": "keypeople/jonmacdonald",
+              "title": "Jon MacDonald",
+              "description": "Chief Marketing Officer",
+              "source": "@site/docs/keypeople/jonmacdonald.md",
+              "sourceDirName": "keypeople",
+              "slug": "/keypeople/jonmacdonald",
+              "permalink": "/docs/keypeople/jonmacdonald",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/keypeople/jonmacdonald.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Hugo Feiler",
+                "permalink": "/docs/keypeople/hugofeiler"
+              },
+              "next": {
+                "title": "Abstract",
+                "permalink": "/docs/minimawhitepaper/abstract"
+              }
+            },
+            {
+              "unversionedId": "keypeople/paddycerri",
+              "id": "keypeople/paddycerri",
+              "title": "Paddy Cerri",
+              "description": "Co-Founder & Chief Blockchain Architect",
+              "source": "@site/docs/keypeople/paddycerri.md",
+              "sourceDirName": "keypeople",
+              "slug": "/keypeople/paddycerri",
+              "permalink": "/docs/keypeople/paddycerri",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/keypeople/paddycerri.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Minima Terms and Conditions",
+                "permalink": "/docs/minimatermsandconditions"
+              },
+              "next": {
+                "title": "Hugo Feiler",
+                "permalink": "/docs/keypeople/hugofeiler"
+              }
+            },
+            {
+              "unversionedId": "learn/coreconcepts",
+              "id": "learn/coreconcepts",
+              "title": "Core Concepts",
+              "description": "UTxO Model",
+              "source": "@site/docs/learn/coreconcepts.md",
+              "sourceDirName": "learn",
+              "slug": "/learn/coreconcepts",
+              "permalink": "/docs/learn/coreconcepts",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/learn/coreconcepts.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Network Overview",
+                "permalink": "/docs/learn/networkoverview"
+              },
+              "next": {
+                "title": "Transactions",
+                "permalink": "/docs/learn/transactions"
+              }
+            },
+            {
+              "unversionedId": "learn/mmrdatabase",
+              "id": "learn/mmrdatabase",
+              "title": "MMR Database",
+              "description": "As the blockchain is heavily pruned, users must store proof that their coins (UTxOs) are unspent. This is the role of the MMR database. The MMR (Merkle Mountain Range) proof db is a hash sum tree containing the proofs for all coins, spent (STxOs) or unspent (UTxOs) in the system.",
+              "source": "@site/docs/learn/mmrdatabase.md",
+              "sourceDirName": "learn",
+              "slug": "/learn/mmrdatabase",
+              "permalink": "/docs/learn/mmrdatabase",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/learn/mmrdatabase.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Transactions",
+                "permalink": "/docs/learn/transactions"
+              },
+              "next": {
+                "title": "TxPoW Units (Blocks)",
+                "permalink": "/docs/learn/txpowunits"
+              }
+            },
+            {
+              "unversionedId": "learn/networkoverview",
+              "id": "learn/networkoverview",
+              "title": "Network Overview",
+              "description": "The Minima network consists of four distinct layers. Each layer contributes to Minima being a truly decentralized, peer-to-peer network for value and information exchange.",
+              "source": "@site/docs/learn/networkoverview.md",
+              "sourceDirName": "learn",
+              "slug": "/learn/networkoverview",
+              "permalink": "/docs/learn/networkoverview",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/learn/networkoverview.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "History",
+                "permalink": "/docs/about/history"
+              },
+              "next": {
+                "title": "Core Concepts",
+                "permalink": "/docs/learn/coreconcepts"
+              }
+            },
+            {
+              "unversionedId": "learn/quantumsecurity",
+              "id": "learn/quantumsecurity",
+              "title": "Quantum Security",
+              "description": "If Minima is truly expected to stand the test of time, it must be Quantum secure from the beginning. Once scaled to millions of nodes, each being complete - constructing and validating - nodes, the consensus critical components of the protocol must be finished, requiring no future changes.",
+              "source": "@site/docs/learn/quantumsecurity.md",
+              "sourceDirName": "learn",
+              "slug": "/learn/quantumsecurity",
+              "permalink": "/docs/learn/quantumsecurity",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/learn/quantumsecurity.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "sidebar_position": 6
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "The Blockchain",
+                "permalink": "/docs/learn/theblockchain"
+              },
+              "next": {
+                "title": "Tokens (Coloured Coins)",
+                "permalink": "/docs/learn/tokenscolouredcoins"
+              }
+            },
+            {
+              "unversionedId": "learn/smartcontracts",
+              "id": "learn/smartcontracts",
+              "title": "Smart Contracts",
+              "description": "Minima has its own,Turing Complete, scripting language for creating Smart Contracts.",
+              "source": "@site/docs/learn/smartcontracts.md",
+              "sourceDirName": "learn",
+              "slug": "/learn/smartcontracts",
+              "permalink": "/docs/learn/smartcontracts",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/learn/smartcontracts.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 8,
+              "frontMatter": {
+                "sidebar_position": 8
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Tokens (Coloured Coins)",
+                "permalink": "/docs/learn/tokenscolouredcoins"
+              },
+              "next": {
+                "title": "Incentive Program",
+                "permalink": "/docs/minimaincentiveprogram"
+              }
+            },
+            {
+              "unversionedId": "learn/theblockchain",
+              "id": "learn/theblockchain",
+              "title": "The Blockchain",
+              "description": "Overview",
+              "source": "@site/docs/learn/theblockchain.md",
+              "sourceDirName": "learn",
+              "slug": "/learn/theblockchain",
+              "permalink": "/docs/learn/theblockchain",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/learn/theblockchain.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "TxPoW Units (Blocks)",
+                "permalink": "/docs/learn/txpowunits"
+              },
+              "next": {
+                "title": "Quantum Security",
+                "permalink": "/docs/learn/quantumsecurity"
+              }
+            },
+            {
+              "unversionedId": "learn/tokenscolouredcoins",
+              "id": "learn/tokenscolouredcoins",
+              "title": "Tokens (Coloured Coins)",
+              "description": "Minima is the native coin for the Minima blockchain. Each UTxO is defined as a coin and therefore a coin can be worth any amount of Minima.",
+              "source": "@site/docs/learn/tokenscolouredcoins.md",
+              "sourceDirName": "learn",
+              "slug": "/learn/tokenscolouredcoins",
+              "permalink": "/docs/learn/tokenscolouredcoins",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/learn/tokenscolouredcoins.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 7,
+              "frontMatter": {
+                "sidebar_position": 7
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Quantum Security",
+                "permalink": "/docs/learn/quantumsecurity"
+              },
+              "next": {
+                "title": "Smart Contracts",
+                "permalink": "/docs/learn/smartcontracts"
+              }
+            },
+            {
+              "unversionedId": "learn/transactions",
+              "id": "learn/transactions",
+              "title": "Transactions",
+              "description": "Transaction Outputs & Inputs",
+              "source": "@site/docs/learn/transactions.md",
+              "sourceDirName": "learn",
+              "slug": "/learn/transactions",
+              "permalink": "/docs/learn/transactions",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/learn/transactions.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Core Concepts",
+                "permalink": "/docs/learn/coreconcepts"
+              },
+              "next": {
+                "title": "MMR Database",
+                "permalink": "/docs/learn/mmrdatabase"
+              }
+            },
+            {
+              "unversionedId": "learn/txpowunits",
+              "id": "learn/txpowunits",
+              "title": "TxPoW Units (Blocks)",
+              "description": "Before a transaction can be posted to the network, it must be added to a TxPoW unit with other essential data and ‘mined’.",
+              "source": "@site/docs/learn/txpowunits.md",
+              "sourceDirName": "learn",
+              "slug": "/learn/txpowunits",
+              "permalink": "/docs/learn/txpowunits",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/learn/txpowunits.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "MMR Database",
+                "permalink": "/docs/learn/mmrdatabase"
+              },
+              "next": {
+                "title": "The Blockchain",
+                "permalink": "/docs/learn/theblockchain"
+              }
+            },
+            {
+              "unversionedId": "minimaincentiveprogram",
+              "id": "minimaincentiveprogram",
+              "title": "Incentive Program",
+              "description": "What is the Minima Incentive Program?",
+              "source": "@site/docs/minimaincentiveprogram.md",
+              "sourceDirName": ".",
+              "slug": "/minimaincentiveprogram",
+              "permalink": "/docs/minimaincentiveprogram",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimaincentiveprogram.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Smart Contracts",
+                "permalink": "/docs/learn/smartcontracts"
+              },
+              "next": {
+                "title": "Application of these Terms",
+                "permalink": "/docs/incentiveprogramtermsandconditions/applicationoftheseterms"
+              }
+            },
+            {
+              "unversionedId": "minimainviteprogram",
+              "id": "minimainviteprogram",
+              "title": "Invite Program",
+              "description": "What is the Minima Invite Program?",
+              "source": "@site/docs/minimainviteprogram.md",
+              "sourceDirName": ".",
+              "slug": "/minimainviteprogram",
+              "permalink": "/docs/minimainviteprogram",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimainviteprogram.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "General",
+                "permalink": "/docs/incentiveprogramtermsandconditions/general"
+              },
+              "next": {
+                "title": "Get started in 3 steps",
+                "permalink": "/docs/runanode/get_started_in_3_steps"
+              }
+            },
+            {
+              "unversionedId": "minimaprivacypolicy",
+              "id": "minimaprivacypolicy",
+              "title": "Minima Privacy Policy",
+              "description": "Last updated: 2.7.21",
+              "source": "@site/docs/minimaprivacypolicy.md",
+              "sourceDirName": ".",
+              "slug": "/minimaprivacypolicy",
+              "permalink": "/docs/minimaprivacypolicy",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimaprivacypolicy.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 9,
+              "frontMatter": {
+                "sidebar_position": 9
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Token Distribution",
+                "permalink": "/docs/tokendistribution"
+              },
+              "next": {
+                "title": "Minima Terms and Conditions",
+                "permalink": "/docs/minimatermsandconditions"
+              }
+            },
+            {
+              "unversionedId": "minimatermsandconditions",
+              "id": "minimatermsandconditions",
+              "title": "Minima Terms and Conditions",
+              "description": "These terms and conditions (“Terms and Conditions”) outline the rules and regulations for the use of Minima GmbH’s website, located at https://minima.global/ (“Website”).",
+              "source": "@site/docs/minimatermsandconditions.md",
+              "sourceDirName": ".",
+              "slug": "/minimatermsandconditions",
+              "permalink": "/docs/minimatermsandconditions",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimatermsandconditions.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 10,
+              "frontMatter": {
+                "sidebar_position": 10
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Minima Privacy Policy",
+                "permalink": "/docs/minimaprivacypolicy"
+              },
+              "next": {
+                "title": "Paddy Cerri",
+                "permalink": "/docs/keypeople/paddycerri"
+              }
+            },
+            {
+              "unversionedId": "minimawhitepaper/ acascadingchain",
+              "id": "minimawhitepaper/ acascadingchain",
+              "title": "A Cascading Chain",
+              "description": "The power of hashing ensures that an unbroken chain of blocks cannot be altered in any way. The power of hashing also ensures that sometimes someone will find a very high difficulty PoW when looking for a much lower one. If you take this into account pre-PoW you can construct block headers that reference multiple block parents at different levels of difficulty. Instead of having 2 difficulty values for a user to mine in the Tx-PoW, the Transaction Difficulty set to 10 seconds of work on average, and the Block Difficulty set to 1 block every 10 seconds, let us add 1 more difficulty, the Super Block Difficulty set to twice the current block difficulty...",
+              "source": "@site/docs/minimawhitepaper/ acascadingchain.md",
+              "sourceDirName": "minimawhitepaper",
+              "slug": "/minimawhitepaper/ acascadingchain",
+              "permalink": "/docs/minimawhitepaper/ acascadingchain",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/ acascadingchain.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 9,
+              "frontMatter": {
+                "sidebar_position": 9
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Energy",
+                "permalink": "/docs/minimawhitepaper/energy"
+              },
+              "next": {
+                "title": "Storage-less MMR UTXO",
+                "permalink": "/docs/minimawhitepaper/storagelessmmrutxo"
+              }
+            },
+            {
+              "unversionedId": "minimawhitepaper/abstract",
+              "id": "minimawhitepaper/abstract",
+              "title": "Abstract",
+              "description": "The Evolution will not be Centralized",
+              "source": "@site/docs/minimawhitepaper/abstract.md",
+              "sourceDirName": "minimawhitepaper",
+              "slug": "/minimawhitepaper/abstract",
+              "permalink": "/docs/minimawhitepaper/abstract",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/abstract.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Jon MacDonald",
+                "permalink": "/docs/keypeople/jonmacdonald"
+              },
+              "next": {
+                "title": "Introduction",
+                "permalink": "/docs/minimawhitepaper/introduction"
+              }
+            },
+            {
+              "unversionedId": "minimawhitepaper/blocksize",
+              "id": "minimawhitepaper/blocksize",
+              "title": "Block Size",
+              "description": "Blocks in Minima are small. As small as a transaction. All transactions are potential blocks. Blocks are just lucky transactions. Blocks only contain references to transactions (Compact blocks in Bitcoin), that have already been sent across the network, rather than the entire transaction. Minima also uses an adaptive block size. The maximum size is set by the chain as twice the average block size of the last n blocks. This allows the users themselves to determine the block size. By filling their blocks higher than the average they will make the maximum size greater, by filling them lower, the maximum will be made lower. Users can drag the maximum block size up or down depending on whether they need it, or whether enough traffic is going Lightning[3] and beyond.",
+              "source": "@site/docs/minimawhitepaper/blocksize.md",
+              "sourceDirName": "minimawhitepaper",
+              "slug": "/minimawhitepaper/blocksize",
+              "permalink": "/docs/minimawhitepaper/blocksize",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/blocksize.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 13,
+              "frontMatter": {
+                "sidebar_position": 13
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Quantum Secure",
+                "permalink": "/docs/minimawhitepaper/quantumsecure"
+              },
+              "next": {
+                "title": "Block Speed",
+                "permalink": "/docs/minimawhitepaper/blockspeed"
+              }
+            },
+            {
+              "unversionedId": "minimawhitepaper/blockspeed",
+              "id": "minimawhitepaper/blockspeed",
+              "title": "Block Speed",
+              "description": "The security of a transaction is not improved by a faster block speed, since the amount of security is a function of the cumulative PoW of the parent blocks (hash-rates being equal 1 BTC block is worth 4 LTC blocks, since LTC runs 4x faster). A faster chain does increase the granularity of information[6] and allows a user to know sooner when their transaction is secure enough. The longer you wait, the more secure.",
+              "source": "@site/docs/minimawhitepaper/blockspeed.md",
+              "sourceDirName": "minimawhitepaper",
+              "slug": "/minimawhitepaper/blockspeed",
+              "permalink": "/docs/minimawhitepaper/blockspeed",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/blockspeed.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 14,
+              "frontMatter": {
+                "sidebar_position": 14
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Block Size",
+                "permalink": "/docs/minimawhitepaper/blocksize"
+              },
+              "next": {
+                "title": "Consensus, Forks and Immutable Protocols",
+                "permalink": "/docs/minimawhitepaper/consensusforksandimmutableprotocols"
+              }
+            },
+            {
+              "unversionedId": "minimawhitepaper/conclusion",
+              "id": "minimawhitepaper/conclusion",
+              "title": "Conclusion",
+              "description": "Minima is :",
+              "source": "@site/docs/minimawhitepaper/conclusion.md",
+              "sourceDirName": "minimawhitepaper",
+              "slug": "/minimawhitepaper/conclusion",
+              "permalink": "/docs/minimawhitepaper/conclusion",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/conclusion.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 16,
+              "frontMatter": {
+                "sidebar_position": 16
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Consensus, Forks and Immutable Protocols",
+                "permalink": "/docs/minimawhitepaper/consensusforksandimmutableprotocols"
+              },
+              "next": {
+                "title": "Special thanks to",
+                "permalink": "/docs/minimawhitepaper/specialthanksto"
+              }
+            },
+            {
+              "unversionedId": "minimawhitepaper/consensusforksandimmutableprotocols",
+              "id": "minimawhitepaper/consensusforksandimmutableprotocols",
+              "title": "Consensus, Forks and Immutable Protocols",
+              "description": "In decentralized blockchain systems all full users need to agree on the rules. If there is no agreement on the rules there can be no consensus on the ordering and eventual outcome of actions. Current blockchain systems have 2 types of consensus changes available. This is because there are 2 types of ‘full’ user. The first helps in the construction and validation of the chain - Complete nodes (the miners). The second only helps in the validation of the chain - Full nodes (the validators). We ignore Wallet users, by far the largest group on these chains (unlike Minima), who neither validate nor construct, and are simply swept along, whether they agree or not.",
+              "source": "@site/docs/minimawhitepaper/consensusforksandimmutableprotocols.md",
+              "sourceDirName": "minimawhitepaper",
+              "slug": "/minimawhitepaper/consensusforksandimmutableprotocols",
+              "permalink": "/docs/minimawhitepaper/consensusforksandimmutableprotocols",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/consensusforksandimmutableprotocols.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 15,
+              "frontMatter": {
+                "sidebar_position": 15
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Block Speed",
+                "permalink": "/docs/minimawhitepaper/blockspeed"
+              },
+              "next": {
+                "title": "Conclusion",
+                "permalink": "/docs/minimawhitepaper/conclusion"
+              }
+            },
+            {
+              "unversionedId": "minimawhitepaper/energy",
+              "id": "minimawhitepaper/energy",
+              "title": "Energy",
+              "description": "PoW blockchains are often criticised for using a lot of energy. Energy usage is a requirement for Nakamoto Consensus to work. It is precisely this that makes PoW chains objectively identifiable, verifiable and valuable.",
+              "source": "@site/docs/minimawhitepaper/energy.md",
+              "sourceDirName": "minimawhitepaper",
+              "slug": "/minimawhitepaper/energy",
+              "permalink": "/docs/minimawhitepaper/energy",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/energy.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 8,
+              "frontMatter": {
+                "sidebar_position": 8
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "HashCash and Burn",
+                "permalink": "/docs/minimawhitepaper/hashcashandburn"
+              },
+              "next": {
+                "title": "A Cascading Chain",
+                "permalink": "/docs/minimawhitepaper/ acascadingchain"
+              }
+            },
+            {
+              "unversionedId": "minimawhitepaper/hashcashandburn",
+              "id": "minimawhitepaper/hashcashandburn",
+              "title": "HashCash and Burn",
+              "description": "Adam Backs’ HashCash[9] was the first weaponized version of PoW. A Denial-of-Service (DoS) counter-measure first deployed to prevent email spam. Sending millions of emails ‘costs’ nothing – hardware, processing, bandwidth, etc. A lone computer sitting on the internet can send millions of emails in almost no time, constantly. HashCash enforced that a PoW payment was included whenever an email was sent. To a single user sending emails every few minutes, this was utterly negligible, a background process that hummed for a few seconds after you press the ‘Send’ button. But to the spam-machine sitting on the internet trying to send millions of emails, this would require millions of seconds of work, an impossible task.",
+              "source": "@site/docs/minimawhitepaper/hashcashandburn.md",
+              "sourceDirName": "minimawhitepaper",
+              "slug": "/minimawhitepaper/hashcashandburn",
+              "permalink": "/docs/minimawhitepaper/hashcashandburn",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/hashcashandburn.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 7,
+              "frontMatter": {
+                "sidebar_position": 7
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "PoW vs Distributed PoW",
+                "permalink": "/docs/minimawhitepaper/powvsdistributedpow"
+              },
+              "next": {
+                "title": "Energy",
+                "permalink": "/docs/minimawhitepaper/energy"
+              }
+            },
+            {
+              "unversionedId": "minimawhitepaper/introduction",
+              "id": "minimawhitepaper/introduction",
+              "title": "Introduction",
+              "description": "In 2008 Satoshi Nakamoto unleashed Bitcoin[1] and it changed the world. A revolutionary digital monetary system explicitly intended to be liberated from any overarching authority; a secure decentralized network where no one needed to trust a third party; the natural evolution of an antiquated monetary system so evidently fallible and easily abused.",
+              "source": "@site/docs/minimawhitepaper/introduction.md",
+              "sourceDirName": "minimawhitepaper",
+              "slug": "/minimawhitepaper/introduction",
+              "permalink": "/docs/minimawhitepaper/introduction",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/introduction.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Abstract",
+                "permalink": "/docs/minimawhitepaper/abstract"
+              },
+              "next": {
+                "title": "Tx-PoW",
+                "permalink": "/docs/minimawhitepaper/txpow"
+              }
+            },
+            {
+              "unversionedId": "minimawhitepaper/maxima",
+              "id": "minimawhitepaper/maxima",
+              "title": "Maxima",
+              "description": "- Layer 1 does not scale.",
+              "source": "@site/docs/minimawhitepaper/maxima.md",
+              "sourceDirName": "minimawhitepaper",
+              "slug": "/minimawhitepaper/maxima",
+              "permalink": "/docs/minimawhitepaper/maxima",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/maxima.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Tx-PoW",
+                "permalink": "/docs/minimawhitepaper/txpow"
+              },
+              "next": {
+                "title": "The Pulse Network",
+                "permalink": "/docs/minimawhitepaper/thepulsenetwork"
+              }
+            },
+            {
+              "unversionedId": "minimawhitepaper/powvsdistributedpow",
+              "id": "minimawhitepaper/powvsdistributedpow",
+              "title": "PoW vs Distributed PoW",
+              "description": "Hash-rate does not equal security.",
+              "source": "@site/docs/minimawhitepaper/powvsdistributedpow.md",
+              "sourceDirName": "minimawhitepaper",
+              "slug": "/minimawhitepaper/powvsdistributedpow",
+              "permalink": "/docs/minimawhitepaper/powvsdistributedpow",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/powvsdistributedpow.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "sidebar_position": 6
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "The Pulse Network",
+                "permalink": "/docs/minimawhitepaper/thepulsenetwork"
+              },
+              "next": {
+                "title": "HashCash and Burn",
+                "permalink": "/docs/minimawhitepaper/hashcashandburn"
+              }
+            },
+            {
+              "unversionedId": "minimawhitepaper/quantumsecure",
+              "id": "minimawhitepaper/quantumsecure",
+              "title": "Quantum Secure",
+              "description": "Quantum security is not an issue right now. But it will be in the future. If you want to remove the need for protocol developers because the protocol is advanced enough to take care of itself, and should not require any Hard Forks ever (there are no Soft Forks on Minima as all users are also miners), you need to use Quantum Secure algorithms.",
+              "source": "@site/docs/minimawhitepaper/quantumsecure.md",
+              "sourceDirName": "minimawhitepaper",
+              "slug": "/minimawhitepaper/quantumsecure",
+              "permalink": "/docs/minimawhitepaper/quantumsecure",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/quantumsecure.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 12,
+              "frontMatter": {
+                "sidebar_position": 12
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Smart Contracts, Tokens and Transactions",
+                "permalink": "/docs/minimawhitepaper/smartcontractstokensandtransactions"
+              },
+              "next": {
+                "title": "Block Size",
+                "permalink": "/docs/minimawhitepaper/blocksize"
+              }
+            },
+            {
+              "unversionedId": "minimawhitepaper/smartcontractstokensandtransactions",
+              "id": "minimawhitepaper/smartcontractstokensandtransactions",
+              "title": "Smart Contracts, Tokens and Transactions",
+              "description": "Minima operates a validatory network, like Bitcoin, rather than a computational network, like Ethereum[18]. Computational networks require far greater resources to operate than validatory networks. In fact, the computational resources required far exceed those available to the majority of network participants, hence these networks centralize around larger more powerful nodes. Minima must allow everyone to run a Complete node.",
+              "source": "@site/docs/minimawhitepaper/smartcontractstokensandtransactions.md",
+              "sourceDirName": "minimawhitepaper",
+              "slug": "/minimawhitepaper/smartcontractstokensandtransactions",
+              "permalink": "/docs/minimawhitepaper/smartcontractstokensandtransactions",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/smartcontractstokensandtransactions.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 11,
+              "frontMatter": {
+                "sidebar_position": 11
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Storage-less MMR UTXO",
+                "permalink": "/docs/minimawhitepaper/storagelessmmrutxo"
+              },
+              "next": {
+                "title": "Quantum Secure",
+                "permalink": "/docs/minimawhitepaper/quantumsecure"
+              }
+            },
+            {
+              "unversionedId": "minimawhitepaper/specialthanksto",
+              "id": "minimawhitepaper/specialthanksto",
+              "title": "Special thanks to",
+              "description": "The Indomitable Satoshi Nakamoto.",
+              "source": "@site/docs/minimawhitepaper/specialthanksto.md",
+              "sourceDirName": "minimawhitepaper",
+              "slug": "/minimawhitepaper/specialthanksto",
+              "permalink": "/docs/minimawhitepaper/specialthanksto",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/specialthanksto.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 16,
+              "frontMatter": {
+                "sidebar_position": 16
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Conclusion",
+                "permalink": "/docs/minimawhitepaper/conclusion"
+              }
+            },
+            {
+              "unversionedId": "minimawhitepaper/storagelessmmrutxo",
+              "id": "minimawhitepaper/storagelessmmrutxo",
+              "title": "Storage-less MMR UTXO",
+              "description": "In the old world, every user kept track of every account in a big book (or database). Every user had a copy of this book. Whenever a user wanted to send a transaction, every user checked the transaction was valid, by checking the inputs were valid in the big book and updating the books’ pages as necessary. The more transactions, the bigger the book.",
+              "source": "@site/docs/minimawhitepaper/storagelessmmrutxo.md",
+              "sourceDirName": "minimawhitepaper",
+              "slug": "/minimawhitepaper/storagelessmmrutxo",
+              "permalink": "/docs/minimawhitepaper/storagelessmmrutxo",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/storagelessmmrutxo.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 10,
+              "frontMatter": {
+                "sidebar_position": 10
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "A Cascading Chain",
+                "permalink": "/docs/minimawhitepaper/ acascadingchain"
+              },
+              "next": {
+                "title": "Smart Contracts, Tokens and Transactions",
+                "permalink": "/docs/minimawhitepaper/smartcontractstokensandtransactions"
+              }
+            },
+            {
+              "unversionedId": "minimawhitepaper/thepulsenetwork",
+              "id": "minimawhitepaper/thepulsenetwork",
+              "title": "The Pulse Network",
+              "description": "Both Minima and Maxima require users to perform a small amount of PoW when sending messages. The more messages, the more PoW. The more PoW, the more secure the network. But what if a user is not sending any messages? Can that user also help to secure the network? What if sending a message is time-critical, and there must be no delay before sending it – say a high-frequency trader? Maxima addresses both these concerns by repurposing existing technology, allowing users to do the work beforehand, and then present that work as proof when sending messages.",
+              "source": "@site/docs/minimawhitepaper/thepulsenetwork.md",
+              "sourceDirName": "minimawhitepaper",
+              "slug": "/minimawhitepaper/thepulsenetwork",
+              "permalink": "/docs/minimawhitepaper/thepulsenetwork",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/thepulsenetwork.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Maxima",
+                "permalink": "/docs/minimawhitepaper/maxima"
+              },
+              "next": {
+                "title": "PoW vs Distributed PoW",
+                "permalink": "/docs/minimawhitepaper/powvsdistributedpow"
+              }
+            },
+            {
+              "unversionedId": "minimawhitepaper/txpow",
+              "id": "minimawhitepaper/txpow",
+              "title": "Tx-PoW",
+              "description": "Removing the miners requires the users themselves to secure the chain. User-based PoW security has been tried before. The DAG[3] style IOTA[8] allows users to perform a small amount of PoW work before they can send their transaction. Unlike Minima, IOTA does not use a blockchain, instead, opting for a transaction DAG or Tangle. Whether the Tangle can converge in a decentralized fashion is still a topic of debate and recently IOTA switched to a new system, in an attempt to rectify their current solution, a centralized checkpoint server.",
+              "source": "@site/docs/minimawhitepaper/txpow.md",
+              "sourceDirName": "minimawhitepaper",
+              "slug": "/minimawhitepaper/txpow",
+              "permalink": "/docs/minimawhitepaper/txpow",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/txpow.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/minimawhitepaper/introduction"
+              },
+              "next": {
+                "title": "Maxima",
+                "permalink": "/docs/minimawhitepaper/maxima"
+              }
+            },
+            {
+              "unversionedId": "runanode/android_v9_and_up",
+              "id": "runanode/android_v9_and_up",
+              "title": "Android v9 and up",
+              "description": "Videos",
+              "source": "@site/docs/runanode/android_v9_and_up.md",
+              "sourceDirName": "runanode",
+              "slug": "/runanode/android_v9_and_up",
+              "permalink": "/docs/runanode/android_v9_and_up",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/runanode/android_v9_and_up.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Get started in 3 steps",
+                "permalink": "/docs/runanode/get_started_in_3_steps"
+              },
+              "next": {
+                "title": "Windows",
+                "permalink": "/docs/runanode/windows"
+              }
+            },
+            {
+              "unversionedId": "runanode/get_started_in_3_steps",
+              "id": "runanode/get_started_in_3_steps",
+              "title": "Get started in 3 steps",
+              "description": "Running a Minima node couldn't be easier, and if you choose to join our Incentive Program, you will earn 1 Reward each day your node is live!",
+              "source": "@site/docs/runanode/get_started_in_3_steps.md",
+              "sourceDirName": "runanode",
+              "slug": "/runanode/get_started_in_3_steps",
+              "permalink": "/docs/runanode/get_started_in_3_steps",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/runanode/get_started_in_3_steps.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Invite Program",
+                "permalink": "/docs/minimainviteprogram"
+              },
+              "next": {
+                "title": "Android v9 and up",
+                "permalink": "/docs/runanode/android_v9_and_up"
+              }
+            },
+            {
+              "unversionedId": "runanode/linux_desktop",
+              "id": "runanode/linux_desktop",
+              "title": "Linux Desktop",
+              "description": "How to download and Install Minima on your Linux Desktop",
+              "source": "@site/docs/runanode/linux_desktop.md",
+              "sourceDirName": "runanode",
+              "slug": "/runanode/linux_desktop",
+              "permalink": "/docs/runanode/linux_desktop",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/runanode/linux_desktop.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Mac",
+                "permalink": "/docs/runanode/mac"
+              },
+              "next": {
+                "title": "Linux VPS",
+                "permalink": "/docs/runanode/linux_vps"
+              }
+            },
+            {
+              "unversionedId": "runanode/linux_vps",
+              "id": "runanode/linux_vps",
+              "title": "Linux VPS",
+              "description": "How to download and Install Minima on your Linux Server/Desktop (Debian OS including Ubuntu)",
+              "source": "@site/docs/runanode/linux_vps.md",
+              "sourceDirName": "runanode",
+              "slug": "/runanode/linux_vps",
+              "permalink": "/docs/runanode/linux_vps",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/runanode/linux_vps.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "sidebar_position": 6
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Linux Desktop",
+                "permalink": "/docs/runanode/linux_desktop"
+              },
+              "next": {
+                "title": "Ambassador Program",
+                "permalink": "/docs/ambassador"
+              }
+            },
+            {
+              "unversionedId": "runanode/mac",
+              "id": "runanode/mac",
+              "title": "Mac",
+              "description": "How to download and Install Minima on your Mac",
+              "source": "@site/docs/runanode/mac.md",
+              "sourceDirName": "runanode",
+              "slug": "/runanode/mac",
+              "permalink": "/docs/runanode/mac",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/runanode/mac.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Windows",
+                "permalink": "/docs/runanode/windows"
+              },
+              "next": {
+                "title": "Linux Desktop",
+                "permalink": "/docs/runanode/linux_desktop"
+              }
+            },
+            {
+              "unversionedId": "runanode/windows",
+              "id": "runanode/windows",
+              "title": "Windows",
+              "description": "How to download and Install Minima on your Windows PC",
+              "source": "@site/docs/runanode/windows.md",
+              "sourceDirName": "runanode",
+              "slug": "/runanode/windows",
+              "permalink": "/docs/runanode/windows",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/runanode/windows.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Android v9 and up",
+                "permalink": "/docs/runanode/android_v9_and_up"
+              },
+              "next": {
+                "title": "Mac",
+                "permalink": "/docs/runanode/mac"
+              }
+            },
+            {
+              "unversionedId": "tokendistribution",
+              "id": "tokendistribution",
+              "title": "Token Distribution",
+              "description": "The total supply of Minima tokens is fixed and pre-allocated. As there are no dedicated miners, there is no method for distributing coins after Mainnet launch.",
+              "source": "@site/docs/tokendistribution.md",
+              "sourceDirName": ".",
+              "slug": "/tokendistribution",
+              "permalink": "/docs/tokendistribution",
+              "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/tokendistribution.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 8,
+              "frontMatter": {
+                "sidebar_position": 8
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Ambassador Program",
+                "permalink": "/docs/ambassador"
+              },
+              "next": {
+                "title": "Minima Privacy Policy",
+                "permalink": "/docs/minimaprivacypolicy"
               }
             }
           ],
@@ -222,39 +1705,315 @@
             "tutorialSidebar": [
               {
                 "type": "category",
-                "label": "Tutorial",
+                "label": "About",
+                "collapsible": true,
+                "collapsed": true,
                 "items": [
                   {
                     "type": "doc",
-                    "id": "hello"
+                    "id": "about/vision"
                   },
                   {
                     "type": "doc",
-                    "id": "test"
+                    "id": "about/whatisminima"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "about/whyminima"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "about/whyuseminima"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "about/terminology"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "about/history"
                   }
-                ],
-                "collapsed": true,
-                "collapsible": true
+                ]
               },
               {
                 "type": "category",
-                "label": "Minidapps",
+                "label": "Learn",
+                "collapsible": true,
+                "collapsed": true,
                 "items": [
                   {
                     "type": "doc",
-                    "id": "hello"
+                    "id": "learn/networkoverview"
                   },
                   {
                     "type": "doc",
-                    "id": "test"
+                    "id": "learn/coreconcepts"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "learn/transactions"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "learn/mmrdatabase"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "learn/txpowunits"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "learn/theblockchain"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "learn/quantumsecurity"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "learn/tokenscolouredcoins"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "learn/smartcontracts"
                   }
-                ],
+                ]
+              },
+              {
+                "type": "doc",
+                "id": "minimaincentiveprogram"
+              },
+              {
+                "type": "category",
+                "label": "Incentive Program T&Cs",
+                "collapsible": true,
                 "collapsed": true,
-                "collapsible": true
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "incentiveprogramtermsandconditions/applicationoftheseterms"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "incentiveprogramtermsandconditions/whoarewe"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "incentiveprogramtermsandconditions/youreligibility"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "incentiveprogramtermsandconditions/incentiveprogram"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "incentiveprogramtermsandconditions/conditionstoparticipateintheincentiveprogram"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "incentiveprogramtermsandconditions/prohibitedpurpose"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "incentiveprogramtermsandconditions/acceptanceoftherisk"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "incentiveprogramtermsandconditions/termination"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "incentiveprogramtermsandconditions/taxes"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "incentiveprogramtermsandconditions/intellectualpropertyrights"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "incentiveprogramtermsandconditions/changestotheseterms"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "incentiveprogramtermsandconditions/thirdpartysites"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "incentiveprogramtermsandconditions/indemnity"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "incentiveprogramtermsandconditions/liability"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "incentiveprogramtermsandconditions/compensation"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "incentiveprogramtermsandconditions/privacy"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "incentiveprogramtermsandconditions/feedbackandcontactdetails"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "incentiveprogramtermsandconditions/general"
+                  }
+                ]
+              },
+              {
+                "type": "doc",
+                "id": "minimainviteprogram"
+              },
+              {
+                "type": "category",
+                "label": "Run a Node",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "runanode/get_started_in_3_steps"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "runanode/android_v9_and_up"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "runanode/windows"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "runanode/mac"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "runanode/linux_desktop"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "runanode/linux_vps"
+                  }
+                ]
+              },
+              {
+                "type": "doc",
+                "id": "ambassador"
+              },
+              {
+                "type": "doc",
+                "id": "tokendistribution"
+              },
+              {
+                "type": "doc",
+                "id": "minimaprivacypolicy"
+              },
+              {
+                "type": "doc",
+                "id": "minimatermsandconditions"
+              },
+              {
+                "type": "category",
+                "label": "Key people",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "keypeople/paddycerri"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "keypeople/hugofeiler"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "keypeople/jonmacdonald"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "Minima Whitepaper",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "minimawhitepaper/abstract"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "minimawhitepaper/introduction"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "minimawhitepaper/txpow"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "minimawhitepaper/maxima"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "minimawhitepaper/thepulsenetwork"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "minimawhitepaper/powvsdistributedpow"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "minimawhitepaper/hashcashandburn"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "minimawhitepaper/energy"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "minimawhitepaper/ acascadingchain"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "minimawhitepaper/storagelessmmrutxo"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "minimawhitepaper/smartcontractstokensandtransactions"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "minimawhitepaper/quantumsecure"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "minimawhitepaper/blocksize"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "minimawhitepaper/blockspeed"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "minimawhitepaper/consensusforksandimmutableprotocols"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "minimawhitepaper/conclusion"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "minimawhitepaper/specialthanksto"
+                  }
+                ]
               }
             ]
           },
-          "mainDocId": "hello",
+          "mainDocId": "about/vision",
           "categoryGeneratedIndices": []
         }
       ]
@@ -268,7 +2027,7 @@
           "id": "welcome",
           "metadata": {
             "permalink": "/blog/welcome",
-            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2021-08-26-welcome/index.md",
+            "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/blog/2021-08-26-welcome/index.md",
             "source": "@site/blog/2021-08-26-welcome/index.md",
             "title": "Welcome",
             "description": "Docusaurus blogging features are powered by the blog plugin.",
@@ -330,7 +2089,7 @@
           "id": "mdx-blog-post",
           "metadata": {
             "permalink": "/blog/mdx-blog-post",
-            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2021-08-01-mdx-blog-post.mdx",
+            "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/blog/2021-08-01-mdx-blog-post.mdx",
             "source": "@site/blog/2021-08-01-mdx-blog-post.mdx",
             "title": "MDX Blog Post",
             "description": "Blog posts support Docusaurus Markdown features, such as MDX.",
@@ -378,7 +2137,7 @@
           "id": "long-blog-post",
           "metadata": {
             "permalink": "/blog/long-blog-post",
-            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2019-05-29-long-blog-post.md",
+            "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/blog/2019-05-29-long-blog-post.md",
             "source": "@site/blog/2019-05-29-long-blog-post.md",
             "title": "Long Blog Post",
             "description": "This is the summary of a very long blog post,",
@@ -429,7 +2188,7 @@
           "id": "first-blog-post",
           "metadata": {
             "permalink": "/blog/first-blog-post",
-            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2019-05-28-first-blog-post.md",
+            "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/blog/2019-05-28-first-blog-post.md",
             "source": "@site/blog/2019-05-28-first-blog-post.md",
             "title": "First Blog Post",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
@@ -618,7 +2377,7 @@
       {
         "type": "jsx",
         "permalink": "/",
-        "source": "@site/src/pages/index.tsx"
+        "source": "@site/src/pages/index.js"
       },
       {
         "type": "mdx",
@@ -629,18 +2388,6 @@
         "frontMatter": {
           "title": "Markdown page example"
         }
-      },
-      {
-        "type": "mdx",
-        "permalink": "/my-markdown-page",
-        "source": "@site/src/pages/my-markdown-page.md",
-        "title": "My Markdown page",
-        "frontMatter": {}
-      },
-      {
-        "type": "jsx",
-        "permalink": "/newPage",
-        "source": "@site/src/pages/newPage.tsx"
       }
     ]
   },
@@ -648,6 +2395,9 @@
     "default": null
   },
   "docusaurus-theme-classic": {
+    "default": null
+  },
+  "@cmfcmf/docusaurus-search-local": {
     "default": null
   }
 }

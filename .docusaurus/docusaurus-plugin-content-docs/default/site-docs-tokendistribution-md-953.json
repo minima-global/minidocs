@@ -1,0 +1,26 @@
+{
+  "unversionedId": "tokendistribution",
+  "id": "tokendistribution",
+  "title": "Token Distribution",
+  "description": "The total supply of Minima tokens is fixed and pre-allocated. As there are no dedicated miners, there is no method for distributing coins after Mainnet launch.",
+  "source": "@site/docs/tokendistribution.md",
+  "sourceDirName": ".",
+  "slug": "/tokendistribution",
+  "permalink": "/docs/tokendistribution",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/tokendistribution.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Ambassador Program",
+    "permalink": "/docs/ambassador"
+  },
+  "next": {
+    "title": "Minima Privacy Policy",
+    "permalink": "/docs/minimaprivacypolicy"
+  }
+}

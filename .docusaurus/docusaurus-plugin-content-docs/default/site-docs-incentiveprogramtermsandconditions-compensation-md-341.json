@@ -1,0 +1,26 @@
+{
+  "unversionedId": "incentiveprogramtermsandconditions/compensation",
+  "id": "incentiveprogramtermsandconditions/compensation",
+  "title": "Compensation",
+  "description": "You will compensate us in full for any losses or costs, including reasonable legal fees, we incur arising out of your breach of these Terms, your unauthorised participation in the Incentive Program or your breach of any law or the rights of a third party.",
+  "source": "@site/docs/incentiveprogramtermsandconditions/compensation.md",
+  "sourceDirName": "incentiveprogramtermsandconditions",
+  "slug": "/incentiveprogramtermsandconditions/compensation",
+  "permalink": "/docs/incentiveprogramtermsandconditions/compensation",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/compensation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "sidebar_position": 15
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Liability",
+    "permalink": "/docs/incentiveprogramtermsandconditions/liability"
+  },
+  "next": {
+    "title": "Privacy",
+    "permalink": "/docs/incentiveprogramtermsandconditions/privacy"
+  }
+}

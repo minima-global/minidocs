@@ -4,26 +4,29 @@ Your edits in this file will be overwritten in the next build!
 Modify the docusaurus.config.js file at your site's root instead.
 */
 export default {
-  "title": "Minima",
-  "tagline": "Documentation",
-  "url": "https://your-docusaurus-test-site.com",
+  "title": "Minima Documentation",
+  "tagline": "Dinosaurs are cool",
+  "url": "https://arnimedia.github.io",
   "baseUrl": "/",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "favicon": "img/favicon.ico",
-  "organizationName": "facebook",
-  "projectName": "minidocs",
+  "organizationName": "arnimedia",
+  "projectName": "arnimedia.github.io",
+  "plugins": [
+    "/Users/eliasnemr/projects/documentation/minidocs/node_modules/@cmfcmf/docusaurus-search-local/lib/server/index.js"
+  ],
   "presets": [
     [
       "classic",
       {
         "docs": {
           "sidebarPath": "/Users/eliasnemr/projects/documentation/minidocs/sidebars.js",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git"
         },
         "blog": {
           "showReadingTime": true,
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git"
         },
         "theme": {
           "customCss": "/Users/eliasnemr/projects/documentation/minidocs/src/css/custom.css"
@@ -35,20 +38,34 @@ export default {
     "navbar": {
       "title": "Minima Documentation",
       "logo": {
-        "alt": "Minidocs Logo",
-        "src": "img/icons.svg"
+        "alt": "Minima",
+        "src": "img/logo.svg"
       },
       "items": [
         {
-          "type": "doc",
-          "docId": "intro",
-          "position": "left",
-          "label": "Tutorial"
+          "to": "docs/about/vision",
+          "label": "Vision",
+          "position": "left"
         },
         {
-          "to": "/blog",
-          "label": "Blog",
+          "to": "docs/learn/networkoverview",
+          "label": "Learn",
           "position": "left"
+        },
+        {
+          "to": "docs/runanode/get_started_in_3_steps",
+          "label": "Run a node",
+          "position": "left"
+        },
+        {
+          "to": "docs/minimaincentiveprogram",
+          "label": "Incentive Program",
+          "position": "left"
+        },
+        {
+          "href": "https://minima.global/get-involved#community",
+          "label": "Community",
+          "position": "right"
         },
         {
           "href": "https://github.com/minima-global",
@@ -65,8 +82,8 @@ export default {
           "title": "Docs",
           "items": [
             {
-              "label": "Tutorial",
-              "to": "/docs/intro"
+              "label": "Introduction",
+              "to": "docs/about/vision"
             }
           ]
         },
@@ -74,12 +91,12 @@ export default {
           "title": "Community",
           "items": [
             {
-              "label": "Website",
-              "href": "https://minima.global/"
+              "label": "Discord",
+              "href": "https://discord.gg/minima"
             },
             {
-              "label": "Discord",
-              "href": "https://discord.gg/ZmJdmshmTF"
+              "label": "Telegram",
+              "href": "https://t.me/Minima_Global"
             },
             {
               "label": "Twitter",
@@ -88,20 +105,16 @@ export default {
           ]
         },
         {
-          "title": "More",
+          "title": "Devs",
           "items": [
             {
-              "label": "Blog",
-              "to": "/blog"
-            },
-            {
               "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
+              "href": "https://github.com/minima-global"
             }
           ]
         }
       ],
-      "copyright": "Copyright © 2022 My Project, Inc. Built with Docusaurus."
+      "copyright": "All rights reserved Minima Ltd © 2022"
     },
     "prism": {
       "theme": {
@@ -326,7 +339,6 @@ export default {
     "static"
   ],
   "customFields": {},
-  "plugins": [],
   "themes": [],
   "titleDelimiter": "|",
   "noIndex": false

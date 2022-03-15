@@ -1,0 +1,26 @@
+{
+  "unversionedId": "keypeople/jonmacdonald",
+  "id": "keypeople/jonmacdonald",
+  "title": "Jon MacDonald",
+  "description": "Chief Marketing Officer",
+  "source": "@site/docs/keypeople/jonmacdonald.md",
+  "sourceDirName": "keypeople",
+  "slug": "/keypeople/jonmacdonald",
+  "permalink": "/docs/keypeople/jonmacdonald",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/keypeople/jonmacdonald.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Hugo Feiler",
+    "permalink": "/docs/keypeople/hugofeiler"
+  },
+  "next": {
+    "title": "Abstract",
+    "permalink": "/docs/minimawhitepaper/abstract"
+  }
+}

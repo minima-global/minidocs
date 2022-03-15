@@ -1,0 +1,26 @@
+{
+  "unversionedId": "minimawhitepaper/storagelessmmrutxo",
+  "id": "minimawhitepaper/storagelessmmrutxo",
+  "title": "Storage-less MMR UTXO",
+  "description": "In the old world, every user kept track of every account in a big book (or database). Every user had a copy of this book. Whenever a user wanted to send a transaction, every user checked the transaction was valid, by checking the inputs were valid in the big book and updating the books’ pages as necessary. The more transactions, the bigger the book.",
+  "source": "@site/docs/minimawhitepaper/storagelessmmrutxo.md",
+  "sourceDirName": "minimawhitepaper",
+  "slug": "/minimawhitepaper/storagelessmmrutxo",
+  "permalink": "/docs/minimawhitepaper/storagelessmmrutxo",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/storagelessmmrutxo.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "A Cascading Chain",
+    "permalink": "/docs/minimawhitepaper/ acascadingchain"
+  },
+  "next": {
+    "title": "Smart Contracts, Tokens and Transactions",
+    "permalink": "/docs/minimawhitepaper/smartcontractstokensandtransactions"
+  }
+}

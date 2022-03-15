@@ -1,0 +1,26 @@
+{
+  "unversionedId": "minimawhitepaper/smartcontractstokensandtransactions",
+  "id": "minimawhitepaper/smartcontractstokensandtransactions",
+  "title": "Smart Contracts, Tokens and Transactions",
+  "description": "Minima operates a validatory network, like Bitcoin, rather than a computational network, like Ethereum[18]. Computational networks require far greater resources to operate than validatory networks. In fact, the computational resources required far exceed those available to the majority of network participants, hence these networks centralize around larger more powerful nodes. Minima must allow everyone to run a Complete node.",
+  "source": "@site/docs/minimawhitepaper/smartcontractstokensandtransactions.md",
+  "sourceDirName": "minimawhitepaper",
+  "slug": "/minimawhitepaper/smartcontractstokensandtransactions",
+  "permalink": "/docs/minimawhitepaper/smartcontractstokensandtransactions",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/smartcontractstokensandtransactions.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "sidebar_position": 11
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Storage-less MMR UTXO",
+    "permalink": "/docs/minimawhitepaper/storagelessmmrutxo"
+  },
+  "next": {
+    "title": "Quantum Secure",
+    "permalink": "/docs/minimawhitepaper/quantumsecure"
+  }
+}

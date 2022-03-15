@@ -1,0 +1,26 @@
+{
+  "unversionedId": "runanode/get_started_in_3_steps",
+  "id": "runanode/get_started_in_3_steps",
+  "title": "Get started in 3 steps",
+  "description": "Running a Minima node couldn't be easier, and if you choose to join our Incentive Program, you will earn 1 Reward each day your node is live!",
+  "source": "@site/docs/runanode/get_started_in_3_steps.md",
+  "sourceDirName": "runanode",
+  "slug": "/runanode/get_started_in_3_steps",
+  "permalink": "/docs/runanode/get_started_in_3_steps",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/runanode/get_started_in_3_steps.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Invite Program",
+    "permalink": "/docs/minimainviteprogram"
+  },
+  "next": {
+    "title": "Android v9 and up",
+    "permalink": "/docs/runanode/android_v9_and_up"
+  }
+}

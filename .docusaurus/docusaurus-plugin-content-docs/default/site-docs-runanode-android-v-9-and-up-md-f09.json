@@ -1,0 +1,26 @@
+{
+  "unversionedId": "runanode/android_v9_and_up",
+  "id": "runanode/android_v9_and_up",
+  "title": "Android v9 and up",
+  "description": "Videos",
+  "source": "@site/docs/runanode/android_v9_and_up.md",
+  "sourceDirName": "runanode",
+  "slug": "/runanode/android_v9_and_up",
+  "permalink": "/docs/runanode/android_v9_and_up",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/runanode/android_v9_and_up.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get started in 3 steps",
+    "permalink": "/docs/runanode/get_started_in_3_steps"
+  },
+  "next": {
+    "title": "Windows",
+    "permalink": "/docs/runanode/windows"
+  }
+}

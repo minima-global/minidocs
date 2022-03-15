@@ -1,0 +1,26 @@
+{
+  "unversionedId": "learn/quantumsecurity",
+  "id": "learn/quantumsecurity",
+  "title": "Quantum Security",
+  "description": "If Minima is truly expected to stand the test of time, it must be Quantum secure from the beginning. Once scaled to millions of nodes, each being complete - constructing and validating - nodes, the consensus critical components of the protocol must be finished, requiring no future changes.",
+  "source": "@site/docs/learn/quantumsecurity.md",
+  "sourceDirName": "learn",
+  "slug": "/learn/quantumsecurity",
+  "permalink": "/docs/learn/quantumsecurity",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/learn/quantumsecurity.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "The Blockchain",
+    "permalink": "/docs/learn/theblockchain"
+  },
+  "next": {
+    "title": "Tokens (Coloured Coins)",
+    "permalink": "/docs/learn/tokenscolouredcoins"
+  }
+}

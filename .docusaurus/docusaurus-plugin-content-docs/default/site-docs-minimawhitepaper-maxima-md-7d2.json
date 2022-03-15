@@ -1,0 +1,26 @@
+{
+  "unversionedId": "minimawhitepaper/maxima",
+  "id": "minimawhitepaper/maxima",
+  "title": "Maxima",
+  "description": "- Layer 1 does not scale.",
+  "source": "@site/docs/minimawhitepaper/maxima.md",
+  "sourceDirName": "minimawhitepaper",
+  "slug": "/minimawhitepaper/maxima",
+  "permalink": "/docs/minimawhitepaper/maxima",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/maxima.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tx-PoW",
+    "permalink": "/docs/minimawhitepaper/txpow"
+  },
+  "next": {
+    "title": "The Pulse Network",
+    "permalink": "/docs/minimawhitepaper/thepulsenetwork"
+  }
+}

@@ -4,27 +4,130 @@
  * work well for content-centric websites.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #317aff;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #5A94FF;
   --ifm-code-font-size: 95%;
+  --ifm-navbar-background-color: #F9F9FA;
+  --ifm-heading-color: #16181C;
+
+/* Typography. */
+  --ifm-heading-font-family: 'Manrope', sans-serif;
+  --ifm-font-family-base: 'Manrope', sans-serif;
+  --ifm-heading-font-weight: 800;
+
+/* Header intro background */
+  --ifm-hero-background-min-color: #FFFFFF;
+  --ifm-hero-text-color: #16181C;
+
+/* Footer */
+  --ifm-footer-background-color: #25272B;
+
+/* Card */
+  --ifm-card-background-color: #F4F4F5; 
+  --ifm-spacing-horizontal: 0.5rem;
+  --ifm-spacing-vertical: 1rem;
+
+/* Search */
+  --ifm-input-border-color: #BDBDC4;
+  --ifm-input-cancel-color: #FFFFFF;
+  --ifm-input-text-color: var(--ifm-navbar-link-color);
+
+/* Boxes */
+  --ifm-input-minima-border-color: #5A94FF;
+  --ifm-input-minima-bacground-color: rgba(90, 148, 255, 0.1);
+
+/* Transition */
+  transition: all 0.3s ease-out;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #317aff;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #5A94FF;
+  --ifm-navbar-background-color: #25272B;
+
+/* Typography */
+  --ifm-heading-color: #ffffff;
+  --ifm-hero-text-color: #ffffff;
+
+/* Card */
+  --ifm-card-background-color: #25272B;
+  --aa-muted-color-rgb: rgb(255, 255, 256) !important;
+  --ifm-input-text-color: #FFFFFF;
+
+/* Boxes */
+  --ifm-input-minima-bacground-color: rgba(90, 148, 255, 0.4);
+
+/* Transition */
+  transition: all 0.3s ease-out;
+}
+
+/* Boxes */
+.alert {
+  background-color: var(--ifm-input-minima-bacground-color);
+  border-color: var(--ifm-input-minima-border-color);
+}
+
+[data-theme='light'] img[src$='#gh-dark-mode-only'],
+[data-theme='dark'] img[src$='#gh-light-mode-only'] {
+  display: none;
+}
+
+img[src$='#width50']{
+  width: 50%;
+}
+
+.row .col, img {
+  max-width: 100%;
+  width: 90%;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+h2{
+  font-size: 1.8rem;
+}
+
+/* Header */
+.navbar__logo {
+  margin-left: 0.5rem;
+}
+
+div.navbar__inner > div:nth-child(1) > a:nth-child(3){
+  margin-left: 2.3rem;
+}
+
+/* Footer styling */
+.footer--dark {
+  --ifm-footer-background-color: #25272B;
+}
+.footer__bottom {
+  text-align: left;
+}
+.footer__copyright{
+  font-size: 12px;
+}
+
+/* Removing link icon */
+.footer__link-item span svg, .navbar__link span svg{
+  display: none;
+}
+
+
+/* Removing breadcrumbs */
+.theme-doc-breadcrumbs{
+  display: none;
+}
+
+/* Content innner page margin left */
+
+/* Border around swith mode */
+.navbar__items [role="button"] {
+  border: 1px solid;
 }
 
 .docusaurus-highlight-code-line {
@@ -36,4 +139,109 @@
 
 [data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card{
+  animation: .4s .15s backwards a;
+  margin-top: 0;
+  padding: 0.8rem 2rem 1rem 2rem;
+  transition-duration: .2s;
+  transition-property: all;
+  min-height: 100%;
+  height: 100%;
+}
+.card:hover{
+  -webkit-transform:translateY(-5px);transform:translateY(-5px)
+}
+
+.row .col.col--4 {
+  padding-bottom: var(--ifm-spacing-vertical);
+}
+
+.card__body {
+  padding-top: 0rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Search  */
+.aa-DetachedSearchButtonIcon {
+  color: var(--ifm-color-primary) !important;
+}
+
+.aa-DetachedSearchButton {
+  color: var(--ifm-navbar-link-color) !important;
+  border-radius: 12px !important;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-color: rgb(var(--ifm-navbar-background-color)) !important;
+  width: 180px !important;
+  font-weight: 500 !important;
+  border-color: var(--ifm-input-border-color)!important;
+  height: 40px !important;
+  margin-right: 0.5rem !important;
+}
+
+.aa-DetachedContainer {
+  background: var(--ifm-navbar-background-color) !important;
+}
+
+.aa-Form {
+  background-color: var(--ifm-navbar-background-color) !important;
+  border-color: var(--ifm-input-border-color)!important;
+}
+
+.aa-Label svg, .aa-LoadingIndicator svg {
+  color: var(--ifm-color-primary) !important;
+}
+
+.aa-DetachedSearchButtonPlaceholder{
+  margin-left: 0.5rem;
+}
+
+.aa-DetachedCancelButton{
+  background-color: var(--ifm-color-primary) !important;
+  color: var(--ifm-input-cancel-color) !important;
+  font-weight: 500 !important;
+}
+
+.aa-Form{
+  border-radius: 12px !important;
+}
+
+.aa-Input{
+  color: var(--ifm-input-text-color) !important;
+  font-weight: 500 !important;
+}
+
+.aa-Panel{
+  color: var(--ifm-input-text-color) !important;
+  font-weight: 500 !important;
+  background-color: var(--ifm-navbar-background-color) !important;
+}
+
+article{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Mobile adjustment */
+
+/** In mobile view, reduce the padding */
+@media screen and (max-width: 996px) {
+  .main-wrapper .hero{
+    padding: 2rem 0 0 0;
+  }
+  .hero .hero__title {
+    font-size: 2rem;
+  }
+  .footer__links {
+    text-align: center;
+  }
+  .footer__bottom{
+    text-align: center;
+  }
+  .menu__list-item a span svg{
+    display: none;
+  }
 }

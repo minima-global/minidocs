@@ -1,0 +1,26 @@
+{
+  "unversionedId": "minimawhitepaper/quantumsecure",
+  "id": "minimawhitepaper/quantumsecure",
+  "title": "Quantum Secure",
+  "description": "Quantum security is not an issue right now. But it will be in the future. If you want to remove the need for protocol developers because the protocol is advanced enough to take care of itself, and should not require any Hard Forks ever (there are no Soft Forks on Minima as all users are also miners), you need to use Quantum Secure algorithms.",
+  "source": "@site/docs/minimawhitepaper/quantumsecure.md",
+  "sourceDirName": "minimawhitepaper",
+  "slug": "/minimawhitepaper/quantumsecure",
+  "permalink": "/docs/minimawhitepaper/quantumsecure",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/quantumsecure.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "sidebar_position": 12
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Smart Contracts, Tokens and Transactions",
+    "permalink": "/docs/minimawhitepaper/smartcontractstokensandtransactions"
+  },
+  "next": {
+    "title": "Block Size",
+    "permalink": "/docs/minimawhitepaper/blocksize"
+  }
+}

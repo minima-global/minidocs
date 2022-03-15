@@ -1,0 +1,26 @@
+{
+  "unversionedId": "incentiveprogramtermsandconditions/liability",
+  "id": "incentiveprogramtermsandconditions/liability",
+  "title": "Liability",
+  "description": "We (including our parent, subsidiaries, affiliates, directors, agents and employees) shall not be liable to you in contract, tort (including negligence) or otherwise for any business losses, such as loss of data, profits, revenue, business, opportunity, goodwill, reputation or business interruption or for any losses which are not reasonably foreseeable by us arising, directly or indirectly from:",
+  "source": "@site/docs/incentiveprogramtermsandconditions/liability.md",
+  "sourceDirName": "incentiveprogramtermsandconditions",
+  "slug": "/incentiveprogramtermsandconditions/liability",
+  "permalink": "/docs/incentiveprogramtermsandconditions/liability",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/liability.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "sidebar_position": 14
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Indemnity",
+    "permalink": "/docs/incentiveprogramtermsandconditions/indemnity"
+  },
+  "next": {
+    "title": "Compensation",
+    "permalink": "/docs/incentiveprogramtermsandconditions/compensation"
+  }
+}

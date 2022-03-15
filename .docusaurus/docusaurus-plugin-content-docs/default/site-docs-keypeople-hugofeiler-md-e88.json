@@ -1,0 +1,26 @@
+{
+  "unversionedId": "keypeople/hugofeiler",
+  "id": "keypeople/hugofeiler",
+  "title": "Hugo Feiler",
+  "description": "Co-Founder & Chief Executive Officer",
+  "source": "@site/docs/keypeople/hugofeiler.md",
+  "sourceDirName": "keypeople",
+  "slug": "/keypeople/hugofeiler",
+  "permalink": "/docs/keypeople/hugofeiler",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/keypeople/hugofeiler.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Paddy Cerri",
+    "permalink": "/docs/keypeople/paddycerri"
+  },
+  "next": {
+    "title": "Jon MacDonald",
+    "permalink": "/docs/keypeople/jonmacdonald"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "minimaprivacypolicy",
+  "id": "minimaprivacypolicy",
+  "title": "Minima Privacy Policy",
+  "description": "Last updated: 2.7.21",
+  "source": "@site/docs/minimaprivacypolicy.md",
+  "sourceDirName": ".",
+  "slug": "/minimaprivacypolicy",
+  "permalink": "/docs/minimaprivacypolicy",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimaprivacypolicy.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Token Distribution",
+    "permalink": "/docs/tokendistribution"
+  },
+  "next": {
+    "title": "Minima Terms and Conditions",
+    "permalink": "/docs/minimatermsandconditions"
+  }
+}

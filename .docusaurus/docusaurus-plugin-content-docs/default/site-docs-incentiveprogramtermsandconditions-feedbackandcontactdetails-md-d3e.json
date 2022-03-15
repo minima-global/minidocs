@@ -1,0 +1,26 @@
+{
+  "unversionedId": "incentiveprogramtermsandconditions/feedbackandcontactdetails",
+  "id": "incentiveprogramtermsandconditions/feedbackandcontactdetails",
+  "title": "Feedback and contact details",
+  "description": "You may choose to submit comments, bug reports, ideas or other feedback about our Website or the Incentive Program, including without limitation about how to improve the Incentive Program by emailing us. We are free to use such feedback at our discretion and without additional compensation to you and may disclose such feedback to third parties.",
+  "source": "@site/docs/incentiveprogramtermsandconditions/feedbackandcontactdetails.md",
+  "sourceDirName": "incentiveprogramtermsandconditions",
+  "slug": "/incentiveprogramtermsandconditions/feedbackandcontactdetails",
+  "permalink": "/docs/incentiveprogramtermsandconditions/feedbackandcontactdetails",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/feedbackandcontactdetails.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 17,
+  "frontMatter": {
+    "sidebar_position": 17
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Privacy",
+    "permalink": "/docs/incentiveprogramtermsandconditions/privacy"
+  },
+  "next": {
+    "title": "General",
+    "permalink": "/docs/incentiveprogramtermsandconditions/general"
+  }
+}

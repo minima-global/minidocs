@@ -1,0 +1,26 @@
+{
+  "unversionedId": "incentiveprogramtermsandconditions/changestotheseterms",
+  "id": "incentiveprogramtermsandconditions/changestotheseterms",
+  "title": "Changes to these Terms",
+  "description": "We may amend these Terms at any time. If we amend these Terms, we will publish the updated terms on our Website. You shall be responsible for reviewing and becoming familiar with any such modifications. You waive any right you may have to receive specific notice of such changes.",
+  "source": "@site/docs/incentiveprogramtermsandconditions/changestotheseterms.md",
+  "sourceDirName": "incentiveprogramtermsandconditions",
+  "slug": "/incentiveprogramtermsandconditions/changestotheseterms",
+  "permalink": "/docs/incentiveprogramtermsandconditions/changestotheseterms",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/changestotheseterms.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "sidebar_position": 11
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Intellectual property rights",
+    "permalink": "/docs/incentiveprogramtermsandconditions/intellectualpropertyrights"
+  },
+  "next": {
+    "title": "Third Party Sites",
+    "permalink": "/docs/incentiveprogramtermsandconditions/thirdpartysites"
+  }
+}

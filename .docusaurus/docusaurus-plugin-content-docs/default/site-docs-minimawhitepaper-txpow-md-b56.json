@@ -1,0 +1,26 @@
+{
+  "unversionedId": "minimawhitepaper/txpow",
+  "id": "minimawhitepaper/txpow",
+  "title": "Tx-PoW",
+  "description": "Removing the miners requires the users themselves to secure the chain. User-based PoW security has been tried before. The DAG[3] style IOTA[8] allows users to perform a small amount of PoW work before they can send their transaction. Unlike Minima, IOTA does not use a blockchain, instead, opting for a transaction DAG or Tangle. Whether the Tangle can converge in a decentralized fashion is still a topic of debate and recently IOTA switched to a new system, in an attempt to rectify their current solution, a centralized checkpoint server.",
+  "source": "@site/docs/minimawhitepaper/txpow.md",
+  "sourceDirName": "minimawhitepaper",
+  "slug": "/minimawhitepaper/txpow",
+  "permalink": "/docs/minimawhitepaper/txpow",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/minimawhitepaper/txpow.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/minimawhitepaper/introduction"
+  },
+  "next": {
+    "title": "Maxima",
+    "permalink": "/docs/minimawhitepaper/maxima"
+  }
+}

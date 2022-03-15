@@ -1,0 +1,26 @@
+{
+  "unversionedId": "incentiveprogramtermsandconditions/general",
+  "id": "incentiveprogramtermsandconditions/general",
+  "title": "General",
+  "description": "- Entire agreement: These Terms constitutes the entire agreement between us supersede any previously issued terms and conditions of purchase or supply. If there is ever a conflict between these Terms and any other arrangement or agreement between us, these Terms shall take precedence.",
+  "source": "@site/docs/incentiveprogramtermsandconditions/general.md",
+  "sourceDirName": "incentiveprogramtermsandconditions",
+  "slug": "/incentiveprogramtermsandconditions/general",
+  "permalink": "/docs/incentiveprogramtermsandconditions/general",
+  "editUrl": "https://github.com/arnimedia/arnimedia.github.io.git/docs/incentiveprogramtermsandconditions/general.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 18,
+  "frontMatter": {
+    "sidebar_position": 18
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Feedback and contact details",
+    "permalink": "/docs/incentiveprogramtermsandconditions/feedbackandcontactdetails"
+  },
+  "next": {
+    "title": "Invite Program",
+    "permalink": "/docs/minimainviteprogram"
+  }
+}
