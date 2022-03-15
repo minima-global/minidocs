@@ -3,3 +3,11 @@ node_modules/
 # Generated files
 .docusaurus
 .cache-loader
+
+
+# macos
+.DS_Store
+
+
+# other junk
+tsconfig.json
