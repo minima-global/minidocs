@@ -1,41 +1,40 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Minima Documentation',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://arnimedia.github.io',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'arnimedia', // Usually your GitHub org/user name.
-  projectName: 'arnimedia.github.io', // Usually your repo name.
+  title: "Minima Documentation",
+  tagline: "Power to the people",
+  url: "https://minima-global.github.io/",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "minima-global", // Usually your GitHub org/user name.
+  projectName: "minidocs", // Usually your repo name.
 
   plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: 'https://github.com/arnimedia/arnimedia.github.io.git',
+          editUrl: "https://github.com/minima-global/minidocs",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/arnimedia/arnimedia.github.io.git',
+          editUrl: "https://github.com/minima-global/minidocs",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -45,10 +44,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Minima Documentation',
+        title: "Minima Documentation",
         logo: {
-          alt: 'Minima',
-          src: 'img/logo.svg',
+          alt: "Minima",
+          src: "img/logo.svg",
         },
         items: [
           // {
@@ -75,57 +74,69 @@ const config = {
           //   position: 'left',
           //   label: 'Incentive Program',
           // },
-          {to: 'docs/about/vision', label: 'Vision', position: 'left'},
-          {to: 'docs/learn/networkoverview', label: 'Learn', position: 'left'},
-          {to: 'docs/runanode/get_started_in_3_steps', label: 'Run a node', position: 'left'},
-          {to: 'docs/minimaincentiveprogram', label: 'Incentive Program', position: 'left'},
+          { to: "docs/about/vision", label: "Vision", position: "left" },
           {
-            href: 'https://minima.global/get-involved#community',
-            label: 'Community',
-            position: 'right',
+            to: "docs/learn/networkoverview",
+            label: "Learn",
+            position: "left",
           },
           {
-            href: 'https://github.com/minima-global',
-            label: 'GitHub',
-            position: 'right',
+            to: "docs/runanode/get_started_in_3_steps",
+            label: "Run a node",
+            position: "left",
+          },
+          {
+            to: "docs/minimaincentiveprogram",
+            label: "Incentive Program",
+            position: "left",
+          },
+          {
+            href: "https://minima.global/get-involved#community",
+            label: "Community",
+            position: "right",
+          },
+          {
+            href: "https://github.com/minima-global",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Introduction',
-                to: 'docs/about/vision',
+                label: "Introduction",
+                to: "docs/about/vision",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'Discord',
-                href: 'https://discord.gg/minima',
+                label: "Discord",
+                href: "https://discord.gg/minima",
               },
               {
-                label: 'Telegram',
-                href: 'https://t.me/Minima_Global',
+                label: "Telegram",
+                href: "https://t.me/Minima_Global",
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/Minima_Global',
+                label: "Twitter",
+                href: "https://twitter.com/Minima_Global",
               },
             ],
           },
           {
-            title: 'Devs',
+            title: "Devs",
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/minima-global',
+                label: "GitHub",
+                href: "https://github.com/minima-global",
               },
             ],
           },
