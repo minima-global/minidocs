@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkminima_docs=self.webpackChunkminima_docs||[]).push([[8570],{613:function(e){e.exports=JSON.parse('{"permalink":"/minidocs/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

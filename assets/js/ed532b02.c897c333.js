@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkminima_docs=self.webpackChunkminima_docs||[]).push([[2648],{7116:function(s){s.exports=JSON.parse('{"allTagsPath":"/minidocs/blog/tags","slug":"/minidocs/blog/tags/hello","name":"hello","count":2,"permalink":"/minidocs/blog/tags/hello"}')}}]);

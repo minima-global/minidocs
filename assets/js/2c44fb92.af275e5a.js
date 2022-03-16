@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkminima_docs=self.webpackChunkminima_docs||[]).push([[1844],{164:function(s){s.exports=JSON.parse('{"allTagsPath":"/minidocs/blog/tags","slug":"/minidocs/blog/tags/docusaurus","name":"docusaurus","count":4,"permalink":"/minidocs/blog/tags/docusaurus"}')}}]);
