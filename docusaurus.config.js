@@ -9,7 +9,7 @@ const config = {
   title: "Minima Documentation",
   tagline: "Power to the people",
   url: "https://minima-global.github.io/",
-  baseUrl: "/",
+  baseUrl: "/minidocs/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
