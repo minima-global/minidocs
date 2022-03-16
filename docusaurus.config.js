@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Minima Documentation",
   tagline: "Power to the people",
-  url: "docs.minima.global/",
+  url: "https://docs.minima.global/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
