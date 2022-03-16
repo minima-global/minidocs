@@ -1,6 +1,7 @@
 {
   "name": "minima-docs",
   "version": "0.0.0",
+  "homepage": "https://docs.minima.global/",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
