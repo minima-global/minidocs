@@ -77,6 +77,7 @@
 
 img[src$='#width50']{
   width: 50%;
+  display: flex;
 }
 
 .row .col, img {
