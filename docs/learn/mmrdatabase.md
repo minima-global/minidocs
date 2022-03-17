@@ -24,5 +24,6 @@ A node receiving the proofs will check the coins are valid by summing the hashes
 
 ![Minima](/img/learn/mMRDatabaseLm.svg#gh-light-mode-only)![Minima](/img/learn/mMRDatabaseDm.svg#gh-dark-mode-only)
 
-- A brief overview: https://github.com/opentimestamps/opentimestamps-server/blob/master/doc/merkle-mountain-range.md
-- Detailed overview: https://petertodd.org/2016/delayed-txo-commitments
+Separate MMRs are also used to store Signature Proofs and Script Proofs.
+
+Test
