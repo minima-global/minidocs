@@ -33,7 +33,7 @@ Each node in the tree will have a globally unique reference to it by combining t
 
 The maximum possible number of rows in the MMR is set to 256, using the MAXROWS parameter. With each two new coins, a new parent node is added, therefore the maximum number of coins in the MMR would result in a perfect binary tree with one peak and 2<sup>256</sup> coins.
 
-*2<sup>256</sup> is the maximum number of coins (UTxOs) that can ever exist in Minima.* 
+**2<sup>256</sup> is the maximum number of coins (UTxOs) that can ever exist in Minima.** 
 
 Using the default parameters of 256 transactions per block, 50 second block times and assuming 3 UTxOs per transaction, it would take
 
