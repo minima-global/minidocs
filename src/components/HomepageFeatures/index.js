@@ -8,7 +8,7 @@ const FeatureList = [
     link: 'docs/about/vision',
     description: (
       <>
-        Learn about the orginal vision of Minima and why it exists.
+        Learn about the original vision of Minima and why it exists.
       </>
     ),
   },
