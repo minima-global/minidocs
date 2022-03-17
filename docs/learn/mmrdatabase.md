@@ -14,17 +14,21 @@ The tree is **append-only** and is updated as coins are spent and created. For e
 When the total number of leaf nodes (Coins/TxOs) are not equal to *2n where n= int{0,...,256}*, there will be multiple trees of different heights, creating multiple peak nodes as shown below.
 
 *Diagram: Merkle Mountain Range (MMR) with 11 coins (green) and three peaks (blue)*
+
 ![MMR Database](/img/learn/mMRDatabase1Lm.svg#gh-light-mode-only)![MMR Database](/img/learn/mMRDatabase1Dm.svg#gh-dark-mode-only)
 
 To create a single MMR tree, the peaks must be collected (or ‘bagged’) starting from left to right. Until a single root hash is found.
 
 *Diagram: A complete Merkle Mountain Range (MMR) with three peaks and root*
+
 ![MMR Database](/img/learn/mMRDatabase2Lm.svg#gh-light-mode-only)![MMR Database](/img/learn/mMRDatabase2Dm.svg#gh-dark-mode-only)
 
 Each node in the tree will have a globally unique reference to it by combining the row/level it is in and its entry number on the row. Using a hash table to track entries, each node can be identified through a reference [R,E] where R is the row number and E is the Entry number. 
 
 *Diagram: A complete MMR with hash table references [row, entry number]*
+
 ![MMR Database](/img/learn/mMRDatabase3Lm.svg#gh-light-mode-only)![MMR Database](/img/learn/mMRDatabase3Dm.svg#gh-dark-mode-only)
+
 *For example, the second coin with entry number 1 will have a reference in the hash table of [0,1] (Row 0, Entry 1).*
 
 The maximum possible number of rows in the MMR is set to 256, using the MAXROWS parameter. With each two new coins, a new parent node is added, therefore the maximum number of coins in the MMR would result in a perfect binary tree with one peak and 2<sup>256</sup> coins.
@@ -45,6 +49,7 @@ Each node in the MMR has unique MMR Data consisting of a hash and a value, defin
 | Value | Minima Value of coin, if<br /> unspent,<br />Or 0, if spent | Sum of the value of child nodes | MiniNumber |
 
 *Diagram: Example MMR Data for two coins and a parent node in the MMR.*
+
 ![MMR Database](/img/learn/mMRDatabase4Lm.svg#gh-light-mode-only)![MMR Database](/img/learn/mMRDatabase4Dm.svg#gh-dark-mode-only)
 
 Users do not store the complete MMR for all the coins in the system, as this would be too burdensome, rather they only store the entries relevant to their own coins which must be provided as CoinProofs in the Transaction Witness when they wish to spend their coins.
@@ -66,6 +71,7 @@ Given a CoinProof, any node verifying a transaction can calculate the path (i.e.
 **Proof Chunks** consist of the MMR Data (hash and value) for a node and a True/False flag indicating whether the node is a left sibling or not. 
 
 *Diagram: Example CoinProof for coin 7 (coin to peak)*
+
 ![MMR Database](/img/learn/mMRDatabase5Lm.svg#gh-light-mode-only)![MMR Database](/img/learn/mMRDatabase5Dm.svg#gh-dark-mode-only)
 
 The CoinProof for coin 7 consists of the ProofChunks of yellow entries  **{[0,6],[0,7],[1,2], [2,0]}**
