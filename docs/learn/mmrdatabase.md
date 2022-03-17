@@ -107,3 +107,5 @@ Starting from any node in the MMR, we can navigate through it as follows:
 | Right Child | Minus 1 | Multiply by 2, Add 1 |
 
 Separate MMRs are also used to store Signature Proofs and Script Proofs.
+
+Test
