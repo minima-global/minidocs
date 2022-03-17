@@ -25,5 +25,3 @@ A node receiving the proofs will check the coins are valid by summing the hashes
 ![Minima](/img/learn/mMRDatabaseLm.svg#gh-light-mode-only)![Minima](/img/learn/mMRDatabaseDm.svg#gh-dark-mode-only)
 
 Separate MMRs are also used to store Signature Proofs and Script Proofs.
-
-Test
