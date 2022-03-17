@@ -16,6 +16,7 @@ const config = {
   organizationName: "minima-global", // Usually your GitHub org/user name.
   projectName: "minidocs", // Usually your repo name.
   deploymentBranch: "master",
+  trailingSlash: false,
 
   plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
 
