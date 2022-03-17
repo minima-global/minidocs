@@ -15,7 +15,7 @@ const config = {
   favicon: "img/favicon.ico",
   organizationName: "minima-global", // Usually your GitHub org/user name.
   projectName: "minidocs", // Usually your repo name.
-  deploymentBranch: 'master'
+  deploymentBranch: "master",
 
   plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
 
