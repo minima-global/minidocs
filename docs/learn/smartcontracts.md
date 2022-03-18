@@ -303,39 +303,4 @@ ASSERT STATE ( 0 ) EQ INC ( PREVSTATE ( 0 ) )
 "
 }
 ```
-## Glossary
-
-Mempool - a collection of unconfirmed transactions waiting to be added to blocks.
-Change - 
-TxPoW tree 
-Pulse
-transaction difficulty
-Block difficulty
-base weight
-Hash sum tree - 
-Binary tree:  A tree structure where each node has at most two children - a left and right child - and each node except the root has one parent
-## Definitions
-
-**TxPoW unit:** A unit of data consisting of a header and body containing one main transaction and a list of mempool transactions. A TxPoW unit may or may not become a block.
-
-**Block:** a TxPoW unit which meets the required difficulty level to become a block. 
-Target Difficulty: A system set parameter influencing the number of hashes required for the network to mine a block every 50 seconds (or as close to). The higher the difficulty, the more PoW (energy) required to mine a block.
-
-**Levels:** The Cascading Chain consists of 32 levels, where each level consists of blocks which, by chance, exceeded the difficulty met by the blocks in the previous level by a factor of 2.
-e.g. A block in level 3 of the Cascading Chain achieved twice the difficulty of a block in level 2.
-
-**The Cascade:** The chronological, unbroken chain of blocks consisting of a maximum of 128 blocks at each level. The block at the root of the Cascade will be the block which satisfies both 1) the earliest timestamp and 2) the highest (most difficult) level.
-The Cascade does not include the branches.
-
-**Super Block:** Any block which achieves the difficulty required to take a position on the Cascade.
-
-**Current level:** The level representing how deep in the Cascading Chain a particular Super Block is currently positioned.
-
-**Super Level:** Also the Maximum Level. The level representing the furthest depth a Super Block could sit on the Cascade. (Determined at random by the amount of PoW used to mine the block.)
-
-**Base Weight:** The actual number of hashes it took for a particular block to meet (or exceed) the required block difficulty of 1 block every 50 seconds.
-
-**Current Weight:** The base weight multiplied by a factor dependant on the current level the block is positioned in, such that Current Weight = Base weight * 2Current level no..
-
-**Branch:** The main branch starts at the tip of the Cascade and consists of the most recent 1024 Level 0 blocks which have not yet been committed to the cascade. If, by chance, two blocks with the same block number are found, there may be multiple branches off the main branch.
 
