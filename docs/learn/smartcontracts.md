@@ -63,7 +63,53 @@ RETURN STATE(99) EQ INC(PREVSTATE(99))
 
 A token by default has RETURN TRUE as it's script. This token structure is added to any transaction wishing to use that token so every user can know how many, what scripts, name etc of the Token is correct and valid.
 
-## Global Variables (for a coin)
+## Grammar
+```
+ADDRESS     ::= ADDRESS ( BLOCK )
+BLOCK       ::= STATEMENT_1 STATEMENT_2 ... STATEMENT_n
+STATEMENT   ::= LET VARIABLE = EXPRESSION |
+                LET ( EXPRESSION_1 EXPRESSION_2 ... EXPRESSION_n ) = EXPRESSION |
+                IF EXPRESSION THEN BLOCK [ELSEIF EXPRESSION THEN BLOCK]* [ELSE BLOCK] ENDIF |
+                WHILE EXPRESSION DO BLOCK ENDWHILE |
+                EXEC EXPRESSION |
+                MAST EXPRESSION |
+                ASSERT EXPRESSION |
+                RETURN EXPRESSION
+EXPRESSION  ::= RELATION
+RELATION    ::= LOGIC AND LOGIC  | LOGIC OR LOGIC  |
+                LOGIC XOR LOGIC  | LOGIC NAND LOGIC |
+                LOGIC NOR LOGIC  | LOGIC NXOR LOGIC | LOGIC
+LOGIC       ::= OPERATION EQ OPERATION  | OPERATION NEQ OPERATION  |
+                OPERATION GT OPERATION  | OPERATION GTE OPERATION  |
+                OPERATION LT OPERATION  | OPERATION LTE OPERATION  | OPERATION
+OPERATION   ::= ADDSUB & ADDSUB | ADDSUB | ADDSUB | ADDSUB ^ ADDSUB | ADDSUB
+ADDSUB      ::= MULDIV + MULDIV | MULDIV - MULDIV | MULDIV % MULDIV |
+                MULDIV << MULDIV | MULDIV >> MULDIV | MULDIV
+MULDIV      ::= PRIME * PRIME | PRIME / PRIME | PRIME
+PRIME       ::= NOT PRIME |  NEG PRIME | NOT BASEUNIT | NEG BASEUNIT | BASEUNIT
+BASEUNIT    ::= VARIABLE | VALUE | -NUMBER | GLOBAL | FUNCTION | ( EXPRESSION )
+VARIABLE    ::= [a-z]+
+VALUE       ::= NUMBER | HEX | STRING | BOOLEAN
+NUMBER      ::= ^[0-9]+(\\\\.[0-9]+)?
+HEX         ::= 0x[0-9a-fA-F]+
+STRING      ::= [UTF8_String]
+BOOLEAN     ::= TRUE | FALSE
+FALSE       ::= 0
+TRUE        ::= NOT FALSE
+GLOBAL      ::= @BLOCK | @INBLOCK | @BLOCKDIFF | @INPUT |
+                @AMOUNT | @ADDRESS | @TOKENID | @COINID |
+                @SCRIPT | @TOTIN | @TOTOUT
+FUNCTION    ::= FUNC ( EXPRESSION_1 EXPRESSION_2 .. EXPRESSION_n )
+FUNC        ::= CONCAT | LEN | REV | SUBSET | GET | OVERWRITE |
+                CLEAN | UTF8 | REPLACE | SUBSTR |
+                BOOL | HEX | NUMBER | STRING | ADDRESS |
+                ABS | CEIL | FLOOR | MIN | MAX | INC | DEC | SIGDIG | POW |
+                BITSET | BITGET | BITCOUNT | PROOF | KECCAK | SHA2 | SHA3 |
+                SIGNEDBY | MULTISIG | CHECKSIG |
+```
+
+## Globals
+```
 @BLOCK       : Block number this transaction is in
 @INBLOCK     : Block number when this output was created
 @BLOCKDIFF   : Difference between @BLOCK and INBLOCK
@@ -75,26 +121,205 @@ A token by default has RETURN TRUE as it's script. This token structure is added
 @SCRIPT      : Script for this input
 @TOTIN       : Total number of inputs for this transaction
 @TOTOUT      : Total number of outputs for this transaction
+```
+
+## Functions
+
+CONACT ( HEX_1 HEX_2 ... HEX_n )
+Concatenate the HEX values.
+
+LEN ( HEX|SCRIPT )
+Length of the data
+
+REV ( HEX )
+Reverse the data
+
+SUBSET ( HEX NUMBER NUMBER )
+Return the HEX subset of the data - start - length
+
+OVERWRITE ( HEX NUMBER HEX NUMBER NUMBER)
+Copy bytes from the first HEX and pos to the second HEX and pos, length the last NUMBER
+
+GET ( NUMBER NUMBER .. NUMBER )
+Return the array value set with LET ( EXPRESSION EXPRESSION .. EXPRESSION )
+
+ADDRESS ( STRING )
+Return the address of the script
+
+REPLACE ( STRING STRING STRING )
+Replace in 1st string all occurrence of 2nd string with 3rd
+
+SUBSTR ( STRING NUMBER NUMBER )
+Get the substring
+
+CLEAN ( STRING )
+Return a CLEAN version of the script
+
+UTF8 ( HEX )
+Convert the HEX value of a script value to a string
+
+BOOL ( VALUE )
+Convert to TRUE or FALSE value
+
+HEX ( SCRIPT )
+Convert SCRIPT to HEX
+
+NUMBER ( HEX )
+Convert HEX to NUMBER
+
+STRING ( HEX )
+Convert a HEX value to SCRIPT
+
+ABS ( NUMBER )
+Return the absolute value of a number
+
+CEIL ( NUMBER )
+Return the number rounded up
+
+FLOOR ( NUMBER )
+Return the number rounded down
+
+MIN ( NUMBER NUMBER )
+Return the minimum value of the 2 numbers
+
+MAX ( NUMBER NUMBER )
+Return the maximum value of the 2 numbers
+
+INC ( NUMBER )
+Increment a number
+
+DEC ( NUMBER )
+Decrement a number
+
+POW ( NUMBER NUMBER )
+Returns the power of N of a number. N must be a whole number.
+
+SIGDIG ( NUMBER NUMBER )
+Set the significant digits of the number
+
+BITSET ( HEX NUMBER BOOLEAN )
+Set the value of the BIT at that Position to 0 or 1
+
+BITGET ( HEX NUMBER )
+Get the BOOLEAN value of the bit at the position.
+
+BITCOUNT ( HEX )
+Count the number of bits set in a HEX value
+
+PROOF ( HEX HEX HEX )
+Check the data, mmr proof, and root match. Same as mmrproof on Minima.
+
+KECCAK ( HEX|STRING )
+Returns the KECCAK value of the HEX value.
+
+SHA2 ( HEX|STRING )
+Returns the SHA2 value of the HEX value.
+
+SHA3 ( HEX|STRING )
+Returns the SHA3 value of the HEX value.
+
+SIGNEDBY ( HEX )
+Returns true if the transaction is signed by this public key
+
+MULTISIG ( NUMBER HEX1 HEX2 .. HEXn )
+Returns true if the transaction is signed by N of the public keys
+
+CHECKSIG ( HEX HEX HEX)
+Check public key, data and signature
+
+GETOUTADDR ( NUMBER )
+Return the HEX address of the specified output
+
+GETOUTAMT ( NUMBER )
+Return the amount of the specified output
+
+GETOUTTOK ( NUMBER )
+Return the token id of the specified output
+
+VERIFYOUT ( NUMBER HEX NUMBER HEX )
+Verify the specified output has the specified address, amount and tokenid
+
+GETINADDR ( NUMBER )
+Return the HEX address of the specified input
+
+GETINAMT ( NUMBER )
+Return the amount of the specified input
+
+GETINTOK ( NUMBER )
+Return the token id of the specified input
+
+VERIFYIN ( NUMBER HEX NUMBER HEX)
+Verify the specified input has the specified address, amount and tokenid
+
+STATE ( NUMBER )
+Return the state value for the given number
+
+PREVSTATE ( NUMBER )
+Return the state value stored in the MMR data in the initial transaction this input was created. Allows for a state to be maintained from 1 spend to the next
+
+SAMESTATE ( NUMBER NUMBER )
+Return TRUE if the previous state and current state are the same for the start and end positions
 
 
-### Glossary
-**Mempool** - a collection of unconfirmed transactions waiting to be added to blocks.
-**Change -** 
-**TxPoW tree** 
-**Pulse**
-**transaction difficulty**
-**Block difficulty**
-**base weight**
-**Hash sum tree -** 
-**Binary tree: ** A tree structure where each node has at most two children - a left and right child - and each node except the root has one parent
+## Examples
+```
+LET thing = 23
+LET ( 12 2 ) = 45.345
+LET ( 0 0 1 ) = 0xFF
+LET ( 3 ( thing + 1 ) ) = [ RETURN TRUE ]
 
-**Definitions:**
+--
+
+RETURN SIGNEDBY ( 0x12345.. )
+
+--
+
+IF SIGNEDBY ( 0x123456.. ) AND SIGNEDBY ( 0x987654.. ) THEN
+   RETURN TRUE
+ELSE IF @BLKNUM GT 198765 AND SIGNEDBY ( 0x12345.. ) THEN
+   RETURN TRUE
+ENDIF
+
+--
+
+LET x = STATE ( 23 )
+LET shax = KECCAK ( x )
+IF shax EQ 0x6785456.. AND SIGNEDBY ( 0x12345.. ) THEN
+  RETURN TRUE
+ENDIF
+
+--
+
+EXEC [ RETURN TRUE ]
+
+--
+
+MAST 0xA6657D2133E29B0A343871CAE44224BBA6BB87A972A5247A38A45D3D2065F7E4
+
+--
+
+ASSERT STATE ( 0 ) EQ INC ( PREVSTATE ( 0 ) )
+
+"
+}
+```
+## Glossary
+
+Mempool - a collection of unconfirmed transactions waiting to be added to blocks.
+Change - 
+TxPoW tree 
+Pulse
+transaction difficulty
+Block difficulty
+base weight
+Hash sum tree - 
+Binary tree:  A tree structure where each node has at most two children - a left and right child - and each node except the root has one parent
+## Definitions
 
 **TxPoW unit:** A unit of data consisting of a header and body containing one main transaction and a list of mempool transactions. A TxPoW unit may or may not become a block.
 
 **Block:** a TxPoW unit which meets the required difficulty level to become a block. 
-
-**Target Difficulty:** A system set parameter influencing the number of hashes required for the network to mine a block every 50 seconds (or as close to). The higher the difficulty, the more PoW (energy) required to mine a block.
+Target Difficulty: A system set parameter influencing the number of hashes required for the network to mine a block every 50 seconds (or as close to). The higher the difficulty, the more PoW (energy) required to mine a block.
 
 **Levels:** The Cascading Chain consists of 32 levels, where each level consists of blocks which, by chance, exceeded the difficulty met by the blocks in the previous level by a factor of 2.
 e.g. A block in level 3 of the Cascading Chain achieved twice the difficulty of a block in level 2.
@@ -113,5 +338,4 @@ The Cascade does not include the branches.
 **Current Weight:** The base weight multiplied by a factor dependant on the current level the block is positioned in, such that Current Weight = Base weight * 2Current level no..
 
 **Branch:** The main branch starts at the tip of the Cascade and consists of the most recent 1024 Level 0 blocks which have not yet been committed to the cascade. If, by chance, two blocks with the same block number are found, there may be multiple branches off the main branch.
-
 
