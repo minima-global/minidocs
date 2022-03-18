@@ -30,9 +30,9 @@ TxPoW units only become blocks if, by chance, the **block difficulty** is met in
 
 Diagram: The structure of a TxPoW Unit
 
-| TxPoW ID |
-| :------------ |
-| **Header**<br />*Nonce*<br />*ChainID*<br />*TimeMilli*<br />*Block Number*<br />*Block Difficulty*<br />*Cascade Levels*<br />*Parent Blocks*<br />*MMR Root*<br />*MMR Total*<br />*Magic*<br />*Body Hash* | 
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **TxPoW ID** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  |
+| :-------------------------:		 |
+| **Header**<br />*Nonce*<br />*ChainID*<br />*TimeMilli*<br />*Block Number*<br />*Block Difficulty*<br />		*Cascade Levels*	<br />*Parent Blocks*<br />*MMR Root*<br />*MMR Total*<br />*Magic*<br />*Body Hash* | 
 | **Body**<br />*Random Number*<br />*Txn Difficulty*<br />*A Transaction*<br />*A Witness*<br />*Burn Txn*<br />*Burn Witness*<br />*Txn List* |
 
 
@@ -59,9 +59,7 @@ Diagram: The structure of a TxPoW Unit
 | **Random Number** | A Random number so that everyone is working on a different TxPoW in the pulse  | MiniData |
 | **Txn Difficulty** | The Difficulty required for this unit to be a valid TxPoW unit. The value that all users try to achieve when cycling through nonce values. | MiniData |
 | **A Transaction** | Transaction ID for the main transaction. UTxO (coin) inputs, outputs, state variables, linkhash and | Transaction| 
-| **A Witness** | Signature Proofs;
-Coin Proofs (pointing to a valid unspent MMR entry in the past 24 hours for each input coin used in the txn); 
-Script Proofs (for the various P2SH addresses used) | Witness |
+| **A Witness** | Signature Proofs&#59;Coin Proofs (pointing to a valid unspent MMR entry in the past 24 hours for each input coin used in the txn); Script Proofs (for the various P2SH addresses used) | Witness |
 | **Burn Txn** | Inputs, outputs, state variables, linkhash and transaction ID for the Burn transaction paying for the transaction the user is trying to send. Can be empty. | Transaction |
 | **Burn Witness** | The Witness data for the Burn. Signatures, MMR Proofs and scripts. Can be empty. | Witness |
 | **Txn List** | List of the hashes of mempool transactions to propagate. These will become confirmed if this TxPoW unit becomes a block. Only the hash of transactions are added since transactions have already been sent across the network. | MiniData array |
@@ -73,9 +71,9 @@ A Witness provides three proofs that prove a transaction is valid. Each proof is
 
 | Witness Attribute | Description | Type |
 | :------------| :-----------| :-----------|
-| **SignatureProofs** | The signatures | ArrayList<Signature> | 
-| **CoinProofs** | The MMR Proofs that each input Coin is valid and unspent | ArrayList<CoinProof> |
-| **ScriptProofs** | The Scripts used in the transactions | ArrayList<ScriptProof> |
+| **SignatureProofs** | The signatures | ArrayList&#60;Signature&#62; | 
+| **CoinProofs** | The MMR Proofs that each input Coin is valid and unspent | ArrayList&#60;CoinProof&#62; |
+| **ScriptProofs** | The Scripts used in the transactions | ArrayList&#60;ScriptProof&#62; |
 
 ## TxBlocks
 TxBlocks are TxPoW that become blocks and get added to the blockchain. They include, in addition to the TxPoW unit, the following details:
@@ -83,6 +81,6 @@ TxBlocks are TxPoW that become blocks and get added to the blockchain. They incl
 | TxBlock Attribute | Description | Type |
 | :------------| :-----------| :-----------|
 | **TxPoW** | The TxPoW object that became this block | TxPoW |
-| **Previous Peaks** | The MMR Peaks from the previous block | ArrayList<MMREntry> |
-| **Spent Coins** | The CoinProofs of all the input (spent) coins, unspent as of the last block | ArrayList<CoinProof> |
-| **New Coins** | A list of all the newly created coins | ArrayList<Coin> |
+| **Previous Peaks** | The MMR Peaks from the previous block | ArrayList&#60;MMREntry&#62; |
+| **Spent Coins** | The CoinProofs of all the input (spent) coins, unspent as of the last block | ArrayList&#60;CoinProof&#62; |
+| **New Coins** | A list of all the newly created coins | ArrayList&#60;Coin&#62; |
