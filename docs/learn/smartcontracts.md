@@ -124,7 +124,7 @@ FUNC        ::= CONCAT | LEN | REV | SUBSET | GET | OVERWRITE |
 ```
 
 ## Functions
-
+```
 CONACT ( HEX_1 HEX_2 ... HEX_n )<br />
 Concatenate the HEX values.
 
@@ -259,7 +259,7 @@ Return the state value stored in the MMR data in the initial transaction this in
 
 SAMESTATE ( NUMBER NUMBER )<br />
 Return TRUE if the previous state and current state are the same for the start and end positions
-
+```
 
 ## Examples
 ```
