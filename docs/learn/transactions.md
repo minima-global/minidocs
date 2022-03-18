@@ -26,8 +26,9 @@ Each coin has the following attributes:
 | Created | The block number this coin was created in. | Integer |
 
 Example coin details:
+
+**coins relevant:true**
 ```
-coins relevant:true
 {
   "command":"coins",
   "params":{
