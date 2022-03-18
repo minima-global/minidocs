@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Tokens (Coloured Coins)
+# Coloured Coins
 
 Minima is the native coin for the Minima blockchain. Each UTxO is defined as a coin and therefore a coin can be worth any amount of Minima. 
 Minima supports custom tokens (including NFTs) natively. Tokens are **Coloured coins**. Coloured coins are tiny fractions of Minima which represent the supply of a custom token or NFT.
@@ -10,7 +10,7 @@ Minima supports custom tokens (including NFTs) natively. Tokens are **Coloured c
 Custom tokens are specified by the following characteristics:
 
 | Attribute | Description |
-|---|----|
+| --- | ---- |
 | TokenID | Created after all the details are set, by hashing the coinid and total amount. Each TokenID is globally unique |
 | Token Name/Description | A String description that can be just a name or a full JSON. |
 | CoinID | The CoinID used when creating the token initially |

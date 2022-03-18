@@ -6,6 +6,7 @@ sidebar_position: 8
 Minima has its own,Turing Complete, scripting language for creating Smart Contracts. 
 
 Minima, like Bitcoin, uses the UTxO model so writing smart contracts on Minima is quite different to writing them on an Account based model like Ethereum. 
+
 A Minima script (contract) returns TRUE or FALSE. The default is return FALSE, so all scripts must explicitly RETURN TRUE for the transaction to be valid.
 
 A script can run for 512 instructions. An instruction is 1 operation or function.
@@ -60,4 +61,4 @@ RETURN STATE(99) EQ INC(PREVSTATE(99))
 ```
 **Both the address script and the Token script must return TRUE.**
 
-A token by default has RETURN TRUE as it's script. This token structure is added to any transaction wishing to use that token so every user can know how many, what scripts, name etc of the Token is correct and valid. 
+A token by default has RETURN TRUE as it's script. This token structure is added to any transaction wishing to use that token so every user can know how many, what scripts, name etc of the Token is correct and valid.
