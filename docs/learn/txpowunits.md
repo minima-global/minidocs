@@ -6,7 +6,7 @@ sidebar_position: 4
 
 ## TxPoW
 
-Before a transaction can be posted to the network, it must be added to a **TxPoW** unit with other essential data and a small amount of ‘work’ must be done i.e. it must be ‘mined’.
+Before a transaction can be posted to the network, it must be added to a **TxPoW unit** with other essential data and a small amount of ‘work’ must be done i.e. it must be ‘mined’.
 
 During the TxPoW creation process, in addition to the main transaction, unconfirmed transactions in the mempool will also be added to the body of the TxPoW unit, serving to further propagate mempool transactions to known peers.
 
@@ -30,8 +30,8 @@ TxPoW units only become blocks if, by chance, the **block difficulty** is met in
 
 Diagram: The structure of a TxPoW Unit
 
-| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **TxPoW ID** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  |
-| :-------------------------:		 |
+| **TxPoW ID** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
+| :-------------------------		 |
 | **Header**<br />*Nonce*<br />*ChainID*<br />*TimeMilli*<br />*Block Number*<br />*Block Difficulty*<br />		*Cascade Levels*	<br />*Parent Blocks*<br />*MMR Root*<br />*MMR Total*<br />*Magic*<br />*Body Hash* | 
 | **Body**<br />*Random Number*<br />*Txn Difficulty*<br />*A Transaction*<br />*A Witness*<br />*Burn Txn*<br />*Burn Witness*<br />*Txn List* |
 
