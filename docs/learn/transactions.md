@@ -6,8 +6,8 @@ sidebar_position: 3
 
 ## Transaction Outputs
 All transactions create new UTxOs (coins) as outputs, each coin is identifiable with a unique CoinID and consists of
-- a specific amount of Minima and 
-- a script that determines the conditions required to spend the coin. This script is executed when a user attempts to spend the coin in a transaction and must return a value of TRUE to be spendable. [See scripting](/docs/learn/smartcontracts)
+1. a specific amount of Minima and 
+2. a script that determines the conditions required to spend the coin. This script is executed when a user attempts to spend the coin in a transaction and must return a value of TRUE to be spendable. [See scripting](/docs/learn/smartcontracts)
 
 Each coin has the following attributes:
 
@@ -52,15 +52,16 @@ coins relevant:true
 ### Transaction Inputs
 Transaction inputs are coins (UTxOs) that will be spent in the transaction, identified by the coin ID. One or more coins may be required depending on the value of the coins owned by the user and the amount they wish to spend. 
 
-For example if a user wishes to spend 100 Minima but they only have two coins worth 40 and 90 Minima, they must use both coins as inputs to the transaction and receive change of 30 as a new coin.
+*For example if a user wishes to spend 100 Minima but they only have two coins worth 40 and 90 Minima, they must use both coins as inputs to the transaction and receive change of 30 as a new coin.*
 
 When using a wallet application, the wallet will automatically choose which coins to use as inputs, however when constructing transactions manually, relevant coins must be selected to ensure the sum of the inputs is greater than or equal to the sum of the outputs. 
+
 
 ## Transaction Structure
 
 A transaction is the main building block of the TxPoW unit. Transactions can be constructed in isolation but must be added into a TxPoW unit before it can be mined and propagated across the network.
 
-Has a list of inputs, outputs, state variables, linkhash and a transaction ID.
+has a list of inputs, outputs, state variables, linkhash and a transaction ID.
 
 To send a transaction, a node must construct the transaction using one or more of their unspent coins as inputs. The outputs must also be specified, with the amount and the public address to send to. If the value of the input coins is greater than the value of the output, the **change** output must be defined as the difference to be returned to the sender, this is done automatically if the user uses a wallet application.
 
@@ -75,15 +76,15 @@ Used for a burn transaction. The linkhash of a burn transaction is the transacti
 
 Diagram: Main transaction structure
 
-| Transaction ID: Hash(Transaction object) |
+| **Transaction ID:** *Hash(Transaction object)* |
 | :-----------------------------------------|
-| Inputs <br /> Outputs<br />State Variables (0-255)<br />Linkhash (0x00) |
+| *Inputs* <br /> *Outputs*<br />*State Variables (0-255)*<br />*Linkhash (0x00)* |
 
 Diagram: Burn transaction structure
 
-| Transaction ID: Hash(Transaction object) |
+| **Transaction ID:** *Hash(Transaction object)* |
 | :---------------------------------------- |
-| Inputs (matching the main txn)<br />Output (amount to burn)<br />State Variables (matching the main txn)<br />Linkhash (main txn ID) |
+| *Inputs (matching the main txn)*<br />*Output (amount to burn)*<br />*State Variables (matching the main txn)*<br />*Linkhash (main txn ID)* |
 
 
 ## Transaction Validity
