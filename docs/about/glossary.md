@@ -9,7 +9,7 @@ When you are new to the world of cryptocurrencies and blockchain, it can be pret
 
 If there are any terms that we're missing, don't hesitate to contact us and we'll add them. We will consistently work on adding new words and editing old ones to ensure accuracy.
 
-## 51% Attack##
+## 51% Attack
 
 An attack where a malicious actor overtakes 51% of a network's hashrate and wreaks havoc on the system. If a blockchain undergoes a 51% attack, the attackers can reverse transactions, mint new tokens, and enrich themselves while destroying the integrity of the original chain.
 
