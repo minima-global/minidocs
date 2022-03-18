@@ -27,8 +27,8 @@ Each coin has the following attributes:
 
 Example coin details:
 
-**coins relevant:true**
 ```
+coins relevant:true
 {
   "command":"coins",
   "params":{
