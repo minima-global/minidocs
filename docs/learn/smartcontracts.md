@@ -125,139 +125,139 @@ FUNC        ::= CONCAT | LEN | REV | SUBSET | GET | OVERWRITE |
 
 ## Functions
 ```
-CONACT ( HEX_1 HEX_2 ... HEX_n )<br />
+CONACT ( HEX_1 HEX_2 ... HEX_n )
 Concatenate the HEX values.
 
-LEN ( HEX|SCRIPT )<br />
+LEN ( HEX|SCRIPT )
 Length of the data
 
-REV ( HEX )<br />
+REV ( HEX )
 Reverse the data
 
-SUBSET ( HEX NUMBER NUMBER )<br />
+SUBSET ( HEX NUMBER NUMBER )
 Return the HEX subset of the data - start - length
 
-OVERWRITE ( HEX NUMBER HEX NUMBER NUMBER)<br />
+OVERWRITE ( HEX NUMBER HEX NUMBER NUMBER)
 Copy bytes from the first HEX and pos to the second HEX and pos, length the last NUMBER
 
-GET ( NUMBER NUMBER .. NUMBER )<br />
+GET ( NUMBER NUMBER .. NUMBER )
 Return the array value set with LET ( EXPRESSION EXPRESSION .. EXPRESSION )
 
-ADDRESS ( STRING )<br />
+ADDRESS ( STRING )
 Return the address of the script
 
-REPLACE ( STRING STRING STRING )<br />
+REPLACE ( STRING STRING STRING )
 Replace in 1st string all occurrence of 2nd string with 3rd
 
-SUBSTR ( STRING NUMBER NUMBER )<br />
+SUBSTR ( STRING NUMBER NUMBER )
 Get the substring
 
-CLEAN ( STRING )<br />
+CLEAN ( STRING )
 Return a CLEAN version of the script
 
-UTF8 ( HEX )<br />
+UTF8 ( HEX )
 Convert the HEX value of a script value to a string
 
-BOOL ( VALUE )<br />
+BOOL ( VALUE )
 Convert to TRUE or FALSE value
 
-HEX ( SCRIPT )<br />
+HEX ( SCRIPT )
 Convert SCRIPT to HEX
 
-NUMBER ( HEX )<br />
+NUMBER ( HEX )
 Convert HEX to NUMBER
 
-STRING ( HEX )<br />
+STRING ( HEX )
 Convert a HEX value to SCRIPT
 
-ABS ( NUMBER )<br />
+ABS ( NUMBER )
 Return the absolute value of a number
 
-CEIL ( NUMBER )<br />
+CEIL ( NUMBER )
 Return the number rounded up
 
-FLOOR ( NUMBER )<br />
+FLOOR ( NUMBER )
 Return the number rounded down
 
-MIN ( NUMBER NUMBER )<br />
+MIN ( NUMBER NUMBER )
 Return the minimum value of the 2 numbers
 
-MAX ( NUMBER NUMBER )<br />
+MAX ( NUMBER NUMBER )
 Return the maximum value of the 2 numbers
 
-INC ( NUMBER )<br />
+INC ( NUMBER )
 Increment a number
 
-DEC ( NUMBER )<br />
+DEC ( NUMBER )
 Decrement a number
 
-POW ( NUMBER NUMBER )<br />
+POW ( NUMBER NUMBER )
 Returns the power of N of a number. N must be a whole number.
 
-SIGDIG ( NUMBER NUMBER )<br />
+SIGDIG ( NUMBER NUMBER )
 Set the significant digits of the number
 
-BITSET ( HEX NUMBER BOOLEAN )<br />
+BITSET ( HEX NUMBER BOOLEAN )
 Set the value of the BIT at that Position to 0 or 1
 
-BITGET ( HEX NUMBER )<br />
+BITGET ( HEX NUMBER )
 Get the BOOLEAN value of the bit at the position.
 
-BITCOUNT ( HEX )<br />
+BITCOUNT ( HEX )
 Count the number of bits set in a HEX value
 
-PROOF ( HEX HEX HEX )<br />
+PROOF ( HEX HEX HEX )
 Check the data, mmr proof, and root match. Same as mmrproof on Minima.
 
-KECCAK ( HEX|STRING )<br />
+KECCAK ( HEX|STRING )
 Returns the KECCAK value of the HEX value.
 
-SHA2 ( HEX|STRING )<br />
+SHA2 ( HEX|STRING )
 Returns the SHA2 value of the HEX value.
 
-SHA3 ( HEX|STRING )<br />
+SHA3 ( HEX|STRING )
 Returns the SHA3 value of the HEX value.
 
-SIGNEDBY ( HEX )<br />
+SIGNEDBY ( HEX )
 Returns true if the transaction is signed by this public key
 
-MULTISIG ( NUMBER HEX1 HEX2 .. HEXn )<br />
+MULTISIG ( NUMBER HEX1 HEX2 .. HEXn )
 Returns true if the transaction is signed by N of the public keys
 
-CHECKSIG ( HEX HEX HEX)<br />
+CHECKSIG ( HEX HEX HEX)
 Check public key, data and signature
 
-GETOUTADDR ( NUMBER )<br />
+GETOUTADDR ( NUMBER )
 Return the HEX address of the specified output
 
-GETOUTAMT ( NUMBER )<br />
+GETOUTAMT ( NUMBER )
 Return the amount of the specified output
 
-GETOUTTOK ( NUMBER )<br />
+GETOUTTOK ( NUMBER )
 Return the token id of the specified output
 
-VERIFYOUT ( NUMBER HEX NUMBER HEX )<br />
+VERIFYOUT ( NUMBER HEX NUMBER HEX )
 Verify the specified output has the specified address, amount and tokenid
 
-GETINADDR ( NUMBER )<br />
+GETINADDR ( NUMBER )
 Return the HEX address of the specified input
 
-GETINAMT ( NUMBER )<br />
+GETINAMT ( NUMBER )
 Return the amount of the specified input
 
-GETINTOK ( NUMBER )<br />
+GETINTOK ( NUMBER )
 Return the token id of the specified input
 
-VERIFYIN ( NUMBER HEX NUMBER HEX)<br />
+VERIFYIN ( NUMBER HEX NUMBER HEX)
 Verify the specified input has the specified address, amount and tokenid
 
-STATE ( NUMBER )<br />
+STATE ( NUMBER )
 Return the state value for the given number
 
-PREVSTATE ( NUMBER )<br />
+PREVSTATE ( NUMBER )
 Return the state value stored in the MMR data in the initial transaction this input was created. Allows for a state to be maintained from 1 spend to the next
 
-SAMESTATE ( NUMBER NUMBER )<br />
+SAMESTATE ( NUMBER NUMBER )
 Return TRUE if the previous state and current state are the same for the start and end positions
 ```
 
