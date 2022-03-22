@@ -12,10 +12,10 @@ Soft forks are much easier to implement than hard forks since only a majority of
 
 On Minima :
 
-- everyone runs a Complete node.
-- everyone is involved in the construction and validation of the chain.
-- everyone needs to agree on everything because everyone is involved in everything.
-- there are no soft forks, only hard forks. 
+- Everyone runs a Complete node.
+- Everyone is involved in the construction and validation of the chain.
+- Everyone needs to agree on everything because everyone is involved in everything.
+- There are no soft forks, only hard forks. 
 
 The Minima Protocol is complete from inception, containing all the scaling and functionality it will ever have or need. No soft forks allowed. No hard forks required - ever. No limit on the size of the network that can use it. POP3, SMTP, UDP and TCP/IP are examples of ossified global decentralized protocols. They don't change. That's the point. That’s why they are the back-bone of the Internet.
 

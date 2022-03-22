@@ -8,7 +8,7 @@ Both Minima and Maxima require users to perform a small amount of PoW when sendi
 
 Most network protocols have a PING message. This is a message network peers periodically send to check the health and status of their peers. Network nodes send a PING message and peers reply, to show they are functioning correctly. But in a crypto network like Minima far more information on the health and status of a node can be transmitted in a PING message. Add some PoW to a PING message, and you create a Pulse.
 
-Every 10 minutes every Minima user creates a valid Tx-PoW message, with its’ current correct block details, but leaves the transaction blank. Performs 10 seconds of work. Then sends this message to each of its peers. If the message is not a valid Tx-PoW message, the peer is kicked off the network. If a peer does not send a Pulse message every 10 minutes, the peer is kicked off the network. If the Tx-PoW message is also a block, on average 1 Tx-PoW message every 10 seconds, that is then forwarded on to the rest of the network
+Every 10 minutes every Minima user creates a valid Tx-PoW message, with its current correct block details, but leaves the transaction blank. Performs 10 seconds of work. Then sends this message to each of its peers. If the message is not a valid Tx-PoW message, the peer is kicked off the network. If a peer does not send a Pulse message every 10 minutes, the peer is kicked off the network. If the Tx-PoW message is also a block, on average 1 Tx-PoW message every 50 seconds, that is then forwarded on to the rest of the network
 
 This has many benefits :
  
