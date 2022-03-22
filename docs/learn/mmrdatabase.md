@@ -35,7 +35,7 @@ The maximum possible number of rows in the MMR is set to 256, using the MAXROWS 
 
 **2<sup>256</sup> is the maximum number of coins (UTxOs) that can ever exist in Minima.** 
 
-:::info &nbsp;
+:::note &nbsp;
 *Using the default parameters of 256 transactions per block, 50 second block times and assuming 3 UTxOs per transaction, it would take*
 
 *5,737,098,536,063,750,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000 years to fill the MMR.*
@@ -43,7 +43,9 @@ The maximum possible number of rows in the MMR is set to 256, using the MAXROWS 
 
 However, users do not store the complete MMR for all the coins in the system, as this would be too burdensome, rather they only store the entries relevant to their own coins which must be provided as CoinProofs in the Transaction Witness when they wish to spend their coins.
 
+:::tip &nbsp;
 The MMR can be thought of as a book, where all users keep a copy of the spine (root and peaks) and their own page in the book (their CoinProofs). When a user wishes to spend their coins, they provide their page and the spine. Provided their page fits the spine and the spine matches that of the other nodes in the network, the user’s coins can be proved to be valid. 
+:::
 
 ## MMR Data
 
@@ -78,12 +80,12 @@ Given a CoinProof, any node verifying a transaction can calculate the path (i.e.
 
 ![MMR Database](/img/learn/mMRDatabase5Lm.svg#gh-light-mode-only)![MMR Database](/img/learn/mMRDatabase5Dm.svg#gh-dark-mode-only)
 
-The CoinProof for coin 7 consists of the coin and the yellow Proof Chunks, i.e. entries **{[0,6],[0,7],[1,2],[2,0]}**
+The CoinProof for coin 7 consists of the coin and the yellow Proof Chunks, i.e. entries **{[0,6],[0,7],[1,2],[2,0]}** , so that:
 - Hashing [0,6] with [0,7] calculates parent [1,3]
 - Hashing [1,2] with [1,3] calculates parent [2,1]
-- Hashing [2,0] with [2,1] calculates parent [3,0]
+- Hashing [2,0] with [2,1] calculates peak [3,0]
 
-Any node receiving this CoinProof,  is able to calculate the parents and the peak node, and by comparing it to their own peaks, proving that Coin 7 is valid.
+Any node receiving this CoinProof is able to calculate the parents and the peak node, and by comparing it to their own peaks, proving that Coin 7 is valid.
 
 ## MMR Sets
 

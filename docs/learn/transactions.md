@@ -14,10 +14,10 @@ Each coin has the following attributes:
 | Coin Attribute | Description | Type |
 | -------------- | ----------- | ------------- |
 | **CoinID** | The globally unique identifier for a coin. The coin id of a new UTxO is hash(first input coin in txn &#124; output_num_in_txn)| 64 byte hash (MiniData)|
-| **Amount** | The amount of 'Minima'. Even custom token transactions are just amounts of coloured Minima ([see coloured coins](/docs/learn/tokenscolouredcoins))| MiniNumber|
+| **Amount** | The amount of 'Minima'. Even custom token transactions are just amounts of coloured Minima ([see Coloured Coins](/docs/learn/colouredcoins))| MiniNumber|
 | **Address** | The hash of a script. If no custom script is provided,the script will simply be RETURN(SIGNEDBY([PublicKey of coin owner]) i.e. the  transaction must be signed by the coin owner before it can be spent. All addresses are P2SH (Pay to Script Hash).| 64 byte hash (MiniData)|
 | **Token ID** | The Token ID. Minima is 0x00. Everything else has a full 64 byte hash. Tokens are created by colouring Minima.| 64 byte hash (MiniData)|
-| **Token** | Token Details ([see Coloured Coins](/docs/learn/tokenscolouredcoins)) |  |
+| **Token** | Token Details ([see Coloured Coins](/docs/learn/colouredcoins)) |  |
 | **Floating** | True or False. Set when you create a transaction. If True, the Coin ID is ignored so that any valid coin that has the same amount, address and Token ID can be used. | Boolean |
 | **Store State** | True or False, depending on whether the state is stored for this coin | Boolean |
 | **State** | The state variables (0-255) of the transaction this coin was created in. You can access this data from scripts. | Integer |
@@ -69,7 +69,7 @@ To send a transaction, a node must construct the transaction using one or more o
 The Burn must also be considered when constructing transactions, as this will affect the priority that a transaction has over others in the mempool. Any difference between inputs and outputs (including change) will be burned, removing that amount from circulation.
 
 ### State Variables
-Transactions also include State Variables for storing public data and previous transaction states to retrieve information for scripts. 0-255 variables are allowed. [see Scripting](/docs/learn/smartcontracts)
+Transactions also include State Variables for storing public data and previous transaction states to retrieve information for scripts. 0-255 variables are allowed. [(see Scripting)](/docs/learn/scripting)
 
 ### Linkhash 
 
