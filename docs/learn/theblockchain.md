@@ -5,9 +5,9 @@ sidebar_position: 5
 
 # The Blockchain
 ## Overview
-The Minima blockchain is structured to be compact and ‘lightweight’, it is therefore heavily pruned to meet this requirement. The chain itself is a tree of TxPoW blocks which hold transactions. 
+The Minima blockchain is structured to be compact and ‘lightweight’, it is therefore heavily pruned to meet this requirement. The chain itself is a TxPoW Tree containing TxBlocks.
 
-As the **TxPow tree** is pruned periodically, the headers from the ‘heaviest’ blocks (blocks with the highest difficulty by chance) are added into a ‘Cascading’ chain. The root of the TxPow tree always remains connected to the tip of the Cascading chain.
+**The TxPoW** Tree is the main blockchain consisting of the most recent TxBlocks.
 
 The TxPoW tree is the main blockchain, a chain of the most recent TxPoW units that met the difficulty required to become a block. 
 The **Cascading chain** is an unbroken chain of the headers of so called ‘super blocks’, designed to record and prove, in an immutable way, the total cumulative Proof-of-Work input into the network without having to keep a record of all individual blocks. Blocks are added to the Cascading chain on a periodic basis.

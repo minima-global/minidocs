@@ -9,9 +9,9 @@ sidebar_position: 4
 As the blockchain is heavily pruned, users must store proof that their coins are unspent. This is the role of the Merkle Mountain Range (MMR) Proof database. The MMR is a **hash sum tree** containing the proofs for all Transaction Outputs (TxOs) i.e. coins in the system.
 Note: these coins may be Spent Transaction Outputs (STxOs) or Unspent Transaction Outputs (UTxOs). 
 
-The tree is **append-only** and is updated as coins are spent and created. For each new UTxO created from a transaction output, a new leaf node is created in the MMR. Coins are hashed in pairs, building up the largest **binary tree** possible until a new tree is required. 
+The tree is **append-only** and is updated as coins are spent and created. For each new UTxO created from a transaction output, a new leaf node is created in the MMR. Coins are hashed in pairs, building up the largest **binary tree** possible until a new tree is required. As new trees are required, they start to look like a range of mountains - giving the MMR its name.
 
-When the total number of leaf nodes (Coins/TxOs) are not equal to *2n where n= int{0,...,256}*, there will be multiple trees of different heights, creating multiple peak nodes as shown below.
+When the total number of leaf nodes (Coins/TxOs) are not equal to *2 <sup>n</sup> where n = int{*0,...,256*}*, there will be multiple trees of different heights, creating multiple peak nodes as shown below.
 
 *Diagram: Merkle Mountain Range (MMR) with 11 coins (green) and three peaks (blue)*
 
@@ -35,9 +35,15 @@ The maximum possible number of rows in the MMR is set to 256, using the MAXROWS 
 
 **2<sup>256</sup> is the maximum number of coins (UTxOs) that can ever exist in Minima.** 
 
-Using the default parameters of 256 transactions per block, 50 second block times and assuming 3 UTxOs per transaction, it would take
+:::info &nbsp;
+*Using the default parameters of 256 transactions per block, 50 second block times and assuming 3 UTxOs per transaction, it would take*
 
 *5,737,098,536,063,750,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000 years to fill the MMR.*
+:::
+
+However, users do not store the complete MMR for all the coins in the system, as this would be too burdensome, rather they only store the entries relevant to their own coins which must be provided as CoinProofs in the Transaction Witness when they wish to spend their coins.
+
+The MMR can be thought of as a book, where all users keep a copy of the spine (root and peaks) and their own page in the book (their CoinProofs). When a user wishes to spend their coins, they provide their page and the spine. Provided their page fits the spine and the spine matches that of the other nodes in the network, the user’s coins can be proved to be valid. 
 
 ## MMR Data
 
@@ -52,9 +58,7 @@ Each node in the MMR has unique MMR Data consisting of a hash and a value, defin
 
 ![MMR Database](/img/learn/mMRDatabase4Lm.svg#gh-light-mode-only)![MMR Database](/img/learn/mMRDatabase4Dm.svg#gh-dark-mode-only)
 
-Users do not store the complete MMR for all the coins in the system, as this would be too burdensome, rather they only store the entries relevant to their own coins which must be provided as CoinProofs in the Transaction Witness when they wish to spend their coins.
-
-Each entry in the MMR is defined by its attributes:
+Each entry in an MMR is defined by its attributes:
 
 | MMREntry Attribute | Description | Type |
 | :----------------- | ----------- | ---- |
@@ -64,22 +68,22 @@ Each entry in the MMR is defined by its attributes:
 
 ## Proofs
 
-When a user wishes to spend their coins, they must provide proof that their coins are unspent by providing a **CoinProof** for each coin they wish to spend. **A CoinProof is a list of Proof Chunks** that any other user can use to independently verify that someone else’s coin exists and is unspent, without having to store the proofs for every coin in the network.
+When a user wishes to spend their coins, they must provide proof that their coins are unspent by providing a **CoinProof** for each coin they wish to spend. **A CoinProof is a list of Proof Chunks** that any other node can use to independently verify that someone else’s coin exists and is unspent, without having to store the proofs for every coin in the network.
 
 Given a CoinProof, any node verifying a transaction can calculate the path (i.e. the intermediate parent hashes), from another user's coin to a peak in the MMR. If the calculated peak hash matches the peak hash from their own MMR, the CoinProof is valid, otherwise the CoinProof and transaction are not valid.
 
-**Proof Chunks** consist of the MMR Data (hash and value) for a node and a True/False flag indicating whether the node is a left sibling or not. 
-
+**Proof Chunks** consist of the MMR Data (hash and value) for an MMR entry and a True/False flag indicating whether it is a left sibling or not. 
+ 
 *Diagram: Example CoinProof for coin 7 (coin to peak)*
 
 ![MMR Database](/img/learn/mMRDatabase5Lm.svg#gh-light-mode-only)![MMR Database](/img/learn/mMRDatabase5Dm.svg#gh-dark-mode-only)
 
-The CoinProof for coin 7 consists of the ProofChunks of yellow entries  **{[0,6],[0,7],[1,2], [2,0]}**
-- Coin entry [0,6] proves that coin [0,7] is in parent [1,3]
-- Parent [1,2] proves that parent [1,3] is in parent [2,1]
-- Parent [2,0] proves that parent [2,1] is in peak [3,0]
+The CoinProof for coin 7 consists of the coin and the yellow Proof Chunks, i.e. entries **{[0,6],[0,7],[1,2],[2,0]}**
+- Hashing [0,6] with [0,7] calculates parent [1,3]
+- Hashing [1,2] with [1,3] calculates parent [2,1]
+- Hashing [2,0] with [2,1] calculates parent [3,0]
 
-Any node receiving this CoinProof (yellow nodes), is able to calculate the parents and the peak node, proving that Coin 7 is valid.
+Any node receiving this CoinProof,  is able to calculate the parents and the peak node, and by comparing it to their own peaks, proving that Coin 7 is valid.
 
 ## MMR Sets
 

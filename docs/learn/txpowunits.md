@@ -16,12 +16,12 @@ A node can carry out several activities with a TxPoW unit depending on the situa
 
 **Generate:** When a user wishes to send a transaction, or is required to send a **Pulse** to the network, their node will generate (construct) a TxPoW unit containing their transaction and the hashes of other unconfirmed transactions it knows about in the **mempool**. TxPoW units are analogous to compact blocks in Bitcoin. [See TxPoW Generation](#)
 
-**Mine:** Before a node can propagate its TxPoW unit to the network, it must mine the TxPoW unit by cycling through different **nonces** (numbers), adding the nonce to the TxPoW header and hashing the result. Once the resulting hash meets the level of difficulty required by the network (~10 seconds work), they can propagate their TxPoW unit to other nodes in the network.
+**Mine:** Before a node can propagate its TxPoW unit to the network, it must mine the TxPoW unit by cycling through different **nonces** (numbers), adding the nonce to the TxPoW header and hashing the result. Once the resulting hash meets the level of difficulty required by the network (~1 second work), they can propagate their TxPoW unit to other nodes in the network.
 
 :::note Note
-The **transaction difficulty** sets the minimum amount of work a node must provide before their TxPoW can be propagated across the network (~10 seconds work).This ensures the network has received the transactions in their TxPoW unit, **however this does not automatically mean that their transactions are in a block.** 
+The **transaction difficulty** sets the minimum amount of work a node must provide before their TxPoW can be propagated across the network (~1 second work).This ensures the network has received the transactions in their TxPoW unit, **however this does not automatically mean that their transactions are in a block.** 
 
-TxPoW units only become blocks if, by chance, the **block difficulty** is met in the process of meeting the transaction difficulty. 
+TxPoW units only become blocks if, by chance, the **block difficulty target** is met in the process of meeting the transaction difficulty. 
 :::
 
 **Check:** When a node receives a TxPoW unit from another node on the network, it must check it to ensure its validity before processing and forwarding it on to its peers.
@@ -47,9 +47,9 @@ Diagram: The structure of a TxPoW Unit
 | **Block Difficulty** | The Difficulty required for this unit to be considered a valid block | MiniData |
 | **Cascade Levels** | The maximum number of levels in the Cascade (32) | MiniData array |
 | **Super Parents** | Pointer to its immediate previous block and to the most recent block at each Super level. Used for cascading. | MiniData List |
-| **MMR Root** | The root hash of the MMR (to prove coins existed using a proof and header) | MiniData |
+| **MMR Root** | The root hash of the MMR (to prove coins existed using a proof and TxPoW header) | MiniData |
 | **MMR Total** |  The sum of all coins in the system (using a hash sum tree, the total amount of Minima is known every block removing the possibility of inflation bugs) | MiniNumber |
-| **Magic** | Chain parameters - the magic numbers: desiredmaxtxpow, desiredmaxtxn, desiredmintxpowwork, maxtxpow,maxtxn,mintxpowwork | Magic |
+| **Magic** | Chain parameters - the magic numbers: CurrentMaxTxPoWSize,CurrentMaxTxnPerBlock,CurrentMinTxPoWWork,CurrentMaxKISSVMOps | Magic |
 | **TxBodyHash** | The hash of the TxPoW body | MiniData |
 
 **Body**
@@ -58,9 +58,9 @@ Diagram: The structure of a TxPoW Unit
 | :------------| :-----------| :-----------|
 | **Random Number** | A Random number so that everyone is working on a different TxPoW in the pulse  | MiniData |
 | **Txn Difficulty** | The Difficulty required for this unit to be a valid TxPoW unit. The value that all users try to achieve when cycling through nonce values. | MiniData |
-| **A Transaction** | Transaction ID for the main transaction. UTxO (coin) inputs, outputs, state variables, linkhash and | Transaction| 
-| **A Witness** | Signature Proofs&#59;Coin Proofs (pointing to a valid unspent MMR entry in the past 24 hours for each input coin used in the txn); Script Proofs (for the various P2SH addresses used) | Witness |
-| **Burn Txn** | Inputs, outputs, state variables, linkhash and transaction ID for the Burn transaction paying for the transaction the user is trying to send. Can be empty. | Transaction |
+| **Transaction** | Transaction ID for the main transaction. UTxO (coin) inputs, outputs, state variables, linkhash | Transaction| 
+| **Witness** | Signature Proofs&#59;Coin Proofs (pointing to a valid unspent MMR entry in the past 24 hours for each input coin used in the txn); Script Proofs (for the various P2SH addresses used) | Witness |
+| **Burn Txn** | Inputs, outputs, state variables and linkhash for the Burn transaction paying for the transaction the user is trying to send. Can be empty. | Transaction |
 | **Burn Witness** | The Witness data for the Burn. Signatures, MMR Proofs and scripts. Can be empty. | Witness |
 | **Txn List** | List of the hashes of mempool transactions to propagate. These will become confirmed if this TxPoW unit becomes a block. Only the hash of transactions are added since transactions have already been sent across the network. | MiniData array |
 
@@ -71,12 +71,12 @@ A Witness provides three proofs that prove a transaction is valid. Each proof is
 
 | Witness Attribute | Description | Type |
 | :------------| :-----------| :-----------|
-| **SignatureProofs** | The signatures | ArrayList&#60;Signature&#62; | 
+| **SignatureProofs** | The MMR Proofs for the Signatures | ArrayList&#60;Signature&#62; | 
 | **CoinProofs** | The MMR Proofs that each input Coin is valid and unspent | ArrayList&#60;CoinProof&#62; |
-| **ScriptProofs** | The Scripts used in the transactions | ArrayList&#60;ScriptProof&#62; |
+| **ScriptProofs** | The MMR Proofs for Scripts used in the transactions | ArrayList&#60;ScriptProof&#62; |
 
 ## TxBlocks
-TxBlocks are TxPoW that become blocks and get added to the blockchain. They include, in addition to the TxPoW unit, the following details:
+TxBlocks are TxPoW that become blocks and get added to the blockchain. They include the following details:
 
 | TxBlock Attribute | Description | Type |
 | :------------| :-----------| :-----------|

@@ -5,7 +5,7 @@ sidebar_position: 2
 # Core Concepts
 
 ## UTxO Model
-Minima uses the UTxO (Unspent Transaction Output) Model, like Bitcoin. A Transaction Output is a specific amount of Minima, identifiable through a unique ID called a coin ID. Each Transaction Output can be considered analogous to a physical coin in that they can represent different amounts of currency and must be spent in whole.
+Minima uses the UTxO (Unspent Transaction Output) Model, like Bitcoin. A Transaction Output is a specific amount of Minima, identifiable through a unique ID called a **Coin ID**. Each Transaction Output can be considered analogous to a physical coin in that they can represent different amounts of currency and must be spent in whole.
 
 The Minima blockchain keeps track of the UTxO set on the network and who can spend them. The UTxO set circulating in the network fluctuates as users spend coins and create new ones as outputs from transactions. The sum of the value of all the UTxOs in the network will equal at most 1 billion Minima.
 One or more UTxOs are used as inputs into transactions and one or more new UTxOs will be created as outputs.
@@ -17,11 +17,11 @@ One or more UTxOs are used as inputs into transactions and one or more new UTxOs
 ![Core Concepts](/img/learn/coreConceptsLm.svg#gh-light-mode-only)![Core Concepts](/img/learn/coreConceptsDm.svg#gh-dark-mode-only)
 
 ## MMR (Merkle Mountain Range) Database 
-As the blockchain is constantly pruned, users must keep track of their spent and unspent TxOs (transaction outputs)independently of the chain. Each TxO has a proof that forms part of a hash sum tree and these are stored in the user’s MMR database. 
+As the blockchain is constantly pruned, users must keep track of their spent and unspent **TxOs (transaction outputs) independently** of the chain. Each TxO has a proof that forms part of a hash sum tree and these are stored in the user’s MMR database. 
 When a user wishes to spend their coins, they must provide the up to date valid proofs that it is unspent.
 
 ## Transaction Proof-of-Work (TxPoW)
-Minima requires users to provide work, in the form of computing power, to ‘mine’ their own transactions, this is TxPoW. Once a user has contributed a small amount of work (~10 seconds) their transaction will be propagated around the network. This is in contrast to Bitcoin where users rely on miners with specific hardware to provide PoW and propagate their transactions on their behalf.
+Minima requires users to provide work, in the form of computing power, to ‘mine’ their own transactions, this is TxPoW. Once a user has contributed a small amount of work (~1 second) their transaction will be propagated around the network. This is in contrast to Bitcoin where users rely on *miners* with specific hardware to provide PoW and propagate their transactions on their behalf.
 
 Transactions are held in **TxPoW units**, which are propagated around the network and may or may not become blocks. TxPoW units contain a user’s transaction and the hashes of other unconfirmed transactions known to the user’s node. TxPoW units become blocks if they, by chance, meet the level of difficulty required to become a block. 
 

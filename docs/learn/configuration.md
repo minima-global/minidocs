@@ -45,12 +45,12 @@ Minima uses the following custom Base types:
 | :-------- | :--- | :------------ | :----------- |
 | MINIMA_VERSION | string | | The client version of Minima |
 | MINIMA_BLOCK_SPEED | MiniNumber | 0.02 | Speed in blocks per second 0.02 = 50 second block time
-| MINIMA_BLOCKS_SPEED_CALC | MiniNumber | 256 | When checking speed and difficulty only look at this many blocks back | 
-| MINIMA_CONFIRM_DEPTH | MiniNumber | 3 | How many blocks deep before confirmed |
-| MINIMA_CASCADE_FREQUENCY | MiniNumber | 100 | How often (in blocks) do we cascade the chain |
+| MINIMA_BLOCKS_SPEED_CALC | MiniNumber | 256 | The number of blocks back to consider when checking speed and difficulty | 
+| MINIMA_CONFIRM_DEPTH | MiniNumber | 3 | The number of blocks deep before a block is considered confirmed |
+| MINIMA_CASCADE_FREQUENCY | MiniNumber | 100 | How often (in blocks) the chain is Cascaded |
 | MINIMA_CASCADE_START_DEPTH | MiniNumber | 1024 | Depth of heaviest chain before we cascade |
 | MINIMA_CASCADE_LEVEL_NODES | int | 128 | Number of blocks at each cascade level |
-| MINIMA_CASCADE_LEVELS | int | 32 | How many Cascade levels | 
+| MINIMA_CASCADE_LEVELS | int | 32 | The number of Cascade levels | 
 | MINIMA_MMR_PROOF_HISTORY | MiniNumber | 256 | Max Proof History - how far back to use a proof of coin. If there is a re-organization of more than this the proof will be invalid. | 
 | MEDIAN_BLOCK_CALC | int | 32 | The MEDIAN time block is taken from this many blocks back. When calculating the Difficulty of a block (both from the tip and the previous block). This smooths out the time fluctuations for different blocks and removes incorrect times. |
 

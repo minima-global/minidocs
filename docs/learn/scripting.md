@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# Smart Contracts
+# Scripting
 Minima has its own,Turing Complete, scripting language for creating Smart Contracts. 
 
 Minima, like Bitcoin, uses the UTxO model so writing smart contracts on Minima is quite different to writing them on an Account based model like Ethereum. 
