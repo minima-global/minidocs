@@ -76,7 +76,9 @@ A Witness provides three proofs that prove a transaction is valid. Each proof is
 | **ScriptProofs** | The MMR Proofs for Scripts used in the transactions | ArrayList&#60;ScriptProof&#62; |
 
 ## TxBlocks
-TxBlocks are TxPoW that become blocks and get added to the blockchain. They include the following details:
+TxBlocks are TxPoW that become blocks and get added to the blockchain. TxBlocks can also be referred to as SyncBlocks as they are required for syncing when a new user joins (or existing users rejoin) the network.
+
+They include the following details:
 
 | TxBlock Attribute | Description | Type |
 | :------------| :-----------| :-----------|

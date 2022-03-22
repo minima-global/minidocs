@@ -13,7 +13,7 @@ The **TxPoW Tree** is the main blockchain consisting of the most recent TxBlocks
 The **Cascading chain** is an unbroken chain of the headers of so called ‘super blocks’, designed to record and prove, in an immutable way, the total cumulative Proof-of-Work input into the network without having to keep a record of all individual blocks. Blocks are added to the Cascading chain on a periodic basis and the root of the TxPoW Tree always remains connected to the tip of the Cascading chain.
 
 Cascading Chain + TxPoW tree (Blockchain)
-![The Blockchain](/img/learn/theBlockchainLm.svg#gh-light-mode-only)![The Blockchain](/img/learn/theBlockchainDm.svg#gh-dark-mode-only)
+![The Blockchain](/img/blockchain/cascadingChain1Lm.svg#gh-light-mode-only)![The Blockchain](/img/blockchain/cascadingChain1Dm.svg#gh-dark-mode-only)
 
 ## TxPoW Tree Node
 
@@ -83,7 +83,7 @@ The Cascade does not include the TxPoW tree and has no branches.
 
 Diagram: Cascading Chain and Main chain 
 
-![The Blockchain](/img/learn/theBlockchainLm.svg#gh-light-mode-only)![The Blockchain](/img/learn/theBlockchainDm.svg#gh-dark-mode-only)
+![The Blockchain](/img/blockchain/cascadingChain2Lm.svg#gh-light-mode-only)![The Blockchain](/img/blockchain/cascadingChain2Dm.svg#gh-dark-mode-only)
 
 **Appendix 1)** *shows the corresponding Cascading Chain in the Minima Terminal*
 **Appendix 2)** *explains the Minima Terminal components of a block in the Cascading Chain and in the Main Chain*
@@ -119,11 +119,11 @@ Such that **Level L: P(B<sub>L</sub>(x)) = 1/(2<sup>L</sup>)**
 
 Probability of finding a block at each level, plotted on a linear chart: 
 
-![The Blockchain](/img/learn/theBlockchainLm.svg#gh-light-mode-only)![The Blockchain](/img/learn/theBlockchainDm.svg#gh-dark-mode-only)
+![The Blockchain](/img/blockchain/blockChart1Lm.svg#gh-light-mode-only)![The Blockchain](/img/blockchain/blockChart1Dm.svg#gh-dark-mode-only)
 
 Probability of finding a block at each level, plotted on a (base 2) logarithmic chart: 
 
-![The Blockchain](/img/learn/theBlockchainLm.svg#gh-light-mode-only)![The Blockchain](/img/learn/theBlockchainDm.svg#gh-dark-mode-only)
+![The Blockchain](/img/blockchain/blockChart2Lm.svg#gh-light-mode-only)![The Blockchain](/img/blockchain/blockChart2Dm.svg#gh-dark-mode-only)
 
 Relating this to block times, this means, on average, it would take twice as long to find a block of level L+1 compared to level L.
 Therefore, on average, we would expect the amount of time taken to find a block to double with each incremental level.
