@@ -95,11 +95,11 @@ Diagram: Cascading Chain and Main chain
 
 ### Difficulty levels in the Cascading chain 
 
-**Level 0** is the actual block difficulty. Set to 1 block every 50 seconds,
-**Level 1** is 2x harder than Level 0
-**Level 2** is 4x harder than Level 0
-**Level 3** is 8x harder than Level 0
-Up to Level 31…
+**Level 0** is the actual block difficulty. Set to 1 block every 50 seconds,<br />
+**Level 1** is 2x harder than Level 0<br />
+**Level 2** is 4x harder than Level 0<br />
+**Level 3** is 8x harder than Level 0<br />
+Up to Level 31…<br />
 so that **Level L is 2^L harder than Level 0**
 
 Given that each level in the Cascading Chain consists of blocks which are twice as difficult to find as blocks in the previous level, it gets exponentially harder to find a block as you increase the levels. 
@@ -108,16 +108,14 @@ We can calculate the probabilities of finding a block of each level as follows:
 
 Let a block at level L be denoted as B<sub>L</sub>(x) where L are the levels {0,...,31} and x is the block number (height), then the probability of finding a block at each level:
 
-```
-**Level 0:** P(B<sub>0</sub>(x))  = 1/(2<sup>0</sup>) = 1
-**Level 1:** P(B<sub>1</sub>(x)) = 1/(2<sup>1</sup>) = 1/2   Read: the probability of finding a level 1 block is 1 in 2
-**Level 2:** P(B<sub>2</sub>(x)) = 1/(2<sup>2</sup>) = 1/4   Read: the probability of finding a level 2 block is 1 in 4
-**Level 3:** P(B<sub>3</sub>(x)) = 1/(2<sup>3</sup>) = 1/8   Read: the probability of finding a level 3 block is 1 in 8
-**Level 4:** P(B<sub>4</sub>(x)) = 1/(2<sup>4</sup>) = 1/16   Read: the probability of finding a level 4 block is 1 in 16
-etc…to Level 31
+**Level 0:** P(B<sub>0</sub>(x))  = 1/(2<sup>0</sup>) = 1<br />
+**Level 1:** P(B<sub>1</sub>(x)) = 1/(2<sup>1</sup>) = 1/2   Read: the probability of finding a level 1 block is 1 in 2<br />
+**Level 2:** P(B<sub>2</sub>(x)) = 1/(2<sup>2</sup>) = 1/4   Read: the probability of finding a level 2 block is 1 in 4<br />
+**Level 3:** P(B<sub>3</sub>(x)) = 1/(2<sup>3</sup>) = 1/8   Read: the probability of finding a level 3 block is 1 in 8<br />
+**Level 4:** P(B<sub>4</sub>(x)) = 1/(2<sup>4</sup>) = 1/16   Read: the probability of finding a level 4 block is 1 in 16<br />
+etc…to Level 31<br />
 
 Such that **Level L: P(B<sub>L</sub>(x)) = 1/(2<sup>L</sup>)** 
-```
 
 Probability of finding a block at each level, plotted on a linear chart: 
 
