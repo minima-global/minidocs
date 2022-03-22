@@ -130,12 +130,12 @@ Probability of finding a block at each level, plotted on a (base 2) logarithmic 
 Relating this to block times, this means, on average, it would take twice as long to find a block of level L+1 compared to level L.
 Therefore, on average, we would expect the amount of time taken to find a block to double with each incremental level.
 
-**Level 0:** every 50 seconds (set by the difficulty level) 
-**Level 1:** every 100 seconds (i.e. 50*2<sup>1</sup> or 50*2) (equivalent to finding 2 level 0 blocks)
-**Level 2:** every 200 seconds (i.e. 50*2<sup>2</sup> or 50*4) (equivalent to finding 4 level 0 blocks)
-**Level 3:** every 400 seconds (i.e. 50*2<sup>3</sup> or 50*8) (equivalent to finding 8 level 0 blocks)
-**Level 4:** every 800 seconds (i.e. 50*2<sup>4</sup> or 50*16) (equivalent to finding 16 level 0 blocks)
-Etc.. 
+**Level 0:** every 50 seconds (set by the difficulty level)<br /> 
+**Level 1:** every 100 seconds (i.e. 50*2<sup>1</sup> or 50*2) (equivalent to finding 2 level 0 blocks)<br />
+**Level 2:** every 200 seconds (i.e. 50*2<sup>2</sup> or 50*4) (equivalent to finding 4 level 0 blocks)<br />
+**Level 3:** every 400 seconds (i.e. 50*2<sup>3</sup> or 50*8) (equivalent to finding 8 level 0 blocks)<br />
+**Level 4:** every 800 seconds (i.e. 50*2<sup>4</sup> or 50*16) (equivalent to finding 16 level 0 blocks)<br />
+Etc..<br /> 
 Such that the **average time taken to find a Level L Super Block = 50*2<sup>L</sup>**
 
 Hence, on average, 
