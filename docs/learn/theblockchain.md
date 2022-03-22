@@ -156,17 +156,17 @@ Each new block **B<sub>0</sub>(n)** *where n = latest block number* contains a r
 
 - **Its previous block:** B<sub>0</sub>(n-1)
 - **Its set of Super Parents:**
-        The set {B<sub>s</sub>(x<sub>max</sub>)} where
-        x<sub>max</sub> is the highest block number (most recent) at any Super level
-        s is the Super level of the block B(x<sub>max</sub>)
+    The set {B<sub>s</sub>(x<sub>max</sub>)} where
+    x<sub>max</sub> is the highest block number (most recent) at any Super level
+    s is the Super level of the block B(x<sub>max</sub>)
 
 In other words:
-1.  	When there are multiple blocks at any Super level, the Super Parent referenced in the block header will be the most recent one.
-2.  	A block can only have as many Super Parents as there are levels that exist in the cascade
+1. When there are multiple blocks at any Super level, the Super Parent referenced in the block header will be the most recent one.
+2. A block can only have as many Super Parents as there are levels that exist in the cascade
 
 The resulting output is that, should a new block achieve a difficulty high enough to become part of the Cascade, it will have an immutable link to:
-1. 	Its immediate previous block in the cascade (in terms of block number)
-2. 	Any other previous blocks in the cascade which have different maximum levels to 1).
+1. Its immediate previous block in the cascade (in terms of block number)
+2. Any other previous blocks in the cascade which have different maximum levels to 1).
 
 **Appendix 2.** shows Super Parent references using the Minima Terminal command **txpow**
 
@@ -200,16 +200,15 @@ The weight of the Super Blocks on the Cascade are also recalculated as follows:
 
 A Super Block’s Current Weight (CW) is its ‘Base Weight’ (BW) multiplied by a factor proportional to the current level the Super Block is positioned (irrespective of its maximum Super Level):
 
-```
-CW of Super Blocks on Level 0= BW*20 (i.e.  Base weight*1)
-CW of Super Blocks on Level 1 = BW*21 (i.e.  Base weight*2)
-CW of Super Blocks on Level 2 = BW*22 (i.e.  Base weight*4)
-CW of Super Blocks on Level 3 = BW*23(i.e.  Base weight*8)
-CW of Super Blocks on Level 4 = BW*24 (i.e.  Base weight*16)
+CW of Super Blocks on Level 0= BW*2<sup>0</sup> (i.e.  Base weight*1)
+CW of Super Blocks on Level 1 = BW*2<sup>1</sup> (i.e.  Base weight*2)
+CW of Super Blocks on Level 2 = BW*2<sup>2</sup> (i.e.  Base weight*4)
+CW of Super Blocks on Level 3 = BW*2<sup>3</sup>(i.e.  Base weight*8)
+CW of Super Blocks on Level 4 = BW*2<sup>4</sup> (i.e.  Base weight*16)
 etc… 
-Such that CW(BL(x)) = BW*2L 
+Such that CW(B<sub>L</sub>(x)) = BW*2<sup>L</sup> 
 Where L is the current level a Super Block is positioned on.
-```
+
 
 **Example:** if a block has a base weight of 1000, and it currently sits at Level 4, the block would weigh 1000*2<sup>4</sup> =16000
 
