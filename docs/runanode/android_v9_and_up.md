@@ -5,7 +5,7 @@ sidebar_position: 2
 # Android v9 and up
 
 ## Videos
-How to install Minima on your Android device: https://youtu.be/aaPXlYTWCTg
+How to install Minima on your Android device: https://youtu.be/aaPXlYTWCTg <br />
 How to connect your Incentive account to your Android node: https://youtu.be/Xm3caii73d8
 
 ## How to download and Install Minima on your Android device
