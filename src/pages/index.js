@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <Layout
       title={`Docs | ${siteConfig.title}`}
-      description="Learn about the most decentralized P2P blockchain network running on mobile and IoT devices. Understand the protocol and discover how to get involved. <head />">
+      description="Learn about the most decentralized P2P blockchain network running on mobile and IoT devices. Understand the protocol and discover how to get involved.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
