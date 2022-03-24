@@ -81,7 +81,7 @@ img[src$='#width50']{
 
 .row .col, img {
   max-width: 100%;
-  width: 85%;
+  width: 90%;
 }
 
 h1{
@@ -249,4 +249,10 @@ article{
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+/* Extra bits removing Edit this page */
+
+.theme-edit-this-page{
+  display: none;
 }
