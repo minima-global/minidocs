@@ -11,7 +11,7 @@ How to connect your Incentive account to your Android node: https://youtu.be/Xm3
 ## How to download and Install Minima on your Android device
 
 1. Uninstall any previous versions of the Minima App 
-2. Download the Minima App on your Android device https://github.com/minima-global/Minima/raw/master/jar/minima-0.100.30.apk
+2. Download the Minima App on your Android device https://github.com/minima-global/Minima/raw/master/jar/minima-0.100.32.apk
 3. Install the Minima App from your phones Downloads folder
 4. Open the Minima App and allow the battery settings to allow Minima to run in the background
 
