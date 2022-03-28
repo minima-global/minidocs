@@ -7,7 +7,7 @@ sidebar_position: 3
 ## Transaction Outputs
 All transactions create new UTxOs (coins) as outputs, each coin is identifiable with a unique CoinID and consists of
 1. a specific amount of Minima and 
-2. a script that determines the conditions required to spend the coin. This script is executed when a user attempts to spend the coin in a transaction and must return a value of TRUE to be spendable. [See scripting](/docs/learn/scripting)
+2. a script that determines the conditions required to spend the coin. This script is executed when a user attempts to spend the coin in a transaction and must return a value of TRUE to be spendable. [(see Scripting)](/docs/learn/scripting)
 
 Each coin has the following attributes:
 
