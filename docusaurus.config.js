@@ -91,7 +91,7 @@ const config = {
             position: "left",
           },
           {
-            href: "https://minima.global/get-involved#community",
+            href: "https://www.minima.global/our-community",
             label: "Community",
             position: "right",
           },

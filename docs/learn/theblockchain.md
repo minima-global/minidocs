@@ -107,7 +107,7 @@ printtree
 ----
 97 [0/1] 0x0018488783BFD4FA8F6AEADS8E7063857858E3023O951O0C51885867124F2F6O txns:0 weight:1000.000/16000.000
 --> 98 [0/0] 0x0024C76EBC2FOFF381196O177E94B9DCCF0O72590A3E0A07O4CB958ABCS33FFC txns:0 weight:1000.000/15000.000 
-    --> 99 [0/0] 0x003B8CF257AAFEA852ASECF329F07863EB7ED4C2AA0A1820EBBC11EEEAB271DD txns:0 •,eight:1000.000/14000.000
+    --> 99 [0/0] 0x003B8CF257AAFEA852ASECF329F07863EB7ED4C2AA0A1820EBBC11EEEAB271DD txns:0 weight:1000.000/14000.000
         --> 100 [0/0] 0x0038A2F83Al3O0EOF293A688281C42A0C94F13377F1958E9580863933EBOA089 txns:0 weight:1000.000/13000.000 
             --> 101 [0/0] 0x002CB758E57E6805E3432FDFAB45OFCFDE40A700BCB17COA8204FD3995989D02 txns:0 weight:1000.000/12000.000
                 --> 102 [0/2] 0x00087C8559EE3571E3939DECD5774F82698618704F5149513265CC4C230AF21F txns:0 weight:1000.000/11000.000 
@@ -116,6 +116,11 @@ printtree
                             --> 105 [0/0] 0x0024763333OEO6AA30AC7440F131583823E955F7F49ACC8468844FC590047656 txns:0 weight:1000.000/8000.000
                                 --> 106 [0/0] 0x003E9FOC22C8F2CF3EEOC51AFAC8477E4C082OCC66C5800221688A9ED9A15F14 txns:0 weight:1000.000/7000.000 
                                     --> 107 [0/0] 0x002F36839O85OEB0C21E0F06A8863E27FC60554A7702O2688A06BD4C9EBB6448 txns:0 weight:1000.000/6000.000
+                                        --> 108 [0/1) 0x00118C1FDE884615937AS68788456995F3781736015OO53C04A5204F113E7472 txns:0 weight:1000.000/5000.000
+                                            --> 109 (0/0] 0x003CA183OO2013808BEOCS086O818702O7ClC44BFA035463A7SE99366FFS63EE txns:0 weight:1000.000/4000.000
+                                                --> 110 (0/0) 0x0031562088O8A2CB774681A29C7OA08C5549677828E3OF2AA138B2A2C23FDA98 txns:0 weight:1000.000/3000.000
+                                                    --> 111 (0/0) 0x0025OO5O3O20AE21OO1O83A7EAC2C3O18780376AFFO4373333E428452SEDD310 txns:0 weight:1000.000/2000.000    
+                                                        --> 112 (0/1] 0x001088A86OFC123879BFC98484ESOE385748104A277E878E9C26DCD9AS3FSBE7 txns:0 weight:1000.000/1000.000
 Cascade Weight :94000.000 
 Chain Weight :16000.000 
 Total Weight :110000.000
@@ -149,7 +154,7 @@ Where:
 0x0000012767305A327C2F1B4E8F729B64AACFEFA932443156604E7B6EC845BA3C txns:0  <br /> 
 weight:1.412993E+7/1.412993E+7 @ Wed Jan 26 16:24:40 GMT 2022**
 
-## Attributes 1-3:
+### Attributes 1-3:
 1. *The Cascading Chain consists of 32 levels (0-31), with a maximum of 128 blocks at each level.*
 2. *The Cascading Chain grows logarithmically, as each level is twice as difficult to achieve as the previous level.*
 3. *Over time, the cumulative sum of the PoW (the ‘weight’) recorded in the Cascading Chain will tend towards the weight of the chain that would have existed had no blocks been pruned.*
@@ -206,7 +211,7 @@ For Levels 0-30: <br />
 - There are half as many Level L+1 Super Blocks as Level L
 - The sum of the difficulty of Level L+1 Super Blocks =The sum of the difficulty of Level L Super Blocks
 
-## Attribute 4:
+### Attribute 4:
 
 4. The Cascading Chain is unbroken. Each block in the Cascade references its previous super parent block in the Cascade.
 
@@ -303,7 +308,7 @@ txpow txpowid:Ox0000001062CF8287735998368D9828D0DAC6B158D596507F6A41F46E40F946F0
             "txn":{
                 "inputs":[], 
 ```
-## Attribute 5:
+### Attribute 5:
 
 5. At 100 block intervals, the heaviest chain (consisting of all levels in the Cascade and the heaviest branch) is processed and the Cascading Chain is updated. 
 
