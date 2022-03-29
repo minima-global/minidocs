@@ -9,7 +9,7 @@ The Minima blockchain is structured to be compact and ‘lightweight’, it is t
 
 The **TxPoW Tree** is the main blockchain consisting of the most recent TxBlocks.
 
-The **Cascading chain** is an unbroken chain of the headers of so called ‘super blocks’, designed to record and prove, in an immutable way, the total cumulative Proof-of-Work input into the network without having to keep a record of all individual blocks. Blocks are added to the Cascading chain on a periodic basis and the root of the TxPoW Tree always remains connected to the tip of the Cascading chain.
+The **Cascading chain** is an unbroken chain of the headers of so called ‘Super Blocks’, designed to record and prove, in an immutable way, the total cumulative Proof-of-Work input into the network without having to keep a record of all individual blocks. Blocks are added to the Cascading chain on a periodic basis and the root of the TxPoW Tree always remains connected to the tip of the Cascading chain.
 
 Diagram: Cascading Chain + TxPoW tree (Blockchain)
 ![The Blockchain](/img/blockchain/cascadingChain1Lm.svg#gh-light-mode-only)![The Blockchain](/img/blockchain/cascadingChain1Dm.svg#gh-dark-mode-only)
@@ -44,8 +44,8 @@ The Cascading Chain provides an objective proof of the current ‘heaviest’, a
 
 Proof-of-Work is provided, in the form of electric energy, by all users running the Minima Protocol through the process of hashing. A users device must perform a, pre-determined, minimum amount of hashing each time a user:
 
-1. Mines their transactions (Tx-PoW) before propagating across the network
-2. Mines a  ‘Pulse’ TxPoW before across the network
+1. Mines their transaction before forwarding to peers
+2. Mines a ‘Pulse’ TxPoW before forwarding to peers
 
 ### Attributes of the Cascading Chain: 
 
@@ -57,9 +57,9 @@ Proof-of-Work is provided, in the form of electric energy, by all users running 
 
 ### Definitions:
 
-**Target Difficulty:** A system set parameter influencing the number of hashes required for the network to mine a block every 50 seconds (or as close to). The higher the difficulty, the more PoW (energy) required to mine a block.
+**Block Difficulty Target:** A system set parameter influencing the average number of hashes required for the network to mine a block every 50 seconds (or as close to). The higher the difficulty, the more PoW (energy) required to mine a block.
 
-**Levels:** The Cascading Chain consists of 32 levels, where each level consists of blocks which, by chance, exceeded the difficulty target met by the blocks in the previous level by a factor of 2.
+**Cascade Levels:** The Cascading Chain consists of 32 levels, where each level consists of blocks which, by chance, exceeded the block difficulty target of the previous level by a factor of 2.
 e.g. A block in level 3 of the Cascading Chain achieved twice the difficulty of a block in level 2.
 
 **The Cascade:** The chronological, unbroken chain of blocks consisting of a maximum of 128 blocks at each level. The block at the root of the Cascade (after Genesis) will be the block which satisfies both 1) the earliest timestamp and 2) the highest (most difficult) level.
@@ -69,16 +69,17 @@ The Cascade does not include the TxPoW tree and has no branches.
 
 **Current level:** The level representing how deep in the Cascading Chain a particular Super Block is currently positioned.
 
-**Super Level:** Also the Maximum Level. The level representing the furthest depth a Super Block could reach on the Cascade. (Determined at random by the amount of PoW used to mine the block.)
+**Super Level:** Also the Maximum Level. The level representing the furthest depth a Super Block could reach on the Cascade (determined at random by the difficulty level achieved during the process of mining the TxPoW unit).
 
-**Base Weight:** A block’s base weight is equal to the difficulty value. This also represents the average number of hashes that would be required to meet this Block target value. 
+**Base Weight:** A block’s base weight is equal to its difficulty value. This is the average number of hashes that would be required to meet this Block’s difficulty target.  
 
-**Current Weight:** The base weight multiplied by a factor dependant on the current level the block is positioned in, such that Current Weight = Base weight * 2 <sup>Current level no.</sup>.
+**Current Weight:** The base weight multiplied by a factor dependant on the level in the Cascade the block is currently positioned in, such that Current Weight = Base weight * 2 <sup>Current level no.</sup>.
 
-**Branch:** The main chain (TxPoW Tree) starts at the tip of the Cascade and consists of the most recent 1024 blocks which have not yet been committed to the cascade. If, by chance, two blocks with the same block number are found, there may be multiple branches off the main chain.
+**Branch:** The main chain (TxPoW Tree) starts at the tip of the Cascade and consists of the most recent 1024 blocks which have not yet been committed to the Cascade. If, due to network latency, two blocks with the same block number are found, there may be multiple branches off the main chain.
 
-**A diagram of the Cascading Chain at a point in time**
-**Note:** this diagram demonstrates a Cascade with test parameters (only 2 blocks at each level). In reality there are a maximum of 128 blocks at each level.
+**Diagram of the Cascading Chain at a point in time**
+
+**Note:** *this diagram illustrates a Cascade and Main chain with test parameters (only 2 blocks at each level). In practice there are a maximum of 128 blocks at each level.*
 
 Diagram: Cascading Chain and Main chain 
 
@@ -115,25 +116,25 @@ printtree
                             --> 105 [0/0] 0x0024763333OEO6AA30AC7440F131583823E955F7F49ACC8468844FC590047656 txns:0 weight:1000.000/8000.000
                                 --> 106 [0/0] 0x003E9FOC22C8F2CF3EEOC51AFAC8477E4C082OCC66C5800221688A9ED9A15F14 txns:0 weight:1000.000/7000.000 
                                     --> 107 [0/0] 0x002F36839O85OEB0C21E0F06A8863E27FC60554A7702O2688A06BD4C9EBB6448 txns:0 weight:1000.000/6000.000
-                                        --> 108 [0/1) 0x00118C1FDE884615937AS68788456995F3781736015OO53C04A5204F113E7472 txns:0 weight:1000.000/5000.000
-                                            --> 109 (0/0] 0x003CA183OO2013808BEOCS086O818702O7ClC44BFA035463A7SE99366FFS63EE txns:0 weight:1000.000/4000.000
-                                                --> 110 (0/0) 0x0031562088O8A2CB774681A29C7OA08C5549677828E3OF2AA138B2A2C23FDA98 txns:0 weight:1000.000/3000.000
-                                                    --> 111 (0/0) 0x0025OO5O3O20AE21OO1O83A7EAC2C3O18780376AFFO4373333E428452SEDD310 txns:0 weight:1000.000/2000.000    
-                                                        --> 112 (0/1] 0x001088A86OFC123879BFC98484ESOE385748104A277E878E9C26DCD9AS3FSBE7 txns:0 weight:1000.000/1000.000
+                                        --> 108 [0/1] 0x00118C1FDE884615937AS68788456995F3781736015OO53C04A5204F113E7472 txns:0 weight:1000.000/5000.000
+                                            --> 109 [0/0] 0x003CA183OO2013808BEOCS086O818702O7ClC44BFA035463A7SE99366FFS63EE txns:0 weight:1000.000/4000.000
+                                                --> 110 [0/0] 0x0031562088O8A2CB774681A29C7OA08C5549677828E3OF2AA138B2A2C23FDA98 txns:0 weight:1000.000/3000.000
+                                                    --> 111 [0/0] 0x0025OO5O3O20AE21OO1O83A7EAC2C3O18780376AFFO4373333E428452SEDD310 txns:0 weight:1000.000/2000.000    
+                                                        --> 112 [0/1] 0x001088A86OFC123879BFC98484ESOE385748104A277E878E9C26DCD9AS3FSBE7 txns:0 weight:1000.000/1000.000
 Cascade Weight :94000.000 
 Chain Weight :16000.000 
 Total Weight :110000.000
 ```
 
-In the minima terminal, a block in the **cascade** (top section) has the following format:<br />
+In the minima terminal, a block in the **Cascade** (top section) has the following format:<br />
 - **[L<sub>Curr</sub> , L<sub>max</sub>]** *TxPowID **@** blocknumber* **weight:** *weight of block at L<sub>Curr</sub> **@** timestamp*
 
 Where:<br />
-- L<sub>Curr</sub> is the level in the cascade at which the block is currently positioned *(see **Current Level**)*<br />
-- L<sub>max</sub> is the maximum level in the cascade that the block can reach once all previous blocks can be discarded (pruned) *(see **Maximum Level**)*<br />
-- **TxPowID:** the hash of the block<br />
-- **blocknumber:** the number (height) of the block<br />
-- **weight:** (See ***Weight***)
+- **L<sub>Curr</sub>** is the level in the Cascade that the Super Block is currently positioned i.e. its **Current Level**<br />
+- **L<sub>max</sub>** is the maximum level in the Cascade that the Super Block can reach i.e. its **Super Level** <br />
+- **TxPowID:** the hash of the Super Block<br />
+- **blocknumber:** the number (height) of the Super Block<br />
+- **weight:** The Super Block’s weight at its current position i.e. its **Current Weight**
 
 **Example:**
 
@@ -141,11 +142,11 @@ Where:<br />
 0x0000001062CF82B7735998368D982BD0DAC6B158D596507F6A4FF46E40F946F0 @ <br /> 
 118598 weight:2.654886E+7 @ Tue Jan 25 23:18:32 GMT 2022**
 
-Whereas a **(level 0) block on a branch** has the following format:<br /> 
+Whereas a **(level 0) block on the chain** has the following format:<br /> 
 *blocknumber* **[0 , L<sub>max</sub>]** TxPowID **txns:** number of txns in the block **weight:** *block weight at L<sub>0</sub>/Total weight **@** timestamp*<br />
 
 Where:
-- **Total weight** is the sum of the weights of the current block and all subsequent blocks in the branch<br />
+- **Total weight** is the sum of the weights of the current block and all its child blocks<br />
 
 **Example:**
 
@@ -164,23 +165,22 @@ weight:1.412993E+7/1.412993E+7 @ Wed Jan 26 16:24:40 GMT 2022**
 **Level 1** is 2x harder than Level 0<br />
 **Level 2** is 4x harder than Level 0<br />
 **Level 3** is 8x harder than Level 0<br />
-Up to Level 31…<br />
-so that **Level L is 2<sup>L</sup> harder than Level 0**
+up to Level 31…<br />
+such that **Level L is 2<sup>L</sup> harder than Level 0**
 
-Given that each level in the Cascading Chain consists of blocks which are twice as difficult to find as blocks in the previous level, it gets exponentially harder to find a block as you increase the levels. 
+Given that each level in the Cascading Chain consists of blocks which are twice as difficult to find as blocks in the previous level, it gets exponentially harder to find a block as the levels increase. 
 
 We can calculate the probabilities of finding a block of each level as follows:
 
-Let a block at level L be denoted as B<sub>L</sub>(x) where L are the levels {0,...,31} and x is the block number (height), then the probability of finding a block at each level:
+Let a block at level L be denoted as B<sub>L</sub>(x) where L are the levels {0,...,31} and x is the block number (height), then the probability of finding a block at each level is:
 
 **Level 0:** P(B<sub>0</sub>(x))  = 1/(2<sup>0</sup>) = 1<br />
-**Level 1:** P(B<sub>1</sub>(x)) = 1/(2<sup>1</sup>) = 1/2   Read: the probability of finding a level 1 block is 1 in 2<br />
-**Level 2:** P(B<sub>2</sub>(x)) = 1/(2<sup>2</sup>) = 1/4   Read: the probability of finding a level 2 block is 1 in 4<br />
-**Level 3:** P(B<sub>3</sub>(x)) = 1/(2<sup>3</sup>) = 1/8   Read: the probability of finding a level 3 block is 1 in 8<br />
-**Level 4:** P(B<sub>4</sub>(x)) = 1/(2<sup>4</sup>) = 1/16   Read: the probability of finding a level 4 block is 1 in 16<br />
-etc…to Level 31<br />
-
-Such that **Level L: P(B<sub>L</sub>(x)) = 1/(2<sup>L</sup>)** 
+**Level 1:** P(B<sub>1</sub>(x)) = 1/(2<sup>1</sup>) = 1/2   i.e. the probability of finding a level 1 block is 1 in 2<br />
+**Level 2:** P(B<sub>2</sub>(x)) = 1/(2<sup>2</sup>) = 1/4   i.e. the probability of finding a level 2 block is 1 in 4<br />
+**Level 3:** P(B<sub>3</sub>(x)) = 1/(2<sup>3</sup>) = 1/8   i.e. the probability of finding a level 3 block is 1 in 8<br />
+**Level 4:** P(B<sub>4</sub>(x)) = 1/(2<sup>4</sup>) = 1/16   i.e. the probability of finding a level 4 block is 1 in 16<br />
+up to Level 31…<br />
+such that **Level L: P(B<sub>L</sub>(x)) = 1/(2<sup>L</sup>)** 
 
 Probability of finding a block at each level, plotted on a linear chart: 
 
@@ -190,23 +190,23 @@ Probability of finding a block at each level, plotted on a (base 2) logarithmic 
 
 ![The Blockchain](/img/blockchain/blockChart2Lm.svg#gh-light-mode-only)![The Blockchain](/img/blockchain/blockChart2Dm.svg#gh-dark-mode-only)
 
-Relating this to block times, this means, on average, it would take twice as long to find a block of level L+1 compared to level L.
-Therefore, on average, we would expect the amount of time taken to find a block to double with each incremental level.
+Relating this to block times means that, on average, it would take the network twice as long to find a level L+1 Super Block compared to a level L Super Block. Therefore, on average, we would expect the amount of time taken to find a block to double with each incremental level.<br />
 
-**Level 0:** every 50 seconds (set by the difficulty level)<br /> 
+Expected Super Block times:<br />
+**Level 0:** every 50 seconds (set by the network block difficulty)<br /> 
 **Level 1:** every 100 seconds (i.e. 50&#42;2<sup>1</sup> or 50&#42;2) (equivalent to finding 2 level 0 blocks)<br />
 **Level 2:** every 200 seconds (i.e. 50&#42;2<sup>2</sup> or 50&#42;4) (equivalent to finding 4 level 0 blocks)<br />
 **Level 3:** every 400 seconds (i.e. 50&#42;2<sup>3</sup> or 50&#42;8) (equivalent to finding 8 level 0 blocks)<br />
 **Level 4:** every 800 seconds (i.e. 50&#42;2<sup>4</sup> or 50&#42;16) (equivalent to finding 16 level 0 blocks)<br />
-Etc..<br /> 
-Such that the **average time taken to find a Level L Super Block = 50&#42;2<sup>L</sup>**
+up to Level 31…<br /> 
+such that the **average time taken to find a Level L Super Block = 50&#42;2<sup>L</sup> seconds.**
 
-Hence, on average, 
+Hence, on average, <br />
 
-For Levels 0-31: 
+For Levels 0-31:
 - One Level L block would contribute the same difficulty (PoW) to the chain as 2<sup>L</sup> Level 0 blocks, e.g. One Level 4 Super Block provides the PoW of sixteen Level 0 blocks.<br />
 
-For Levels 0-30: <br />
+For Levels 0-30:
 - There are half as many Level L+1 Super Blocks as Level L
 - The sum of the difficulty of Level L+1 Super Blocks =The sum of the difficulty of Level L Super Blocks
 
@@ -214,7 +214,7 @@ For Levels 0-30: <br />
 
 4. The Cascading Chain is unbroken. Each block in the Cascade references its previous super parent block in the Cascade.
 
-In every block, there exists a header which contains a reference (hash) to all its parents at every existing Super level in the cascade.
+In every block, there exists a header which contains a reference (hash) to a parent at every existing Super level in the Cascade.
 
 **Note:** this header is created at the time the block is created and before it has been mined, therefore the maximum level of each new block is unknown when the references to its Super Parents are created.
 
@@ -231,12 +231,12 @@ The resulting output is that all super blocks in the Cascade will have an immuta
 1. Their immediate previous block in the Cascade
 2. Previous super blocks in the Cascade which have different maximum levels to their immediate previous super parent.
 
-Terminal output showing Super Parent references
+**Terminal output showing Super Parent references**
 
 Minima command: **txpow txpowid:**[insertTxPoWID]
 
 The above command will show for the given block, the full details of the TxPoW including its Super Parents.<br />
-Example (cropped) showing 5 Super Parents of this block at levels 4, 11, 14, 16, 18 and the genesis block.
+*Example (cropped) showing 5 Super Parents of this block at levels 4, 11, 14, 16, 18 and the genesis block.*
 
 ```
 txpow txpowid:Ox0000001062CF8287735998368D9828D0DAC6B158D596507F6A41F46E40F946F0 
@@ -311,41 +311,37 @@ txpow txpowid:Ox0000001062CF8287735998368D9828D0DAC6B158D596507F6A41F46E40F946F0
 
 5. At 100 block intervals, the heaviest chain (consisting of all levels in the Cascade and the heaviest branch) is processed and the Cascading Chain is updated. 
 
-Once the heaviest branch reaches 1124 (1024 + 100) blocks in length, the cascading process begins.
+Once the main chain (heaviest branch) reaches 1124 (1024 + 100) blocks in length, the Cascading process begins.
 
-The cascading process is as follows:
+The Cascading process is as follows:
 
-1. The new Cascade will be a subset of blocks from
+1. The new Cascade will be a subset of blocks from:
     - the existing Cascade and 
-    - the first (earliest timestamped) 100 blocks from the heaviest branch
-    A new chain is created from a + b which is processed from **tip to root**. Let’s define this as the **HC (heaviest chain)**.<br />
-    Note: The remaining (most recent) 1024 blocks are kept, in full, on the main chain.
+    - the first 100 blocks from the main chain that are closest to the tip of the existing Cascade 
+   
+2. **Level 0:** Working backwards through the first 100 blocks in the main chain, each block is checked to see if it meets the difficulty of a Level 0 block. By definition, all blocks are Level 0 so these 100 blocks are all added to Level 0 in the new Cascade. 28 Level 0 blocks from the previous Cascade will remain in Level 0 of the new Cascade, filling the 128 spaces at this level.
 
-2. **Level 0:** Starting from the tip of the HC, each block is checked to see whether it meets the difficulty required for Level 0. By definition, all blocks meet this difficulty so the 100 blocks at the tip of the HC are pushed onto Level 0 of the Cascading Chain. There are still 28 spaces remaining to be filled on Level 0 so 28 more blocks from the HC will remain on Level 0.
+3. **Level 1:** After 128 blocks have been added to Level 0 of the Cascade, continuing to work backwards through the remaining Level 0 blocks in the previous Cascade, these will only be kept and added to Level 1 in the new Cascade if they meet the difficulty required to be a Level 1 Super Block or above, otherwise they are pruned.
 
-3. **Level 1:** After 128 blocks have been added to Level 0 of the Cascade, we move up to Level 1 on the Cascade. Successive blocks will only be added to Level 1 in the Cascade if they meet the difficulty required for Level 1 or above, otherwise they are pruned. Once, and if, 128 blocks have been added to Level 1, we move up to Level 2 in the Cascade.
+4. **Level 2:** Once, and if, 128 Super Blocks have been added to Level 1, the next Super Blocks must meet the Level 2 difficulty to remain in the Cascade, otherwise they are pruned. 
 
-4. **Level 2:** The next blocks being checked will only be added to the new Cascade if they meet the difficulty required Level 2 or above, otherwise they are pruned. 
-
-5. **Level 3:** Working up the chain, the next 128 blocks added to the Cascade must meet the difficulty required for at least Level 3, otherwise they are pruned. 
+5. **Level 3:** Continuing to work backwards through Super Blocks the previous Cascade, the next 128 blocks added to the Cascade must meet the difficulty required for at least Level 3, otherwise they are pruned. 
 
 6. The process continues until all blocks in the chain have been processed.
 
-This results in a new Cascading Chain.
+This results in a new Cascading Chain and the remaining (most recent) 1024 blocks kept, in full, on the main chain.
 
 The weight of the Super Blocks on the Cascade are also recalculated as follows:
 
 A Super Block’s Current Weight (CW) is its ‘Base Weight’ (BW) multiplied by a factor proportional to the current level the Super Block is positioned (irrespective of its maximum Super Level):
 
-**CW of Super Blocks on Level 0** = BW&#42;2<sup>0</sup> (i.e.  Base weight&#42;1)<br />
-**CW of Super Blocks on Level 1** = BW&#42;2<sup>1</sup> (i.e.  Base weight&#42;2)<br />
-**CW of Super Blocks on Level 2** = BW&#42;2<sup>2</sup> (i.e.  Base weight&#42;4)<br />
-**CW of Super Blocks on Level 3** = BW&#42;2<sup>3</sup>(i.e.  Base weight&#42;8)<br />
-**CW of Super Blocks on Level 4** = BW&#42;2<sup>4</sup> (i.e.  Base weight&#42;16)<br />
-etc… 
-
-Such that **CW(B<sub>L</sub>(x)) = BW&#42;2<sup>L</sup>**<br /> 
-Where L is the current level a Super Block is positioned on.
+**CW of Super Blocks on Level 0** = BW&#42;2<sup>0</sup> *i.e.  Base weight&#42;1*<br />
+**CW of Super Blocks on Level 1** = BW&#42;2<sup>1</sup> *i.e.  Base weight&#42;2)*<br />
+**CW of Super Blocks on Level 2** = BW&#42;2<sup>2</sup> *i.e.  Base weight&#42;4*<br />
+**CW of Super Blocks on Level 3** = BW&#42;2<sup>3</sup> *i.e.  Base weight&#42;8*<br />
+**CW of Super Blocks on Level 4** = BW&#42;2<sup>4</sup> *i.e.  Base weight&#42;16*<br />
+up to Level 31…<br /> 
+such that **CW(B<sub>L</sub>(x)) = BW&#42;2<sup>L</sup>**, where L is the current level a Super Block is positioned on.
 
 
 **Example:** if a block has a base weight of 1000, and it currently sits at Level 4, the block would weigh 1000*2<sup>4</sup> =16000
