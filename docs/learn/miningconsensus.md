@@ -157,14 +157,16 @@ Chain speed (secs) = Avg time interval per block between the final start and end
 Speed Ratio = Required block speed (50 secs)/Chain speed  
 
 Average block difficulty = Avg difficulty for blocks between the start and end position 
-
+```
+Then,
+```
 New block difficulty = Avg block difficulty * Speed Ratio 
 Or
 New block difficulty = CurrentMinTxPoWWork 
 if Avg block difficulty * speed ratio < CurrentMinTxPoWWork 
-
-i.e. the Magic number CurrentMinTxPoWWork is used as a lower bound for the block difficulty
 ```
+i.e. the Magic number **CurrentMinTxPoWWork** is used as a lower bound for the block difficulty
+
 
 **5. Order Mempool Transactions**
 
@@ -234,7 +236,7 @@ Once the hashed TxPoW header satisfies the transaction difficulty, the final non
 The hash of the TxPoW header is the TxPoW ID.
 If it also meets the block difficulty target, its Block weight and Super Level are also calculated.
 
-**Continue to process and send TxPoW ID across the network**
+**Once the mining process has ended, the node will continue to validate, process and send the TxPoW ID across the network.**
 
 
 ## Validating TxPoW units
