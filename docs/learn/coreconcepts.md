@@ -33,3 +33,7 @@ The burn serves multiple purposes:
 - **A method for ordering transactions and regulating on-chain traffic:** Similar to the fee model on other blockchains, the burn serves as a selection method for deciding which unconfirmed transactions will be added to a block. The higher the burn amount in a transaction, the more likely it is that a transaction will be added to a block. 
 - **A mechanism for spam prevention by making Denial-of-Service (DoS) attacks expensive:** The burn may be high during periods of heavy traffic or spam and, as it rises, traffic will decrease, self-regulating the system. The burn can be nil or very low when traffic is at manageable levels as the total amount is not important, only the relative burn amount in comparison to other transactions.
 
+While some blockchains have implemented burns that require a central entity to actively buy back and burn coins or tokens (for example by sending them to an inaccessible address, effectively destroying them); others have a burn directly integrated into the protocol. 
+
+In Minima, the ability to burn coins is directly coded into the protocol, meaning it does not rely on any entity, but rather is enforced by the network as a function of demand for block space. 
+

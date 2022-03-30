@@ -7,7 +7,7 @@ sidebar_position: 4
 ## The world’s first completely decentralized blockchain
 Everyone running Minima is working together to secure the network. Unlike miners, we are not competing, we are collaborating, as equals. And when everyone is equal the network becomes 100% decentralized.
 
-## The only blockchain controlled entirely by its users.
+## The only blockchain controlled entirely by its users
 With true decentralization comes maximum censorship resistance.
 Users can transfer value, access information and freely connect with each other without limits.
 Minima is built on principles of collaboration, participation, empowerment and accountability.
