@@ -53,20 +53,34 @@ coins relevant:true
 ## Transaction Inputs
 Transaction inputs are coins (UTxOs) that will be spent in the transaction, identified by the Coin ID. One or more coins may be required depending on the value of the coins owned by the user and the amount they wish to spend. 
 
-*For example if a user wishes to spend 100 Minima but they only have two coins worth 40 and 90 Minima, they must use both coins as inputs to the transaction and receive change of 30 as a new coin.*
+> *For example if a user wishes to spend 100 Minima but they only have two coins worth 40 and 90 Minima, they must use both coins as inputs to the transaction and receive change of 30 as a new coin.*
 
+:::note 
 When using a wallet application, the wallet will automatically choose which coins to use as inputs, however when constructing transactions manually, relevant coins must be selected to ensure the sum of the inputs is greater than or equal to the sum of the outputs. 
-
+:::
 
 ## Transaction Structure
 
-A transaction is the main building block of the TxPoW unit. Transactions can be constructed in isolation but must be added into a TxPoW unit before it can be mined and propagated across the network.
+All transactions will have a list of inputs, outputs, state variables, a link hash and a Transaction ID.
 
-All transactions will have a list of inputs, outputs, state variables, a link hash and a transaction ID.
+To send a transaction, a user must construct it using one or more of their unspent coins as inputs and defining the outputs required.  <br/>
+:::tip
+The Burn output must be considered when constructing transactions, as this will affect the priority that a transaction has over others in the mempool.
+:::
+**Inputs:**
+* **Unspent coins:** One or more unspent coins (UTxOs) covering the amount that should be spent
 
-To send a transaction, a node must construct the transaction using one or more of their unspent coins as inputs. The outputs must also be specified, with the amount and the public address to send to. If the value of the input coins is greater than the value of the output, the **change** output must be defined as the difference to be returned to the sender, this is done automatically if the user uses a wallet application.
+**Outputs: **
+* **Amounts to send:** One or more amounts with recipient's address specified. New coins will be created for these outputs.
+* **Burn:** The amount of Minima to burn with this transaction (optional).
+* **Change:** If the total value of the input coins is greater than the value of the outputs (including the Burn), the change output must be defined as the difference to be returned to the user's address. A new coin will be created for this output.
 
-The Burn must also be considered when constructing transactions, as this will affect the priority that a transaction has over others in the mempool. Any difference between inputs and outputs (including change) will be burned, removing that amount from circulation.
+:::note
+If a change output is not defined, any difference between the inputs and outputs will be burned, removing that amount from circulation
+:::
+:::note
+Transactions can be constructed in isolation but must be added into a TxPoW unit before it can be mined and propagated across the network.
+:::
 
 ### State Variables
 Transactions also include State Variables for storing public data and previous transaction states to retrieve information for scripts. 0-255 variables are allowed. [(see Scripting)](/docs/learn/scripting)
