@@ -1,10 +1,10 @@
 ---
-sidebar_position: 4
+sidebar_position: 6
 ---
 
-# TxPoW Units & TxBlocks
+# TxPoW Units & Blocks
 
-## TxPoW
+## TxPoW Units
 
 Before a transaction can be posted to the network, it must be added to a **TxPoW unit** with other essential data and a small amount of ‘work’ must be done i.e. it must be ‘mined’.
 
@@ -14,7 +14,7 @@ After being mined, a TxPoW unit will be propagated to the network either as a bl
 
 A node can carry out several activities with a TxPoW unit depending on the situation:
 
-**Generate:** When a user wishes to send a transaction, or is required to send a **Pulse** to the network, their node will generate (construct) a TxPoW unit containing their transaction and the hashes of other unconfirmed transactions it knows about in the **mempool**. TxPoW units are analogous to compact blocks in Bitcoin. [(See TxPoW Generation)](#)
+**Generate:** When a user wishes to send a transaction, or is required to send a **Pulse** to the network, their node will generate (construct) a TxPoW unit containing their transaction and the hashes of other unconfirmed transactions it knows about in the **mempool**. TxPoW units are analogous to compact blocks in Bitcoin [(see Constructing TxPoW Units).](/docs/learn/miningconsensus#constructing-txpow-units)
 
 **Mine:** Before a node can propagate its TxPoW unit to the network, it must mine the TxPoW unit by cycling through different **nonces** (numbers), adding the nonce to the TxPoW header and hashing the result. Once the resulting hash meets the level of difficulty required by the network (~1 second work), they can propagate their TxPoW unit to other nodes in the network.
 
@@ -75,7 +75,7 @@ A Witness provides three proofs that prove a transaction is valid. Each proof is
 | **CoinProofs** | The MMR Proofs that each input Coin is valid and unspent | ArrayList&#60;CoinProof&#62; |
 | **ScriptProofs** | The MMR Proofs for Scripts used in the transactions | ArrayList&#60;ScriptProof&#62; |
 
-## TxBlocks
+## TxBlocks (Blocks)
 TxBlocks are TxPoW that become blocks and get added to the blockchain. TxBlocks can also be referred to as SyncBlocks as they are required for syncing when a new user joins (or existing users rejoin) the network.
 
 They include the following details:

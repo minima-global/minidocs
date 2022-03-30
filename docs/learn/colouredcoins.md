@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 10
 ---
 
 # Coloured Coins
@@ -17,7 +17,7 @@ Custom tokens are specified by the following characteristics:
 | Total | The total number of these tokens |
 | Decimals | The number of decimal places to use for the token |
 | Script | The token script |
-| Total Amount | The total amount of Minima coloured to be this token. Since Minima uses 44 decimal places, if you colour 1E-33 (0.000000000000000000000000000000001) Minima, that is 1000 tokens with 8 decimal places. i.e. 0.00000000000000000000000000000000**1000.00000000** |
+| Total Amount | The total amount of Minima coloured to be this token. Since Minima uses 44 decimal places, if you colour 1E-33 (0.000000000000000000000000000000001) Minima, that is 1000 tokens with 8 decimal places. i.e. 1000.00000000 |
 | Scale | The scale of the Token vs the amount. In the example above, the scale is 36 |
 
 

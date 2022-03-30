@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Transactions
@@ -71,17 +71,17 @@ The Burn must also be considered when constructing transactions, as this will af
 ### State Variables
 Transactions also include State Variables for storing public data and previous transaction states to retrieve information for scripts. 0-255 variables are allowed. [(see Scripting)](/docs/learn/scripting)
 
-### Linkhash 
+### Link Hash 
 
-Used for a Burn transaction. The linkhash of a burn transaction is the transaction ID of the main transaction it relates to. This means that the burn transaction can only be spent with the transaction it is linked to.  For main transactions, it is set to 0x00.
+Used to link a Burn amount to a main transaction. The Link Hash in a Burn transaction is the transaction ID of the main transaction it relates to. This means that the burn transaction can only be spent with the transaction it is linked to.  For main transactions, it is set to a default of 0x00.
 
-Diagram: Main transaction structure
+**Main transaction structure**
 
 | **Transaction ID:** *Hash(Transaction object)* |
 | :-----------------------------------------|
 | *Inputs* <br /> *Outputs*<br />*State Variables (0-255)*<br />*Linkhash (0x00)* |
 
-Diagram: Burn transaction structure
+**Burn transaction structure**
 
 | **Transaction ID:** *Hash(Transaction object)* |
 | :---------------------------------------- |
@@ -90,14 +90,14 @@ Diagram: Burn transaction structure
 
 ## Transaction Validity
 
-For a transaction to be valid, it must:
+For a transaction to be valid:
 1. It must have at least one, and up to 256 coin inputs
 2. It must have no more than 255 outputs 
 3. All inputs and outputs must be valid Minima amounts (between 0-1 billion)
 4. The sum of inputs must be greater than or equal to the sum of the outputs for each Token ID.
-5. Have unique Coin IDs for each input coin
+5. It must have unique Coin IDs for each input coin
 
-When checking the validity of transactions, the monotonicity is checked to determine whether a transaction needs to be checked more than once. 
+When checking the validity of transactions, the *monotonicity* is checked to determine whether a transaction needs to be checked more than once. 
 
 Scripts of **Monotonic** transactions only need to be checked once i.e. they are either valid or not e.g. a simple RETURN(SIGNEDBY(..))
 

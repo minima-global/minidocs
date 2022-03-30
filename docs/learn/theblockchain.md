@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 7
 ---
 
 
@@ -138,9 +138,7 @@ Where:<br />
 
 **Example:**
 
-**[1/4]<br /> 
-0x0000001062CF82B7735998368D982BD0DAC6B158D596507F6A4FF46E40F946F0 @ <br /> 
-118598 weight:2.654886E+7 @ Tue Jan 25 23:18:32 GMT 2022**
+`[1/4] 0x0000001062CF82B7735998368D982BD0DAC6B158D596507F6A4FF46E40F946F0 @ 118598 weight:2.654886E+7 @ Tue Jan 25 23:18:32 GMT 2022`
 
 Whereas a **(level 0) block on the chain** has the following format:<br /> 
 *blocknumber* **[0 , L<sub>max</sub>]** TxPowID **txns:** number of txns in the block **weight:** *block weight at L<sub>0</sub>/Total weight **@** timestamp*<br />
@@ -150,14 +148,14 @@ Where:
 
 **Example:**
 
-**119839 [0/0] <br /> 
-0x0000012767305A327C2F1B4E8F729B64AACFEFA932443156604E7B6EC845BA3C txns:0  <br /> 
-weight:1.412993E+7/1.412993E+7 @ Wed Jan 26 16:24:40 GMT 2022**
+`119839 [0/0] 0x0000012767305A327C2F1B4E8F729B64AACFEFA932443156604E7B6EC845BA3C txns:0 weight:1.412993E+7/1.412993E+7 @ Wed Jan 26 16:24:40 GMT 2022`
 
 ### Attributes 1-3:
-1. *The Cascading Chain consists of 32 levels (0-31), with a maximum of 128 blocks at each level.*
-2. *The Cascading Chain grows logarithmically, as each level is twice as difficult to achieve as the previous level.*
-3. *Over time, the cumulative sum of the PoW (the ‘weight’) recorded in the Cascading Chain will tend towards the weight of the chain that would have existed had no blocks been pruned.*
+> *The Cascading Chain consists of 32 levels (0-31), with a maximum of 128 blocks at each level.* <br/>
+
+> *The Cascading Chain grows logarithmically, as each level is twice as difficult to achieve as the previous level.*<br/>
+
+> *Over time, the cumulative sum of the PoW (the ‘weight’) recorded in the Cascading Chain will tend towards the weight of the chain that would have existed had no blocks been pruned.*
 
 **Difficulty levels in the Cascading chain** 
 
@@ -212,7 +210,7 @@ For Levels 0-30:
 
 ### Attribute 4:
 
-4. The Cascading Chain is unbroken. Each block in the Cascade references its previous super parent block in the Cascade.
+>*The Cascading Chain is unbroken. Each block in the Cascade references its previous super parent block in the Cascade.*
 
 In every block, there exists a header which contains a reference (hash) to a parent at every existing Super level in the Cascade.
 
@@ -309,7 +307,7 @@ txpow txpowid:Ox0000001062CF8287735998368D9828D0DAC6B158D596507F6A41F46E40F946F0
 ```
 ### Attribute 5:
 
-5. At 100 block intervals, the heaviest chain (consisting of all levels in the Cascade and the heaviest branch) is processed and the Cascading Chain is updated. 
+>*At 100 block intervals, the heaviest chain (consisting of all levels in the Cascade and the heaviest branch in the TxPoW Tree) is processed and the Cascading Chain is updated. *
 
 Once the main chain (heaviest branch) reaches 1124 (1024 + 100) blocks in length, the Cascading process begins.
 
