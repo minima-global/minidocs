@@ -64,20 +64,9 @@ The purpose of the block difficulty level is to regulate the frequency at which 
 
 The block target is much lower (harder) than the transaction target, and fluctuates with the number of nodes on the network and their hash rate, so that 50 block intervals are maintained.
 
-If the block times (chain speed) deviates from 50 second intervals, the difficulty will be adjusted proportionally, by a maximum of 10% up or down, so that:
+If block times deviate from 50 second intervals, the difficulty will be adjusted proportionally, by a maximum of 10% up or down.
 
-```math 
-New block difficulty = Current chain speed * (required block time/actual chain speed)
-(if 0.9 <= required block time/actual chain speed <= 1.1)
-
-or
-New block difficulty = Current chain speed * 0.9
-(if required block time/actual chain speed < 0.9)
-
-or
-New block difficulty = Current chain speed * 1.1
-(if required block time/actual chain speed > 1.1)
-```
+The block difficulty will always be at least as hard as the transaction difficulty.
 
 **Adjusting the block difficulty:**<br />
 > **Example 1: Block times too slow**<br />
@@ -142,9 +131,9 @@ If
 then
  Minimum TxPoW hash = CurrentMinTxPoWWork
 ```
-**4. Calculate Chain Speed and Block Difficulty **
+**4. Calculate Chain Speed and Block Difficulty**
 
-Using the latest 256 blocks in the main chain, the average time per block is calculated and the block difficulty target is adjusted accordingly.
+Using the latest 256 blocks in the main chain, the average time and block difficulty for each block is calculated and the block difficulty target is adjusted proportionally by a maximum of 10% up or down.
 
 `Initial Start Position = tip block, Initial End Position = tip - 256 `
 
@@ -160,12 +149,23 @@ Average block difficulty = Avg difficulty for blocks between the start and end p
 ```
 Then,
 ```
-New block difficulty = Avg block difficulty * Speed Ratio 
-Or
+New block difficulty = Avg block difficulty * Speed Ratio
+(if 0.9 <= Speed Ratio <= 1.1)
+
+or
+New block difficulty = Avg block difficulty * 0.9
+(if Speed Ratio < 0.9)
+
+or
+New block difficulty = Avg block difficulty * 1.1
+(if Speed Ratio > 1.1)
+
+or
 New block difficulty = CurrentMinTxPoWWork 
-if Avg block difficulty * speed ratio < CurrentMinTxPoWWork 
+(if Avg block difficulty * Speed Ratio < CurrentMinTxPoWWork and 0.9 <= Speed Ratio <= 1.1)
 ```
 i.e. the Magic number **CurrentMinTxPoWWork** is used as a lower bound for the block difficulty
+
 
 
 **5. Order Mempool Transactions**
