@@ -323,9 +323,15 @@ A **TxBlock** includes the TxPoW and adds the MMR peaks; a list of CoinProofs fo
 
 Once the TxBlock has been created, a structure is required to attach the block to the TxPoW tree, this is the role of a TxPoW Tree Node. It adds further relevant information to the TxBlock i.e. the MMR set; a list of all the spent and newly created coins; and a list of all the MMR entry numbers of any coins in any of the transactions that are relevant to the user (i.e. coins they are tracking). [(see TxPoW Tree Nodes)](/docs/learn/theblockchain#txpow-tree-node)
 
-This tree node is then added to its parent on the chain and the tree is recalculated, selecting the branch with the most Proof-of-Work as the main chain. (see Selecting the main chain)
+A child node is then added to its parent in the tree and the tree is **recalculated**.
 
-The TxPoW database is then checked to see if there are any children for this new block as these can be added to the process stack for processing. 
+**Recalculating** the tree involves:
+* Calculating the weight of all blocks in the tree
+* Selecting the heaviest branch as the main chain [(see Selecting the main chain)](/docs/learn/miningconsensus#selecting-the-main-chain-ghost)
+* Cascading the chain if the heaviest branch has reached the required length [(see Cascading Chain - Attribute 5)](/docs/learn/theblockchain#attribute-5)
+* Setting transactions in the main chain so they cannot be added to a new TxPoW
+
+The TxPoW database is then checked to see if there are any children for this new block as these can then be added to the process stack for processing. 
 
 This process continues until either the process stack is empty or contains TxPoWs with transactions not yet received by the user.
 

@@ -309,23 +309,25 @@ txpow txpowid:Ox0000001062CF8287735998368D9828D0DAC6B158D596507F6A41F46E40F946F0
 
 >*At 100 block intervals, the heaviest chain (consisting of all levels in the Cascade and the heaviest branch in the TxPoW Tree) is processed and the Cascading Chain is updated. *
 
-Once the main chain (heaviest branch) reaches 1124 (1024 + 100) blocks in length, the Cascading process begins.
+Once the main chain (heaviest branch) reaches 1124 (1024 + 100) blocks in length, the cascading process begins.
+
+The new Cascade will include a subset of blocks from the existing (previous) Cascade and all of the first 100 blocks from the main chain i.e. the 100 blocks closest to the tip of the existing Cascade. Once added to the Cascade, these first 100 blocks will be pruned from the main chain, leaving 1024 blocks unpruned.
+
+The 101st block in the main chain will become the new root of the TxPoW Tree whose parent will be the tip of the new Cascade. 
+
+Before these 100 blocks are pruned, the new root block’s MMR Set is updated with entries for all the CoinProofs from these blocks for unspent coins that the node is tracking. Therefore CoinProofs are not lost once the blocks are pruned. 
 
 The Cascading process is as follows:
+  
+1. **Level 0:** Working backwards through the first 100 blocks in the main chain, each block is checked to see if it meets the difficulty of a Level 0 block. By definition, all blocks are Level 0 so these 100 blocks are all added to Level 0 in the new Cascade. 28 Level 0 blocks from the previous Cascade will remain in Level 0 of the new Cascade, filling the 128 spaces at this level.
 
-1. The new Cascade will be a subset of blocks from:
-    - the existing Cascade and 
-    - the first 100 blocks from the main chain that are closest to the tip of the existing Cascade 
-   
-2. **Level 0:** Working backwards through the first 100 blocks in the main chain, each block is checked to see if it meets the difficulty of a Level 0 block. By definition, all blocks are Level 0 so these 100 blocks are all added to Level 0 in the new Cascade. 28 Level 0 blocks from the previous Cascade will remain in Level 0 of the new Cascade, filling the 128 spaces at this level.
+2. **Level 1:** After 128 blocks have been added to Level 0 of the Cascade, continuing to work backwards through the remaining Level 0 blocks in the previous Cascade, these will only be kept and added to Level 1 in the new Cascade if they meet the difficulty required to be a Level 1 Super Block or above, otherwise they are pruned.
 
-3. **Level 1:** After 128 blocks have been added to Level 0 of the Cascade, continuing to work backwards through the remaining Level 0 blocks in the previous Cascade, these will only be kept and added to Level 1 in the new Cascade if they meet the difficulty required to be a Level 1 Super Block or above, otherwise they are pruned.
+3. **Level 2:** Once, and if, 128 Super Blocks have been added to Level 1, the next Super Blocks must meet the Level 2 difficulty to remain in the Cascade, otherwise they are pruned. 
 
-4. **Level 2:** Once, and if, 128 Super Blocks have been added to Level 1, the next Super Blocks must meet the Level 2 difficulty to remain in the Cascade, otherwise they are pruned. 
+4. **Level 3:** Continuing to work backwards through Super Blocks the previous Cascade, the next 128 blocks added to the Cascade must meet the difficulty required for at least Level 3, otherwise they are pruned. 
 
-5. **Level 3:** Continuing to work backwards through Super Blocks the previous Cascade, the next 128 blocks added to the Cascade must meet the difficulty required for at least Level 3, otherwise they are pruned. 
-
-6. The process continues until all blocks in the chain have been processed.
+5. The process continues until all blocks in the chain have been processed.
 
 This results in a new Cascading Chain and the remaining (most recent) 1024 blocks kept, in full, on the main chain.
 
