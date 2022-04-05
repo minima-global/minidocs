@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # What is Minima?
@@ -19,7 +19,10 @@ All design decisions for Minima can be attributed to three elements:
 - Everyone builds the chain
 - No reliance on fees 
 - It must be finished
-1. **Everyone builds the chain: *Every*** user must participate in constructing the blockchain
+
+### Everyone builds the chain
+
+***Every user must participate in constructing the blockchain***
 
 We must identify the difference between **validation** and **construction** of a blockchain. 
 
@@ -32,14 +35,20 @@ It is, effectively, a read-only role and participants that only validate cannot 
 
 Every user on Minima is a constructing and validating node.
 
-2. **No reliance on fees:** There must be no entity that is paid to construct the chain
+### No reliance on fees
+
+***There must be no entity that is paid to construct the chain***
+
 When financial incentives are at stake, human nature takes over. We will do everything in our power to accumulate whatever resources are required to win as many rewards as possible. 
 
 With blockchains, the incentives commonly seen are transaction fees and block rewards to those constructing the chain. The resources required to attain these incentives are either powerful, expensive computer hardware or large financial contributions in the form of staking. Both are vectors for centralization over time, as those with a wealth of resources continue to increase their share and secure their control over the construction of the chain.
 
 **No users are paid to construct the Minima blockchain.** Another mechanism, the Burn, is used to benefit all.
 
-3. **It must be finished:** The parts of the protocol critical for consensus must not require changes
+### It must be finished
+
+***The parts of the protocol critical for consensus must not require changes***
+
 A protocol cannot be without a central authority, or be considered a solid foundation to build on, if certain developers can ‘govern’ and change the rules of the chain. Therefore, a blockchain protocol cannot be truly decentralized if it is not complete.
 
 **Minima will be complete at launch.**

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Why Minima?
@@ -11,7 +11,7 @@ Minima was born out of the desire to achieve what Bitcoin originally sought to a
 
 Source: [Bitcoin Node Count History](https://luke.dashjr.org/programs/bitcoin/files/charts/historical.html) 
 
-Prior to the inception of Bitcoin in 2008, smartphone technology was still in its infancy. Now, as of 2020, the global smartphone adoption rate is estimated to have reached over 78%, ranging from 48% in Sub-saharan Africa to 80% in North America and Europe. 
+Prior to the inception of Bitcoin in 2008, smartphone technology was still in its infancy. As of 2020, the global smartphone adoption rate is estimated to have reached over 78%, ranging from 48% in Sub-saharan Africa to 80% in North America and Europe. 
 Source: [Statista Global Smartphone penetration rate](https://www.statista.com/statistics/203734/global-smartphone-penetration-per-capita-since-2005/) 
 
 
