@@ -17,8 +17,12 @@ One or more UTxOs are used as inputs into transactions and one or more new UTxOs
 ![Core Concepts](/img/learn/coreConceptsLm.svg#gh-light-mode-only)![Core Concepts](/img/learn/coreConceptsDm.svg#gh-dark-mode-only)
 
 ## MMR (Merkle Mountain Range) Database 
-As the blockchain is constantly pruned, users must keep track of their spent and unspent **TxOs (transaction outputs) independently** of the chain. Each TxO has a proof that forms part of a hash sum tree and these are stored in the user’s MMR database. 
-When a user wishes to spend their coins, they must provide the up to date valid proofs that it is unspent.
+To ensure that all users of the network can contribute to the construction of the chain, the chain needs to be small enough to run on a mobile device. This would not be possible if the entire history of the chain was required as this would be too much of an overhead for a mobile device. Therefore the blockchain must be constantly reduced in size to meet this requirement. This is known as **pruning**.<br/>
+The impact of pruning means that the full transaction history of the chain is not kept (except on Archive nodes), therefore a storage mechanism is required to keep track of coins that were created in blocks that have since been pruned. **This is the role of the MMR database.**<br/>
+Hence, users must keep track of their spent and unspent coins/TxOs (transaction outputs) independently of the chain. Each coin is stored as a leaf node in a tree structure (a **Merkle hash-sum tree**). Then, using a collection of nodes in this tree, a proof path can be created from the coin to a peak of the tree, proving the existence of a coin even if the block that it was created in has been pruned. <br/>
+All users only keep the parts of the MMR tree required to create the proofs for their own coins, which is a tiny amount of data compared to all the coins in the network. Users are also required to store the peaks and the root of the tree so that they can validate a Coin Proof that is presented to them by another user. <br/>
+When a user wishes to spend their coins, they must provide the up-to-date, valid proof that it is unspent. Any other node in the network can verify this proof by calculating the peaks and root hash of the MMR tree from the proof and ensuring it matches their own values for the peak and root hash. 
+
 
 ## Transaction Proof-of-Work (TxPoW)
 Minima requires users to provide work, in the form of computing power, to ‘mine’ their own transactions, this is TxPoW. Once a user has contributed a small amount of work (~1 second) their transaction will be propagated around the network. This is in contrast to Bitcoin where users rely on *miners* with specific hardware to provide PoW and propagate their transactions on their behalf.

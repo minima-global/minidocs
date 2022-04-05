@@ -29,6 +29,14 @@ To participate, you will need an Android mobile (9.0 or above), PC, Mac or Linux
 ## Can anyone run a node and join the Incentive Program?
 Yes, providing you have the correct device to install and run a MInima node.
 
+## How many nodes can I connect to my Incentive Reward account?
+
+You can connect your Incentive ID to as many nodes as you like (great for resilience!), but you will only be rewarded for one node.
+
+## How many Incentive Reward accounts can I have?
+
+One Incentive Reward account per person.
+
 ## Will there be any updates?
 In the run-up to Mainnet, there will likely be several upgrades to the system. These are known as 'hard forks'. Any earned Minima rewards will temporarily be removed when these happen, and we will reinstate the exact amount after the update. Any Minima tokens created via the wallet on the testnet will also be lost during a hard fork.
 
