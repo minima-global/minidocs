@@ -21,12 +21,12 @@ Users initiate their transacting relationships on Layer 1, prior to moving off-c
 **Information transfer<br />
 Off-chain**
 
-Maxima is the censorship resistant information transport layer running over the Minima network. Communication is point-to-point. Messages can be sent, off-chain, to chosen connected peers.
+Maxima is the censorship resistant information transport layer running over the Minima network. Communication is point-to-point so that Messages can be sent, off-chain, to chosen connected peers.
 
 ![Minima](/img/network/maximaLm.svg#gh-light-mode-only)![Minima](/img/network/maximaDm.svg#gh-dark-mode-only)
 
-Maxima is an information transport layer, enabling encrypted, peer-to-peer exchange of information between 1st and 2nd degree connections on the Minima network.
-Maxima can be used to build censorship resistant messaging applications over the Minima network and will be used for sending messages for Layer 2 communication.
+Maxima enables encrypted, peer-to-peer exchange of information between 1st and 2nd degree connections on the Minima network.
+Maxima can be used to build censorship resistant messaging applications over the Minima network and will be used for sending data required for Layer 2 communication.
 
 ## Layer 2 Architecture
 **Value transfer<br /> 
