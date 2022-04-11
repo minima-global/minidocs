@@ -20,5 +20,5 @@ Hugo Feiler is an entrepreneur with over two decades of experience in the market
  
 - [New blockchain proof of concept to show future of payments - Digital Journal](https://www.digitaljournal.com/tech-science/q-a-new-blockchain-proof-of-concept-to-show-future-of-payments/article/570222) 
 - [Crypto AM shines its Spotlight on Minima](https://www.cityam.com/crypto-am-shines-its-spotlight-on-minima/)
-- [Minima Announces $2.5 Million Investment from Blockchange VC](https://minima.global/blog/minima-closes-series-a-round-raising-6-5-million-to-build-the-most-decentralized-network)
-- [Minima Closes Series A Round Raising $6.5 Million To Build 'The Most Decentralized Network](https://minima.global/blog/minima-closes-series-a-round-raising-6-5-million-to-build-the-most-decentralized-network) 
+- [Minima Announces $2.5 Million Investment from Blockchange VC](https://www.minima.global/post/minima-announces-2-5-million-investment-from-blockchange-vc)
+- [Minima Closes Series A Round Raising $6.5 Million To Build 'The Most Decentralized Network](https://www.minima.global/post/minima-closes-series-a-round-raising-6-5-million-to-build-the-most-decentralized-network) 

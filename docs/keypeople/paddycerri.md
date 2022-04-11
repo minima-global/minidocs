@@ -13,19 +13,19 @@ Paddy is a true crypto evangelist. He joined the Bitcoin community back in 2012 
  
 ## Talks 
  
-- [The Minima Protocol - Explained](https://youtu.be/1NdZ3NFM)
+- [The Minima Protocol - Explained](https://youtu.be/1NdZ3NFM3Uk)
 - [Minima AMA with CTO Paddy Cerri](https://youtu.be/L9YJnRSLBEI)
 - [Arm New Reality Series](https://youtu.be/XJKROBmF2GQ)
  
 ## Articles
  
 - [Compact Blockchain Protocols can Disrupt IoT Devices](https://hackernoon.com/how-compact-blockchain-protocols-can-disrupt-iot-devices) 
-- [A Love Story - Confessions of a Crypto Coder](https://minima.global/blog/a-love-story-confessions-of-a-crypto-coder) 
-- [A Tale of Two Cities](https://minima.global/blog/a-tale-of-two-cities)
-- [Money Makes the World Go Round](https://minima.global/blog/money-makes-the-world-go-round)
-- [The Duality Rant](https://minima.global/blog/the-duality-rant)
-- [Ergo Minima](https://minima.global/blog/ergo-minima)
-- [The Metacoin](https://minima.global/blog/the-metacoin) 
-- [Code Fever 19](https://minima.global/blog/code-fever-19)
-- [Freedom](https://minima.global/blog/freedom)
-- [Power](https://minima.global/blog/power)
+- [A Love Story - Confessions of a Crypto Coder](https://minima.global/post/a-love-story-confessions-of-a-crypto-coder) 
+- [A Tale of Two Cities](https://minima.global/post/a-tale-of-two-cities)
+- [Money Makes the World Go Round](https://minima.global/post/money-makes-the-world-go-round)
+- [The Duality Rant](https://minima.global/post/the-duality-rant)
+- [Ergo Minima](https://minima.global/post/ergo-minima)
+- [The Metacoin](https://minima.global/post/the-metacoin) 
+- [Code Fever 19](https://minima.global/post/code-fever-19)
+- [Freedom](https://minima.global/post/freedom)
+- [Power](https://minima.global/post/power)

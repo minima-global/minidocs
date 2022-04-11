@@ -20,7 +20,7 @@ Jon MacDonald is an award-winning, bestselling author and one of the most in-dem
  
 ## Articles
  
-- [A talk about Freedom and Decentralization](https://minima.global/blog/a-talk-about-freedom-and-decentralization)
-- [How the Internet and Now Blockchain Enable New Models of Participation](https://minima.global/blog/how-the-internet-and-now-blockchain-enable-new-models-of-participation)
-- [Unlocking the value of NFTs](https://minima.global/blog/unlocking-the-value-of-nfts)
+- [A talk about Freedom and Decentralization](https://minima.global/post/a-talk-about-freedom-and-decentralization)
+- [How the Internet and Now Blockchain Enable New Models of Participation](https://minima.global/post/how-the-internet-and-now-blockchain-enable-new-models-of-participation)
+- [Unlocking the value of NFTs](https://minima.global/post/unlocking-the-value-of-nfts)
  
