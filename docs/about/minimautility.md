@@ -23,11 +23,11 @@ The Minima currency will be the primary medium of exchange on the network. All u
 
 ## The Burn 
 The Burn is a small cost (fee) which is incurred when sending transactions on the Minima network during times of high demand. This cost, denominated in Minima, is ‘burned’ i.e. removed from Minima's hard-capped supply. This makes Minima a deflationary currency as the overall circulating supply slowly decreases over time. Providing demand stays the same, a deflationary currency will appreciate in value over time.  <br/>
-For more information, see [The Burn](#/docs/learn/coreconcepts#the-burn), in our Learn section.
+For more information, see [The Burn](/docs/learn/coreconcepts#the-burn), in our Learn section.
 
 ## Tokenization (including NFTs)
 Minima will be required to create custom tokens or NFTs on the Minima blockchain. Custom tokens and NFTs inherit the same underlying security of the Minima blockchain and can be transacted with in the same way as Minima coins. Use cases for custom tokens and NFTs are unlimited and defined by the creator.<br/>
-For more information, see [Coloured Coins](#/docs/learn/colouredcoins), in our Learn section.
+For more information, see [Coloured Coins](/docs/learn/colouredcoins), in our Learn section.
 
 
 ## MiniDapps (Decentralized applications)
@@ -44,7 +44,7 @@ Potential uses for the Minima currency in the MiniDapp ecosystem are unlimited a
 **Funding:** Using Minima for charity or business funding <br/>
 **Social Media:** Using Minima/Custom Tokens/NFTs for micro-payments or social status<br/>
 
-For more information, see [MiniDapps](#/docs/learn/networkoverview), in our Learn section.
+For more information, see [MiniDapps](/docs/learn/networkoverview), in our Learn section.
 
 ## Third-party integrations
 
