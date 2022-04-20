@@ -34,5 +34,5 @@ Minima takes inspiration from and combines much great previous work including
 - [Peter Todd’s MMR Storage-less Proof database](https://petertodd.org/2016/delayed-txo-commitments) (MMR database); 
 - [Proof of Proof-of-Work](https://eprint.iacr.org/2017/963.pdf) (Cascading Chain);
 - [Gregory Maxwell’s Chain Folding](https://en.bitcoin.it/wiki/User:Gmaxwell/alt_ideas) (Cascading chain);  
-- [The Lightning Network](https://lightning.network/)
+- [The Lightning Network](https://lightning.network/) (Omnia - Minima's Layer 2)
 

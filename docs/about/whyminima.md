@@ -1,8 +1,8 @@
 ---
-sidebar_position: 4
+sidebar_position: 6
 ---
 
-# Why Minima?
+# Why Mobile?
 
 Minima was born out of the desire to achieve what Bitcoin originally sought to achieve; a truly decentralized, censorship resistant, peer-to-peer, electronic cash system. Over time, Bitcoin mining has become more centralized due to its competitive nature and game theory suggests this is only headed in one direction, towards centralization. 
 
@@ -19,6 +19,6 @@ Source: [Statista Global Smartphone penetration rate](https://www.statista.com/s
 By leveraging mobile technology, Minima has the potential to achieve true decentralization on a global scale. Security is a function of decentralization; therefore the more decentralized Minima becomes, the more secure the network. 
 Recognising this reduces the so-called ‘Blockchain Trilemma’ of decentralization vs security vs scalability to a dilemma - decentralization  vs scalability.
 
-Scalability can be achieved through various Layer 2 solutions, such as a ‘Lightning’ network implemented on the Minima blockchain. 
+Scalability can be achieved through various Layer 2 solutions, such as Omnia - a ‘Lightning’ network implemented on the Minima blockchain. 
 
 Minima also enables smart contracts with a Turing-complete scripting language, providing a censorship-resistant platform for ‘Web 3’ applications.

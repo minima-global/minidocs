@@ -28,19 +28,19 @@ Maxima is the censorship resistant information transport layer running over the 
 Maxima enables encrypted, peer-to-peer exchange of information between 1st and 2nd degree connections on the Minima network.
 Maxima can be used to build censorship resistant messaging applications over the Minima network and will be used for sending data required for Layer 2 communication.
 
-## Layer 2 Architecture
+## Omnia - Layer 2
 **Value transfer<br /> 
 Off-chain**
 
-Layer 2 is fast, cheap and scalable. It enables instant peer-to-peer payments by creating bi-directional payment channels between participants, using technology similar to Bitcoin’s Lightning Network.
+Minima's Layer 2 - Omnia - is fast, cheap and scalable. It enables instant peer-to-peer payments by creating bi-directional payment channels between participants, using technology similar to Bitcoin’s Lightning Network.
 
-Minima can also support alternative scaling solutions such as state channels and side chains with the potential for further solutions in the future. 
+Minima can also support alternative scaling solutions such as state chains and side chains with the potential for further solutions in the future. 
 
 ![Minima](/img/network/layer2ArchitectureLm.svg#gh-light-mode-only)![Minima](/img/network/layer2ArchitectureDm.svg#gh-dark-mode-only)
 
-Once users have set up their transacting relationship on Minima, they can perform all transactions off-chain, on Layer 2. This is where the bulk of peer-to-peer exchange between users of the network takes place. It is faster, as each payment is not settled on the blockchain and transactions are only processed by the relevant users rather than the entire network, as occurs on Layer 1.
+Once users have set up their transacting relationship on Minima, they can perform all transactions off-chain, on Omnia. This is where the bulk of peer-to-peer exchange between users of the network takes place. It is faster, as each payment is not settled on the blockchain and transactions are only processed by the relevant users rather than the entire network, as occurs on Layer 1.
 
-Using multi-signature smart contracts and payment channels, users can keep a ‘tab’ of their unsettled balances indefinitely, until they wish to settle on Layer 1.
+Using hash time locked contracts (HTLCs) and payment channels, users can keep a ‘tab’ of their unsettled balances indefinitely, until they wish to settle on Minima (Layer 1).
 This unlocks the possibility of essentially unlimited transactions per second (TPS).
 
 ## MiniDapps
