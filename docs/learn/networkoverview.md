@@ -32,7 +32,7 @@ Maxima can be used to build censorship resistant messaging applications over the
 **Value transfer<br /> 
 Off-chain**
 
-Minima's Layer 2 - Omnia - is fast, cheap and scalable. It enables instant peer-to-peer payments by creating bi-directional payment channels between participants, using technology similar to Bitcoin’s Lightning Network.
+Minima's Layer 2 - Omnia - is fast, cheap and scalable. It enables instant peer-to-peer payments by creating bi-directional payment channels between participants, using the latest Lightning technology - ELTOO. It is analogous to Bitcoin’s Lightning Network but more advanced.
 
 Minima can also support alternative scaling solutions such as state chains and side chains with the potential for further solutions in the future. 
 
@@ -40,6 +40,7 @@ Minima can also support alternative scaling solutions such as state chains and s
 
 Once users have set up their transacting relationship on Minima, they can perform all transactions off-chain, on Omnia. This is where the bulk of peer-to-peer exchange between users of the network takes place. It is faster, as each payment is not settled on the blockchain and transactions are only processed by the relevant users rather than the entire network, as occurs on Layer 1.
 
+Omnia can do more than simple payments, it can do any/all smart contract sequences with a given subset of users and subset of coins.
 Using hash time locked contracts (HTLCs) and payment channels, users can keep a ‘tab’ of their unsettled balances indefinitely, until they wish to settle on Minima (Layer 1).
 This unlocks the possibility of essentially unlimited transactions per second (TPS).
 
