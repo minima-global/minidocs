@@ -112,8 +112,16 @@ dPoS stands for delegated Proof-of-Stake and is a variation of Proof-of-Stake co
 ## DYOR
 *“Do your own research”* highlights the need to not simply trust what others on Twitter or YouTube are trying to sell. Instead, spend time researching what a project is trying to achieve and how they stack up against their claim. Ideally, researching a crypto project goes all the way to reading the Whitepaper.
 
+## ELTOO
+Eltoo, pronounced “L2”, is a proposed upgrade to Bitcoin to improve its Layer 2 solutions, primarily The Lightning Network.
+Minima's Layer 2 - Omnia - uses ELTOO technology, enabling greater flexibility and functionality for Layer 2 transactions. 
+
 ## FOMO
 Fear of missing out - or that nagging feeling you get when you see a cryptocurrency’s price skyrocket in a short amount of time and you haven’t invested in it, and are missing out. Note that investing based on FOMO is usually a very risky thing to do. The opposite of FOMO is sometimes coined JOMO - Joy of missing out.
+
+## FUD
+Acronym for Fear, Uncertainty & Doubt. Also used as verb as in "Stop fudding my bags".<br/>
+Used in crypto to describe negative news, events, and information.
 
 ## Full Node
 Not all nodes are equal (except on the Minima Protocol). A complete node in other blockchain protocols is a node that validates and constructs the blockchain. It also keeps a copy of the entire ledger.
