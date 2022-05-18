@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Mac
 
-## How to download and Install Minima on your Mac 
+## How to download and install Minima on your Mac 
 These instructions will set Minima up as a service on your Mac, so that it can run in the background without having to keep your Terminal open. 
 
 1. If you have not run Minima before, please ensure you have the latest version of Java installed https://java.com/en/
@@ -36,7 +36,11 @@ To update Minima to a new version:
 3 - brew tap minima-global/minima
 4 - brew install minima-global/minima/minima
 5 - brew services start minima
-6 - check your incentive account is connected with mcli incentivecash
+```
+
+To check your incentive account is connected:
+```
+mcli incentivecash
 ```
 
 Congratulations - your node is now installed & running! The last step is to connect it to your Incentive Account. 
@@ -62,22 +66,13 @@ mcli incentivecash uid:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 
 Once this is done, your installation is complete and your Incentive account is connected to your node! You may close your Terminal Window.
 
-To see your rewards, type:
-```
-mcli incentivecash
-```
-
-:::tip Current rewards
-This is the total of old and new rewards. It includes any reward collections you previously missed that were paid to you at the Hard Fork.
-:::
-
-:::tip Last Ping
-This is the last date and time your node sent a PING message. For every day your node pings us, we'll add 1 Minima to your rewards.
-:::
-
 3. Your node will then ping us so we know it's running. 
 
-4. For every day your node pings us, we'll add 1 Minima to your DAILY REWARDS. 
+4. For every day your node pings us, we will add 1 Minima to your DAILY REWARDS.  
+
+5. To see your rewards, type **mcli incentivecash** into the Terminal.
+
+
 ```
 incentivecash
 {
@@ -98,8 +93,27 @@ incentivecash
   }
 }
 ```
+:::tip Last Ping
+This is the last date and time your node sent a PING message. Pings are sent at random each day. For every day your node pings us, we will add 1 Minima to your rewards.
+:::
 
 :::note Note
 There will temporarily be no MiniHub or MiniDapps - based on community feedback we are working hard to improve the MiniDapp system for a future release! 
 :::
 
+## Useful Commands
+
+Stopping/starting Minima
+```
+brew services stop minima : Stop the Minima service
+brew services start minima : Start the Minima service
+```
+
+Interacting with Minima
+```
+mcli status : shows the status of Minima 
+mcli incentivecash : shows your incentive cash balance
+mcli help : shows the full list of commands
+```
+
+For a full list of Minima Terminal Commands see [Terminal Commands.](/docs/runanode/terminal_commands)

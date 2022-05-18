@@ -4,29 +4,31 @@ sidebar_position: 3
 
 # Windows
 
-## How to download and Install Minima on your Windows PC 
+## How to download and install Minima on your Windows PC 
 
 If you have not run Minima before, please ensure you have the latest version of Java installed on the server https://java.com/en/
 
 1. If you have a previous version of Minima running, type quit into the Command prompt window, then replace your existing minima.jar file with the latest version.
+
 2. Download and save the latest Minima JAR using the button below (https://github.com/minima-global/Minima/raw/master/jar/minima.jar)
-3. Open the Command Prompt as Admin. When it opens, type the following:
+
+3. Open the Command Prompt as Admin. When it opens, type the following (including a space after -jar):
 ```
-java -Xmx1G -jar (including a space after -jar) 
+java -Xmx1G -jar
 ```
 - then drag and drop the minima.jar file into the command window, 
-- then add a space and type 
-- rpcenable 
+- then add a space and type **-rpcenable** 
+
 The output should look like the below (all on one line):
 ```
 java -Xmx1G -jar C:\Users\YourName\minima.jar -rpcenable
 ```
 :::note Note
-When starting a new node or to delete your existing node data -clean can be added on to the end. Do not use -clean if you are simply restarting your node.
-i.e. java -Xmx1G -jar C:\Users\YourName\minima.jar -rpcenable -clean
+When starting a new node or to delete your existing node data **-clean** can be added on to the end. (Do not use **-clean** if you are simply restarting your node.)<br/>
+e.g. java -Xmx1G -jar C:\Users\YourName\minima.jar -rpcenable -clean
 :::
 
-4. Hit the Enter key
+4. Hit the **Enter** key
 
 5. Avoid
 - Closing your Command Prompt window
@@ -54,8 +56,10 @@ Minima @ 14/03/2022 17:32:32 [11.1 MB] : RPC Server started on port : 9002
 ```
 ----
 
+**Congratulations - your node is now installed & running! **
+
 ## How to set up Incentive Program to receive rewards
-1. Go to https://incentive.minima.global/ - 
+1. Go to https://incentive.minima.global/
 
 :::info Previous users:
 If you had an account prior to 6th December 2021, you will need to reset your password using the Forgot Password button (this is because encrypted passwords could not be migrated to the new system.)
@@ -70,46 +74,20 @@ After you have registered, simply login to your account
 
 2. Once Minima is running, connect your Incentive Program account to your node by copying YOUR OWN Node ID from the Incentive Program website above and typing the following directly into the Terminal command line: 
 ```
-incentivecash uid: InsertYourNodeID
+incentivecash uid:InsertYourNodeID
+```
 Example:
+```
 incentivecash uid:00F3E50D-5A52-444B-8F1A-0DA72D6CAA84
 ```
-You should receive a return status of true and see your previous reward balance (if any) including missed rewards (if any)!
-```
-incentivecash uid:731ae11b-b602-4dea-8564-7cb4edbe07b7
-{
-  "command":"incentivecash",
-  "params":{
-    "uid":"731ae11b-b602-4dea-8564-7cb4edbe07b7"
-  },
-  "status":true,
-  "response":{
-    "uid":"731ae11b-b602-4dea-8564-7cb4edbe07b7",
-    "details":{
-      "lastPing":"2022-03-15T09:59:38.802Z",
-      "inviteCode":"BAEPAADG",
-      "rewards":{
-        "dailyRewards":60,
-        "previousRewards":100.0,
-        "communityRewards":50.0,
-        "inviterRewards":10.0
-      }
-    }
-  }
-}
-```
+You should receive a return status of true and see your previous Rewards (if any) including missed Rewards (if any).
 **Your Incentive Program account is now connected to your node!**
-
-:::tip Current rewards 
-This is the total of old and new rewards. It includes any reward collections you previously missed that were paid to you at the Hard Fork.
-Last Ping: : This is the last date and time your node sent a PING message. For every day your node pings us, we'll add 1 Minima to your rewards.
-:::
 
 3. Your node will then ping us so we know it's running. 
 
-4. For every day your node pings us, we'll add 1 Minima to your DAILY REWARDS. 
+4. For every day your node pings us, we will add 1 Minima to your DAILY REWARDS. 
 
-5. To check your rewards, type IncentiveCash into the Command Line. 
+5. To check your rewards, type **incentivecash** into the command line. 
 ```
 incentivecash
 {
@@ -131,8 +109,21 @@ incentivecash
 }
 ```
 
+:::tip Last Ping
+This is the last date and time your node sent a PING message. Pings are sent at random each day. For every day your node pings us, we will add 1 Minima to your rewards.
+:::
+
 :::note Note
 There will temporarily be no MiniHub or MiniDapps - based on community feedback we are working hard to improve the MiniDapp system for a future release! 
 :::
 
+## Useful Commands
 
+The following commands can be typed directly into the Minima Terminal:
+
+```
+status : shows the status of Minima 
+incentivecash : shows your incentive cash balance
+help : shows the full list of commands
+```
+For a full list of Minima Terminal Commands see [Terminal Commands.](/docs/runanode/terminal_commands)

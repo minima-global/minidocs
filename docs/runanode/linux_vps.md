@@ -4,29 +4,33 @@ sidebar_position: 6
 
 # Linux VPS
 
-## How to download and Install Minima on your Linux Server/Desktop (Debian OS including Ubuntu)
+## How to download and install Minima on your Linux Server/Desktop (Debian OS including Ubuntu)
+
+If you have not run Minima before, please ensure you have the latest version of Java installed on the server https://java.com/en/
 
 1. Log in as the root user. (You may need to create a secure connection to your server using PuTTY, Terminal or a similar tool)
+
 2. Open the command prompt, ensure you are in the root directory
+
 3. If you have any older versions of Minima installed, please uninstall them before moving to the next step. 
-Please run this script to uninstall minima:
+Please run this script to uninstall Minima:
 
 ```
 wget -O minima_cleanup_v98.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_cleanup_v98.sh && chmod +x minima_cleanup_v98.sh && sudo ./minima_cleanup_v98.sh
 ```
 
-4. If you have not run Minima before, please ensure you have the latest version of Java installed on the server https://java.com/en/
-5. From the root directory, please run the following script:
+4. From the root directory, please run the following script:
 
 ```
 wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_setup.sh && chmod +x minima_setup.sh && sudo ./minima_setup.sh -r 9002 -p 9001
 ```
 
-6. Wait a few minutes for Minima to start.
+5. Wait for Minima to start, the service will restart during this process and can take up to 30 minutes to complete.
 
-Running multiple nodes on one server? 
-You can specify different port numbers on the end to do this, 
-For example (using 9122 and 9121): 
+**Congratulations - your node is now installed & running! **
+
+**Running multiple nodes on one server?**<br/> 
+You can specify different port numbers on the end to do this, for example (using 9122 and 9121): 
 ```
 wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_setup.sh && chmod +x minima_setup.sh && sudo ./minima_setup.sh -r 9122 -p 9121
 ```
@@ -53,11 +57,15 @@ After you have registered, simply login to your account
 ```
 sudo apt install curl
 curl 127.0.0.1:9002/incentivecash%20uid:xxx-xxx-xxx-xxx-xxx
+```
+
 Example:
+```
 curl 127.0.0.1:9002/incentivecash%20uid:00F3E50D-5A52-444B-8F1A-0DA72D6CAA84
 ```
 
-You should receive a return status of true and see your previous reward balance (if any) including missed rewards (if any).
+You should receive a return status of true and see your previous reward (if any) including missed rewards (if any).<br/>
+**Your Incentive Program account is now connected to your node!**
 
 If you have multiple nodes on one server, you will need to change the port number in the curl command to update the second node using the port number after -r
 For example:
@@ -66,22 +74,13 @@ For example:
 curl 127.0.0.1:9122/incentivecash%20uid:xxx-xxx-xxx-xxx-xxx
 ```
 
-Your Incentive Program account is now connected to your node!
-
-:::tip Current rewards
-This is the total of old and new rewards. It includes any reward collections you previously missed that were paid to you at the Hard Fork.
-:::
-
-:::tip Last Ping
-This is the last date and time your node sent a PING message. For every day your node pings us, we'll add 1 Minima to your rewards.
-:::
-
 3. Your node will then ping us so we know it's running. 
 
-4. For every day your node pings us, we'll add 1 Minima to your DAILY REWARDS. 
+4. For every day your node pings us, we will add 1 Minima to your DAILY REWARDS. 
 
-5. To check your rewards, type IncentiveCash into the Command Line. 
-You may need to type journalctl -u minima -f to show the Minima Logs before running the IncentiveCash command. 
+5. To check your rewards, type **curl 127.0.0.1:9002/incentivecash** into the command line. 
+
+
 ```
 incentivecash
 {
@@ -102,6 +101,9 @@ incentivecash
   }
 }
 ```
+:::tip Last Ping
+This is the last date and time your node sent a PING message. Pings are sent at random each day. For every day your node pings us, we'll add 1 Minima to your rewards.
+:::
 
 :::note Note 
 There will temporarily be no MiniHub or MiniDapps - based on community feedback we are working hard to improve the MiniDapp system for a future release! 
@@ -122,15 +124,15 @@ sudo apt install jq : allows you to use jq to make the output look readable
 Then y (for Yes)
 
 Stopping/starting Minima (Service must be called minima.service)
-sudo systemctl stop minima_9001 - Stop the Minima service
-sudo systemctl disable minima_9001 - Disable the Minima service
-sudo systemctl enable minima_9001 - Enable the Minima service 
-sudo systemctl start minima_9001 - Start the Minima service
+sudo systemctl stop minima_9001 : Stop the Minima service
+sudo systemctl disable minima_9001 : Disable the Minima service
+sudo systemctl enable minima_9001 : Enable the Minima service 
+sudo systemctl start minima_9001 : Start the Minima service
 
 Interacting with Minima
-curl 127.0.0.1:9002/status | jq - shows the status of Minima 
-curl 127.0.0.1:9002/incentivecash | jq - shows your incentive cash balance
-curl 127.0.0.1:9002/help | jq - shows the full list of commands
+curl 127.0.0.1:9002/status | jq : shows the status of Minima 
+curl 127.0.0.1:9002/incentivecash | jq : shows your incentive cash balance
+curl 127.0.0.1:9002/help | jq : shows the full list of commands
 ```
-
+For a full list of Minima Terminal Commands see [Terminal Commands.](/docs/runanode/terminal_commands)
 

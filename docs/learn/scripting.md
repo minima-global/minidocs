@@ -313,7 +313,7 @@ The following commands can be run directly from a Minima Terminal:
  ; can be used to chain multiple commands<br />
 
  ```
- "status ":"(clean:true) - Show general status for Minima and clean RAM",
+"status ":"(clean:true) - Show general status for Minima and clean RAM",
 "printtree ":"(depth:) (cascade:true|false) - Print a tree representation of the blockchain. Depth default 32, Cascade false.",
 "trace ":"[enable:true|false] (filter:) - Show the message stacks of the internal Minima Engine with optional filter string",
 "automine ":"[enable:true|false|single] - Simulate traffic",
