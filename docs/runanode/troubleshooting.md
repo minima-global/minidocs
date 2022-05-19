@@ -4,6 +4,8 @@ sidebar_position: 7
 
 # Troubleshooting
 
+Last updated: 19th May 2022
+
 You will find some of our most commonly asked questions and issues below. <br/>
 If you are unable to resolve your issue, please reach out in our [Discord](https://discord.gg/ZQaUXPape5) or [Telegram](https://t.me/Minima_Global) channel and a Team member will be happy to help. 
 
