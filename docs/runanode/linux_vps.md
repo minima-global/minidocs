@@ -102,7 +102,7 @@ incentivecash
 }
 ```
 :::tip Last Ping
-This is the last date and time your node sent a PING message. Pings are sent at random each day. For every day your node pings us, we'll add 1 Minima to your rewards.
+This is the last date and time your node sent a PING message. Pings are sent at random each day. For every day your node pings us, we will add 1 Minima to your rewards.
 :::
 
 :::note Note 

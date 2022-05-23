@@ -4,10 +4,15 @@ sidebar_position: 7
 
 # Troubleshooting
 
-Last updated: 19th May 2022
+Last updated: 23rd May 2022
 
 You will find some of our most commonly asked questions and issues below. <br/>
 If you are unable to resolve your issue, please reach out in our [Discord](https://discord.gg/ZQaUXPape5) or [Telegram](https://t.me/Minima_Global) channel and a Team member will be happy to help. 
+
+### Known Issues
+
+**[-] WARNING : No Known peers ( -clean + delay )** <br/>
+We are aware of an issue causing users to see a **No Known Peers** message in their logs. This can cause Android users to see a **red Node Status light**. The team is aware and working on a resolution for the next release. Please continue to run your node. **This will not affect your Incentive Rewards and there is no need to open a support ticket.**
 
 ## Minima Terminal Log Messages
 
@@ -47,13 +52,6 @@ Your node received a block from a peer with a timestamp less than the calculated
 
 **Invalid TxPoW block with millitime MORE than median + 2 hrs** <br/>
 Your node received a block from a peer with a timestamp more than 2 hours ahead of the calculated median time. The TxPoW will be ignored.
-
-<br/>
-
-The following log messages may indicate a problem with your node, please open a support ticket in our Discord server:
-
-**[-] WARNING : No Known peers ( -clean + delay )** <br/>
-Repeated messages indicates that there is some problem with your node’s ability to connect to peers.
 
 
 ## Incentive Rewards
