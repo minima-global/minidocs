@@ -8,7 +8,7 @@ const FeatureList = [
     link: 'docs/about/vision',
     description: (
       <>
-        Learn about the original vision of Minima and why it exists.
+        Learn about the original vision of Minima and why it exists
       </>
     ),
   },
@@ -17,7 +17,7 @@ const FeatureList = [
     link: 'docs/learn/networkoverview',
     description: (
       <>
-        An in-depth introduction to the Minima protocol and it’s architecture.
+        An in-depth introduction to the Minima protocol and its architecture
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     link: 'docs/runanode/get_started_in_3_steps',
     description: (
       <>
-        Learn how to install and run a validating and constructing Minima node on your device.
+        Learn how to install and run a validating and constructing Minima node on your device
       </>
     ),
   },
@@ -53,7 +53,7 @@ const FeatureList = [
     link: 'docs/tokendistribution',
     description: (
       <>
-        Find out how a fixed supply of 1 Billion coins have been distributed.
+        Find out how a fixed supply of 1 billion Minima coins have been distributed
       </>
     ),
   },
