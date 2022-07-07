@@ -14,18 +14,18 @@ If you have not run Minima before, please ensure you have the latest version of 
 
 3. Open the Command Prompt as Admin. When it opens, type the following (including a space after -jar):
 ```
-java -Xmx1G -jar
+java -jar
 ```
 - then drag and drop the minima.jar file into the command window, 
 - then add a space and type **-rpcenable** 
 
 The output should look like the below (all on one line):
 ```
-java -Xmx1G -jar C:\Users\YourName\minima.jar -rpcenable
+java -jar C:\Users\YourName\minima.jar -rpcenable
 ```
 :::note Note
 When starting a new node or to delete your existing node data **-clean** can be added on to the end. (Do not use **-clean** if you are simply restarting your node.)<br/>
-e.g. java -Xmx1G -jar C:\Users\YourName\minima.jar -rpcenable -clean
+e.g. java -jar C:\Users\YourName\minima.jar -rpcenable -clean
 :::
 
 4. Hit the **Enter** key
@@ -39,7 +39,7 @@ If any of the above happen, your Minima node will stop running and you will need
 
 Minima is now started, your output should look like the below: 
 ```
-C:\Users\username\Desktop>java -Xmx1G -jar minima.jar -rpcenable
+C:\Users\username\Desktop>java -jar minima.jar -rpcenable
 Minima @ 14/03/2022 17:32:30 [5.1 MB] : **********************************************
 Minima @ 14/03/2022 17:32:30 [5.1 MB] : *  __  __  ____  _  _  ____  __  __    __    *
 Minima @ 14/03/2022 17:32:30 [5.1 MB] : * (  \/  )(_  _)( \( )(_  _)(  \/  )  /__\   *
@@ -48,10 +48,10 @@ Minima @ 14/03/2022 17:32:30 [5.1 MB] : * (_/\/\_)(____)(_)\_)(____)(_/\/\_)(__)
 Minima @ 14/03/2022 17:32:30 [5.1 MB] : *                                            *
 Minima @ 14/03/2022 17:32:30 [5.1 MB] : **********************************************
 Minima @ 14/03/2022 17:32:30 [6.4 MB] : Welcome to Minima v0.100.32 - for assistance type help. Then press enter.
-Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : C:\Users\username\Desktop\testconfig\databases\userprefs.db
-Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : C:\Users\username\Desktop\testconfig\databases\cascade.db
-Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : C:\Users\username\Desktop\testconfig\databases\chaintree.db
-Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : C:\Users\username\Desktop\testconfig\databases\p2p.db
+Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : C:\Users\username\Desktop\minima\databases\userprefs.db
+Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : C:\Users\username\Desktop\minima\databases\cascade.db
+Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : C:\Users\username\Desktop\minima\databases\chaintree.db
+Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : C:\Users\username\Desktop\minima\databases\p2p.db
 Minima @ 14/03/2022 17:32:32 [11.1 MB] : RPC Server started on port : 9002 
 ```
 ----

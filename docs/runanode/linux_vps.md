@@ -10,22 +10,15 @@ If you have not run Minima before, please ensure you have the latest version of 
 
 1. Log in as the root user. (You may need to create a secure connection to your server using PuTTY, Terminal or a similar tool)
 
-2. Open the command prompt, ensure you are in the root directory
+2. Open the Command prompt, ensure you are in the root directory
 
-3. If you have any older versions of Minima installed, please uninstall them before moving to the next step. 
-Please run this script to uninstall Minima:
-
-```
-wget -O minima_cleanup_v98.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_cleanup_v98.sh && chmod +x minima_cleanup_v98.sh && sudo ./minima_cleanup_v98.sh
-```
-
-4. From the root directory, please run the following script:
+3. From the root directory, please run the following script:
 
 ```
 wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_setup.sh && chmod +x minima_setup.sh && sudo ./minima_setup.sh -r 9002 -p 9001
 ```
 
-5. Wait for Minima to start, the service will restart during this process and can take up to 30 minutes to complete.
+4. Wait for Minima to start, the service will restart during this process and can take up to 30 minutes to complete.
 
 **Congratulations - your node is now installed & running! **
 
@@ -124,13 +117,14 @@ sudo apt install jq : allows you to use jq to make the output look readable
 Then y (for Yes)
 
 Stopping/starting Minima (Service must be called minima.service)
+sudo systemctl status minima_9001 : Show the status of the Minima service
 sudo systemctl stop minima_9001 : Stop the Minima service
 sudo systemctl disable minima_9001 : Disable the Minima service
 sudo systemctl enable minima_9001 : Enable the Minima service 
 sudo systemctl start minima_9001 : Start the Minima service
 
 Interacting with Minima
-curl 127.0.0.1:9002/status | jq : shows the status of Minima 
+curl 127.0.0.1:9002/status | jq : shows the status of your Minima node
 curl 127.0.0.1:9002/incentivecash | jq : shows your incentive cash balance
 curl 127.0.0.1:9002/help | jq : shows the full list of commands
 ```

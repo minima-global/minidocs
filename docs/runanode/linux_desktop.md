@@ -18,19 +18,19 @@ If you have not run Minima before, please ensure you have the latest version of 
 
 3. Open the Command Prompt as Admin. When it opens, type the following (including a space after -jar):
 ``` 
-sudo java -Xmx1G -jar 
+sudo java -jar 
 ``` 
 - then drag and drop the minima.jar file into the command window, 
 - then add a space and type **-rpcenable** 
 
 The output should look like the below:
 ``` 
-sudo java -Xmx1G -jar /home/user/minima.jar -rpcenable
+sudo java -jar /home/user/minima.jar -rpcenable
 ``` 
 
 :::note Note
 When starting a new node or to delete your existing node data **-clean** can be added on to the end. (Do not use **-clean** if you are simply restarting your node.)<br/>
-e.g. java -Xmx1G -jar C:\Users\YourName\minima.jar -rpcenable -clean
+e.g. java -jar /home/user/minima.jar -rpcenable -clean
 :::
 
 4. Hit the **Enter** key
@@ -61,13 +61,12 @@ After you have registered, simply login to your account
 
 2. Once the Minima is running, connect your Incentive Program account to your node by copying YOUR OWN Node ID from the Incentive Program website above and typing the following directly into the command line:
 
-``` 
-curl 127.0.0.1:9002/incentivecash+uid:xxx-xxx-xxx-xxx-xxx
 ```
-
+incentivecash uid:InsertYourNodeID
+```
 Example:
 ```
-curl 127.0.0.1:9002/incentivecash+uid:00F3E50D-5A52-444B-8F1A-0DA72D6CAA84
+incentivecash uid:00F3E50D-5A52-444B-8F1A-0DA72D6CAA84
 ```
 You should receive a return status of true and see your previous rewards (if any) including missed rewards (if any).<br/>
 Your Incentive Program account is now connected to your node!

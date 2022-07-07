@@ -4,75 +4,90 @@ sidebar_position: 4
 
 # Mac
 
-## How to download and install Minima on your Mac 
-These instructions will set Minima up as a service on your Mac, so that it can run in the background without having to keep your Terminal open. 
+## How to download and install Minima on your Windows PC 
 
-1. If you have not run Minima before, please ensure you have the latest version of Java installed https://java.com/en/
-2. If you have a previous version of Minima running, type quit into the Terminal command line, then replace your existing minima.jar file with the latest version.
+If you have not run Minima before, please ensure you have the latest version of Java installed on the server https://java.com/en/
 
-If you have not used Homebrew before, you will need to install it first:
-1. Open a Terminal window
-2. Copy and execute the following script to install Homebrew. Follow all onscreen instructions and provide 
-your system password when required:
+1. If you have a previous version of Minima running, type quit into the Command prompt window, then replace your existing minima.jar file with the latest version.
 
+2. Download and save the latest Minima JAR using the button below (https://github.com/minima-global/Minima/raw/master/jar/minima.jar)
+
+3. Open the Command Prompt as Admin. When it opens, type the following (including a space after -jar):
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+sudo java -jar
 ```
+- then drag and drop the minima.jar file into the command window, 
+- then add a space and type **-rpcenable** 
 
-3. Once Homebrew is installed, or if already installed, you can follow the following steps to install and configure your node - please ensure you provide your system password when prompted:
-
+The output should look like the below (all on one line):
 ```
-1 - brew tap minima-global/minima
-2 - brew install minima-global/minima/minima
-3 - brew services start minima
+sudo java -jar /Users/YourName/minima.jar -rpcenable
 ```
+:::note Note
+When starting a new node or to delete your existing node data **-clean** can be added on to the end. (Do not use **-clean** if you are simply restarting your node.)<br/>
+e.g. sudo java -jar /Users/YourName/minima.jar -rpcenable -clean
+:::
 
-Your Terminal will provide details of where your logs can be found, which you may need in the future. Please make a note of this location for future reference.
+4. Hit the **Enter** key
 
+5. Avoid
+- Closing your Command Prompt window
+- Allowing your PC to go to sleep
+- Turning your PC off
+
+If any of the above happen, your Minima node will stop running and you will need to repeat step 3 to start it again.
+
+Minima is now started, your output should look like the below: 
 ```
-To update Minima to a new version:
-1 - mcli quit
-2 - brew services stop minima
-3 - brew tap minima-global/minima
-4 - brew install minima-global/minima/minima
-5 - brew services start minima
+/Users/YourName>java -jar minima.jar -rpcenable
+Minima @ 14/03/2022 17:32:30 [5.1 MB] : **********************************************
+Minima @ 14/03/2022 17:32:30 [5.1 MB] : *  __  __  ____  _  _  ____  __  __    __    *
+Minima @ 14/03/2022 17:32:30 [5.1 MB] : * (  \/  )(_  _)( \( )(_  _)(  \/  )  /__\   *
+Minima @ 14/03/2022 17:32:30 [5.1 MB] : *  )    (  _)(_  )  (  _)(_  )    (  /(__)\  *
+Minima @ 14/03/2022 17:32:30 [5.1 MB] : * (_/\/\_)(____)(_)\_)(____)(_/\/\_)(__)(__) *
+Minima @ 14/03/2022 17:32:30 [5.1 MB] : *                                            *
+Minima @ 14/03/2022 17:32:30 [5.1 MB] : **********************************************
+Minima @ 14/03/2022 17:32:30 [6.4 MB] : Welcome to Minima v0.100.32 - for assistance type help. Then press enter.
+Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : /Users/YourName/databases/userprefs.db
+Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : /Users/YourName/databases/cascade.db
+Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : /Users/YourName/databases/chaintree.db
+Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : /Users/YourName/databases/p2p.db
+Minima @ 14/03/2022 17:32:32 [11.1 MB] : RPC Server started on port : 9002 
 ```
+----
 
-To check your incentive account is connected:
-```
-mcli incentivecash
-```
+**Congratulations - your node is now installed & running! **
 
-Congratulations - your node is now installed & running! The last step is to connect it to your Incentive Account. 
+## How to set up Incentive Program to receive rewards
+1. Go to https://incentive.minima.global/
 
-
-## How to set up your Incentive Program account to receive rewards
-
-:::info Previous users
+:::info Previous users:
 If you had an account prior to 6th December 2021, you will need to reset your password using the Forgot Password button (this is because encrypted passwords could not be migrated to the new system.)
 You can set your new password to be the same as your old one. 
 https://incentive.minima.global/account/forgot-password
 Please check your junk mail for the reset password email.
-Once logged in, copy your Node ID.
 :::
 
-:::info New users
-After you have registered and once Minima is running, login to your Incentive Account at https://incentive.minima.global/ and copy your Node ID.
-
-Then run the following common in your Terminal, replacing xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx with the copied Node ID:
-
-mcli incentivecash uid:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+:::info New users 
+After you have registered, simply login to your account
 :::
 
-Once this is done, your installation is complete and your Incentive account is connected to your node! You may close your Terminal Window.
+2. Once Minima is running, connect your Incentive Program account to your node by copying YOUR OWN Node ID from the Incentive Program website above and typing the following directly into the Terminal command line: 
+```
+incentivecash uid:InsertYourNodeID
+```
+Example:
+```
+incentivecash uid:00F3E50D-5A52-444B-8F1A-0DA72D6CAA84
+```
+You should receive a return status of true and see your previous Rewards (if any) including missed Rewards (if any).
+**Your Incentive Program account is now connected to your node!**
 
 3. Your node will then ping us so we know it's running. 
 
-4. For every day your node pings us, we will add 1 Minima to your DAILY REWARDS.  
+4. For every day your node pings us, we will add 1 Minima to your DAILY REWARDS. 
 
-5. To see your rewards, type **mcli incentivecash** into the Terminal.
-
-
+5. To check your rewards, type **incentivecash** into the command line. 
 ```
 incentivecash
 {
@@ -93,6 +108,7 @@ incentivecash
   }
 }
 ```
+
 :::tip Last Ping
 This is the last date and time your node sent a PING message. Pings are sent at random each day. For every day your node pings us, we will add 1 Minima to your rewards.
 :::
@@ -103,17 +119,11 @@ There will temporarily be no MiniHub or MiniDapps - based on community feedback 
 
 ## Useful Commands
 
-Stopping/starting Minima
-```
-brew services stop minima : Stop the Minima service
-brew services start minima : Start the Minima service
-```
+The following commands can be typed directly into the Minima Terminal:
 
-Interacting with Minima
 ```
-mcli status : shows the status of Minima 
-mcli incentivecash : shows your incentive cash balance
-mcli help : shows the full list of commands
+status : shows the status of Minima 
+incentivecash : shows your incentive cash balance
+help : shows the full list of commands
 ```
-
 For a full list of Minima Terminal Commands see [Terminal Commands.](/docs/runanode/terminal_commands)
