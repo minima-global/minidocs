@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Mac
 
-## How to download and install Minima on your Windows PC 
+## How to download and install Minima on your Mac
 
 If you have not run Minima before, please ensure you have the latest version of Java installed on the server https://java.com/en/
 
