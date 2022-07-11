@@ -7,18 +7,6 @@ sidebar_position: 1
 The Minima network consists of four distinct layers. <br/>
 Each layer contributes to Minima being a truly decentralized, censorship resistant, peer-to-peer network for value and information exchange.
 
-## Layer 0: Maxima
-**Information transfer<br />
-Off-chain**
-
-Maxima is the information transport layer running over the Minima network. <br/>
-Communication is point-to-point so that messages can be sent, off-chain, to chosen connected peers.
-
-![Minima](/img/network/maximaLm.svg#gh-light-mode-only)![Minima](/img/network/maximaDm.svg#gh-dark-mode-only)
-
-Maxima enables encrypted, peer-to-peer exchange of information between 1st and 2nd degree connections on the Minima network.
-Maxima can be used to build censorship resistant messaging applications and will be used for sending data required for Layer 2 communication on Omnia.
-
 ## Layer 1: Minima
 **Value transfer<br />
 On-chain**
@@ -29,6 +17,18 @@ Minima is the blockchain layer for value transfer. All transactions are processe
 
 The Minima blockchain is where all on-chain transactions are processed. Every node in the network collectively comes to consensus on the state of the blockchain so all transactions are accounted for.
 Users initiate their transacting relationships on Layer 1, prior to moving off-chain to use Layer 2 for faster and cheaper transactions. As the trust layer of the protocol, Layer 1 is also used for settling any disputes between users on Layer 2.
+
+## Maxima
+**Information transfer<br />
+Off-chain**
+
+Maxima is the information transport layer running over the Minima network. <br/>
+Communication is point-to-point so that messages can be sent, off-chain, to chosen connected peers.
+
+![Minima](/img/network/maximaLm.svg#gh-light-mode-only)![Minima](/img/network/maximaDm.svg#gh-dark-mode-only)
+
+Maxima enables encrypted, peer-to-peer exchange of information between 1st and 2nd degree connections on the Minima network.
+Maxima can be used to build censorship resistant messaging applications and will be used for sending data required for Layer 2 communication on Omnia.
 
 ## Layer 2: Omnia
 **Value transfer<br /> 
