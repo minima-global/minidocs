@@ -49,8 +49,8 @@ Based on **ELTOO** technology, Omnia can do more than simple payments. It can do
 **Web3 Applications**
 
 MiniDapps are truly decentralised applications built using the functionality enabled by any/all components of the Minima network:
-1. Information transfer on Maxima
-2. Value transfer on Minima
+1. Value transfer on Minima
+2. Information transfer on Maxima
 3. Unlimited transaction per seconds on Omnia
 
 ![Minima](/img/network/miniDappsLm.svg#gh-light-mode-only)![Minima](/img/network/miniDappsDm.svg#gh-dark-mode-only)
