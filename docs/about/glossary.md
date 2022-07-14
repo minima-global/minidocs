@@ -133,7 +133,7 @@ A Crypto community Meme. It’s not exactly clear who the first one was to misty
 The first block of a new blockchain is its genesis block.
 
 ## GHOST (Minima)
-Greedy Heaviest Observed Sub Tree - the algorithm used by all nodes in the Minima network to decide which branch in the TxPoW Tree should be considered the main chain. An alternative to the Longest Chain rule. See [GHOST](/docs/learn/miningconsensus#selecting-the-main-chain-ghost).
+Greedy Heaviest Observed Sub Tree - the algorithm used by all nodes in the Minima network to decide which branch in the TxPoW Tree should be considered the main chain. An alternative to the Longest Chain rule. See [GHOST](/docs/learn/minima/miningconsensus#selecting-the-main-chain-ghost).
 
 ## GM
 It stands for “Good Morning” and is often used on Crypto Twitter by y crypto enthusiasts to wish each other a good morning. The correct reaction to receiving a “GM” is responding with “GM.” Not to be confused with General Motors.

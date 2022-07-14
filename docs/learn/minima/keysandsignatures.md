@@ -36,7 +36,7 @@ Minima uses a Merkle Signature Scheme by combining the **Winternitz One Time Sig
 The cryptographic hash function used in Minima’s implementation of the Merkle Signature Scheme is **Keccak**, with a hash strength of 256, which is also considered Quantum-resistant. It takes an input and, using a series of sponge functions, produces a 256-bit output, from which the input cannot be determined.
 :::
 :::note
-Minima also uses MMR trees for storing a user’s coins. See [MMR](/docs/learn/mmrdatabase).
+Minima also uses MMR trees for storing a user’s coins. See [MMR](/docs/learn/minima/mmrdatabase).
 :::
 
 ## Trees of Keys
