@@ -18,7 +18,7 @@ You don’t need to do anything, every user who joins our Discord Server is auto
 
 Performing certain actions on our Discord Server will earn you Experience Points (XP).
 
-Participating in useful, helpful or insightful conversations on the server will earn you 10 XP. A friend joining the server and setting you as their Inviter will earn 100 XP. There will also be activities, tasks and competitions you can participate in which will earn you XP Bonuses (:minima:).
+Participating in useful, helpful or insightful conversations on the server will earn you 10 XP. A friend joining the server and setting you as their Inviter will earn 100 XP. There will also be activities, tasks and competitions you can participate in which will earn you XP Bonuses.
 
 When certain levels of XP are achieved, you will gain a new Ambassador Rank and unlock new activities, opportunities and perks.
 
@@ -93,15 +93,17 @@ Minima Grand Ambassadors :grandambassador:
 The Ambassador Program is administered using a bot. Here are some useful commands to help you track your progress, to use them head to **#check-tier**
 
 :::note Review your info
-rank!member info
+/memberinfo
 :::
 
 :::note Check your progress
-rank!member stats
+/rank
 :::
 
-::note Check monthly leader table
-rank!server top members month
+:::note Check monthly leader table
+
+/top members server
+
 :::
 
 ## What is the Ambassador Lounge?

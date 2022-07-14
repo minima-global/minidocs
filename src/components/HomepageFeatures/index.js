@@ -17,7 +17,7 @@ const FeatureList = [
     link: 'docs/learn/networkoverview',
     description: (
       <>
-        An in-depth introduction to the Minima protocol and its architecture
+        A deep dive into the Minima protocol and its architecture
       </>
     ),
   },

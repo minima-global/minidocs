@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 7
 ---
 
 # Mining and Consensus
@@ -81,7 +81,7 @@ Once the transaction (not block) difficulty target has been met, the mining proc
 If the block difficulty target has by chance also been achieved, then the TxPoW unit will become a block and be added to the main chain.  
 
 ## Superblock Difficulty
-[(see Cascading Chain)](/docs/learn/theblockchain#the-cascading-chain)
+[(see Cascading Chain)](/docs/learn/minima/theblockchain#the-cascading-chain)
 
 ## Block Weight
 A block’s base weight is equal to the difficulty value that was required for it to become a block. This also represents the average number of hashes that would be required to meet this block target value.
@@ -91,7 +91,7 @@ For a specific block: <br/>
 
 *Note that this is not the actual weight, which would be the actual number of hashes it took to find a value less than the target.*
 
-If the actual weight, by chance, exceeds its base weight by at least a factor of 2, the block will be considered a Super Block [(see Cascading Chain)](/docs/learn/theblockchain#the-cascading-chain).
+If the actual weight, by chance, exceeds its base weight by at least a factor of 2, the block will be considered a Super Block [(see Cascading Chain)](/docs/learn/minima/theblockchain#the-cascading-chain).
 
 ## Constructing TxPoW Units 
 
@@ -319,16 +319,16 @@ If the parent block is already in the tree, the TxPoW is processed by first ensu
 - If there are any missing, the TxPoW cannot be processed any further. <br/>
 - If there are none missing, the TxPoW will go through final checks before becoming a TxBlock. <br/>
 
-A **TxBlock** includes the TxPoW and adds the MMR peaks; a list of CoinProofs for all the coins that will become spent; and a list of the new coins that will be created from all the transactions in the block. [(see TxBlocks)](/docs/learn/txpowunits#txblocks-blocks)
+A **TxBlock** includes the TxPoW and adds the MMR peaks; a list of CoinProofs for all the coins that will become spent; and a list of the new coins that will be created from all the transactions in the block. [(see TxBlocks)](/docs/learn/minima/txpowunits#txblocks-blocks)
 
-Once the TxBlock has been created, a structure is required to attach the block to the TxPoW tree, this is the role of a TxPoW Tree Node. It adds further relevant information to the TxBlock i.e. the MMR set; a list of all the spent and newly created coins; and a list of all the MMR entry numbers of any coins in any of the transactions that are relevant to the user (i.e. coins they are tracking). [(see TxPoW Tree Nodes)](/docs/learn/theblockchain#txpow-tree-node)
+Once the TxBlock has been created, a structure is required to attach the block to the TxPoW tree, this is the role of a TxPoW Tree Node. It adds further relevant information to the TxBlock i.e. the MMR set; a list of all the spent and newly created coins; and a list of all the MMR entry numbers of any coins in any of the transactions that are relevant to the user (i.e. coins they are tracking). [(see TxPoW Tree Nodes)](/docs/learn/minima/theblockchain#txpow-tree-node)
 
 A child node is then added to its parent in the tree and the tree is **recalculated**.
 
 **Recalculating** the tree involves:
 * Calculating the weight of all blocks in the tree
-* Selecting the heaviest branch as the main chain [(see Selecting the main chain)](/docs/learn/miningconsensus#selecting-the-main-chain-ghost)
-* Cascading the chain if the heaviest branch has reached the required length [(see Cascading Chain - Attribute 5)](/docs/learn/theblockchain#attribute-5)
+* Selecting the heaviest branch as the main chain [(see Selecting the main chain)](/docs/learn/minima/miningconsensus#selecting-the-main-chain-ghost)
+* Cascading the chain if the heaviest branch has reached the required length [(see Cascading Chain - Attribute 5)](/docs/learn/minima/theblockchain#attribute-5)
 * Setting transactions in the main chain so they cannot be added to a new TxPoW
 
 The TxPoW database is then checked to see if there are any children for this new block as these can then be added to the process stack for processing. 
@@ -342,7 +342,7 @@ Minima uses the **GHOST (Greedy Heaviest Observed SubTree)** protocol to ensure 
 
 An alternative to GHOST is the simple ‘Longest chain’ rule, where the valid chain is considered the one with the most number of blocks in it, however by using GHOST and considering the ‘weight’ of blocks rather than simply the number of blocks, the chain is more resilient to attack and allows for faster block times. 
 
-The weight of a block is equal to the sum of the base weights of its children, where the base weight = the block difficulty [(see Difficulty)](/docs/learn/miningconsensus#difficulty), so where there are siblings in the tree that create two branches, their parent block will have a total weight of the sum of the siblings.
+The weight of a block is equal to the sum of the base weights of its children, where the base weight = the block difficulty [(see Difficulty)](/docs/learn/minima/miningconsensus#difficulty), so where there are siblings in the tree that create two branches, their parent block will have a total weight of the sum of the siblings.
 
 The process of selecting the main chain (i.e. recalculating the tree) occurs after receiving and processing a TxPoW unit (whether or not it is a block). During this process, the weight of all blocks in the TxPoW tree (main chain and branches) are evaluated and the heaviest branch is set as the main chain. All transactions in the blocks of this chain are then considered as ‘truth’ and the node continues to build from the tip of this chain. This may mean some transactions are returned to the mempool and must be added to a new TxPoW unit before being confirmed.
 
@@ -358,7 +358,7 @@ The longest chain could more easily be achieved by an attacker in secret, howeve
 ![Mining and Consensus](/img/learn/miningConsensus2Lm.svg#gh-light-mode-only)![Mining and Consensus](/img/learn/miningConsensus2Dm.svg#gh-dark-mode-only)
 
 :::note
-A block weight of 1 is for illustrative purposes only, actual block weights vary depending on the block difficulty of the network. [(see Block Weight)](/docs/learn/miningconsensus#block-weight)
+A block weight of 1 is for illustrative purposes only, actual block weights vary depending on the block difficulty of the network. [(see Block Weight)](/docs/learn/minima/miningconsensus#block-weight)
 :::
 
 :::tip

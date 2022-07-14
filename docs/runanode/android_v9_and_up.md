@@ -52,9 +52,10 @@ Alternatively, you can check your balance from the Minima Terminal - from the Op
 This is the last date and time your node sent a PING message. Pings are sent at random each day. For every day your node pings us, we will add 1 Minima to your rewards.
 :::
 
-:::note Note
-There will temporarily be no MiniHub or MiniDapps - based on community feedback we are working hard to improve the MiniDapp system for a future release! 
-:::
+## How to use MiniDapps
+
+Coming Soon!
+
 
 ## Useful Commands
 

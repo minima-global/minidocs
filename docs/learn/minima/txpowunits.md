@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 5
 ---
 
 # TxPoW Units & Blocks
@@ -14,7 +14,7 @@ After being mined, a TxPoW unit will be propagated to the network either as a bl
 
 A node can carry out several activities with a TxPoW unit depending on the situation:
 
-**Generate:** When a user wishes to send a transaction, or is required to send a **Pulse** to the network, their node will generate (construct) a TxPoW unit containing their transaction and the hashes of other unconfirmed transactions it knows about in the **mempool**. TxPoW units are analogous to compact blocks in Bitcoin [(see Constructing TxPoW Units).](/docs/learn/miningconsensus#constructing-txpow-units)
+**Generate:** When a user wishes to send a transaction, or is required to send a **Pulse** to the network, their node will generate (construct) a TxPoW unit containing their transaction and the hashes of other unconfirmed transactions it knows about in the **mempool**. TxPoW units are analogous to compact blocks in Bitcoin [(see Constructing TxPoW Units).](/docs/learn/minima/miningconsensus#constructing-txpow-units)
 
 **Mine:** Before a node can propagate its TxPoW unit to the network, it must mine the TxPoW unit by cycling through different **nonces** (numbers), adding the nonce to the TxPoW header and hashing the result. Once the resulting hash meets the level of difficulty required by the network (~1 second work), they can propagate their TxPoW unit to other nodes in the network.
 
