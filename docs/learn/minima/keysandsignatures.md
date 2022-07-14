@@ -179,7 +179,7 @@ with the **Signature of the transaction** (as a result of using a level 3 key to
 :::note 
 Only the final signature is the signature generated from signing the transaction, the preceding signatures are the Parent-Child signatures that connect the multiple tree levels.
 :::
-To learn more about MMR proofs, see the section on [MMR Database](/docs/learn/mmrdatabase).
+To learn more about MMR proofs, see the section on [MMR Database](/docs/learn/minima/mmrdatabase).
 
 The serialised data for each  MMR Signature Proof consists of:
 
