@@ -15,7 +15,7 @@ If you have not run Minima before, please ensure you have the latest version of 
 3. From the root directory, please run the following script to set Minima as a service which will run continuously in the background on your server:
 
 ```
-wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_setup.sh && chmod +x minima_setup.sh && sudo ./minima_setup.sh -p 9001
+wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_setup.sh && chmod +x minima_setup.sh && sudo ./minima_setup.sh -p 9001 -r 9002
 ```
 
 4. Wait for Minima to start, this can take up to 30 minutes and Minima will restart during the process
@@ -30,7 +30,7 @@ wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/m
 **Running multiple nodes on one server?**<br/> 
 You can specify different port numbers on the end to do this, for example using 9121-9125: 
 ```
-wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_setup.sh && chmod +x minima_setup.sh && sudo ./minima_setup.sh -p 9121
+wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_setup.sh && chmod +x minima_setup.sh && sudo ./minima_setup.sh -p 9121 -r 9122
 ```
 
 ## Interacting with your node
