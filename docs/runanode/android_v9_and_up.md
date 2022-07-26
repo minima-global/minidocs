@@ -4,46 +4,47 @@ sidebar_position: 2
 
 # Android (v9 and above)
 
-## Videos
-How to install Minima on your Android device: https://youtu.be/aaPXlYTWCTg <br />
-How to connect your Incentive account to your Android node: https://youtu.be/Xm3caii73d8
-
-## How to download and install Minima on your Android device
+## Installing Minima
 
 1. Uninstall any previous versions of the Minima App 
-2. Download the Minima App on your Android device https://github.com/minima-global/Minima/raw/master/jar/minima-0.100.32.apk
-3. Install the Minima App from your phones Downloads folder
-4. Open the Minima App and allow the battery settings to allow Minima to run in the background
+2. Install the Minima App on your Android device from the [Google Play store]( https://play.google.com/store/apps/details?id=com.minima.android&hl=en&gl=US)
+3. Open the Minima App and allow the battery settings for Minima to run in the background
 
 **Congratulations - your node is now installed & running!**
 
-## How to set up your Incentive Account to receive rewards
-1. After set up is complete, you must connect your Incentive Program account to your node.
-2. From the Options menu in the app, click **Incentive Program**. Alternatively go to https://incentive.minima.global/ 
+## Setting up your Incentive Account
+
+After installing the app, if you have registered for the Incentive Program, you must connect your Incentive ID to your node to receive daily Rewards.<br/>
+To register, please visit https://incentive.minima.global/account/register
 
 :::info Previous users
-If you had an account prior to 6th December 2021, you will need to reset your password using the Forgot Password button (this is because encrypted passwords could not be migrated to the new system). <br/>
-You can set your new password to be the same as your old one. <br/>
+If you had an account prior to 6th December 2021, you must reset your password using the Forgot Password button (Passwords could not be migrated to the new system). You can set your new password to be the same as your old one.
 https://incentive.minima.global/account/forgot-password <br/>
-Please check your junk mail for the reset password email. Then login.
+Please check your junk mail for the reset password email.
 :::
 
-:::info New users
-After you have registered, simply login to your account
-:::
+1. From the Home Page in the Minima app, click the menu in the top left and go to **DAPP Store**
+2. Open the Minima App Store and click on the **Incentive Program** MiniDapp to download it to your phone
+3. Return to the Home page and click the + button, a pop up will appear to your phone's file storage
+4. Locate the Incentive Program MiniDapp from your phone's download folder and select it to install
+
+5. Open the **Incentive Program** MiniDapp and follow the link to the Incentive Program website to log in
 
 ![Login](/img/runanode/android_1.png#width50)
 
-4. Once logged in, copy your **Incentive ID**
+6. Copy your Incentive ID
 
 ![Node ID](/img/runanode/android_2.png#width50)
 
-5. In the app, go to the **Incentive Program** page and paste your Incentive ID into the box, click **Update**
+7. Return to the app and paste your ID into the box on the Incentive ID page, click **Update** 
+
+![Node ID](/img/runanode/android_5.png#width50)
 
 **Your Incentive Program account is now connected to your node!**
 
-To see your Rewards balance, select **Rewards** from the Options menu.<br/>
-Alternatively, you can check your balance from the Minima Terminal - from the Options menu, select **Terminal**, type **incentivecash** then Enter. 
+To see your Rewards balance, select **Rewards** from the menu.<br/>
+
+Alternatively, you can check your balance from the Minima Terminal MiniDapp using the `incentivecash` command.
 
 ![Console](/img/runanode/android_3.png#width50)
 ![Console](/img/runanode/android_4.png#width50)
@@ -54,16 +55,8 @@ This is the last date and time your node sent a PING message. Pings are sent at 
 
 ## How to use MiniDapps
 
-Coming Soon!
+For guidance on how to use MiniDapps, please visit the Help section in the mobile app. 
+
+Additional information about MiniDapps can be found [here](/docs/learn/minidapps/minidappsintro).
 
 
-## Useful Commands
-
-The following commands can be typed directly into the Minima Terminal:
-
-```
-status : shows the status of Minima 
-incentivecash : shows your incentive cash balance
-help : shows the full list of commands
-```
-For a full list of Minima Terminal Commands see [Terminal Commands.](/docs/runanode/terminal_commands)
