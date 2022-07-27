@@ -51,6 +51,8 @@ sudo systemctl start minima_9021
 ```
 5. Set up your firewall by following the instructions on the [Linux Server](/docs/runanode/linux_vps) page (if not already set up).
 
+6. Reconnect your Incentive ID to your node
+
 ### Missed Incentive Rewards
 
 If you are running your node on a server, please follow the steps above to ensure you are on the right chain.
