@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Troubleshooting
 
-Last updated: 26th July 2022
+Last updated: 27th July 2022
 
 You will find some of our most commonly asked questions and issues below. <br/>
 If you are unable to resolve your issue, please reach out in our [Discord](https://discord.gg/ZQaUXPape5) or [Telegram](https://t.me/Minima_Global) channel and a Team member will be happy to help. 
@@ -51,9 +51,9 @@ sudo systemctl start minima_8001
 sudo systemctl start minima_7001
 sudo systemctl start minima_9021
 ```
-5. Set up your firewall by following the instructions on the [Linux Server](/docs/runanode/linux_vps) page (if not already set up).
+5. Set up your firewall by following the instructions on the [Linux Server](/docs/runanode/linux_vps#secure-your-node) page (if not already set up).
 
-6. Reconnect your Incentive ID to your node
+6. [Reconnect your Incentive ID](/docs/runanode/linux_vps#how-to-set-up-your-incentive-program-account-to-receive-rewards) to your node
 
 ### Missed Incentive Rewards
 
