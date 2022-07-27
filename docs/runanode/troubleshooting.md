@@ -14,8 +14,10 @@ If you are unable to resolve your issue, please reach out in our [Discord](https
 Version 103 is a concensus critical change, therefore during the switchover period you may experience some of the following issues:
  
 
-### Nodes on a side chain 
+### Server nodes on the wrong chain
 Due to an issue that occurred in the process of many server nodes upgrading simultaneously, some server nodes are on a side chain.
+
+**Nodes on the wrong chain will not be able to participate in Testnet testing and will have issues receiving Incentive Rewards.**
 
 **All server nodes are required to do a clean install of Minima. **
 
