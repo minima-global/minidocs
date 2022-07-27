@@ -9,10 +9,10 @@ Last updated: 26th July 2022
 You will find some of our most commonly asked questions and issues below. <br/>
 If you are unable to resolve your issue, please reach out in our [Discord](https://discord.gg/ZQaUXPape5) or [Telegram](https://t.me/Minima_Global) channel and a Team member will be happy to help. 
 
-## Known Issues (v103.4)
+## Known Issues (v103)
 
 Version 103 is a concensus critical change, therefore during the switchover period you may experience some of the following issues:
- 
+
 
 ### Server nodes on the wrong chain
 Due to an issue that occurred in the process of many server nodes upgrading simultaneously, some server nodes are on a side chain.
