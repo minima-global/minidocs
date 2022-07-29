@@ -29,10 +29,10 @@ const config = {
           editUrl: "https://github.com/minima-global/minidocs",
         },
         gtag: {
-          trackingID: 'G-HXB06CEN6S',
+          trackingID: 'G-BKE0W3LK7F',
         },
         googleAnalytics: {
-          trackingID: 'G-HXB06CEN6S',
+          trackingID: 'G-BKE0W3LK7F',
         },
         blog: {
           showReadingTime: true,
