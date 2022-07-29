@@ -289,7 +289,7 @@ Zip up the contents of this folder (not the folder itself).
 Rename the folder to `helloworld2.mds.zip` or if you are using a zip library through your CLI run `zip -r helloworld2.mds.zip`.   
 
 ## Installing your MiniDapp
-Please refer to the [Installing your MiniDapp](/docs/build/buildaminidapp/basicminidapp#installing-your-minidapp) section.
+Please refer to the [Installing your MiniDapp](/docs/buildonminima/dapptutorial/basicminidapp#installing-your-minidapp) section.
 
 ## MiniDapp Downloads
 
