@@ -28,6 +28,12 @@ const config = {
           // Please change this to your repo.
           editUrl: "https://github.com/minima-global/minidocs",
         },
+        gtag: {
+          trackingID: 'G-HXB06CEN6S',
+        },
+        googleAnalytics: {
+          trackingID: 'G-HXB06CEN6S',
+        },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
