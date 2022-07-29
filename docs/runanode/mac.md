@@ -116,10 +116,6 @@ incentivecash
 This is the last date and time your node sent a PING message. Pings are sent at random each day. For every day your node pings us, we will add 1 Minima to your rewards.
 :::
 
-:::note Note
-There will temporarily be no MiniHub or MiniDapps - based on community feedback we are working hard to improve the MiniDapp system for a future release! 
-:::
-
 ## Useful Commands
 
 The following commands can be typed directly into the Minima Terminal:
@@ -163,48 +159,26 @@ mds
 
 
 ### Installing MiniDapps
+
 1. Download and save the MiniDapps you wish to use from [here.](https://github.com/minima-global/Minima/tree/master/mds/store/files)
-2. Open the Command Line interface where Minima is running
-3. Enter the following command, adding the file path to your saved Minidapp on the end<br/>
+2. Click on **Choose File** and select a MiniDapp 
+3. Click **Install** and return to the hub to open the app
 
-
-```
-mds action:install file:
-```
+![Mac](/img/buildonminima/minihub.png)
+:::note
+Note this can also be done manually using the following command from the Command Line Interface
 
 **Example for the Terminal MiniDapp:**<br/>
 
 ```
-mds action:install file:/home/user/downloads/Terminal.mds.zip
+mds action:install file:/Users/Downloads/Terminal.mds.zip
 ```
-
-You should see an output similar to below:
-
-```
-{
-  "command":"mds",
-  "params":{
-    "action":"install",
-    "file":"/home/user/downloads/Terminal.mds.zip"
-  },
-  "status":true,
-  "response":{
-    "installed":{
-      "uid":"0xD0F8543C5A64099287021EDDC13A5773",
-      "name":"Terminal",
-      "icon":"favicon.ico",
-      "version":"1.91",
-      "description":"Terminal CLI for Minima"
-    }
-  }
-}
-```
-
-For an overview of the available MiniDapps, please refer to the [About MiniDapps](/docs/learn/minidapps/minidappsintro) section.
+:::
 
 :::note Note
 To use the Wallet MiniDapp, you will need Testnet Minima coins. Please visit the Discord server to request Testnet Minima coins.
 :::
+
 
 ### Uninstalling MiniDapps
 1. From the Command Line where Minima is running, type 

@@ -50,7 +50,7 @@ Your folder should now contain 2 files
 
 Your config file and icon used will determine what is visible when your MiniDapp is loaded into the MiniDapp Hub, as shown below.
 
-![Accessing the MiniDapp Hub](/img/build/helloworld.png)
+![Accessing the MiniDapp Hub](/img/buildonminima/helloworld.png)
 
 ## Basic interface for your MiniDapp
 
@@ -109,7 +109,7 @@ We now have a complete helloworld folder containing:
 4. styling.css (optional)
 
 Zip up the contents of this folder (not the folder itself) 
-![Accessing the MiniDapp Hub](/img/build/zipup.png)
+![Accessing the MiniDapp Hub](/img/buildonminima/zipup.png)
 
 Name the folder as `helloworld.mds.zip` or if you are using a zip library through your cli run `zip -r helloworld.mds.zip`.   
 

@@ -6,7 +6,7 @@ sidebar_position: 3
 
 The MiniDapp hub is where you will access all the MiniDapps you have installed on your node. 
 
-![Accessing the MiniDapp Hub](/img/build/minihub2.png)
+![Accessing the MiniDapp Hub](/img/buildonminima/minihub2.png)
 
 To access your node’s MiniDapp hub, your node will need to have mds (MiniDapp System) enabled. 
 
@@ -40,5 +40,5 @@ If running your node on a mobile device, you can interact with your node from a 
 When you see the MDS login page, enter the password provided when running `mds` from your node's CLI to access the MiniDapp Hub.
 
 With no apps installed, it will look something like this: 
-![Accessing the MiniDapp Hub](/img/build/minihub.png)
+![Accessing the MiniDapp Hub](/img/buildonminima/minihub.png)
 

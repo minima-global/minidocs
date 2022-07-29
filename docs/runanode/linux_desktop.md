@@ -147,41 +147,19 @@ mds
 
 ### Installing MiniDapps
 1. Download and save the MiniDapps you wish to use from [here.](https://github.com/minima-global/Minima/tree/master/mds/store/files)
-2. Open the Command Line interface where Minima is running
-3. Enter the following command, adding the file path to your saved Minidapp on the end<br/>
+2. Click on **Choose File** and select a MiniDapp 
+3. Click **Install** and return to the hub to open the app
 
-
-```
-mds action:install file:
-```
+![Linux Desktop](/img/buildonminima/minihub.png)
+:::note
+Note this can also be done manually using the following command from the Command Line Interface
 
 **Example for the Terminal MiniDapp:**<br/>
 
 ```
 mds action:install file:/home/user/downloads/Terminal.mds.zip
 ```
-
-You should see an output similar to below:
-
-```
-{
-  "command":"mds",
-  "params":{
-    "action":"install",
-    "file":"/home/user/downloads/Terminal.mds.zip"
-  },
-  "status":true,
-  "response":{
-    "installed":{
-      "uid":"0xD0F8543C5A64099287021EDDC13A5773",
-      "name":"Terminal",
-      "icon":"favicon.ico",
-      "version":"1.91",
-      "description":"Terminal CLI for Minima"
-    }
-  }
-}
-```
+:::
 
 :::note Note
 To use the Wallet MiniDapp, you will need Testnet Minima coins. Please visit the Discord server to request Testnet Minima coins.

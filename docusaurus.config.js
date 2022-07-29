@@ -56,7 +56,9 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
-          { to: "docs/about/vision", label: "Vision", position: "left" },
+          { to: "docs/about/vision", 
+            label: "Vision", 
+            position: "left" },
           {
             to: "docs/learn/networkoverview",
             label: "Learn",
@@ -70,6 +72,11 @@ const config = {
           {
             to: "docs/minimaincentiveprogram",
             label: "Incentive Program",
+            position: "left",
+          },
+          {
+            to: "docs/buildonminima/startaprivatenode",
+            label: "Build",
             position: "left",
           },
           {
