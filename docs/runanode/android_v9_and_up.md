@@ -12,6 +12,8 @@ sidebar_position: 2
 
 **Congratulations - your node is now installed & running!**
 
+You will see your MiniDapps on the Home page, new MiniDapp versions will be made available in the **DAPP Store** to download & install.
+
 ## Setting up your Incentive Account
 
 After installing the app, if you have registered for the Incentive Program, you must connect your Incentive ID to your node to receive daily Rewards.<br/>
@@ -54,9 +56,12 @@ This is the last date and time your node sent a PING message. Pings are sent at 
 :::
 
 ## How to use MiniDapps
+To learn more about MiniDapps, please see the [About MiniDapps](/docs/learn/minidapps/minidappsintro) section.
 
-For guidance on how to use MiniDapps, please visit the Help section in the mobile app. 
+The latest MiniDapps, developed by the Minima Team, are available to download from the **DAPP Store** page in the app. 
 
-Additional information about MiniDapps can be found [here](/docs/learn/minidapps/minidappsintro).
+For guidance on how to use MiniDapps, please visit the **Help** section in the mobile app. 
+
+
 
 

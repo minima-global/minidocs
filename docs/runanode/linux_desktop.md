@@ -146,7 +146,7 @@ mds
 4. You will see your MiniDapp hub!
 
 ### Installing MiniDapps
-1. Download and save the MiniDapps you wish to use from [here.](https://github.com/minima-global/Minima/tree/master/mds/store/files)
+1. Download and save the MiniDapps you wish to use from the [MiniDapp Downloads](/docs/runanode/latestminidapps) section.
 2. Click on **Choose File** and select a MiniDapp 
 3. Click **Install** and return to the hub to open the app
 
