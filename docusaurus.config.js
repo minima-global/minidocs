@@ -88,6 +88,8 @@ const config = {
             href: "https://github.com/minima-global",
             label: "GitHub",
             position: "right",
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
           },
         ],
       },
