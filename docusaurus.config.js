@@ -75,8 +75,8 @@ const config = {
             position: "left",
           },
           {
-            to: "docs/buildonminima/startaprivatenode",
-            label: "Build",
+            to: "docs/tokendistribution/",
+            label: "Tokenomics",
             position: "left",
           },
           {

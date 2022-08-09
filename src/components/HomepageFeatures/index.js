@@ -31,6 +31,16 @@ const FeatureList = [
     ),
   },
   {
+    title: 'Build',
+    link: 'docs/buildonminima/startaprivatenode',
+    description: (
+      <>
+        Learn how to build decentralized applications and create Smart Contracts on Minima
+      </>
+              // Old tokenomics copy - Find out how a fixed supply of 1 billion Minima coins have been distributed
+    ),
+  },
+  {
     title: 'Earn Rewards',
     link: 'docs/minimaincentiveprogram',
     description: (
@@ -45,15 +55,6 @@ const FeatureList = [
     description: (
       <>
         Learn how to become a Minima ambassador and what Rewards you could earn
-      </>
-    ),
-  },
-  {
-    title: 'Tokenomics',
-    link: 'docs/tokendistribution',
-    description: (
-      <>
-        Find out how a fixed supply of 1 billion Minima coins have been distributed
       </>
     ),
   },

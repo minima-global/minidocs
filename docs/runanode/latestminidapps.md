@@ -8,7 +8,7 @@ Last Updated: 8th August 2022
 
 The latest MiniDapps can be downloaded below. <br/>
 Once downloaded, these can be installed onto your node from your MiniDapp Hub (Desktop users) or Android app Home page. 
-
+- [test](/minidapps/terminal-1.91.mds.zip)
 - [News Feed v1.0](https://github.com/minima-global/Minima/blob/master/mds/store/files/news-1.0.mds.zip?raw=true) *- last updated:8th August 2022*
 - [Wallet v1.8.4](https://github.com/minima-global/Minima/blob/master/mds/store/files/wallet/wallet_1.8.4.mds.zip?raw=true) *- last updated:8th August 2022*
 - [Block Explorer v0.1.5](https://github.com/minima-global/Minima/blob/master/mds/store/files/block-0.1.5.mds.zip?raw=true) *- last updated:8th August 2022*
