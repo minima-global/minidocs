@@ -50,15 +50,16 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Minima Documentation",
+        title: "Minima Docs",
         logo: {
           alt: "Minima",
           src: "img/logo.svg",
         },
         items: [
-          { to: "docs/about/vision", 
-            label: "Vision", 
-            position: "left" },
+          // { to: "docs/about/vision", 
+          //   label: "Vision", 
+          //   position: "left" 
+          // },
           {
             to: "docs/learn/networkoverview",
             label: "Learn",
