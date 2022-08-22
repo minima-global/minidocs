@@ -14,6 +14,12 @@ sidebar_position: 2
 
 You will see your MiniDapps on the Home page, new MiniDapp versions will be made available in the **DAPP Store** to download & install.
 
+:::info Don't have a Google Play account?
+The Android apk can also be downloaded directly from Github: <br/> https://github.com/minima-global/Minima/blob/master/jar/minima-0.103.12.apk?raw=true <br/>
+*Latest version: 103.12<br/>
+Last Updated: 22nd August 2022*
+:::
+
 ## Setting up your Incentive Account
 
 After installing the app, if you have registered for the Incentive Program, you must connect your Incentive ID to your node to receive daily Rewards.<br/>
