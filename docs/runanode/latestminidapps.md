@@ -9,14 +9,14 @@ Last Updated: 8th August 2022
 The latest MiniDapps can be downloaded below. <br/>
 Once downloaded, these can be installed onto your node from your MiniDapp Hub (Desktop users) or Android app Home page. 
 
-- [News Feed v1.0](https://github.com/minima-global/Minima/blob/master/mds/store/files/news-1.0.mds.zip?raw=true) *- last updated:8th August 2022*
-- [Wallet v1.9.1](https://github.com/minima-global/minimaapk/blob/main/app/src/main/assets/wallet_1.9.1.mds.zip?raw=true) *- last updated:23th August 2022*
-- [Block Explorer v0.1.5](https://github.com/minima-global/Minima/blob/master/mds/store/files/block-0.1.5.mds.zip?raw=true) *- last updated:8th August 2022*
-- [MaxSolo v1.9](https://github.com/minima-global/minimaapk/blob/main/app/src/main/assets/maxsolo_1.9.mds.zip?raw=true) *- last updated:23th August 2022*
-- [Incentive Program v1.3.11](https://github.com/minima-global/Minima/blob/master/mds/store/files/ic/ic_1.3.11.mds.zip?raw=true) *- last updated:8th August 2022*
-- [Script IDE v1.7](https://github.com/minima-global/Minima/blob/master/mds/store/files/scriptide-1.7.mds.zip?raw=true) *- last updated:8th August 2022*
-- [Terminal v1.91](https://github.com/minima-global/Minima/blob/master/mds/store/files/terminal-1.91.mds.zip?raw=true) *- last updated:8th August 2022*
-- [Docs v1.1.3](https://github.com/minima-global/minimaapk/blob/main/app/src/main/assets/docs_1.1.3.mds.zip?raw=true) *- last updated:23th August 2022*
+- [News Feed v1.0](https://github.com/minima-global/Minima/blob/master/dapps/news-1.0.mds.zip?raw=true) *- last updated:8th August 2022*
+- [Wallet v1.9.1](https://github.com/minima-global/Minima/blob/master/dapps/wallet_1.9.1.mds.zip?raw=true) *- last updated:23rd August 2022*
+- [Block Explorer v0.1.5](https://github.com/minima-global/Minima/blob/master/dapps/block-0.1.5.mds.zip?raw=true) *- last updated:8th August 2022*
+- [MaxSolo v1.9](https://github.com/minima-global/Minima/blob/master/dapps/maxsolo_1.9.mds.zip?raw=true) *- last updated:23rd August 2022*
+- [Incentive Program v1.3.11](https://github.com/minima-global/Minima/blob/master/dapps/ic_1.3.11.mds.zip?raw=true) *- last updated:8th August 2022*
+- [Script IDE v1.7](https://github.com/minima-global/Minima/blob/master/dapps/scriptide-1.7.mds.zip?raw=true) *- last updated:8th August 2022*
+- [Terminal v1.91](https://github.com/minima-global/Minima/blob/master/dapps/terminal-1.91.mds.zip?raw=true) *- last updated:8th August 2022*
+- [Docs v1.1.3](https://github.com/minima-global/Minima/blob/master/dapps/docs_1.1.3.mds.zip?raw=true) *- last updated:23rd August 2022*
 
 
 A brief description of each MiniDapp is below.
