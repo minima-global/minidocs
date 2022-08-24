@@ -54,6 +54,11 @@ coins
 
 And adds the coin as an input.. Note the use of `scriptmmr`!
 
+:::note
+This next part may require you to export & import the coin proof. Read the [**Pruning**](/docs/buildonminima/txntutorial/pruning)
+section to learn more.
+:::
+
 ~~~~
 txninput id:swap coinid:0x5869DDC397979D9529AD92658C0FACC183D94F3E23F7E8028E02B183DE2FAB8B scriptmmr:true
 ~~~~

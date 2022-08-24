@@ -9,15 +9,32 @@ Last Updated: 8th August 2022
 The latest MiniDapps can be downloaded below. <br/>
 Once downloaded, these can be installed onto your node from your MiniDapp Hub (Desktop users) or Android app Home page. 
 
-- [News Feed v1.0](https://github.com/minima-global/Minima/blob/master/dapps/news-1.0.mds.zip?raw=true) *- last updated:8th August 2022*
-- [Wallet v1.9.1](https://github.com/minima-global/Minima/blob/master/dapps/wallet_1.9.1.mds.zip?raw=true) *- last updated:23rd August 2022*
-- [Block Explorer v0.1.5](https://github.com/minima-global/Minima/blob/master/dapps/block-0.1.5.mds.zip?raw=true) *- last updated:8th August 2022*
-- [MaxSolo v1.9](https://github.com/minima-global/Minima/blob/master/dapps/maxsolo_1.9.mds.zip?raw=true) *- last updated:23rd August 2022*
-- [Incentive Program v1.3.11](https://github.com/minima-global/Minima/blob/master/dapps/ic_1.3.11.mds.zip?raw=true) *- last updated:8th August 2022*
-- [Script IDE v1.7](https://github.com/minima-global/Minima/blob/master/dapps/scriptide-1.7.mds.zip?raw=true) *- last updated:8th August 2022*
-- [Terminal v1.91](https://github.com/minima-global/Minima/blob/master/dapps/terminal-1.91.mds.zip?raw=true) *- last updated:8th August 2022*
-- [Docs v1.1.3](https://github.com/minima-global/Minima/blob/master/dapps/docs_1.1.3.mds.zip?raw=true) *- last updated:23rd August 2022*
+- [News Feed v1.0](https://github.com/minima-global/Minima/blob/master/dapps/news-1.0.mds.zip?raw=true) - Keep up to date with Minima News <br/>
+*Last updated: 8th August 2022*
 
+- [Wallet v1.9.1](https://github.com/minima-global/Minima/blob/master/dapps/wallet_1.9.1.mds.zip?raw=true)  - Official Minima wallet <br/> 
+*Last updated:23rd August 2022*
+
+- [Block Explorer v0.1.5](https://github.com/minima-global/Minima/blob/master/dapps/block-0.1.5.mds.zip?raw=true) - Explore the Minima blockchain <br/> 
+*Last updated:8th August 2022*
+
+- [MaxSolo v1.9](https://github.com/minima-global/Minima/blob/master/dapps/maxsolo_1.9.mds.zip?raw=true) - P2P chat app running over Maxima<br/>
+*Last updated:23rd August 2022*
+
+- [Incentive Program v1.3.11](https://github.com/minima-global/Minima/blob/master/dapps/ic_1.3.11.mds.zip?raw=true) - Earn Rewards for running a node<br/>
+*Last updated:8th August 2022*
+
+- [Script IDE v1.7](https://github.com/minima-global/Minima/blob/master/dapps/scriptide-1.7.mds.zip?raw=true) - Minima Script IDE<br/>
+*Last updated:8th August 2022*
+
+- [Terminal v1.91](https://github.com/minima-global/Minima/blob/master/dapps/terminal-1.91.mds.zip?raw=true) - Terminal CLI for Minima<br/>
+*Last updated:8th August 2022*
+
+- [Docs v1.1.3](https://github.com/minima-global/Minima/blob/master/dapps/docs_1.1.3.mds.zip?raw=true) - Minima Documentation and Tutorial<br/>
+*Last updated:23rd August 2022*
+
+- [Gimme20 v1.5](https://github.com/minima-global/minidocs/blob/master/minidapps/gimme20_1.5.mds.zip?raw=true) - Receive Testnet Minima coins<br/>
+*Last updated:24th August 2022*
 
 A brief description of each MiniDapp is below.
 
