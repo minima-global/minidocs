@@ -16,6 +16,8 @@ Get started in 3 steps:
 - [Linux Desktop](/docs/runanode/linux_desktop)<br/>
 - [Linux Server (VPS)](/docs/runanode/linux_vps)<br/>
 
-3. Connect your node to your Incentive Program account
+3. Connect your node to your Incentive Program account. **Please make sure you use an email address that you won’t lose access to.**
 
-**Please make sure you use an email address that you won’t lose access to.**
+Once your node is up and running, you can contribute to our Testnet by testing our [MiniDapps](/docs/learn/minidapps/minidappsintro) - decentralized applications on Minima. 
+
+**Head to the [Using MiniDapps](/docs/runanode/usingminidapps) section to start testing!**

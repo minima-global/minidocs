@@ -61,12 +61,13 @@ Alternatively, you can check your balance from the Minima Terminal MiniDapp usin
 This is the last date and time your node sent a PING message. Pings are sent at random each day. For every day your node pings us, we will add 1 Minima to your rewards.
 :::
 
-## How to use MiniDapps
-To learn more about MiniDapps, please see the [About MiniDapps](/docs/learn/minidapps/minidappsintro) section.
+## Next Steps
+
+Now your node is up and running, you can contribute to our Testnet by testing our [MiniDapps](/docs/learn/minidapps/minidappsintro) - decentralized applications on Minima. 
 
 The latest MiniDapps, developed by the Minima Team, are available to download from the **DAPP Store** page in the app. 
 
-For guidance on how to use MiniDapps, please visit the **Help** section in the mobile app. 
+For guidance on how to use MiniDapps, please visit the **Help** section in the app. 
 
 
 

@@ -1,10 +1,10 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 ---
 
-# MiniDapp Downloads
+# Download MiniDapps
 
-Last Updated: 8th August 2022
+Last Updated: 23rd August 2022
 
 The latest MiniDapps can be downloaded below. <br/>
 Once downloaded, these can be installed onto your node from your MiniDapp Hub (Desktop users) or Android app Home page. 
