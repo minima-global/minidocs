@@ -12,31 +12,23 @@ sidebar_position: 2
 
 **Congratulations - your node is now installed & running!**
 
-You will see your MiniDapps on the Home page, new MiniDapp versions will be made available in the **DAPP Store** to download & install.
+You will see your MiniDapps on the Home screen, the latest MiniDapp versions can be found in the **DAPP Store** to download & install.
 
 :::info Don't have a Google Play account?
-The Android apk can also be downloaded directly from Github: <br/> https://github.com/minima-global/Minima/blob/master/jar/minima-0.103.12.apk?raw=true <br/>
-*Latest version: 103.12<br/>
-Last Updated: 22nd August 2022*
+The Android apk can also be downloaded directly from Github [here.](https://github.com/minima-global/Minima/blob/master/jar/minima-0.103.12.apk?raw=true) <br/>
+*Latest version: 103.12, Last updated: 22nd August 2022*
 :::
 
 ## Setting up your Incentive Account
 
-After installing the app, if you have registered for the Incentive Program, you must connect your Incentive ID to your node to receive daily Rewards.<br/>
-To register, please visit https://incentive.minima.global/account/register
+After installing the app, if you have registered for the [Incentive Program](https://incentive.minima.global/account/register), you must connect your Incentive ID to your node to receive daily Rewards.
 
 :::info Previous users
-If you had an account prior to 6th December 2021, you must reset your password using the Forgot Password button (Passwords could not be migrated to the new system). You can set your new password to be the same as your old one.
-https://incentive.minima.global/account/forgot-password <br/>
-Please check your junk mail for the reset password email.
+If you had an account prior to 6th December 2021, you must reset your password [here.](https://incentive.minima.global/account/forgot-password) Please check your junk mail for the reset password email.
 :::
 
-1. From the Home Page in the Minima app, click the menu in the top left and go to **DAPP Store**
-2. Open the Minima App Store and click on the **Incentive Program** MiniDapp to download it to your phone
-3. Return to the Home page and click the + button, a pop up will appear to your phone's file storage
-4. Locate the Incentive Program MiniDapp from your phone's download folder and select it to install
-
-5. Open the **Incentive Program** MiniDapp and follow the link to the Incentive Program website to log in
+1. From the Home screen in the Minima app, open the **Incentive Program** MiniDapp
+2. Follow the link to the Incentive Program website to log in
 
 ![Login](/img/runanode/android_1.png#width50)
 
@@ -52,22 +44,22 @@ Please check your junk mail for the reset password email.
 
 To see your Rewards balance, select **Rewards** from the menu.<br/>
 
-Alternatively, you can check your balance from the Minima Terminal MiniDapp using the `incentivecash` command.
+You can also check your Reward balance from the Terminal MiniDapp using the `incentivecash` command.
 
 ![Console](/img/runanode/android_3.png#width50)
 ![Console](/img/runanode/android_4.png#width50)
 
-:::tip Last Ping
-This is the last date and time your node sent a PING message. Pings are sent at random each day. For every day your node pings us, we will add 1 Minima to your rewards.
+:::tip Rewards
+For every day your node is connected to the network, you will receive 1 Reward within the next 24 hours.
 :::
 
 ## Next Steps
 
-Now your node is up and running, you can contribute to our Testnet by testing our [MiniDapps](/docs/learn/minidapps/minidappsintro) - decentralized applications on Minima. 
+Once your node running, you can contribute to our Testnet by testing our decentralized applications - **MiniDapps.** 
 
-The latest MiniDapps, developed by the Minima Team, are available to download from the **DAPP Store** page in the app. 
+Learn more about MiniDapps [here](/docs/learn/minidapps/minidappsintro) <br/>
 
-For guidance on how to use MiniDapps, please visit the **Help** section in the app. 
+The latest MiniDapps are available to download from the **DAPP Store** screen in the app. For guidance on installing and using MiniDapps, please visit the **Help** section in the app. 
 
 
 

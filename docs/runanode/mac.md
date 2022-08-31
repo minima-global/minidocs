@@ -8,9 +8,9 @@ sidebar_position: 4
 
 If you have not run Minima before, please ensure you have the latest version of Java installed on the server https://java.com/en/
 
-1. If you have a previous version of Minima running, type quit into the Command prompt window, then replace your existing minima.jar file with the latest version.
+1. If you have a previous version of Minima running, type `quit` into the Command prompt window, then replace your existing minima.jar file with the latest version.
 
-2. Download and save the latest Minima JAR using the button below (https://github.com/minima-global/Minima/raw/master/jar/minima.jar)
+2. Download and save the latest Minima JAR [here](https://github.com/minima-global/Minima/raw/master/jar/minima.jar)
 
 3. Open the Command Prompt as Admin. When it opens, type the following (including a space after -jar):
 ```
@@ -22,7 +22,7 @@ sudo java -jar
 -rpcenable -mdsenable
 ```
 
-The output should look like the below (all on one line):
+The command should look like the below (all on one line):
 ```
 sudo java -jar /Users/YourName/minima.jar -rpcenable -mdsenable
 ```
@@ -62,28 +62,22 @@ Minima @ 14/03/2022 17:32:32 [11.1 MB] : RPC Server started on port : 9002
 **Congratulations - your node is now installed & running! **
 
 ## How to set up Incentive Program to receive rewards
-1. Go to https://incentive.minima.global/
 
-:::info Previous users:
-If you had an account prior to 6th December 2021, you will need to reset your password using the Forgot Password button (this is because encrypted passwords could not be migrated to the new system.)
-You can set your new password to be the same as your old one. 
-https://incentive.minima.global/account/forgot-password
-Please check your junk mail for the reset password email.
+After installing the app, if you have registered for the [Incentive Program](https://incentive.minima.global/account/register), you must connect your Incentive ID to your node to receive daily Rewards.
+
+1. Login to https://incentive.minima.global/
+
+:::info Previous users
+If you had an account prior to 6th December 2021, you must reset your password [here.](https://incentive.minima.global/account/forgot-password) Please check your junk mail for the reset password email.
 :::
 
-:::info New users 
-After you have registered, simply login to your account
-:::
+2. Connect your Incentive Program account to your node by copying YOUR OWN Incentive ID from the Incentive Program website above and typing `incentivecash uid:YourIncentiveID` into the Terminal command line: 
 
-2. Once Minima is running, connect your Incentive Program account to your node by copying YOUR OWN Node ID from the Incentive Program website above and typing the following directly into the Terminal command line: 
-```
-incentivecash uid:InsertYourNodeID
-```
 Example:
 ```
 incentivecash uid:00F3E50D-5A52-444B-8F1A-0DA72D6CAA84
 ```
-You should receive a return status of true and see your previous Rewards (if any) including missed Rewards (if any).
+You should receive a return status of `true` and see your previous Rewards (if any) including missed Rewards (if any).
 **Your Incentive Program account is now connected to your node!**
 
 3. Your node will then ping us so we know it's running. 
@@ -112,8 +106,8 @@ incentivecash
 }
 ```
 
-:::tip Last Ping
-This is the last date and time your node sent a PING message. Pings are sent at random each day. For every day your node pings us, we will add 1 Minima to your rewards.
+:::tip Rewards
+For every day your node is connected to the network, you will receive 1 Reward within the next 24 hours.
 :::
 
 ## Useful Commands
@@ -129,6 +123,8 @@ For a full list of Minima Terminal Commands see [Terminal Commands.](/docs/runan
 
 ## Next Steps
 
-Now your node is up and running, you can contribute to our Testnet by testing our [MiniDapps](/docs/learn/minidapps/minidappsintro) - decentralized applications on Minima. 
+Once your node running, you can contribute to our Testnet by testing our decentralized applications - **MiniDapps.** 
 
-**Head to the [Using MiniDapps](/docs/runanode/usingminidapps) section to start testing!**
+[What are MiniDapps?](/docs/learn/minidapps/minidappsintro) <br/>
+[How to use MiniDapps](/docs/runanode/usingminidapps) <br/>
+[Download the latest MiniDapps](/docs/runanode/latestminidapps) <br/>

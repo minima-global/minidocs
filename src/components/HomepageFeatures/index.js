@@ -26,7 +26,7 @@ const FeatureList = [
     link: 'docs/runanode/get_started_in_3_steps',
     description: (
       <>
-        Learn how to install and run a validating and constructing Minima node on your device
+        Install and run a validating and constructing Minima node on your device
       </>
     ),
   },
@@ -35,7 +35,7 @@ const FeatureList = [
     link: 'docs/buildonminima/startaprivatenode',
     description: (
       <>
-        Learn how to build decentralized applications and create Smart Contracts on Minima
+        Develop decentralized applications and create smart contracts on Minima
       </>
               // Old tokenomics copy - Find out how a fixed supply of 1 billion Minima coins have been distributed
     ),
@@ -45,7 +45,7 @@ const FeatureList = [
     link: 'docs/minimaincentiveprogram',
     description: (
       <>
-        Learn about the Minima Incentive Program
+        Join the Minima Incentive Program
       </>
     ),
   },
@@ -54,7 +54,7 @@ const FeatureList = [
     link: 'docs/ambassador',
     description: (
       <>
-        Learn how to become a Minima ambassador and what Rewards you could earn
+        Become a Minima ambassador and earn additional Rewards
       </>
     ),
   },
