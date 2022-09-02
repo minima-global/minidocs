@@ -105,11 +105,10 @@ Used to link a Burn amount to a main transaction. The Link Hash in a Burn transa
 ## Transaction Validity
 
 For a transaction to be valid:
-1. It must have at least one, and up to 256 coin inputs
-2. It must have no more than 255 outputs 
-3. All inputs and outputs must be valid Minima amounts (between 0-1 billion)
-4. The sum of inputs must be greater than or equal to the sum of the outputs for each Token ID.
-5. It must have unique Coin IDs for each input coin
+1. The sum of inputs must be greater than or equal to the sum of the outputs for each Token ID
+2. All inputs and outputs must be valid Minima amounts (between 0-1 billion)
+3. All inputs must have unique coin IDs 
+4. It must have no more than 256 state variables 
 
 When checking the validity of transactions, the *monotonicity* is checked to determine whether a transaction needs to be checked more than once. 
 
