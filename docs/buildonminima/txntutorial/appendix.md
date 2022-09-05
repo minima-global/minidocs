@@ -40,7 +40,7 @@ Here is a breakdown of the simple and complete KISSVM language.
 | @BLOCKMILLI | the current block time in milliseconds since Jan 1 1970 |
 | @CREATED | the block this coin was created in |
 | @COINAGE | the difference in @BLOCK and @CREATED |
-| @INPUT | the input number in the transaction of this coin |
+| @INPUT | Input index of a coin used in the transaction. First input coin has an index of 0. |
 | @COINID | the coinid |
 | @AMOUNT | the amount |
 | @ADDRESS | the address |

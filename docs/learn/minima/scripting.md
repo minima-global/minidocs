@@ -113,7 +113,7 @@ FUNC        ::= CONCAT | LEN | REV | SUBSET | GET | OVERWRITE |
 @BLOCK       : Block number this transaction is in
 @INBLOCK     : Block number when this output was created
 @BLOCKDIFF   : Difference between @BLOCK and INBLOCK
-@INPUT       : Input number in the transaction
+@INPUT       : Input index of a coin used in the transaction. First input coin has an index of 0.
 @COINID      : CoinID of this input
 @AMOUNT      : Amount of this input
 @ADDRESS     : Address of this input

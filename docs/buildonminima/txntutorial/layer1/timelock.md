@@ -15,7 +15,7 @@ This script will return TRUE if the transaction is signed by the correct public 
 `@BLOCKMILLI` - the current block time in milliseconds since Jan 1 1970<br/>
 `@CREATED` - the block this coin was created in<br/>
 `@COINAGE` - the difference in @BLOCK and @CREATED.<br/>
-`@INPUT` - the input number in the transaction of this coin<br/>
+`@INPUT` - Input index of a coin used in the transaction. First input coin has an index of 0.<br/>
 `@COINID` - the coinid<br/>
 `@AMOUNT` - the amount<br/>
 `@ADDRESS` - the address<br/>
