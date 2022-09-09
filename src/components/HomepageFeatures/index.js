@@ -42,7 +42,7 @@ const FeatureList = [
   },
   {
     title: 'Earn Rewards',
-    link: 'docs/minimaincentiveprogram',
+    link: 'docs/earnrewards/minimaincentiveprogram',
     description: (
       <>
         Join the Minima Incentive Program
@@ -51,7 +51,7 @@ const FeatureList = [
   },
   {
     title: 'Ambassador',
-    link: 'docs/ambassador',
+    link: 'docs/earnrewards/ambassador',
     description: (
       <>
         Become a Minima ambassador and earn additional Rewards
