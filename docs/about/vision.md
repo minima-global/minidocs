@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 4
 ---
 
-# Vision
+# Our Vision
 
 ## Core philosophy
 Minima has created an ultra-lean blockchain protocol that fits on a mobile or IoT device, allowing every user to run a full constructing and validating node. By adopting this approach, Minima has created the possibility of operating a completely decentralized network. One that is scalable and inclusive, while remaining secure and resilient. This level of total decentralization guarantees censorship-resistance by ensuring that there can be no overarching authority controlling the network, creating an ecosystem that is truly autonomous and accountable. The result is Minima, a base layer protocol that maximises all of the benefits of blockchain, whilst reducing existing vulnerabilities.

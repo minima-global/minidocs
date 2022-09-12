@@ -1,8 +1,8 @@
 ---
-sidebar_position: 8
+sidebar_position: 6
 ---
 
-# Token Distribution
+# Our Tokenomics
 
 The total supply of Minima tokens is fixed and pre-allocated. As there are no dedicated miners, there is no method for distributing coins after Mainnet launch.
 This is one of the unique features of our cooperative PoW chain. Our distribution strategy reflects the importance to rapidly gain security based on a minimum target of 1 million active and participating Mainnet nodes.

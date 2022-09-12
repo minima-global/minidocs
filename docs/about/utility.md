@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Minima's Utility
+# Our Utility
 
 The utility of the Minima network and currency will be a key driver influencing the value of the Minima currency.
 

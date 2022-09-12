@@ -4,11 +4,11 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Vision',
-    link: 'docs/about/vision',
+    title: 'About',
+    link: 'docs/about/welcome',
     description: (
       <>
-        Learn about the original vision of Minima and why it exists
+        Learn about the purpose and values of Minima and what our vision is
       </>
     ),
   },
@@ -22,7 +22,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Run a node',
+    title: 'Run a Node',
     link: 'docs/runanode/get_started_in_3_steps',
     description: (
       <>

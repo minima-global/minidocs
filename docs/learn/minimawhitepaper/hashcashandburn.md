@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # HashCash and Burn
 
-Adam Backs’ HashCash[[9]](/docs/minimawhitepaper/specialthanksto) was the first weaponized version of PoW. A Denial-of-Service (DoS) counter-measure first deployed to prevent email spam. Sending millions of emails ‘costs’ nothing – hardware, processing, bandwidth, etc. A lone computer sitting on the internet can send millions of emails in almost no time, constantly. HashCash enforced that a PoW payment was included whenever an email was sent. To a single user sending emails every few minutes, this was utterly negligible, a background process that hummed for a few seconds after you press the ‘Send’ button. But to the spam-machine sitting on the internet trying to send millions of emails, this would require millions of seconds of work, an impossible task.
+Adam Backs’ HashCash[[9]](/docs/learn/minimawhitepaper/specialthanksto) was the first weaponized version of PoW. A Denial-of-Service (DoS) counter-measure first deployed to prevent email spam. Sending millions of emails ‘costs’ nothing – hardware, processing, bandwidth, etc. A lone computer sitting on the internet can send millions of emails in almost no time, constantly. HashCash enforced that a PoW payment was included whenever an email was sent. To a single user sending emails every few minutes, this was utterly negligible, a background process that hummed for a few seconds after you press the ‘Send’ button. But to the spam-machine sitting on the internet trying to send millions of emails, this would require millions of seconds of work, an impossible task.
         	
 Negligible PoW stops DoS. Negligible PoW does not stop DDoS.
 

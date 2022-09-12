@@ -67,7 +67,7 @@ const config = {
           },
           {
             to: "docs/runanode/get_started_in_3_steps",
-            label: "Run a node",
+            label: "Run a Node",
             position: "left",
           },
           {
@@ -76,7 +76,7 @@ const config = {
             position: "left",
           },
           {
-            to: "docs/tokendistribution/",
+            to: "docs/about/tokendistribution/",
             label: "Tokenomics",
             position: "left",
           },

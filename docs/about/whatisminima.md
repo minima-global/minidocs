@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # What is Minima?
@@ -51,4 +51,25 @@ With blockchains, the incentives commonly seen are transaction fees and block re
 
 A protocol cannot be without a central authority, or be considered a solid foundation to build on, if certain developers can ‘govern’ and change the rules of the chain. Therefore, a blockchain protocol cannot be truly decentralized if it is not complete.
 
-**Minima will be complete at launch.**
+**The Minima Protocol will be complete at launch.**
+
+
+## Inspiration
+**“Creative thinking is not about generating something new from a blank slate, but rather about taking what is already present and combining those bits and pieces in a way that has not been done previously.” - James Clear**
+
+Minima takes inspiration from and combines much great previous work including
+
+- [Satoshi Nakomoto’s Bitcoin](https://bitcoin.modeapp.com/bitcoin-white-paper.pdf) (UTxO model); 
+- [IOTA](https://www.iota.org/) (Removing miners - user based PoW security); 
+- [Adam Backs’ HashCash](http://www.hashcash.org/) (The Burn); 
+- [P2Pool](https://en.bitcoin.it/wiki/P2Pool) (TxPoW); 
+- [Sompolinsky](https://eprint.iacr.org/2013/881.pdf) and Zohar (GHOST); 
+- [Peter Todd’s MMR Storage-less Proof database](https://petertodd.org/2016/delayed-txo-commitments) (MMR database); 
+- [Proof of Proof-of-Work](https://eprint.iacr.org/2017/963.pdf) (Cascading Chain);
+- [Gregory Maxwell’s Chain Folding](https://en.bitcoin.it/wiki/User:Gmaxwell/alt_ideas) (Cascading chain);  
+- [The Lightning Network](https://lightning.network/) (Omnia - Minima's Layer 2)
+
+## Get Involved
+If you’re excited by Minima’s technology or simply want to help build a network that empowers freedom for all, it's time to get involved.
+
+**Read our [Become a Minimalist](/docs/about/becomeaminimalist) page to learn how.**

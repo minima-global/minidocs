@@ -4,7 +4,7 @@ sidebar_position: 11
 
 # Smart Contracts, Tokens and Transactions
 
-Minima operates a validatory network, like Bitcoin, rather than a computational network, like Ethereum[[18]](/docs/minimawhitepaper/specialthanksto). Computational networks require far greater resources to operate than validatory networks. In fact, the computational resources required far exceed those available to the majority of network participants, hence these networks centralize around larger more powerful nodes. Minima must allow everyone to run a Complete node.
+Minima operates a validatory network, like Bitcoin, rather than a computational network, like Ethereum[[18]](/docs/learn/minimawhitepaper/specialthanksto). Computational networks require far greater resources to operate than validatory networks. In fact, the computational resources required far exceed those available to the majority of network participants, hence these networks centralize around larger more powerful nodes. Minima must allow everyone to run a Complete node.
 	
 - Validation is the minimum amount of useful computation.
 - Logic can be computed off-chain and validated on-chain.

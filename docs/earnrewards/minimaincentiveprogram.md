@@ -52,5 +52,5 @@ The best way to learn more and ask questions is to join our community channels b
 - [Discord](https://discord.gg/ZQaUXPape5)
 - [Telegram](https://t.me/Minima_Global) 
 
-For the full Terms & Conditions, please [click here](/docs/incentiveprogramtermsandconditions/applicationoftheseterms).
+For the full Terms & Conditions, please [click here](/docs/earnrewards/incentiveprogramtermsandconditions/applicationoftheseterms).
 
