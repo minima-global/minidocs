@@ -35,6 +35,4 @@ For help using MiniDapps, please see the [Run a Node](/docs/runanode/get_started
 Anyone can learn to build a MiniDapp. <br/>
 The front-end for MiniDapps can be written using the widely known JavaScript, HTML and CSS. Minima’s KISS scripting language is Turing-Complete, allowing for powerful smart contract driven applications. Building a MiniDapp is accessible to anyone willing to learn! 
 
-To learn more about Minima’s scripting language, check out the [scripting](/docs/learn/minima/scripting) section and follow the Transaction Tutorial found in the Docs MiniDapp.<br/>
-
-Additional Developer materials will be available soon!
+**Visit the [Build](/docs/buildonminima/startaprivatenode) section to learn more about building MiniDapps on Minima.**
