@@ -56,12 +56,12 @@ Grants will be awarded through a series of scheduled application rounds and in c
 Pre-sale allocations are unlocked over time ensuring deterministic liquidity in line with our post-launch growth trajectory. With no miners to pay, complete certainty of the total number of coins in the system can be achieved at a far greater rate, allowing for economic equilibrium to play out much faster. In this way, supply and demand are balanced in the absence of external influences. 
 
 | Allocation | Release Schedule |
-|:------------:|:------------------:|
+|:------------|:------------------|
 |**Team & Advisors** | Linear vesting over 3 years, starting 3 months after TGE |
-|**Seed - Institutional** | 33% at TGE then 67% at 1 year after TGE |
-|**Seed - Friends & Family** | 25% at TGE rest 5% monthly after TGE |
-|**Private 1** | 40% at TGE rest 5% monthly after TGE |
-|**Private 2** | 50% at TGE rest 5% monthly after TGE |
+|**Seed - Institutional** | 33% at TGE, then 67% at 1 year after TGE |
+|**Seed - Friends & Family** | 25% at TGE, then 5% monthly after TGE |
+|**Private 1** | 40% at TGE, then 5% monthly after TGE |
+|**Private 2** | 50% at TGE, then 5% monthly after TGE |
 
 
 
