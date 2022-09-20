@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Our Tokenomics
 
-The total supply of Minima tokens is fixed and pre-allocated. As there are no dedicated miners, there is no method for distributing coins after Mainnet launch.
+The total supply of Minima is fixed at 1 billion tokens and pre-allocated. As there are no dedicated miners, there is no method for distributing coins after Mainnet launch.
 This is one of the unique features of our cooperative PoW chain. Our distribution strategy reflects the importance to rapidly gain security based on a minimum target of 1 million active and participating Mainnet nodes.
 
 The majority of public allocation will be made available through our series of community incentive initiatives and a grant program.
@@ -19,10 +19,8 @@ Users of Minima can rely on Layer 1 performance and security guarantees of a wel
 
 ## Public Sale
 
-16% is reserved for public sale and will be made available through a series of timed sales events as follows:
 
-- Public pre-sale (Q1 2023)
-- TGE (Q1 2023)
+16% is reserved for public sale and will be made available through a series of timed sale events.
 
 5% of the public sale allocation will be released pre-TGE, up to 5% at the TGE, with the remaining 6% available for release from the 1st Anniversary. 
 
