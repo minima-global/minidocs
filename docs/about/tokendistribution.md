@@ -53,15 +53,17 @@ Grants are awarded for developments based on merit and their potential to increa
 
 Grants will be awarded through a series of scheduled application rounds and in collaboration with a range of Minima partners, aligned to, and after, the Mainnet launch to garner further momentum up to, and throughout the early stages of growth. 
 
-## Private Allocations 
-
-Circulation of private allocation token pools have been created with lockup release schedules for the team and advisors (14.05%) and institutional private investment rounds. 
-
 ## Release Schedule
 
 Pre-sale allocations are unlocked over time ensuring deterministic liquidity in line with our post-launch growth trajectory. With no miners to pay, complete certainty of the total number of coins in the system can be achieved at a far greater rate, allowing for economic equilibrium to play out much faster. In this way, supply and demand are balanced in the absence of external influences. 
 
-
+| Allocation | Release Schedule |
+|------------|------------------|
+|**Team & Advisors** | Linear vesting over 3 years, starting 3 months after TGE |
+|**Seed - Institutional** | 33% at TGE then 67% at 1 year after TGE |
+|**Seed - Friends & Family** | 25% at TGE rest 5% monthly after TGE |
+|**Private 1** | 40% at TGE rest 5% monthly after TGE |
+|**Private 2** | 50% at TGE rest 5% monthly after TGE |
 
 
 
