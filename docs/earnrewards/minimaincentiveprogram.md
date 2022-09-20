@@ -41,7 +41,7 @@ One Incentive Reward account per person.
 In the run-up to Mainnet, there will likely be several upgrades to the system. These are known as 'hard forks'. Any earned Minima rewards will temporarily be removed when these happen, and we will reinstate the exact amount after the update. Any Minima tokens created via the wallet on the testnet will also be lost during a hard fork.
 
 ## When will I get my rewards?
-Everyone in the Incentive Program will get their rewards at the Token Generation Event (TGE). This is scheduled to be in Q3 2022. 
+Everyone in the Incentive Program will get their rewards at the Token Generation Event (TGE). This is scheduled to be in Q1 2023. 
 
 ## How do I report a bug?
 Please head to the #download-and-bugs channel on our [Discord Server](https://discord.gg/ZQaUXPape5). There you will find full instructions for raising your bug. Should you need help doing so, contact any of the Community Team who will be happy to assist.

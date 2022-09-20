@@ -21,8 +21,8 @@ Users of Minima can rely on Layer 1 performance and security guarantees of a wel
 
 16% is reserved for public sale and will be made available through a series of timed sales events as follows:
 
-- Public pre-sale (Q3 2022)
-- TGE (Q3 2022)
+- Public pre-sale (Q1 2023)
+- TGE (Q1 2023)
 
 5% of the public sale allocation will be released pre-TGE, up to 5% at the TGE, with the remaining 6% available for release from the 1st Anniversary. 
 
