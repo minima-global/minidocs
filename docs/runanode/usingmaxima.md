@@ -16,8 +16,9 @@ Before using the MaxSolo MiniDapp to chat with friends, you must:
 4. Have the MaxSolo MiniDapp installed 
 
 :::note Android Users 
-The following guidance is for Desktop and Server users. Android users can download the latest MiniDapps from within the app by visiting the **DAPP Store**. Once downloaded, MiniDapps can be installed from the app **Home** page.<br/>
-For more guidance on Android, please visit the **Help** section in the app. 
+The following guidance is for Desktop and Server users. <br/>
+Android users can use the **Contacts** page of the app to find their Maxima Profile and Contact Address, and to add Maxima Contacts. 
+Once connected to a Contact, you can message eachother using the MaxSolo MiniDapp.
 :::
 
 

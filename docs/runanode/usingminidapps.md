@@ -14,8 +14,13 @@ For more guidance on Android, please visit the **Help** section in the app.
 ## Accessing the MiniDapp Hub
 1. Go to to https://127.0.0.1:9003/ or https://localhost:9003/ in your web browser. <br/>
 Server users will need to use https://YourServerIP:9003/  
-2. You may be shown a security certificate warning, to which you can click on Advanced, then Proceed. This may be different depending on the browser and OS you are using.
-3. You will see your login page, to get your password return to the Command Line and enter 
+
+:::note Security warning
+You may be shown a security certificate warning, to which you can click on Advanced, then Proceed. <br/>
+This may be different depending on the browser and OS you are using; details on how to do this can be found at: https://www.vultr.com/docs/how-to-bypass-the-https-warning-for-self-signed-ssl-tls-certificates/
+:::
+
+2. You will see your login page, to get your password return to the Command Line and enter 
 
 ```
 mds
