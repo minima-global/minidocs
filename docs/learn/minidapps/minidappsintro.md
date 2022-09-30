@@ -25,11 +25,11 @@ Other ‘decentralized’ applications are decentralized in name only, often rel
 
 
 ## What MiniDapps are currently available?
-You will find the latest MiniDapps, developed by the Minima Team, available to download from the [MiniDapp Downloads](/docs/runanode/latestminidapps) section.<br/>
+You will find the latest MiniDapps, developed by the Minima Team, available to download from the [MiniDapps website](https://minidapps.minima.global/).<br/>
 In future, we expect the majority of MiniDapps to be built by the open-source community—that could be you!
 
 ## How do I use MiniDapps?
-For help using MiniDapps, please see the [Using MiniDapps](/docs/runanode/usingminidapps) section and select your platform of choice.
+For help using MiniDapps, please see [Using MiniDapps](/docs/runanode/usingminidapps).
 
 ## Who can build a MiniDapp?
 Anyone can learn to build a MiniDapp. <br/>

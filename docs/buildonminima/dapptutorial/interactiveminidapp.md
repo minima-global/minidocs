@@ -295,7 +295,7 @@ Please refer to the [Installing your MiniDapp](/docs/buildonminima/dapptutorial/
 
 The **HelloWorld2** MiniDapp can also be downloaded from GitHub [here](https://github.com/minima-global/innovation-challenge/tree/main/Resources)
 
-Minima’s official MiniDapps can be downloaded from the [MiniDapp Downloads](/docs/runanode/latestminidapps) section.
+Minima’s official MiniDapps can be downloaded from the [MiniDapps website](https://minidapps.minima.global/).
 
 ## Next Steps
 

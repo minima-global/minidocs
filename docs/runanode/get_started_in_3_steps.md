@@ -18,8 +18,11 @@ Select your platform of choice:
 - [Linux Server (VPS)](/docs/runanode/linux_vps)<br/>
 - iPhone (due 2023)<br/>
 
-Once your node running, you can contribute to our Testnet by testing our decentralized applications - **MiniDapps.** 
+Once your node running, see [How to use MiniDapps](/docs/runanode/usingminidapps) to start testing!
+
+Thank you for participating and contributing to our Testnet.
+
+Learn more:<br/>
 
 [What are MiniDapps?](/docs/learn/minidapps/minidappsintro) <br/>
-[How to use MiniDapps](/docs/runanode/usingminidapps) <br/>
-[Download the latest MiniDapps](/docs/runanode/latestminidapps) <br/>
+[Download the latest MiniDapps](https://minidapps.minima.global/) <br/>
