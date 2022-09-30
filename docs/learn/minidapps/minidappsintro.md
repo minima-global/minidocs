@@ -29,7 +29,7 @@ You will find the latest MiniDapps, developed by the Minima Team, available to d
 In future, we expect the majority of MiniDapps to be built by the open-source community—that could be you!
 
 ## How do I use MiniDapps?
-For help using MiniDapps, please see the [Run a Node](/docs/runanode/get_started_in_3_steps) section and select your platform of choice.
+For help using MiniDapps, please see the [Using MiniDapps](/docs/runanode/usingminidapps) section and select your platform of choice.
 
 ## Who can build a MiniDapp?
 Anyone can learn to build a MiniDapp. <br/>

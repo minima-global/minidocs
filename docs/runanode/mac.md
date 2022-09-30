@@ -123,8 +123,11 @@ For a full list of Minima Terminal Commands see [Terminal Commands.](/docs/runan
 
 ## Next Steps
 
-Once your node running, you can contribute to our Testnet by testing our decentralized applications - **MiniDapps.** 
+Once your node running, see [How to use MiniDapps](/docs/runanode/usingminidapps) to start testing MiniDapps!
+
+Thank you for participating and contributing to our Testnet.
+
+Learn more:<br/>
 
 [What are MiniDapps?](/docs/learn/minidapps/minidappsintro) <br/>
-[How to use MiniDapps](/docs/runanode/usingminidapps) <br/>
 [Download the latest MiniDapps](/docs/runanode/latestminidapps) <br/>

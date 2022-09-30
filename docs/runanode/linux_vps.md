@@ -202,3 +202,14 @@ If you have jq installed on your computer (for improved formatting)<br/>
 Each request will require your server password.
 
 Lock it down.
+
+## Next Steps
+
+Once your node running, see [How to use MiniDapps](/docs/runanode/usingminidapps) to start testing MiniDapps!
+
+Thank you for participating and contributing to our Testnet.
+
+Learn more:<br/>
+
+[What are MiniDapps?](/docs/learn/minidapps/minidappsintro) <br/>
+[Download the latest MiniDapps](/docs/runanode/latestminidapps) <br/>

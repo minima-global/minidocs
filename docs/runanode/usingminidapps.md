@@ -4,23 +4,22 @@ sidebar_position: 7
 
 # Using MiniDapps
 
-MiniDapps are decentralized applications on Minima. To learn more about MiniDapps, please see the [About MiniDapps](/docs/learn/minidapps/minidappsintro) section.
+[MiniDapps](/docs/learn/minidapps/minidappsintro) are Minima's decentralized applications that run on your Minima node. 
 
-:::note Android Users 
-The following guidance is for Desktop and Server users. Android users can download the latest MiniDapps from within the app by visiting the **DAPP Store**. Once downloaded, MiniDapps can be installed from the app **Home** page.<br/>
-For more guidance on Android, please visit the **Help** section in the app. 
-:::
+All the latest MiniDapps can be downloaded from https://minidapps.minima.global/.
+
+*The following guidance is for Desktop and Server users. Android users please visit the **Help** section in the app.*
 
 ## Accessing the MiniDapp Hub
-1. Go to to https://127.0.0.1:9003/ or https://localhost:9003/ in your web browser. <br/>
-Server users will need to use https://YourServerIP:9003/  
+1. Go to https://127.0.0.1:9003/ in your web browser (Firefox is not supported) <br/>
+Server users go to https://YourServerIP:9003/  
 
 :::note Security warning
 You may be shown a security certificate warning, to which you can click on Advanced, then Proceed. <br/>
 This may be different depending on the browser and OS you are using; details on how to do this can be found at: https://www.vultr.com/docs/how-to-bypass-the-https-warning-for-self-signed-ssl-tls-certificates/
 :::
 
-2. You will see your login page, to get your password return to the Command Line and enter 
+2. You will see your login page. To get your password - return to the Windows Command Line/Mac Terminal where the Minima logs are running and enter 
 
 ```
 mds
@@ -43,14 +42,14 @@ mds
 
 
 ## Installing MiniDapps
-1. Download and save the MiniDapps you wish to use from [here.](https://github.com/minima-global/Minima/tree/master/mds/store/files)
+1. Download and save the MiniDapps you wish to use from our [MiniDapp site.](https://minidapps.minima.global/)
 2. Click on **Choose File** and select a MiniDapp 
 3. Click **Install** and return to the hub to open the app
 
 ![Windows](/img/buildonminima/minihub.png)
 
 :::note Testnet Coins
-To use the Wallet MiniDapp, you will need Testnet Minima coins. These can be got by using the Gimme20 MiniDapp. Testnet coins are not of any value.
+To use the Wallet MiniDapp, you will need Testnet Minima coins. These can be got from the Gimme20 MiniDapp. Testnet coins have no real world value.
 :::
 
 ## MiniDapp Permissions
