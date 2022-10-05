@@ -8,15 +8,15 @@ sidebar_position: 4
 
 If you have not run Minima before, please ensure you have the latest version of Java installed on the server https://java.com/en/
 
-1. If you have a previous version of Minima running, type `quit` into the Command prompt window, then replace your existing minima.jar file with the latest version.
+1. If you have a previous version of Minima running, type `quit` into the Terminal window, then replace your existing minima.jar file with the latest version.
 
 2. Download and save the latest Minima JAR [here](https://github.com/minima-global/Minima/raw/master/jar/minima.jar)
 
-3. Open the Command Prompt as Admin. When it opens, type the following (including a space after -jar):
+3. Open the Terminal as Admin. When it opens, type the following (including a space after -jar):
 ```
 sudo java -jar
 ```
-- then drag and drop the minima.jar file into the command window, 
+- then drag and drop the minima.jar file into the Terminal window, 
 - then add a space and type 
 ```
 -rpcenable -mdsenable
@@ -24,19 +24,19 @@ sudo java -jar
 
 The command should look like the below (all on one line):
 ```
-sudo java -jar /Users/YourName/minima.jar -rpcenable -mdsenable
+sudo java -jar /Users/Username/Downloads/minima.jar -rpcenable -mdsenable
 ```
 :::note Note
 When starting a new node or to delete your existing node data **-clean** can be added on to the end. (Do not use **-clean** if you are simply restarting your node.)<br/>
-e.g. sudo java -jar /Users/YourName/minima.jar -rpcenable -mdsenable -clean
+e.g. sudo java -jar /Users/Username/Downloads/minima.jar -rpcenable -mdsenable -clean
 :::
 
 4. Hit the **Enter** key
 
 5. Avoid
-- Closing your Command Prompt window
-- Allowing your PC to go to sleep
-- Turning your PC off
+- Closing your Terminal window
+- Allowing your Mac to go to sleep
+- Turning your Mac off
 
 If any of the above happen, your Minima node will stop running and you will need to repeat step 3 to start it again.
 
@@ -71,7 +71,7 @@ After installing the app, if you have registered for the [Incentive Program](htt
 If you had an account prior to 6th December 2021, you must reset your password [here.](https://incentive.minima.global/account/forgot-password) Please check your junk mail for the reset password email.
 :::
 
-2. Connect your Incentive Program account to your node by copying YOUR OWN Incentive ID from the Incentive Program website above and typing `incentivecash uid:YourIncentiveID` into the Terminal command line: 
+2. Connect your Incentive Program account to your node by copying YOUR OWN Incentive ID from the Incentive Program website above and typing `incentivecash uid:YourIncentiveID` into the Terminal: 
 
 Example:
 ```
@@ -84,7 +84,7 @@ You should receive a return status of `true` and see your previous Rewards (if a
 
 4. For every day your node pings us, we will add 1 Minima to your DAILY REWARDS. 
 
-5. To check your rewards, type **incentivecash** into the command line. 
+5. To check your rewards, type **incentivecash** into the Terminal. 
 ```
 incentivecash
 {
