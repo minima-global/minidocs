@@ -12,7 +12,7 @@ If you have not run Minima before, please ensure you have the latest version of 
 
 2. Download and save the latest Minima JAR [here](https://github.com/minima-global/Minima/raw/master/jar/minima.jar)
 
-3. Open the Terminal as Admin. When it opens, type the following (including a space after -jar):
+3. Open the Terminal app from the Utilities folder in Applications. When it opens, type the following (including a space after -jar):
 ```
 sudo java -jar
 ```
