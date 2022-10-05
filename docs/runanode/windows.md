@@ -24,11 +24,11 @@ java -jar
 
 The command should look like the below (all on one line):
 ```
-java -jar C:\Users\YourName\minima.jar -rpcenable -mdsenable
+java -jar C:\Users\Username\Downloads\minima.jar -rpcenable -mdsenable
 ```
 :::note Note
 When starting a new node or to delete your existing node data **-clean** can be added on to the end. (Do not use **-clean** if you are simply restarting your node.)<br/>
-e.g. java -jar C:\Users\YourName\minima.jar -rpcenable -mdsenable -clean
+e.g. java -jar C:\Users\Username\Downloads\minima.jar -rpcenable -mdsenable -clean
 :::
 
 4. Hit the **Enter** key
