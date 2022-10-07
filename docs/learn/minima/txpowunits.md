@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 # TxPoW Units & Blocks
@@ -7,10 +7,6 @@ sidebar_position: 5
 The **TxPoW unit** is the main building block of the Minima Blockchain. <br/>
 Transactions are included in TxPoW units which have the potential to become blocks added to the chain.
 
-### Transaction Lifecycle
-The following diagram explains the basic process from a Transaction to TxPoW unit to Block
-
-![Transactions](/img/learn/transactionLifecycleSimpleLm.svg#gh-light-mode-only)![Core Concepts](/img/learn/transactionLifecycleSimpleDm.svg#gh-dark-mode-only)
 
 ## TxPoW Units
 

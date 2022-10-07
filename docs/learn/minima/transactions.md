@@ -1,8 +1,14 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # Transactions
+
+
+### Transaction Lifecycle
+The following diagram explains the basic process from a Transaction to [TxPoW unit](/docs/learn/minima/txpowunits) to Block.
+
+![Transactions](/img/learn/transactionLifecycleSimpleLm.svg#gh-light-mode-only)![Core Concepts](/img/learn/transactionLifecycleSimpleDm.svg#gh-dark-mode-only)
 
 ## Transaction Outputs
 All transactions create new UTxOs (coins) as outputs, each coin is identifiable with a unique CoinID and consists of
