@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 # Using MiniDapps
@@ -16,7 +16,7 @@ Server users go to https://YourServerIP:9003/
 
 :::note Security warning
 You may be shown a security certificate warning, to which you can click on Advanced, then Proceed. <br/>
-This may be different depending on the browser and OS you are using; details on how to do this can be found at: https://www.vultr.com/docs/how-to-bypass-the-https-warning-for-self-signed-ssl-tls-certificates/
+This may be different depending on the browser and OS you are using; details on how to do this can be found [here](https://www.vultr.com/docs/how-to-bypass-the-https-warning-for-self-signed-ssl-tls-certificates/).
 :::
 
 2. You will see your login page. To get your password - return to the Windows Command Line/Mac Terminal where the Minima logs are running and enter 

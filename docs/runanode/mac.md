@@ -42,7 +42,7 @@ If any of the above happen, your Minima node will stop running and you will need
 
 Minima is now started, your output should look like the below: 
 ```
-/Users/YourName>java -jar minima.jar -rpcenable -mdsenable
+/Users/Username>java -jar minima.jar -rpcenable -mdsenable
 Minima @ 14/03/2022 17:32:30 [5.1 MB] : **********************************************
 Minima @ 14/03/2022 17:32:30 [5.1 MB] : *  __  __  ____  _  _  ____  __  __    __    *
 Minima @ 14/03/2022 17:32:30 [5.1 MB] : * (  \/  )(_  _)( \( )(_  _)(  \/  )  /__\   *
@@ -50,76 +50,24 @@ Minima @ 14/03/2022 17:32:30 [5.1 MB] : *  )    (  _)(_  )  (  _)(_  )    (  /(_
 Minima @ 14/03/2022 17:32:30 [5.1 MB] : * (_/\/\_)(____)(_)\_)(____)(_/\/\_)(__)(__) *
 Minima @ 14/03/2022 17:32:30 [5.1 MB] : *                                            *
 Minima @ 14/03/2022 17:32:30 [5.1 MB] : **********************************************
-Minima @ 14/03/2022 17:32:30 [6.4 MB] : Welcome to Minima v0.100.32 - for assistance type help. Then press enter.
-Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : /Users/YourName/databases/userprefs.db
-Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : /Users/YourName/databases/cascade.db
-Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : /Users/YourName/databases/chaintree.db
-Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : /Users/YourName/databases/p2p.db
-Minima @ 14/03/2022 17:32:32 [11.1 MB] : RPC Server started on port : 9002 
 ```
 ----
 
-**Congratulations - your node is now installed & running! **
+**Congratulations - your node is now installed & running!**
 
-## How to set up Incentive Program to receive rewards
+You can type `status` to show the status of your Minima node, or `help` to show the full list of commands.
 
-After installing the app, if you have registered for the [Incentive Program](https://incentive.minima.global/account/register), you must connect your Incentive ID to your node to receive daily Rewards.
+Next, **[setup your Incentive Program account](/docs/runanode/incentivesetup)** to start earning Rewards.
 
-1. Login to https://incentive.minima.global/
+## How to set up your Incentive Program account to receive Rewards
+
+After installing Minima, if you have registered for the Incentive Program you must [setup your Incentive Program account](/docs/runanode/incentivesetup) to receive daily Rewards. 
+
+If you have not registered, click [here](https://incentive.minima.global/account/register) to sign up.
 
 :::info Previous users
-If you had an account prior to 6th December 2021, you must reset your password [here.](https://incentive.minima.global/account/forgot-password) Please check your junk mail for the reset password email.
+If you had an Incentive Program account prior to 6th December 2021, you must reset your password [here.](https://incentive.minima.global/account/forgot-password) Please check your junk mail for the reset password email.
 :::
-
-2. Connect your Incentive Program account to your node by copying YOUR OWN Incentive ID from the Incentive Program website above and typing `incentivecash uid:YourIncentiveID` into the Terminal: 
-
-Example:
-```
-incentivecash uid:00F3E50D-5A52-444B-8F1A-0DA72D6CAA84
-```
-You should receive a return status of `true` and see your previous Rewards (if any) including missed Rewards (if any).
-**Your Incentive Program account is now connected to your node!**
-
-3. Your node will then ping us so we know it's running. 
-
-4. For every day your node pings us, we will add 1 Minima to your DAILY REWARDS. 
-
-5. To check your rewards, type **incentivecash** into the Terminal. 
-```
-incentivecash
-{
-  "command":"incentivecash",
-  "status":true,
-  "response":{
-    "uid":"731ae11b-b602-4dea-8564-7cb4edbe07b7",
-    "details":{
-      "lastPing":"2022-03-14T17:28:38.709Z",
-      "inviteCode":"BAEPAAD0",
-      "rewards":{
-        "dailyRewards":60,
-        "previousRewards":100.0,
-        "communityRewards":50.0,
-        "inviterRewards":10.0
-      }
-    }
-  }
-}
-```
-
-:::tip Rewards
-For every day your node is connected to the network, you will receive 1 Reward within the next 24 hours.
-:::
-
-## Useful Commands
-
-The following commands can be typed directly into the Minima Terminal:
-
-```
-status : shows the status of Minima 
-incentivecash : shows your incentive cash balance
-help : shows the full list of commands
-```
-For a full list of Minima Terminal Commands see [Terminal Commands.](/docs/runanode/terminal_commands)
 
 ## Next Steps
 

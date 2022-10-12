@@ -15,7 +15,7 @@ If you have not run Minima before, please ensure you have the latest version of 
 3. From the root directory, please run the following script to set Minima as a service which will run continuously in the background on your server:
 
 ```
-wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_setup.sh && chmod +x minima_setup.sh && sudo ./minima_setup.sh -p 9001 -r 9002
+wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_setup.sh && chmod +x minima_setup.sh && sudo ./minima_setup.sh -p 9001
 ```
 
 4. Wait for Minima to start, this can take up to 30 minutes and Minima will restart during the process
@@ -30,12 +30,12 @@ wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/m
 **Running multiple nodes on one server?**<br/> 
 You can specify different port numbers on the end to do this, for example using 9121-9125: 
 ```
-wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_setup.sh && chmod +x minima_setup.sh && sudo ./minima_setup.sh -p 9121 -r 9122
+wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_setup.sh && chmod +x minima_setup.sh && sudo ./minima_setup.sh -p 9121
 ```
 
 ## Interacting with your node
 
-By default Minima is installed on ports 9001-9005. The default RPC port is 9002.
+By default Minima is installed on ports 9001-9005. The default RPC port is 9005.
  
 You can send commands to your Minima node using curl to the RPC port. 
 
@@ -47,14 +47,14 @@ For improved formatting:
 
 Example: To check the status of your Minima node when logged on to the server:
 
-`curl 127.0.0.1:9002/status | jq`
+`curl 127.0.0.1:9005/status | jq`
 
 You will see the current block and other information about your node. 
  
 
 ---
 ___ 
-## How to set up your Incentive Program account to receive rewards
+## How to set up your Incentive Program account to receive Rewards
 
 1. Register at https://incentive.minima.global/ (if you have not done so already)
 
@@ -63,13 +63,13 @@ ___
 3. Once the Minima is running, enter the following command from your server to connect your Incentive ID to your node
 
 ```
-curl 127.0.0.1:9002/incentivecash%20uid:xxx-xxx-xxx-xxx-xxx
+curl 127.0.0.1:9005/incentivecash%20uid:xxx-xxx-xxx-xxx-xxx
 ```
 (replace the xxx with your own Incentive ID)
 
 Example:
 ```
-curl 127.0.0.1:9002/incentivecash%20uid:00F3E50D-5A52-444B-8F1A-0DA72D6CAA84
+curl 127.0.0.1:9005/incentivecash%20uid:00F3E50D-5A52-444B-8F1A-0DA72D6CAA84
 ```
 
 You should receive a return status of `true` and see your Reward balances.<br/>
@@ -77,11 +77,11 @@ You should receive a return status of `true` and see your Reward balances.<br/>
 
 :::note
 *If you have multiple nodes on one server, you will need to change the port number in the curl command to the next number from the custom port you chose <br/>
-E.g. if you used -9121 to start your node, the RPC port will be 9122*
+E.g. if you used -9121 to start your node, the RPC port will be 9125*
 
 Example:
 ```
-curl 127.0.0.1:9122/incentivecash%20uid:xxx-xxx-xxx-xxx-xxx
+curl 127.0.0.1:9125/incentivecash%20uid:xxx-xxx-xxx-xxx-xxx
 ```
 :::
 **Your Incentive Program account is now connected to your node!**
@@ -90,7 +90,7 @@ curl 127.0.0.1:9122/incentivecash%20uid:xxx-xxx-xxx-xxx-xxx
 
 5) For every day your node pings us, we'll add 1 Minima to your DAILY REWARDS. 
 
-6) To check your Rewards, type `curl 127.0.0.1:9002/incentivecash | jq` into the Command Line on your server.
+6) To check your Rewards, type `curl 127.0.0.1:9005/incentivecash | jq` into the Command Line on your server.
 
 ```
 incentivecash
@@ -137,9 +137,9 @@ Then `y` (for Yes)
 `sudo systemctl start minima_9001` - Start the Minima service<br/>
 
 **Interacting with Minima**<br/>
-`curl 127.0.0.1:9002/status | jq` - shows the status of Minima <br/>
-`curl 127.0.0.1:9002/incentivecash | jq` - shows your incentive cash balance<br/>
-`curl 127.0.0.1:9002/help | jq` - shows the full list of commands<br/>
+`curl 127.0.0.1:9005/status | jq` - shows the status of Minima <br/>
+`curl 127.0.0.1:9005/incentivecash | jq` - shows your incentive cash balance<br/>
+`curl 127.0.0.1:9005/help | jq` - shows the full list of commands<br/>
 
 **__Terminal Commands__**<br/>
 For a full list of Minima Terminal Commands see [Terminal Commands.](/docs/runanode/terminal_commands)
@@ -175,9 +175,9 @@ To install a firewall and secure your node:
 `ufw default allow`
 
 5. Deny incoming connections to your RPC ports - 9002 (and other RPC if you have multiple nodes)<br/>
-`ufw deny in 9002`<br/>
-`ufw deny in 9122` (optional)<br/>
-`ufw deny in 8002` (optional)<br/>
+`ufw deny in 9005`<br/>
+`ufw deny in 9125` (optional)<br/>
+`ufw deny in 8005` (optional)<br/>
 
 6. Ensure ssh is allowed<br/>
 `ufw allow ssh`
@@ -191,13 +191,13 @@ To install a firewall and secure your node:
 Your firewall is now configured.
 
 You will still be able to send rpc commands directly from your server using curl <br/>
-e.g.  `curl 127.0.01:9002/status | jq`
+e.g.  `curl 127.0.01:9005/status | jq`
 
 However, if you wish to check your node from an external computer, you must use SSH with each command. <br/>
-e.g. `ssh  root@YourServerIP curl 127.0.0.1:9002/status`
+e.g. `ssh  root@YourServerIP curl 127.0.0.1:9005/status`
 
 If you have jq installed on your computer (for improved formatting)<br/>
-`ssh  root@YourServerIP curl 127.0.0.1:9002/status | jq`
+`ssh  root@YourServerIP curl 127.0.0.1:9005/status | jq`
 
 Each request will require your server password.
 
