@@ -18,6 +18,7 @@ Hugo Feiler is an entrepreneur with over two decades of experience in the market
  
 ## Articles
  
+- [Solving Vitalik Buterin’s ‘blockchain trilemma’ will ensure cryptocurrency growth - City AM](https://www.cityam.com/solving-vitalik-buterins-blockchain-trilemma-will-ensure-cryptocurrency-growth/)
 - [New blockchain proof of concept to show future of payments - Digital Journal](https://www.digitaljournal.com/tech-science/q-a-new-blockchain-proof-of-concept-to-show-future-of-payments/article/570222) 
 - [Crypto AM shines its Spotlight on Minima](https://www.cityam.com/crypto-am-shines-its-spotlight-on-minima/)
 - [Minima Announces $2.5 Million Investment from Blockchange VC](https://www.minima.global/post/minima-announces-2-5-million-investment-from-blockchange-vc)

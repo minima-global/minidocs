@@ -16,7 +16,8 @@ Paddy is a true crypto evangelist. He joined the Bitcoin community back in 2012 
 - [The Minima Protocol - Explained](https://youtu.be/1NdZ3NFM3Uk)
 - [Minima AMA with CTO Paddy Cerri](https://youtu.be/L9YJnRSLBEI)
 - [Arm New Reality Series](https://youtu.be/XJKROBmF2GQ)
- 
+- [Decentralisation in a Blockchain World (Zebu Live Conference)](https://www.youtube.com/watch?v=Vly7_CJmNOU)
+
 ## Articles
  
 - [Compact Blockchain Protocols can Disrupt IoT Devices](https://hackernoon.com/how-compact-blockchain-protocols-can-disrupt-iot-devices) 

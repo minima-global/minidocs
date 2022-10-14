@@ -62,7 +62,7 @@ Your Incentive account is now connected to your now and you will receive 1 Rewar
 
 Using the Incentive Program app, you can:
 - See your Rewards balance by going to the **Rewards** tab <br/>
-- See your unique Invite link by going to the **Invite Link** tab. Learn more about the invite program [here](/docs/earnrewards/minimainviteprogram)
+- See your unique Invite link by going to the **Invite Link** tab. Learn more about the invite program [here](/docs/earnrewards/minimainviteprogram).
 
 ## B. Using the Minima Terminal (advanced method)
 
