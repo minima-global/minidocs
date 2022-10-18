@@ -51,9 +51,62 @@ Example: To check the status of your Minima node when logged on to the server:
 
 You will see the current block and other information about your node. 
  
+## How to start a clean node
 
----
-___ 
+:::note
+If you have more than one node, you should adjustment the port numbers to your nodes.
+:::
+
+1. ssh onto your server
+
+2. Stop the minima services 
+```
+sudo systemctl stop minima_9001
+```
+Repeat if you have multiple nodes, for example:
+```
+sudo systemctl stop minima_8001
+sudo systemctl stop minima_7001
+sudo systemctl stop minima_9021
+```
+3. Remove the Minima data files (this will remove the data for all nodes)
+```
+sudo rm -rf /home/minima/.minima*
+```
+4. Restart Minima
+```
+sudo systemctl start minima_9001
+```
+Repeat if you have multiple nodes, for example:
+```
+sudo systemctl start minima_8001
+sudo systemctl start minima_7001
+sudo systemctl start minima_9021
+```
+5. Set up your [firewall](/docs/runanode/linux_vps#secure-your-node) if not already set up.
+
+6. [Reconnect your Incentive ID](/docs/runanode/linux_vps#how-to-set-up-your-incentive-program-account-to-receive-rewards) to your node
+
+## How to remove a node
+
+:::note
+If you have more than one node, you should adjustment the port numbers to your nodes.
+:::
+
+1. ssh onto your server
+2. Run the following removal script 
+```
+wget -O minima_remove.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_remove.sh && chmod +x minima_remove.sh && sudo ./minima_remove.sh -p 9001 -x
+```
+3. Repeat if you have multiple nodes, for example:
+```
+wget -O minima_remove.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_remove.sh && chmod +x minima_remove.sh && sudo ./minima_remove.sh -p 8001 -x
+```
+4. Remove the Minima data files and directory (this will remove the data for all nodes)
+```
+sudo rm -rf /home/minima
+```
+
 ## How to set up your Incentive Program account to receive Rewards
 
 1. Register at https://incentive.minima.global/ (if you have not done so already)

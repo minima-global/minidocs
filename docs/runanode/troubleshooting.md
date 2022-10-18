@@ -39,7 +39,7 @@ sudo systemctl stop minima_9021
 ```
 3. Remove the Minima data files (this will remove the data for all nodes)
 ```
-rm -rf /home/minima/.minima*
+sudo rm -rf /home/minima/.minima*
 ```
 4. Restart Minima
 ```
