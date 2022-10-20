@@ -4,14 +4,21 @@ sidebar_position: 7
 
 # Incentive Program Setup
 
-After [installing Minima](/docs/runanode/get_started_in_3_steps), if you have registered for the Incentive Program you must setup your Incentive Program account to receive daily Rewards. If you have not registered, click [here](https://incentive.minima.global/account/register) to sign up.
+After [installing Minima](/docs/runanode/get_started_in_3_steps), if you have registered for the Incentive Program you must connect your Incentive ID to your node to start receiving daily Rewards.
 
-The following guidance is for Windows/Mac/Linux Desktop and Server users. Android users please see [here](android_v9_and_up#setting-up-your-incentive-account).
+If you have not registered, click [here](https://incentive.minima.global/account/register) to sign up.
+
+>*If you had an Incentive Program account prior to 6th December 2021, you must reset your password [here.](https://incentive.minima.global/account/forgot-password) Please check your junk mail for the reset password email.*
+
+:::note
+The following guidance is for Windows/Mac/Linux Desktop and Server users. <br/>
+Android users please see [here](android_v9_and_up#setting-up-your-incentive-account).
+:::
 
 There are two methods to setup your Incentive Program account:
 
-A. Use the Incentive Program MiniDapp (recommended) <br/>
-B. Use the Minima Terminal (advanced users)
+A. [Use the Incentive Program MiniDapp](/docs/runanode/incentivesetup#a-using-the-incentive-program-minidapp-recommended) (recommended) <br/>
+B. [Use the Minima Terminal](/docs/runanode/incentivesetup#b-using-the-minima-terminal-advanced-method) (advanced users)
 
 ## A. Using the Incentive Program MiniDapp (recommended)
 

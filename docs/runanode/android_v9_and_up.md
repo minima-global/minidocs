@@ -15,8 +15,8 @@ sidebar_position: 2
 You will see your MiniDapps on the Home screen, the latest MiniDapp versions can be found in the **DAPP Store** to download & install.
 
 :::info Don't have a Google Play account?
-The Android apk can also be downloaded directly from Github [here.](https://github.com/minima-global/Minima/blob/dev/jar/minima-0.103.16.apk?raw=true) <br/>
-*Latest version: 103.16, Last updated: 3rd October 2022*
+The Android apk can also be downloaded directly from Github [here.](https://github.com/minima-global/Minima/blob/master/jar/minima-0.103.20.apk?raw=true) <br/>
+*Latest version: 103.20, Last updated: 20th October 2022*
 :::
 
 ## Setting up your Incentive Account
@@ -28,15 +28,16 @@ If you had an account prior to 6th December 2021, you must reset your password [
 :::
 
 1. From the Home screen in the Minima app, open the **Incentive Program** MiniDapp
-2. Follow the link to the Incentive Program website to log in
+2. Click on the 3 dots in the top right and select **Open in Browser**
+3. Follow the link to the Incentive Program website to log in
 
 ![Login](/img/runanode/android_1.png#width50)
 
-6. Copy your Incentive ID
+4. From the menu in the top right, go to the **Incentive ID** page and copy your Incentive ID
 
 ![Node ID](/img/runanode/android_2.png#width50)
 
-7. Return to the app and paste your ID into the box on the Incentive ID page, click **Update** 
+5. Return to the app and paste your ID into the box on the Incentive ID page, click **Update** 
 
 ![Node ID](/img/runanode/android_5.png#width50)
 
