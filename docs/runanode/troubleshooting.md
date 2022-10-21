@@ -67,7 +67,7 @@ Please continue to run your node as usual and ensure that: <br/>
 Any missed Incentive Rewards as a result of the network upgrade will be compensated after the network upgrade is complete.
 
 ### Public IP nodes with open RPC Port vulnerability (Server users)
-VPS users which have Minima's default RPC port (9002) open, are exposed to external access to their Minima node. <br/>
+VPS users which have Minima's default RPC port (9005) open, are exposed to external access to their Minima node. <br/>
 Please ensure this port is blocked from external access; firewall instructions are provided in the [Linux Server](/docs/runanode/linux_vps) page.
 
 ### Increased CPU  usage (Server users)

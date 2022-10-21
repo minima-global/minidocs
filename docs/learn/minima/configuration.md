@@ -29,7 +29,7 @@ Minima uses the following custom Base types:
 | MINIMA_HOST | string | 127.0.0.1 | The Host IP |
 | IS_HOST_SET | boolean | FALSE | Is the HOST set from command line? |
 | MINIMA_PORT | int | 9001 | The main Minima port |
-| RPC_PORT | int | 9002 | The Minima RPC port | 
+| RPC_PORT | int | 9005 | The Minima RPC port | 
 | TEST_PARAMS | boolean | FALSE | Test Params or Main Params | 
 | P2P_ENABLED | boolean | TRUE | Is the P2P System Enabled? | 
 | P2P_ROOTNODE | string | | Host and IP of the first P2P node | 

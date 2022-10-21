@@ -203,11 +203,11 @@ We have been made aware of malicious users using Curl commands to insert Incenti
 
 **You must take steps to protect your server from external access.**
 
-To prevent access to your node, you must block the RPC Port, 9002 is the default. 
+To prevent access to your node, you must block the RPC Port, 9005 is the default. 
 
 :::note
 If you have installed multiple instances of Minima on the same server, you will need to block multiple RPC ports. <br/>
-E.g. If you installed Minima on ports 9001 (default), 9121 and 8001, the RPC ports for those nodes will be 9002 (default), 9122 and 8002.
+E.g. If you installed Minima on ports 9001 (default), 9121 and 8001, the RPC ports for those nodes will be 9005 (default), 9125 and 8005.
 :::
 
 :::warning
@@ -227,7 +227,7 @@ To install a firewall and secure your node:
 4. Allow incoming/outgoing connections as default<br/>
 `ufw default allow`
 
-5. Deny incoming connections to your RPC ports - 9002 (and other RPC if you have multiple nodes)<br/>
+5. Deny incoming connections to your RPC ports - 9005 (and other RPC if you have multiple nodes)<br/>
 `ufw deny in 9005`<br/>
 `ufw deny in 9125` (optional)<br/>
 `ufw deny in 8005` (optional)<br/>

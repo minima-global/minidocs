@@ -41,7 +41,7 @@ parameter values in **bold** indicate default value
 | printtree | |**depth:**32 <br/>**cascade:**true \| **false** |Print a tree representation of the blockchain. <br/> **depth** - number of blocks <br/> **cascade** - Print the Cascading chain |
 | quit | | |Shutdown Minima |
 | restore |**file:** | |Restore the entire system. |
-| rpc |**enable:**true \| false | |Enable and disable RPC on port 9002 |
+| rpc |**enable:**true \| false | |Enable and disable RPC on port 9005 |
 | runscript |**script:** |**clean:true** \| false <br/>**state:**{"port":"value",..} <br/>**prevstate:**{"port":"value",..} <br/>**globals:**{"@GLOBALVAR":"value",...} <br/>**signatures:**[" ",...] <br/>**extrascripts:**{"script":"scriptproof",...}  |Run a script with the defined parameters<br/>**clean** - clean the script<br/>**state** - JSON Object, state variable values for the script<br/>**prevstate** - JSON Object, previous state variables values for the script <br/> **globals** -  JSON Object, global variable values for the script e.g. globals:{"@BLOCK":"101"} signatures: JSON Array <br/> **extrascripts** - JSON Object |
 | scripts | |**address:** |Search scripts<br/>**address** - script address |
 | send |**address:**Mx.. \| 0x..<br/>**amount:** |**tokenid:** <br/>**state:**{"port":"value"} <br/>**burn:** <br/>**split:**  |Send Minima or Tokens to an address. <br/>Options to add state variable as a JSON object, set a burn amount for the txn or split inputs to a chosen number of new coins |
