@@ -8,22 +8,32 @@ sidebar_position: 8
 
 All the latest MiniDapps can be downloaded from https://minidapps.minima.global/.
 
-*The following guidance is for Desktop and Server users. Android users please visit the **Help** section in the app.*
+**NOTE: The following guidance is for DESKTOP and SERVER users.**
 
 ## Accessing the MiniDapp Hub
 1. Go to https://127.0.0.1:9003/ in your web browser (Firefox is not supported) <br/>
 Server users go to https://YourServerIP:9003/  
+You will see the login page for your Minima hub. 
 
 :::note Security warning
 You may be shown a security certificate warning, to which you can click on Advanced, then Proceed. <br/>
 This may be different depending on the browser and OS you are using; details on how to do this can be found [here](https://www.vultr.com/docs/how-to-bypass-the-https-warning-for-self-signed-ssl-tls-certificates/).
 :::
 
-2. You will see your login page. To get your password - return to the Windows Command Line/Mac Terminal where the Minima logs are running and enter 
+![mds_login](/img/runanode/mds_login.png#width50)
+
+2. To get your **password** - return to your desktop/server command line where the Minima logs are running and enter 
+
+**Windows/Mac/Linux Desktop**
 
 ```
 mds
 ```
+**Server (using RPC)**
+```
+curl 127.0.0.1:9005/mds
+```
+
 You should see an output similar to below:
 
 ```
@@ -49,7 +59,8 @@ mds
 ![Windows](/img/buildonminima/minihub.png)
 
 :::note Testnet Coins
-To use the Wallet MiniDapp, you will need Testnet Minima coins. These can be got from the Gimme20 MiniDapp. Testnet coins have no real world value.
+To use the Wallet MiniDapp, you will need Testnet Minima coins which can be obtained from the **Gimme20** MiniDapp.
+**Testnet coins have no real world value.**
 :::
 
 ## MiniDapp Permissions
@@ -59,45 +70,71 @@ By default, all MiniDapps will be given **READ** permission.
 When a MiniDapp with READ permission attempts to run a command which would make changes to your node or require access to your funds, a PENDING command will be created which you will need to accept. 
 :::warning 
 You should only give **WRITE** permissions to MiniDapps that you trust. <br/>
-Only the **Terminal** MiniDapp will need to be installed with **WRITE** permission 
+Only the **Terminal** MiniDapp will need **WRITE** permission 
 :::
 
 
-To install the Terminal with WRITE permission; you must run following command from the Command Line Interface where Minima is running (ensure you have downloaded the Terminal MiniDapp first and use the relevant file path below):
+### Setting the Terminal permissions to WRITE
 
+1. Login and install the Terminal MiniDapp
+2. Return to your desktop/server command line and run the `mds` command again (see above) to list your MiniDapps and check their existing permissions
+3. You will see the Terminal MiniDapp listed, **copy the uid from YOUR node**
 ```
-mds action:install file:C:\Users\Downloads\Terminal.mds.zip trust:write
+    {
+      "uid":"0xB4C47D4AD267C3D2D4EF6E086FD12845",
+      "conf":{
+        "name":"Terminal",
+        "icon":"terminal.png",
+        "version":"1.91",
+        "description":"Terminal CLI for Minima",
+        "permission":"write",
+        "browser":"internal"
+      }
+    },
+```
+4. Run the following command, **pasting in YOUR uid**:
+
+**Windows/Mac/Linux Desktop**
+```
+mds action:permission uid:0x02FA22EF2A2A3B0FA01D688A902779E5 trust:write
 ```
 
-You can then use the Terminal to change permissions for a MiniDapp.
-
-### Changing MiniDapp Permissions
-
-To list your MiniDapps and check their existing permission, use `mds` from the Terminal. Each MiniDapp has a `uid` to identify it. 
-
-To change permissions for a MiniDapp, copy the `uid` of the MiniDapp you wish to change and run the following command from the Terminal: 
+**Server (Using RPC)**
 ```
-mds action:permissions uid:0x... trust:read/write
+curl 127.0.0.1:9005/mds%20action:permission%20uid:0x02FA22EF2A2A3B0FA01D688A902779E5%20trust:write
 ```
-The output should look like
+Output:
 ```
-mds action:permissions uid:0x02FA22EF2A2A3B0FA01D688A902779E5 trust:write
 {
   "command":"mds",
   "params":{
-    "action":"permissions",
+    "action":"permission",
     "uid":"0x02FA22EF2A2A3B0FA01D688A902779E5",
     "trust":"write"
   },
   "status":true,
-  "pending":false
+  "pending":false,
+  "response":{
+    "uid":"0x02FA22EF2A2A3B0FA01D688A902779E5",
+    "conf":{
+      "name":"Wallet",
+      "icon":"minimaWallet.png",
+      "version":"0.1.5",
+      "description":"Official Minima Wallet",
+      "permission":"write",
+      "browser":"internal"
+    }
+  }
 }
 ```
+**You may now use the Terminal MiniDapp to execute all commands** - you will no longer need to use your desktop command line interface/server RPC commands. 
+
+
 ### Accepting/Denying Pending Commands
 
 When using MiniDapps that have READ permissions, you will be asked to **accept/deny** commands that require access to your funds e.g. Sending funds from the Wallet or MaxSolo
 
-To review your pending commands, run from the Terminal MiniDapp
+To review your pending commands, open the Terminal MiniDapp and run:
 ```
 mds action:pending 
 ```
