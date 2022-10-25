@@ -11,7 +11,7 @@ If you have not registered, click [here](https://incentive.minima.global/account
 >*If you had an Incentive Program account prior to 6th December 2021, you must reset your password [here.](https://incentive.minima.global/account/forgot-password) Please check your junk mail for the reset password email.*
 
 :::note
-The following guidance is for Windows/Mac/Linux Desktop and Server users. <br/>
+The following guidance is for **Windows/Mac/Linux Desktop and Server** users. <br/>
 Android users please see [here](android_v9_and_up#setting-up-your-incentive-account).
 :::
 
@@ -24,21 +24,29 @@ B. [Use the Minima Terminal](/docs/runanode/incentivesetup#b-using-the-minima-te
 
 1. Download and save the **Incentive Program** MiniDapp from our [MiniDapp site.](https://minidapps.minima.global/) 
 
-2. Navigate to your MiniDapp hub:
-- **Windows/Mac/Linux Desktop** users, go to **https://127.0.0.1:9003/** in your web browser (Firefox is not supported) <br/> 
-- **Server** users, go to **https://YourServerIP:9003/**  <br/>
+2.  To access your MiniDapp hub, go to **https://127.0.0.1:9003/** in your web browser. The first time accessing your MiniDapp hub, you may need to pass through the security warning (see below).
+:::note custom ports
+Note that **9003** is the default port for accessing your MiniDapp system - if you installed Minima on custom ports, you will need to use your custom base port + 2. E.g. If you installed Minima on 8001, you will need to use **https://127.0.0.1:8003/**
+:::<br/><br/>
+**Windows/Linux Desktop** 
+- Go to **https://127.0.0.1:9003/** in your web browser (Firefox is not supported)
+- Click on **Advanced**, then **Proceed**. Or in Google Chrome, you may have to click anywhere on the page and type `thisisunsafe` to proceed. Details for other browsers can be found [**here**](https://www.vultr.com/docs/how-to-bypass-the-https-warning-for-self-signed-ssl-tls-certificates/).<br/><br/>
+**Mac** 
 
-:::note Security warning
-You may be shown a security certificate warning, to which you can click on Advanced, then Proceed. <br/>
-This may be different depending on the browser and OS you are using; details on how to do this can be found [here](https://www.vultr.com/docs/how-to-bypass-the-https-warning-for-self-signed-ssl-tls-certificates/).
-:::
+- In Safari, go to **https://127.0.0.1:9004/**, click on **Show Details** then **Visit this website**
+- Go to **https://127.0.0.1:9003/** and repeat, you should see the MiniDapp System login page
+- Close **https://127.0.0.1:9004/**<br/><br/>
+**Server**
+
+- Go to **https://YourServerIP:9003/** in your web browser
+- Click on **Advanced**, then **Proceed**. Or in Google Chrome, you may have to click anywhere on the page and type `thisisunsafe` to proceed. Details for other browsers can be found [**here**](https://www.vultr.com/docs/how-to-bypass-the-https-warning-for-self-signed-ssl-tls-certificates/).<br/><br/>
 
 You will see your MiniDapp System (MDS) login page. 
 
 ![mds_login](/img/runanode/mds_login.png#width50)
 
 3. Get your password 
-- **Windows/Mac/Linux Desktop** users, return to the Windows/Linux Command Line or Mac Terminal where the Minima logs are running, type `mds`, press Enter
+- **Windows/Mac/Linux Desktop** users, return to the Windows/Linux Command Line or Mac Terminal where the Minima logs are running, type **`mds`,** press Enter
 - **Server** users, login to your server and type `curl 127.0.0.1:9005/mds`, press Enter
 
 You should see an output similar to below:

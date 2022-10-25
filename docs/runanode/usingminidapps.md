@@ -11,14 +11,25 @@ All the latest MiniDapps can be downloaded from https://minidapps.minima.global/
 **NOTE: The following guidance is for DESKTOP and SERVER users.**
 
 ## Accessing the MiniDapp Hub
-1. Go to https://127.0.0.1:9003/ in your web browser (Firefox is not supported) <br/>
-Server users go to https://YourServerIP:9003/  
-You will see the login page for your Minima hub. 
 
-:::note Security warning
-You may be shown a security certificate warning, to which you can click on Advanced, then Proceed. <br/>
-This may be different depending on the browser and OS you are using; details on how to do this can be found [here](https://www.vultr.com/docs/how-to-bypass-the-https-warning-for-self-signed-ssl-tls-certificates/).
-:::
+1. To access your MiniDapp hub, go to **https://127.0.0.1:9003/** in your web browser. The first time accessing your MiniDapp hub, you may need to pass through the security warning - see below - as the MiniDapp system currently uses self-signed certificates. <br/><br/>
+:::note custom ports
+Note that **9003** is the default port for accessing your MiniDapp system - if you installed Minima on custom ports, you will need to use your custom base port + 2. E.g. If you installed Minima on 8001, you will need to use **https://127.0.0.1:8003/**
+:::<br/><br/>
+**Windows/Linux Desktop** 
+- Go to **https://127.0.0.1:9003/** in your web browser (Firefox is not supported)
+- Click on **Advanced**, then **Proceed**. Or in Google Chrome, you may have to click anywhere on the page and type `thisisunsafe` to proceed. Details for other browsers can be found [**here**](https://www.vultr.com/docs/how-to-bypass-the-https-warning-for-self-signed-ssl-tls-certificates/).<br/><br/>
+**Mac** 
+
+- In Safari, go to **https://127.0.0.1:9004/**, click on **Show Details** then **Visit this website**
+- Go to **https://127.0.0.1:9003/** and repeat, you should see the MiniDapp System login page
+- Close **https://127.0.0.1:9004/**<br/><br/>
+**Server**
+
+- Go to **https://YourServerIP:9003/** in your web browser
+- Click on **Advanced**, then **Proceed**. Or in Google Chrome, you may have to click anywhere on the page and type `thisisunsafe` to proceed. Details for other browsers can be found [**here**](https://www.vultr.com/docs/how-to-bypass-the-https-warning-for-self-signed-ssl-tls-certificates/).<br/><br/>
+
+You will see your MiniDapp System (MDS) login page. 
 
 ![mds_login](/img/runanode/mds_login.png#width50)
 
