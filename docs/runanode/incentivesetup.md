@@ -24,7 +24,7 @@ B. [Use the Minima Terminal](/docs/runanode/incentivesetup#b-using-the-minima-te
 
 1. Download and save the **Incentive Program** MiniDapp from our [MiniDapp site.](https://minidapps.minima.global/) 
 
-2.  To access your MiniDapp hub, go to **https://127.0.0.1:9003/** in your web browser. The first time accessing your MiniDapp hub, you may need to pass through the security warning (see below).
+2.  To access your MiniDapp hub, go to **https://127.0.0.1:9003/** in your web browser. The first time accessing your MiniDapp hub, you may need to pass through the security warning - see below - as the MiniDapp system currently uses self-signed certificates.
 :::note custom ports
 Note that **9003** is the default port for accessing your MiniDapp system - if you installed Minima on custom ports, you will need to use your custom base port + 2. E.g. If you installed Minima on 8001, you will need to use **https://127.0.0.1:8003/**
 :::<br/><br/>
