@@ -10,9 +10,11 @@ Welcome to the Minima Ambassador Program, where we recognise you participating i
 
 We will also be using this program to thank you for participating in activities and tasks that help us tell the world about Minima - after all, the stronger the community, the stronger the network.
 
-## How do I join the Ambassador Program?
 
-You don’t need to do anything, every user who joins our Discord Server is automatically enrolled in the Ambassador Program.
+## How can I participate in the Ambassador Program ? 
+You're automatically enrolled as soon as you join our [discord server](https://discord.gg/minima). Then head to https://ambassador.minima.global/ to see our active tasks open for submission! 
+
+You will receive XP and, occasionally, Minima coins for the tasks you complete, tasks come in all shapes and forms!
 
 ## How does it work?
 
