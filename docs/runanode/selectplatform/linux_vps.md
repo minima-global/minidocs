@@ -20,7 +20,7 @@ If you have been running a node using the install script provided, please remove
 
 1. Logon to your server as the root user
 
-![VPS_login](/img/runanode/docker_vps_1login.png#width50)
+![VPS_login](/img/runanode/docker_vps_1login.png#width50?raw=true)
 
 :::tip Check running nodes
 To check which nodes you currently have running, use the command `systemctl list-units --type=service`. 
