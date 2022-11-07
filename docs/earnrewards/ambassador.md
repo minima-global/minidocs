@@ -112,7 +112,7 @@ The Ambassador Program is administered using a bot. Here are some useful command
 A private space for Minimalists & above to get hyped, share advice, coordinate and share Ambassador success stories. Ambassador Program Updates will be provided here by the Community Team.
 
 ## What is the Ambassador Task Channel?
-Available to Maximalists & above, you will find tasks here for everyone to participate in to help spread the message and opportunity of Minima! In return for completing these tasks, you will earn bonus XP.
+Available to Maximalists and above, you will find tasks here for everyone to participate in to help spread the message and opportunity of Minima! In return for completing these tasks, you will earn bonus XP.
 
 ## What is the Early Access Channel?
 Available to Maximalists & above, you will find opportunities to test new versions of Minima and MiniDapps ahead of main release. Some tests might be open to all, some might have more specific requirements - but all will attract bonus XP and maybe even some extra Incentive Reward Tokens ;)
