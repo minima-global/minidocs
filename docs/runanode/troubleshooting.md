@@ -51,9 +51,9 @@ sudo systemctl start minima_8001
 sudo systemctl start minima_7001
 sudo systemctl start minima_9021
 ```
-5. Set up your firewall by following the instructions on the [Linux Server](/docs/runanode/linux_vps#secure-your-node) page (if not already set up).
+5. Set up your firewall by following the instructions on the [Linux Server](/docs/runanode/selectplatform/linux_vps#secure-your-node) page (if not already set up).
 
-6. [Reconnect your Incentive ID](/docs/runanode/linux_vps#how-to-set-up-your-incentive-program-account-to-receive-rewards) to your node
+6. [Reconnect your Incentive ID](/docs/runanode/selectplatform/linux_vps#how-to-set-up-your-incentive-program-account-to-receive-rewards) to your node
 
 ### Missed Incentive Rewards
 
@@ -68,7 +68,7 @@ Any missed Incentive Rewards as a result of the network upgrade will be compensa
 
 ### Public IP nodes with open RPC Port vulnerability (Server users)
 VPS users which have Minima's default RPC port (9005) open, are exposed to external access to their Minima node. <br/>
-Please ensure this port is blocked from external access; firewall instructions are provided in the [Linux Server](/docs/runanode/linux_vps) page.
+Please ensure this port is blocked from external access; firewall instructions are provided in the [Linux Server](/docs/runanode/selectplatform/linux_vps) page.
 
 ### Increased CPU  usage (Server users)
 Some nodes experience increased CPU load. If this happens to you, please remove Minima completely and start a new, clean instance of Minima.

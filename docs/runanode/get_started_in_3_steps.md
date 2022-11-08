@@ -11,11 +11,11 @@ Running a Minima node couldn't be easier, and if you choose to join our Incentiv
 3. [Connect your node](/docs/runanode/incentivesetup) to your Incentive Program account
 
 Select your platform of choice:
-- [Android](/docs/runanode/android_v9_and_up)<br/>
-- [Windows](/docs/runanode/windows)<br/>
-- [Mac](/docs/runanode/mac)<br/>
-- [Linux Desktop](/docs/runanode/linux_desktop)<br/>
-- [Linux Server (VPS)](/docs/runanode/linux_vps)<br/>
+- [Android](/docs/runanode/selectplatform/android_v9_and_up)<br/>
+- [Windows](/docs/runanode/selectplatform/windows)<br/>
+- [Mac](/docs/runanode/selectplatform/mac)<br/>
+- [Linux Desktop](/docs/runanode/selectplatform/linux_desktop)<br/>
+- [Linux Server (VPS)](/docs/runanode/selectplatform/linux_vps)<br/>
 - iPhone (due 2023)<br/>
 
 Once your node running, see [How to use MiniDapps](/docs/runanode/usingminidapps) to start testing!

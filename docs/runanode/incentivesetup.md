@@ -12,7 +12,7 @@ If you have not registered, click [here](https://incentive.minima.global/account
 
 :::note
 The following guidance is for **Windows/Mac/Linux Desktop and Server** users. <br/>
-Android users please see [here](android_v9_and_up#setting-up-your-incentive-account).
+Android users please see [here](/docs/runanode/selectplatform/android_v9_and_up#setting-up-your-incentive-account).
 :::
 
 There are two methods to setup your Incentive Program account:
