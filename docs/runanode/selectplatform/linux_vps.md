@@ -24,7 +24,7 @@ If you have been running a node using the install script provided, please remove
 
 If you are a new user, continue to [Start your node](#start-your-node).
 
-1. Logon to your server as the root user
+1. Logon to your server as a non root user with sudo (admin) rights.
 
 ![VPS_login](/img/runanode/docker_vps_1login.png#width50)
 
@@ -36,7 +36,7 @@ To check which nodes you currently have running, use the command `systemctl list
 
 2. To remove nodes which were installed using our install script, run the uninstall script below (all one line).
 
->```wget -O minima_remove.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_remove.sh && chmod +x minima_remove.sh && sudo ./minima_remove.sh -p 9001 -x```
+>```sudo wget -O minima_remove.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_remove.sh && chmod +x minima_remove.sh && sudo ./minima_remove.sh -p 9001 -x```
 
 ![VPS_removenodes](/img/runanode/docker_vps_3removeoldnodes.png)
 
@@ -46,13 +46,13 @@ To check which nodes you currently have running, use the command `systemctl list
 
 3. Remove all existing folders: 
 ```
-rm -rf /home/minima/
+sudo rm -r /home/minima/
 ```
 ![VPS_removefolder](/img/runanode/docker_vps_5removefolder.png#width50)
 
 4. Delete the existing minima user: 
 ```
-userdel minima
+sudo userdel minima
 ```
 :::note
 If there is an *“unable to delete minima user, minima user using process xxxxxxx”* error, please reboot the server, log back in as root  then do `userdel minima` immediately on login.
@@ -64,9 +64,9 @@ If you are having problems and Minima is the only application on your server, pl
 
 
 ### Start your node
-1. Log on as the root user and add a new minima user, set a password and leave the remaining fields as default : 
+1. Log on as a non root user with sudo (admin) rights and add a new minima user, set a password and leave the remaining fields as default : 
 ```
-adduser minima
+sudo adduser minima
 ```
 **Please make a note of the password you set for the minima user, you may have to login as this user later. **
 
@@ -75,7 +75,7 @@ adduser minima
 2. Confirm the new user with `y`
 3. Give sudo (admin) permissions to the minima user: 
 ```
-usermod -aG sudo minima
+sudo usermod -aG sudo minima
 ```
 
 ![VPS_adduser2](/img/runanode/docker_vps_9giveuserperms.png#width50)
@@ -103,7 +103,7 @@ sudo chmod +x ./get-docker.sh && ./get-docker.sh
 ```
 sudo usermod -aG docker $USER
 ```
-8. Exit back to root user: 
+8. Exit back to original user: 
 ```
 exit
 ```
@@ -204,7 +204,7 @@ If you have not registered, click [here](https://incentive.minima.global/account
 
 ### Useful Docker commands
 
-The following commands can be run from your server command line. 
+The following commands can be run from your server command line, logged in as the minima user. 
 
 View the logs: `docker logs minima9001`<br/>
 
@@ -385,26 +385,26 @@ If you have other applications on your server other than Minima - please review 
 
 To install a firewall and secure your node:
 
-1. ssh into your server as root
+1. ssh into your server as non root user with sudo (admin) rights
 
 2. Install Uncomplicated Firewall (ufw)<br/>
-`apt-get install ufw`
+`sudo apt-get install ufw`
 
 3. Then immediately disable it, to first configure it<br/>
-`ufw disable`
+`sudo ufw disable`
 
 4. Allow incoming/outgoing connections as default<br/>
-`ufw default allow`
+`sudo ufw default allow`
 
 5. Deny incoming connections to your RPC ports - 9005 (and other RPC if you have multiple nodes)<br/>
-`ufw deny in 9005`<br/>
-`ufw deny in 8005` (optional)<br/>
+`sudo ufw deny in 9005`<br/>
+`sudo ufw deny in 8005` (optional)<br/>
 
 6. Ensure ssh is allowed<br/>
-`ufw allow ssh`
+`sudo ufw allow ssh`
 
 7. Enable the firewall<br/>
-`ufw enable`
+`sudo ufw enable`
 
 8. Confirm<br/>
 `y` <br/>
@@ -427,12 +427,13 @@ Lock it down.
 ------
 
 ### How to remove a node
+
 :::important
 **Removing a node without taking a backup will delete all your coins! Only remove a node if you have taken a backup or are running a test node.**
 :::
 
 To remove a Docker node:
-1. Open Docker
+1. Login as the minima user to your server
 2. Stop then delete the **minima9001** container
 ```
 docker stop minima9001
