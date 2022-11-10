@@ -37,7 +37,7 @@ parameter values in **bold** indicate default value
 | mmrproof |**data:** <br/>**proof:** <br/>**root:**  | |Check an MMR proof. <br/>**data** - Leaf node data, data can be STRING / HEX <br/> **proof** - mmr proof for data (from mmrcreate output)<br/>**root** - mmr root for data  (from mmrcreate output) <br/>e.g. mmrproof data:"RETURN TRUE" proof:0x… root:0x… |
 | network | |**action:list** \| restart |Show network connections or restart |
 | newaddress | | |Create a new address that will not be not used for anything else (not a default change address) |
-| newscript |**script:** <br/> **track:true** \| false| |Add a new custom script <br/> **track** - keep track of on chain activity with this script |
+| newscript |**script:** <br/> **trackall:true** \| false| |Add a new custom script <br/> **trackall** - keep track of on chain activity with this script |
 | printtree | |**depth:**32 <br/>**cascade:**true \| **false** |Print a tree representation of the blockchain. <br/> **depth** - number of blocks <br/> **cascade** - Print the Cascading chain |
 | quit | | |Shutdown Minima |
 | restore |**file:** | |Restore the entire system. |

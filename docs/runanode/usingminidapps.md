@@ -6,9 +6,11 @@ sidebar_position: 4
 
 [MiniDapps](/docs/learn/minidapps/minidappsintro) are Minima's decentralized applications that run on your Minima node. 
 
-All the latest MiniDapps can be downloaded from https://minidapps.minima.global/.
+All the latest MiniDapps can be downloaded from our official [MiniDapp site](https://minidapps.minima.global/).
 
-**The following guidance is for DESKTOP and SERVER users, Android users can access their MiniDapp hub from the app Home page.**
+:::note
+The following guidance is for DESKTOP users, Android users can access their MiniDapp hub from the app Home page.
+:::
 
 ## Accessing the MiniDapp Hub
 

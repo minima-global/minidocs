@@ -243,11 +243,14 @@ To start a clean node (and lose your balance) you must provide a new name for th
 
 ## Next Steps
 
-Once your node running, see [Using MiniDapps](/docs/runanode/usingminidapps) to start testing!
+Once your node running, [learn about MiniDapps](/docs/learn/minidapps/minidappsintro) and start testing!
+
+### Stay up to date
+
+Check out our [MiniDapp store](https://minidapps.minima.global/) to stay up to date with the latest MiniDapps.
+
+### Need help?
+
+See [Using MiniDapps](/docs/runanode/usingminidapps) for more information or find us in [Discord](https://discord.gg/minima) or [Telegram](https://t.me/Minima_Global).
 
 Thank you for participating and contributing to our Testnet.
-
-Learn more:<br/>
-
-[What are MiniDapps?](/docs/learn/minidapps/minidappsintro) <br/>
-[Download the latest MiniDapps](https://minidapps.minima.global/) <br/>

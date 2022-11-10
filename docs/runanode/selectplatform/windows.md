@@ -24,7 +24,7 @@ Before starting, stop any existing nodes you started manually by typing `quit` i
 
 ### Start a new Minima node using Docker
 
-1. Download and run the Docker installer [here](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=header)
+1. Download and run the Windows installer from the official [Docker website](https://www.docker.com/)
 
 If prompted, use the following options:
 
@@ -255,11 +255,14 @@ To remove a Docker node:
 
 ## Next Steps
 
-Once your node running, see [Using MiniDapps](/docs/runanode/usingminidapps) to start testing!
+Once your node running, [learn about MiniDapps](/docs/learn/minidapps/minidappsintro) and start testing!
+
+### Stay up to date
+
+Check out our [MiniDapp store](https://minidapps.minima.global/) to stay up to date with the latest MiniDapps.
+
+### Need help?
+
+See [Using MiniDapps](/docs/runanode/usingminidapps) for more information or find us in [Discord](https://discord.gg/minima) or [Telegram](https://t.me/Minima_Global).
 
 Thank you for participating and contributing to our Testnet.
-
-Learn more:<br/>
-
-[What are MiniDapps?](/docs/learn/minidapps/minidappsintro) <br/>
-[Download the latest MiniDapps](https://minidapps.minima.global/) <br/>
