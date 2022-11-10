@@ -49,33 +49,42 @@ This also means that backup and restore operations know which addresses to look 
 Unless you really need a SINGLE address that is not used for anything else - use `getaddress`. <br/>
 To create a brand new address, that will not be used for anything else - then use `newaddress`.
 
-Now that you have both the public keys.. You can create the multisig contract. You must add the script to BOTH nodes, so they know how to spend the coin.
+Now that you have both the public keys.. You can create the multisig contract. 
+
+Script:
 ~~~~
 RETURN SIGNEDBY(0x1539C2B974C1589C6AB3C734AA41D8E7D999759EFE057B047B200E836BA5268A) AND SIGNEDBY(0xAD25E1E40605A68AFE357ECF83E51FE27EC10013851AE95889A00C695D5B9402)
 ~~~~
+
+You must add the script to BOTH nodes, so they know how to spend the coin.
+
 In Minima when you send funds to an address the script is not revealed. It is only added to the transaction when you wish to spend the coin, as an input.<br/>
 
-So on both you need to run
+So on both nodes you need to run:
 ~~~~
-newscript track:true script:"RETURN SIGNEDBY(0x1539C2B974C1589C6AB3C734AA41D8E7D999759EFE057B047B200E836BA5268A) AND SIGNEDBY(0xAD25E1E40605A68AFE357ECF83E51FE27EC10013851AE95889A00C695D5B9402)"
+newscript trackall:true script:"RETURN SIGNEDBY(0x1539C2B974C1589C6AB3C734AA41D8E7D999759EFE057B047B200E836BA5268A) AND SIGNEDBY(0xAD25E1E40605A68AFE357ECF83E51FE27EC10013851AE95889A00C695D5B9402)"
 ~~~~
-This will tell you the address.. In this case: 
+This will tell you the address.. in this case: 
 ~~~~
 0x7C6EB00C850E4E95743C6D6A181489D1215F53D39AE9702C42069C9F09DF378C
 ~~~~
-You will note `track`. This tells your node to track all instances of this address. The default is true. <br/>
+You will note `trackall`. This tells your node to track all instances of this address. The default is true. <br/>
 Sometimes you will add scripts you need to spend but you do not wish to track all occurrences (an exchange contract for instance)<br/>
 Minima will automatically track any coin that has an address you track, or an address you track or public key you own in the state variables.<br/>
-We now have both nodes able to understand the script. Let's send some funds to it.<br/>
+
+We now have both nodes able to understand the script. Let's send some funds to the script.<br/>
 
 On Node 1 - the genesis node..
 ~~~~
 send amount:10 address:0x7C6EB00C850E4E95743C6D6A181489D1215F53D39AE9702C42069C9F09DF378C
 ~~~~
-Now both nodes should show a new coin!
-When you try `balance` you will see the confirmed coins and sendable coins. Confirmed are the coins you are tracking.. Sendable are the coins with simple addresses you can use with the send function. It takes 3 blocks for a coin to go from unconfirmed to confirmed.
+Now both nodes should show a new coin! This coin can now only be spent if the script returns TRUE when attempting to use it as an input to a transaction.
 
-Now lets construct a transaction that uses this input.
+When you try `balance` you will see the confirmed coins and sendable coins. <br/>
+**Confirmed** are the coins you are tracking.<br/>
+**Sendable** are the coins with simple addresses you can use with the `send` function. It takes 3 blocks for a coin to go from unconfirmed to confirmed.
+
+Now lets construct a transaction that uses this coin as an input.
 
 ~~~~
 txncreate id:multisig
@@ -88,9 +97,10 @@ Now we need to find the coin to add as input
 coins relevant:true
 ~~~~
 
-You could just use `coins` here on its own and it defaults to 'coins **relevant:true**.<br/>
+You could just use `coins` here on its own and it defaults to `coins relevant:true`.<br/>
 This will display all the coins you are tracking. You can search for any coin using this function but we are only interested in our coins for now.<br/>
-Copy the coinid.. For the coin with the address and amount 10. Then add it to your transaction. This will be the same on both nodes.
+
+Copy the coinid for the coin with `address` matching script address and amount 10. Then add it to your transaction. This will be the same on both nodes.
 
 ~~~~
 txninput id:multisig coinid:0x9EAD12B53C8B595BFAFA636BC844AB51E3BF3B4B463DFF6D983FA236B3AEB49F
@@ -116,8 +126,7 @@ txnoutput id:multisig address:0xFF amount:1
 ~~~~
 
 ~~~~
-txnoutput id:multisig address:0x7C6EB00C850E4E95743C6D6A181489D1215F53D39AE9702C42069C9F09DF378C
-amount:9
+txnoutput id:multisig address:0x7C6EB00C850E4E95743C6D6A181489D1215F53D39AE9702C42069C9F09DF378C amount:9
 ~~~~
 
 Now - we have an almost complete transaction.. BUT it needs both nodes to sign it.
