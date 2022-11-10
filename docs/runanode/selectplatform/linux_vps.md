@@ -8,19 +8,25 @@ We will be using Docker software to make running a Minima node simple.
 
 Once your node is set up, you will be able to use Minima's decentralized applications.
 
+:::important
+We no longer support the install script, please continue to start a new node using Docker.
+:::
+
 :::note What is Docker?
 Docker is an open-source software platform that simplifies the process of running, testing and managing applications. 
 It uses the operating system of the computer on which it’s installed to provide an independent computing environment for an application to run on.
 ::: 
 
-## How to start a new Minima node
+## Start a new Minima node
 
 ### Remove nodes installed using the old script
-If you have been running a node using the install script provided, please remove these nodes.
+If you have been running a node using the install script provided, please remove these nodes following the instructions below.
+
+If you are a new user, continue to [Start your node](#start-your-node).
 
 1. Logon to your server as the root user
 
-![VPS_login](/img/runanode/docker_vps_1login.png#width50?raw=true)
+![VPS_login](/img/runanode/docker_vps_1login.png#width50)
 
 :::tip Check running nodes
 To check which nodes you currently have running, use the command `systemctl list-units --type=service`. 
@@ -38,7 +44,6 @@ To check which nodes you currently have running, use the command `systemctl list
  If you started multiple nodes, run the uninstall script for each node changing the port number each time.
 :::
 
-
 3. Remove all existing folders: 
 ```
 rm -rf /home/minima/
@@ -55,7 +60,10 @@ If there is an *“unable to delete minima user, minima user using process xxxxx
 
 ![VPS_removeuser](/img/runanode/docker_vps_6removeuser.png#width50)
 
-### Start a new Minima node
+If you are having problems and Minima is the only application on your server, please start with a fresh instance of your server and continue to [Start your node](#start-your-node).
+
+
+### Start your node
 1. Log on as the root user and add a new minima user, set a password and leave the remaining fields as default : 
 ```
 adduser minima
@@ -127,9 +135,18 @@ su - minima
 
 ![VPS_startminima](/img/runanode/docker_vps_15startminima.png)
 
-Congratulations! Your Node is up and running. Continue to Install the Watchtower to automatically update Minima. 
+11. Ensure Docker starts up automatically when the server starts 
 
-## How to automate updates with Watchtower
+```
+sudo systemctl enable docker.service
+```
+```
+sudo systemctl enable containerd.service
+```
+
+Congratulations! Your Node is up and running. Continue to [install the Watchtower](#automate-updates-with-watchtower) to automatically update Minima. 
+
+## Automate updates with Watchtower
 
 1. Start a Watchtower container to **automatically update Minima when a new version is available.**
 ```
@@ -139,24 +156,14 @@ Every 24 hours, the Watchtower will check whether there is a new version of Mini
 
 ![VPS_startwatchtower](/img/runanode/docker_vps_16startwatchtower.png)
 
-2. Ensure Docker starts up automatically when the server starts 
-
-```
-sudo systemctl enable docker.service
-```
-```
-sudo systemctl enable containerd.service
-```
-
-3. Check Minima and the Watchtower containers are running
+2. Check Minima and the Watchtower containers are running
 ```
 docker ps
 ```
 
-Next, access your MiniDapp hub and **[setup your Incentive Program account](#set-up-your-incentive-program-account)** to start earning Rewards.
+Continue to [access your MiniDapp hub](#access-your-minidapp-hub) and setup your Incentive Program account to start earning Rewards.
 
-
-## Set up your Incentive Program account 
+## Access your MiniDapp hub
 
 The first time accessing your MiniDapp hub, you may need to pass through the security warning - see below - as the MiniDapp system currently uses self-signed certificates.
 
@@ -172,17 +179,24 @@ You will see your MiniDapp System (MDS) login page.
 
 4. You will see your MiniDapp hub!
 
-5. Open the Incentive Program minidapp
+
+## Set up your Incentive Program account 
+
+If you have registered for the Incentive Program you must connect your Incentive ID to your node to start receiving daily Rewards.
+
+If you have not registered, click [here](https://incentive.minima.global/account/register) to sign up.
+
+1. Open the Incentive Program minidapp
 
 ![mds_IP](/img/runanode/IP_minidapp.png#width50)
 
-6. Follow the instructions to login to the Incentive Program website and **copy your Incentive ID**
+2. Follow the instructions to login to the Incentive Program website and **copy your Incentive ID**
 
-7. Paste your Incentive ID into the field provided and click **Update**
+3. Paste your Incentive ID into the field provided and click **Update**
 
 ![mds_IP](/img/runanode/IP_updateid.png#width50)
 
-8. Check the Rewards page to check your balance!
+4. Check the Rewards page to check your balance!
 
 ![mds_IP](/img/runanode/IP_checkrewards.png#width50)
 
@@ -212,6 +226,8 @@ Remove listed containers: `docker rm minima9001 minima8001 minima7001`<br/>
 
 Help: `docker --help`<br/>
 
+------
+
 ### How to check your Minima hub password
 You can use the Docker CLI/Terminal to interact with your node, for example to check your status, balance, password, incentive program setup or to create a backup.
 
@@ -234,6 +250,8 @@ docker exec -it minima9001 minima
 `incentivecash uid:` - setup your Incentive Program account by connecting your Incentive ID<br/>
 `help` - show all commands
 
+------
+
 ### How to check the status of your node
 To check the status of your node, you can either use the Minima Terminal via Docker (shown above) or log on to your MiniDapp hub and open the Minima Terminal minidapp.
 
@@ -241,18 +259,38 @@ With the Minima Terminal open, run the `status` command to see the latest status
 
 ![VPS_dockerterminal](/img/runanode/docker_vps_terminalstatus.png)
 
+------
+
+### How to start a second node in Docker
+
+To run a second node in Docker, you can create another container using different port numbers, file path and name. 
+
+1. To create a node on port 8001:
+
+>docker run -d -e minima_mdspassword=123 -e minima_server=true -v ~/**minimadocker8001**:/home/minima/data -p **8001-8004**:9001-9004 --restart unless-stopped --name **minima8001** minimaglobal/minima:latest
+
+2. To access your MiniDapps on the second node, go to https://127.0.0.1:8003/ (8003 instead of 9003) and repeat the steps in [Access your MiniDapp hub](#access-your-minidapp-hub).
+
+-------
 
 ### How to take a backup of your node
 
 1. Login to your Minima Hub at https://yourserverIP:9003/
 2. Open the Terminal MiniDapp
-3. Enter the `backup` command, completing the parameters
+3. Enter the `backup` command with a password containing **lowercase letters and numbers only**
 
 ```
-backup password: file: auto: complete:
+backup password: 
 ```
+
+To create automatic backups every 24 hours (currently NOT password protected)
+```
+backup auto:true
+```
+Your backups will go to the **minimadocker9001** folder in your home directory.
+
 :::note backup parameters
-**password:** set a password **lowercase letters and numbers only** for your backup, this will be required when restoring it
+**password:** set a password for your backup **lowercase letters and numbers only**, this will be required when restoring it
 
 **file:** (optional) backup name 
 
@@ -261,7 +299,7 @@ backup password: file: auto: complete:
 **complete:** (optional) **true** or **false**. A complete backup includes the Archive database. Please allow more time for a complete backup to finish. 
 :::
 
-Your backup will go to the **minimadocker9001** folder in your home directory.
+------
 
 ### How to restore your node from a backup
 
@@ -275,12 +313,14 @@ Your backup must be in the **minimadocker9001** folder in your home directory (a
 restore file: password:
 ```
 :::note restore parameters
-**password:** (optional) the password of the backup 
+**password:** the password of the backup. If restoring an automatic backup, this can be left blank.
 
 **file:** (optional) backup name, with or without file path
 :::
 
 If successful, you will need to log out/log in from your Minima hub for the restore to take effect.
+
+------
 
 ### How to start a test node as a developer
 To create a private test node from Genesis on ports 10001-10004, use the following start up command:
@@ -384,6 +424,7 @@ Each request will require your server password.
 
 Lock it down.
 
+------
 
 ### How to remove a node
 :::important
@@ -406,7 +447,7 @@ sudo rm -rf minimadocker9001
 
 ## Next Steps
 
-Once your node running, see [How to use MiniDapps](/docs/runanode/usingminidapps) to start testing!
+Once your node running, see [Using MiniDapps](/docs/runanode/usingminidapps) to start testing!
 
 Thank you for participating and contributing to our Testnet.
 

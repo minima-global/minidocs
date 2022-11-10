@@ -7,7 +7,7 @@ sidebar_position: 1
 ## Installing Minima
 
 1. Uninstall any previous versions of the Minima App 
-2. Install the Minima App on your Android device from the [Google Play store]( https://play.google.com/store/apps/details?id=com.minima.android&hl=en&gl=US)
+2. Install the Minima App on your Android device from the [Google Play store](https://play.google.com/store/apps/details?id=com.minima.android&hl=en&gl=US)
 3. Open the Minima App and allow the battery settings for Minima to run in the background
 
 **Congratulations - your node is now installed & running!**

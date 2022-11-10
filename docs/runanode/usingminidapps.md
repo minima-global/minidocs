@@ -8,59 +8,28 @@ sidebar_position: 4
 
 All the latest MiniDapps can be downloaded from https://minidapps.minima.global/.
 
-**NOTE: The following guidance is for DESKTOP and SERVER users.**
+**The following guidance is for DESKTOP and SERVER users, Android users can access their MiniDapp hub from the app Home page.**
 
 ## Accessing the MiniDapp Hub
 
-1. To access your MiniDapp hub, go to **https://127.0.0.1:9003/** in your web browser. The first time accessing your MiniDapp hub, you may need to pass through the security warning - see below - as the MiniDapp system currently uses self-signed certificates. <br/><br/>
-:::note custom ports
-Note that **9003** is the default port for accessing your MiniDapp system - if you installed Minima on custom ports, you will need to use your custom base port + 2. E.g. If you installed Minima on 8001, you will need to use **https://127.0.0.1:8003/**
-:::<br/><br/>
-**Windows/Linux Desktop** 
-- Go to **https://127.0.0.1:9003/** in your web browser (Firefox is not supported)
-- Click on **Advanced**, then **Proceed**. Or in Google Chrome, you may have to click anywhere on the page and type `thisisunsafe` to proceed. Details for other browsers can be found [**here**](https://www.vultr.com/docs/how-to-bypass-the-https-warning-for-self-signed-ssl-tls-certificates/).<br/><br/>
-**Mac** 
+To access your MiniDapp hub, refer to the following guidance according to your platform of choice:
 
-- In Safari, go to **https://127.0.0.1:9004/**, click on **Show Details** then **Visit this website**
-- Go to **https://127.0.0.1:9003/** and repeat, you should see the MiniDapp System login page
-- Close **https://127.0.0.1:9004/**<br/><br/>
-**Server**
 
-- Go to **https://YourServerIP:9003/** in your web browser
-- Click on **Advanced**, then **Proceed**. Or in Google Chrome, you may have to click anywhere on the page and type `thisisunsafe` to proceed. Details for other browsers can be found [**here**](https://www.vultr.com/docs/how-to-bypass-the-https-warning-for-self-signed-ssl-tls-certificates/).<br/><br/>
+[Linux Server (Docker)](/docs/runanode/selectplatform/linux_vps#access-your-minidapp-hub)
 
-You will see your MiniDapp System (MDS) login page. 
+Windows
+- [Windows (Docker)](/docs/runanode/selectplatform/windows#access-your-minidapp-hub)
+- [Windows (Non-Docker)](/docs/runanode/selectplatform/manualnode#access-your-minidapp-hub)
 
-![mds_login](/img/runanode/mds_login.png#width50)
+Mac
+- [Mac (Docker)](/docs/runanode/selectplatform/mac#access-your-minidapp-hub)
+- [Mac (Non-Docker)](/docs/runanode/selectplatform/manualnode#access-your-minidapp-hub)
 
-2. To get your **password** - return to your desktop/server command line where the Minima logs are running and enter 
+Linux Desktop
+- [Linux Desktop (Docker)](/docs/runanode/selectplatform/linux_desktop#access-your-minidapp-hub)
+- [Linux Desktop (Non-Docker)](/docs/runanode/selectplatform/manualnode#access-your-minidapp-hub)
 
-**Windows/Mac/Linux Desktop**
-
-```
-mds
-```
-**Server (using RPC)**
-```
-curl 127.0.0.1:9005/mds
-```
-
-You should see an output similar to below:
-
-```
-mds
-{
-  "command":"mds",
-  "status":true,
-  "response":{
-    "password":"1SV0-F0WN-K367",
-    "minidapps":[]
-  }
-}
-```
-3. Copy and Paste your password into the field and click **Enter**
-4. You will see your MiniDapp hub!
-
+-------
 
 ## Installing MiniDapps
 1. Download and save the MiniDapps you wish to use from our [MiniDapp site.](https://minidapps.minima.global/)
@@ -74,6 +43,8 @@ To use the Wallet MiniDapp, you will need Testnet Minima coins which can be obta
 **Testnet coins have no real world value.**
 :::
 
+-------
+
 ## MiniDapp Permissions
 
 By default, all MiniDapps will be given **READ** permission.
@@ -81,11 +52,11 @@ By default, all MiniDapps will be given **READ** permission.
 When a MiniDapp with READ permission attempts to run a command which would make changes to your node or require access to your funds, a PENDING command will be created which you will need to accept. 
 :::warning 
 You should only give **WRITE** permissions to MiniDapps that you trust. <br/>
-Only the **Terminal** MiniDapp will need **WRITE** permission 
+Only the **Terminal** MiniDapp will need **WRITE** permission so you can approve/deny transactions.
 :::
 
 
-### Setting the Terminal permissions to WRITE
+### Setting the Terminal permissions to WRITE 
 
 1. Login and install the Terminal MiniDapp
 2. Return to your desktop/server command line and run the `mds` command again (see above) to list your MiniDapps and check their existing permissions
@@ -184,6 +155,8 @@ mds action:accept/deny uid:0x4D020F84762AAB4EF593B6E6DACE7064
 ```
 
 Accepting the command will execute the command; denying will remove the pending command from the list and will not be executed.
+
+-------
 
 ## Uninstalling MiniDapps
 1. From the Command Line where Minima is running, type 

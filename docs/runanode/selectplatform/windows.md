@@ -4,7 +4,9 @@ sidebar_position: 3
 
 # Windows
 
-We will be using Docker software to make running a Minima node simple.
+We will be using Docker software to make running a Minima node simple. 
+
+*We recommend Docker for ease of use and automatic updates for your node. However, if you experience issues with Docker, the [manual method](/docs/runanode/selectplatform/manualnode) is also available.*
 
 Once your node is set up, you will be able to use Minima's decentralized applications.
 
@@ -14,7 +16,7 @@ It uses the operating system of the computer on which it’s installed to provid
 ::: 
 
 
-## How to start a new Minima node
+## Start a new Minima node
 
 ### Remove existing nodes
 
@@ -34,7 +36,7 @@ You may also be prompted to allow firewall settings.
 2. Once installed, open Docker
 3. Click on the **settings** icon, and select **Start Docker Desktop when you log in**
 
-![Windows_dockerstartup](/img/runanode/docker_desktopstartup.png)
+![Windows_dockerstartup](/img/runanode/docker_desktopstartup.png#width50)
 
 
 3. Click **Apply & Restart**
@@ -43,12 +45,13 @@ You may also be prompted to allow firewall settings.
 
 5. Copy and paste the following into the Command Prompt window 
 
-:::important SET YOUR PASSWORD
-**Make sure to change the password below from `123` to a secure password using lowercase letters and numbers only. This will be the password to access your Minidapp Hub.**
+:::important CHOOSE YOUR FILE PATH AND PASSWORD
+**File path:** Insert the name of your user's home folder where it says **`INSERTUSERNAME`** below e.g. C:\Users\john\minimadocker9001<br/>
+**Password:** Make sure to change the password below from `123` to a secure password using lowercase letters and numbers only. This will be the password to access your Minidapp Hub.
 :::
-```
-docker run -d -e minima_mdspassword=123 -e minima_desktop=true -v ~/minimadocker9001:/home/minima/data -p 9001-9004:9001-9004 --restart unless-stopped --name minima9001 minimaglobal/minima:latest
-```
+
+>`docker run -d -e minima_mdspassword=123 -e minima_desktop=true -v C:\Users\INSERTUSERNAME\minimadocker9001:/home/minima/data -p 9001-9004:9001-9004 --restart unless-stopped --name minima9001 minimaglobal/minima:latest`
+
 6. Press the **Enter** key to run the command and start your node. 
 
 :::note What do all the parameters mean?
@@ -56,7 +59,7 @@ docker run -d -e minima_mdspassword=123 -e minima_desktop=true -v ~/minimadocker
 - `-d`: daemon mode, Minima will run in the background
 - `-e minima_mdspassword=123` : sets the password for your MiniDapp system to 123. **YOU MUST USE A SECURE PASSWORD USING LOWERCASE LETTERS AND NUMBERS ONLY**
 - `-e minima_desktop = true` : sets your node type as a desktop node that does not receive incoming connections 
-- `-v ~/minimadocker9001:/home/minima/data` : creates a local folder called **minimadocker9001** in your home directory and maps it to the **/home/minima/data** directory in Docker. The **minimadocker9001** folder is where the Minima database and is also where your backups will be stored.
+- `-v C:\Users\INSERTUSERNAME\minimadocker9001:/home/minima/data` : creates a local folder called **minimadocker9001** in your home directory and maps it to the **/home/minima/data** directory in Docker. The **minimadocker9001** folder is where the Minima database and is also where your backups will be stored.
 - `-p 9001-9004:9001-9004` : the port number mapping from your desktop to the Docker container
 - `--restart unless-stopped` : ensures your container automatically restarts unless you stop it
 - `--name minima9001` : sets the name of your Minima container to minima9001
@@ -76,7 +79,7 @@ docker run -d -e minima_mdspassword=123 -e minima_desktop=true -v ~/minimadocker
 
 To ensure your node updates automatically when a new version of Minima is released, continue to start a Watchtower container.
 
-## How to automate updates with Watchtower
+## Automate updates with Watchtower
 :::note What is a Watchtower container?
 Once set up, a Watchtower container enables automatic updates of your Minima node when a new version is released. 
 It will pull down the latest Minima version and restart with the same parameters you initially specified.
@@ -95,10 +98,9 @@ You will see the Watchtower in Docker.
 
 Every 8 hours, the Watchtower will check whether there is a new version of Minima and will update if so. 
 
-Next, access your MiniDapp hub and **[setup your Incentive Program account](#set-up-your-incentive-program-account)** to start earning Rewards.
+Continue to access your MiniDapp hub and setup your Incentive Program account to start earning Rewards.
 
-
-## Set up your Incentive Program account 
+## Access your MiniDapp hub
 
 The first time accessing your MiniDapp hub, you may need to pass through the security warning - see below - as the MiniDapp system currently uses self-signed certificates.
 
@@ -114,17 +116,23 @@ You will see your MiniDapp System (MDS) login page.
 
 4. You will see your MiniDapp hub!
 
-5. Open the Incentive Program minidapp
+## Set up your Incentive Program account 
+
+If you have registered for the Incentive Program you must connect your Incentive ID to your node to start receiving daily Rewards.
+
+If you have not registered, click [here](https://incentive.minima.global/account/register) to sign up.
+
+1. Open the Incentive Program minidapp
 
 ![mds_IP](/img/runanode/IP_minidapp.png#width50)
 
-6. Follow the instructions to login to the Incentive Program website and **copy your Incentive ID**
+2. Follow the instructions to login to the Incentive Program website and **copy your Incentive ID**
 
-7. Paste your Incentive ID into the field provided and click **Update**
+3. Paste your Incentive ID into the field provided and click **Update**
 
 ![mds_IP](/img/runanode/IP_updateid.png#width50)
 
-8. Check the Rewards page to check your balance!
+4. Check the Rewards page to check your balance!
 
 ![mds_IP](/img/runanode/IP_checkrewards.png#width50)
 
@@ -149,17 +157,20 @@ You can use the Docker CLI/Terminal to interact with your node, for example to c
 `incentivecash uid:` - setup your Incentive Program account by connecting your Incentive ID<br/>
 `help` - show all commands
 
+------
+
 ### How to start a second node in Docker
+
 
 To run a second node in Docker, you can create another container using different port numbers, file path and name. 
 
-For example to create a node on port 8001:
+1. To create a node on port 8001:
 
 >docker run -d -e minima_mdspassword=123 -e minima_desktop=true -v ~/**minimadocker8001**:/home/minima/data -p **8001-8004**:9001-9004 --restart unless-stopped --name **minima8001** minimaglobal/minima:latest
 
-:::note Port Mappings
-**This creates a node on ports 8001-8004 on YOUR DESKTOP, this will be mapped to ports 9001-9004 in the Docker container.**
-:::
+2. To access your MiniDapps on the second node, go to https://127.0.0.1:8003/ (8003 instead of 9003) and repeat the steps in [Access your MiniDapp hub](#access-your-minidapp-hub).
+
+------
 
 ### How to start a test node as a developer
 To create a private test node from Genesis, use the following start up command:
@@ -175,17 +186,26 @@ The additional test parameters used are:
 To enable RPC, use `-p 10001-10005:9001-9005`
 :::
 
+------
+
 ### How to take a backup of your node
 
 1. Login to your Minima Hub 
 2. Open the Terminal MiniDapp
-3. Enter the `backup` command, completing the parameters
+3. Enter the `backup` command with a password containing **lowercase letters and numbers only**
 
 ```
-backup password: file: auto: complete:
+backup password: 
 ```
+
+To create automatic backups every 24 hours (currently NOT password protected)
+```
+backup auto:true
+```
+Your backups will go to the **minimadocker9001** folder in your home directory.
+
 :::note backup parameters
-**password:** set a password for your backup using **lowercase letters and numbers only**, this will be required when restoring it
+**password:** set a password for your backup **lowercase letters and numbers only**, this will be required when restoring it
 
 **file:** (optional) backup name 
 
@@ -194,7 +214,7 @@ backup password: file: auto: complete:
 **complete:** (optional) **true** or **false**. A complete backup includes the Archive database. Please allow more time for a complete backup to finish. 
 :::
 
-Your backup will go to the **minimadocker9001** folder in your home directory.
+------
 
 ### How to restore your node from a backup
 
@@ -208,13 +228,14 @@ Your backup must be in the **minimadocker9001** folder in your home directory (a
 restore file: password:
 ```
 :::note restore parameters
-**password:** (optional) the password of the backup 
+**password:** the password of the backup. If restoring an automatic backup, this can be left blank.
 
 **file:** (optional) backup name, with or without file path
 :::
 
 If successful, you will need to log out/log in from your Minima hub for the restore to take effect.
 
+------
 
 ### How to remove a node
 :::important
@@ -234,7 +255,7 @@ To remove a Docker node:
 
 ## Next Steps
 
-Once your node running, see [How to use MiniDapps](/docs/runanode/usingminidapps) to start testing!
+Once your node running, see [Using MiniDapps](/docs/runanode/usingminidapps) to start testing!
 
 Thank you for participating and contributing to our Testnet.
 

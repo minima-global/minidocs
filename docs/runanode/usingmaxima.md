@@ -4,8 +4,6 @@ sidebar_position: 5
 
 # Using Maxima (MaxSolo)
 
-## How to set up Maxima Contacts (to use the MaxSolo MiniDapp)
-
 Maxima is an information transfer layer on Minima. To learn more about Maxima, please see the [About Maxima](/docs/learn/maxima/maximaintro) section. <br/>
 
 Before using the MaxSolo MiniDapp to chat with friends, you must:
@@ -21,8 +19,9 @@ Android users can use the **Contacts** page of the app to find their Maxima Prof
 Once connected to a Contact, you can message eachother using the MaxSolo MiniDapp.
 :::
 
+------
 
-### Setting your Maxima Profile
+## Setting your Maxima Profile
 
 Your Maxima Profile is the name that your Maxima Contacts will see once you are connected with eachother.
 
@@ -48,7 +47,9 @@ You should see an output similar to below:
 }
 ```
 
-### Sharing your Contact Address
+-------
+
+## Sharing your Contact Address
 
 By sharing your Contact Address with friends, they can add you as one of their Maxima Contacts - enabling you to chat in the MaxSolo MiniDapp. 
 
@@ -82,7 +83,9 @@ Contact Addresses locate your node in the peer-to-peer network. For privacy reas
 Therefore, when creating Contacts, you must ensure that you are using a recent Contact Address from your friend.
 :::
 
-### Adding a new Maxima Contact
+--------
+
+## Adding a new Maxima Contact
 
 1. Ask your friend to send you their Contact Address
 2. Copy it
@@ -127,7 +130,9 @@ You should see an output similar to below:
 Only one person needs to add the Contact, you will then both be connected to each other.
 :::
 
-### Checking the connection to your Contacts
+--------
+
+## Checking the connection to your Contacts
 
 You must be properly connected to your contacts to successfully send messages using the MaxSolo MiniDapp. 
 
