@@ -218,9 +218,9 @@ Your backup must be in the **minimadocker8001** folder in your home directory (a
 restore file: password:
 ```
 :::note restore parameters
-**password:** the password of the backup. If restoring an automatic backup, this can be left blank.
+**file:** the name of the backup to restore.
 
-**file:** (optional) backup name, with or without file path
+**password:** (optional) the password of the backup. Can be left blank if restoring an auto backup or non password protected backup.
 :::
 
 If successful, you will need to log out/log in from your Minima hub for the restore to take effect.
