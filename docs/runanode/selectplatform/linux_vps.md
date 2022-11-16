@@ -26,8 +26,6 @@ If you are a new user, continue to [Start your node](#start-your-node).
 
 1. Logon to your server as a non root user with sudo (admin) rights.
 
-![VPS_login](/img/runanode/docker_vps_1login.png#width50)
-
 :::tip Check running nodes
 To check which nodes you currently have running, use the command `systemctl list-units --type=service`. 
 :::
@@ -38,7 +36,7 @@ To check which nodes you currently have running, use the command `systemctl list
 
 >```sudo wget -O minima_remove.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_remove.sh && chmod +x minima_remove.sh && sudo ./minima_remove.sh -p 9001 -x```
 
-![VPS_removenodes](/img/runanode/docker_vps_3removeoldnodes.png)
+<!--- ![VPS_removenodes](/img/runanode/docker_vps_3removeoldnodes.png#width50) --->
 
 :::tip Multiple nodes?
  If you started multiple nodes, run the uninstall script for each node changing the port number each time.
@@ -48,7 +46,7 @@ To check which nodes you currently have running, use the command `systemctl list
 ```
 sudo rm -r /home/minima/
 ```
-![VPS_removefolder](/img/runanode/docker_vps_5removefolder.png#width50)
+<!--- ![VPS_removefolder](/img/runanode/docker_vps_5removefolder.png#width50) --->
 
 4. Delete the existing minima user: 
 ```
@@ -58,7 +56,7 @@ sudo userdel minima
 If there is an *“unable to delete minima user, minima user using process xxxxxxx”* error, please reboot the server, log back in as root  then do `userdel minima` immediately on login.
 :::
 
-![VPS_removeuser](/img/runanode/docker_vps_6removeuser.png#width50)
+<!---![VPS_removeuser](/img/runanode/docker_vps_6removeuser.png#width50)--->
 
 If you are having problems and Minima is the only application on your server, please start with a fresh instance of your server and continue to [Start your node](#start-your-node).
 

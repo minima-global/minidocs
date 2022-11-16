@@ -53,7 +53,7 @@ docker run -d -e minima_mdspassword=123 -e minima_desktop=true -v ~/minimadocker
 
 7. You will notice a container in Docker called **minima9001**, this is running your Minima node.
 
-![Windows_dockercontainer](/img/runanode/docker_desktopcontainer.png)
+![Windows_dockercontainer](/img/runanode/docker_desktopcontainerwindows.png)
 
 8. Click on **minima9001** to check the logs and ensure your node has started up
 
@@ -79,7 +79,7 @@ Press the **Enter** key to run the command and start the Watchtower.
 
 You will see the Watchtower in Docker.
 
-![Desktop_dockerwatchtower](/img/runanode/docker_desktopwatchtower.png)
+![Desktop_dockerwatchtower](/img/runanode/docker_desktopwatchtowerwindows.png)
 
 Every 8 hours, the Watchtower will check whether there is a new version of Minima and will update if so. 
 

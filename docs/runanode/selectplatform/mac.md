@@ -24,7 +24,7 @@ Before starting, stop any existing nodes you started manually by typing `quit` i
 2. Once installed, open Docker
 3. Click on the **settings** icon, and select **Start Docker Desktop when you log in**
 
-![Windows_dockerstartup](/img/runanode/docker_desktopstartup.png)
+![Windows_dockerstartup](/img/runanode/docker_desktopstartup.png#width50)
 
 
 3. Click **Apply & Restart**
@@ -53,11 +53,11 @@ docker run -d -e minima_mdspassword=123 -e minima_desktop=true -v ~/minimadocker
 
 7. You will notice a container in Docker called **minima8001**, this is running your Minima node.
 
-![Windows_dockercontainer](/img/runanode/docker_desktopcontainer.png)
+![Windows_dockercontainer](/img/runanode/docker_desktopcontainermac.png)
 
 8. Click on **minima8001** to check the logs and ensure your node has started up
 
-![Windows_dockerlogs](/img/runanode/docker_desktoplogs.png)
+![Windows_dockerlogs](/img/runanode/docker_desktoplogsmac.png)
 
 
 **Congratulations - your node is now installed & running!**
@@ -79,7 +79,7 @@ Press the **Enter** key to run the command and start the Watchtower.
 
 You will see the Watchtower in Docker.
 
-![Desktop_dockerwatchtower](/img/runanode/docker_desktopwatchtower.png)
+![Desktop_dockerwatchtower](/img/runanode/docker_desktopwatchtowermac.png)
 
 Every 8 hours, the Watchtower will check whether there is a new version of Minima and will update if so. 
 
