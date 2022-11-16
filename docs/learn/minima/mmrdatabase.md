@@ -6,10 +6,15 @@ sidebar_position: 3
 
 ## Overview
 
-As the blockchain is heavily pruned, users must store proof that their coins are unspent. This is the role of the Merkle Mountain Range (MMR) Proof database. The MMR is a **hash sum tree** containing the proofs for all Transaction Outputs (TxOs) i.e. coins in the system.
-Note: these coins may be Spent Transaction Outputs (STxOs) or Unspent Transaction Outputs (UTxOs). 
+As the blockchain is heavily pruned, users must store proof that their coins are unspent. 
 
-The tree is **append-only** and is updated as coins are spent and created. For each new UTxO created from a transaction output, a new leaf node is created in the MMR. Coins are hashed in pairs, building up the largest **binary tree** possible until a new tree is required. As new trees are required, they start to look like a range of mountains - giving the MMR its name.
+This is the role of the Merkle Mountain Range (MMR) Proof database. The MMR is a **hash sum tree** containing the proofs for all Transaction Outputs (TxOs) i.e. coins in the system.
+
+> Note: these coins may be Spent Transaction Outputs (STxOs) or Unspent Transaction Outputs (UTxOs). 
+
+The tree is **append-only** and is updated as coins are spent and created. For each new UTxO created from a transaction output, a new leaf node is created in the MMR. 
+
+Coins are hashed in pairs, building up the largest **binary tree** possible until a new tree is required. As new trees are required, they start to look like a range of mountains - giving the MMR its name.
 
 When the total number of leaf nodes (Coins/TxOs) are not equal to *2 <sup>n</sup> where n = int{*0,...,256*}*, there will be multiple trees of different heights, creating multiple peak nodes as shown below.
 
