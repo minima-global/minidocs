@@ -66,6 +66,7 @@ runscript script:"MAST 0x0E321692DA8996A833F88EC8A73F3AA8A5E949AD12FF48207130C7A
 ~~~~
 
 You could create interesting scripts with multiple ways of them being executed.. You can even use these merkelized proofs as state variables and check them yourself in script.
+
 In this case..
 
 ~~~~

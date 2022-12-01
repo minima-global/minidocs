@@ -2,26 +2,34 @@
 sidebar_position: 5
 ---
 
-# Using Maxima (MaxSolo)
+# Using Maxima
 
-Maxima is an information transfer layer on Minima. To learn more about Maxima, please see the [About Maxima](/docs/learn/maxima/maximaintro) section. <br/>
+Maxima is an information transport layer running on top of Minima. 
 
-Before using the MaxSolo MiniDapp to chat with friends, you must:
+To learn more about Maxima, please see the [About Maxima](/docs/learn/maxima/maximaintro) section.
 
-1. Be [running a Minima node](/docs/runanode/get_started_in_3_steps)
-2. Set your Maxima Profile
-3. Create your Contacts by adding the Contact Address of your friends **or** sending your own Contact Address to your friends
-4. Have the MaxSolo MiniDapp installed 
+## Using Maxima via MaxSolo
+Before using the MaxSolo MiniDapp to chat with friends, you must be [running a Minima node.](/docs/runanode/get_started_in_3_steps)
+
+The latest version of MaxSolo can be downloaded from our [MiniDapps site](https://minidapps.minima.global) and installed on your node.  
+
+Once MaxSolo is installed, share your Contact address with friends or add your friends as a contact. You will then be able to message your contacts and send tokens via MaxSolo.
+
+Contact addresses are dynamic and change every 20 minutes, so you must add a contact address as soon as possible after receiving it. 
 
 :::note Android Users 
-The following guidance is for Desktop and Server users. <br/>
-Android users can use the **Contacts** page of the app to find their Maxima Profile and Contact Address, and to add Maxima Contacts. 
+Android users can also use the **Contacts** page of the app to set their Maxima Profile name, find their Contact Address and add Contacts. 
 Once connected to a Contact, you can message eachother using the MaxSolo MiniDapp.
 :::
 
+
 ------
 
-## Setting your Maxima Profile
+## Using Maxima via Terminal
+
+Contacts can also be managed using commands via the Terminal MiniDapp. Read on to learn how.
+
+### Setting your Maxima Profile
 
 Your Maxima Profile is the name that your Maxima Contacts will see once you are connected with eachother.
 
@@ -49,7 +57,7 @@ You should see an output similar to below:
 
 -------
 
-## Sharing your Contact Address
+### Sharing your Contact Address
 
 By sharing your Contact Address with friends, they can add you as one of their Maxima Contacts - enabling you to chat in the MaxSolo MiniDapp. 
 
@@ -85,7 +93,7 @@ Therefore, when creating Contacts, you must ensure that you are using a recent C
 
 --------
 
-## Adding a new Maxima Contact
+### Adding a new Maxima Contact
 
 1. Ask your friend to send you their Contact Address
 2. Copy it
@@ -132,7 +140,7 @@ Only one person needs to add the Contact, you will then both be connected to eac
 
 --------
 
-## Checking the connection to your Contacts
+### Checking the connection to your Contacts
 
 You must be properly connected to your contacts to successfully send messages using the MaxSolo MiniDapp. 
 

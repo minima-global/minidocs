@@ -125,7 +125,7 @@ FUNC        ::= CONCAT | LEN | REV | SUBSET | GET | OVERWRITE |
 
 ## Functions
 ```
-CONACT ( HEX_1 HEX_2 ... HEX_n )
+CONCAT ( HEX_1 HEX_2 ... HEX_n )
 Concatenate the HEX values.
 
 LEN ( HEX|SCRIPT )

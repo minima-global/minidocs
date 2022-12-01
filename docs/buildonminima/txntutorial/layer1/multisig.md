@@ -166,8 +166,9 @@ And NOW - you should have a correctly signed transaction.. by both parties.. Jus
 txnbasics id:multisig
 ~~~~
 
-The reason this is not done immediately when you add an input.. Is that you may be posting this transaction weeks or months after it is created and will need up to date proofs
-And now - we can attempt to publish the transaction
+The reason this is not done immediately when you add an input.. Is that you may be posting this transaction weeks or months after it is created and will need up to date proofs.
+
+And now - we can attempt to publish the transaction:
 
 ~~~~
 txnpost id:multisig

@@ -28,7 +28,7 @@ How this works (pls read the ELTOO whitepaper to follow more closely):
 
 1. User1 and User2 wish to open a payment channel with 10 Minima each.
 2. They start by creating a setup transaction that sends funds to a simple 2of2 multisig worth 20 Minima - the Funding transaction - but do not sign and publish it.
-3. They create a **trigger** transaction that spends the Funding transaction and sends the funds to the ELTOO contract,, with state variable 99 equal to 0. This will effectively start the final settlement sequence - since the @COINAGE timeout is now on chain
+3. They create a **trigger** transaction that spends the Funding transaction and sends the funds to the ELTOO contract, with state variable 99 equal to 0. This will effectively start the final settlement sequence - since the @COINAGE timeout is now on chain
 4. They create the first **settlement** transaction that spends the trigger transaction, with state variable 99 set to 0, and sends 10 Minima back to each user.
 5. They sign and share the trigger and initial settlement transaction, and do the same with the funding transaction, and finally publish the Funding transaction.
 6. Now - they both have a valid transaction spending the Funding transaction to create the trigger transaction, and both have an initial settlement transaction spending THAT to give them the money back. Phew.. stay with me.

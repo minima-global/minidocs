@@ -55,7 +55,7 @@ txncreate id:posttxn
 You will see that when you do 'txnlist'.. the last piece of data in the JSON is 'outputcoindata'. This is a HEX representation of the coin outputs and can be used as an input to another transaction - with the correct CoinID. Copy that and use it like so..
 
 ~~~~
-txninput id:posttxn coindata:0x0000002015B0B62181547D83C563D8B1925B53655A2A8F7FF8B1F7479FB202829B 89838200000001FF0001060000000100000100010000000001000000010000010000
+txninput id:posttxn coindata:0x0000002015B0B62181547D83C563D8B1925B53655A2A8F7FF8B1F7479FB202829B89838200000001FF0001060000000100000100010000000001000000010000010000
 ~~~~
 
 And add an output to 0xFF.. Just for giggles.
