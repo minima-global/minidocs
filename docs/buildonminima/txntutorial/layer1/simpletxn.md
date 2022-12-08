@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+description: Learn how to construct a simple transaction on the Minima blockchain
+keywords: [tutorial, transaction, simple, minima, blockchain]
 ---
 
 # Simple Transaction
