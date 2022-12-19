@@ -16,7 +16,7 @@ You will see your MiniDapps on the Home screen, the latest MiniDapp versions can
 
 :::info Don't have a Google Play account?
 The Android apk can also be downloaded directly from Github [here.](https://github.com/minima-global/Minima/blob/master/jar/minima-0.103.28.apk?raw=true) <br/>
-*Latest version: 103.28, Last updated: 19th November 2022*
+*Latest version: 103.28, Last updated: 19th December 2022*
 :::
 
 ## Setting up your Incentive Account
