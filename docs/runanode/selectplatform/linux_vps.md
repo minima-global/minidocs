@@ -34,7 +34,7 @@ To check which nodes you currently have running, use the command `systemctl list
 
 2. To remove nodes which were installed using our install script, run the uninstall script below (all one line).
 
->```sudo wget -O minima_remove.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_remove.sh && chmod +x minima_remove.sh && sudo ./minima_remove.sh -p 9001 -x```
+>```sudo wget -O minima_remove.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_remove.sh && sudo chmod +x minima_remove.sh && sudo ./minima_remove.sh -p 9001 -x```
 
 <!--- ![VPS_removenodes](/img/runanode/docker_vps_3removeoldnodes.png#width50) --->
 
