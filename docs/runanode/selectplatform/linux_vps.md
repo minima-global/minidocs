@@ -114,7 +114,8 @@ su - minima
 10. Start your node:
 
 :::important SET YOUR PASSWORD
-**Make sure to change the password below from `123` to a secure password using lowercase letters and numbers only of your choice. This will be the password to access your Minidapp Hub.**
+Make sure to change the password below from `123` to a long password using a-z and 0-9 characters only.<br/>
+This will be the password to access your Minidapp Hub.
 :::
 
 >```docker run -d -e minima_mdspassword=123 -e minima_server=true -v ~/minimadocker9001:/home/minima/data -p 9001-9004:9001-9004 --restart unless-stopped --name minima9001 minimaglobal/minima:latest```
@@ -123,7 +124,7 @@ su - minima
 
 - `-d`: daemon mode, Minima will run in the background
 - `-e minima_mdspassword=123` : sets the password for your MiniDapp system to 123. **YOU MUST USE A LONG SECURE PASSWORD USING LOWERCASE LETTERS AND NUMBERS ONLY**
-- `-e minima_server = true` : sets your node type as a server node that receives incoming connections
+- `-e minima_server=true` : sets your node type as a server node that receives incoming connections
 - `-v ~/minimadocker9001:/home/minima/data` : creates a local folder called **minimadocker9001** in your home directory and maps it to the **/home/minima/data** directory in Docker. The **minimadocker9001** folder is where the Minima database and is also where your backups will be stored.
 - `-p 9001-9004:9001-9004` : the port number mapping from your server to the Docker container
 - `--restart unless-stopped` : ensures your container automatically restarts unless you stop it
@@ -279,7 +280,7 @@ docker stop minima9001
 docker rm minima9001
 ```
 
-3. Repeat step 10 from [Start your node](#start-your-node), with a different password.
+3. Repeat step 10 from [Start your node](#start-your-node), with a different password.  **Your password should be long using a-z, 0-9 only.**
 
 :::important
 Deleting the container will not delete the `minimadocker9001` data folder so your coins will be safe during this process.

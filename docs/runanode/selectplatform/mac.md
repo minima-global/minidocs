@@ -32,7 +32,8 @@ Before starting, stop any existing nodes you started manually by typing `quit` i
 5. Copy and paste the following into the Terminal 
 
 :::important SET YOUR PASSWORD
-**Make sure to change the password below from `123` to a secure password using lowercase letters and numbers only of your choice. This will be the password to access your Minidapp Hub.**
+Make sure to change the password below from `123` to a long password using a-z and 0-9 characters only.<br/>
+This will be the password to access your Minidapp Hub.
 :::
 ```
 docker run -d -e minima_mdspassword=123 -e minima_desktop=true -v ~/minimadocker8001:/home/minima/data -p 8001-8004:9001-9004 --restart unless-stopped --name minima8001 minimaglobal/minima:latest
@@ -43,7 +44,7 @@ docker run -d -e minima_mdspassword=123 -e minima_desktop=true -v ~/minimadocker
 
 - `-d`: daemon mode, Minima will run in the background
 - `-e minima_mdspassword=123` : sets the password for your MiniDapp system to 123. **YOU MUST USE A SECURE PASSWORD TO PROTECT YOUR NODE**
-- `-e minima_desktop = true` : sets your node type as a desktop node that does not receive incoming connections 
+- `-e minima_desktop=true` : sets your node type as a desktop node that does not receive incoming connections 
 - `-v ~/minimadocker8001:/home/minima/data` : creates a local folder called **minimadocker8001** in your home directory and maps it to the **/home/minima/data** directory in Docker. The **minimadocker8001** folder is where the Minima database and is also where your backups will be stored.
 - `-p 8001-8004:9001-9004` : the port number mapping from your desktop to the Docker container
 - `--restart unless-stopped` : ensures your container automatically restarts unless you stop it
@@ -191,7 +192,7 @@ To change the password to login to your MiniDapp System (MDS), you must stop and
 
 ![Desktop_dockerremovecontainer](/img/runanode/docker_desktopremovecontainermac.png)
 
-3. Repeat step 5 and 6 from [Start a new Minima node using Docker](#start-a-new-minima-node-using-docker), with a different password.
+3. Repeat step 5 and 6 from [Start a new Minima node using Docker](#start-a-new-minima-node-using-docker), with a different password.  **Your password should be long using a-z, 0-9 only.**
 
 :::important
 Deleting the container will not delete the `minimadocker8001` data folder so your coins will be safe during this process.
