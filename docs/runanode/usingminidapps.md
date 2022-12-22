@@ -34,8 +34,17 @@ Linux Desktop
 -------
 
 ## Installing MiniDapps
+
 1. Download and save the MiniDapps you wish to use from our [MiniDapp site.](https://minidapps.minima.global/)
-2. Click on **Choose File** and select a MiniDapp 
+
+:::info Safari users
+If using Safari, ensure the MiniDapps are not unzipped during the download by changing the setting as follows:
+1. Open Safari 
+2. Click Preferences
+3. Under the **General** tab, uncheck the option **"Open “safe” files after downloading"**
+:::
+
+2. Login to your MiniDapp Hub and click on **Choose File** and select a MiniDapp 
 3. Click **Install** and return to the hub to open the app
 
 ![Windows](/img/buildonminima/minihub.png)

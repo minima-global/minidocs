@@ -118,11 +118,11 @@ If you have not registered, click [here](https://incentive.minima.global/account
 :::note don't see the MiniDapp?
 If you don't have the Incentive Program MiniDapp, download it from the official [MiniDapp website](https://minidapps.minima.global).
 
-If using Safari, you will need to ensure MiniDapps are not unzipped during the download, to prevent this:
+If using Safari, ensure the MiniDapps are not unzipped during the download by changing the setting as follows:
 1. Open Safari 
 2. Click Preferences
-3. Under the General tab, uncheck the option Open “safe” files after downloading
-::: 
+3. Under the **General** tab, uncheck the option **"Open “safe” files after downloading"**
+:::
 
 2. Follow the instructions to login to the Incentive Program website and **copy your Incentive ID**
 
