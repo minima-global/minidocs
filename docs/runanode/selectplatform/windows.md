@@ -138,24 +138,67 @@ If you have not registered, click [here](https://incentive.minima.global/account
 
 ## FAQ 
 
-### How to check your Minima hub password
+### How to check the Status of your node
 You can use the Docker CLI/Terminal to interact with your node, for example to check your status, balance, password, incentive program setup or to create a backup.
+
+1. From the Containers screen, click on **minima9001**, you will see the logs
+2. Click on **CLI** or **Terminal** (depending on the version)
+3. Type `minima` and press Enter, you will see the Minima Terminal appear
+4. Type `status` to see the latest status of your node including version, last block and chain details.
+
+Check `block` and `time`, this is your tip block and the time of that block, `time` should be within a few minutes of the current time.
+
+![Desktop_dockerstatus](/img/runanode/docker_desktopterminalstatusmac.png)
+
+:::warning 
+If the time shown is significantly behind, you should restart your node to resync to the chain. <br/> 
+If you have been offline for a long time, you may need to restore your node from a backup.
+:::
+
+**Other useful commands:**<br/>
+`mds` - find the password for your node<br/>
+`incentivecash` - check your Incentive Program balance<br/>
+`incentivecash uid:` - setup your Incentive Program account by connecting your Incentive ID<br/>
+`help` - show all commands
+
+------
+
+### How to check your MiniDapp System password
+You can use the Docker CLI/Terminal to interact with your node, for example to check your status, balance, password, incentive program setup or to create a backup.
+
+The `mds` command will show details about the MiniDapp System (MDS) including your password and the MiniDapps installed on your node.
 
 1. From the Containers screen, click on **minima9001** to view the logs
 2. Click on **CLI** or **Terminal** (depending on the version)
-
-![Desktop_dockerlogs](/img/runanode/docker_desktopcli.png)
-
 3. Type `minima` and press Enter, you will see the Minima Terminal appear
 4. Type `mds`
 
 ![Desktop_dockerlogs](/img/runanode/docker_desktopterminal.png)
 
-**Other useful commands:**<br/>
-`status` - see the status of your node<br/>
+**Useful commands:**<br/>
+`status` - see the status of your node including version and chain details<br/>
 `incentivecash` - check your Incentive Program balance<br/>
 `incentivecash uid:` - setup your Incentive Program account by connecting your Incentive ID<br/>
 `help` - show all commands
+
+------
+
+### How to change your MiniDapp System password
+
+To change the password to login to your MiniDapp System (MDS), you must stop and remove your **minima9001** container and restart it with a different password. 
+
+1. From the Containers screen, stop the **minima9001** container
+2. Remove the **minima9001** container
+
+![Desktop_dockerremovecontainer](/img/runanode/docker_desktopremovecontainer.png)
+
+3. Repeat step 5 and 6 from [Start a new Minima node using Docker](#start-a-new-minima-node-using-docker), with a different password.
+
+:::important
+Deleting the container will not delete the `minimadocker9001` data folder so your coins will be safe during this process.
+
+When starting the new container, you must use the same `minimadocker9001` folder to ensure your coins and data are restored.
+:::
 
 ------
 

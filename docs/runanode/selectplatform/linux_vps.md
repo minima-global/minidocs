@@ -226,8 +226,24 @@ Help: `docker --help`<br/>
 
 ------
 
-### How to check your Minima hub password
+### How to check the Status of your node
+To check the status of your node, you can either use the Minima Terminal via Docker (shown above) or log on to your MiniDapp hub and open the Minima Terminal minidapp.
+
+With the Minima Terminal open, run the `status` command to see the latest status of your node including version, last block and chain details.
+
+![VPS_dockerterminal](/img/runanode/docker_vps_terminalstatus.png)
+
+:::warning 
+If the time shown is significantly behind, you should restart your node to resync to the chain. <br/> 
+If you have been offline for a long time, you may need to restore your node from a backup.
+:::
+
+------
+
+### How to check your MiniDapp System password
 You can use the Docker CLI/Terminal to interact with your node, for example to check your status, balance, password, incentive program setup or to create a backup.
+
+The `mds` command will show details about the MiniDapp System (MDS) including your password and the MiniDapps installed on your node.
 
 1. Log on to your server as the minima user (if not already logged in)
 2. Start the Minima Terminal by running the command
@@ -243,19 +259,33 @@ docker exec -it minima9001 minima
 
 
 **Useful commands:**<br/>
-`status` - see the status of your node<br/>
+`status` - see the status of your node including version and chain details<br/>
 `incentivecash` - check your Incentive Program balance<br/>
 `incentivecash uid:` - setup your Incentive Program account by connecting your Incentive ID<br/>
 `help` - show all commands
 
 ------
 
-### How to check the status of your node
-To check the status of your node, you can either use the Minima Terminal via Docker (shown above) or log on to your MiniDapp hub and open the Minima Terminal minidapp.
+### How to change your MiniDapp System password
 
-With the Minima Terminal open, run the `status` command to see the latest status of your node including version, last block and chain details.
+To change the password to login to your MiniDapp System (MDS), you must stop and remove your **minima9001** container and restart it with a different password. 
 
-![VPS_dockerterminal](/img/runanode/docker_vps_terminalstatus.png)
+1. Stop the **minima9001** container
+```
+docker stop minima9001
+```
+2. Remove the **minima9001** container
+```
+docker rm minima9001
+```
+
+3. Repeat step 10 from [Start your node](#start-your-node), with a different password.
+
+:::important
+Deleting the container will not delete the `minimadocker9001` data folder so your coins will be safe during this process.
+
+When starting the new container, you must use the same `minimadocker9001` folder to ensure your coins and data are restored.
+:::
 
 ------
 

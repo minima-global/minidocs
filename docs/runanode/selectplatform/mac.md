@@ -87,8 +87,6 @@ Continue to access your MiniDapp hub and setup your Incentive Program account to
 
 ## Access your MiniDapp hub
 
-
-
 The first time accessing your MiniDapp hub, you may need to pass through the security warning - see below - as the MiniDapp system currently uses self-signed certificates.
 
 1. In Safari, go to **https://127.0.0.1:8004/**, click on **Show Details** then **Visit this website**
@@ -112,9 +110,18 @@ If you have registered for the Incentive Program you must connect your Incentive
 
 If you have not registered, click [here](https://incentive.minima.global/account/register) to sign up.
 
-1. Open the Incentive Program minidapp
+1. Open the Incentive Program MiniDapp
 
 ![mds_IP](/img/runanode/IP_minidapp.png#width50)
+
+:::note don't see the MiniDapp?
+If you don't have the Incentive Program MiniDapp, download it from the official [MiniDapp website](https://minidapps.minima.global).
+
+If using Safari, you will need to ensure MiniDapps are not unzipped during the download, to prevent this:
+1. Open Safari 
+2. Click Preferences
+3. Under the General tab, uncheck the option Open “safe” files after downloading
+::: 
 
 2. Follow the instructions to login to the Incentive Program website and **copy your Incentive ID**
 
@@ -128,27 +135,71 @@ If you have not registered, click [here](https://incentive.minima.global/account
 
 ## FAQ 
 
-### How to check your Minima hub password
+### How to check the Status of your node
 You can use the Docker CLI/Terminal to interact with your node, for example to check your status, balance, password, incentive program setup or to create a backup.
 
-1. From the Containers screen, click on **minima8001** to view the logs
+The `status` command will show details of your node including version, last block and chain details.
+
+1. From the Containers screen, click on **minima8001**, you will see the logs
 2. Click on **CLI** or **Terminal** (depending on the version)
-
-![Desktop_dockerlogs](/img/runanode/docker_desktopcli.png)
-
 3. Type `minima` and press Enter, you will see the Minima Terminal appear
-4. Type `mds`
+4. Type `status` and press Enter
 
-![Desktop_dockerlogs](/img/runanode/docker_desktopterminal.png)
+Check `block` and `time`, this is your tip block and the time of that block, `time` should be within a few minutes of the current time.
 
+![Desktop_dockerlogs](/img/runanode/docker_desktopterminalstatusmac.png)
+
+:::warning 
+If the time shown is significantly behind, you should restart your node to resync to the chain. <br/> 
+If you have been offline for a long time, you may need to restore your node from a backup.
+:::
 
 **Other useful commands:**<br/>
-`status` - see the status of your node<br/>
+`mds` - find the password for your node<br/>
 `incentivecash` - check your Incentive Program balance<br/>
 `incentivecash uid:` - setup your Incentive Program account by connecting your Incentive ID<br/>
 `help` - show all commands
 
 ------
+
+### How to check your MiniDapp System password
+You can use the Docker CLI/Terminal to interact with your node, for example to check your status, balance, password, incentive program setup or to create a backup.
+
+The `mds` command will show details about the MiniDapp System (MDS) including your password and the MiniDapps installed on your node.
+
+1. From the Containers screen, click on **minima8001** to view the logs
+2. Click on **CLI** or **Terminal** (depending on the version)
+3. Type `minima` and press Enter, you will see the Minima Terminal appear
+4. Type `mds`
+
+![Desktop_dockerlogs](/img/runanode/docker_desktopterminalmdsmac.png)
+
+**Useful commands:**<br/>
+`status` - see the status of your node including version and chain details<br/>
+`incentivecash` - check your Incentive Program balance<br/>
+`incentivecash uid:` - setup your Incentive Program account by connecting your Incentive ID<br/>
+`help` - show all commands
+
+------
+
+### How to change your MiniDapp System password
+
+To change the password to login to your MiniDapp System (MDS), you must stop and remove your **minima9001** container and restart it with a different password. 
+
+1. From the Containers screen, stop the **minima8001** container
+2. Remove the **minima8001** container
+
+![Desktop_dockerremovecontainer](/img/runanode/docker_desktopremovecontainermac.png)
+
+3. Repeat step 5 and 6 from [Start a new Minima node using Docker](#start-a-new-minima-node-using-docker), with a different password.
+
+:::important
+Deleting the container will not delete the `minimadocker8001` data folder so your coins will be safe during this process.
+
+When starting the new container, you must use the same `minimadocker8001` folder to ensure your coins and data are restored.
+:::
+
+-------
 
 ### How to start a second node in Docker
 To run a second node in Docker, you can create another container using different port numbers, file path and name. 

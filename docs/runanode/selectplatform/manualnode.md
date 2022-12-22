@@ -67,6 +67,29 @@ You can type `status` to show the status of your Minima node, or `help` to show 
 
 ---------
 
+### How to check the Status of your node
+You can use the Terminal to interact with your node, for example to check your node version, status, balance, password, Incentive Program setup or to create a backup.
+
+The `status` command will show details of your node including version, last block and chain details.
+
+1. Type `status` into the command line/Terminal.
+2. Check `block` and `time`, this is your tip block and the time of that block, `time` should be within a few minutes of the current time.
+
+![Desktop_manualstatus](/img/runanode/docker_vps_terminalstatus.png)
+
+:::warning 
+If the time shown is significantly behind, you should restart your node to resync to the chain. <br/> 
+If you have been offline for a long time, you may need to restore your node from a backup.
+:::
+
+**Other useful commands:**<br/>
+`mds` - find the password for your node<br/>
+`incentivecash` - check your Incentive Program balance<br/>
+`incentivecash uid:` - setup your Incentive Program account by connecting your Incentive ID<br/>
+`help` - show all commands
+
+------
+
 ## Access your MiniDapp Hub
 
 The first time accessing your MiniDapp hub, you may need to pass through the security warning - see below - as the MiniDapp system currently uses self-signed certificates.
