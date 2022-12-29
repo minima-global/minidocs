@@ -34,14 +34,15 @@ Our values are our moral compass that guide how we interact with others in our c
 We’re building a future where everyone can freely connect and prosper — [join us](https://linktr.ee/minima_global?utm_source=linktree_profile_share&ltsid=f5b69262-8b95-4bc2-abc9-abf28ce9f92b). 
 
 
-
 ## What are we working towards?
 
-**1 million validating and constructing nodes.** We do the minimum amount of work required independently, to secure the chain with the maximum amount of work collectively — so the scale of members running a node matters. 
+For every mobile and Internet of Things (IoT) device to run a Minima node - creating **a truly decentralized network** that **no one controls and everyone owns** - where value can be exchanged without third parties, apps can be built without restrictions and people can connect without limits. 
 
-For Mainnet launch, 1 million nodes is a number we believe is robust enough to handle real-world value and information to be exchanged. 
+Freedom is possible and together we can achieve it. 
 
-You can help achieve this and **earn Minima** by [running a node](https://incentive.minima.global/account/register) and [inviting your friends](https://docs.minima.global/docs/earnrewards/minimainviteprogram) to do the same.
+**Ready to join the evolution? ** <br/>
+[Running a node](/docs/runanode/get_started_in_3_steps) could not be easier, just [download the app](https://play.google.com/store/apps/details?id=com.minima.android&hl=en&gl=US), activate Minima and help create the future. <br/>
+<!-- Once your node is set up, see [Become a Minimalist](/docs/about/becomeaminimalist) to learn how to get more involved. -->
 
 ## Learn More
 
