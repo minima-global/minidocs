@@ -28,8 +28,9 @@ Running a Minima node couldn't be easier; to start your node, select your platfo
 
 :::info Existing incentive program user?
 If you are an existing Incentive Program user, you must 
-1. Connect your Incentive ID to your node
-2. Verify your account once you receive the verification link sent to the email address you registered with. 
+1. Be on v103.28 (1.0.28 for Android) or above. To check your version, run the `status` command on your node.
+2. Connect your Incentive ID to your node
+3. Verify your account once you receive the verification link sent to the email address you registered with. 
 
 Failure to do so will result in you being unable to collect your $MINIMA coins at Mainnet.
 :::
