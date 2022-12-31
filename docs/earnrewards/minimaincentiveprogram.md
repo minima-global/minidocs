@@ -4,15 +4,26 @@ sidebar_position: 1
 
 # Incentive Program
 
+:::info THE INCENTIVE PROGRAM IS NOW CLOSED
+The Incentive Rewards Program is now closed to new users.
+
+Existing users will continue to earn, however all Rewards due for 2023 will be received in March (prior to Token distribution) instead of daily, provided you continue to run your node.
+:::
+
 ## What is the Minima Incentive Program?
 The Incentive Program is designed to reward you for installing and running a Minima node.
 You will receive one Reward every day your node pings us to let us know it is connected.
 
 ## How do I get involved?
-[Create your Incentive Program Account today here.](https://incentivecash.minima.global/)
+The Incentive Reward Program is now closed to new users, however you can still [run a node](/docs/runanode/get_started) to use the Minima blockchain and decentralized applications.
+<!--- [Create your Incentive Program Account today here.](https://incentivecash.minima.global/) -->
 
 ## How many Rewards can I earn?
-You will earn 1 x Minima reward each day. These rewards will be added to your balance daily. You can also earn rewards by finding bugs as a tester, participating in one of the test cycles. Let one of the team know in Discord if this is of interest.
+You will earn 1 x Minima reward each day. 
+:::note from january 2023
+From January 2023, Rewards will no longer be paid daily. Instead, all Rewards for 2023 will be paid in March before Token distribution, provided you continue to run your node.
+:::
+<!-- You will earn 1 x Minima reward each day. These rewards will be added to your balance daily. You can also earn rewards by finding bugs as a tester, participating in one of the test cycles. Let one of the team know in Discord if this is of interest. -->
 
 ## Why is Minima offering this?
 As we test and improve Minima ahead of our Mainnet launch, your participation is precious to us. Together, we can collaboratively:

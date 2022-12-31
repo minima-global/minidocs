@@ -4,6 +4,12 @@ sidebar_position: 2
 
 # Invite Program
 
+:::info THE INCENTIVE INVITE PROGRAM IS NOW CLOSED
+The Incentive Rewards Program is now closed to new users.
+
+Existing users will continue to earn, however all Rewards due for 2023 will be received in March (prior to Token distribution) instead of daily, provided you continue to run your node.
+:::
+
 ## What is the Minima Invite Program?
 The Minima Invite Program is designed to reward all Minima node runners that are registered with the Incentive Reward Program, for sharing us with your networks, encouraging your contacts to install and run a node and join the Minima Incentive Reward Program.
 

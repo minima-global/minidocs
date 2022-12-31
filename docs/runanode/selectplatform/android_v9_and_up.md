@@ -8,6 +8,7 @@ sidebar_position: 1
 
 1. Uninstall any previous versions of the Minima App 
 2. Install the Minima App on your Android device from the [Google Play store](https://play.google.com/store/apps/details?id=com.minima.android&hl=en&gl=US)
+3. Set your Google Play store settings to enable [auto-update](https://support.google.com/googleplay/answer/113412?hl=en) for the Minima app. 
 3. Open the Minima App and allow the battery settings for Minima to run in the background
 
 **Congratulations - your node is now installed & running!**
@@ -23,9 +24,15 @@ The Android apk can also be downloaded directly from Github [here.](https://gith
 
 After installing the app, if you have registered for the [Incentive Program](https://incentive.minima.global/account/register), you must connect your Incentive ID to your node to receive daily Rewards.
 
-:::info Previous users
-If you had an account prior to 6th December 2021, you must reset your password [here.](https://incentive.minima.global/account/forgot-password) Please check your junk mail for the reset password email.
+:::info THE INCENTIVE PROGRAM IS NOW CLOSED
+The Incentive Rewards Program is now closed to new users.
+
+Existing users will continue to earn, however all Rewards due for 2023 will be received in March (prior to Token distribution) instead of daily, provided you continue to run your node.
 :::
+
+<!-- :::info Previous users
+If you had an account prior to 6th December 2021, you must reset your password [here.](https://incentive.minima.global/account/forgot-password) Please check your junk mail for the reset password email.
+::: -->
 
 1. From the Home screen in the Minima app, open the **Incentive Program** MiniDapp
 2. Click on the 3 dots in the top right and select **Open in Browser**
@@ -51,7 +58,7 @@ You can also check your Reward balance from the Terminal MiniDapp using the `inc
 ![Console](/img/runanode/android_4.png#width50)
 
 :::tip Rewards
-For every day your node is connected to the network, you will receive 1 Reward within the next 24 hours.
+For every day your node is connected to the network, you will receive 1 Reward.
 :::
 
 ## Next Steps

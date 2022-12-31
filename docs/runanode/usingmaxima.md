@@ -9,7 +9,7 @@ Maxima is an information transport layer running on top of Minima.
 To learn more about Maxima, please see the [About Maxima](/docs/learn/maxima/maximaintro) section.
 
 ## Using Maxima via MaxSolo
-Before using the MaxSolo MiniDapp to chat with friends, you must be [running a Minima node.](/docs/runanode/get_started_in_3_steps)
+Before using the MaxSolo MiniDapp to chat with friends, you must be [running a Minima node.](/docs/runanode/get_started)
 
 The latest version of MaxSolo can be downloaded from our [MiniDapps site](https://minidapps.minima.global) and installed on your node.  
 

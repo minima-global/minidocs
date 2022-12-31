@@ -41,7 +41,7 @@ For every mobile and Internet of Things (IoT) device to run a Minima node - crea
 Freedom is possible and together we can achieve it. 
 
 **Ready to join the evolution? ** <br/>
-[Running a node](/docs/runanode/get_started_in_3_steps) could not be easier, just [download the app](https://play.google.com/store/apps/details?id=com.minima.android&hl=en&gl=US), activate Minima and help create the future. <br/>
+[Running a node](/docs/runanode/get_started) could not be easier, just [download the app](https://play.google.com/store/apps/details?id=com.minima.android&hl=en&gl=US), activate Minima and help create the future. <br/>
 <!-- Once your node is set up, see [Become a Minimalist](/docs/about/becomeaminimalist) to learn how to get more involved. -->
 
 ## Learn More

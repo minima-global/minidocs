@@ -39,11 +39,11 @@ You may also be prompted to allow firewall settings.
 ![Windows_dockerstartup](/img/runanode/docker_desktopstartup.png#width50)
 
 
-3. Click **Apply & Restart**
+4. Click **Apply & Restart**
 
-4. Open the Windows Command Prompt (Go to Windows **Start**, then type **command prompt** to find and open the Command Prompt window)
+5. Open the Windows Command Prompt (Go to Windows **Start**, then type **command prompt** to find and open the Command Prompt window)
 
-5. Copy and paste the following into the Command Prompt window 
+6. Copy and paste the following into the Command Prompt window 
 
 :::important CHOOSE YOUR FILE PATH AND PASSWORD
 **File path:** Insert the name of your home folder where it says **`INSERTUSERNAME`** below e.g. C:\Users\john\minimadocker9001
@@ -56,7 +56,7 @@ This will be the password to access your Minidapp Hub.
 docker run -d -e minima_mdspassword=123 -e minima_desktop=true -v C:\Users\INSERTUSERNAME\minimadocker9001:/home/minima/data -p 9001-9004:9001-9004 --restart unless-stopped --name minima9001 minimaglobal/minima:latest
 ```
 
-6. Press the **Enter** key to run the command and start your node. 
+7. Press the **Enter** key to run the command and start your node. 
 
 :::note What do all the parameters mean?
 
@@ -70,11 +70,11 @@ docker run -d -e minima_mdspassword=123 -e minima_desktop=true -v C:\Users\INSER
 - `minimaglobal/minima:latest` : specifies where to pull the Minima code from
 :::
 
-7. You will notice a container in Docker called **minima9001**, this is running your Minima node.
+8. You will notice a container in Docker called **minima9001**, this is running your Minima node.
 
 ![Windows_dockercontainer](/img/runanode/docker_desktopcontainerwindows.png)
 
-8. Click on **minima9001** to check the logs and ensure your node has started up
+9. Click on **minima9001** to check the logs and ensure your node has started up
 
 ![Windows_dockerlogs](/img/runanode/docker_desktoplogs.png)
 
@@ -124,7 +124,13 @@ You will see your MiniDapp System (MDS) login page.
 
 If you have registered for the Incentive Program you must connect your Incentive ID to your node to start receiving daily Rewards.
 
-If you have not registered, click [here](https://incentive.minima.global/account/register) to sign up.
+:::info THE INCENTIVE PROGRAM IS NOW CLOSED
+The Incentive Rewards Program is now closed to new users.
+
+Existing users will continue to earn, however all Rewards due for 2023 will be received in March (prior to Token distribution) instead of daily, provided you continue to run your node.
+:::
+
+<!-- If you have not registered, click [here](https://incentive.minima.global/account/register) to sign up. -->
 
 1. Open the Incentive Program minidapp
 
@@ -196,7 +202,7 @@ To change the password to login to your MiniDapp System (MDS), you must stop and
 
 ![Desktop_dockerremovecontainer](/img/runanode/docker_desktopremovecontainer.png)
 
-3. Repeat step 5 and 6 from [Start a new Minima node using Docker](#start-a-new-minima-node-using-docker), with a different password. **Your password should be long using a-z, 0-9 only.**
+3. Repeat step 6 and 7 from [Start a new Minima node using Docker](#start-a-new-minima-node-using-docker), with a different password. **Your password should be long using a-z, 0-9 only.**
 
 :::important
 Deleting the container will not delete the `minimadocker9001` data folder so your coins will be safe during this process.

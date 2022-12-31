@@ -183,7 +183,13 @@ You will see your MiniDapp System (MDS) login page.
 
 If you have registered for the Incentive Program you must connect your Incentive ID to your node to start receiving daily Rewards.
 
-If you have not registered, click [here](https://incentive.minima.global/account/register) to sign up.
+:::info THE INCENTIVE PROGRAM IS NOW CLOSED
+The Incentive Rewards Program is now closed to new users.
+
+Existing users will continue to earn, however all Rewards due for 2023 will be received in March (prior to Token distribution) instead of daily, provided you continue to run your node.
+:::
+
+<!-- If you have not registered, click [here](https://incentive.minima.global/account/register) to sign up. -->
 
 1. Open the Incentive Program minidapp
 

@@ -66,7 +66,7 @@ const config = {
             position: "left",
           },
           {
-            to: "docs/runanode/get_started_in_3_steps",
+            to: "docs/runanode/get_started",
             label: "Run a Node",
             position: "left",
           },
