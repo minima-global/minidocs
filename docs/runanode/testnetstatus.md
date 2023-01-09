@@ -27,6 +27,11 @@ To check the version of Minima you are running, check the status of your node.
 For help , select your platform of choice from [Get Started](/docs/runanode/get_started) and see the section "How to check the Status of your node".
 :::
 
+:::important Seed Phrase and Backups
+After mainnet, you will need to know your 24 word seed phrase and take frequent backups to ensure your funds remain safe. 
+Your seed phrase can be found from the **Backup/Restore** page (click on **Archive**) on Android, or using the `Vault` command from the Terminal MiniDapp. 
+:::
+
 ### ...the Incentive Program
 The Incentive Rewards Program is now **closed to new users.**
 

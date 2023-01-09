@@ -81,6 +81,11 @@ const config = {
             position: "left",
           },
           {
+            to: "docs/runanode/testnetstatus/",
+            label: "Testnet Status",
+            position: "left",
+          },
+          {
             href: "https://www.minima.global/our-community",
             label: "Community",
             position: "right",
