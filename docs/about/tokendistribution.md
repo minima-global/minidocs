@@ -33,7 +33,6 @@ The remaining 35% of public allocation is reserved for community circulation thr
 In the event that we experience greater than expected organic growth resulting in us reaching our target minimum node runner goal with allocations in-hand, any remaining tokens will be added to and distributed through our public sale channels. 
 
 We are running a range of incentive initiatives for our community. Our approach is multi-facetted aimed at reaching our goal of a secure, decentralized, censorship resistant protocol, and an active, engaged ecosystem. 
-![Minima](/img/token/tokenDistributionCharts2Lm.svg#gh-light-mode-only)![Minima](/img/token/tokenDistributionCharts2Dm.svg#gh-dark-mode-only)
 
 ## Incentive Program 
 

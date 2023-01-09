@@ -20,6 +20,26 @@ The Android apk can also be downloaded directly from Github [here.](https://gith
 *Latest version: 103.28, Last updated: 19th December 2022*
 :::
 
+
+## How to check the Status of your node
+
+From the **Health** page in the app, you can:
+
+1. Check your **version** number
+2. Check your latest block time (**Time**) and latest block number (**Block**), this is your tip block and the time of that block, **Time** should be within a few minutes of the current time.
+
+:::info checking your node is in sync
+Having a recent block time is not a guarantee that you are on the right chain. <br/>
+Consider cross checking your latest block with another node or ensuring the 'Chain' colour of your Maxima Contacts on the **Contacts** page are green.
+:::
+
+:::warning 
+If the time shown is significantly behind, you should restart your node to resync to the chain. <br/> 
+If you have been offline for a long time, you may need to restore your node from a backup.
+:::
+
+3. Check your node's full status by selecting **Full Status** from the menu in the top right.
+
 ## Setting up your Incentive Account
 
 After installing the app, if you have registered for the [Incentive Program](https://incentive.minima.global/account/register), you must connect your Incentive ID to your node to receive daily Rewards.

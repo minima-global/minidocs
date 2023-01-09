@@ -156,6 +156,11 @@ Check `block` and `time`, this is your tip block and the time of that block, `ti
 
 ![Desktop_dockerlogs](/img/runanode/docker_desktopterminalstatusmac.png)
 
+:::info checking your node is in sync
+Having a recent block time is not a guarantee that you are on the right chain. <br/>
+Consider cross checking your latest block with another node or checking the `samechain` response of your Maxima Contacts by running the `maxcontacts` command.
+:::
+
 :::warning 
 If the time shown is significantly behind, you should restart your node to resync to the chain. <br/> 
 If you have been offline for a long time, you may need to restore your node from a backup.
