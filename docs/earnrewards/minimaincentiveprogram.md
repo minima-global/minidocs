@@ -42,7 +42,13 @@ Yes, providing you have the correct device to install and run a MInima node.
 
 ## How many nodes can I connect to my Incentive Reward account?
 
-You can connect your Incentive ID to as many nodes as you like (great for resilience!), but you will only be rewarded for one node.
+You should have only one node running with your Incentive ID connected to it. 
+
+Ensure the node you have your Incentive ID connected to is the one you want to receive your Rewards to at Mainnet.
+
+If you have been running multiple nodes, decide which node you wish to receive your coins to and connect your ID to that node.
+
+Attempting to connect the same Incentive ID to multiple nodes may cause confusion when receiving your coins! 
 
 ## How many Incentive Reward accounts can I have?
 

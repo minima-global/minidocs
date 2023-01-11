@@ -78,25 +78,25 @@ There will be 4 tranches at different prices, the first and earliest tranche is 
 - Existing Incentive Program members only
 - 30% Discount
 - 10 million (10,000,000) coins available
-- Min purchase size to be confirmed
+- Min purchase size $150
 - Max purchase size $25,000
 
 **Tranche 2:**
 - 20% Discount
 - 10 million (10,000,000) coins available
-- Min purchase size to be confirmed
+- Min purchase size $150
 - Max purchase size $100,000
 
 **Tranche 3:** 
 - 10% Discount
 - 20 million (20,000,000) coins available
-- Min purchase size to be confirmed
+- Min purchase size $150
 - Max purchase size $100,000
 
 **Tranche 4:**
 - 0% Discount
 - 20 million (20,000,000) coins available
-- Min purchase size to be confirmed
+- Min purchase size $150
 - Max purchase size $100,000
 
 
