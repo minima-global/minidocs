@@ -29,7 +29,7 @@ For help , select your platform of choice from [Get Started](/docs/runanode/get_
 
 :::important Seed Phrase and Backups
 After Mainnet, you will need to know your 24 word seed phrase and take frequent backups to ensure your funds remain safe. 
-Your seed phrase can be found from the **Backup/Restore** page (click on **Archive**) on Android, or using the `Vault` command from the Terminal MiniDapp. 
+Your seed phrase can be found from the **Backup/Restore** page (click on **Archive Node**) on Android, or using the `Vault` command from the Terminal MiniDapp. 
 :::
 
 ### ...the Incentive Program
