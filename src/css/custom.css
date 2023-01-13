@@ -8,7 +8,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #5A94FF;
+  --ifm-color-primary: #FF6B4E;
   --ifm-code-font-size: 95%;
   --ifm-navbar-background-color: #F9F9FA;
   --ifm-heading-color: #16181C;
@@ -29,6 +29,7 @@
   --ifm-card-background-color: #F4F4F5; 
   --ifm-spacing-horizontal: 0.5rem;
   --ifm-spacing-vertical: 1rem;
+  --ifm-card-border-radius: 0px;
 
 /* Search */
   --ifm-input-border-color: #BDBDC4;
@@ -36,7 +37,7 @@
   --ifm-input-text-color: var(--ifm-navbar-link-color);
 
 /* Boxes */
-  --ifm-input-minima-border-color: #5A94FF;
+  --ifm-input-minima-border-color: #FF6B4E;
   --ifm-input-minima-bacground-color: rgba(90, 148, 255, 0.1);
 
 /* Transition */
@@ -45,7 +46,7 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #5A94FF;
+  --ifm-color-primary: #FF6B4E;
   --ifm-navbar-background-color: #25272B;
 
 /* Typography */
@@ -259,4 +260,10 @@ article{
 
 .theme-edit-this-page{
   display: none;
+}
+
+
+.navbar__title{
+  font-size: 16px;
+  font-weight: 700;
 }
