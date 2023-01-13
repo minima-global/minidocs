@@ -8,10 +8,10 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #FF6B4E;
+  --ifm-color-primary: #FF512F;
   --ifm-code-font-size: 95%;
   --ifm-navbar-background-color: #F9F9FA;
-  --ifm-heading-color: #16181C;
+  --ifm-heading-color: #08090B;
 
 /* Typography. */
   --ifm-heading-font-family: 'Manrope', sans-serif;
@@ -20,10 +20,10 @@
 
 /* Header intro background */
   --ifm-hero-background-min-color: #FFFFFF;
-  --ifm-hero-text-color: #16181C;
+  --ifm-hero-text-color: #08090B;
 
 /* Footer */
-  --ifm-footer-background-color: #25272B;
+  --ifm-footer-background-color: #17191C;
 
 /* Card */
   --ifm-card-background-color: #F4F4F5; 
@@ -37,7 +37,7 @@
   --ifm-input-text-color: var(--ifm-navbar-link-color);
 
 /* Boxes */
-  --ifm-input-minima-border-color: #FF6B4E;
+  --ifm-input-minima-border-color: #FF512F;
   --ifm-input-minima-bacground-color: rgba(90, 148, 255, 0.1);
 
 /* Transition */
@@ -46,15 +46,15 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #FF6B4E;
-  --ifm-navbar-background-color: #25272B;
+  --ifm-color-primary: #FF512F;
+  --ifm-navbar-background-color: #17191C;
 
 /* Typography */
   --ifm-heading-color: #ffffff;
   --ifm-hero-text-color: #ffffff;
 
 /* Card */
-  --ifm-card-background-color: #25272B;
+  --ifm-card-background-color: #17191C;
   --aa-muted-color-rgb: rgb(255, 255, 256) !important;
   --ifm-input-text-color: #FFFFFF;
 
@@ -102,9 +102,16 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
   margin-left: 2.3rem;
 }
 
+@media screen and (max-width: 1250px) {
+  .navbar__items--right > .navbar__link{
+    display: none;
+  }
+}
+
+
 /* Footer styling */
 .footer--dark {
-  --ifm-footer-background-color: #25272B;
+  --ifm-footer-background-color: #17191C;
 }
 .footer__bottom {
   text-align: left;
