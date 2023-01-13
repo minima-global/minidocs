@@ -8,7 +8,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #FF512F;
+  --ifm-color-primary: #317aff;
   --ifm-code-font-size: 95%;
   --ifm-navbar-background-color: #F9F9FA;
   --ifm-heading-color: #08090B;
@@ -41,7 +41,7 @@
   --ifm-input-text-color: var(--ifm-navbar-link-color);
 
 /* Boxes */
-  --ifm-input-minima-border-color: #FF512F;
+  --ifm-input-minima-border-color: #317aff;
   --ifm-input-minima-bacground-color: rgba(90, 148, 255, 0.1);
 
 /* Transition */
@@ -54,7 +54,7 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #FF512F;
+  --ifm-color-primary: #317aff;
   --ifm-navbar-background-color: #17191C;
 
 /* Typography */
@@ -73,7 +73,7 @@
   --ifm-input-minima-background-color: rgba(90, 148, 255, 0.4);
 
 /* Transition */
-  transition: all 0.3s ease-out;
+  transition: all 0s ease-out;
 }
 
 /* Boxes */
@@ -106,6 +106,7 @@ h2{
 
 .navbar__logo {
   margin-left: 0.5rem;
+  height: 3rem;
 }
 
 /* .text--truncate {
@@ -179,7 +180,7 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
   animation: .4s .15s backwards a;
   margin-top: 0;
   padding: 0.8rem 2rem 1rem 2rem;
-  transition-duration: .2s;
+  transition-duration: 0s;
   transition-property: all;
   min-height: 100%;
   height: 100%;
