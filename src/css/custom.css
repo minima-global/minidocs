@@ -22,6 +22,10 @@
   --ifm-hero-background-min-color: #FFFFFF;
   --ifm-hero-text-color: #08090B;
 
+/* Main body */
+
+  --ifm-background-color: #FFFFFF;
+
 /* Footer */
   --ifm-footer-background-color: #17191C;
 
@@ -44,6 +48,10 @@
   transition: all 0.3s ease-out;
 }
 
+.mainWrapper_node_modules-\@docusaurus-theme-classic-lib-theme-Layout-styles-module {
+  background: var(--ifm-background-color);
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #FF512F;
@@ -53,13 +61,16 @@
   --ifm-heading-color: #ffffff;
   --ifm-hero-text-color: #ffffff;
 
+/* Main body */
+  --ifm-background-color: #08090B;
+  
 /* Card */
   --ifm-card-background-color: #17191C;
   --aa-muted-color-rgb: rgb(255, 255, 256) !important;
   --ifm-input-text-color: #FFFFFF;
 
 /* Boxes */
-  --ifm-input-minima-bacground-color: rgba(90, 148, 255, 0.4);
+  --ifm-input-minima-background-color: rgba(90, 148, 255, 0.4);
 
 /* Transition */
   transition: all 0.3s ease-out;
@@ -92,7 +103,7 @@ h1{
 h2{
   font-size: 1.8rem;
 }
-
+/* #17191C */
 /* Header */
 .navbar__logo {
   margin-left: 0.5rem;
@@ -131,6 +142,14 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
   display: none;
 }
 
+/* Typography */
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+
 /* Content innner page margin left */
 
 /* Border around swith mode */
@@ -163,7 +182,8 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
   height: 100%;
 }
 .card:hover{
-  -webkit-transform:translateY(-5px);transform:translateY(-5px)
+  -webkit-transform:translateY(-5px);transform:translateY(-5px);
+  background-color: #282B2E;
 }
 
 .row .col.col--4 {
@@ -173,7 +193,7 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
 .card__body {
   padding-top: 0rem;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 /* Search  */
