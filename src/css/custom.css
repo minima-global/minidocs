@@ -48,7 +48,7 @@
   transition: all 0.3s ease-out;
 }
 
-.mainWrapper_node_modules-\@docusaurus-theme-classic-lib-theme-Layout-styles-module {
+.main-wrapper {
   background: var(--ifm-background-color);
 }
 
@@ -103,10 +103,13 @@ h1{
 h2{
   font-size: 1.8rem;
 }
-/* #17191C */
-/* Header */
+
 .navbar__logo {
   margin-left: 0.5rem;
+}
+
+.text--truncate {
+  display: none;
 }
 
 div.navbar__inner > div:nth-child(1) > a:nth-child(3){
