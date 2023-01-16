@@ -54,6 +54,7 @@ const config = {
         logo: {
           alt: "Minima",
           src: "img/logo.svg",
+          srcDark: "img/logo_dark.svg",
         },
         items: [
           // { to: "docs/about/vision", 

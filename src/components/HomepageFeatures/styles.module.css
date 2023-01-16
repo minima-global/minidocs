@@ -11,8 +11,8 @@
 }
 
 .card__header__min p {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .card__header__min:hover  h3 {

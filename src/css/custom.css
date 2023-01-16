@@ -8,10 +8,10 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #5A94FF;
+  --ifm-color-primary: #317aff;
   --ifm-code-font-size: 95%;
   --ifm-navbar-background-color: #F9F9FA;
-  --ifm-heading-color: #16181C;
+  --ifm-heading-color: #08090B;
 
 /* Typography. */
   --ifm-heading-font-family: 'Manrope', sans-serif;
@@ -20,15 +20,20 @@
 
 /* Header intro background */
   --ifm-hero-background-min-color: #FFFFFF;
-  --ifm-hero-text-color: #16181C;
+  --ifm-hero-text-color: #08090B;
+
+/* Main body */
+
+  --ifm-background-color: #FFFFFF;
 
 /* Footer */
-  --ifm-footer-background-color: #25272B;
+  --ifm-footer-background-color: #17191C;
 
 /* Card */
   --ifm-card-background-color: #F4F4F5; 
   --ifm-spacing-horizontal: 0.5rem;
   --ifm-spacing-vertical: 1rem;
+  --ifm-card-border-radius: 0px;
 
 /* Search */
   --ifm-input-border-color: #BDBDC4;
@@ -36,32 +41,39 @@
   --ifm-input-text-color: var(--ifm-navbar-link-color);
 
 /* Boxes */
-  --ifm-input-minima-border-color: #5A94FF;
+  --ifm-input-minima-border-color: #317aff;
   --ifm-input-minima-bacground-color: rgba(90, 148, 255, 0.1);
 
 /* Transition */
   transition: all 0.3s ease-out;
 }
 
+.main-wrapper {
+  background: var(--ifm-background-color);
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #5A94FF;
-  --ifm-navbar-background-color: #25272B;
+  --ifm-color-primary: #317aff;
+  --ifm-navbar-background-color: #17191C;
 
 /* Typography */
   --ifm-heading-color: #ffffff;
   --ifm-hero-text-color: #ffffff;
 
+/* Main body */
+  --ifm-background-color: #08090B;
+  
 /* Card */
-  --ifm-card-background-color: #25272B;
+  --ifm-card-background-color: #17191C;
   --aa-muted-color-rgb: rgb(255, 255, 256) !important;
   --ifm-input-text-color: #FFFFFF;
 
 /* Boxes */
-  --ifm-input-minima-bacground-color: rgba(90, 148, 255, 0.4);
+  --ifm-input-minima-background-color: rgba(90, 148, 255, 0.4);
 
 /* Transition */
-  transition: all 0.3s ease-out;
+  transition: all 0s ease-out;
 }
 
 /* Boxes */
@@ -92,18 +104,29 @@ h2{
   font-size: 1.8rem;
 }
 
-/* Header */
 .navbar__logo {
   margin-left: 0.5rem;
+  height: 3rem;
 }
+
+/* .text--truncate {
+  display: none;
+} */
 
 div.navbar__inner > div:nth-child(1) > a:nth-child(3){
   margin-left: 2.3rem;
 }
 
+@media screen and (max-width: 1250px) {
+  .navbar__items--right > .navbar__link{
+    display: none;
+  }
+}
+
+
 /* Footer styling */
 .footer--dark {
-  --ifm-footer-background-color: #25272B;
+  --ifm-footer-background-color: #17191C;
 }
 .footer__bottom {
   text-align: left;
@@ -122,6 +145,14 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
 .theme-doc-breadcrumbs{
   display: none;
 }
+
+/* Typography */
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
 
 /* Content innner page margin left */
 
@@ -149,13 +180,16 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
   animation: .4s .15s backwards a;
   margin-top: 0;
   padding: 0.8rem 2rem 1rem 2rem;
-  transition-duration: .2s;
+  transition-duration: 0s;
   transition-property: all;
   min-height: 100%;
   height: 100%;
 }
 .card:hover{
-  -webkit-transform:translateY(-5px);transform:translateY(-5px)
+  /* -webkit-transform:translateY(-5px);transform:translateY(-5px); */
+  /* background-color: #282B2E; */
+  background-color: var(--ifm-heading-color);
+  color: var(--ifm-navbar-background-color);
 }
 
 .row .col.col--4 {
@@ -165,17 +199,17 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
 .card__body {
   padding-top: 0rem;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 /* Search  */
 .aa-DetachedSearchButtonIcon {
-  color: var(--ifm-color-primary) !important;
+  color: var(--ifm-hero-text-color) !important;
 }
 
 .aa-DetachedSearchButton {
   color: var(--ifm-navbar-link-color) !important;
-  border-radius: 12px !important;
+  border-radius: 1px !important;
   flex-direction: row-reverse;
   justify-content: space-between;
   background-color: rgb(var(--ifm-navbar-background-color)) !important;
@@ -253,10 +287,23 @@ article{
     margin-left: auto;
     margin-right: auto;
   }
+  .navbar__logo{
+    height: 2.2rem;
+  }
+  .aa-DetachedSearchButton {
+    width: 120px !important;
+  }
+  
 }
 
 /* Extra bits removing Edit this page */
 
 .theme-edit-this-page{
   display: none;
+}
+
+
+.navbar__title{
+  font-size: 16px;
+  font-weight: 700;
 }
