@@ -58,11 +58,56 @@ Attempting to connect the same Incentive ID to multiple nodes may cause confusio
 
 :::info proof of person
 Know Your Customer (KYC) will not be required to collect your Minima Rewards, however, you will be required to complete our ‘Proof of Person’ process so we can verify that you are not a bot!
-
-**Keep an eye on your inbox for this verification request in January 2023.**
-
-If you have trouble completing the proof of person verification or no longer have access to your email, you will be able to go through manual verification in our #support channel on [Discord](https://discord.gg/minima) when it opens.
 :::
+
+### ...Incentive Reward Account Verification
+
+Minima operates a “One Incentivized Node Per Human” policy. This means that a real human must exist behind each Incentive Reward Account.
+
+In order to ensure that your account is genuine and not the product of bot activity, we require each Incentive Reward Account holder to pass our simple Verify process.
+
+#### What is the Verify process?
+
+Our Verify process consists of two phases:
+
+**Phase 1**
+
+Our team will review the Incentive Reward database algorithmically and manually to identify accounts that are either <br/>
+a) clearly the result of bot activity or <br/> b) part of a network of accounts.
+
+Accounts that fail Phase 1 will not be notified.
+
+**Phase 2**
+
+All accounts that pass Phase 1 will be invited via the email address on your Incentive Reward Account to complete Phase 2.
+
+Phase 2 started on the 13th January.
+
+This email contains a unique link for you to click that will identify your account to us. You will then be asked to complete a form that will provide us with the verification we need to satisfy our “One Incentivized Node Per Human” policy.
+
+Please take note that your link is single-use, so **please do not click it until you are ready to proceed with verification.**
+
+If you have successfully verified, you will receive email confirmation within 24 hours. 
+
+Once you have your confirmation, you are guaranteed to receive your rewards at Token Distribution, pending collection of your Wallet details at a later date.
+
+#### Frequently Asked Questions
+
+#### I have lost access to my Incentive Reward Account email address
+
+A process to contact us will be made available here on the 16th January. In the meantime, DO NOT open a Support Ticket. We will be unable to help you.
+
+#### I didn’t receive an invite to Verify
+
+If you haven’t had an email by Monday 16th January, this will be for one of 2 reasons. You either failed Phase 1, or there was an issue with the email address we hold on record for you. 
+
+A process to contact us will be available on the 16th January. In the meantime, DO NOT open a Support Ticket. We will be unable to help you.
+
+#### It has been 24 hours since completing Verify, but I have not received a confirmation email
+
+You have failed Verification. If you believe this to be in error, you can contact us using [this form](https://docs.google.com/forms/d/e/1FAIpQLSe-khUVayeVDB8zbXVmm5w82CPxeiqD_Xn3OcnIyHdnjwAl2g/viewform?usp=sf_link).
+
+One of the team can look into why you failed, however doing so is no guarantee that verification will follow. Any decision made is final.
 
 ### ...our Community Presale
 
