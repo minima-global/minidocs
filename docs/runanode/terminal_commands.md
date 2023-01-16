@@ -1,12 +1,14 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 # Terminal Commands
 
 The following commands can be run directly from a Minima Terminal: 
 
-These can also be viewed by typing `help` into the Minima Terminal. 
+These can also be viewed by typing `help` into the Minima Terminal.
+
+For detailed help, use `help command:` followed by the command.
 
  ; can be used to chain multiple commands<br />
 parameter values in **bold** indicate default value
