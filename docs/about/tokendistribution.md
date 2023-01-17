@@ -4,7 +4,11 @@ sidebar_position: 6
 
 # Our Tokenomics
 
-The total supply of Minima is fixed at 1 billion tokens and pre-allocated. As there are no dedicated miners, there is no method for distributing coins after Mainnet launch.
+## Update Coming Soon...
+
+An updated tokenomics paper will be published prior to the Presale taking place. Stay tuned!
+
+<!-- The total supply of Minima is fixed at 1 billion tokens and pre-allocated. As there are no dedicated miners, there is no method for distributing coins after Mainnet launch.
 This is one of the unique features of our cooperative PoW chain. Our distribution strategy reflects the importance to rapidly gain security based on a minimum target of 1 million active and participating Mainnet nodes.
 
 The majority of public allocation will be made available through our series of community incentive initiatives and a grant program.
@@ -60,7 +64,7 @@ Pre-sale allocations are unlocked over time ensuring deterministic liquidity in 
 |**Seed - Institutional** | 33% at TGE, then 67% at 1 year after TGE |
 |**Seed - Friends & Family** | 25% at TGE, then 5% monthly after TGE |
 |**Private 1** | 40% at TGE, then 5% monthly after TGE |
-|**Private 2** | 50% at TGE, then 5% monthly after TGE |
+|**Private 2** | 50% at TGE, then 5% monthly after TGE | -->
 
 
 
