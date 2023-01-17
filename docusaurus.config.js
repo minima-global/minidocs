@@ -49,6 +49,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: 'img/minima_docs.png',
       navbar: {
         title: "Minima Docs",
         logo: {
