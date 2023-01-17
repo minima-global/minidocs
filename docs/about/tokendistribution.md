@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Our Tokenomics
 
-## Update Coming Soon...
+## Update Coming Soon..
 
 An updated tokenomics paper will be published prior to the Presale taking place. Stay tuned!
 
