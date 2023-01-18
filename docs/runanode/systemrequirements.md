@@ -37,10 +37,10 @@ If specifying a different main port e.g. 8001, the port range used will be the n
 
 Desktop nodes are not required to configure any port forwarding to use Minima.
 
-### Incoming connections on server nodes:
+### Inbound connections on server nodes:
 
-**9001**: Server nodes should accept inbound and outbound connections on port 9001 (or other specified main port). 
-If this port is open, your node will be able to receive incoming and make outgoing connections, acting as a relay node. 
+**9001**: Server nodes should accept inbound connections on port 9001 (or other specified main port). 
+If this port is open, your node will be able to receive incoming connections, acting as a relay node. 
 If your inbound connection is closed, your node will only make outgoing connections.
 
 **9002**: Closed 

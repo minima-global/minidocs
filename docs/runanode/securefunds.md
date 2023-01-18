@@ -1,0 +1,385 @@
+---
+sidebar_position: 7
+---
+
+# Securing your funds
+
+Keeping your funds secure involves 
+
+1. Keeping the device your node is running on secure
+2. Storing your **seed phrase** safely
+3. Taking regular **backups** and storing these safely
+4. Locking your node using the **Vault** function (optional)
+
+**Before starting your node,** ensure your device is not accessible by anyone other than you and if running on a desktop or server, ensure you have configured your ports correctly.
+
+**Immediately after starting your node,** write down your 24 word seed phrase and store it somewhere offline and safe. 
+
+## Seed Phrase
+
+**To view your 24 word seed phrase (Android)**
+1. From the Backup/Restore page, click **Archive Node**
+2. Click on the i icon in the top right
+
+**To view your 24 word seed phrase (using the Terminal)**
+1. Login to your MiniDapp system
+2. Open the Terminal MiniDapp
+2. Type `vault` and press Enter
+3. Accept the pending command (if required)
+
+:::note DOCKER CLI
+Note it is also possible to check the `vault` command from the Docker CLI.
+:::
+
+Some tips for keeping your seed phrase safe:
+1. Never take a screenshot of your seed phrase 
+2. Never copy and paste your seed phrase to/from a mobile or computer which is connected to the internet
+3. Engrave your seed phrase onto a metal plate and store it somewhere safe
+5. Make 2 copies of your seed phrase and give one to a trusted relative or store in a second location
+6. Sign your transactions offline. To do this you will need to run a node on an offline device and one node on an online device. Details on how to do this in Vault lock section.
+
+:::important when do you need your seed phrase?
+You will only need to use your seed phrase to unlock your node if you have wiped the private keys using the Vault feature or to restore your node if you do not have a valid backup. 
+:::
+
+## Backups
+
+Using a backup is the fastest and most convenient way to restore your funds.
+
+A backup needs to be:
+1. recent (within 1-2 months)
+2. taken whilst on the right chain (correct tip block in `status`)
+
+If you do not have a valid backup, you will need to restore your funds from an Archive node using your seed phrase.
+
+:::important BACKUPS
+Backups include your **private keys and the proofs to your coins**, these are not stored by anyone else so you are responsible for storing these securely.
+:::
+
+#### Points to remember 
+- Take regular backups
+- Password protect your backups or Vault lock your node with a password before taking a backup
+- Store them somewhere safe
+- Without a backup, you risk losing access to your funds!
+
+For details on how to take a backup, select your platform of choice from the [Get Started](/docs/runanode/get_started) page and see the **FAQ** section.
+
+## Vault
+
+Your node stores your 24 word seed phrase which generates all your public and private keys.
+
+Your private keys are required for signing and executing transactions. If someone else gets access to your node, they may be able to view your seed phrase, putting your funds at risk!
+
+The Vault command can either ***encrypt*** or ***wipe*** your seed phrase and private keys, which can only be restored with a password or by entering your seed phrase.
+
+### Private Keys Encryption
+
+Encrypting your private keys involves setting a Vault password so that you will not be able to spend funds without first decrypting your keys or by inserting your Vault password.
+
+You will still be able to receive funds as usual.
+
+You can decrypt your keys at any time with the same Vault password you used to encrypt them.
+
+:::important Vault password
+Your Vault password should use A-Z, a-z and 0-9 characters ONLY, do NOT use symbols. <br/>
+This password should be different to the password you use to access your MiniDapp system.
+
+**It is NOT POSSIBLE to view/change this password once you have set it**, so make sure you write it down and store it somewhere secure - treat it in the same way that you would your seed phrase!
+:::
+
+#### Android
+
+**To encrypt your private keys (Android):**
+> 
+> 1. Ensure you have **taken note of your seed phrase** and are storing it somewhere safe.
+> 2. Click on **Encrypt Private Keys**
+> 3. Enter the same password twice **(using A-Z, a-z, 0-9 characters only, **no symbols**)**
+> 
+> **If you forget it, you will need to restore from an Archive node using your 24 word seed phrase.**
+
+**To decrypt your keys (Android):**
+> 1. Click on **Decrypt Private Keys**
+> 2. Enter the password you used to encrypt your keys.
+> 
+> Your keys will be decrypted and you will be able to view your seed phrase and send funds without entering a password.
+
+#### Using Terminal
+
+**To encrypt your private keys (using Terminal):**
+> 
+> 1. Login to your MiniDapp system
+> 2. Open the Terminal MiniDapp
+> 3. Run the command
+> 
+> ```
+> vault action:passwordlock password:123abcXYZ
+> ```
+> 
+> Example:
+> ```
+ vault action:passwordlock password:123abcXYZ
+ {
+  "command":"vault",
+  "params":{
+    "action":"passwordlock",
+    "password":"123abcXYZ"
+  },
+  "status":true,
+  "pending":false,
+  "response":"All private keys wiped! Stored encrypted in UserDB"
+}
+>```
+> 
+> Now your funds are password protected.
+> 
+
+**To decrypt your private keys (using Terminal):**
+> 
+> ```
+vault action:passwordunlock password:123abcXYZ
+> ```
+> 
+> Example:
+> ```
+vault action:passwordunlock password:123abcXYZ
+{
+  "command":"vault",
+  "params":{
+    "action":"passwordunlock",
+    "password":"123abcXYZ"
+  },
+  "status":true,
+  "pending":false,
+  "response":"All private keys restored!"
+}
+> ```
+> 
+> Your private keys will be decrypted and your funds will no longer be password protected.
+
+#### Transacting with a password locked node
+
+Wallet and MaxSolo will allow you to securely transact with a password locked node by requesting your password to send a transaction.
+
+Equally you may transact directly from the Terminal minidapp using the `send` function with the password parameter.
+
+Example:
+```
+send password:123abcXYZ amount:5 address:MxG082FFHWG31QANAY66W2HK8CVGBRB3Z5RVTARY7T3Q75CGHB1A6CZH0B1KNDU
+```
+
+This will sign and then execute the transaction, only unlocking the node for that single transaction. Once complete, the node will be password locked again automatically.
+
+The above solution is more secure than an unprotected node but the wallet is still effectively hot as it is connected to the internet and should not be used to store large amounts of funds.
+
+## Cold Storage Solution
+
+We recommend this method if storing a large amount of Minima.
+
+Minima transactions require recent coin proofs of your funds and up-to-date data from the chain. This requires a node to be online as much as possible. 
+
+However, to create a truly secure solution it is imperative that the private keys are NEVER online EVER. This can be achieved by signing your transactions on an offline device.
+
+This method involves: 
+- initially creating your node on an offline device, 
+- wiping your private keys from the node 
+- backing up and restoring this node (without the private keys) to an online device to keep track of your up to date coin proofs
+
+Transactions must be created on the online node, transferred to the offline node for signing then transferred back to the online node for posting. 
+
+### Cold Storage - Setup
+
+You will have 2 devices:
+
+**Device 1: Offline node**<br/>
+No internet connection, holds your private keys, used to sign transactions offline. 
+
+**Device 2: Online node**<br/>
+Connected to the internet, holds no private keys, can only send a transaction if it has been signed by the offline device.
+This device will keep track of your balance and can be used to receive coins as usual.
+
+1. Start a new node offline on device 1 - this device should never be connected to the internet. WiFi should be disabled.
+
+2. Run the `vault` command to view your 24-word seed phrase and the seed itself. The seed is required when initially locking the node so you do not do it accidentally.
+
+Example:
+```
+vault
+{
+  "command": "vault",
+  "status": true,
+  "pending": false,
+  "response": {
+    "phrase": "PENALTY MEAN FEDERAL SENSE AGREE SCALE EXHAUST ARROW HUB DAY VELVET AISLE LATIN NATURE CHEF GAUGE DARING REFUSE TINY REMIND MOMENT VINTAGE POLE ELEGANT",
+    "seed": "0x64D1F2256C1C810A0AE273A397AC14C92335A234BFFBE259D9297CCF4F559F4B",
+    "locked": false
+  }
+}
+```
+:::important seed phrase
+It is essential to keep your 24 word seed phrase safe.
+You can recover your node with just those words. Anyone with access to your words can steal your coins!
+:::
+
+3. Whilst waiting for the node to create all the private keys, write down the 24 word seed phrase and store it somewhere secure.
+
+4. Wipe the private keys from the node using 
+```
+vault action:wipekeys seed:0x..
+```
+
+Example:
+```
+vault action:wipekeys seed:0x64D1F2256C1C810A0AE273A397AC14C92335A234BFFBE259D9297CCF4F559F4B
+{
+  "command": "vault",
+  "params": {
+    "action": "lock",
+    "seed": "0x64D1F2256C1C810A0AE273A397AC14C92335A234BFFBE259D9297CCF4F559F4B"
+  },
+  "status": true,
+  "pending": false,
+  "response": "All private keys wiped!"
+}
+```
+
+**Your node no longer has the keys, not even encrypted in your UserDB. They are fully wiped.**
+
+You can only restore your keys with your 24 words using 
+```
+vault action:restorekeys phrase:"24 WORD SEED PHRASE HERE"
+```
+
+5. Backup the locked node. <br/>
+*Optionally also set a password for the backup using A-Z, a-z and 0-9 characters only, no symbols*
+
+```
+backup file:mylockedbackup.bak password:...
+```
+
+6. Restore the backup to an online device (device 2), entering the password from the backup if you set one:
+
+```
+restore file:mybackup.bak password:...
+```
+
+You will now use 2 devices to manage your funds.
+
+### Cold Storage - Transacting
+
+To make a transaction when using the Cold Storage solution, you first build a transaction on your online node with the `sendnosign` function.
+
+1. On your online node, create a transaction for signing using `sendnosign`.
+
+`sendnosign` works exactly like the traditional `send` function but instead of sending, will export an unsigned Minima transaction (.txn) file which requires signing with your private keys on the offline device.
+
+Example:
+```
+sendnosign amount:1 address:MxG0843TSJZ6U35CZSSR2D17G4TE9M68JVT4KUNR4TBQ6H9TRBFZYH23D50TRSH
+{
+  "command":"sendnosign",
+  "params":{
+    "amount":"1",
+    "address":"MxG0843TSJZ6U35CZSSR2D17G4TE9M68JVT4KUNR4TBQ6H9TRBFZYH23D50TRSH"
+  },
+  "status":true,
+  "pending":false,
+  "response":{
+    "txpow":"/home/minima/data/unsignedtransaction-1672851796504.txn"
+  }
+}
+```
+
+2. Transfer the transaction file to your offline node.
+
+3. Unlock the cold offline node with:
+
+```
+vault action:restorekeys phrase:"24 WORD SEED PHRASE HERE` 
+```
+
+Example:
+```
+vault action:restorekeys phrase:"PENALTY MEAN FEDERAL SENSE AGREE SCALE EXHAUST ARROW HUB DAY VELVET AISLE LATIN NATURE CHEF GAUGE DARING REFUSE TINY REMIND MOMENT VINTAGE POLE ELEGANT"
+{
+  "command":"vault",
+  "params":{
+    "action":"restorekeys",
+    "phrase":"PENALTY MEAN FEDERAL SENSE AGREE SCALE EXHAUST ARROW HUB DAY VELVET AISLE LATIN NATURE CHEF GAUGE DARING REFUSE TINY REMIND MOMENT VINTAGE POLE ELEGANT"
+  },
+  "status":true,
+  "pending":false,
+  "response":{
+    "entered":"PENALTY MEAN FEDERAL SENSE AGREE SCALE EXHAUST ARROW HUB DAY VELVET AISLE LATIN NATURE CHEF GAUGE DARING REFUSE TINY REMIND MOMENT VINTAGE POLE ELEGANT",
+    "cleaned":"PENALTY MEAN FEDERAL SENSE AGREE SCALE EXHAUST ARROW HUB DAY VELVET AISLE LATIN NATURE CHEF GAUGE DARING REFUSE TINY REMIND MOMENT VINTAGE POLE ELEGANT",
+    "same":true,
+    "result":"All private keys restored!"
+  }
+}
+```
+
+4. On the offline node, use `sendsign file:...` inserting the name of the .txn file. 
+
+This will export a .txn file containing your signed transaction.
+
+Example
+```
+sendsign file:/home/minima/data/unsignedtransaction-1672851796504.txn
+{
+  "command":"sendsign",
+  "params":{
+    "file":"/home/minima/data/unsignedtransaction-1672851796504.txn"
+  },
+  "status":true,
+  "pending":false,
+  "response":{
+    "txpow":"/home/minima/data/signedtransaction-1672852113421.txn"
+  }
+}
+```
+5. Re-secure your offline cold node with either `vault action:wipekeys` or `vault action:passwordlock`
+
+6. Transfer the signed transaction file back to your online node. <br/>
+*You can post this transaction from any online Minima node since it is already signed.*
+
+7. Broadcast the transaction to the Minima network with `sendpost file:` function.
+
+Example
+```
+sendpost file:/home/minima/data/signedtransaction-1672852113421.txn
+{
+  "command":"sendpost",
+  "params":{
+    "file":"/home/minima/data/signedtransaction-1672852113421.txn"
+  },
+  "status":true,
+  "pending":false,
+  "response":{
+    "txpow":{
+      "txpowid":"0xB41C5F1D68E33410337D0A98EFF5C937F1B9189C46F0BB3F82271B017BFF07F3",
+…
+```
+
+You can view the signed or unsigned transaction at any time using `sendview file:`
+
+Example
+```
+sendview file:/home/minima/data/signedtransaction-1672852113421.txn
+{
+  "command":"sendview",
+  "params":{
+    "file":"/home/minima/data/signedtransaction-1672852113421.txn"
+  },
+  "status":true,
+  "pending":false,
+  "response":{
+    "txpow":{
+      "txpowid":"0xB41C5F1D68E33410337D0A98EFF5C937F1B9189C46F0BB3F82271B017BFF07F3",
+      "isblock":false,
+      "istransaction":false,
+      "superblock":-1…
+```
+
+
+
+
+

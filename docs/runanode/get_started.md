@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Get started
+# Get Started
 
 <!-- Running a Minima node couldn't be easier, and if you choose to join our Incentive Program, you will earn **1 Reward each day your node is live!** -->
 

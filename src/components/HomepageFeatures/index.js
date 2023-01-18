@@ -41,20 +41,20 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Earn Rewards',
-    link: 'docs/earnrewards/minimaincentiveprogram',
-    description: (
-      <>
-        Join the Minima Incentive Program
-      </>
-    ),
-  },
-  {
     title: 'Ambassador',
     link: 'docs/earnrewards/ambassador',
     description: (
       <>
         Become a Minima ambassador and earn additional Rewards
+      </>
+    ),
+  },
+  {
+    title: 'Mainnet',
+    link: 'docs/runanode/testnetstatus',
+    description: (
+      <>
+        Check the latest updates as we transition from Testnet to Mainnet
       </>
     ),
   },

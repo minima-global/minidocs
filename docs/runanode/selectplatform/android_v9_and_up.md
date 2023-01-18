@@ -81,6 +81,36 @@ You can also check your Reward balance from the Terminal MiniDapp using the `inc
 For every day your node is connected to the network, you will receive 1 Reward.
 :::
 
+## FAQ
+
+### How to view your 24 word seed phrase
+1. From the **Backup/Restore** page, click **Archive Node**
+2. Click on the **i** icon in the top right
+
+**Tips for keeping your seed phrase safe:**
+- Never take a screenshot, copy and paste or type your seed phrase on a device which is connected to the internet
+- Never store your seedphrase on a device which is connected to the internet
+- Engrave your seed phrase onto a metal plate and store it somewhere safe
+- Make 2 copies of your seed phrase and give one to a trusted relative or store in a second secure location in case you lose access
+
+### How to backup your node
+1. From the Backup/Restore page, click **Backup**
+2. Enter a **password** for the backup (using A-Z, a-z, 0-9 characters only, **no symbols**)
+
+Your password will be required if you restore this backup at a later date, **it cannot be changed or recovered** so you must remember it!
+
+3. A backup file will be created and you will be prompted to **choose a location** to save it.
+
+**Store your backups somewhere secure.**
+
+### How to restore your node from a backup
+
+1. From the **Backup/Restore** page, click **Restore**
+2. Enter the password you entered when creating the backup you are restoring
+3. You will be prompted to **choose a backup** from your device that you have previously taken
+4. Your node will then shutdown - **reopen the app** to reconnect to your restored node
+5. Wait a few minutes for your node to resync before using it - check your tip block is in sync
+
 ## Next Steps
 
 Once your node running, you can contribute to our Testnet by testing our decentralized applications - **MiniDapps.** 
