@@ -4,7 +4,7 @@ sidebar_position: 12
 
 # Latest Testnet Status
 
-*Last updated: 9th January 2023*
+*Last updated: 21st January 2023*
 
 As we get closer to Mainnet, here is the important information you need to know.
 
@@ -95,19 +95,27 @@ Once you have your confirmation, you are guaranteed to receive your rewards at T
 
 #### I have lost access to my Incentive Reward Account email address
 
-A process to contact us will be made available here on the 16th January. In the meantime, DO NOT open a Support Ticket. We will be unable to help you.
+A process to contact us will be made available week of the 23rd January. In the meantime, DO NOT open a Support Ticket. We will be unable to help you.
 
 #### I didn’t receive an invite to Verify
 
+Please first check your spam inbox. 
+
 If you haven’t had an email by Monday 16th January, this will be for one of 2 reasons. You either failed Phase 1, or there was an issue with the email address we hold on record for you. 
 
-A process to contact us will be available on the 16th January. In the meantime, DO NOT open a Support Ticket. We will be unable to help you.
+Complete [this form](https://docs.google.com/forms/d/e/1FAIpQLSfoSwdl6o_hsZQR6BE_iiOmocEGaC4jCnHUGpXfnGAYb_zy2A/viewform?usp=sf_link) if you did not receive the email.
+
+DO NOT open a Support Ticket. We will be unable to help you.
+
+If successful, you will get a Verify email, or one of the team will reach out to you on Discord.
+
+If you do not hear from us within 5 working days of submission, your account has not passed Verify. All decisions are final.
 
 #### It has been 24 hours since completing Verify, but I have not received a confirmation email
 
 You have failed Verification. If you believe this to be in error, you can contact us using [this form](https://docs.google.com/forms/d/e/1FAIpQLSe-khUVayeVDB8zbXVmm5w82CPxeiqD_Xn3OcnIyHdnjwAl2g/viewform?usp=sf_link).
 
-One of the team can look into why you failed, however doing so is no guarantee that verification will follow. Any decision made is final.
+One of the team can look into why you failed and you might be contacted via a support ticket on Discord, however there is no guarantee of verification. Any decision made is final.
 
 ### ...our Community Presale
 
@@ -144,6 +152,30 @@ There will be 4 tranches at different prices, the first and earliest tranche is 
 - Min purchase size $150
 - Max purchase size $100,000
 
+
+### ...the Mainnet Bootstrap phase 
+
+Over the next 4-6 weeks, we will be starting the controlled rollout of Minima Mainnet (version 1.0.6) as we begin the Bootstrap phase
+
+The Bootstrap phase involves steadily increasing the users on the main network.
+
+There is no benefit, reward or incentive for joining the network at this early stage, so don’t worry if you are not updated yet!
+
+This will first be released to:
+1. Manual node runners on desktop (using the .jar from Github)
+2. Users still running the old installation script on a VPS
+
+What you need to know:
+- There will be no transactions on the network yet
+- Users running v0.103 may start to experience disruption 
+- Gimme20 will NOT work on this version
+
+What you need to do:
+- Ensure your node is secured! For example, if you are running Minima on a server your RPC port must be closed (default port 9005)
+- Take note of your NEW seed phrase which can be found using the `vault` command
+- Regularly check the `status` of your node to ensure your tip block is up to date
+
+Mainnet versions for Docker and Android will be made available in the coming weeks.
 
 ***Still have questions?***<br/>
 *Please contact us in the Support channel on [Discord](https://discord.gg/minima)*
