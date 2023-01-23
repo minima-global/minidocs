@@ -248,13 +248,13 @@ ctrl-`x` then `y` then press Enter
 5. Give permissions to the script
 
 ```
-sudo chmod +x ./updatejar.sh
+sudo chmod +x ./updateminimajar.sh
 ```
 
 6. Run the script
 
 ```
-./updatejar.sh
+./updateminimajar.sh
 ```
 
 You will see the logs showing using the updated version. 
