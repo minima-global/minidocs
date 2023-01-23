@@ -94,6 +94,9 @@ For every day your node is connected to the network, you will receive 1 Reward.
 - Make 2 copies of your seed phrase and give one to a trusted relative or store in a second secure location in case you lose access
 
 ### How to backup your node
+
+Before backing up your node, consider encrypting your private keys. For more information, see [Vault](/docs/runanode/securefunds#vault).
+
 1. From the Backup/Restore page, click **Backup**
 2. Enter a **password** for the backup (using A-Z, a-z, 0-9 characters only, **no symbols**)
 

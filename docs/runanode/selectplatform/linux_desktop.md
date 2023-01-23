@@ -199,6 +199,62 @@ When starting the new container, you must use the same `minimadocker9001` folder
 
 -------
 
+
+### How to take a backup of your node
+
+Before backing up your node, consider encrypting your private keys. For more information, see [Vault](/docs/runanode/securefunds#vault).
+
+1. Login to your Minima Hub 
+2. Open the Terminal MiniDapp
+3. Enter the `backup` command with a password containing **lowercase letters and numbers only**
+
+```
+backup password: 
+```
+
+####  Auto backups
+You can create automatic backups every 24 hours however these backups cannot be password protected so we recommend encrypting your private keys before enabling auto backups.
+```
+backup auto:true
+```
+Your backups will go to the **minimadocker9001** folder in your home directory.
+
+:::note backup parameters
+**password:** set a password for your backup **lowercase letters and numbers only**, this will be required when restoring it
+
+**file:** (optional) backup name 
+
+**auto:** (optional) **true** or **false**. Will set the backup to repeat every 24 hours.
+
+:::
+
+------
+
+### How to restore your node from a backup
+
+Your backup must be in the **minimadocker9001** folder in your home directory (as specified at start up).
+
+1. Login to your Minima Hub 
+2. Open the Terminal MiniDapp
+3. Enter the `restore` command, completing the parameters
+
+```
+restore file: password:
+```
+:::note restore parameters
+**file:** the name of the backup to restore, e.g. mybackup.bak
+
+**password:** (optional) the password of the backup. Can be left blank if restoring an auto backup or non password protected backup.
+:::
+
+If successful, you will need to log out/log in from your Minima hub for the restore to take effect.
+
+:::warning
+If you encrypted your private keys before taking the backup that you are now restoring, your private keys will still be encrypted and you will be required to decrypt them or enter your Vault password when sending funds
+::: 
+
+------
+
 ### How to start a second node in Docker
 
 To run a second node in Docker, you can create another container using different port numbers, file path and name. 
@@ -225,55 +281,6 @@ The additional test parameters used are:
 To enable RPC, use `-p 10001-10005:9001-9005`
 :::
 
-
-------
-
-### How to take a backup of your node
-
-1. Login to your Minima Hub 
-2. Open the Terminal MiniDapp
-3. Enter the `backup` command with a password containing **lowercase letters and numbers only**
-
-```
-backup password: 
-```
-
-To create automatic backups every 24 hours (currently NOT password protected)
-```
-backup auto:true
-```
-Your backups will go to the **minimadocker9001** folder in your home directory.
-
-:::note backup parameters
-**password:** set a password for your backup **lowercase letters and numbers only**, this will be required when restoring it
-
-**file:** (optional) backup name 
-
-**auto:** (optional) **true** or **false**. Will set the backup to repeat every 24 hours.
-
-**complete:** (optional) **true** or **false**. A complete backup includes the Archive database. Please allow more time for a complete backup to finish. 
-:::
-
-------
-
-### How to restore your node from a backup
-
-Your backup must be in the **minimadocker9001** folder in your home directory (as specified at start up).
-
-1. Login to your Minima Hub 
-2. Open the Terminal MiniDapp
-3. Enter the `restore` command, completing the parameters
-
-```
-restore file: password:
-```
-:::note restore parameters
-**file:** the name of the backup to restore.
-
-**password:** (optional) the password of the backup. Can be left blank if restoring an auto backup or non password protected backup.
-:::
-
-If successful, you will need to log out/log in from your Minima hub for the restore to take effect.
 
 ------
 

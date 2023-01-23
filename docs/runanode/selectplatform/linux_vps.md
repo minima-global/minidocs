@@ -2,27 +2,39 @@
 sidebar_position: 2
 ---
 
-# Linux VPS
+# Linux VPS (Docker)
 
 We will be using Docker software to make running a Minima node simple.
 
-Once your node is set up, you will be able to use Minima's decentralized applications.
+If you prefer not to use Docker, you can create a script to run [Minima as a service](/docs/runanode/selectplatform/linuxvpsservice).
 
-:::important
-We no longer support the install script, please continue to start a new node using Docker.
-:::
+Once your node is set up, you will be able to use Minima's decentralized applications.
 
 :::note What is Docker?
 Docker is an open-source software platform that simplifies the process of running, testing and managing applications. 
 It uses the operating system of the computer on which it’s installed to provide an independent computing environment for an application to run on.
 ::: 
 
+## Setup your Firewall 
+
+By default Minima is installed on ports 9001-9005. Only ports 9001,9003,9004 need to be open to use Minima and the MiniDapp system. 
+
+**The RPC Port (default 9005) must never be opened to incoming connections**
+
+:::warning custom ports
+If you install Minima on custom ports, ensure the correct ports are open/closed.
+:::
+
+For more information, see [System Requirements.](/docs/runanode/systemrequirements)
+
+For help on setting up your firewall, see [Recommended Firewall settings](/docs/runanode/systemrequirements#recommended-firewall-settings)
+
 ## Start a new Minima node
 
 ### Remove nodes installed using the old script
 If you have been running a node using the install script provided, please remove these nodes following the instructions below.
 
-If you are a new user, continue to [Start your node](#start-your-node).
+If you are a new user, continue to [Set up your firewall](#).
 
 1. Logon to your server as a non root user with sudo (admin) rights.
 
@@ -170,6 +182,10 @@ The first time accessing your MiniDapp hub, you may need to pass through the sec
 
 Click on **Advanced**, then **Proceed**. Or in Google Chrome, you may have to click anywhere on the page and type `thisisunsafe` to proceed. Details for other browsers can be found [**here**](https://www.vultr.com/docs/how-to-bypass-the-https-warning-for-self-signed-ssl-tls-certificates/).<br/>
 
+:::info trouble accessing MDS?
+If you are having trouble accessing https://YourServerIP:9003/, please first go to https://YourServerIP:9004/ and accept the security warning. Then return to https://YourServerIP:9003/.
+:::
+
 You will see your MiniDapp System (MDS) login page. 
 
 ![mds_login](/img/runanode/mds_login.png#width50)
@@ -298,21 +314,12 @@ Deleting the container will not delete the `minimadocker9001` data folder so you
 When starting the new container, you must use the same `minimadocker9001` folder to ensure your coins and data are restored.
 :::
 
-------
-
-### How to start a second node in Docker
-
-To run a second node in Docker, you can create another container using different port numbers, file path and name. 
-
-1. To create a node on port 8001:
-
->docker run -d -e minima_mdspassword=123 -e minima_server=true -v ~/**minimadocker8001**:/home/minima/data -p **8001-8004**:9001-9004 --restart unless-stopped --name **minima8001** minimaglobal/minima:latest
-
-2. To access your MiniDapps on the second node, go to https://127.0.0.1:8003/ (8003 instead of 9003) and repeat the steps in [Access your MiniDapp hub](#access-your-minidapp-hub).
 
 -------
 
 ### How to take a backup of your node
+
+Before backing up your node, consider encrypting your private keys. For more information, see [Vault](/docs/runanode/securefunds#vault).
 
 1. Login to your Minima Hub at https://yourserverIP:9003/
 2. Open the Terminal MiniDapp
@@ -321,8 +328,13 @@ To run a second node in Docker, you can create another container using different
 ```
 backup password: 
 ```
+:::warning
+This password cannot be retrieved at a later date, so remember it or write it down somewhere secure.
+:::
 
-To create automatic backups every 24 hours (currently NOT password protected)
+####  Auto backups
+You can create automatic backups every 24 hours however these backups cannot be password protected so we recommend encrypting your private keys before enabling auto backups.
+
 ```
 backup auto:true
 ```
@@ -333,9 +345,7 @@ Your backups will go to the **minimadocker9001** folder in your home directory.
 
 **file:** (optional) backup name 
 
-**auto:** (optional) **true** or **false**. Will set the backup to repeat every 24 hours.
-
-**complete:** (optional) **true** or **false**. A complete backup includes the Archive database. Please allow more time for a complete backup to finish. 
+**auto:** (optional) **true** or **false**. Will set the backup to repeat every 24 hours. 
 :::
 
 ------
@@ -351,13 +361,31 @@ Your backup must be in the **minimadocker9001** folder in your home directory (a
 ```
 restore file: password:
 ```
+
 :::note restore parameters
-**file:** the name of the backup to restore.
+**file:** the name of the backup to restore, e.g. mybackup.bak
 
 **password:** (optional) the password of the backup. Can be left blank if restoring an auto backup or non password protected backup.
 :::
 
 If successful, you will need to log out/log in from your Minima hub for the restore to take effect.
+
+:::warning
+If you encrypted your private keys before taking the backup that you are now restoring, your private keys will still be encrypted and you will be required to decrypt them or enter your Vault password when sending funds
+::: 
+
+
+------
+
+### How to start a second node in Docker
+
+To run a second node in Docker, you can create another container using different port numbers, file path and name. 
+
+1. To create a node on port 8001:
+
+>docker run -d -e minima_mdspassword=123 -e minima_server=true -v ~/**minimadocker8001**:/home/minima/data -p **8001-8004**:9001-9004 --restart unless-stopped --name **minima8001** minimaglobal/minima:latest
+
+2. To access your MiniDapps on the second node, go to https://127.0.0.1:8003/ (8003 instead of 9003) and repeat the steps in [Access your MiniDapp hub](#access-your-minidapp-hub).
 
 ------
 

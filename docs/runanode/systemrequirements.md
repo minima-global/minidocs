@@ -52,3 +52,52 @@ If your inbound connection is closed, your node will only make outgoing connecti
 **9005**: The RPC Port must **ALWAYS be closed** to inbound connections
 
 
+### Recommended Firewall settings 
+
+Assuming a new server with nothing else installed and that Minima will be installed on the default ports 9001-9005:
+
+As a user with sudo privileges:
+
+1. Install Uncomplicated Firewall (ufw)
+
+```
+sudo apt install ufw
+```
+
+2. Run the following commands individually:
+
+This will disable the firewall, deny incoming connections, accept outgoing connections and allow incoming connections from ports 9001-9004 (the default Minima ports)
+
+```
+sudo ufw disable
+```
+```
+sudo ufw default deny incoming
+```
+```
+sudo ufw default allow outgoing
+```
+```
+sudo ufw allow ssh
+```
+```
+sudo ufw allow in 9001
+```
+```
+sudo ufw allow in 9003
+```
+```
+sudo ufw allow in 9004
+```
+```
+sudo ufw enable
+```
+```
+y
+```
+
+**MAKE SURE YOU HAVE NOT SKIPPED THE `ufw allow ssh` STEP, OR YOU WILL BE LOCKED OUR OF YOUR SERVER!**
+
+:::warning custom ports
+If you install Minima on custom ports, ensure the correct ports are open/closed.
+:::

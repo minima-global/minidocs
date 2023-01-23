@@ -161,7 +161,7 @@ The Bootstrap phase involves steadily increasing the users on the main network.
 
 There is no benefit, reward or incentive for joining the network at this early stage, so don’t worry if you are not updated yet!
 
-This will first be released to:
+Mainnet v1.0.6 is now available for:
 1. Manual node runners on desktop (using the .jar from Github)
 2. Users still running the old installation script on a VPS
 

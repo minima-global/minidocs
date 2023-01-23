@@ -297,8 +297,6 @@ If you have been offline for a long time, you may need to restore your node from
 
 **Other useful commands:**<br/>
 `mds` - find the password for your node<br/>
-`incentivecash` - check your Incentive Program balance<br/>
-`incentivecash uid:` - setup your Incentive Program account by connecting your Incentive ID<br/>
 `help` - show all commands
 
 ------
@@ -315,6 +313,60 @@ To create a fresh install of a node **-clean** can be added on to the end of the
 DO NOT use **-clean** if you are simply restarting your node, your coins will be wiped and you will only be able to recover them from a backup! <br/>
 e.g. java -jar C:\Users\Username\Downloads\minima.jar -mdsenable -clean
 :::
+
+
+------
+
+## How to take a backup of your node
+
+Before backing up your node, consider encrypting your private keys. For more information, see [Vault](/docs/runanode/securefunds#vault).
+
+1. Login to your Minima Hub 
+2. Open the Terminal MiniDapp
+3. Enter the `backup` command with a password containing **lowercase letters and numbers only**
+
+```
+backup password: 
+```
+
+###  Auto backups
+You can create automatic backups every 24 hours however these backups cannot be password protected so we recommend encrypting your private keys before enabling auto backups.
+```
+backup auto:true
+```
+Your backups will go to your default home directory.
+
+:::note backup parameters
+**password:** set a password for your backup **lowercase letters and numbers only**, this will be required when restoring it
+
+**file:** (optional) backup name 
+
+**auto:** (optional) **true** or **false**. Will set the backup to repeat every 24 hours.
+:::
+
+------
+
+## How to restore your node from a backup
+
+1. Login to your Minima Hub 
+2. Open the Terminal MiniDapp
+3. Enter the `restore` command, completing the parameters
+
+```
+restore file: password:
+```
+
+:::note restore parameters
+**file:** the name and file path of the backup to restore, e.g. C:\Users\Minima\mybackup.bak
+
+**password:** (optional) the password of the backup. Can be left blank if restoring an auto backup or non password protected backup.
+:::
+
+If successful, you will need to log out/log in from your Minima hub for the restore to take effect.
+
+:::warning
+If you encrypted your private keys before taking the backup that you are now restoring, your private keys will still be encrypted and you will be required to decrypt them or enter your Vault password when sending funds
+::: 
 
 -------
 

@@ -15,7 +15,7 @@ parameter values in **bold** indicate default value
 
 | Command | Required Parameters | Optional Parameters | Description |
 | :-------- | :--- | :------------ | :----------- |
-| backup | |**password:** <br/>**file:** <br/>**auto:** <br/>**complete:**true \| **false** |Backup your node. Uses a timestamped name by default. Option to set a password and set the file name/path. <br/> Complete true will include the archive database. <br/> Auto true will schedule a default backup every 24 hours.|
+| backup | |**password:** <br/>**file:** <br/>**auto:** \| **false** |Backup your node. Uses a timestamped name by default. Option to set a password and set the file name/path. <br/> Complete true will include the archive database. <br/> Auto true will schedule a default backup every 24 hours.|
 | balance | |**address:**Mx.. \| 0x.. <br/> **confirmations:**  |Show your total balance of Minima coins and custom tokens. <br/> **address** - 0x or Mx address to filter by <br/>**confirmations** - number of blocks required for coins to be considered confirmed in your balance |
 | burn | | |View number of burn txns and min/median/max/avg Burn metrics for latest 1, 10 and 50 blocks |
 | coinexport |**coinid:** | |Export a coin and its proof |
