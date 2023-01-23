@@ -129,6 +129,7 @@ Earlier tranches benefit from a greater discount, as shown below:
 |**Discount** | 30% |20%|10%|None|
 |**Price (USD)** | $0.21 |$0.24| $0.27|$0.30|
 |**Min investment size (USD)** | $150|$150|$150|$150|
+|**Max investment size (USD)** | $25,000|$100,000|$100,000|$100,000|
 |**Release schedule** |60% at TGE, 40% after 6 months|75% at TGE, 25% after 6 months| 90% at TGE, 10% after 6 months |100% at TGE |
 
 #### Treasury 
