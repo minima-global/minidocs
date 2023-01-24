@@ -208,10 +208,6 @@ nano updateminimajar.sh
 
 curl 127.0.0.1:9005/status | jq
 
-# quit node properly
-
-curl 127.0.0.1:9005/quit | jq
-
 #stop and disable service
 sudo systemctl stop minima
 sudo systemctl disable minima
