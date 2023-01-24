@@ -57,9 +57,9 @@ Includes both Wrapped Minima ($WMINIMA) and Native Minima ($MINIMA). It represen
 
 | | % Allocated | % Available at TGE |Post TGE Release Schedule | 
 |:-------|:-----------|:-----------|:-----------|
-|**Presale Tranche 1** | 1% |60%| Remaining 40% available after 6 months|
-|**Presale Tranche 2** | 1% |75%| Remaining 25% available after 6 months|
-|**Presale Tranche 3** | 2% |90%| Remaining 10% available after 6 months|
+|**Presale Tranche 1** | 1% |100%| n/a|
+|**Presale Tranche 2** | 1% |100%| n/a|
+|**Presale Tranche 3** | 2% |100%| n/a|
 |**Presale Tranche 4** | 2% |100%| n/a|
 |**Treasury** | 10% |0%| Distributed over a  10-year period|
 |**Node Incentives** | 12.00% |100%| n/a|
@@ -75,9 +75,9 @@ Represents 12.5% of the total supply and has the following release schedules per
 
 | | % Allocated | % Available at TGE |Post TGE Release Schedule | 
 |:-------|:-----------|:-----------|:-----------|
-|**Presale Tranche 1** | 100% |60%| Remaining 40% available after 6 months|
-|**Presale Tranche 2** | 100% |75%| Remaining 25% available after 6 months|
-|**Presale Tranche 3** | 100% |90%| Remaining 10% available after 6 months|
+|**Presale Tranche 1** | 100% |100%| n/a|
+|**Presale Tranche 2** | 100% |100%| n/a|
+|**Presale Tranche 3** | 100% |100%| n/a|
 |**Presale Tranche 4** | 100% |100%| n/a|
 |**Treasury** | 7% |0%| Linearly over 3-5 years|
 |**Team & Advisors** | 10% |0%| 3 month cliff, then linearly over 4 months |
@@ -130,7 +130,7 @@ Earlier tranches benefit from a greater discount, as shown below:
 |**Price (USD)** | $0.21 |$0.24| $0.27|$0.30|
 |**Min investment size (USD)** | $150|$150|$150|$150|
 |**Max investment size (USD)** | $25,000|$100,000|$100,000|$100,000|
-|**Release schedule** |60% at TGE, 40% after 6 months|75% at TGE, 25% after 6 months| 90% at TGE, 10% after 6 months |100% at TGE |
+|**Release schedule** |100% at launch|100% at launch|100% at launch|100% at launch|
 
 #### Treasury 
 
