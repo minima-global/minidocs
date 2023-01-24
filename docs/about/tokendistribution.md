@@ -144,8 +144,6 @@ The foundation's main responsibilities include; the regulation and monitoring of
 
 The chart below shows how coins allocated for the Public Sale category will gradually be released into the total supply in time:
 
-![Minima](/img/token/publicSaleCirculatingSupplyLM.svg#gh-light-mode-only)![Minima](/img/token/publicSaleCirculatingSupplyDM.svg#gh-dark-mode-only)
-
 ### Node Incentives 
 
 Up to 12% of Minima's total supply (120,000,000 coins) will be allocated to Node Incentives. 
