@@ -52,13 +52,15 @@ A backup needs to be:
 
 If you do not have a valid backup, you will need to restore your funds from an Archive node using your seed phrase.
 
-:::important BACKUPS
+:::important BACKUP Security
 Backups include your **private keys and the proofs to your coins**, these are not stored by anyone else so you are responsible for storing these securely.
+
+Consider encrypting your private keys before taking a backup, see [Private Keys Encryption](#private-keys-encryption).
 :::
 
 #### Points to remember 
 - Take regular backups
-- Password protect your backups or Vault lock your node with a password before taking a backup
+- Consider password protecting your backups or encrypting your keys with a Vault password before taking a backup
 - Store them somewhere safe
 - Without a backup, you risk losing access to your funds!
 
