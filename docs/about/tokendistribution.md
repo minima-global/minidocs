@@ -35,6 +35,15 @@ In addition, the following table shows Minima’s total circulating supply at ke
 |**Circulating Supply** | 217,127,000 |647,137,692 |850,281,538 |965,795,385 |1,000,000,000 |
 |**Total Supply** |  1,000,000,000 |1,000,000,000 |1,000,000,000 |1,000,000,000 |1,000,000,000 |
 
+### Circulating Supply at TGE
+
+The exchange tradable liquidity of Minima coins will only be via Wrapped Minima ($WMINIMA) at the Token Generation Event (TGE). 
+
+Prior to launching Native Minima on exchanges in Q3/Q4 2023, Native Minima ($MINIMA) will only be tradable peer-2-peer via the MiniSwap MiniDapp that will be available soon. 
+
+The following pie chart demonstrates that only 9.8% of the Total Circulating Supply of Minima coins will be available on exchanges at TGE as $WMINIMA: 
+
+![Minima](/img/token/circulatingSupplyTGELM.svg#gh-light-mode-only)![Minima](/img/token/circulatingSupplyTGEDM.svg#gh-dark-mode-only)
 
 ## Token Generation Event (TGE)
 
@@ -198,6 +207,7 @@ Rounds prior to the Public Presale sold at the following prices:
 |:------------|:------------------|:------------------|:------------------|:------------------|:------------------|
 |**Price (USD)** | n/a |$0.01 |$0.02|$0.06 |$0.20 |
 |**Release schedule** | 3 month cliff, then linearly over 36 months |33% at TGE, 67% after 1 year |25% at TGE, then 5% per month |40% at TGE, then 5% per month  |50% at TGE, then 5% per month |
+|**% Wrapped Minima (Available on CEXs at TGE)** | 0% |10% |10%|10% |50% |
 
 #### Circulating Supply
 
