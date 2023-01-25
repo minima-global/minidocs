@@ -158,7 +158,7 @@ nano minima
 #!/bin/sh
 
 #Start the Minima RPC Client 
-Java -cp /home/minima/minima.jar org.minima.utils.MinimaRPCClient
+java -cp /home/minima/minima.jar org.minima.utils.MinimaRPCClient
 ```
 
 3. Write the file using ctrl-`x` then confirm with `y`
