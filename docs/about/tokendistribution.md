@@ -39,7 +39,7 @@ In addition, the following table shows Minima’s total circulating supply at ke
 
 The exchange tradable liquidity of Minima coins will only be via Wrapped Minima ($WMINIMA) at the Token Generation Event (TGE). 
 
-Prior to launching Native Minima on exchanges in Q3/Q4 2023, Native Minima ($MINIMA) will only be tradable peer-2-peer via the MiniSwap MiniDapp that will be available soon. 
+Prior to launching Native Minima on exchanges in Q3/Q4 2023, Native Minima ($MINIMA) will be tradable peer-2-peer for ETH or any ERC-20 token via the MiniSwap MiniDapp that will be available soon.
 
 The following pie chart demonstrates that only 9.8% of the Total Circulating Supply of Minima coins will be available on exchanges at TGE as $WMINIMA: 
 
