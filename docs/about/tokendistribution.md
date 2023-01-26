@@ -33,7 +33,7 @@ In addition, the following table shows Minima’s total circulating supply at ke
 | | Token Generation Event | 1st   anniversary  | 2nd anniversary  |3rd   anniversary  |39 months  |
 |:------------|:------------------|:------------------|:------------------|:------------------|:------------------|
 |**Wrapped Circulating Supply** |  98,100,000 |125,000,000 |125,000,000 |125,000,000 |125,000,000 |
-|**Native Circulating Supply** |  120,435,000 |530,155,538|736,778,007 |847,355,615 |875,000,000 |
+|**Native Circulating Supply** |  120,435,000 |530,155,538|736,778,077 |847,355,615 |875,000,000 |
 |**Total Circulating Supply** | 218,535,000 |655,155,538 |861,778,077 |972,355,615 |1,000,000,000 |
 |**Total Supply** |  1,000,000,000 |1,000,000,000 |1,000,000,000 |1,000,000,000 |1,000,000,000 |
 
