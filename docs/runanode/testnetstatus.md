@@ -16,10 +16,23 @@ Roadmap of events prior to coin distribution:
 
 ## What you need to know about… 
 
-### ...your node
-Most importantly, you must be running **version 103.28 or above before the 31st January.** If you are not on this version or above, you may not be able to collect your coins at Mainnet. 
+### ...Mainnet Bootstrap Phase
 
-If you have installed Minima from the Google Play store, you can set your app to update automatically from the Play Store settings.
+The Bootstrap phase for Mainnet has started. This involves gradually moving all node runners to Mainnet from Testnet. 
+
+Mainnet is a hardfork and therefore Testnet (0.103 and below) and Mainnet versions (1.0 and above) are not compatible. 
+
+Once updated, you will no longer see any of your Testnet wallet balances and will not be able to restore a Testnet backup to a node on Mainnet. 
+
+Please note that you will also have a different Seed Phrase on Mainnet to your Testnet node.
+
+Mainnet Version 1.0 is now available for:
+
+- Server users
+- Docker users
+- Manual node runners (on Desktop)
+
+The Android app will be released in the coming weeks. If you have installed Minima from the Google Play store, you can set your app to update automatically from the Play Store settings.
 
 :::info Checking your version
 To check the version of Minima you are running, check the status of your node.
@@ -39,25 +52,8 @@ Existing members will continue to earn 1 Reward a day, however, you will **no lo
 
 All Rewards due for 2023 will be sent to your Incentive Program account in one go (instead of daily) prior to the coin distribution, provided you continue to run your node.
 
-After Mainnet, you will **no longer have an Incentive Program account** and will not be able to login to the Incentive Program website to view your Rewards. 
-
-Rewards will be converted to real Minima and they will be sent to your Minima wallet address, so make sure you can access your MiniDapp System before Mainnet! 
-
-### ...receiving your Rewards
-At the point of coin distribution, all of your Rewards will be converted to real Minima and sent to your Minima wallet address.
-
-:::tip
-Make sure you have the Wallet MiniDapp installed so you can easily see when you have received your real Minima! 
-:::
-
-Ensure the node you have your Incentive ID connected to is the one you want to receive your Rewards to.
-
-You should have only one node running with your Incentive ID connected to it. If you have been running multiple nodes, decide which node you wish to receive your coins to and connect your ID to that node.
-
-Attempting to connect the same Incentive ID to multiple nodes may cause confusion when receiving your coins! 
-
-:::info proof of person
-Know Your Customer (KYC) will not be required to collect your Minima Rewards, however, you will be required to complete our ‘Proof of Person’ process so we can verify that you are not a bot!
+:::info Mainnet version 1.0 and above
+From Mainnet version 1.0 and above, you do not need to have your Incentive ID connected to your node. As long as you have passed the Verify process, you will be able to claim your Total Rewards balance including Rewards for Jan 1st until TGE. 
 :::
 
 ### ...Incentive Reward Account Verification
@@ -95,7 +91,7 @@ Once you have your confirmation, you are guaranteed to receive your rewards at T
 
 #### I have lost access to my Incentive Reward Account email address
 
-A process to contact us will be made available week of the 23rd January. In the meantime, DO NOT open a Support Ticket. We will be unable to help you.
+You can use [this form](https://docs.google.com/forms/d/e/1FAIpQLSc8wEMYdjpSI_xx0l075SyEeX3oXjtvgSOESLVYFgceM1HuOA/viewform?usp=sf_link) to tell us about your account and what address you want to change to. We will send you your invite once this is processed.
 
 #### I didn’t receive an invite to Verify
 
@@ -107,15 +103,32 @@ Complete [this form](https://docs.google.com/forms/d/e/1FAIpQLSfoSwdl6o_hsZQR6BE
 
 DO NOT open a Support Ticket. We will be unable to help you.
 
-If successful, you will get a Verify email, or one of the team will reach out to you on Discord.
+If successful, you will get a Verify email or one of the team will contact you via a support ticket on Discord.
 
-If you do not hear from us within 5 working days of submission, your account has not passed Verify. All decisions are final.
+Please bare with us as we process these.
 
 #### It has been 24 hours since completing Verify, but I have not received a confirmation email
 
 You have failed Verification. If you believe this to be in error, you can contact us using [this form](https://docs.google.com/forms/d/e/1FAIpQLSe-khUVayeVDB8zbXVmm5w82CPxeiqD_Xn3OcnIyHdnjwAl2g/viewform?usp=sf_link).
 
 One of the team can look into why you failed and you might be contacted via a support ticket on Discord, however there is no guarantee of verification. Any decision made is final.
+
+### ...receiving your Rewards
+
+If you pass the Proof of Person verification, you will be able to Request withdrawal of your Rewards to your node when coin distribution begins. 
+
+Your Total Rewards available to claim will be your existing balance as shown in your account, plus any previously missed rewards, plus all Rewards from January 1st to TGE. 
+
+Your Incentive Rewards will then be converted to real Minima and sent to your Minima wallet address.
+
+:::tip
+Make sure you have the Wallet MiniDapp installed so you can easily see when you have received your real Minima! 
+:::
+
+:::info proof of person
+Know Your Customer (KYC) will not be required to collect your Minima Rewards, however, you will be required to complete our ‘Proof of Person’ Verify process so we can ensure that you are not a bot!
+:::
+
 
 ### ...our Community Presale
 
