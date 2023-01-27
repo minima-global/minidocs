@@ -4,12 +4,33 @@
  */
 
 .heroBanner {
-  padding: 2.5rem 0 0 0;
+  padding: 3.5rem 0 3.5rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-color: transparent;
+  background-color: #17191C;
+  background-image: url(../../static/icons/header_bg.svg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 2rem;
+
+  /* background-size: 200% 200%; */
 }
+
+header > div > h2{
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 36px;
+}
+
+header > div > h1{
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 62px;
+}
+
 .hero{
   background-color: transparent;
 }

@@ -6,6 +6,7 @@ const FeatureList = [
   {
     title: 'About',
     link: 'docs/about/welcome',
+    icon: 'icons/minima_symbol.svg',
     description: (
       <>
         Learn about the purpose and values of Minima and what our vision is
@@ -15,6 +16,7 @@ const FeatureList = [
   {
     title: 'Learn',
     link: 'docs/learn/networkoverview',
+    icon: 'icons/learn_icon.svg',
     description: (
       <>
         A deep dive into the Minima protocol and its architecture
@@ -24,6 +26,7 @@ const FeatureList = [
   {
     title: 'Run a Node',
     link: 'docs/runanode/get_started',
+    icon: 'icons/run_icon.svg',
     description: (
       <>
         Install and run a validating and constructing Minima node on your device
@@ -33,6 +36,7 @@ const FeatureList = [
   {
     title: 'Build',
     link: 'docs/buildonminima/startaprivatenode',
+    icon: 'icons/build_icon.svg',
     description: (
       <>
         Develop decentralized applications and create smart contracts on Minima
@@ -43,6 +47,7 @@ const FeatureList = [
   {
     title: 'Ambassador',
     link: 'docs/earnrewards/ambassador',
+    icon: 'icons/rewards_icon.svg',
     description: (
       <>
         Become a Minima ambassador and earn additional Rewards
@@ -52,6 +57,7 @@ const FeatureList = [
   {
     title: 'Mainnet',
     link: 'docs/runanode/testnetstatus',
+    icon: 'icons/mainnet_icon.svg',
     description: (
       <>
         Check the latest updates as we transition from Testnet to Mainnet
@@ -62,15 +68,16 @@ const FeatureList = [
 
 // Remove SVG on deploy
 
-function Feature({Svg, title, link, description}) {
+function Feature({icon, title, link, description}) {
   return (
     <div className={clsx('col col--4')}>
-      <a class="navbar__link" href={link}>
-        <div class="card">
+      <a className="navbar__link" href={link}>
+        <div className="card">
+            <img src={icon} className="card__icon" width="32px" height="32px"></img>
             <div className={clsx('card__header', styles.card__header__min)}>
               <p>{title}</p>
             </div>
-            <div class="card__body">
+            <div className="card__body">
               <p>{description}</p>
             </div>
         </div>

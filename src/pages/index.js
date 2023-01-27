@@ -11,6 +11,7 @@ function HomepageHeader() {
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">Welcome to {siteConfig.title}</h1>
+        <h2>A completely decentralized network<br></br> that empowers freedom for all.</h2>
       </div>
     </header>
   );
