@@ -48,14 +48,7 @@ Desktop nodes:
 2. Ensure the CPU is set to 2 and Memory is set to 2GB per node.
 
 Server nodes: 
-1. To check the current resources, run `docker info` or `htop`
-2. You can allocate additional memory using the following commands:
-
-`sudo swapoff -a` <br/>
-`sudo fallocate -l 2G /swapfile` <br/>
-`sudo chmod 600 /swapfile`<br/>
-`sudo mkswap /swapfile`<br/>
-`sudo swapon /swapfile`<br/>
+You may prefer to [install Minima as a service](/docs/runanode/selectplatform/linuxvpsservice) on your server instead. 
 
 
 

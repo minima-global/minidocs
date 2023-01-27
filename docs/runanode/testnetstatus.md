@@ -4,7 +4,7 @@ sidebar_position: 12
 
 # Latest Testnet Status
 
-*Last updated: 21st January 2023*
+*Last updated: 27th January 2023*
 
 As we get closer to Mainnet, here is the important information you need to know.
 
