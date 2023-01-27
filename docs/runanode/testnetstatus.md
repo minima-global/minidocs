@@ -20,11 +20,9 @@ Roadmap of events prior to coin distribution:
 
 The Bootstrap phase for Mainnet has started. This involves gradually moving all node runners to Mainnet from Testnet. 
 
-Mainnet is a hardfork and therefore Testnet (0.103 and below) and Mainnet versions (1.0 and above) are not compatible. 
+Mainnet is a hardfork and therefore Testnet (0.103 and below) and Mainnet versions (1.0 and above) are not compatible. This means that once updated you will no longer see any of your Testnet wallet balances and will not be able to restore a Testnet backup to a node on Mainnet. 
 
-Once updated, you will no longer see any of your Testnet wallet balances and will not be able to restore a Testnet backup to a node on Mainnet. 
-
-Please note that you will also have a different Seed Phrase on Mainnet to your Testnet node.
+You will also have a different Seed Phrase on Mainnet to your Testnet node.
 
 Mainnet Version 1.0 is now available for:
 
@@ -34,16 +32,17 @@ Mainnet Version 1.0 is now available for:
 
 The Android app will be released in the coming weeks. If you have installed Minima from the Google Play store, you can set your app to update automatically from the Play Store settings.
 
+What you need to do:
+- If running Minima on a server, ensure your node is secured! For example, your RPC port must be closed (default port 9005). Information about Port configuration can be found in [System Requirements](/docs/runanode/systemrequirements).
+- Take note of your NEW seed phrase which can be found using the `vault` command
+- Regularly check the `status` of your node to ensure your tip block is up to date
+
 :::info Checking your version
-To check the version of Minima you are running, check the status of your node.
+To check the version of Minima you are running, you can run the `status` command on your node.
 
 For help , select your platform of choice from [Get Started](/docs/runanode/get_started) and see the section "How to check the Status of your node".
 :::
 
-:::important Seed Phrase and Backups
-After Mainnet, you will need to know your 24 word seed phrase and take frequent backups to ensure your funds remain safe. 
-Your seed phrase can be found from the **Backup/Restore** page (click on **Archive Node**) on Android, or using the `Vault` command from the Terminal MiniDapp. 
-:::
 
 ### ...the Incentive Program
 The Incentive Rewards Program is now **closed to new members.**
@@ -165,30 +164,6 @@ There will be 4 tranches at different prices, the first and earliest tranche is 
 - Min purchase size $150
 - Max purchase size $100,000
 
-
-### ...the Mainnet Bootstrap phase 
-
-Over the next 4-6 weeks, we will be starting the controlled rollout of Minima Mainnet (version 1.0.6) as we begin the Bootstrap phase
-
-The Bootstrap phase involves steadily increasing the users on the main network.
-
-There is no benefit, reward or incentive for joining the network at this early stage, so don’t worry if you are not updated yet!
-
-Mainnet v1.0.6 is now available for:
-1. Manual node runners on desktop (using the .jar from Github)
-2. Users still running the old installation script on a VPS
-
-What you need to know:
-- There will be no transactions on the network yet
-- Users running v0.103 may start to experience disruption 
-- Gimme20 will NOT work on this version
-
-What you need to do:
-- Ensure your node is secured! For example, if you are running Minima on a server your RPC port must be closed (default port 9005)
-- Take note of your NEW seed phrase which can be found using the `vault` command
-- Regularly check the `status` of your node to ensure your tip block is up to date
-
-Mainnet versions for Docker and Android will be made available in the coming weeks.
 
 ***Still have questions?***<br/>
 *Please contact us in the Support channel on [Discord](https://discord.gg/minima)*
