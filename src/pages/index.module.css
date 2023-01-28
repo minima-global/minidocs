@@ -8,8 +8,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-color: #17191C;
-  background-image: url(../../static/icons/header_bg.svg);
+  background-color: var(--ifm-header-background-color);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

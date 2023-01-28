@@ -10,8 +10,9 @@
 :root {
   --ifm-color-primary: #317aff;
   --ifm-code-font-size: 95%;
-  --ifm-navbar-background-color: #F9F9FA;
+  --ifm-navbar-background-color: #F4F4F5;
   --ifm-heading-color: #08090B;
+  --ifm-header-background-color: #E9E9EB;
 
 /* Typography. */
   --ifm-heading-font-family: 'Manrope', sans-serif;
@@ -50,6 +51,9 @@
 /* Icon color */
   --ifm-icon-color: invert(5%) sepia(10%) saturate(1081%) hue-rotate(176deg) brightness(98%) contrast(89%);
   --ifm-icon-color-hover: brightness(0) invert(1);
+
+  /* Background header */
+  --ifm-header-bg:  url(../../static/icons/header_bg_white.svg);
 }
 
 .main-wrapper {
@@ -60,6 +64,7 @@
 [data-theme='dark'] {
   --ifm-color-primary: #317aff;
   --ifm-navbar-background-color: #17191C;
+  --ifm-header-background-color: #17191C;
 
 /* Typography */
   --ifm-heading-color: #ffffff;
@@ -82,6 +87,8 @@
 /* Icon color */
   --ifm-icon-color: brightness(0) invert(1);
   --ifm-icon-color-hover: invert(5%) sepia(10%) saturate(1081%) hue-rotate(176deg) brightness(98%) contrast(89%);
+
+  --ifm-header-bg:  url(../../static/icons/header_bg.svg);
 }
 
 /* Boxes */
@@ -115,6 +122,14 @@ h2{
 .navbar__logo {
   margin-left: 0.5rem;
   height: 3rem;
+}
+
+.navbar {
+  box-shadow: none;
+}
+
+.hero{
+  background-image: var(--ifm-header-bg);
 }
 
 /* .text--truncate {
