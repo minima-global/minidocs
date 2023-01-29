@@ -367,6 +367,12 @@ article{
 
 /* Mobile adjustment */
 
+@media (min-width:996px) and (max-width:1100px){
+  .navbar__link{
+    font-size: 14px;
+  }
+}
+
 /** In mobile view, reduce the padding */
 @media screen and (max-width: 996px) {
   .main-wrapper .hero{
