@@ -102,23 +102,70 @@ const config = {
         ],
       },
       footer: {
-        style: "dark",
+        // style: "dark",
         links: [
           {
-            title: "Docs",
+            // title: "Docs",
             items: [
               {
-                label: "Introduction",
-                to: "docs/about/vision",
+                html: `
+                  <a href="https://www.minima.global/" class="footer__logo" target="_blank" rel="noreferrer noopener">
+                    <img src="img/minima_logo.svg" alt="Minima Global" />
+                  </a>
+                  <p>
+                  The evolution will not be centralized<br />Become part of it
+                  </p>
+                `,
+              },
+              {
+                label: "Terms & conditions",
+                to: "docs/terms/minimatermsandconditions/",
+              },
+              {
+                label: "Privacy policy",
+                to: "docs/terms/minimaprivacypolicy/",
               },
             ],
           },
           {
-            title: "Community",
+            title: "Quick Links",
+            items: [
+              {
+                label: "Run a node",
+                href: "docs/runanode/get_started/",
+              },
+              {
+                label: "Blog",
+                href: "https://www.minima.global/blog",
+              },
+              {
+                label: "News",
+                href: "https://www.minima.global/news",
+              },
+              {
+                label: "Newsletter",
+                href: "http://newsletter.minima.global/",
+              },
+              {
+                label: "MiniDapps",
+                href: "https://www.minima.global/minidapps",
+              },
+              {
+                label: "Media kit",
+                href: "https://www.minima.global/media-kit",
+              },
+              {
+                label: "Merchandise",
+                href: "https://merch.minima.global/",
+              },
+            ],
+          },
+          {
+            title: "Social",
             items: [
               {
                 label: "Discord",
-                href: "https://discord.gg/minima",
+                href: "https://discord.com/invite/minima",
               },
               {
                 label: "Telegram",
@@ -128,14 +175,17 @@ const config = {
                 label: "Twitter",
                 href: "https://twitter.com/Minima_Global",
               },
-            ],
-          },
-          {
-            title: "Devs",
-            items: [
               {
-                label: "GitHub",
-                href: "https://github.com/minima-global",
+                label: "YouTube",
+                href: "https://www.youtube.com/channel/UCDe2j57uQrUVtVizFbDpsoQ",
+              },
+              {
+                label: "CoinMarketCap",
+                href: "https://coinmarketcap.com/currencies/minima-global/",
+              },
+              {
+                label: "CoinGecko",
+                href: "https://www.coingecko.com/en/coins/minima",
               },
             ],
           },

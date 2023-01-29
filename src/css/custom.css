@@ -28,8 +28,8 @@
   --ifm-background-color: #FFFFFF;
 
 /* Footer */
-  --ifm-footer-background-color: #17191C;
-
+  --ifm-footer-background-color: #F4F4F5;
+  
 /* Card */
   --ifm-card-background-color: #F4F4F5; 
   --ifm-spacing-horizontal: 0.5rem;
@@ -72,6 +72,9 @@
 
 /* Main body */
   --ifm-background-color: #08090B;
+
+/* Footer */
+--ifm-footer-background-color: #17191C;
   
 /* Card */
   --ifm-card-background-color: #17191C;
@@ -158,11 +161,47 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
   font-size: 12px;
 }
 
+.footer__logo{
+  width: 180px;
+  display: flex;
+  filter: var(--ifm-icon-color);
+  margin-bottom: 26px;
+  margin-top: 0;
+}
+
 /* Removing link icon */
 .footer__link-item svg, .navbar__link svg {
   display: none;
 }
 
+div.row.footer__links > div:nth-child(1){
+  padding-top: 0rem !important;
+}
+
+div.row.footer__links > div:nth-child(1) > div{
+  display: none;
+}
+
+div.row.footer__links > div:nth-child(1) > ul > li:nth-child(1) > p{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+}
+
+div.row.footer__links > div:nth-child(1) .footer__link-item{
+  font-size: 12px;
+}
+
+.footer__link-item{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+.footer__link-item:hover{
+  text-decoration: none;
+}
 
 /* Removing breadcrumbs */
 .theme-doc-breadcrumbs{
@@ -219,7 +258,7 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
   width: 32px;
   height: 32px;
   display: flex;
-  margin: 0 0 0 1rem;
+  margin: 1rem 0 0 0;
 }
 
 .card > .card__icon{
@@ -230,6 +269,25 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
   filter: var(--ifm-icon-color-hover);
 }
 
+.card__header, .card__body{
+  padding: 0;
+}
+
+.card__header{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  margin: 1rem 0 1rem 0;
+}
+
+.card__body{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  margin: 0 0 1rem 0;
+}
 
 .row .col.col--4 {
   padding-bottom: var(--ifm-spacing-vertical);
