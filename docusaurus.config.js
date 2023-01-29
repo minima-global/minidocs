@@ -110,7 +110,7 @@ const config = {
               {
                 html: `
                   <a href="https://www.minima.global/" class="footer__logo" target="_blank" rel="noreferrer noopener">
-                    <img src="img/minima_logo.svg" alt="Minima Global" />
+                    <img src="https://docs.minima.global/img/minima_logo.svg" alt="Minima Global" />
                   </a>
                   <p>
                   The evolution will not be centralized<br />Become part of it
