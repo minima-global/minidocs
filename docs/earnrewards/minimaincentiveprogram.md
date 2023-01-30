@@ -7,7 +7,13 @@ sidebar_position: 1
 :::info THE INCENTIVE PROGRAM IS NOW CLOSED
 The Incentive Rewards Program is now closed to new users.
 
-Existing users will continue to earn, however all Rewards due for 2023 will be received in March (prior to Token distribution) instead of daily, provided you continue to run your node.
+Existing users will continue to earn, however all Rewards due for 2023 will be received in March (prior to Token distribution) instead of daily.
+
+From Mainnet version 1.0 and above, you do not need to have your Incentive ID connected to your node.
+ 
+As long as have completed and passed the Proof of Person verification process, you will be able to claim your Total Rewards balance to a Mainnet node of your choice (including Rewards for Jan 1st until TGE) once the Payout process begins.
+
+Please refer to the [Testnet Status](/docs/runanode/testnetstatus/) page for the latest information.
 :::
 
 ## What is the Minima Incentive Program?
@@ -42,13 +48,7 @@ Yes, providing you have the correct device to install and run a MInima node.
 
 ## How many nodes can I connect to my Incentive Reward account?
 
-You should have only one node running with your Incentive ID connected to it. 
-
-Ensure the node you have your Incentive ID connected to is the one you want to receive your Rewards to at Mainnet.
-
-If you have been running multiple nodes, decide which node you wish to receive your coins to and connect your ID to that node.
-
-Attempting to connect the same Incentive ID to multiple nodes may cause confusion when receiving your coins! 
+You are no longer required to connect your Incentive ID to your node.  
 
 ## How many Incentive Reward accounts can I have?
 

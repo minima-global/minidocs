@@ -122,7 +122,19 @@ You will see your MiniDapp System (MDS) login page.
 
 ## Set up your Incentive Program account 
 
-If you have registered for the Incentive Program you must connect your Incentive ID to your node to start receiving daily Rewards.
+:::info THE INCENTIVE PROGRAM IS NOW CLOSED
+The Incentive Rewards Program is now closed to new users.
+
+Existing users will continue to earn, however all Rewards due for 2023 will be received in March (prior to Token distribution) instead of daily.
+
+From Mainnet version 1.0 and above, you do not need to have your Incentive ID connected to your node.
+ 
+As long as have completed and passed the Proof of Person verification process, you will be able to claim your Total Rewards balance to a Mainnet node of your choice (including Rewards for Jan 1st until TGE) once the Payout process begins.
+
+Please refer to the [Testnet Status](/docs/runanode/testnetstatus/) page for the latest information.
+:::
+
+<!-- If you have registered for the Incentive Program you must connect your Incentive ID to your node to start receiving daily Rewards.
 
 :::info THE INCENTIVE PROGRAM IS NOW CLOSED
 The Incentive Rewards Program is now closed to new users.
@@ -131,7 +143,7 @@ Existing users will continue to earn, however all Rewards due for 2023 will be r
 :::
 
 <!-- If you have not registered, click [here](https://incentive.minima.global/account/register) to sign up. -->
-
+<!-- 
 1. Open the Incentive Program minidapp
 
 ![mds_IP](/img/runanode/IP_minidapp.png#width50)
@@ -144,7 +156,7 @@ Existing users will continue to earn, however all Rewards due for 2023 will be r
 
 4. Check the Rewards page to check your balance!
 
-![mds_IP](/img/runanode/IP_checkrewards.png#width50)
+![mds_IP](/img/runanode/IP_checkrewards.png#width50) -->
 
 ## FAQ 
 

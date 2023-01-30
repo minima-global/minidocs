@@ -4,14 +4,6 @@ sidebar_position: 1
 
 # Get Started
 
-<!-- Running a Minima node couldn't be easier, and if you choose to join our Incentive Program, you will earn **1 Reward each day your node is live!** -->
-
-<!-- 1. Register for the [Incentive Program](https://incentive.minima.global/account/register) **using an email address that you won’t lose access to**
-2. Set up your node. *In a rush? Download Minima from the [Google Play Store](https://play.google.com/store/apps/details?id=com.minima.android&hl=en&gl=US)!*
-
-3. [Connect your node](/docs/runanode/incentivesetup) to your Incentive Program account -->
-
-
 Running a Minima node couldn't be easier; to start your node, select your platform of choice:
 
 - [Android](/docs/runanode/selectplatform/android_v9_and_up)<br/>
@@ -23,20 +15,19 @@ Running a Minima node couldn't be easier; to start your node, select your platfo
 
 *In a rush? Download Minima from the [Google Play Store](https://play.google.com/store/apps/details?id=com.minima.android&hl=en&gl=US)!*
 
-:::info The Incentive Program is now closed to new users.
-:::
-
-:::info Existing incentive program user?
-If you are an existing Incentive Program user, you must 
-1. Be on v103.28 (1.0.28 for Android) or above. To check your version, run the `status` command on your node.
-2. Connect your Incentive ID to your node
-3. Verify your account once you receive the verification link sent to the email address you registered with. 
-
-Failure to do so will result in you being unable to collect your $MINIMA coins at Mainnet.
-:::
-
-
 Once your node running, [learn about MiniDapps](/docs/learn/minidapps/minidappsintro) to discover your open, decentralized ecosystem. 
+
+:::info THE INCENTIVE PROGRAM IS NOW CLOSED
+The Incentive Rewards Program is now closed to new users.
+
+Existing users will continue to earn, however all Rewards due for 2023 will be received in March (prior to Token distribution) instead of daily.
+
+From Mainnet version 1.0 and above, you do not need to have your Incentive ID connected to your node.
+ 
+As long as have completed and passed the Proof of Person verification process, you will be able to claim your Total Rewards balance to a Mainnet node of your choice (including Rewards for Jan 1st until TGE) once the Payout process begins.
+
+Please refer to the [Testnet Status](/docs/runanode/testnetstatus/) page for the latest information.
+:::
 
 ### Stay up to date
 

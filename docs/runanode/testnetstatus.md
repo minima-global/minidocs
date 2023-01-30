@@ -20,11 +20,20 @@ Roadmap of events prior to coin distribution:
 
 The Bootstrap phase for Mainnet has started. This involves gradually moving all node runners to Mainnet from Testnet. 
 
+:::info Checking your version
+To check the version of Minima you are running, you can run the `status` command on your node.
+
+**Mainnet:** v1.0.6 or above <br/>
+**Testnet:** v0.103.30 or below 
+
+For help , select your platform of choice from [Get Started](/docs/runanode/get_started) and see the section "How to check the Status of your node".
+:::
+
 Mainnet is a hardfork and therefore Testnet (0.103 and below) and Mainnet versions (1.0 and above) are not compatible. This means that once updated you will no longer see any of your Testnet wallet balances and will not be able to restore a Testnet backup to a node on Mainnet. 
 
 You will also have a different Seed Phrase on Mainnet to your Testnet node.
 
-Mainnet Version 1.0 is now available for:
+Mainnet Version 1.0 (or above) is now available for:
 
 - Server users
 - Docker users
@@ -36,12 +45,6 @@ What you need to do:
 - If running Minima on a server, ensure your node is secured! For example, your RPC port must be closed (default port 9005). Information about Port configuration can be found in [System Requirements](/docs/runanode/systemrequirements).
 - Take note of your NEW seed phrase which can be found using the `vault` command
 - Regularly check the `status` of your node to ensure your tip block is up to date
-
-:::info Checking your version
-To check the version of Minima you are running, you can run the `status` command on your node.
-
-For help , select your platform of choice from [Get Started](/docs/runanode/get_started) and see the section "How to check the Status of your node".
-:::
 
 
 ### ...the Incentive Program

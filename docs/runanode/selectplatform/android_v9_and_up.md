@@ -42,18 +42,22 @@ If you have been offline for a long time, you may need to restore your node from
 
 ## Setting up your Incentive Account
 
-After installing the app, if you have registered for the [Incentive Program](https://incentive.minima.global/account/register), you must connect your Incentive ID to your node to receive daily Rewards.
-
 :::info THE INCENTIVE PROGRAM IS NOW CLOSED
 The Incentive Rewards Program is now closed to new users.
 
-Existing users will continue to earn, however all Rewards due for 2023 will be received in March (prior to Token distribution) instead of daily, provided you continue to run your node.
+Existing users will continue to earn, however all Rewards due for 2023 will be received in March (prior to Token distribution) instead of daily.
+
+From Mainnet version 1.0 and above, you do not need to have your Incentive ID connected to your node.
+ 
+As long as have completed and passed the Proof of Person verification process, you will be able to claim your Total Rewards balance to a Mainnet node of your choice (including Rewards for Jan 1st until TGE) once the Payout process begins.
+
+Please refer to the [Testnet Status](/docs/runanode/testnetstatus/) page for the latest information.
 :::
 
 <!-- :::info Previous users
 If you had an account prior to 6th December 2021, you must reset your password [here.](https://incentive.minima.global/account/forgot-password) Please check your junk mail for the reset password email.
 ::: -->
-
+<!-- 
 1. From the Home screen in the Minima app, open the **Incentive Program** MiniDapp
 2. Click on the 3 dots in the top right and select **Open in Browser**
 3. Follow the link to the Incentive Program website to log in
@@ -79,7 +83,7 @@ You can also check your Reward balance from the Terminal MiniDapp using the `inc
 
 :::tip Rewards
 For every day your node is connected to the network, you will receive 1 Reward.
-:::
+::: -->
 
 ## FAQ
 

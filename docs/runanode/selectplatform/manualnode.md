@@ -116,22 +116,26 @@ mds
 
 ## Set up your Incentive Program account
 
-If you have registered for the Incentive Program you must connect your Incentive ID to your node to start receiving daily Rewards.
-
 :::info THE INCENTIVE PROGRAM IS NOW CLOSED
 The Incentive Rewards Program is now closed to new users.
 
-Existing users will continue to earn, however all Rewards due for 2023 will be received in March (prior to Token distribution) instead of daily, provided you continue to run your node.
+Existing users will continue to earn, however all Rewards due for 2023 will be received in March (prior to Token distribution) instead of daily.
+
+From Mainnet version 1.0 and above, you do not need to have your Incentive ID connected to your node.
+ 
+As long as have completed and passed the Proof of Person verification process, you will be able to claim your Total Rewards balance to a Mainnet node of your choice (including Rewards for Jan 1st until TGE) once the Payout process begins.
+
+Please refer to the [Testnet Status](/docs/runanode/testnetstatus/) page for the latest information.
 :::
 
 <!-- If you have not registered, click [here](https://incentive.minima.global/account/register) to sign up. -->
-
+<!-- 
 There are two methods to setup your Incentive Program account:
 
 A. [Use the Incentive Program MiniDapp](/docs/runanode/incentivesetup#a-using-the-incentive-program-minidapp-recommended) (recommended) <br/>
-B. [Use the Minima Terminal](/docs/runanode/incentivesetup#b-using-the-minima-terminal-advanced-method) (advanced users)
+B. [Use the Minima Terminal](/docs/runanode/incentivesetup#b-using-the-minima-terminal-advanced-method) (advanced users) -->
 
-
+<!-- 
 ### A. Using the Incentive Program MiniDapp (recommended)
 
 1. Download and save the latest **Incentive Program** MiniDapp from our [MiniDapp site.](https://minidapps.minima.global/) 
@@ -231,7 +235,7 @@ incentivecash
 
 :::tip Rewards
 For every day your node is connected to the network, you will receive 1 Reward within the next 24 hours.
-:::
+::: -->
 
 -------
 
