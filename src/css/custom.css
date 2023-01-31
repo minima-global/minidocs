@@ -72,6 +72,7 @@
   /* --ifm-navbar-link-hover: #F4F4F5; */
   --ifm-navbar-link-hover: #FFFFFF;
   --ifm-navbar-link: #BDBDC4;
+  --ifm-input-cancel-color: #17191C;
 
 /* Typography */
   --ifm-heading-color: #ffffff;
@@ -140,17 +141,17 @@ h2{
   box-shadow: none;
 }
 
-.navbar__link{
+.navbar__link, .navbar__brand{
   color: var(--ifm-navbar-link);
 }
 
 
-.navbar__link:hover{
+.navbar__link:hover, .navbar__brand:hover{
   color: var(--ifm-navbar-link-hover);
 }
 
 .menu__link--active{
-  color: var(--ifm-navbar-link);
+  color: var(--ifm-navbar-link-hover);
 }
 
 .menu__link:hover{
@@ -391,7 +392,7 @@ div.row.footer__links > div:nth-child(1) .footer__link-item{
 }
 
 .aa-Label svg, .aa-LoadingIndicator svg {
-  color: var(--ifm-color-primary) !important;
+  color: var(--ifm-navbar-link) !important;
 }
 
 .aa-DetachedSearchButtonPlaceholder{
@@ -399,14 +400,14 @@ div.row.footer__links > div:nth-child(1) .footer__link-item{
 }
 
 .aa-DetachedCancelButton{
-  background-color: var(--ifm-color-primary) !important;
+  background-color: var(--ifm-navbar-link) !important;
   color: var(--ifm-input-cancel-color) !important;
   font-weight: 500 !important;
-  border-radius: 1px;
+  border-radius: 1px !important;
 }
 
 .aa-Form{
-  border-radius: 12px !important;
+  border-radius: 1px !important;
 }
 
 .aa-Input{
@@ -418,6 +419,9 @@ div.row.footer__links > div:nth-child(1) .footer__link-item{
   color: var(--ifm-input-text-color) !important;
   font-weight: 500 !important;
   background-color: var(--ifm-navbar-background-color) !important;
+}
+.aa-DetachedContainer {
+  border-radius: 1px !important;
 }
 
 article{
