@@ -9,11 +9,7 @@
   position: relative;
   overflow: hidden;
   background-color: var(--ifm-header-background-color);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 
   /* background-size: 200% 200%; */
 }
