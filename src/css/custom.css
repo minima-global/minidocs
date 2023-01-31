@@ -185,7 +185,7 @@ h2{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 180% 180%;
+  background-size: 160% auto;
 }
 
 /* .text--truncate {
