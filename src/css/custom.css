@@ -39,6 +39,8 @@
   --ifm-card-border-radius: 0px;
   --ifm-card-body-color: #91919D;
   --ifm-card-body-color-hover: #BDBDC4;
+  --ifm-card-header: #17191C;
+  --ifm-card-header-hover: #FFFFFF;
 
 /* Search */
   --ifm-input-border-color: #BDBDC4;
@@ -73,6 +75,9 @@
   --ifm-navbar-link-hover: #FFFFFF;
   --ifm-navbar-link: #91919D;
   --ifm-input-cancel-color: #17191C;
+
+  --ifm-card-header: #FFFFFF;
+  --ifm-card-header-hover: #17191C;
 
 /* Typography */
   --ifm-heading-color: #ffffff;
@@ -185,7 +190,7 @@ h2{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 160% auto;
+  background-size: 120% auto;
 }
 
 /* .text--truncate {
@@ -348,6 +353,11 @@ div.row.footer__links > div:nth-child(1) .footer__link-item{
   line-height: 36px;
   letter-spacing: 0.02em;
   margin: 1rem 0 1rem 0;
+  color: var(--ifm-card-header);
+}
+
+.card:hover > .card__header{
+  color: var(--ifm-card-header-hover);
 }
 
 .card__body{
