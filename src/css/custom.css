@@ -156,7 +156,11 @@ h2{
 }
 
 .menu__link--active{
-  color: var(--ifm-navbar-link-hover);
+  color: var(--ifm-navbar-link-hover) !important;
+}
+
+.menu__link{
+  color: var(--ifm-navbar-link);
 }
 
 .menu__link:hover{
