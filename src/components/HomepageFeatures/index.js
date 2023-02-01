@@ -47,7 +47,7 @@ const FeatureList = [
   {
     title: 'Ambassador',
     link: 'docs/earnrewards/ambassador',
-    icon: 'icons/rewards_icon.svg',
+    icon: 'icons/ambassador_icon.svg',
     description: (
       <>
         Become a Minima ambassador and earn additional Rewards

@@ -132,7 +132,7 @@ const config = {
             items: [
               {
                 label: "Run a node",
-                href: "docs/runanode/get_started/",
+                href: "/docs/runanode/get_started",
               },
               {
                 label: "Blog",
