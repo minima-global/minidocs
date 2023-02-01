@@ -194,9 +194,9 @@ h2{
 .hero{
   background-image: var(--ifm-header-bg);
   background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 120% auto;
+  background-position: center -220px;
+  background-repeat: repeat;
+  background-size: 120%;
 }
 
 /* .text--truncate {
