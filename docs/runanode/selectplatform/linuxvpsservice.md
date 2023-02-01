@@ -108,7 +108,7 @@ EOF
 7. Switch to the minima user
 
 ```
-sudo su - minima
+sudo su minima
 ```
 8. Go to the home directory
 
@@ -139,7 +139,7 @@ sudo systemctl start minima
 ```
 14. View the logs
 ```
-journalctl -u minima -f
+sudo journalctl -u minima -f
 ```
 
 ## Setup the RPC client 
@@ -234,7 +234,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable minima
 sudo systemctl start minima
 
-journalctl -u minima -f
+sudo journalctl -u minima -f
 ```
 
 4. Save the script:
@@ -375,7 +375,7 @@ If you encrypted your private keys before taking the backup that you are now res
 ## Useful Commands
 
 ### Server commands
-`journalctl -u minima_9001 -f` : Show the Minima logs<br/>
+`sudo journalctl -u minima_9001 -f` : Show the Minima logs<br/>
 ctrl-`c` : Exits the Minima logs (Minima will continue to run in the background)<br/>
 `sudo ps -fC java` : Shows all running Java processes<br/>
 `sudo systemctl status minima` - Check the status of the Minima background service<br/>
