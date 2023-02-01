@@ -60,6 +60,8 @@
 
   /* Background header */
   --ifm-header-bg:  url(../../static/icons/header_bg_white.svg);
+
+  --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><path d="M4.9,9.3L8,6.2l3.1,3.1L12,9.3l-4-4l-4,4L4.9,9.3z"/></svg>');
 }
 
 .main-wrapper {
