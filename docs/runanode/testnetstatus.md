@@ -40,7 +40,7 @@ Mainnet Version 1.0 (or above) is now available for:
 - Manual node runners (on Desktop)
 - Android users (from 1st Feb 2023)
 
-The Mainnet Android app (v1.0.16) is currently being rolled out in stages over the next 2 weeks. If you have installed Minima from the Google Play store, you can set your app to update automatically from the Play Store settings, otherwise check the Play store to Update manually.
+If you have installed Minima from the Google Play store, you can set your app to update automatically from the Play Store settings, otherwise check the Play store to Update manually.
 
 Mainnet is a hard fork and not compatible with Testnet, you will no longer see any wallet balances that you saw during Testnet, your wallet balance will be 0.
 
@@ -54,12 +54,26 @@ What you need to do:
 ### ...the Incentive Program
 The Incentive Rewards Program is now **closed to new members.**
 
-Existing members will continue to earn 1 Reward a day, however, you will **no longer see pings after 31st December** being updated on your node.
+Existing members will continue to earn once on Mainnet at 1 Reward a day, however, you will **no longer see pings after 31st December** being updated on your node.
 
-All Rewards due for 2023 will be sent to your Incentive Program account in one go (instead of daily) prior to the coin distribution, provided you continue to run your node.
+From Mainnet version 1.0 and above, you **do not need to have your Incentive ID connected to your node.** As long as you have passed the Verify process, you will be able to claim your Total Rewards balance plus Rewards for Jan 1st until TGE. 
 
-:::info Mainnet version 1.0 and above
-From Mainnet version 1.0 and above, you do not need to have your Incentive ID connected to your node. As long as you have passed the Verify process, you will be able to claim your Total Rewards balance including Rewards for Jan 1st until TGE. 
+All Rewards due for 2023 will be sent to your Incentive Program account in one go (instead of daily) prior to the coin distribution, provided you have passed the Proof of Person verification process.
+
+### ...receiving your Rewards
+
+If you pass the [Proof of Person verification](#incentive-reward-account-verification), you will be able to Request withdrawal of your Rewards to your node when coin distribution begins, currently scheduled for March 2023.
+
+Your Total Rewards available to withdraw will be your existing balance as shown in your account, plus any previously missed rewards, plus all Rewards from January 1st to TGE. 
+
+Once you have requested to withdraw your Incentive Rewards, they will be converted to real Minima and sent to your Minima wallet address.
+
+:::tip
+Make sure you have the Wallet MiniDapp installed so you can easily see when you have received your real Minima! 
+:::
+
+:::info proof of person
+Know Your Customer (KYC) will not be required to collect your Minima Rewards, however, you will be required to complete our ‘Proof of Person’ Verify process so we can ensure that you are not a bot!
 :::
 
 ### ...Incentive Reward Account Verification
@@ -119,23 +133,6 @@ You have failed Verification. If you believe this to be in error, you can contac
 
 One of the team can look into why you failed and you might be contacted via a support ticket on Discord, however there is no guarantee of verification. Any decision made is final.
 
-### ...receiving your Rewards
-
-If you pass the Proof of Person verification, you will be able to Request withdrawal of your Rewards to your node when coin distribution begins. 
-
-Your Total Rewards available to claim will be your existing balance as shown in your account, plus any previously missed rewards, plus all Rewards from January 1st to TGE. 
-
-Your Incentive Rewards will then be converted to real Minima and sent to your Minima wallet address.
-
-:::tip
-Make sure you have the Wallet MiniDapp installed so you can easily see when you have received your real Minima! 
-:::
-
-:::info proof of person
-Know Your Customer (KYC) will not be required to collect your Minima Rewards, however, you will be required to complete our ‘Proof of Person’ Verify process so we can ensure that you are not a bot!
-:::
-
-
 ### ...our Community Presale
 
 Our pre-sale is an opportunity to purchase Minima ahead of coin distribution and will take place in February 2023.
@@ -148,25 +145,25 @@ There will be 4 tranches at different prices, the first and earliest tranche is 
 
 **Tranche 1:**
 - Existing Incentive Program members only
-- 30% Discount
+- $0.21 (30% Discount)
 - 10 million (10,000,000) coins available
 - Min purchase size $150
 - Max purchase size $25,000
 
 **Tranche 2:**
-- 20% Discount
+- $0.24 (20% Discount)
 - 10 million (10,000,000) coins available
 - Min purchase size $150
 - Max purchase size $100,000
 
 **Tranche 3:** 
-- 10% Discount
+- $0.27 (10% Discount)
 - 20 million (20,000,000) coins available
 - Min purchase size $150
 - Max purchase size $100,000
 
 **Tranche 4:**
-- 0% Discount
+- $0.30 (0% Discount)
 - 20 million (20,000,000) coins available
 - Min purchase size $150
 - Max purchase size $100,000
