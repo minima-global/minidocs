@@ -73,7 +73,7 @@ Includes both Wrapped Minima ($WMINIMA) and Native Minima ($MINIMA). It represen
 |**Presale Tranche 3** | 2% |100%| n/a|
 |**Presale Tranche 4** | 2% |100%| n/a|
 |**Treasury** | 10% |0%| Distributed over a  10-year period|
-|**Node Incentives** | 12.00% |50%| 25% after 6 months, 25% after 12 months |
+|**Node Incentives** | 12.00% |100%| n/a |
 |**Loyalty Program/Grants** | 23.00% |0%| Distributed over a  10-year period|
 |**Team & Advisors** | 15.70% |0%| 3 month cliff, then linearly over 36 months |
 |**Private Seed** | 7.49% |33%| Remaining 67% available after 12 months|
@@ -104,7 +104,7 @@ Represents 87.5% of the total supply and has the following release schedules per
 | | % Allocated | % Available at TGE |Post TGE Release Schedule | 
 |:-------|:-----------|:-----------|:-----------|
 |**Treasury** | 8.84% |0%| Distributed over a  10-year period|
-|**Node Incentives** | 12.00% |50%| 25% after 6 months, 25% after 12 months |
+|**Node Incentives** | 12.00% |100%| n/a |
 |**Loyalty Program/Grants** | 23.00% |0%| Distributed over a  10-year period|
 |**Team & Advisors** | 14.08% |0%| 3 month cliff, then linearly over 36 months |
 |**Private Seed** | 6.74% |33%| Remaining 67% available after 12 months|
@@ -163,7 +163,7 @@ Up to 12% of Minima's total supply (120,000,000 coins) will be allocated to Node
 
 Node Incentives were distributed via an Incentive Program that rewarded early community members for running a node, alongside an Invite Program, which rewarded members for inviting new members to join. 
 
-Rewards earned by Incentive Program members will be distributed as Native Minima ($MINIMA). An additional 75 coins are available for Incentive Program members who continue to run their node 6 months after the TGE, and a further 75 coins are available at the 1-year anniversary of the TGE.  
+Rewards earned by Incentive Program members will be distributed as Native Minima ($MINIMA). An additional 75 coins are available for Incentive Program members who continue to run their node 6 months after the TGE, and a further 75 coins are available at the 1-year anniversary of the TGE. These Rewards will be allocated from the Loyalty Program/Grants fund.
 
 The final Node Incentives coin allocation will be determined after the Proof of Person process is complete. Once known, any coins not utilised will be directed towards the Loyalty Program & Grants category, continuing to reward early adopters for bootstrapping the network, while ensuring a flourishing ecosystem is built. 
 
