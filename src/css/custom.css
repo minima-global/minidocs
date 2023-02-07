@@ -59,7 +59,7 @@
   --ifm-icon-color-hover: brightness(0) invert(1);
 
   /* Background header */
-  --ifm-header-bg:  url(../../static/icons/header_bg_white.svg);
+  --ifm-header-bg:  url(../../static/icons/header_bg_white.png);
 
   --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><path d="M4.9,9.3L8,6.2l3.1,3.1L12,9.3l-4-4l-4,4L4.9,9.3z"/></svg>');
 }
@@ -108,7 +108,7 @@
   --ifm-icon-color: brightness(0) invert(1);
   --ifm-icon-color-hover: invert(5%) sepia(10%) saturate(1081%) hue-rotate(176deg) brightness(98%) contrast(89%);
 
-  --ifm-header-bg:  url(../../static/icons/header_bg.svg);
+  --ifm-header-bg:  url(../../static/icons/header_bg.png);
 }
 
 /* Boxes */
@@ -191,13 +191,25 @@ h2{
   color: var(--ifm-navbar-link-hover)
 }
 
-.hero{
-  background-image: var(--ifm-header-bg);
-  background-attachment: fixed;
-  background-position: center -220px;
-  background-repeat: repeat;
-  background-size: 120%;
+.hero > .container{
+  z-index: 2;
 }
+.hero::before{
+  content: '';
+  background-image: var(--ifm-header-bg);
+  /* background-attachment: fixed; */
+  background-position: center;
+  padding-right: 20px;
+  background-size: 400px;
+  background-repeat: repeat;
+  width: 100%;
+  height: 400%;
+  position: absolute;
+  z-index: 1;
+  transform: rotate(-15deg);
+  z-index: 1;
+}
+
 
 /* .text--truncate {
   display: none;
