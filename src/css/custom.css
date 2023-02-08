@@ -199,6 +199,7 @@ h2{
   content: '';
   background-image: var(--ifm-header-bg);
   background-position: center;
+  background-size: 1178px;
   background-repeat: repeat;
   width: 100%;
   height: 400%;
