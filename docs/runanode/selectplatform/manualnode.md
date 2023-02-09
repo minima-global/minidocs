@@ -308,7 +308,7 @@ If you have been offline for a long time, you may need to restore your node from
 ## How to update your node
 
 1. Type **quit** into the Command prompt/Terminal window where the Minima logs are running
-2. Download and save the latest minima.jar file from Github [here](https://github.com/minima-global/Minima/raw/master/jar/minima).
+2. Download and save the latest minima.jar file from Github [here](https://github.com/minima-global/Minima/blob/master/jar/minima.jar?raw=true).
 3. Replace your existing minima.jar file with the latest version
 4. Restart Minima using the command in step 3 in [Start a new Minima node](#start-a-new-minima-node).
 
