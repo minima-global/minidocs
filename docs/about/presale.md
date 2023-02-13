@@ -55,11 +55,11 @@ We encourage you to find your favourite option, but one that seems popular is ht
 
 Yes, you will need a [Metamask](https://metamask.io/) wallet.
 
-## How do I set up a Metamask wallet and complete the transaction?
+## How do I set up Metamask and complete the transaction?
 
 Follow the instructions here: https://metamask.io/ - make sure you're only using this website as there are scam versions around. 
 
-**Please note - transactions are handled by Metamask and the ETH network, not Minima. Transactions sometimes fail, it is your responsibility to ensure the transaction is completed successfully.**
+**Please note: Transactions are handled by Metamask and the ETH network, not Minima. Transactions sometimes fail, it is your responsibility to ensure the transaction is completed successfully.**
 
 ## What is the Release Schedule for purchases?
 
@@ -149,7 +149,7 @@ Minima is using a third-party provider for this process. KYC is a legal and regu
 
 As follows:
 
-#### 1.00-999.00 $USDT
+#### 1-999.99 $USDT
 
 Information needed:
 
@@ -165,7 +165,7 @@ Documents needed:
 - Valid Passport or National Identification Card (including back side)
 - Selfie with Passport / ID in hand or face recognition
 
-#### 1,000.00 – 9,999.99 $USDT
+#### 1,000 – 9,999.99 $USDT
 
 Information needed:
 
@@ -182,7 +182,7 @@ Documents needed:
 - Selfie with Passport / ID in hand or face recognition
 - Utility bill as proof of residence (not older than 3 months)
 
-#### $10,000.00 $USDT or more
+#### 10,000 $USDT or more
 
 Information needed:
 

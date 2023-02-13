@@ -56,7 +56,7 @@ const FeatureList = [
   },
   {
     title: 'Mainnet',
-    link: 'docs/runanode/testnetstatus',
+    link: 'docs/about/mainnetstatus',
     icon: 'icons/mainnet_icon.svg',
     description: (
       <>
