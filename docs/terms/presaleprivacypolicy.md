@@ -1,0 +1,257 @@
+---
+sidebar_position: 3
+---
+
+# Presale Privacy Policy
+
+## 1. PRIVACY POLICY
+
+1.1 This Privacy Policy (“Privacy Policy”) describes and summarizes the policies and procedures of Minima GmbH. (“Minima ”, ”we”, ”our”, ”us”) with respect to the collection, use, storing, processing, disclosure, sharing and protection of personal data provided or acquired through use of 
+
+(i) our website located at www.minima.global and all related subdomains (collectively, the ”Website”), and 
+
+(ii) the functionality enabling access to the token offering platform, delivered via application programming interfaces, software development kits, and any other services, content, tools and features as made available by Minima from time to time (collectively, the ”Services”), whether the Website or Services are accessed via a computer, mobile device, or other technology or means.
+
+1.2 Minima takes the privacy of individuals very seriously. We are committed to maintaining the security, confidentiality and integrity of the personal data in our custody or control, and protecting such data in accordance with the applicable legislation. Minima regularly re-evaluates its privacy and security practices and adapts them as necessary to deal with new regulatory requirements, changes in legislation and/or security standards.
+
+## 2. DEFINITIONS
+2.1 For the purposes of this Privacy Policy, in addition to the capitalized terms defined elsewhere in this Privacy Policy, the following terms shall have the meanings ascribed to them as follows:“Consent of User” means any freely given, specific, informed and unambiguous indication of the User’s wishes, given by a statement or by a clear affirmative action, by which User signifies agreement to the processing of their Personal Data.
+
+**“Controller”** shall have the meaning given to such term in the GDPR.“Data Protection Laws” means, as applicable, the Federal Act on Data Protection 1992 (FADP), the GDPR or any similar or equivalent law, regulation, statute, legislation, directive or ruling, of any government, legislature, parliament, regulatory authority, agency or commission having or purporting to have jurisdiction on behalf of any nation, or province or state or other subdivision thereof, in force from time to time in User’s jurisdiction with respect to the privacy, protection, processing, collection, use or disclosure of Personal Data.
+
+**“GDPR”** means the Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of Personal Data and on the free movement of such data, and repealing Directive 95/46/EC.
+
+**“Personal Data”** means any information relating to an identified or identifiable natural person; an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person. Personal Data includes without limitation Registration Information, Financial Financial Data and Financial Account Credentials, but excludes publicly available business information.
+
+**“Processing”** shall have the meaning given to such term in the GDPR.
+
+**“Processor”** shall have the meaning given to such term in the GDPR.
+
+**“Special Categories of Personal Data”** means Personal Data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, and genetic data, biometric data, data concerning health or data concerning a natural person’s sex life or sexual orientation.
+
+**“Supervisory Authority”** shall have the meaning given to such term in the GDPR.
+
+## 3. APPLICATION
+3.1 Minima recommends that Users read this Privacy Policy carefully and entirely to ensure that Users are aware of all the practices and policies of Minima in respect of Personal Data collection, use, disclosure, processing and protection.
+
+This Privacy Policy applies to:
+
+3.1.1 visitors to our Website (“Visitors”);
+
+3.1.2 end users who use the Services (“Direct Users”);
+
+3.1.3 users (individuals acting in their own capacity or on behalf of a legal entity) who sign up for an account on the Website in order to test the functionality of the Services (“Account Users”); and
+
+3.1.4 end users who use the Services through a third party application (“Indirect Users”),parties referred to in sub-clauses 3.1.1. to 3.1.3 are collectively referred to as ”Users”.
+
+## 4. ACKNOWLEDGEMENT
+
+4.1 By accessing and using the Website and/or Services (together, the ”Services”) User hereby: 
+
+(i) acknowledges and confirms that User is at least eighteen (18) years old, or of the legal age of majority in the jurisdiction in which User resides; and 
+
+(ii) consents to the collection, use, and processing of their Personal Data as described in this Privacy Policy. Except as set forth in this Privacy Policy, Minima will not use User’s Personal Data for any other purpose without User’s Consent. Minima will only disclose User’s Personal Data to third parties strictly for the purposes described in this Privacy Policy. 
+
+Minima does not, and will not, sell, lease, license or rent User’s Personal Data to any third party, nor does Minima use the collected Personal Data for advertising or marketing purposes.
+
+## 5. COLLECTION OF PERSONAL DATA
+
+5.1 When User uses the Services Minima will collect information, including Personal Data, for the purpose of providing, maintaining and improving the Services, as well as complying with applicable laws or regulations. Minima collects Personal Data primarily in three (3) ways:
+
+5.2 Information user voluntarily provides to minima: When User contacts Minima’s support team (by email, phone or contact form on the Website) with respect to the Website or Services related issues or communicates with Minima in any way, User voluntarily gives Minima information that Minima collects and processes and this Privacy Policy. The Minima information may include Personal Data such as: name, email address, phone number, and address. When User voluntarily submits Personal Data with their inquiry or request pertaining to the Services, Minima will process any such Personal Data in accordance with this Privacy Policy. In some cases, Minima may require additional information, including Personal Data, in order to identify User while processing their inquiry or request. Minima may also maintain a record of such communications with Users, including any follow-ups and subsequent feedback, for internal purposes.
+
+5.3 Some of the Services require registration. When creating an account with Minima, Account Users and Direct Users will have to provide Personal Data, including name, email address and password (together, ”Registration Information”), in order to be able to use the respective Services.
+
+5.4 Subscribers will have to provide their email address for the purpose of receiving the communications to which they have subscribed.
+
+5.5 Information minima collects through user’s use of the services: Information Minima collects automatically. Each time Users use the Services, Minima collects information relating but not limited to: (i) which Services are used; (ii) all the areas within the Services that User visits; (iii) the time of day when User accesses and uses the Services; (iv) actions taken by User when using and interacting with the Services; (v) which Services or parts thereof generate error messages; and (vi) User’s browser, operating system and internet protocol (“IP”) address. Minima collects this information automatically as part of its technical log files or other metadata, as well as through the use of cookies, web beacons and other similar tracking technologies. All personally identifiable information collected through User’s use of the Services is treated as Personal Data in accordance with the terms of this Privacy Policy. Minima may also use the collected information in an anonymous and/or aggregate way (i.e., it is not personally identifiable in this state) for a variety of purposes, including but not limited to improving user experience, enhancing the Services and developing new services (see “Use of Non-Personal Data”).
+
+5.6 Information collected by Cookies: A cookie is a data file placed on a device when it is used to access a service. Cookies or similar technologies may be used for many purposes, including without limitation remembering the User and User’s preferences and tracking User’s visits to the Website or access to the Services. Cookies work by assigning a number to User that has no meaning outside of the assigning website or application. Minima uses cookies for various purposes, including without limitation tracking User’s movements within the Website, analyzing trends, gathering statistical data and improving user experience and the overall quality of the Services. Minima encodes and encrypts the cookies so that only Minima can interpret the information stored in them. Cookies can be disabled or controlled by setting a preference within User’s web browser or on User’s device. Thus, if User does not want information to be collected through the use of cookies, User can restrict or limit the use of cookies at the individual browser or device level. However, if User chooses to disable cookies some features of the Services may not function properly or Minima may not be able to customize the delivery of information to User.
+
+5.7 First-Party Cookies: Minima uses session cookies and persistent cookies when User uses the Services. These are essential to the operation of the Website and the provision of Services. The session cookie is stored in temporary memory and is not retained after the browser is closed. Session cookies do not collect information from User’s computer. They store information in the form of a session identification that does not personally identify the User. The persistent cookies are set with expiration date and are stored on User’s hard drive until they expire or User deletes them. Minima does not collect any Personal Data in the session and persistent cookies. Minima uses session and persistent cookies for technical purposes, including but not limited to verifying the origin of requests, distributing requests among multiple servers, authenticating Users and determining what functionality of the Services such Users are allowed to access.
+
+5.8 Third-Party Cookies: Minima also uses third-party cookies. These third-party service providers with whom Minima has contracted help analyze certain online activities and provide analytics services.
+
+## 6. USE OF INFORMATION
+6.1 Use of Personal Data: Minima may use the collected Personal Data for the following purposes:
+
+6.1.1 to provide, maintain, administer, support, protect and improve the Services;
+
+6.1.2 to meet the regulatory compliance requirements set forth in the applicable laws;6.1.3 to provide customer support;
+
+6.1.4 to handle and process inquiries submitted by Visitors;6.1.5 to send system alert messages to Account Users and Direct Users;
+
+6.1.6 to enforce compliance with any user terms;
+
+6.1.7 to investigate any fraud, illegal activity or wrongdoing in connection with the Services;
+
+6.1.8 to protect the rights, property and safety of Users, Minima and third parties;
+
+6.1.9 to transfer the Personal Data in case of a sale, merger, consolidation, or acquisition. In such case, any acquirer will be subject to Minima’s obligations under this Privacy Policy;
+
+6.1.10 to store the Personal Data in order to be able to provide the Services on Minima ‘s servers or servers provided by third parties that are committed to complying with Minima‘s obligations contained in this Privacy Policy and with whom Minima has contracted;
+
+6.1.11 to troubleshoot, investigate and fix service related errors. In such cases, Users’ Personal Data may be visible to and/or accessed by technicians, IT staff and/or system administrators authorized by Minima;
+
+6.1.12 to combine Personal Data with information obtained through the use of cookies, web beacons or similar technologies to improve the Services and user experience;6.1.13 to comply with legal obligations to which Minima is subject;
+
+6.1.14 to establish compliance with the Data Protection Laws during an audit or inspection conducted by an appropriate data protection authority, Developer or an external auditor mandated by Developer, provided that in all cases the Personal Data will remain subject to the provisions of this Privacy Policy;6.1.15 to send Subscribers informational content they subscribed to;
+
+6.1.16 to generate Anonymized Data (defined below) and Anonymized Aggregate Data (defined below); and
+
+6.1.17 to respond (or, in the case of Indirect Users, to assist Developer in responding) to User’s requests for exercising User’s rights under the applicable Data Protection Laws.
+
+6.2 Use of Non-Personal Data: Minima may generate anonymous data derived from or based on Personal Data collected from User so that the results are no longer personally identifiable with respect to that User (“Anonymized Data”), and combine or incorporate such Anonymized Data with or into other similar data or information collected from other Users or derived from other Users’ use of the Services (“Anonymized Aggregate Data”). Minima may use such Anonymized Data and Anonymized Aggregate Data for various business purposes, including but not limited to:
+
+6.2.1 providing, maintaining, supporting and improving the Services;
+
+6.2.2 conducting analytical research, compiling statistical reports and performance tracking;
+
+6.2.3 developing and/or improving other Minima’s services and products; and
+
+6.2.4 sharing such Anonymized Data and Anonymized Aggregate Data with Minima's affiliates, agents or other third parties with whom Minima has a business relationship.
+
+6.2.5 Anonymized Data and Anonymized Aggregate Data are not Personal Data, and consequently the provisions in this Privacy Policy are not applicable to such data.
+
+## 7. DISCLOSURES AND TRANSFERS
+
+7.1 By using the Services and submitting any Personal Data to Minima, User acknowledges and agrees that their Personal Data may be processed in and transferred to jurisdiction(s) other than User’s country of residence which may have different Data Protection Laws than those in User’s country. Personal Data may be accessed by authorized staff from Minima offices in Switzerland and UK for the purposes of troubleshooting and debugging. [The Personal Data of Minima User residing in the EU/EEA will only be stored in EU and will only be transferred outside EU as set forth in the GDPR.] Minima will take all steps reasonably necessary to ensure that Personal Data is at all times treated securely and in accordance with this Privacy Policy.
+
+7.2 Minima will only transfer and/or disclose Personal Data as specified in this Privacy Policy unless User gives Consent to the disclosure and/or transfer to any other third party.
+
+7.3 Disclosure and/or Transfer to Third-Party Providers: Minima has put in place contractual (including data protection, confidentiality and security provisions) and other organizational safeguards with third-party service providers engaged by Minima in connection with the provision, operation, hosting, security or maintenance of the Services, including cloud-based email service, data hosting and storage providers (“Third-Party Providers”). <br/>
+Such safeguards aim to ensure an adequate level of protection of Personal Data. Minima may disclose or transfer Personal Data to such Third-Party Providers solely for the identified purposes and solely in connection with the Services. Minima will restrict access to Personal Data to what is strictly necessary for the performance of such Third-Party Provider’s contractual obligations. Such Third-Party Providers may process, store and/or have access to Personal Data. Any transfer of Personal Data of EU/EEA Users to a Third-Party Provider located in a third country will be subject to articles 45 and 46 of the GDPR and will take place either 
+
+(i) on the basis of an adequacy decision by the European Commission, or 
+
+(ii) by entering into the standard data protection clauses adopted by the Commission, or by ensuring the respective Third-Party Provider has signed up to the EU-US Privacy Shield. At the date of this Privacy Policy Minima uses the following Third-Party Providers:
+
+7.3.1 Data Disclosure
+
+7.4 Disclosure for Legal Reasons: Minima may disclose Personal Data without User’s Consent when Minima believes in good faith that the disclosure of such information is reasonably necessary or appropriate:
+
+7.4.1 to comply with the Data Protection Laws, any subpoena, enforceable request from the competent authorities, or other legal process;
+
+7.4.2 to enforce Minima’s rights against User or in connection with a breach by User of any user terms in force and, as applicable, the End User Licence Agreement, including investigation of potential violations;
+
+7.4.3 to help detect, curb or investigate fraud or other prohibited or illegal activities that affect or hurt the interests of Minima or third parties;
+
+7.4.4 to identify, contact or bring legal action against someone who may be causing injury to, or interference with (either intentionally or unintentionally), Minima’s rights or property, other Users of the Services, or anyone else (including the rights or property of anyone else) that could be harmed by such activities; and
+
+7.4.5 to help Minima comply with a legal obligation to which Minima is subject, or accounting or security requirements, in which case Minima may disclose such information to its auditors, professional consultants, accountants and/or legal advisors. In all the foregoing cases, Minima will disclose Personal Data only to the extent required or permitted by the applicable Data Protection Laws.
+
+7.5 Transfer of Ownership: User’s Personal Data may be disclosed and/or transferred upon change of control as a result of a sale of all or a substantial portion of Minima’s assets or stock, merger, acquisition or reorganization, including any due diligence process carried out in relation to the same, provided that the Personal Data disclosed continues to be used solely for the purposes permitted by, and subject to the provisions in, this Privacy Policy by the entity acquiring access to such information. If the entire or substantial ownership of Minima or Services were to change, User’s Personal Data may be transferred to the new owner to ensure continuity of the Services. In any such transfer of ownership User’s Personal Data will remain subject to the promises of the then and current Privacy Policy. Minima will provide reasonable advance notice to User via the Website of any such change in ownership or control of User’s Personal Data or in case such Personal Data becomes subject to a different privacy policy.
+
+## 8. CONTROLLER AND PROCESSOR
+
+8.1 In providing the Services to Visitors, Direct Users and Account Users, Minima acts as Controller of Personal Data collected from such Users. In the case of Indirect Users, Minima acts as a Processor and the respective Developer acts as Controller of collected Personal Data. In performing its obligations as Processor Minima will at all times act on Controller’s behalf and according to Controller’s lawful instructions.
+
+8.2 Furthermore, Minima adheres to the following general principles with respect to Personal Data processing:
+
+8.2.1 not to collect more Personal Data than is necessary for the purpose of providing the Services;
+
+8.2.2 not to use Personal Data for any other purposes than those specified in this Privacy Policy;
+
+8.2.3 ensure that all personnel authorized by Minima to process Personal Data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality; and
+
+8.2.4 not to knowingly solicit, access, collect and/or process any Special Categories of Personal Data.
+
+## 9. LEGAL BASIS FOR PROCESSING (EU/EEA USERS)
+
+9.1 In the case of Users from the European Union (EU) and European Economic Area (EEA), Minima’s legal basis for processing the Personal Data collected as described in this Privacy Policy will depend on the type of Personal Data and the circumstances under which it is collected. Minima will collect and process Personal Data in its capacity as Controller based on the following legal bases:9.1.1 processing is necessary for the performance of a contract to which the User is a party, particularly for the provision of the Services under the user terms;
+
+9.1.2 processing is necessary for compliance with a legal obligation to which Minima is subject; and/or
+
+9.1.3 processing is necessary for the purposes of the legitimate interests pursued by Minima as the Controller of Personal Data or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of User which require the protection of Personal Data.
+
+9.2 If there is another legal basis for Minima to collect and process Personal Data in its capacity as Controller, Minima will provide the required notification to User at or before the time the Personal Data is collected.
+
+9.3 If User voluntarily provides Personal Data to Minima when contacting Minima with respect to the Services, such User will be deemed to have given Consent to the collection, use and processing of Personal Data by Minima as reasonably necessary to carry out the specific purpose(s) for which User has provided the Personal Data. Minima will rely on such implied Consent as if it were given to Minima under normal circumstances.
+
+## 10. SPECIAL CATEGORIES OF PERSONAL DATA
+
+10.1 Minima does not solicit from Users, nor does it knowingly collect or process, any Special Categories of Personal Data. Users are requested at all times to refrain from voluntarily providing any Special Categories of Personal Data to Minima.
+
+10.2 ANTI-SPAM LEGISLATION
+
+10.3 Minima is committed to controlling unsolicited commercial e-mail, or “spam”. In this respect, Minima includes an “unsubscribe” or “opt-out” link in any informational emails sent to Users. Users wishing to opt-out of receiving such informational emails may do so at any time by following the instructions included in such emails. Minima will not sell, lease or rent its e-mail Subscribers lists to any third party, nor will Minima use the collected email addresses for purposes other than that for which they were initially collected. User can’t opt-out of receiving emails that Minima is required by law to provide to User in connection with the Services, such as system notification emails, notification on changes or updates to this Privacy Policy or the General Terms of Service, or other important mandatory notifications relating to User’s access to and use of the Services.
+
+10.4 THIRD-PARTY WEBSITES
+
+10.5 The Services may include links to, or otherwise direct User’s attention towards, websites operated by third parties and not by Minima. Such links are provided solely for User’s convenience and informational purposes. The inclusion of any link does not imply an association, support, endorsement, consent, examination, or approval by Minima of such third party and third-party website (including without limitation any content on such website). Minima shall not be liable for the information and content contained in any third-party website or for User’s use of or incapacity to use such website. Access to any third-party website is at User’s own risk, and User must be aware of the fact that linked websites have terms and privacy policies different from those of Minima and Minima does not control them. If User elects to use any third-party website and/or provide any Personal Data when using such website, User is solely responsible for evaluating the terms and privacy policy that apply. Minima will have no liability for any loss or damage that User may incur through providing any Personal Data on such third-party websites.
+
+## 11. USER’S RIGHTS UNDER GDPR (FOR EU/EEA USERS)
+
+11.1 Taking into account the nature of the processing, Minima will respond (or, when acting as Processor, provide reasonable assistance to Developer for the fulfilment of Developer’s obligation to respond) to requests for exercising User’s rights under GDPR as set forth below:
+
+11.1.1 the right to be informed: User has the right to receive fair processing information about their Personal Data processed by Minima, including without limitation the recipients or categories of recipients to whom the Personal Data has been or will be disclosed, in particular transfers to recipients in third countries or international organizations, and the appropriate safeguards relating to such transfers.11.1.2 the right of access: User has the right to obtain: (i) confirmation that their Personal Data is being processed; and (ii) access to such Personal Data.
+
+11.1.3 the right to rectification: User is entitled to have Personal Data rectified if it is inaccurate or incomplete. While User can amend or change the Registration Information and Financial Account Credentials, Minima can’t, however, rectify any Payment Order Data or Financial Data as this information is received from Developer or Financial Institution, respectively.
+
+11.1.4 the right to erasure (right to be forgotten): User has the right to request the deletion of their Personal Data when there is no compelling reason for its continued processing or User withdraws Consent to such processing.
+
+11.1.5 the right to restrict processing: User has the right to block processing of their Personal Data on the grounds specified in the GDPR.
+
+11.1.6 the right to data portability: User may request to receive free of charge a copy of Personal Data stored in Minima’s systems in a structured, commonly used and machine-readable format or have Minima transmit the data directly to another Controller if this is technically feasible. Minima will respond to any data portability requests as set forth in the GDPR.
+
+11.1.7 the right to object: User has the right to object to: <br/>
+(i) processing based on legitimate interests or the performance of a task in the public interest/exercise of official authority (including profiling); (ii) direct marketing (including profiling); and (iii) processing for purposes of scientific/historical research and statistics. Minima does not process User’s Personal Data for direct marketing or for purposes of scientific/historical research and statistics.
+
+11.1.8 rights in relation to automated decision-making and profiling: User has the right to object to processing of Personal Data for the purposes of automated individual decision-making (making a decision solely by automated means without any human involvement) and profiling (automated processing of Personal Data to evaluate certain things about an individual). Minima does not process User’s Personal Data for the purposes of automated individual decision-making or profiling.
+
+11.1.9 the right to lodge a complaint with a Supervisory Authority: User has the right to lodge a complaint about Minima’s data protection or privacy practices, or the exercise of any of User’s rights with respect to Personal Data as detailed in this Privacy Policy, with User’s local Supervisory Authority.
+
+11.1.10 the right to withdraw Consent: Provided that the Consent is the legal basis for processing, User may withdraw Consent to Minima’s processing of Personal Data at any time by contacting Minima. User may exercise any of the foregoing rights at any time by contacting Minima at privacy@minima.global Where Users’ requests for exercising their rights under GDPR are manifestly unfounded or excessive, in particular because of their repetitive character, or further copies of the Personal Data undergoing processing are requested, Minima may charge a reasonable fee taking into account the administrative costs of providing the information or communication or taking the action requested.
+
+## 12. DATA DELETION AND RETENTION
+12.1 Minima will retain Personal Data for no longer than strictly necessary for the purposes for which such Personal Data is collected and processed. The retention period depends on the requirements of the applicable laws or regulations Minima must comply with, the purposes of the collection and processing of Personal Data, and the legitimate interests of Minima to establish, exercise or defend its legal rights. When Minima acts as a Processor of Personal Data, Minima may apply a different retention period if so required by the Controller on whose behalf the Personal Data is being processed by Minima.
+
+12.2 Minima will delete User’s Personal Data from its production servers when:
+
+12.2.1 User exercises the right to be forgotten or, if applicable, withdraws Consent;
+
+12.2.2 Account User deletes their account on the Website, or such account is automatically deleted by Minima as described in the user terms;
+
+12.2.3 Direct User deletes their account in Minima’s systems created in connection with the provided Services;
+
+12.2.4 Developer deletes Indirect User’s Personal Data processed by Minima in connection with the Services.
+
+12.3 As a result, User’s Personal Data will be deleted and excised permanently from Minima’s production servers, subject to Minima’s right to generate Anonymized Data and Anonymized Aggregate Data prior to such deletion. Further use of the corresponding Services will be impossible. Notwithstanding anything to the contrary in this Privacy Policy, Minima will retain User’s Personal Data or portions thereof:
+
+12.3.1 in backup files on its backup servers for a period of up to one (1) month from the date of deletion from the production servers in order to ensure compliance with internal business continuity and disaster recovery procedures; and
+
+12.3.2 in log files in order to: (i) comply with the requirements of the applicable laws or regulations; (ii) exercise or defend (ongoing) legal claims; and (iii) meet audit or statutory requirements. The retention period for Personal Data retained in log files shall be a minimum of five (5) years from the date of deletion from the production servers, or such longer period as required by the applicable laws, unless subject to statutory or regulatory change.
+
+12.4 Backups and log files containing Personal Data are stored separately from the production servers. All Personal Data retained in backup files and log files will be treated in accordance with the terms of this Privacy Policy for as long as it is retained before being automatically deleted after the retention period has elapsed.
+
+12.5 Backup files are stored using strong asymmetric encryption and Minima’s authorized personnel does not access such files in the ordinary course of business operations, nor will Minima actively process any Personal Data retained in backup files anymore.
+
+## 13. PERSONAL DATA SECURITY
+
+13.1 Online Confidentiality:
+
+13.1.1 User must keep the set of credentials provided as part of the Registration Information for creating an account with Minima (“Credentials”) secure and never disclose them to any third party. User is solely responsible for maintaining the confidentiality of such Credentials. If User suspects that the Credentials have been stolen or been made known to others, User must change them immediately and contact Minima promptly at Minima. Minima shall not be responsible for any loss or damage resulting from access to User’s account through Registration Information or Credentials obtained from User or through violation of this Privacy Policy or the user terms.
+
+13.1.2 Although Minima will take reasonable steps to ensure that User’s Personal Data is treated and stored securely, unfortunately, the sending of information via the Internet is not totally secure and on occasion such information may be intercepted. Therefore, Minima can’t guarantee the security of Personal Data that User chooses voluntarily to send to Minima electronically. Minima expressly disclaims all liability for any interception or interruption of any Internet transmissions sent by User or any losses of or changes to data, including Personal Data, resulting from such interception or interruption.
+
+13.2 Personal Data Safeguards: Minima is committed to maintaining the confidentiality, integrity and security of the Personal Data of Users. Minima employs advanced security techniques to safeguard Personal Data against unauthorized access, use and/or disclosure. Minima strictly restricts access to Personal Data in accordance with specific internal procedures governing access to such information. Minima carefully selects the individuals privileged with access to Personal Data in accordance with internal security policies and practices, and each such individual is bound by confidentiality obligations. The Services ensure secure communications with TLS encryption. To maintain the security of online sessions and protect Minima’s systems from unauthorized access, Minima uses a combination of firewall barriers, encryption techniques and authentication procedures, among others. Access to Minima’s systems requires multiple levels of authentication, including biometric recognition procedures. Security personnel monitor the systems 24/7. Minima databases are both physically and logically protected from general employee access. Minima enforces physical controls on its premises. Minima is routinely verified for its use of encryption technologies and audited for its privacy practices. Minima tests its systems, the Website and Services infrastructure for any failure points that might allow hacking.
+
+13.3 Data Pseudonymization: In addition to the technical and organizational security measures employed by Minima to ensure security, confidentiality and integrity of Personal Data, Minima also uses data pseudonymization technique when processing and storing Personal Data in its systems. Pseudonymization consists of replacing the data fields which are the most identifying in a data record with pseudonyms. Personal Data which has undergone pseudonymization can no longer be attributed to a specific User without the use of additional information, and such additional information is kept by Minima separately and is subject to appropriate technical and organizational security measures to ensure that such pseudonymized Personal Data is not attributed to an identified or identifiable natural person.
+
+## 14. NOTIFICATION OF PERSONAL DATA BREACH
+
+14.1 If a security breach causes an unauthorized intrusion into Minima’s systems, software or networks that leads to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to, Personal Data transmitted, stored or otherwise processed by Minima (“Personal Data Breach”), Minima will notify the appropriate data protection authority unless the Personal Data Breach is unlikely to result in a risk to the rights and freedoms of affected Users. Minima will report the Personal Data Breach to the appropriate data protection authority without undue delay after having become aware of it and in any case within the timeframes as provided for in the applicable Data Protection Laws, by including all the pertinent information relating to such Personal Data Breach as required by the applicable Data Protection Laws. When the Personal Data Breach is likely to result in a high risk to the rights and freedoms of affected Users, or if required by the appropriate data protection authority, Minima will also communicate the Personal Data Breach to the affected Users without undue delay.
+
+14.2 When Minima acts as Processor for Developer, Minima will notify the Developer of a Personal Data Breach as described above, who in turn will fulfil its Personal Data Breach reporting obligations (towards the relevant data protection authority and Indirect Users) as set forth in the applicable Data Protection Laws.
+
+## 15. PRIVACY POLICY UPDATE
+
+15.1 Minima reserves the right to change this Privacy Policy at any time and from time to time in order to reflect changes in the Services or the applicable laws. If Minima decides to change this Privacy Policy in the future, Minima will post an appropriate notice at the top of this Privacy Policy page and/or give reasonable advance notice to Users through the Services or Website. Any non-material change (such as clarifications) to this Privacy Policy will become effective on the date the change is posted and any material changes will become effective thirty (30) days from their posting on the Website. Unless stated otherwise, this Privacy Policy applies to all Personal Data collected and processed by Minima in connection with the Services. The date this Privacy Policy was last revised appears at the top of this document. User is advised to print a copy of this Privacy Policy for reference and revisit this Privacy Policy from time to time to ensure that User is aware of any changes. User’s continued use of the Services after the changes to this Privacy Policy become effective signifies User’s acceptance of any such changes.
+
+## 16. DATA PROTECTION OFFICER
+
+16.1 Minima’s data protection officer can be reached at any time by email at privacy@minima.global in case of any questions with respect to Minima’s collection, use, disclosure or processing of Personal Data.
+
+## 17. CONTACT
+
+17.1 Any questions, comments or feedback regarding this Privacy Policy or any other privacy or security concern may be sent by email to privacy@minima.global

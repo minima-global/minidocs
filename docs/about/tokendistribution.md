@@ -123,7 +123,7 @@ Join the Waitlist for the Public Presale [here](https://presale.minima.global/)
 
 6% of Minima's total supply (60,000,000 coins) is allocated to the Public Presale. 
 
-The Public Presale will be for Wrapped Minima ($WMINIMA). Enabling Minima to be tradable on exchanges shortly after the Token Generation Event, without waiting for technical integration of Native Minima ($MINIMA) onto exchanges, scheduled for Q3/Q4 2023.
+The Public Presale will be for Wrapped Minima ($WMINIMA). This enables Minima to be tradable on exchanges shortly after the Token Generation Event, without waiting for technical integration of Native Minima ($MINIMA) onto exchanges, scheduled for Q3/Q4 2023.
 
 The Public Presale will have four ‘tranches’ between 10:00 UTC 14th February 2023 and 22:00 UTC 28th February 2023, with a limited volume of coins in each tranche. 
 
