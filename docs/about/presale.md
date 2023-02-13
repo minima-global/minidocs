@@ -41,7 +41,7 @@ There will be 4 tranches at different prices, the first and earliest tranche is 
 - Min purchase size $150
 - Max purchase size $100,000
 
-If you wish to purchase more than the maximum, please reach out to info@minima.global
+If you wish to purchase more than the maximum, please contact us via our [Contact page](https://www.minima.global/contact). 
 
 ## What currency can I purchase Minima with?
 
@@ -49,7 +49,7 @@ USDT only.
 
 ## How can I buy USDT?
 
-We encourage you to find your favourite option, but one that seems popular is https://global.transak.com/
+We encourage you to find your favourite option, but a popular option is https://global.transak.com/.
 
 ## Do I need a wallet to participate in the Presale?
 
@@ -217,3 +217,6 @@ Unfortunately, as we can't predict how long KYC will take for each person, this 
 
 Only the countries that can participate will be shown on the dropdown list. If your country isn't there, you cannot continue. Again, this is something set by the regulators rather than Minima. There is nothing we can override or make an exception so please do not open a support ticket about it.
 
+### Still need help? 
+
+If you have any other issues related to KYC, please contact us via our [Contact page](https://www.minima.global/contact). 
