@@ -1,14 +1,14 @@
 ---
-sidebar_position: 12
+sidebar_position: 8
 ---
 
-# Latest Testnet Status
+# Mainnet Status
 
-*Last updated: 27th January 2023*
+*Last updated: 13th February 2023*
 
-As we get closer to Mainnet, here is the important information you need to know.
+Now Mainnet is live, here is the important information you need to know.
 
-Incentive Program members will need to take action to ensure you receive your accrued Rewards at Mainnet.
+Incentive Program members will need to take action to ensure you receive your accrued Rewards.
 
 Roadmap of events prior to coin distribution:
 
@@ -67,10 +67,6 @@ If you pass the [Proof of Person verification](#incentive-reward-account-verific
 Your Total Rewards available to withdraw will be your existing balance as shown in your account, plus any previously missed rewards, plus all Rewards from January 1st to TGE. 
 
 Once you have requested to withdraw your Incentive Rewards, they will be converted to real Minima and sent to your Minima wallet address.
-
-:::tip
-Make sure you have the Wallet MiniDapp installed so you can easily see when you have received your real Minima! 
-:::
 
 :::info proof of person
 Know Your Customer (KYC) will not be required to collect your Minima Rewards, however, you will be required to complete our ‘Proof of Person’ Verify process so we can ensure that you are not a bot!
@@ -135,39 +131,9 @@ One of the team can look into why you failed and you might be contacted via a su
 
 ### ...our Community Presale
 
-Our pre-sale is an opportunity to purchase Minima ahead of coin distribution and will take place in February 2023.
-:::important
-Participation is only possible where your local laws and regulations permit as well as where international sanctions are not in force.
-:::
-**To register your interest,** please go to https://presale.minima.global/. If you already have an Incentive Reward Account, no action is required - you are already on the waitlist!
+Our presale is an opportunity to purchase Minima ahead of coin distribution and will start on 14th February 2023 at 10am GMT.
 
-There will be 4 tranches at different prices, the first and earliest tranche is available for existing Incentive Program members only.
+The ONLY official website for the presale is https://presale.minima.global/. **PLEASE BE VIGILANT FOR SCAM WEBSITES.**
 
-**Tranche 1:**
-- Existing Incentive Program members only
-- $0.21 (30% Discount)
-- 10 million (10,000,000) coins available
-- Min purchase size $150
-- Max purchase size $25,000
+For information about our Presale, please see the [Presale](/docs/about/presale) page.
 
-**Tranche 2:**
-- $0.24 (20% Discount)
-- 10 million (10,000,000) coins available
-- Min purchase size $150
-- Max purchase size $100,000
-
-**Tranche 3:** 
-- $0.27 (10% Discount)
-- 20 million (20,000,000) coins available
-- Min purchase size $150
-- Max purchase size $100,000
-
-**Tranche 4:**
-- $0.30 (0% Discount)
-- 20 million (20,000,000) coins available
-- Min purchase size $150
-- Max purchase size $100,000
-
-
-***Still have questions?***<br/>
-*Please contact us in the Support channel on [Discord](https://discord.gg/minima)*

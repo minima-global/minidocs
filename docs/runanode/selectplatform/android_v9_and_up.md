@@ -51,7 +51,7 @@ From Mainnet version 1.0 and above, you do not need to have your Incentive ID co
  
 As long as have completed and passed the Proof of Person verification process, you will be able to claim your Total Rewards balance to a Mainnet node of your choice (including Rewards for Jan 1st until TGE) once the Payout process begins.
 
-Please refer to the [Testnet Status](/docs/runanode/testnetstatus/) page for the latest information.
+Please refer to the [Mainnet Status](/docs/about/mainnetstatus/) page for the latest information.
 :::
 
 <!-- :::info Previous users

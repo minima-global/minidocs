@@ -12,7 +12,7 @@ As long as you pass the Verify process, you will be able to claim your Total Rew
  
 In order to be ready for your Reward collection, we advise running the Mainnet version as early as you can to get familiar with your node and to test the latest security features - we will soon have some workshops to explain how best to secure your Mainnet node prior to you receiving your coins.
  
-Please refer to the [Testnet Status](https://docs.minima.global/docs/runanode/testnetstatus/) page for the latest information. 
+Please refer to the [Mainnet Status](/docs/about/mainnetstatus/) page for the latest information. 
 
 
 <!-- After [installing Minima](/docs/runanode/get_started), if you are an existing user of the Incentive Program you must connect your Incentive ID to your node to start receiving daily Rewards.

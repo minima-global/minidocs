@@ -9,7 +9,7 @@ The Incentive Rewards Program is now closed to new users.
 
 Existing users will continue to earn, however all Rewards due for 2023 will be received in March (prior to Token distribution) instead of daily, provided you continue to run your node.
 
-Please refer to the [Testnet Status](/docs/runanode/testnetstatus/) page for the latest information.
+Please refer to the [Mainnet Status](/docs/about/mainnetstatus/) page for the latest information.
 :::
 
 ## What is the Minima Invite Program?

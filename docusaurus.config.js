@@ -83,8 +83,8 @@ const config = {
             position: "left",
           },
           {
-            to: "docs/runanode/testnetstatus/",
-            label: "Testnet Status",
+            to: "docs/about/mainnetstatus/",
+            label: "Mainnet Status",
             position: "left",
           },
           {
