@@ -17,11 +17,11 @@ Keeping your funds secure involves
 
 ## Seed Phrase
 
-**To view your 24 word seed phrase (Android)**
-1. From the Backup/Restore page, click **Archive Node**
-2. Click on the i icon in the top right
+**To view your 24 word Seed Phrase (Android)**
+1. From the menu on the Home page, select **Vault**
+2. Click on the 3 dots in the top right and select **Seed Phrase**
 
-**To view your 24 word seed phrase (using the Terminal)**
+**To view your 24 word Seed Phrase (using the Terminal)**
 1. Login to your MiniDapp system
 2. Open the Terminal MiniDapp
 2. Type `vault` and press Enter
