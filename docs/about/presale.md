@@ -20,25 +20,25 @@ There will be 4 tranches at different prices, the first and earliest tranche is 
 - Existing Incentive Program members only
 - $0.21 (30% Discount)
 - 10 million (10,000,000) coins available
-- Min purchase size $150
+- Min purchase size $50
 - Max purchase size $25,000
 
 **Tranche 2:**
 - $0.24 (20% Discount)
 - 10 million (10,000,000) coins available
-- Min purchase size $150
+- Min purchase size $50
 - Max purchase size $100,000
 
 **Tranche 3:** 
 - $0.27 (10% Discount)
 - 20 million (20,000,000) coins available
-- Min purchase size $150
+- Min purchase size $50
 - Max purchase size $100,000
 
 **Tranche 4:**
 - $0.30 (0% Discount)
 - 20 million (20,000,000) coins available
-- Min purchase size $150
+- Min purchase size $50
 - Max purchase size $100,000
 
 If you wish to purchase more than the maximum, please contact us via our [Contact page](https://www.minima.global/contact). 
@@ -149,7 +149,7 @@ Minima is using a third-party provider for this process. KYC is a legal and regu
 
 As follows:
 
-#### 1-999.99 $USDT
+#### 50-999.99 $USDT
 
 Information needed:
 
