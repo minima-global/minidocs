@@ -64,8 +64,10 @@ It is possible to run an Archive node from the Genesis block if you either start
 ### Manual desktop node 
 To start a Minima Archive node manually, you need to add the `-archive` parameter to the start up command. 
 
-#### Examples 
+If you have an existing node that you wish to change to an archive node, you can `quit` your current node from the Terminal and restart the same node, adding in the archive parameter on the start up line.<br/>
 
+
+#### Examples 
 
 #### Windows
 ```
@@ -80,15 +82,19 @@ sudo java -jar /Users/INSERTUSERNAME/Downloads/minima.jar -mdsenable -archive
 sudo java -jar /home/INSERTUSERNAME/minima.jar -mdsenable -archive
 ```
 
-If you have an existing node that you wish to change to an archive node, you can `quit` your current node from the Terminal and restart the same node, adding in the archive parameter on the start up line.
-
 :::important
-You must make sure you restart the node using the same data folder you chose when originally starting the node. 
+If you used the `-data` parameter to specify a data folder when starting your existing node, you must make sure you start the Archive node using the same data folder you chose originally.
 :::
 
 ### Docker
 
 To start a Minima Archive node container, you need to add the `-e minima_archive=true` environment variable to the start up command. 
+
+If you originally started your node without the `-e minima_archive=true` environment variable, you can stop and remove your Minima container (this will not delete your minimadocker9001 data folder), then start a new Minima container including `-e minima_archive=true` in the start up line. 
+
+:::important
+You must make sure you start the new container using the same data folder you chose when originally starting the node e.g. minimadocker9001
+:::
 
 #### Examples
 
@@ -109,11 +115,6 @@ docker run -d -e minima_mdspassword=123 -e minima_desktop=true -e minima_archive
 docker run -d -e minima_mdspassword=123 -e minima_desktop=true -e minima_archive=true -v ~/minimadocker9001:/home/minima/data -p 9001-9004:9001-9004 --restart unless-stopped --name minima9001 minimaglobal/minima:latest
 ```
 
-If you originally started your node without the `-e minima_archive=true` environment variable, you can stop and remove your Minima container (this will not delete your minimadocker9001 data folder), then start a new Minima container including `-e minima_archive=true` in the start up line. 
-
-:::important
-You must make sure you start the new container using the same data folder you chose when originally starting the node e.g. minimadocker9001
-:::
 
 ## How to check your Archive data
 
