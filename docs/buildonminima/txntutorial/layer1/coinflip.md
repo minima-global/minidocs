@@ -84,7 +84,7 @@ ELSEIF round EQ 2 THEN
     /* Now check that the preimage of player 1 is correct */ 
     LET ponehash = STATE ( 3 )
     LET preimage = STATE ( 6 )
-    ASSERT KECCAK ( preimage ) EQ ponehash
+    ASSERT SHA3 ( preimage ) EQ ponehash
 
     /* OK - He has shown his random number.. continue */
     RETURN VERIFYOUT ( @INPUT @ADDRESS @AMOUNT @TOKENID TRUE )
@@ -101,11 +101,11 @@ ELSEIF round EQ 3 THEN
     /* Now check that the preimage of player 2 is correct */ 
     LET ptwohash = STATE ( 5 )
     LET ptwopreimage = STATE ( 7 )
-    ASSERT KECCAK ( ptwopreimage ) EQ ptwohash
+    ASSERT SHA3 ( ptwopreimage ) EQ ptwohash
 
     /* OK - lets see who wins..! */
     LET ponepreimage = STATE ( 6 )
-    LET rand = KECCAK ( CONCAT( ponepreimage ptwopreimage ) )
+    LET rand = SHA3 ( CONCAT( ponepreimage ptwopreimage ) )
 
     /* GET THE FIRST BYTE*/
     LET val = NUMBER ( SUBSET ( 0 1 rand ) )

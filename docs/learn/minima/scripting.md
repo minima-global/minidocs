@@ -283,7 +283,7 @@ ENDIF
 --
 
 LET x = STATE ( 23 )
-LET shax = KECCAK ( x )
+LET shax = SHA3 ( x )
 IF shax EQ 0x6785456.. AND SIGNEDBY ( 0x12345.. ) THEN
   RETURN TRUE
 ENDIF

@@ -13,7 +13,7 @@ The other party you are sending the coin to is 0xEE
 ~~~~
 IF @BLOCK GT 1000 AND SIGNEDBY(0xFF) THEN RETURN TRUE
 ENDIF
-RETURN ( SIGNEDBY(0xEE) AND KECCAK(STATE(1)) EQ 0x546FCD56E.. )
+RETURN ( SIGNEDBY(0xEE) AND SHA3(STATE(1)) EQ 0x546FCD56E.. )
 ~~~~
 
 **What this does:**<br/>
@@ -45,14 +45,14 @@ You would get
 0x1D63D6377EA45E6A5F410FCCED3066B80CA9FB391C346E74948FBB27C7617908
 ~~~~
 
-as the hash of the data - the byte representation of the string. Also - this is the KECCAK hash, and you would probably want to use SHA2 or SHA3 for cross chain antics as that is what BTC and ETH support.
+as the hash of the data - the byte representation of the string. Also - this is the SHA3 hash, and you would probably want to use SHA2 or SHA3 for cross chain antics as that is what BTC and ETH support.
 
 Now to add this as a state variable you would need to enclose it in square brackets.
 
 So..
 
 ~~~~
-runscript script:"LET preimage=STATE(0) RETURN KECCAK(preimage) EQ 0x1D63D6377EA45E6A5F410FCCED3066B80CA9FB391C346E74948FBB27C7617908" state:{"0":"[this is my secret]"}
+runscript script:"LET preimage=STATE(0) RETURN SHA3(preimage) EQ 0x1D63D6377EA45E6A5F410FCCED3066B80CA9FB391C346E74948FBB27C7617908" state:{"0":"[this is my secret]"}
 ~~~~
 
 This is because Strings in KISSVM are enclosed in square brackets.. Not quotes - ".
