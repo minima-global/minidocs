@@ -6,7 +6,9 @@ sidebar_position: 9
 
 Our public Presale is an opportunity to purchase Minima ahead of coin distribution.
 
-The ONLY official website for the presale is https://presale.minima.global/. **PLEASE BE VIGILANT FOR SCAM WEBSITES.**
+The ONLY official websites for the presale are https://presale.minima.global/ or https://livepresale.minima.global/.
+
+**PLEASE BE VIGILANT FOR SCAM WEBSITES.**
 
 *Note: Participation is only possible where your local laws and regulations permit as well as where international sanctions are not in force.*
 
