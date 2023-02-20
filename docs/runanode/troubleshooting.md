@@ -4,13 +4,20 @@ sidebar_position: 11
 
 # Troubleshooting
 
-Last updated: December 2022
+Last updated: February 2023
 
 You will find some of our most commonly asked questions and issues below. <br/>
 
+Before continuing, please ensure you are on a Mainnet version of Minima **(v 1.0.x)** by checking the status of your node. 
+
+If you are still running v 0.103.x or below, you are still on Testnet and need to update to the [latest version](/docs/runanode/get_started).
+
 ## Missed Incentive Rewards
 
-Any missed Incentive Rewards will be compensated for at Mainnet, provided you have consistently been running Minima and have updated to version 103.28 or above.
+Any missed Incentive Rewards will be compensated for at TGE, provided:
+- you have consistently been running a Minima node
+- you are running a Mainnet version (v 1.0 or above)
+- you have passed the proof of person verification process
 
 ## Android: App crashing on open
 Please ensure you have uninstalled v100.32 before downloading Minima from the [Google Play Store](https://play.google.com/store/apps/details?id=com.minima.android&hl=en&gl=US).
