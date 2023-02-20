@@ -17,7 +17,7 @@ java -jar minima.jar -data minidata1 -test -nop2p -genesis
 ```
 
 These parameters mean: <br/>
-`-data` : the data folder where all the files for this minima node are stored. If you want to specify a folder not in this directory you must use the complete path. If unspecified the default data directory is ~/.minima<br/>
+`-data` : the data folder where all the config files for this node are stored. Default is a hidden .minima folder under the user's home directory. If you want to specify a folder not in the user's home directory, you must use the complete path.<br/>
 `-test` : this uses test settings which have a faster blocktime and only keep a shorter chain in memory. If you are compiling Minima yourself you can edit these to your needs.<br/>
 `-nop2p` : do not try and connect to other nodes in the p2p network<br/>
 `-genesis` : delete all old data and create a new genesis block<br/>
@@ -25,6 +25,7 @@ These parameters mean: <br/>
 Once you start Minima in this way you will have your own private chain, you will be sent the genesis Minima to spend, and you can enter commands directly into the console. Check your balance with ‘balance’.
 
 If you need to quit Minima and wish to restart it without deleting old data use :
+
 ```
 java -jar minima.jar -data minidata1 -test -nop2p
 ```

@@ -14,30 +14,86 @@ Before starting, ensure you have the latest version of Java installed from https
 
 1. Download and save the latest minima.jar file from Github [here](https://github.com/minima-global/Minima/raw/master/jar/minima.jar)
 
-2. Open your command line interface
-
-**Windows**: Open the Command Prompt as admin (click on Start and search for **command prompt**)
-
+2. Open your command line interface<br/>
+**Windows**: Click on Start, search for **command prompt** then right click to **Open as administrator**<br/>
 **Mac:** Open the Terminal app from the Utilities folder in Applications
 
-3. Type the following command all on one line, replacing **`INSERTUSERNAME`** with the username for your files:
+3. Type the following command all on one line, replacing **`INSERTUSERNAME`** with the username for your files:<br/>
 
-:::note Tip
-To avoid typing in the folder path, you can drag and drop the downloaded minima.jar file into the command line window.
-:::
+> **Tip:** To avoid typing in the folder path, you can drag and drop the downloaded minima.jar file into the command line window.
 
-**Windows**
+#### Windows
 ```
 java -jar C:\Users\INSERTUSERNAME\Downloads\minima.jar -mdsenable
 ```
-**Mac**
+#### Mac
 ```
 sudo java -jar /Users/INSERTUSERNAME/Downloads/minima.jar -mdsenable
 ```
-**Linux**
+#### Linux
 ```
 sudo java -jar /home/INSERTUSERNAME/minima.jar -mdsenable
 ```
+
+#### Optional start up parameters
+
+<details><summary>Expand to see full list of start up parameters</summary>
+
+The following start up parameters can optionally be specified when starting your node. 
+
+To add/remove parameters after a node has been started, you must `quit` the node and restart it, adding/removing the required parameters. 
+
+`[]` square brackets indicate where an input is required, **the brackets should not be included.**
+
+#### General
+- `-clean` : CAREFUL! Clears existing data, starts a new fresh node. All coins will be lost.<br/>
+- `-port [port]` : specify the initial port for Minima to use. Range used will be the specified port +4. Default is 9001-9005.<br/>
+- `-host [ipaddress]` : specify the host IP<br/>
+- `-allowallip` : Allow all IPs for Maxima / Networking. Local IPs won't be allowed otherwise.<br/>
+- `-archive` : Run an Archive node - store all archive data / the cascade to allow for resyncs from this node<br/>
+- `-daemon` : Run in daemon mode with no stdin input (if running Minima as a background service)<br/>
+- `-isclient` : Tells the P2P System that this node can't accept incoming connections<br/>
+- `-server` : Use Server settings - this node can accept incoming connections<br/>
+- `-desktop` : Use Desktop settings - this node can't accept incoming connections<br/>
+
+#### Folders
+- `-data [foldername/path]` : the data folder where all the config files for this node are stored. Default is a hidden .minima folder under the user's home directory. If you want to specify a folder not in the user's home directory, you must use the complete path. <br/>
+- `-basefolder [foldername/path]` : specify a default file creation / backup / restore folder. Default is the user's home directory. Can be the same as the `data` folder provided.<br/>
+
+#### MiniDapp System (mds)
+- `-mdsenable` : enable the MiniDapp System (default port 9003)<br/>
+- `-mdspassword [yourmdspassword]` : specify the mds login password <br/>
+- `-mdsinit [foldername/path]` : specify a folder of miniDAPPs<br/>
+- `-mdswrite [minidapp]` : give an initial miniDAPP WRITE access <br/>
+
+#### RPC
+- `-rpcenable` : enable remote procedure call<br/>
+- `-rpcssl` : use Self Signed SSL cert to run RPC<br/>
+- `-rpcpassword [yourrpcpassword]` : set Basic Auth password for RPC calls ( Use with SSL / stunnel ). Only secure if used with SSL.<br/>
+- `-rpcclrf` : use CRLF at the end of the RPC headers (NodeJS)<br/>
+
+#### Test nodes
+- `-genesis` : start the node from the genesis block (automatically uses -clean)<br/>
+- `-test` : uses test parameters e.g. faster block times<br/>
+- `-connect [ip:port,ip:port]` : Disable the automatic P2P system and create your own network by manually connecting to this list of host:port<br/>
+- `-nop2p` : Disable the automatic P2P system<br/>
+- `-noconnect` : Stops the P2P system from connecting to other nodes until it has been connected to<br/>
+- `-nosyncibd` : Do not sync IBD (for testing)<br/>
+
+#### Mobile
+- `-mobile` : Sets this device to a mobile device - used for metrics only<br/>
+- `-limitbandwidth` : Limit the amount sent for archive sync<br/>
+- `-noshutdownhook` : Do not use the shutdown hook (Android)<br/>
+
+#### Debugging
+- `-p2p-log-level-info` : Set the P2P log level to info<br/>
+- `-p2p-log-level-debug` : Set the P2P log level to debug
+
+#### Help
+- `-showparams` : Show relevant startup params on launch<br/>
+- `-help` : print help for the start up parameters
+
+</details>
 
 4. Hit the **Enter** key
 
@@ -63,7 +119,7 @@ Minima @ 14/03/2022 17:32:30 [5.1 MB] : ****************************************
 
 You can type `status` to show the status of your Minima node, or `help` to show the full list of commands.
 
-**Continue to access your MiniDapp hub and setup your Incentive Program account to start earning Rewards.**
+**Continue to access your MiniDapp hub.**
 
 ---------
 
@@ -372,7 +428,7 @@ If successful, you will need to log out/log in from your Minima hub for the rest
 If you encrypted your private keys before taking the backup that you are now restoring, your private keys will still be encrypted and you will be required to decrypt them or enter your Vault password when sending funds
 ::: 
 
--------
+---------
 
 ## How to remove your node
 :::important

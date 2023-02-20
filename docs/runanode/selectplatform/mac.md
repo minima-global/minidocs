@@ -38,7 +38,6 @@ This will be the password to access your Minidapp Hub.
 ```
 docker run -d -e minima_mdspassword=123 -e minima_desktop=true -v ~/minimadocker8001:/home/minima/data -p 8001-8004:9001-9004 --restart unless-stopped --name minima8001 minimaglobal/minima:latest
 ```
-7. Press the **Enter** key to run the command and start your node. 
 
 :::note What do all the parameters mean?
 
@@ -51,6 +50,42 @@ docker run -d -e minima_mdspassword=123 -e minima_desktop=true -v ~/minimadocker
 - `--name minima8001` : sets the name of your Minima container to minima8001
 - `minimaglobal/minima:latest` : specifies where to pull the Minima code from
 :::
+
+#### Optional start up parameters
+
+<details><summary>Expand to see full list of start up parameters</summary>
+
+The following start up parameters can optionally be specified when starting your Docker node. 
+
+To add/remove parameters after a node has been started, you must stop and remove your **minima8001** Docker container, then start it again, adding/removing the required parameters in front of **-v ~/minimadocker8001:/home/minima/data**.
+As long as you use the same minimadocker8001 folder, your previous node will be preserved but will use different parameters.
+
+#### General
+- `-e minima_clean=true` : CAREFUL! Clears existing data, starts a new fresh node. All coins will be lost.<br/>
+- `-e minima_host=ipaddress` : specify the host IP<br/>
+- `-e minima_allowallip=true` : Allow all IPs for Maxima / Networking. Local IPs won't be allowed otherwise.<br/>
+- `-e minima_archive=true` : Run an Archive node - store all archive data / the cascade to allow for resyncs from this node<br/>
+- `-e minima_isclient=true` : Tells the P2P System that this node can't accept incoming connections<br/>
+- `-e minima_server=true` : Use Server settings - this node can accept incoming connections<br/>
+- `-e minima_desktop=true` : Use Desktop settings - this node can't accept incoming connections<br/>
+
+#### MiniDapp System (mds)
+- `-e minima_mdsenable=true/false` : enable the MiniDapp System. Enabled by default.<br/>
+- `-e minima_mdspassword=yourmdspassword` : specify the mds login password <br/>
+
+#### RPC
+- `-e minima_rpcenable=true/false` : enable remote procedure call. Enabled by default.<br/>
+- `-e minima_rpcssl=true` : use Self Signed SSL cert to run RPC<br/>
+- `-e minima_rpcpassword=yourrpcpassword` : set Basic Auth password for RPC calls ( Use with SSL / stunnel ). Only secure if used with SSL.<br/>
+- `-e minima_rpcclrf=true` : use CRLF at the end of the RPC headers (NodeJS)<br/>
+
+#### Help
+- `-e minima_showparams=true` : Show relevant startup params on launch<br/>
+- `-e minima_help=true` : print help for the start up parameters
+
+</details>
+
+7. Press the **Enter** key to run the command and start your node. 
 
 8. You will notice a container in Docker called **minima8001**, this is running your Minima node.
 
@@ -84,7 +119,7 @@ You will see the Watchtower in Docker.
 
 Every 8 hours, the Watchtower will check whether there is a new version of Minima and will update if so. 
 
-Continue to access your MiniDapp hub and setup your Incentive Program account to start earning Rewards.
+Continue to access your MiniDapp hub.
 
 ## Access your MiniDapp hub
 
