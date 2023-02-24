@@ -88,8 +88,12 @@ For every day your node is connected to the network, you will receive 1 Reward.
 ## FAQ
 
 ### How to view your 24 word seed phrase
-1. From the **Backup/Restore** page, click **Archive Node**
-2. Click on the **i** icon in the top right
+1. From the Home page, open the menu in the top left
+2. Open the **Vault** page
+3. Press the three vertical dots in the top right 
+4. Select **Seed Phrase** 
+5. Grab a pen and paper and write down your Seed Phrase in the order specified  
+
 
 **Tips for keeping your seed phrase safe:**
 - Never take a screenshot, copy and paste or type your seed phrase on a device which is connected to the internet
@@ -101,18 +105,18 @@ For every day your node is connected to the network, you will receive 1 Reward.
 
 Before backing up your node, consider encrypting your private keys. For more information, see [Vault](/docs/runanode/securefunds#vault).
 
-1. From the Backup/Restore page, click **Backup**
+1. From the Backup/Restore page, click **MAKE A BACKUP**
 2. Enter a **password** for the backup (using A-Z, a-z, 0-9 characters only, **no symbols**)
-
-Your password will be required if you restore this backup at a later date, **it cannot be changed or recovered** so you must remember it!
-
 3. A backup file will be created and you will be prompted to **choose a location** to save it.
 
-**Store your backups somewhere secure.**
+**Please note:**
+- Your password will be required if you restore this backup at a later date, **it cannot be changed or recovered** so you must remember it!
+- Once you have saved your backup file, we recommend you send it to a USB drive to keep it secure and then remove it from your Android device 
+
 
 ### How to restore your node from a backup
 
-1. From the **Backup/Restore** page, click **Restore**
+1. From the **Backup/Restore** page, click **RESTORE FROM A BACKUP**
 2. Enter the password you entered when creating the backup you are restoring
 3. You will be prompted to **choose a backup** from your device that you have previously taken
 4. Your node will then shutdown - **reopen the app** to reconnect to your restored node
