@@ -13,7 +13,7 @@ The ONLY official websites for the presale are https://presale.minima.global/ or
 *Note: Participation is only possible where your local laws and regulations permit as well as where international sanctions are not in force.*
 
 ## When will the Presale start?
-The first tranche starts on 14th February at 10:00 UTC and ends on 21st March at 22:00 UTC or once all coins are sold, whichever is sooner.
+The first tranche starts on 14th February at 10:00 UTC and ends on 21st March at 12:00 UTC or once all coins are sold, whichever is sooner.
 
 ## Are there different sale prices or different tranches?
 There will be 4 tranches at different prices, the first and earliest tranche is available for existing Incentive Program members only. Discount % indicates the discount from the targeted exchange listing price of $0.30.
