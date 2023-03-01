@@ -30,7 +30,7 @@ If you need to quit Minima and wish to restart it without deleting old data, use
 **Node 1:**
 
 ```
-java -jar minima.jar -data minidata1 -basefolder minidata2 -test -nop2p
+java -jar minima.jar -data minidata1 -basefolder minidata1 -test -nop2p
 ```
 **Node 2:**
 ```

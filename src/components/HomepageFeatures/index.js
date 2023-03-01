@@ -45,12 +45,12 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Ambassador',
-    link: 'docs/earnrewards/ambassador',
+    title: 'Presale',
+    link: 'docs/about/presale',
     icon: 'icons/ambassador_icon.svg',
     description: (
       <>
-        Become a Minima ambassador and earn additional Rewards
+        Purchase wMinima at a discount ahead of Exchange listing!
       </>
     ),
   },

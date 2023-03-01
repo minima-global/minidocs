@@ -73,8 +73,8 @@ const config = {
             position: "left",
           },
           {
-            to: "docs/earnrewards/minimaincentiveprogram",
-            label: "Incentive Program",
+            to: "docs/about/presale",
+            label: "Presale",
             position: "left",
           },
           {

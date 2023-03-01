@@ -173,6 +173,14 @@ This will sign and then execute the transaction, only unlocking the node for tha
 
 The above solution is more secure than an unprotected node but the wallet is still effectively hot as it is connected to the internet and should not be used to store large amounts of funds.
 
+<!-- ## Multi-sig coin
+
+Multi-signature coins are coins that require a subset of given 
+
+You can create a multi-sig coin to secure Minima, custom tokens or NFTs. -->
+
+
+
 ## Cold Storage Solution
 
 We recommend this method if storing a large amount of Minima.
