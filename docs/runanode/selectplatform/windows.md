@@ -367,7 +367,7 @@ To remove a Docker node:
 
 ## Next Steps
 
-Once your node running, [learn about MiniDapps](/docs/learn/minidapps/minidappsintro) and start testing!
+Once your node running, see [Using MiniDapps](/docs/runanode/usingminidapps) to start using Minima's decentralized applications!
 
 ### Stay up to date
 
@@ -377,4 +377,3 @@ Check out our [MiniDapp store](https://minidapps.minima.global/) to stay up to d
 
 See [Using MiniDapps](/docs/runanode/usingminidapps) for more information or find us in [Discord](https://discord.gg/minima) or [Telegram](https://t.me/Minima_Global).
 
-Thank you for participating and contributing to our Testnet.

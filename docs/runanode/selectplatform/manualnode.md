@@ -443,9 +443,7 @@ If you encrypted your private keys before taking the backup that you are now res
 
 ## Next Steps
 
-Once your node running, see [Using MiniDapps](/docs/runanode/usingminidapps) to start testing!
-
-Thank you for participating and contributing to our Testnet.
+Once your node running, see [Using MiniDapps](/docs/runanode/usingminidapps) to start using Minima's decentralized applications!
 
 Learn more:<br/>
 

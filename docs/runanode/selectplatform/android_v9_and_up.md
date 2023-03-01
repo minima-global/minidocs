@@ -124,7 +124,7 @@ Before backing up your node, consider encrypting your private keys. For more inf
 
 ## Next Steps
 
-Once your node running, you can contribute to our Testnet by testing our decentralized applications - **MiniDapps.** 
+Once your node running, you can use Minima's decentralized applications - **MiniDapps.** 
 
 Learn more about MiniDapps [here](/docs/learn/minidapps/minidappsintro) <br/>
 
