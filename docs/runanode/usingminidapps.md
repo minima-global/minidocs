@@ -49,11 +49,6 @@ If using Safari, ensure the MiniDapps are not unzipped during the download by ch
 
 ![Windows](/img/buildonminima/minihub.png)
 
-:::note Testnet Coins
-To use the Wallet MiniDapp, you will need Testnet Minima coins which can be obtained from the **Gimme20** MiniDapp.
-**Testnet coins have no real world value.**
-:::
-
 -------
 
 ## MiniDapp Permissions

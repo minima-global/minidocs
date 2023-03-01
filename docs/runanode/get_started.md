@@ -24,5 +24,3 @@ Check out our [MiniDapp store](https://minidapps.minima.global/) to stay up to d
 ### Need help?
 
 See [Using MiniDapps](/docs/runanode/usingminidapps) for more information or find us in [Discord](https://discord.gg/minima) or [Telegram](https://t.me/Minima_Global).
-
-Thank you for participating and contributing to our Testnet.
