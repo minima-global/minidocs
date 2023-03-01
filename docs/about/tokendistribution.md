@@ -125,7 +125,7 @@ Join the Waitlist for the Public Presale [here](https://presale.minima.global/)
 
 The Public Presale will be for Wrapped Minima ($WMINIMA). This enables Minima to be tradable on exchanges shortly after the Token Generation Event, without waiting for technical integration of Native Minima ($MINIMA) onto exchanges, scheduled for Q3/Q4 2023.
 
-The Public Presale will have four ‘tranches’ between 10:00 UTC 14th February 2023 and 12:00 UTC 21st March 2023, with a limited volume of coins in each tranche. 
+The Public Presale will have four ‘tranches’ between 10:00 UTC 14th February 2023 and 10:00 UTC 21st March 2023, with a limited volume of coins in each tranche. 
 
 Across all tranches the minimum investment size is USD $150, to enable as many people as possible to participate. Tranche 1 has a maximum investment size of USD $25,000, whereas tranches 2, 3 and 4 have a maximum investment size of USD $100,000. 
 
@@ -134,7 +134,7 @@ Earlier tranches benefit from a greater discount, as shown below:
 | | Start | | |End | 
 |:-------|:-----------|:-----------|:-----------|:-----------|
 |**Date** | 14th Feb 2023 |||21st March 2023|
-|**Time** | 10:00 UTC | ||12:00 UTC |
+|**Time** | 10:00 UTC | ||10:00 UTC |
 |**Tranche** | Tranche 1 |Tranche 2| Tranche 3|Tranche 4|
 |**Coins for sale** | 10,000,000 |10,000,000|20,000,000 |20,000,000|
 |**Discount** | 30% |20%|10%|None|
