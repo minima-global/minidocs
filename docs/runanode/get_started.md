@@ -17,18 +17,6 @@ Running a Minima node couldn't be easier; to start your node, select your platfo
 
 Once your node running, [learn about MiniDapps](/docs/learn/minidapps/minidappsintro) to discover your open, decentralized ecosystem. 
 
-:::info THE INCENTIVE PROGRAM IS NOW CLOSED
-The Incentive Rewards Program is now closed to new users.
-
-Existing users will continue to earn, however all Rewards due for 2023 will be received in March (prior to Token distribution) instead of daily.
-
-From Mainnet version 1.0 and above, you do not need to have your Incentive ID connected to your node.
- 
-As long as have completed and passed the Proof of Person verification process, you will be able to claim your Total Rewards balance to a Mainnet node of your choice (including Rewards for Jan 1st until TGE) once the Payout process begins.
-
-Please refer to the [Mainnet Status](/docs/about/mainnetstatus/) page for the latest information.
-:::
-
 ### Stay up to date
 
 Check out our [MiniDapp store](https://minidapps.minima.global/) to stay up to date with the latest MiniDapps.

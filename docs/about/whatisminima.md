@@ -15,39 +15,39 @@ The Minima blockchain uses the Minima coin as its currency. It is a store of val
 
 ## How is Minima different from other blockchains?
 
-All design decisions for Minima can be attributed to three elements:
+All design decisions for Minima aim to ensure the protocol remains decentralized over time and can be attributed to three elements:
 - Everyone builds the chain
 - No reliance on fees 
 - It must be finished
 
 ### Everyone builds the chain
 
-***Every user must participate in constructing the blockchain***
+> *Every user must participate in **constructing** the blockchain*
 
-We must identify the difference between **validation** and **construction** of a blockchain. 
+Firstly, we must identify the difference between **validation** and **construction** of a blockchain. 
 
-**Validation** is the act of reviewing transactions and blocks to determine their validity. 
-It is, effectively, a read-only role and participants that only validate cannot control which transactions are added to blocks or which blocks are added to the blockchain.
+**Validation** involves checking that pending transactions and blocks are valid.
+They help to ensure that *invalid* transactions cannot get into a block. However, they cannot control which *valid* transactions get into a block.<br/> **They cannot prevent censorship of transactions**.
 
-**Construction** of the blockchain involves validation as well as adding valid transactions to blocks and adding valid blocks to the blockchain. This is the ultimate level of power that any blockchain node can have.
+**Construction** involves selecting which transactions are added to blocks and adding blocks to the chain. This is the ultimate level of power that any blockchain node can have. <br/> **The more constructing nodes a blockchain has, the more resistant to censorship it becomes.**
 
-**These two types of participants (nodes) are not equal. Validating nodes** can prevent constructing nodes from processing invalid transactions but they **cannot prevent censorship of transactions**.
-
-Every user on Minima is a constructing and validating node.
+**With Minima, every user validates and constructs the chain.**
 
 ### No reliance on fees
 
-***There must be no entity that is paid to construct the chain***
+> *There must be no entity that is paid to construct the chain*
 
-When financial incentives are at stake, human nature takes over. We will do everything in our power to accumulate whatever resources are required to win as many rewards as possible. 
+When financial incentives are at stake, human nature takes over. We will do everything in our power to accumulate the resources required to win as much as possible. 
 
-With blockchains, the incentives commonly seen are transaction fees and block rewards to those constructing the chain. The resources required to attain these incentives are either powerful, expensive computer hardware or large financial contributions in the form of staking. Both are vectors for centralization over time, as those with a wealth of resources continue to increase their share and secure their control over the construction of the chain.
+Incentives commonly seen to those constructing the chain are transaction fees and block rewards. The resources required to attain these incentives are either powerful, expensive computer hardware or large financial contributions in the form of staking. 
+
+Financial incentives are vectors for centralization over time, as those with a wealth of resources continue to increase their share and secure their control over the construction of the chain.
 
 **No users are paid to construct the Minima blockchain.** Another mechanism, the Burn, is used to benefit all.
 
 ### It must be finished
 
-***The parts of the protocol critical for consensus must not require changes***
+> *The parts of the protocol critical for consensus must not require changes*
 
 A protocol cannot be without a central authority, or be considered a solid foundation to build on, if certain developers can ‘govern’ and change the rules of the chain. Therefore, a blockchain protocol cannot be truly decentralized if it is not complete.
 
@@ -55,7 +55,7 @@ A protocol cannot be without a central authority, or be considered a solid found
 
 
 ## Inspiration
-**“Creative thinking is not about generating something new from a blank slate, but rather about taking what is already present and combining those bits and pieces in a way that has not been done previously.” - James Clear**
+> “Creative thinking is not about generating something new from a blank slate, but rather about taking what is already present and combining those bits and pieces in a way that has not been done previously.” - **James Clear**
 
 Minima takes inspiration from and combines much great previous work including
 

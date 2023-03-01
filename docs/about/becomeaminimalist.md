@@ -36,7 +36,7 @@ We recommend first following these steps to get oriented:
 
 ## How can I participate? 
 
-To become a Minimalist, you must [run a node](https://incentive.minima.global/account/register)!
+To become a Minimalist, you must [run a node](/docs/runanode/get_started)!
 
 This gives you access to Minima’s decentralized blockchain network where you can exchange value and information peer-to-peer, and enables you to participate as an equal. 
 
