@@ -15,7 +15,7 @@ The MiniDapp system is an open application ecosystem.<br/>
 Similar to the Operating System on your phone that enables you to use Android apps, the MiniDapp System enables you to use MiniDapps on your Minima node.
 
 ## What are MiniDapps?
-MiniDapps are Minima’s **Decentralized Applications** running over Minima’s blockchain network. In other words, applications built using the functionality enabled by the Minima blockchain and peer-to-peer network. This also includes our Information Layer - Maxima and, in future, our Layer 2 - Omnia. <br/>
+MiniDapps are Minima’s **Decentralized Applications** running over Minima’s blockchain network. They are web applications that utilise the functionality enabled by the Minima blockchain and peer-to-peer network. This includes our Information Layer - Maxima and, in future, our Layer 2 - Omnia. <br/>
 They are your gateway to a true Web 3 economy, open and free.
 
 A MiniDapp can be created for almost anything - some examples include decentralized finance, games, voting, marketplaces, messaging, social media - the world is your oyster.      

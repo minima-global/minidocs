@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Network Overview
@@ -55,5 +55,5 @@ MiniDapps are truly decentralised applications built using the functionality ena
 
 ![Minima](/img/network/miniDappsLm.svg#gh-light-mode-only)![Minima](/img/network/miniDappsDm.svg#gh-dark-mode-only)
 
-MiniDapps are decentralized applications combining the utility provided by Maxima, Minima and Omnia with Minima’s scripting language. The front-end for MiniDapps can be written using the widely known JavaScript, HTML and CSS.
+MiniDapps are decentralized web applications combining the utility provided by Maxima, Minima and Omnia with Minima’s scripting language. The front-end for MiniDapps can be written using the widely known JavaScript, HTML and CSS.
 Minima’s KISS scripting language is Turing-Complete, allowing for powerful smart contract driven applications. Building a MiniDapp is accessible to any web developer.

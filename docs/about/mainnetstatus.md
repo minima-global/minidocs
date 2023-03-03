@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # Mainnet Status
 
-*Last updated: 1st March 2023*
+*Last updated: 3rd March 2023*
 
 Now Mainnet is live, here is the important information you need to know.
 
@@ -12,7 +12,7 @@ Incentive Program members will need to take action to ensure you receive your ac
 
 Roadmap of events prior to coin distribution:
 
-![Community Roadmap](/img/runanode/Community_Roadmap_Graphic_v4.png)
+![Community Roadmap](/img/about/Community_roadmap.png)
 
 ## What you need to know about… 
 
