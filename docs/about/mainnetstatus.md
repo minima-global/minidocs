@@ -4,11 +4,11 @@ sidebar_position: 8
 
 # Mainnet Status
 
-*Last updated: 3rd March 2023*
+*Last updated: 7th March 2023*
 
 Now Mainnet is live, here is the important information you need to know.
 
-Incentive Program members will need to take action to ensure you receive your accrued Rewards.
+Incentive Program members will need to take action to ensure you receive your accrued Rewards to your wallet.
 
 Roadmap of events prior to coin distribution:
 
@@ -62,11 +62,17 @@ All Rewards due for 2023 will be sent to your Incentive Program account in one g
 
 ### ...receiving your Rewards
 
-If you pass the [Proof of Person verification](#incentive-reward-account-verification), you will be able to Request withdrawal of your Rewards to your node when coin distribution begins, currently scheduled for March 2023.
+If you pass the Proof of Person verification, you will be able to Request withdrawal of your Rewards to your node from 8th March 2023, using the Incentive Reward Collection MiniDapp which can be downloaded from the [MiniDapps website](https://minidapps.minima.global/). 
 
-Your Total Rewards available to withdraw will be your existing balance as shown in your account, plus any previously missed rewards, plus all Rewards from January 1st to TGE. 
+Once your withdrawal is pending, please wait until **21st March 2023, when coin distribution will begin.**
 
-Once you have requested to withdraw your Incentive Rewards, they will be converted to real Minima and sent to your Minima wallet address.
+You can check your final Rewards balance [here](https://rewards.minima.global/) from 12:00 UTC on March 8th 2023.
+
+**BEFORE REQUESTING WITHDRAWAL OF YOUR REWARDS, PLEASE ENSURE:**
+- You are running the Mainnet version of Minima
+- You have written down your Seed Phrase
+- You have taken a backup of your node (with no special characters in the backup password)
+- If you have encrypted your keys using the Vault command, please ensure you can unlock it and relock it
 
 :::info proof of person
 Know Your Customer (KYC) will not be required to collect your Minima Rewards, however, you will be required to complete our ‘Proof of Person’ Verify process so we can ensure that you are not a bot!
@@ -78,22 +84,21 @@ Minima operates a “One Incentivized Node Per Human” policy. This means that 
 
 In order to ensure that your account is genuine and not the product of bot activity, we require each Incentive Reward Account holder to pass our simple Verify process.
 
+You can check whether you have successfully verified by entering the email you used to sign up [here](https://verify.minima.global/results).
+
 #### What is the Verify process?
 
 Our Verify process consists of two phases:
 
 **Phase 1**
 
-Our team will review the Incentive Reward database algorithmically and manually to identify accounts that are either <br/>
-a) clearly the result of bot activity or <br/> b) part of a network of accounts.
+Our team will review the Incentive Reward database algorithmically and manually to identify accounts that are either clearly the result of bot activity or part of a network of accounts.
 
 Accounts that fail Phase 1 will not be notified.
 
-**Phase 2**
+**Phase 2** (from 13th January 2023)
 
 All accounts that pass Phase 1 will be invited via the email address on your Incentive Reward Account to complete Phase 2.
-
-Phase 2 started on the 13th January.
 
 This email contains a unique link for you to click that will identify your account to us. You will then be asked to complete a form that will provide us with the verification we need to satisfy our “One Incentivized Node Per Human” policy.
 
@@ -107,7 +112,12 @@ Once you have your confirmation, you are guaranteed to receive your rewards at T
 
 #### I have lost access to my Incentive Reward Account email address
 
-You can use [this form](https://docs.google.com/forms/d/e/1FAIpQLSc8wEMYdjpSI_xx0l075SyEeX3oXjtvgSOESLVYFgceM1HuOA/viewform?usp=sf_link) to tell us about your account and what address you want to change to. We will send you your invite once this is processed.
+This appeal form is now closed. If you have already completed the form, your request will be processed.
+If successful, you will get a Verify email or one of the team will contact you via a support ticket on Discord.
+
+DO NOT open a Support Ticket. We will be unable to help you. Please bare with us as we process these.
+<!-- 
+You can use [this form](https://docs.google.com/forms/d/e/1FAIpQLSc8wEMYdjpSI_xx0l075SyEeX3oXjtvgSOESLVYFgceM1HuOA/viewform?usp=sf_link) to tell us about your account and what address you want to change to. We will send you your invite once this is processed. -->
 
 #### I didn’t receive an invite to Verify
 
@@ -115,19 +125,27 @@ Please first check your spam inbox.
 
 If you haven’t had an email by Monday 16th January, this will be for one of 2 reasons. You either failed Phase 1, or there was an issue with the email address we hold on record for you. 
 
+This appeal form is now closed. If you have already completed the form, your request will be processed.
+If successful, you will get a Verify email or one of the team will contact you via a support ticket on Discord.
+
+DO NOT open a Support Ticket. We will be unable to help you. Please bare with us as we process these.
+
+<!--
 Complete [this form](https://docs.google.com/forms/d/e/1FAIpQLSfoSwdl6o_hsZQR6BE_iiOmocEGaC4jCnHUGpXfnGAYb_zy2A/viewform?usp=sf_link) if you did not receive the email.
 
 DO NOT open a Support Ticket. We will be unable to help you.
 
 If successful, you will get a Verify email or one of the team will contact you via a support ticket on Discord.
 
-Please bare with us as we process these.
+Please bare with us as we process these. -->
 
 #### It has been 24 hours since completing Verify, but I have not received a confirmation email
 
 You have failed Verification. If you believe this to be in error, you can contact us using [this form](https://docs.google.com/forms/d/e/1FAIpQLSe-khUVayeVDB8zbXVmm5w82CPxeiqD_Xn3OcnIyHdnjwAl2g/viewform?usp=sf_link).
 
 One of the team can look into why you failed and you might be contacted via a support ticket on Discord, however there is no guarantee of verification. Any decision made is final.
+
+Verify will close at 12:00 on the 3rd April.
 
 ### ...our Community Presale
 
