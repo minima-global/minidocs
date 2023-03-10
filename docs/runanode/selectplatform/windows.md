@@ -46,20 +46,20 @@ You may also be prompted to allow firewall settings.
 6. Copy and paste the following into the Command Prompt window 
 
 ```
-docker run -d -e minima_mdspassword=123 -e minima_desktop=true -v C:\Users\INSERTUSERNAME\minimadocker9001:/home/minima/data -p 9001-9004:9001-9004 --restart unless-stopped --name minima9001 minimaglobal/minima:latest
+docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_desktop=true -v C:\Users\INSERTUSERNAME\minimadocker9001:/home/minima/data -p 9001-9004:9001-9004 --restart unless-stopped --name minima9001 minimaglobal/minima:latest
 ```
 
 :::important CHOOSE YOUR FILE PATH AND PASSWORD
 **File path:** Insert the name of your home folder where it says **`INSERTUSERNAME`** below e.g. C:\Users\john\minimadocker9001
 
-**Password:** Make sure to change the password below from `123` to a long password using a-z and 0-9 characters only.
+**Password:** Make sure to set the password below to a long password using a-z and 0-9 characters only.
 This will be the password to access your Minidapp Hub.
 :::
 
 :::note What do all the parameters mean?
 
 - `-d`: daemon mode, Minima will run in the background
-- `-e minima_mdspassword=123` : sets the password for your MiniDapp system. **YOU MUST USE A SECURE PASSWORD USING LOWERCASE LETTERS AND NUMBERS ONLY**
+- `-e minima_mdspassword=INSERTPASSWORD` : sets the password for your MiniDapp system. **YOU MUST USE A SECURE PASSWORD USING LOWERCASE LETTERS AND NUMBERS ONLY**
 - `-e minima_desktop=true` : sets your node type as a desktop node that does not receive incoming connections 
 - `-v C:\Users\INSERTUSERNAME\minimadocker9001:/home/minima/data` : creates a local folder called **minimadocker9001** in your home directory and maps it to the **/home/minima/data** directory in Docker. The **minimadocker9001** folder is where the Minima database and is also where your backups will be stored.
 - `-p 9001-9004:9001-9004` : the port number mapping from your desktop to the Docker container
@@ -327,7 +327,7 @@ To run a second node in Docker, you can create another container using different
 
 1. To create a node on port 8001:
 
->docker run -d -e minima_mdspassword=123 -e minima_desktop=true -v ~/**minimadocker8001**:/home/minima/data -p **8001-8004**:9001-9004 --restart unless-stopped --name **minima8001** minimaglobal/minima:latest
+>docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_desktop=true -v ~/**minimadocker8001**:/home/minima/data -p **8001-8004**:9001-9004 --restart unless-stopped --name **minima8001** minimaglobal/minima:latest
 
 2. To access your MiniDapps on the second node, go to https://127.0.0.1:8003/ (8003 instead of 9003) and repeat the steps in [Access your MiniDapp hub](#access-your-minidapp-hub).
 
@@ -336,7 +336,7 @@ To run a second node in Docker, you can create another container using different
 ### How to start a test node as a developer
 To create a private test node from Genesis, use the following start up command:
 
-> ```docker run -d -e minima_mdspassword=123 -e minima_desktop=true -e minima_genesis=true -e minima_test=true -e minima_nop2p=true -v ~/minimadocker10001_dev:/home/minima/data -p 10001-10004:9001-9004 --restart unless-stopped --name minima10001_dev minimaglobal/minima:latest```
+> ```docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_desktop=true -e minima_genesis=true -e minima_test=true -e minima_nop2p=true -v ~/minimadocker10001_dev:/home/minima/data -p 10001-10004:9001-9004 --restart unless-stopped --name minima10001_dev minimaglobal/minima:latest```
 :::note test parameters
 The additional test parameters used are:
 

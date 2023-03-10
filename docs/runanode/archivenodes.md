@@ -110,19 +110,19 @@ If you originally started your node without the `-e minima_archive=true` environ
 
 #### Linux VPS
 ```
-docker run -d -e minima_mdspassword=123 -e minima_server=true -e minima_archive=true -v ~/minimadockerarchive:/home/minima/data -p 7001-7004:9001-9004 --restart unless-stopped --name minimaarchive minimaglobal/minima:latest
+docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_server=true -e minima_archive=true -v ~/minimadockerarchive:/home/minima/data -p 7001-7004:9001-9004 --restart unless-stopped --name minimaarchive minimaglobal/minima:latest
 ```
 #### Windows
 ```
-docker run -d -e minima_mdspassword=123 -e minima_desktop=true -e minima_archive=true -v C:\Users\INSERTUSERNAME\minimadockerarchive:/home/minima/data -p 7001-7004:9001-9004 --restart unless-stopped --name minimaarchive minimaglobal/minima:latest
+docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_desktop=true -e minima_archive=true -v C:\Users\INSERTUSERNAME\minimadockerarchive:/home/minima/data -p 7001-7004:9001-9004 --restart unless-stopped --name minimaarchive minimaglobal/minima:latest
 ```
 #### Mac
 ```
-docker run -d -e minima_mdspassword=123 -e minima_desktop=true -e minima_archive=true -v ~/minimadockerarchive:/home/minima/data -p 7001-7004:9001-9004 --restart unless-stopped --name minimaarchive minimaglobal/minima:latest
+docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_desktop=true -e minima_archive=true -v ~/minimadockerarchive:/home/minima/data -p 7001-7004:9001-9004 --restart unless-stopped --name minimaarchive minimaglobal/minima:latest
 ```
 #### Linux desktop
 ```
-docker run -d -e minima_mdspassword=123 -e minima_desktop=true -e minima_archive=true -v ~/minimadockerarchive:/home/minima/data -p 7001-7004:9001-9004 --restart unless-stopped --name minimaarchive minimaglobal/minima:latest
+docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_desktop=true -e minima_archive=true -v ~/minimadockerarchive:/home/minima/data -p 7001-7004:9001-9004 --restart unless-stopped --name minimaarchive minimaglobal/minima:latest
 ```
 
 
