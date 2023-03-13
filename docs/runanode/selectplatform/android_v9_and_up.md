@@ -16,8 +16,8 @@ sidebar_position: 1
 You will see your MiniDapps on the Home screen, the latest MiniDapp versions can be found in the **DAPP Store** to download & install.
 
 :::info Don't have a Google Play account?
-The Android apk can also be downloaded directly from Github [here.](https://github.com/minima-global/Minima/blob/master/jar/minima-0.103.28.apk?raw=true) <br/>
-*Latest version: 103.28, Last updated: 19th December 2022*
+The Android apk can also be downloaded directly from Github [here.](https://github.com/minima-global/Minima/raw/master/jar/minima-1.0.21.apk) <br/>
+*Latest version: 1.0.21, Last updated: 1st Mar 2023*
 :::
 
 
