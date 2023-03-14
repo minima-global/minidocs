@@ -208,7 +208,7 @@ Every 24 hours, the Watchtower will check whether there is a new version of Mini
 docker ps
 ```
 
-Continue to [access your MiniDapp hub](#access-your-minidapp-hub) and setup your Incentive Program account to start earning Rewards.
+Continue to [access your MiniDapp hub](#access-your-minidapp-hub).
 
 ## Access your MiniDapp hub
 
@@ -229,37 +229,6 @@ You will see your MiniDapp System (MDS) login page.
 3. Enter your password to login, if you don't remember, you can check [here](#how-to-check-your-minima-hub-password).
 
 4. You will see your MiniDapp hub!
-
-
-## Set up your Incentive Program account 
-
-:::info THE INCENTIVE PROGRAM IS NOW CLOSED
-The Incentive Rewards Program is now closed to new users.
-
-Existing users will continue to earn, however all Rewards due for 2023 will be received in March (prior to Token distribution) instead of daily.
-
-From Mainnet version 1.0 and above, you do not need to have your Incentive ID connected to your node.
- 
-As long as have completed and passed the Proof of Person verification process, you will be able to claim your Total Rewards balance to a Mainnet node of your choice (including Rewards for Jan 1st until TGE) once the Payout process begins.
-
-Please refer to the [Mainnet Status](/docs/about/mainnetstatus/) page for the latest information.
-:::
-
-<!-- If you have not registered, click [here](https://incentive.minima.global/account/register) to sign up. -->
-<!-- 
-1. Open the Incentive Program minidapp
-
-![mds_IP](/img/runanode/IP_minidapp.png#width50)
-
-2. Follow the instructions to login to the Incentive Program website and **copy your Incentive ID**
-
-3. Paste your Incentive ID into the field provided and click **Update**
-
-![mds_IP](/img/runanode/IP_updateid.png#width50)
-
-4. Check the Rewards page to check your balance!
-
-![mds_IP](/img/runanode/IP_checkrewards.png#width50) -->
 
 ## FAQ 
 
@@ -327,8 +296,6 @@ docker exec -it minima9001 minima
 
 **Useful commands:**<br/>
 `status` - see the status of your node including version and chain details<br/>
-`incentivecash` - check your Incentive Program balance<br/>
-`incentivecash uid:` - setup your Incentive Program account by connecting your Incentive ID<br/>
 `help` - show all commands
 
 ------
@@ -479,7 +446,6 @@ Example: To check the status of your Minima node when logged on to the server:
 
 You will see the current block and other information about your node. 
 
-`curl 127.0.0.1:9005/incentivecash | jq` - shows your incentive cash balance<br/>
 `curl 127.0.0.1:9005/help | jq` - shows the full list of commands<br/>
 
 #### Using a firewall to secure your RPC port 

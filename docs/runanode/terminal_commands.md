@@ -29,7 +29,6 @@ parameter values in **bold** indicate default value
 | hash |**data:** |**type:**keccak \| sha2 \| sha3 |Hash the data <br/> **type:** the hashing algorithm |
 | hashtest | |**amount:**1000000 |Check the speed of hashing of this device. Option to set the number of hashes. Default 1 million hashes |
 | help | | |Show Help. |
-| incentivecash | |**uid:** |Show your rewards or specify your Incentive ID for the Incentive Program |
 | keys | |**action:list** \| new |Get a list of all your public keys or create a new key |
 | maxcontacts |**action:list** \| mls \| add \| remove \| search |**contact:** <br/>**id:** <br/>**publickey:**  |Manage your Maxima contacts. Refresh contacts using the mls service. Add by Contact address, remove by id, search by id or publickey. |
 | maxima |**action:info** \| setname \| hosts \| send \| refresh |**name:** <br/>**id:** \| **to:** \| **publickey:** <br/>**application:** <br/>**data:** <br/>**logs:**true \| **false** <br/> **poll**:true \| **false**  |**action** - Check your Maxima details (info), <br/>set your name (setname), <br/>view your Maxima hosts (hosts), <br/>send a message (send), refresh maxima (refresh). <br/> **name** - (setname) set your name **id/to/publickey** - (send) send to given maxima contact id (id)/full address/public key <br/>**application** - (send) provide host:port,<br/> **data** - (send) The HEX data for the message to send<br/>**logs** - enable/disable logs<br/>**poll** - poll messages to perform multiple sends quickly  |

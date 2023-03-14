@@ -74,11 +74,15 @@ You can check your final Rewards balance [here](https://rewards.minima.global/) 
 - You have taken a backup of your node (with no special characters in the backup password)
 - If you have encrypted your keys using the Vault command, please ensure you can unlock it and relock it
 
-:::info proof of person
-Know Your Customer (KYC) will not be required to collect your Minima Rewards, however, you will be required to complete our ‘Proof of Person’ Verify process so we can ensure that you are not a bot!
+:::warning
+Once you have requested withdrawal to your wallet, this address cannot be changed. Please take all the necessary steps to secure your node prior to requesting withdrawal!
 :::
 
-### ...Incentive Reward Account Verification
+Additional resources can be found on our [Youtube channel](https://www.youtube.com/@MinimaGlobal/videos):
+- [Android: Preparing for self-custody of coins](https://www.youtube.com/watch?v=RMsVgtdDB-o&t=579s)
+- [Desktop & VPS: Preparing for self-custody of coins](https://www.youtube.com/watch?v=CDV8GQwxxPA)
+
+### ...Account Verification
 
 Minima operates a “One Incentivized Node Per Human” policy. This means that a real human must exist behind each Incentive Reward Account.
 

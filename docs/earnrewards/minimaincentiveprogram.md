@@ -22,7 +22,6 @@ You will receive one Reward every day your node pings us to let us know it is co
 
 ## How do I get involved?
 The Incentive Reward Program is now closed to new users, however you can still [run a node](/docs/runanode/get_started) to use the Minima blockchain and decentralized applications.
-<!--- [Create your Incentive Program Account today here.](https://incentivecash.minima.global/) -->
 
 ## How many Rewards can I earn?
 You will earn 1 x Minima reward each day. 

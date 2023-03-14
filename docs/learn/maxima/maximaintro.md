@@ -12,11 +12,30 @@ Maxima is to information what Minima is to value.
 
 Where Minima provides freedom of *value* exchange; Maxima provides freedom of *information* exchange.
 
-Maxima is an information transport layer protocol that allows anyone to exchange information, with their chosen contacts, over Minima’s peer-to-peer network.<br/>
+Maxima is an information transport layer protocol that allows anyone to exchange information, with their chosen contacts, over Minima’s peer-to-peer network.
 
 This unlocks the power of composability to create true Web 3 applications combining peer-to-peer exchange of value and information. 
 
 Totally decentralized - without censorship - without personal data collection.
+
+---------
+
+**Each Minima node runs the Minima blockchain** in full to enable all nodes to transact with each other without third-party intermediaries. 
+
+Transacting over Minima involves sending coins, custom tokens or NFTs between nodes. Transactions can be simple payments or programmed to cater for more complex use cases using Minima’s smart-contract language, KISS.
+
+When sending transactions over the network, users must perform a small amount of work from their device, called **Transaction Proof of Work (TxPoW), which secures the network from attack.**
+
+---------
+
+**Each Minima node also runs the Maxima protocol** to enable nodes to send encrypted data like text, pictures or documents to each other, independently of the Minima blockchain. 
+
+Users can communicate with a peer on the network e.g. a friend, family member or another device, by adding them as a **Maxima Contact**. Messages can then be sent to Maxima Contacts via decentralized apps (known as MiniDapps) such as MaxSolo or Chatter which interact with the Maxima protocol.
+ 
+Although users can send messages over Maxima free of charge, to prevent spam, they must contribute to the security of the Minima network by performing a small Tx-PoW when sending a message. On average, the TxPoW required to send a message amounts to 1 second of work.
+
+
+<!-- 
 
 ## How does it work?
 
@@ -32,4 +51,4 @@ If you no longer want to be contactable by one of your contacts, you can delete 
 
 Similar to Minima, where each user must provide a small amount of computational power to the chain by "mining" their transaction; on Maxima, each user must also "mine" their messages before they can be sent to a contact. 
 
-Hence, Maxima is a source of additional hashrate securing the Minima blockchain.
+Hence, Maxima is a source of additional hashrate securing the Minima blockchain. -->

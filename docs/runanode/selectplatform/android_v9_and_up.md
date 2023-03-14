@@ -40,50 +40,6 @@ If you have been offline for a long time or do not have a recent backup you may 
 
 3. Check your node's full status by selecting **Full Status** from the menu in the top right.
 
-## Setting up your Incentive Account
-
-:::info THE INCENTIVE PROGRAM IS NOW CLOSED
-The Incentive Rewards Program is now closed to new users.
-
-Existing users will continue to earn, however all Rewards due for 2023 will be received in March (prior to Token distribution) instead of daily.
-
-From Mainnet version 1.0 and above, you do not need to have your Incentive ID connected to your node.
- 
-As long as have completed and passed the Proof of Person verification process, you will be able to claim your Total Rewards balance to a Mainnet node of your choice (including Rewards for Jan 1st until TGE) once the Payout process begins.
-
-Please refer to the [Mainnet Status](/docs/about/mainnetstatus/) page for the latest information.
-:::
-
-<!-- :::info Previous users
-If you had an account prior to 6th December 2021, you must reset your password [here.](https://incentive.minima.global/account/forgot-password) Please check your junk mail for the reset password email.
-::: -->
-<!-- 
-1. From the Home screen in the Minima app, open the **Incentive Program** MiniDapp
-2. Click on the 3 dots in the top right and select **Open in Browser**
-3. Follow the link to the Incentive Program website to log in
-
-![Login](/img/runanode/android_1.png#width50)
-
-4. From the menu in the top right, go to the **Incentive ID** page and copy your Incentive ID
-
-![Node ID](/img/runanode/android_2.png#width50)
-
-5. Return to the app and paste your ID into the box on the Incentive ID page, click **Update** 
-
-![Node ID](/img/runanode/android_5.png#width50)
-
-**Your Incentive Program account is now connected to your node!**
-
-To see your Rewards balance, select **Rewards** from the menu.<br/>
-
-You can also check your Reward balance from the Terminal MiniDapp using the `incentivecash` command.
-
-![Console](/img/runanode/android_3.png#width50)
-![Console](/img/runanode/android_4.png#width50)
-
-:::tip Rewards
-For every day your node is connected to the network, you will receive 1 Reward.
-::: -->
 
 ## FAQ
 
