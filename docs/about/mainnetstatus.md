@@ -10,9 +10,9 @@ Now Mainnet is live, here is the important information you need to know.
 
 Incentive Program members will need to take action to ensure you receive your accrued Rewards to your wallet.
 
-Roadmap of events prior to coin distribution:
+<!-- Roadmap of events prior to coin distribution: -->
 
-![Community Roadmap](/img/about/Community_roadmap.png)
+<!-- ![Community Roadmap](/img/about/Community_roadmap.png) -->
 
 ## What you need to know about… 
 
