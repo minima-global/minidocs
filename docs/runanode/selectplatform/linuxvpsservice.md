@@ -243,6 +243,18 @@ To see detailed help for any command, use `help command:`.
 
 **Do not type `quit` as this will shutdown your node.**
 
+Continue to secure your node.
+
+## Secure your node 
+
+Before using your node for the first time, you must:
+
+1. Write down your Seed Phrase
+2. Take a backup
+3. Set a Vault password to encrypt your Keys (optional)
+
+Please visit the [Secure your Node](/docs/runanode/securefunds) page to learn how. 
+
 ## Updating your node
 
 Your node will not update to new versions of Minima automatically. 
@@ -371,8 +383,6 @@ The `mds` command will show details about the MiniDapp System (MDS) including yo
 ./minima
 ``` 
 3. Type `mds` to see your password
-
-
 
 ### How to take a backup of your node
 

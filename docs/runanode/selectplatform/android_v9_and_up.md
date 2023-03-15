@@ -21,6 +21,18 @@ The Android apk can also be downloaded directly from Github [here.](https://gith
 :::
 
 
+Continue to secure your node.
+
+## Secure your node 
+
+Before using your node for the first time, you must:
+
+1. Write down your Seed Phrase
+2. Take a backup
+3. Set a Vault password to encrypt your Keys (optional)
+
+Please visit the [Secure your Node](/docs/runanode/securefunds) page to learn how. 
+
 ## How to check the Status of your node
 
 From the **Health** page in the app, you can:
@@ -77,6 +89,38 @@ Before backing up your node, consider encrypting your private keys. For more inf
 3. You will be prompted to **choose a backup** from your device that you have previously taken
 4. Your node will then shutdown - **reopen the app** to reconnect to your restored node
 5. Wait a few minutes for your node to resync before using it - check your tip block is in sync
+
+
+### How to encrypt your Private Keys
+
+Encrypting your private keys involves setting a Vault password so that you will not be able to spend funds without first decrypting your keys or by inserting your Vault password.
+
+You will still be able to receive funds as usual.
+
+You can decrypt your keys at any time with the same Vault password you used to encrypt them.
+
+:::important Vault password
+Your Vault password should use A-Z, a-z and 0-9 characters ONLY, do NOT use symbols. <br/>
+This password should be different to the password you use to access your MiniDapp system.
+
+**It is NOT POSSIBLE to view/change this password once you have set it**, so make sure you write it down and store it somewhere secure - treat it in the same way that you would your seed phrase!
+:::
+
+**To encrypt your private keys:**
+> 
+> 1. Ensure you have **taken note of your seed phrase** and are storing it somewhere safe.
+> 2. Go to the `Vault` page in the app
+> 3. Click on **Encrypt Private Keys**
+> 4. Enter the same password twice **(using A-Z, a-z, 0-9 characters only, **no symbols**)**
+> 
+> **If you forget it, you will need to restore from an Archive node using your 24 word seed phrase.**
+
+**To decrypt your keys:**
+> 1. Go to the `Vault` page in the app
+> 2. Click on **Decrypt Private Keys**
+> 2. Enter the password you used to encrypt your keys
+> 
+> Your keys will be decrypted and you will be able to view your seed phrase and send funds without entering a password.
 
 ## Next Steps
 

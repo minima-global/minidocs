@@ -119,7 +119,15 @@ Minima @ 14/03/2022 17:32:30 [5.1 MB] : ****************************************
 
 You can type `status` to show the status of your Minima node, or `help` to show the full list of commands.
 
-**Continue to access your MiniDapp hub.**
+## Secure your node 
+
+Before using your node for the first time, you must:
+
+1. Write down your Seed Phrase
+2. Take a backup
+3. Set a Vault password to encrypt your Keys (optional)
+
+Please visit the [Secure your Node](/docs/runanode/securefunds) page to learn how. 
 
 ---------
 

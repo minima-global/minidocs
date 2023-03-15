@@ -56,7 +56,8 @@ If your inbound connection is closed, your node will only make outgoing connecti
 
 #### Docker users
 
-Docker will overwrite UFW firewall rules, so if running Minima on a server with an external IP you must ensure:
+<!-- Docker will overwrite UFW firewall rules, so i -->
+If running Minima on a server with an external IP you must ensure:
 
 1. Your MDS password is long and secure
 2. If enabling RPC, you have used the correct start up parameters for your ports and set a password on your RPC connection 

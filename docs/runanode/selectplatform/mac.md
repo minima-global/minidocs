@@ -119,7 +119,17 @@ You will see the Watchtower in Docker.
 
 Every 8 hours, the Watchtower will check whether there is a new version of Minima and will update if so. 
 
-Continue to access your MiniDapp hub.
+Continue to secure your node.
+
+## Secure your node 
+
+Before using your node for the first time, you must:
+
+1. Write down your Seed Phrase
+2. Take a backup
+3. Set a Vault password to encrypt your Keys (optional)
+
+Please visit the [Secure your Node](/docs/runanode/securefunds) page to learn how. 
 
 ## Access your MiniDapp hub
 

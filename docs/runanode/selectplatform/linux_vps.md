@@ -34,7 +34,7 @@ For help on setting up your firewall, see [Recommended Firewall settings](/docs/
 ### Remove nodes installed using the old script
 If you have been running a node using the install script provided, please remove these nodes following the instructions below.
 
-If you are a new user, continue to [Set up your firewall](#).
+If you are a new user, continue to [Start your node](#start-a-new-minima-node).
 
 1. Logon to your server as a non root user with sudo (admin) rights.
 
@@ -208,7 +208,17 @@ Every 24 hours, the Watchtower will check whether there is a new version of Mini
 docker ps
 ```
 
-Continue to [access your MiniDapp hub](#access-your-minidapp-hub).
+Continue to secure your node.
+
+## Secure your node 
+
+Before using your node for the first time, you must:
+
+1. Write down your Seed Phrase
+2. Take a backup
+3. Set a Vault password to encrypt your Keys (optional)
+
+Please visit the [Secure your Node](/docs/runanode/securefunds) page to learn how. 
 
 ## Access your MiniDapp hub
 
@@ -417,7 +427,7 @@ You can change 10001-10004 to another set of unused ports however the Docker por
 ### How to enable RPC (advanced users)
 
 :::warning
-Docker will overwrite UFW firewall rules, so if enabling RPC by opening the 9005 port, you must ensure you use the following additional parameters and set an RPC password for connecting over RPC on the start up line.
+If enabling RPC by opening the 9005 port, you must ensure you use the following additional parameters and set an RPC password for connecting over RPC on the start up line.
 ```
 -e minima_rpcpassword=INSERTRPCPASSWORD -p 9001-9004:9001-9004 -p 127.0.0.1:9005:9005
 ```
@@ -467,8 +477,6 @@ ssh root@YourServerIP curl -k -u minima:INSERTRPCPASSWORD 127.0.0.1:9005/status
 ```
 
 Each request will also require your server password.
-
-Lock it down.
 
 #### Using the Docker CLI
 
