@@ -31,37 +31,12 @@ Before using your node for the first time, you must:
 2. Take a backup
 3. Set a Vault password to encrypt your Keys (optional)
 
-Please visit the [Secure your Node](/docs/runanode/securefunds) page to learn how. 
-
-## How to check the Status of your node
-
-From the **Health** page in the app, you can:
-
-1. Check your **version** number
-2. Check your latest block time (**Time**) and latest block number (**Block**), this is your tip block and the time of that block, **Time** should be within a few minutes of the current time.
-
-:::info checking your node is in sync
-Having a recent block time is not a guarantee that you are on the right chain. <br/>
-Consider cross checking your latest block with another node or ensuring the 'Chain' colour of your Maxima Contacts on the **Contacts** page are green.
-:::
-
-:::warning 
-If the time shown is significantly behind, you should restart your node to resync to the chain. <br/> 
-If you have been offline for a long time or do not have a recent backup you may need to perform a [**chain resync**](/docs/runanode/restorefunds#how-to-perform-a-chain-re-sync) from an Archive node.
-:::
-
-3. Check your node's full status by selecting **Full Status** from the menu in the top right.
-
-
-## FAQ
-
 ### How to view your 24 word seed phrase
 1. From the Home page, open the menu in the top left
 2. Open the **Vault** page
 3. Press the three vertical dots in the top right 
 4. Select **Seed Phrase** 
 5. Grab a pen and paper and write down your Seed Phrase in the order specified  
-
 
 **Tips for keeping your seed phrase safe:**
 - Never take a screenshot, copy and paste or type your seed phrase on a device which is connected to the internet
@@ -121,6 +96,25 @@ This password should be different to the password you use to access your MiniDap
 > 2. Enter the password you used to encrypt your keys
 > 
 > Your keys will be decrypted and you will be able to view your seed phrase and send funds without entering a password.
+
+## How to check the Status of your node
+
+From the **Health** page in the app, you can:
+
+1. Check your **version** number
+2. Check your latest block time (**Time**) and latest block number (**Block**), this is your tip block and the time of that block, **Time** should be within a few minutes of the current time.
+
+:::info checking your node is in sync
+Having a recent block time is not a guarantee that you are on the right chain. <br/>
+Consider cross checking your latest block with another node or ensuring the 'Chain' colour of your Maxima Contacts on the **Contacts** page are green.
+:::
+
+:::warning 
+If the time shown is significantly behind, you should restart your node to resync to the chain. <br/> 
+If you have been offline for a long time or do not have a recent backup you may need to perform a [**chain resync**](/docs/runanode/restorefunds#how-to-perform-a-chain-re-sync) from an Archive node.
+:::
+
+3. Check your node's full status by selecting **Full Status** from the menu in the top right.
 
 ## Next Steps
 
