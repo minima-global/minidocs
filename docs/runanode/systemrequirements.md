@@ -52,7 +52,18 @@ If your inbound connection is closed, your node will only make outgoing connecti
 **9005**: The RPC Port must **ALWAYS be closed** to inbound connections
 
 
-### Recommended Firewall settings 
+### Recommended Firewall settings (VPS users)
+
+#### Docker users
+
+Docker will overwrite UFW firewall rules, so if running Minima on a server with an external IP you must ensure:
+
+1. Your MDS password is long and secure
+2. If enabling RPC, you have used the correct start up parameters for your ports and set a password on your RPC connection 
+
+Follow the guidance on the [Linux (Docker)](/docs/runanode/selectplatform/linux_vps) page for the correct configuration.
+
+#### Non-Docker users
 
 Assuming a new server with nothing else installed and that Minima will be installed on the default ports 9001-9005:
 

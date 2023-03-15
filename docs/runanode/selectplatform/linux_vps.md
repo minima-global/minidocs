@@ -15,7 +15,7 @@ Docker is an open-source software platform that simplifies the process of runnin
 It uses the operating system of the computer on which it’s installed to provide an independent computing environment for an application to run on.
 ::: 
 
-## Setup your Firewall 
+<!-- ## Setup your Firewall 
 
 By default Minima is installed on ports 9001-9005. Only ports 9001,9003,9004 need to be open to use Minima and the MiniDapp system. 
 
@@ -27,7 +27,7 @@ If you install Minima on custom ports, ensure the correct ports are open/closed.
 
 For more information, see [System Requirements.](/docs/runanode/systemrequirements)
 
-For help on setting up your firewall, see [Recommended Firewall settings](/docs/runanode/systemrequirements#recommended-firewall-settings)
+For help on setting up your firewall, see [Recommended Firewall settings](/docs/runanode/systemrequirements#recommended-firewall-settings) -->
 
 ## Start a new Minima node
 
@@ -415,18 +415,24 @@ You can change 10001-10004 to another set of unused ports however the Docker por
 :::
 
 ### How to enable RPC (advanced users)
+
 :::warning
-You should only enable RPC if you have correct [firewalls](/docs/runanode/selectplatform/linux_vps#using-a-firewall-to-secure-your-rpc-port) in place blocking access to the Minima RPC port, 9005.<br/>
-If you have multiple Minima nodes you will need to block all RPC ports (base port +4).
+Docker will overwrite UFW firewall rules, so if enabling RPC by opening the 9005 port, you must ensure you use the following additional parameters and set an RPC password for connecting over RPC on the start up line.
+```
+-e minima_rpcpassword=INSERTRPCPASSWORD -p 9001-9004:9001-9004 -p 127.0.0.1:9005:9005
+```
+You will only be able to use RPC commands if SSH'd into the server.
 :::
 
-To enable RPC, replace `-p 9001-9004:9001-9004` with `-p 9001-9005:9001-9005` when starting your node. <br/> 
-
-On a second node, this would be: `-p 8001-8005:9001-9005`.
-
 Example:
->```docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_server=true -v ~/minimadocker9001:/home/minima/data -p 9001-9005:9001-9005 --restart unless-stopped --name minima9001 minimaglobal/minima:latest```
+```
+docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_rpcpassword=INSERTRPCPASSWORD -e minima_server=true -v ~/minimadocker9001:/home/minima/data -p 9001-9004:9001-9004 -p 127.0.0.1:9005:9005 --restart unless-stopped --name minima9001 minimaglobal/minima:latest
+```
 
+On a second node running on ports 8001-8005, this would be: 
+```
+docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_rpcpassword=INSERTRPCPASSWORD -e minima_server=true -v ~/minimadocker8001:/home/minima/data -p 8001-8004:9001-9004 -p 127.0.0.1:8005:9005 --restart unless-stopped --name minima8001 minimaglobal/minima:latest
+```
 
 #### RPC commands
 
@@ -440,19 +446,39 @@ To install curl:
 For improved formatting:
 `sudo apt install jq` then `y`
 
-Example: To check the status of your Minima node when logged on to the server:
+Example: 
 
-`curl 127.0.0.1:9005/status | jq`
+To check the status of your Minima node when logged on to the server:
+
+```
+curl -k -u minima:INSERTRPCPASSWORD 127.0.0.1:9005/status | jq
+```
 
 You will see the current block and other information about your node. 
 
-`curl 127.0.0.1:9005/help | jq` - shows the full list of commands<br/>
+To show the full list of commands:
+```
+curl -k -u minima:INSERTRPCPASSWORD 127.0.0.1:9005/help | jq
+```
 
-#### Using a firewall to secure your RPC port 
+However, if you wish to check your node from an external computer, you must use SSH with each command. <br/>
+```
+ssh root@YourServerIP curl -k -u minima:INSERTRPCPASSWORD 127.0.0.1:9005/status
+```
 
-**If you have enabled RPC, you must take steps to protect your server from external access.**
+Each request will also require your server password.
 
-:::warning
+Lock it down.
+
+#### Using the Docker CLI
+
+To use your Docker CLI, you must add your RPC password:
+
+```
+docker exec -it minima -password YOURRPCPASSWORD
+```
+
+<!-- :::warning
 If you have other applications on your server other than Minima - please review your existing firewall settings before proceeding.
 :::
 
@@ -482,20 +508,15 @@ To install a firewall and secure your node:
 8. Confirm<br/>
 `y` <br/>
 
-Your firewall is now configured.
+Your firewall is now configured. -->
 
-You will still be able to send rpc commands directly from your server using curl <br/>
-e.g.  `curl 127.0.01:9005/status | jq`
 
-However, if you wish to check your node from an external computer, you must use SSH with each command. <br/>
-e.g. `ssh  root@YourServerIP curl 127.0.0.1:9005/status`
+<!-- 
+#### Using SSL to secure your RPC
 
-If you have jq installed on your computer (for improved formatting)<br/>
-`ssh  root@YourServerIP curl 127.0.0.1:9005/status | jq`
+**If you have enabled RPC, you must take steps to protect your server from external access.**
+ -->
 
-Each request will require your server password.
-
-Lock it down.
 
 ------
 

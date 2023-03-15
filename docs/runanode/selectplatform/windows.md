@@ -301,8 +301,6 @@ The additional test parameters used are:
 `-e minima_genesis=true` : Start a node from the Genesis block<br/>
 `-e minima_test=true` : Use test parameters e.g. blocks are automined and block times are faster<br/>
 `-e minima_nop2p=true` : Do not start the p2p system<br/>
-
-To enable RPC, use `-p 10001-10005:9001-9005`
 :::
 
 ------
