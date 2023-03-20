@@ -4,60 +4,81 @@ sidebar_position: 1
 
 # Incentive Program
 
-:::info THE INCENTIVE PROGRAM IS NOW CLOSED
 The Incentive Rewards Program is now closed to new users.
 
-Existing users will continue to earn, however all Rewards due for 2023 will be received in March (prior to Token distribution) instead of daily.
+Members of the Incentive Rewards program are now able to request withdrawal of their Rewards using the Incentive Rewards MiniDapp.
 
-From Mainnet version 1.0 and above, you do not need to have your Incentive ID connected to your node.
- 
-As long as have completed and passed the Proof of Person verification process, you will be able to claim your Total Rewards balance to a Mainnet node of your choice (including Rewards for Jan 1st until TGE) once the Payout process begins.
+## How to view your final Rewards balance
 
-Please refer to the [Mainnet Status](/docs/about/mainnetstatus/) page for the latest information.
-:::
+You can view your final rewards at https://rewards.minima.global 
+  
+**Daily Rewards:** The sum total of the Rewards earned each day for running a node, plus any rewards earned before December 2021 
+  
+**Community Rewards:** The sum total of any bonuses awarded for participating in events and the additional 50 coins received for everyone who successfully passed proof of person verification 
+  
+**Invite Rewards:** The sum total of any Invite Rewards earned for inviting others to run a node (0.1 rewards per day per person) 
+
+
+## How to collect your Incentive Program Rewards
+
+Please ensure you are running version 1.0.22 or above of Minima.
+
+### Android Users
+
+Before requesting withdrawal, you must ensure you have taken steps to secure your node, this includes:
+
+1. Writing down your seed phrase. [Watch the tutorial.](https://www.youtube.com/watch?v=9wnz-qnEbIY)
+2. Taking a backup of your node. [Watch the tutorial.](https://www.youtube.com/watch?v=VOU5RJA19ik)
+3. Encrypting your private keys from the **Vault** page. Please ensure you can unlock it and relock it.
+
+Please do not use special characters in your passwords.
+
+You can also refer to our workshop on [preparing for self-custody.](https://www.youtube.com/watch?v=RMsVgtdDB-o)
+
+Once secure, you can continue to collect your Rewards. [Watch the tutorial.](https://www.youtube.com/watch?v=-hxOPTK2-pw)
+
+1. Download the ‘Incentive Program Rewards’ MiniDapp from the **DAPP Store** page in the app.
+  
+2. Install the zip file on the ‘Home’ screen of the app by pressing the purple ‘+’ button and selecting the file from your phone's downloads folder.
+  
+3. Open the **IP Rewards** MiniDapp, then log in with your Incentive Program username and password.
+  
+4. You will be notified if you are eligible to proceed. Press **Request Withdrawal** to submit your wallet address. 
+
+Distribution will begin on 21st March, please be patient whilst we process these. 
+
+### Desktop/Server users
+
+Please ensure you are running version 1.0.22 or above of Minima.
+
+Before requesting withdrawal, you must ensure you have taken steps to secure your node, this includes:
+
+1. Writing down your seed phrase, using the `vault` command from the Terminal MiniDapp.
+2. Encrypting your private keys, using the `vault` command from the Terminal MiniDapp.
+3. Taking a backup of your node, using the `backup` command.
+
+For extra help using the commands, use `help command:vault` or `help command:backup`.
+
+Please do not use special characters in your passwords.
+
+We recommend watching our workshop on [preparing for self-custody.](https://www.youtube.com/watch?v=CDV8GQwxxPA&t=2s)
+
+Once secure, you can continue to collect your Rewards. [Watch the tutorial.](https://www.youtube.com/watch?v=SU_S0gfGagU)
+
+1. Download the ‘Incentive Program Rewards’ MiniDapp from the [MiniDapp website](https://minidapps.minima.global/).
+  
+2. Login to your MiniDapp hub and click ‘Choose file’ in the ‘Install a MiniDapp’ section, then select the MiniDapp you just downloaded and click ‘Install’.
+  
+3. Open the **IP Rewards** MiniDapp, then log in with your Incentive Program username and password.
+  
+4. You will be notified if you are eligible to proceed. Press **Request Withdrawal** to submit your wallet address. 
+
+Distribution will begin on 21st March, please be patient whilst we process these. 
+
 
 ## What is the Minima Incentive Program?
-The Incentive Program is designed to reward you for installing and running a Minima node.
+The Incentive Program was designed to reward people for installing and running a Minima node during Testnet
 You will receive one Reward every day your node pings us to let us know it is connected.
-
-## How do I get involved?
-The Incentive Reward Program is now closed to new users, however you can still [run a node](/docs/runanode/get_started) to use the Minima blockchain and decentralized applications.
-
-## How many Rewards can I earn?
-You will earn 1 x Minima reward each day. 
-:::note from january 2023
-From January 2023, Rewards will no longer be paid daily. Instead, all Rewards for 2023 will be paid in March before Token distribution, provided you continue to run your node.
-:::
-<!-- You will earn 1 x Minima reward each day. These rewards will be added to your balance daily. You can also earn rewards by finding bugs as a tester, participating in one of the test cycles. Let one of the team know in Discord if this is of interest. -->
-
-## Why is Minima offering this?
-As we test and improve Minima ahead of our Mainnet launch, your participation is precious to us. Together, we can collaboratively:
-
-- Grow the Minima network
-- Test how different devices operate
-- Find or fix bugs on the Minima Testnet
-- Perfect the Minima application and protocol for Mainnet launch
-- Help grow the Minima community membership and participation
-
-## What equipment do I need?
-To participate, you will need an Android mobile (9.0 or above), PC, Mac or Linux. Minima currently doesn’t run on iPhone/iOS, but this is on the future roadmap.
-
-## Can anyone run a node and join the Incentive Program?
-Yes, providing you have the correct device to install and run a MInima node.
-
-## How many nodes can I connect to my Incentive Reward account?
-
-You are no longer required to connect your Incentive ID to your node.  
-
-## How many Incentive Reward accounts can I have?
-
-One Incentive Reward account per person.
-
-## Will there be any updates?
-In the run-up to Mainnet, there will likely be several upgrades to the system. These are known as 'hard forks'. Any earned Minima rewards will temporarily be removed when these happen, and we will reinstate the exact amount after the update. Any Minima tokens created via the wallet on the testnet will also be lost during a hard fork.
-
-## When will I get my rewards?
-Everyone in the Incentive Program will get their rewards at the Token Generation Event (TGE). This is scheduled to be in Q1 2023. 
 
 ## How do I report a bug?
 Please head to the #download-and-bugs channel on our [Discord Server](https://discord.gg/ZQaUXPape5). There you will find full instructions for raising your bug. Should you need help doing so, contact any of the Community Team who will be happy to assist.

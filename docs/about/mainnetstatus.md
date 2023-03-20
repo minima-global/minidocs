@@ -29,64 +29,31 @@ To check the version of Minima you are running, you can run the `status` command
 For help , select your platform of choice from [Get Started](/docs/runanode/get_started) and see the section "How to check the Status of your node".
 :::
 
-Mainnet is a hardfork and therefore Testnet (0.103 and below) and Mainnet versions (1.0 and above) are not compatible. This means that once updated you will no longer see any of your Testnet wallet balances and will not be able to restore a Testnet backup to a node on Mainnet. 
+Mainnet is a hardfork and therefore Testnet (0.103 and below) and Mainnet versions (1.0 and above) are not compatible. This means that once updated you will **no longer see any of your Testnet wallet balances and will not be able to restore a Testnet backup to a node on Mainnet.** 
 
-You will also have a different Seed Phrase on Mainnet to your Testnet node.
+**You will also have a different Seed Phrase on Mainnet to your Testnet node.**
 
 Mainnet Version 1.0 (or above) is now available for:
 
-- Server users
-- Docker users
-- Manual node runners (on Desktop)
-- Android users (from 1st Feb 2023)
+- [Server users](/docs/runanode/selectplatform/linux_vps) 
+- [Docker users](/docs/runanode/get_started) 
+- [Manual node runners](/docs/runanode/selectplatform/manualnode) (on Desktop)
+- [Android users](/docs/runanode/selectplatform/android_v9_and_up) (from 1st Feb 2023)
 
 If you have installed Minima from the Google Play store, you can set your app to update automatically from the Play Store settings, otherwise check the Play store to Update manually.
 
-Mainnet is a hard fork and not compatible with Testnet, you will no longer see any wallet balances that you saw during Testnet, your wallet balance will be 0.
-
-What you need to do:
-- If running Minima on a server, ensure your node is secured! For example, your RPC port must be closed (default port 9005). Information about Port configuration can be found in [System Requirements](/docs/runanode/systemrequirements).
-- Take note of your NEW seed phrase which can be found using the `vault` command (Vault page in the app)
-- Regularly check the `status` of your node to ensure your tip block is up to date (Health page in the app)
-- Android users, please take the time to get familiar with the new app, if you have questions please check the **Help** in the app for more information.
+Please see [Securing your node](/docs/runanode/securefunds) before using your node for the first time. 
 
 
 ### ...the Incentive Program
-The Incentive Rewards Program is now **closed to new members.**
 
-Existing members will continue to earn once on Mainnet at 1 Reward a day, however, you will **no longer see pings after 31st December** being updated on your node.
+For details on how to withdraw your Rewards earned during Testnet, please see the [Incentive Program](/docs/earnrewards/minimaincentiveprogram) page.
 
-From Mainnet version 1.0 and above, you **do not need to have your Incentive ID connected to your node.** As long as you have passed the Verify process, you will be able to claim your Total Rewards balance plus Rewards for Jan 1st until TGE. 
-
-All Rewards due for 2023 will be sent to your Incentive Program account in one go (instead of daily) prior to the coin distribution, provided you have passed the Proof of Person verification process.
-
-### ...receiving your Rewards
-
-If you pass the Proof of Person verification, you will be able to Request withdrawal of your Rewards to your node from 8th March 2023, using the Incentive Reward Collection MiniDapp which can be downloaded from the [MiniDapps website](https://minidapps.minima.global/). 
-
-Once your withdrawal is pending, please wait until **21st March 2023, when coin distribution will begin.**
-
-You can check your final Rewards balance [here](https://rewards.minima.global/) from 12:00 UTC on March 8th 2023.
-
-**BEFORE REQUESTING WITHDRAWAL OF YOUR REWARDS, PLEASE ENSURE:**
-- You are running the Mainnet version of Minima
-- You have written down your Seed Phrase
-- You have taken a backup of your node (with no special characters in the backup password)
-- If you have encrypted your keys using the Vault command, please ensure you can unlock it and relock it
-
-:::warning
-Once you have requested withdrawal to your wallet, this address cannot be changed. Please take all the necessary steps to secure your node prior to requesting withdrawal!
-:::
-
-Additional resources can be found on our [Youtube channel](https://www.youtube.com/@MinimaGlobal/videos):
-- [Android: Preparing for self-custody of coins](https://www.youtube.com/watch?v=RMsVgtdDB-o&t=579s)
-- [Desktop & VPS: Preparing for self-custody of coins](https://www.youtube.com/watch?v=CDV8GQwxxPA)
-
-### ...Account Verification
+#### Incentive Program Account Verification
 
 Minima operates a “One Incentivized Node Per Human” policy. This means that a real human must exist behind each Incentive Reward Account.
 
-In order to ensure that your account is genuine and not the product of bot activity, we require each Incentive Reward Account holder to pass our simple Verify process.
+To ensure your account is not the product of bot activity, we require each Incentive Reward Account holder to pass our simple Verify process.
 
 You can check whether you have successfully verified by entering the email you used to sign up [here](https://verify.minima.global/results).
 
@@ -106,11 +73,10 @@ All accounts that pass Phase 1 will be invited via the email address on your Inc
 
 This email contains a unique link for you to click that will identify your account to us. You will then be asked to complete a form that will provide us with the verification we need to satisfy our “One Incentivized Node Per Human” policy.
 
-Please take note that your link is single-use, so **please do not click it until you are ready to proceed with verification.**
-
+Please take note that your link is single-use, so **please do not click it until you are ready to proceed with verification.**<br/>
 If you have successfully verified, you will receive email confirmation within 24 hours. 
 
-Once you have your confirmation, you are guaranteed to receive your rewards at Token Distribution, pending collection of your Wallet details at a later date.
+Once you have your confirmation, you can [withdraw your rewards.](/docs/earnrewards/minimaincentiveprogram)
 
 #### Frequently Asked Questions
 
@@ -127,29 +93,21 @@ You can use [this form](https://docs.google.com/forms/d/e/1FAIpQLSc8wEMYdjpSI_xx
 
 Please first check your spam inbox. 
 
-If you haven’t had an email by Monday 16th January, this will be for one of 2 reasons. You either failed Phase 1, or there was an issue with the email address we hold on record for you. 
+If you haven’t had an email by Monday 16th January, you either failed Phase 1, or there was an issue with the email address we hold on record for you. 
 
 This appeal form is now closed. If you have already completed the form, your request will be processed.
 If successful, you will get a Verify email or one of the team will contact you via a support ticket on Discord.
 
 DO NOT open a Support Ticket. We will be unable to help you. Please bare with us as we process these.
 
-<!--
-Complete [this form](https://docs.google.com/forms/d/e/1FAIpQLSfoSwdl6o_hsZQR6BE_iiOmocEGaC4jCnHUGpXfnGAYb_zy2A/viewform?usp=sf_link) if you did not receive the email.
-
-DO NOT open a Support Ticket. We will be unable to help you.
-
-If successful, you will get a Verify email or one of the team will contact you via a support ticket on Discord.
-
-Please bare with us as we process these. -->
 
 #### It has been 24 hours since completing Verify, but I have not received a confirmation email
 
-You have failed Verification. If you believe this to be in error, you can contact us using [this form](https://docs.google.com/forms/d/e/1FAIpQLSe-khUVayeVDB8zbXVmm5w82CPxeiqD_Xn3OcnIyHdnjwAl2g/viewform?usp=sf_link).
+You have failed Verification. If you believe this to be in error, you can contact us at querysupport@minima.global.
 
 One of the team can look into why you failed and you might be contacted via a support ticket on Discord, however there is no guarantee of verification. Any decision made is final.
 
-Verify will close at 12:00 on the 3rd April.
+**Verify will close at 12:00 on the 3rd April.**
 
 ### ...our Community Presale
 
