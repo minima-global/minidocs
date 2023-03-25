@@ -197,7 +197,7 @@ This method involves:
 
 ### Setup
 
-You will a USB key and 2 devices:
+You will need a USB key and 2 devices:
 
 > **Device 1: Offline node**<br/>
 > No internet connection/bluetooth/nearby sharing should be enabled. This device will hold your private keys and will be used to sign your transactions offline. 
