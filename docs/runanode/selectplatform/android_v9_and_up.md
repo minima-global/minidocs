@@ -9,19 +9,21 @@ sidebar_position: 1
 1. Uninstall any previous versions of the Minima App 
 2. Install the Minima App on your Android device from the [Google Play store](https://play.google.com/store/apps/details?id=com.minima.android&hl=en&gl=US)
 3. Set your Google Play store settings to enable [auto-update](https://support.google.com/googleplay/answer/113412?hl=en) for the Minima app. 
-3. Open the Minima App and allow the battery settings for Minima to run in the background
 
-**Congratulations - your node is now installed & running!**
-
-You will see your MiniDapps on the Home screen, the latest MiniDapp versions can be found in the **DAPP Store** to download & install.
-
-:::info Don't have a Google Play account?
+:::note Don't have a Google Play account?
 The Android apk can also be downloaded directly from Github [here.](https://github.com/minima-global/Minima/raw/master/jar/minima-1.0.24.apk) <br/>
 *Latest version: 1.0.24, Last updated: 25th Mar 2023*
 :::
 
+4. Open the Minima App and allow the battery settings for Minima to run in the background
 
-Continue to secure your node.
+**Congratulations - your node is now installed & running!** Continue to [secure your node](#secure-your-node).
+
+:::warning Huawei/Redmi/ZTE Battery settings
+Please check the battery settings for the Minima app and ensure that **"Manage Automatically"** is **disabled**. This will ensure that Minima remains in sync and running in the background.<br/>
+The settings should be set as shown below.<br/>
+![android_battery](/img/runanode/batterysetting.png#width50)
+:::
 
 ## Secure your node 
 
