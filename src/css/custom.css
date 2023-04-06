@@ -122,6 +122,17 @@
   display: none;
 }
 
+[data-theme='light'] img[src$='#gh-dark-mode-only-width50'],
+[data-theme='dark'] img[src$='#gh-light-mode-only-width50'] {
+  display: none;
+  width: 50%;
+}
+
+[data-theme='dark'] img[src$='#gh-dark-mode-only-width50'],
+[data-theme='light'] img[src$='#gh-light-mode-only-width50'] {
+  width: 50%;
+}
+
 img[src$='#width50']{
   width: 50%;
 }
