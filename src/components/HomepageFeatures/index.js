@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Learn',
-    link: 'docs/learn/networkoverview',
+    link: 'docs/learn/ataglance',
     icon: 'icons/learn_icon.svg',
     description: (
       <>

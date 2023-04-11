@@ -187,7 +187,7 @@ The Metaverse is the latest buzzword in crypto, and a term put together from the
 Minima is a censorship resistant blockchain and network. See [Network Overview.](/docs/learn/networkoverview)
 
 ## MiniDapps
-MiniDapps is the term used to refer to decentralized applications built on top of Minima. See [Network Overview.](/docs/learn/networkoverview)
+MiniDapps is the term used to refer to decentralized applications built on top of Minima. See [About MiniDapps.](/docs/learn/minidapps/minidappsintro)
 
 ## Mining
 The process in which nodes race to find the right hash in Proof-of-Work blockchains, to validate blocks and receive block rewards.

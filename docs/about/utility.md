@@ -44,7 +44,7 @@ Potential uses for the Minima currency in the MiniDapp ecosystem are unlimited a
 **Funding:** Using Minima for charity or business funding <br/>
 **Social Media:** Using Minima/Custom Tokens/NFTs for micro-payments or social status<br/>
 
-For more information, see [MiniDapps](/docs/learn/networkoverview), in our Learn section.
+For more information, see [MiniDapps](/docs/learn/minidapps/minidappsintro), in our Learn section.
 
 ## Third-party integrations
 

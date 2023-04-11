@@ -63,7 +63,7 @@ const config = {
           //   position: "left" 
           // },
           {
-            to: "docs/learn/networkoverview",
+            to: "docs/learn/ataglance",
             label: "Learn",
             position: "left",
           },

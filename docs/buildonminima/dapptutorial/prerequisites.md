@@ -13,7 +13,7 @@ Before you start to create MiniDapps, you will need several things:
 
 3. A code editor to write your code, we recommend [VS code](https://code.visualstudio.com/download) but this is your own preference
 
-4. An understanding of how the Minima Protocol works by reading the [Learn](https://docs.minima.global/docs/learn/networkoverview) section 
+4. An understanding of how the Minima Protocol works by reading the [Learn](https://docs.minima.global/docs/learn/ataglance) section 
 
 Throughout this tutorial you should have Minima’s Command Line Interface (CLI) open.
 
