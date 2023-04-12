@@ -73,8 +73,8 @@ const config = {
             position: "left",
           },
           {
-            to: "docs/about/presale",
-            label: "Presale",
+            to: "docs/buildonminima/startaprivatenode",
+            label: "Build",
             position: "left",
           },
           {

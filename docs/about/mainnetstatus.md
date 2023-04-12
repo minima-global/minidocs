@@ -111,9 +111,5 @@ One of the team can look into why you failed and you might be contacted via a su
 
 ### ...our Community Presale
 
-Our presale is an opportunity to purchase Minima ahead of coin distribution and will start on 14th February 2023 at 10am GMT.
-
-The ONLY official website for the presale is https://presale.minima.global/ or https://livepresale.minima.global/. **PLEASE BE VIGILANT FOR SCAM WEBSITES.**
-
 For information about our Presale, please see the [Presale](/docs/about/presale) page.
 
