@@ -60,6 +60,7 @@ To add/remove parameters after a node has been started, you must `quit` the node
 - `-clean` : CAREFUL! Clears existing data, starts a new fresh node. All coins will be lost.<br/>
 - `-port [port]` : specify the initial port for Minima to use. Range used will be the specified port +4. Default is 9001-9005.<br/>
 - `-host [ipaddress]` : specify the host IP<br/>
+- `-dbpassword [yourdbpassword]` : Main Wallet / SQL AES password - MUST be specified on first launch. **CANNOT be changed later.** <br/>
 - `-allowallip` : Allow all IPs for Maxima / Networking. Local IPs won't be allowed otherwise.<br/>
 - `-archive` : Run an Archive node - store all archive data / the cascade to allow for resyncs from this node<br/>
 - `-daemon` : Run in daemon mode with no stdin input (if running Minima as a background service)<br/>

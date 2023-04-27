@@ -42,7 +42,7 @@ docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_desktop=true -v ~/m
 :::note What do all the parameters mean?
 
 - `-d`: daemon mode, Minima will run in the background
-- `-e minima_mdspassword=INSERTPASSWORD` : sets the password for your MiniDapp system. **YOU MUST USE A SECURE PASSWORD USING LOWERCASE LETTERS AND NUMBERS ONLY**
+- `-e minima_mdspassword=INSERTPASSWORD` : sets the password for your MiniDapp system. **YOU MUST USE A SECURE PASSWORD USING UPPERCASE, LOWERCASE LETTERS AND NUMBERS ONLY**
 - `-e minima_desktop=true` : sets your node type as a desktop node that does not receive incoming connections 
 - `-v ~/minimadocker9001:/home/minima/data` : creates a local folder called **minimadocker9001** in your home directory and maps it to the **/home/minima/data** directory in Docker. The **minimadocker9001** folder is where the Minima database and is also where your backups will be stored.
 - `-p 9001-9004:9001-9004` : the port number mapping from your desktop to the Docker container
@@ -63,6 +63,7 @@ As long as you use the same minimadocker8001 folder, your previous node will be 
 #### General
 - `-e minima_clean=true` : CAREFUL! Clears existing data, starts a new fresh node. All coins will be lost.<br/>
 - `-e minima_host=ipaddress` : specify the host IP<br/>
+- `-e minima_dbpassword=yourdbpassword` : Main Wallet / SQL AES password - MUST be specified on first launch. **CANNOT be changed later.** <br/>
 - `-e minima_allowallip=true` : Allow all IPs for Maxima / Networking. Local IPs won't be allowed otherwise.<br/>
 - `-e minima_archive=true` : Run an Archive node - store all archive data / the cascade to allow for resyncs from this node<br/>
 - `-e minima_isclient=true` : Tells the P2P System that this node can't accept incoming connections<br/>

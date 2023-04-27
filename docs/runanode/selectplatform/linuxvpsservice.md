@@ -118,6 +118,7 @@ To add/remove parameters after a node has been started, you must `quit` the node
 - `-clean` : CAREFUL! Clears existing data, starts a new fresh node. All coins will be lost.<br/>
 - `-port [port]` : specify the initial port for Minima to use. Range used will be the specified port +4. Default is 9001-9005.<br/>
 - `-host [ipaddress]` : specify the host IP<br/>
+- `-dbpassword` : Main Wallet / SQL AES password - MUST be specified on first launch. **CANNOT be changed later.** <br/>
 - `-allowallip` : Allow all IPs for Maxima / Networking. Local IPs won't be allowed otherwise.<br/>
 - `-archive` : Run an Archive node - store all archive data / the cascade to allow for resyncs from this node<br/>
 - `-daemon` : Run in daemon mode with no stdin input (if running Minima as a background service)<br/>
@@ -389,7 +390,7 @@ The `mds` command will show details about the MiniDapp System (MDS) including yo
 Before backing up your node, consider encrypting your private keys. For more information, see [Vault](/docs/runanode/securefunds#vault).
 
 1. Start the Minima RPC Client or login to your Minima Hub at https://yourserverIP:9003/ and open the Terminal MiniDapp
-2. Enter the `backup` command with a password containing **lowercase letters and numbers only**
+2. Enter the `backup` command with a password containing **uppercase, lowercase letters and numbers only**
 
 ```
 backup password: 
@@ -407,7 +408,7 @@ backup auto:true
 Your backups will go to the base directory you specified in your Minima service script (/home/minima)
 
 :::note backup parameters
-**password:** set a password for your backup **lowercase letters and numbers only**, this will be required when restoring it
+**password:** set a password for your backup **uppercase, lowercase letters and numbers only**, this will be required when restoring it
 
 **file:** (optional) backup name 
 
