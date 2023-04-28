@@ -91,7 +91,7 @@ Note the parameters used in this script:
 **-mdsenable** : (Optional) Enables the MiniDapp System (MDS) 
 
 **-mdspassword yourpasswordhere** : (Optional) The password to access your MiniDapp System at https://yourserverip:9003<br/>
-***You must only use a-z, A-Z and 0-9 characters for this password, no symbols.***
+***You must only use a-z, A-Z and 0-9 for this password, no symbols.***
 
 **-daemon** : Runs Minima as a background service 
 
