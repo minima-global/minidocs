@@ -126,7 +126,7 @@ su - minima
 10. Start your node:
 
 :::important SET YOUR PASSWORD
-Make sure to change the password below from `INSERTPASSWORD` to a long password using a-z and 0-9 characters only.<br/>
+Make sure to change the password below from `INSERTPASSWORD` to a long password using A-Z, a-z and 0-9 characters only.<br/>
 This will be the password to access your Minidapp Hub.
 :::
 
@@ -324,7 +324,7 @@ docker stop minima9001
 docker rm minima9001
 ```
 
-3. Repeat step 10 from [Start your node](#start-your-node), with a different password.  **Your password should be long using a-z, 0-9 only.**
+3. Repeat step 10 from [Start your node](#start-your-node), with a different password.  **Your password should be long using A-Z, a-z, 0-9 only.**
 
 :::important
 Deleting the container will not delete the `minimadocker9001` data folder so your coins will be safe during this process.
@@ -341,7 +341,7 @@ Before backing up your node, consider encrypting your private keys. For more inf
 
 1. Login to your Minima Hub at https://yourserverIP:9003/
 2. Open the Terminal MiniDapp
-3. Enter the `backup` command with a password containing **lowercase letters and numbers only**
+3. Enter the `backup` command with a password containing **uppercase and lowercase letters and numbers only**
 
 ```
 backup password: 

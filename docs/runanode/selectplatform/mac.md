@@ -32,7 +32,7 @@ Before starting, stop any existing nodes you started manually by typing `quit` i
 6. Copy and paste the following into the Terminal 
 
 :::important SET YOUR PASSWORD
-Make sure to set the password below to a long password using a-z and 0-9 characters only.<br/>
+Make sure to set the password below to a long password using A-Z, a-z and 0-9 only.<br/>
 This will be the password to access your Minidapp Hub.
 :::
 ```
@@ -210,7 +210,7 @@ To change the password to login to your MiniDapp System (MDS), you must stop and
 
 ![Desktop_dockerremovecontainer](/img/runanode/docker_desktopremovecontainermac.png)
 
-3. Repeat step 6 and 7 from [Start a new Minima node using Docker](#start-a-new-minima-node-using-docker), with a different password.  **Your password should be long using a-z, 0-9 only.**
+3. Repeat step 6 and 7 from [Start a new Minima node using Docker](#start-a-new-minima-node-using-docker), with a different password.  **Your password should be long using A-Z, a-z, 0-9 only.**
 
 :::important
 Deleting the container will not delete the `minimadocker8001` data folder so your coins will be safe during this process.

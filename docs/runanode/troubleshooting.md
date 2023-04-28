@@ -90,12 +90,9 @@ Please ensure:
 
 ## Error logging into your MiniDapp System (MDS)
 
-Please ensure you have only used lowercase characters a-z and numbers in your password.
-
 To check or change your password, please revisit the Run a Node instructions:
 
 [Linux VPS](/docs/runanode/selectplatform/linux_vps#how-to-check-your-minidapp-system-password)<br/>
-
 [Windows](/docs/runanode/selectplatform/windows#how-to-check-your-minidapp-system-password)<br/>
 [Mac](/docs/runanode/selectplatform/mac#how-to-check-your-minidapp-system-password)<br/>
 [Linux Desktop](/docs/runanode/selectplatform/linux_desktop#how-to-check-your-minidapp-system-password)<br/>
