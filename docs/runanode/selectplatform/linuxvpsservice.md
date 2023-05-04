@@ -445,14 +445,14 @@ If you encrypted your private keys before taking the backup that you are now res
 ## Useful Commands
 
 ### Server commands
-`sudo journalctl -u minima_9001 -f` : Show the Minima logs<br/>
+`sudo journalctl -u minima -f` : Show the Minima logs<br/>
 ctrl-`c` : Exits the Minima logs (Minima will continue to run in the background)<br/>
 `sudo ps -fC java` : Shows all running Java processes<br/>
 `sudo systemctl status minima` - Check the status of the Minima background service<br/>
-`sudo systemctl stop minima_9001` - Stop the Minima service<br/>
-`sudo systemctl disable minima_9001` - Disable the Minima service<br/>
-`sudo systemctl enable minima_9001` - Enable the Minima service <br/>
-`sudo systemctl start minima_9001` - Start the Minima service<br/>
+`sudo systemctl stop minima` - Stop the Minima service<br/>
+`sudo systemctl disable minima` - Disable the Minima service<br/>
+`sudo systemctl enable minima` - Enable the Minima service <br/>
+`sudo systemctl start minima` - Start the Minima service<br/>
 
 ### Interacting with Minima
 

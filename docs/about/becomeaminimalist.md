@@ -50,9 +50,9 @@ If your participation is beneficial, new opportunities will open up to complete 
 
 **2. Inviting friends to run a node**
 
-**We are stronger together.** If you help your friends register for the Incentive Program and maintain their node, you’ll be rewarded for your work. 
+**We are stronger together.** Invite your friends to run a node and start exploring our decentralized applications. 
 
-For Mainnet launch, we’re aiming for 1 million nodes, as this number we believe is robust enough to handle real-world value and information to be exchanged, so the more the merrier. 
+All our latest MiniDapps can be downloaded from our [MiniDapps website](https://minidapps.minima.global/).
 
 **3. Building decentralized apps**
 

@@ -7,7 +7,7 @@ sidebar_position: 1
 Running a Minima node couldn't be easier; to start your node, select your platform of choice:
 
 - [Android](/docs/runanode/selectplatform/android_v9_and_up)<br/>
-- [Linux Server (VPS)](/docs/runanode/selectplatform/linux_vps)<br/>
+- Linux Server (VPS): choose [Docker](/docs/runanode/selectplatform/linux_vps) or a [Script](/docs/runanode/selectplatform/linuxvpsservice) setup <br/>
 - [Windows](/docs/runanode/selectplatform/windows)<br/>
 - [Mac](/docs/runanode/selectplatform/mac)<br/>
 - [Linux Desktop](/docs/runanode/selectplatform/linux_desktop)<br/>

@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# Restoring lost funds
+# Restoring a node
 
 If you lose access to your node or you become out of sync with the chain, you can either:
 - Start a new node, then **restore a recent, valid backup** you took previously
