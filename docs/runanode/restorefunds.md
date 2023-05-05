@@ -38,6 +38,10 @@ Your coins will remain safe throughout this process.
 
 1. From an existing node, go to the **Archive** page
 2. Select **CHAIN RE-SYNC**
+
+![dappmenu](/img/app/archivepage.png#width40)
+
+
 3. Read the information, then select **START CHAIN RE-SYNC**
 4. Leave the default Archive Node Host as **auto** to use one of the pre-set Archive nodes, or optionally enter the ip:port of the Archive node you wish to resync from e.g. 10.198.89.98:9001
 4. Click **OK**, the resync will begin, please be patient
@@ -77,7 +81,13 @@ Performing a seed re-sync will **WIPE your node completely** before re-syncing y
 
 1. On your new device that you wish to restore to, go to the **Archive** page
 2. Select **SEED PHRASE RE-SYNC**
+
+![dappmenu](/img/app/archivepage.png#width40)
+
 3. Enter your Seed Phrase, submitting each word individually until you have completed all 24 words. 
+
+![dappmenu](/img/app/insertseed2.png#width40)
+
 4. Leave **Max Keys Uses** as the default 1000 if you think you have not signed over 1000 transactions, otherwise enter a higher number indicating the maximum times you have signed a transaction.
 5. Select **SEED PHRASE COMPLETE**
 6. Leave the default Archive Node Host as **auto** to use one of the pre-set Archive nodes, or optionally enter the ip:port of the Archive node you wish to resync from e.g. 10.198.89.98:9001

@@ -34,9 +34,18 @@ Before using your node for the first time, you must:
 
 ### How to view your 24 word seed phrase
 1. From the Home page, open the menu in the top left
+
+![dappmenu](/img/app/homemenu.png#width40)
+
 2. Open the **Vault** page
+
+![dappmenu](/img/app/vaultpage.png#width40)
+
 3. Press the three vertical dots in the top right 
 4. Select **Seed Phrase** 
+
+![dappmenu](/img/app/seed.png#width40)
+
 5. Grab a pen and paper and write down your Seed Phrase in the order specified  
 
 **Tips for keeping your seed phrase safe:**
@@ -50,7 +59,10 @@ Before using your node for the first time, you must:
 Before backing up your node, consider encrypting your private keys. For more information, see [Vault](/docs/runanode/securefunds#vault).
 
 1. From the Backup/Restore page, click **MAKE A BACKUP**
-2. Enter a **password** for the backup (using A-Z, a-z, 0-9 characters only, **no symbols**)
+
+![dappmenu](/img/app/backuppage.png#width40)
+
+2. Enter a **password** for the backup (using A-Z, a-z, 0-9 only)
 3. A backup file will be created and you will be prompted to **choose a location** to save it.
 
 **Please note:**
@@ -75,28 +87,32 @@ You will still be able to receive funds as usual.
 
 You can decrypt your keys at any time with the same Vault password you used to encrypt them.
 
+**To encrypt your private keys:**
+ 
+1. Ensure you have **taken note of your seed phrase** and are storing it somewhere safe.
+2. Go to the `Vault` page in the app
+
+![dappmenu](/img/app/vaultpage.png#width40)
+
+3. Click on **Encrypt Private Keys**
+4. Enter the same password twice
+
 :::important Vault password
-Your Vault password should use A-Z, a-z and 0-9 characters ONLY, do NOT use symbols. <br/>
-This password should be different to the password you use to access your MiniDapp system.
+Your Vault password should be over 12 characters and use A-Z, a-z and 0-9, do NOT use symbols. 
 
 **It is NOT POSSIBLE to view/change this password once you have set it**, so make sure you write it down and store it somewhere secure - treat it in the same way that you would your seed phrase!
+
+**If you forget it, you will need to [restore from an Archive node](/docs/runanode/restorefunds#how-to-perform-a-seed-re-sync) using your 24 word seed phrase.**
 :::
 
-**To encrypt your private keys:**
-> 
-> 1. Ensure you have **taken note of your seed phrase** and are storing it somewhere safe.
-> 2. Go to the `Vault` page in the app
-> 3. Click on **Encrypt Private Keys**
-> 4. Enter the same password twice **(using A-Z, a-z, 0-9 characters only, **no symbols**)**
-> 
-> **If you forget it, you will need to restore from an Archive node using your 24 word seed phrase.**
+
 
 **To decrypt your keys:**
-> 1. Go to the `Vault` page in the app
-> 2. Click on **Decrypt Private Keys**
-> 2. Enter the password you used to encrypt your keys
-> 
-> Your keys will be decrypted and you will be able to view your seed phrase and send funds without entering a password.
+1. Go to the `Vault` page in the app
+2. Click on **Decrypt Private Keys**
+3. Enter the password you used to encrypt your keys
+
+Your keys will be decrypted and you will be able to view your seed phrase and send funds without entering a password.
 
 ## How to check the Status of your node
 
@@ -111,11 +127,13 @@ Consider cross checking your latest block with another node or ensuring the 'Cha
 :::
 
 :::warning 
-If the time shown is significantly behind, you should restart your node to resync to the chain. <br/> 
-If you have been offline for a long time or do not have a recent backup you may need to perform a [**chain resync**](/docs/runanode/restorefunds#how-to-perform-a-chain-re-sync) from an Archive node.
+If the time shown is significantly behind, you should restart your node by selecting **ShutDown Compact DB** from the menu in the **Health** page. Once relaunched, Minima should resync to the latest block. <br/> 
+If you have been offline for a long time, you may need to restore a backup or perform a [**chain resync**](/docs/runanode/restorefunds#how-to-perform-a-chain-re-sync).
 :::
 
 3. Check your node's full status by selecting **Full Status** from the menu in the top right.
+
+![dappmenu](/img/app/healthmenu.png#width40)
 
 ## Using MiniDapps
 

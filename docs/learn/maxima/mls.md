@@ -116,7 +116,7 @@ maxima
 Copy your Public Key, then **on the static MLS node** enter the command:
 
 ```
-maxextra action:removepermanent publickey:INSERTPUBKEY
+maxextra action:addpermanent publickey:INSERTPUBKEY
 ```
 
 Example:
