@@ -137,6 +137,10 @@ img[src$='#width50']{
   width: 50%;
 }
 
+img[src$='#width40']{
+  width: 40%;
+}
+
 .row .col, img {
   max-width: 100%;
   width: 90%;

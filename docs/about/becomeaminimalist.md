@@ -48,11 +48,11 @@ Minimalists also help build the network by:
 
 If your participation is beneficial, new opportunities will open up to complete activities and tasks for additional rewards. 
 
-**2. Inviting friends to run a node**
+**2. Set up your Maxima profile** 
 
-**We are stronger together.** Invite your friends to run a node and start exploring our decentralized applications. 
+We are stronger together. [Setting up your Maxima profile](/docs/runanode/usingmaxima) will enable other Minimalists to easily recognise you when you share your Maxima address with them, so you can communicate peer-2-peer via Minima’s decentralized apps (MiniDapps). 
 
-All our latest MiniDapps can be downloaded from our [MiniDapps website](https://minidapps.minima.global/).
+Once you have set up your profile, [share your address](/docs/runanode/usingmaxima#sharing-your-contact-address) with other Minimalists and connect with them via a MiniDapp!
 
 **3. Building decentralized apps**
 

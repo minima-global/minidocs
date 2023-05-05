@@ -11,8 +11,7 @@ sidebar_position: 1
 3. Set your Google Play store settings to enable [auto-update](https://support.google.com/googleplay/answer/113412?hl=en) for the Minima app. 
 
 :::note Don't have a Google Play account?
-The Android apk can also be downloaded directly from Github [here.](https://github.com/minima-global/Minima/raw/master/jar/minima-1.0.24.apk) <br/>
-*Latest version: 1.0.24, Last updated: 25th Mar 2023*
+The latest Android apk file can also be downloaded directly from Github [here.](https://github.com/minima-global/Minima/tree/master/jar) <br/>
 :::
 
 4. Open the Minima App and allow the battery settings for Minima to run in the background
@@ -22,7 +21,7 @@ The Android apk can also be downloaded directly from Github [here.](https://gith
 :::warning Huawei/Redmi/ZTE Battery settings
 Please check the battery settings for the Minima app and ensure that **"Manage Automatically"** is **disabled**. This will ensure that Minima remains in sync and running in the background.<br/>
 The settings should be set as shown below.<br/>
-![android_battery](/img/runanode/batterysetting.png#width50)
+![android_battery](/img/runanode/batterysetting.png#width40)
 :::
 
 ## Secure your node 
@@ -118,13 +117,115 @@ If you have been offline for a long time or do not have a recent backup you may 
 
 3. Check your node's full status by selecting **Full Status** from the menu in the top right.
 
-## Next Steps
+## Using MiniDapps
 
 Once your node running, you can use Minima's decentralized applications - **MiniDapps.** 
 
 Learn more about MiniDapps [here](/docs/learn/minidapps/minidappsintro) <br/>
 
-The latest MiniDapps are available to download from the **DAPP Store** screen in the app. For guidance on installing and using MiniDapps, please visit the **Help** section in the app. 
+### Installing MiniDapps
+
+To install a new MiniDapp:
+
+1. From the menu on the home page, select **DAPP Store**
+
+![dappmenu](/img/app/dappstoremenu.png#width40)
+
+2. Select **Minima Global** to open the official Minima DAPP Store 
+
+![dapppage](/img/app/dappstorepage.png#width40)
+
+3. Select the MiniDapp you would like to download, click **OK**. The MiniDapp will be downloaded to your phone's Downloads folder.
+
+![downloaddapp](/img/app/downloaddapp.png#width40)
+
+4. Return to the Home page and click on the **+** icon in the bottom right
+
+![homepage](/img/app/homepage.png#width40)
+
+5. You will be taken to your phone's file storage, navigate to your **Downloads folder** and select the MiniDapp you just downloaded
+
+![downloads](/img/app/downloads.png#width40)
+
+6. The MiniDapp will be installed onto your node, tap on it to open it! 
+
+![afterinstall](/img/app/afterdappinstall.png#width40)
+
+### Updating MiniDapps
+
+MiniDapps do not automatically update when a new version is released to the DAPP store, this gives you the flexibility to decide which version of a MiniDapp you wish to use and ensures that MiniDapp distribution is not centralized. 
+:::note
+When a new version of a MiniDapp becomes available, it is generally best practice to **update** a MiniDapp instead of installing the new one and deleting the old one, as each MiniDapp contains it's own data which is lost when deleting a MiniDapp.
+
+By updating a MiniDapp, all data will be transferred automatically to the new MiniDapp, preventing loss of data. 
+
+**On-chain data will not be lost** as a result of deleting a MiniDapp, this means that deleting the Wallet MiniDapp for example, will not result in any loss of coins.
+:::
+To update a MiniDapp to a new version:
+
+1. First download the new version of the MiniDapp you wish to update from the DAPP Store (see steps 1-3 above)
+
+2. Return to the Home page of the app and **long press** on the MiniDapp you wish to update
+
+![longpress](/img/app/longpressdapp.png#width40)
+
+3. Select **Update**
+
+4. Find the MiniDapp you just downloaded in your phone's Downloads folder and select it
+
+5. Your MiniDapp will be updated to the new version!
+
+### Deleting a MiniDapp
+
+Deleting a MiniDapp will also remove any data stored in that MiniDapp's database. On chain data will not be lost.
+
+To delete a MiniDapp:
+
+1. From the Home page of the app, **long press** on the MiniDapp you wish to delete
+
+2. Select **Delete**
+
+3. The MiniDapp will be uninstalled from your node.
+
+
+### MiniDapp permissions 
+
+All MiniDapps by default have **READ** access to your wallet when installed. This means that when attempting to access your wallet, a pending action will be triggered which must be accepted from the pending actions clock icon in the top right of the Home page.
+
+**You should not set any MiniDapp to have WRITE access to your wallet unless you trust the source of the MiniDapp. **
+
+### Setting READ/WRITE permissions
+
+To change the level of access for a MiniDapp:
+
+1. Long press on the MiniDapp from the Home page
+
+2. Select **Permissions**
+
+![longpress](/img/app/longpressdapp.png#width40)
+
+3. Select READ or WRITE 
+
+![longpress](/img/app/readwritedapp.png#width40)
+
+### Accepting/Denying pending actions
+
+When using MiniDapps with READ permission, you will need to accept any requests to access your wallet e.g. when sending funds
+
+A Pending action will be triggered and a red notification icon will be shown on the Pending actions icon.
+
+![longpress](/img/app/pending.png#width40)
+
+To accept/deny a Pending action. click on the Pending actions icon, then long press on the action and select **Accept/Deny**.
+When accepting, wait a few seconds for the command to run and return the output status.
+
+![longpress](/img/app/acceptpending.png#width40)
+
+
+
+## Further information 
+
+Guidance can also be found in the **Help** section of the app. 
 
 
 

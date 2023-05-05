@@ -4,24 +4,69 @@ sidebar_position: 6
 
 # Using Maxima
 
-Maxima is an information transport layer running on top of Minima. 
+[Maxima](/docs/learn/maxima/maximaintro) is an information transport layer running on top of Minima. You must be [running a Minima node](/docs/runanode/get_started) to use Maxima.
 
-To learn more about Maxima, please see the [About Maxima](/docs/learn/maxima/maximaintro) section.
+Maxima allows you to communicate with friends and family and other Minima node runners, peer-to-peer. Simply add people to your Maxima contacts to get started. 
 
-## Using Maxima via MaxSolo
-Before using the MaxSolo MiniDapp to chat with friends, you must be [running a Minima node.](/docs/runanode/get_started)
+There are several [MiniDapps](https://www.minidapps.minima.global) that use Maxima:
 
-The latest version of MaxSolo can be downloaded from our [MiniDapps site](https://minidapps.minima.global) and installed on your node.  
+1. MaxContacts: Set your profile and add, remove and manage your contacts.
+2. MaxSolo: A one to one chat application
+3. Chatter: A decentralised social media platform
 
-Once MaxSolo is installed, share your Contact address with friends or add your friends as a contact. You will then be able to message your contacts and send tokens via MaxSolo.
+Download and install the MaxContacts MiniDapp to your node to start managing your contacts. On Android, this can also be done from the **Contacts** page.<br/>
+*For help installing MiniDapps to your node, see [Using MiniDapps](/docs/runanode/usingminidapps).*
 
-Contact addresses are dynamic and change every 20 minutes, so you must add a contact address as soon as possible after receiving it. 
+## Setting your Maxima Profile
 
-:::note Android Users 
-Android users can also use the **Contacts** page of the app to set their Maxima Profile name, find their Contact Address and add Contacts. 
-Once connected to a Contact, you can message eachother using the MaxSolo MiniDapp.
-:::
+1. Open the MaxContacts MiniDapp
+2. Go to the **Profile** page and select **Edit Display Name** 
 
+![profile](/img/maxima/profile.png#width40)
+
+3. Set your display name which will be seen by your contacts
+
+That's it!
+
+## Sharing your Contact Address
+
+1. In MaxContacts, go to the **Profile** page and select **Share Contact** 
+
+2. Share your contact address with a friend - note that contact addresses change and must be used within 20 minutes of sharing. If your friend has trouble adding you, re-share your latest contact address with them.
+
+3. Once they have added you, you will see your new contact on the **Contacts** page.
+
+4. You can now communicate with your contact over MaxSolo or Chatter!
+
+That's it!
+
+## Adding a new Maxima Contact
+
+1. In MaxContacts, go to the **Contacts** page and select **Add Contact/Add your first contact** 
+
+![addcontact](/img/maxima/addcontact.png#width40)
+
+2. Ask your friend for their contact address and paste it in the box shown - note that contact addresses change and must be used within 20 minutes of sharing. If you have trouble adding them, ask them to re-share their latest contact address with you.
+
+![addcontact2](/img/maxima/addcontact2.png#width40)
+
+3. Once you have added them, you will see your new contact on the **Contacts** page and they will see you in their app.
+
+4. You can now communicate with your contact over MaxSolo or Chatter!
+
+That's it!
+
+## Checking the connection to your Contacts
+
+When you or your contacts goes offline for a period of time, the connection between the two of you may be interrupted. 
+
+When the connection is good you will see a green icon for network and a green icon for chain - this indicates you have recently been able to connect and are both on the same chain. 
+
+If the connection is yellow/red, you or your contact may not be connected or may be on the wrong chain. If this happens, check that your node is in sync by checking your top block.
+
+Provided you and your contact are online at least once every 24 hours, you should remain connected. If you lose connection from being offline for too long, you will need to re-add eachother. 
+
+![addcontact2](/img/maxima/contactlist.png#width40)
 
 ------
 
@@ -29,7 +74,7 @@ Once connected to a Contact, you can message eachother using the MaxSolo MiniDap
 
 Contacts can also be managed using commands via the Terminal MiniDapp. Read on to learn how.
 
-### Setting your Maxima Profile
+### Setting your Maxima Profile (Terminal)
 
 Your Maxima Profile is the name that your Maxima Contacts will see once you are connected with eachother.
 
@@ -57,7 +102,7 @@ You should see an output similar to below:
 
 -------
 
-### Sharing your Contact Address
+### Sharing your Contact Address (Terminal)
 
 By sharing your Contact Address with friends, they can add you as one of their Maxima Contacts - enabling you to chat in the MaxSolo MiniDapp. 
 
@@ -93,7 +138,7 @@ Therefore, when creating Contacts, you must ensure that you are using a recent C
 
 --------
 
-### Adding a new Maxima Contact
+### Adding a new Maxima Contact (Terminal)
 
 1. Ask your friend to send you their Contact Address
 2. Copy it
@@ -140,7 +185,7 @@ Only one person needs to add the Contact, you will then both be connected to eac
 
 --------
 
-### Checking the connection to your Contacts
+### Checking the connection to your Contacts (Terminal)
 
 You must be properly connected to your contacts to successfully send messages using the MaxSolo MiniDapp. 
 
