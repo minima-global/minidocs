@@ -254,12 +254,20 @@ Your backup must be in the **minimadocker9001** folder in your home directory (a
 
 1. Login to your Minima Hub 
 2. Open the Terminal MiniDapp
-3. Enter the `restore` command, completing the parameters
+3. Enter the `restore` or `restoresync` command, completing the parameters
 
+The `restore` command will restore your backup and then attempt to catch up to the top block by syncing from your peers. If your backup is older than 1 month, we recommend using `restoresync` instead. 
 ```
 restore file: password:
 ```
-:::note restore parameters
+
+The `restoresync` command will restore your backup and then attempt to catch up to the top block by syncing from a default archive node. If your backup is not recent, `restoresync` may be more effective for ensuring your node returns to the top block.
+
+```
+restoresync file: password:
+```
+
+:::note parameters
 **file:** the name of the backup to restore, e.g. mybackup.bak
 
 **password:** (optional) the password of the backup. Can be left blank if restoring an auto backup or non password protected backup.

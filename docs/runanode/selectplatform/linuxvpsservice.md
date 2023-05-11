@@ -422,12 +422,18 @@ Your backups will go to the base directory you specified in your Minima service 
 Your backup must be in your minima base folder (the /home/minima directory or as specified at start up).
 
 1. Start the Minima RPC Client or login to your Minima Hub at https://yourserverIP:9003/ and open the Terminal MiniDapp
-2. Enter the `restore` command, completing the parameters
+2. Enter the `restore` or `restoresync` command, completing the parameters
 
+The `restore` command will restore your backup and then attempt to catch up to the top block by syncing from your peers. If your backup is older than 1 month, we recommend using `restoresync` instead. 
 ```
 restore file: password:
 ```
 
+The `restoresync` command will restore your backup and then attempt to catch up to the top block by syncing from a default archive node. If your backup is not recent, `restoresync` may be more effective for ensuring your node returns to the top block.
+
+```
+restoresync file: password:
+```
 :::note restore parameters
 **file:** the name of the backup to restore, e.g. mybackup.bak
 
