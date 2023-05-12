@@ -162,8 +162,94 @@ mds action:accept/deny uid:0x4D020F84762AAB4EF593B6E6DACE7064
 Accepting the command will execute the command; denying will remove the pending command from the list and will not be executed.
 
 -------
+## Updating MiniDapps
 
+MiniDapps do not automatically update when a new version is released to the DAPP store, this gives you the flexibility to decide which version of a MiniDapp you wish to use and ensures that MiniDapp distribution is not centralized. 
+:::note
+When a new version of a MiniDapp becomes available, it is generally best practice to **update** a MiniDapp instead of installing the new one and deleting the old one, as each MiniDapp contains it's own data which is lost when deleting a MiniDapp.
+
+By updating a MiniDapp, all data will be transferred automatically to the new MiniDapp, preventing loss of data. 
+
+**On-chain data will not be lost** as a result of deleting a MiniDapp, this means that deleting the Wallet MiniDapp for example, will not result in any loss of coins.
+:::
+
+**To update a MiniDapp to a new version:**
+
+1. Download the new MiniDapp from https://minidapps.minima.global
+2. Save it to your node's basefolder. If using Docker, this will be the `minimadocker9001` folder for example. Desktop users can set their basefolder when starting their node using the `-basefolder` parameter.
+3. From the Minima Terminal, run 
+```
+mds
+```
+You may have to accept a pending command. 
+
+4. Copy the `uid` of the minidapp you wish to update
+
+```
+      "uid":"0x21D94D4EBE2AFE1284D180334F34B93E0C435CDDBC1A219C501E1F72EBBCF103",
+      "conf":{
+        "name":"MiniSwap",
+        "icon":"webicon.png",
+        "version":"0.1",
+        "description":"Swap ETH or Tokens for Minima trustlessly using HTLC atomic swaps on Miniswap",
+        "permission":"write",
+        "browser":"internal"
+```
+
+5. Run
+
+
+``` 
+mds action:update uid: file:
+```
+
+where 
+- `uid` is the uid of the MiniDapp you are updating and 
+- `file:` is either the name of the MiniDapp e.g. wallet-1.0.mds.zip (if the MiniDapp exists in the basefolder) or the full path is the MiniDapp is not in the basefolder.
+
+You may have to accept another pending command unless the Terminal has been given WRITE access.
+
+Example
+
+``` 
+mds action:update uid:0x21D94D4EBE2AFE1284D18034F34B93E0C435CDDBC1A219C501E1F72EBBCF103 file:miniswap-0.2.mds.zip
+```
+or 
+```
+mds action:update uid:0x21D94D4EBE2AFE1284D180334F34B93E0C435CDDBC1A219C501E1F72EBBCF103 file:C\Users\youruser\Downloads\miniswap-0.2.mds.zip
+```
+Output:
+```
+{
+  "command":"mds",
+  "params":{
+    "action":"update",
+    "file":"miniswap-0.2.mds.zip",
+    "uid":"0x21D94D4EBE2AFE1284D180334F34B93E0C435CDDBC1A219C501E1F72EBBCF103"
+  },
+  "status":true,
+  "pending":false,
+  "response":{
+    "updated":{
+      "uid":"0x21D94D4EBE2AFE1284D180334F34B93E0C435CDDBC1A219C501E1F72EBBCF103",
+      "conf":{
+        "name":"MiniSwap",
+        "icon":"webicon.png",
+        "version":"0.2",
+        "description":"Swap ETH or Tokens for Minima trustlessly using HTLC atomic swaps on Miniswap",
+        "permission":"write",
+        "browser":"internal"
+      }
+    }
+  }
+}
+```
+
+6. The MiniDapp will be updated, retaining it's previous data and permissions.
+
+-------
 ## Uninstalling MiniDapps
+
 1. From the Command Line where Minima is running, type 
 ```
 mds
