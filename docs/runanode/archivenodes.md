@@ -359,7 +359,7 @@ To Export the archive data from MySQL to a file:
 
 4. Check the box for **archivedb** and check the boxes for **cascadedata** and **syncblock** 
 
-5. Under Export Options, select **Export to self-contained file**. Optionally change the file path.
+5. Under Export Options, select **Export to self-contained file** and **Include Create Schema**. Optionally change the file path.
 
 ![sql](/img/archivenode/G.DataExportSelection.png) 
 
