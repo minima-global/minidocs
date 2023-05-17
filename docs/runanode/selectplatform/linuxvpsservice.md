@@ -22,7 +22,7 @@ If you install Minima on custom ports, ensure the correct ports are open/closed.
 
 For more information, see [System Requirements.](/docs/runanode/systemrequirements)
 
-For help on setting up a firewall, see [Recommended Firewall settings](/docs/runanode/systemrequirements#recommended-firewall-settings)
+For help on setting up a firewall, see [Recommended Firewall settings](/docs/runanode/systemrequirements#recommended-firewall-settings-vps-users)
 
 ## Setup Minima as a Service
 
@@ -349,7 +349,7 @@ You will see your MiniDapp System (MDS) login page.
 
 ![mds_login](/img/runanode/mds_login.png#width50)
 
-3. Enter your password to login, if you don't remember, you can check [here](#how-to-check-your-minima-hub-password).
+3. Enter your password to login, if you don't remember, you can check [here](#how-to-check-your-minidapp-system-password).
 
 4. You will see your MiniDapp hub!
 

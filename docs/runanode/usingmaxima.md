@@ -8,7 +8,7 @@ sidebar_position: 6
 
 Maxima allows you to communicate with friends and family and other Minima node runners, peer-to-peer. Simply add people to your Maxima contacts to get started. 
 
-There are several [MiniDapps](https://www.minidapps.minima.global) that use Maxima:
+There are several [MiniDapps](https://minidapps.minima.global/) that use Maxima:
 
 1. MaxContacts: Set your profile and add, remove and manage your contacts.
 2. MaxSolo: A one to one chat application

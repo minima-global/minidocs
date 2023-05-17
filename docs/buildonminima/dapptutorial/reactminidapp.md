@@ -129,7 +129,7 @@ const Balance = () => {
 export default Balance;
 ```
 
-> `React.useCallback` ensures the function is not re-run unless one of the dependencies change, you can read more about it in the React documentation: https://reactjs.org/docs/hooks-reference.html#usecallback
+> `React.useCallback` ensures the function is not re-run unless one of the dependencies change, you can read more about it in the React documentation: https://react.dev/reference/react/useCallback
 
 To run our function we need to add a `useEffect`, this is a function that is called when the component is rendered to the screen.
 

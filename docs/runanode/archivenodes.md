@@ -377,9 +377,9 @@ This is an alternative option to re-syncing from an Archive node.
 
 As with Archive nodes, there are two options when using a MySQL database to re-sync your a node:
 
-- **Chain re-sync:** If a user has been offline for too long and their node is not on the correct tip block, they can re-sync to the latest block by performing a [chain re-sync](#chain-resync) from a MySQL database. **The node will NOT be wiped during this process.**
+- **Chain re-sync:** If a user has been offline for too long and their node is not on the correct tip block, they can re-sync to the latest block by performing a [chain re-sync](#to-perform-a-chain-re-sync) from a MySQL database. **The node will NOT be wiped during this process.**
 
-- **Seed re-sync:** If a user does not have a valid backup or has lost access to their node, they can restore access to their coins by performing a [seed re-sync](#seed-resync) from a MySQL database using their 24 word seed phrase. **The node will first be wiped before the re-sync begins.**
+- **Seed re-sync:** If a user does not have a valid backup or has lost access to their node, they can restore access to their coins by performing a [seed re-sync](#to-perform-a-seed-re-sync) from a MySQL database using their 24 word seed phrase. **The node will first be wiped before the re-sync begins.**
 
 #### To perform a chain re-sync
 

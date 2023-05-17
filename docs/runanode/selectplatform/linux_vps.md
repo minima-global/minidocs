@@ -237,7 +237,7 @@ You will see your MiniDapp System (MDS) login page.
 
 ![mds_login](/img/runanode/mds_login.png#width50)
 
-3. Enter your password to login, if you don't remember, you can check [here](#how-to-check-your-minima-hub-password).
+3. Enter your password to login, if you don't remember, you can check [here](#how-to-check-your-minidapp-system-password).
 
 4. You will see your MiniDapp hub!
 

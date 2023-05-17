@@ -59,7 +59,7 @@ A protocol cannot be without a central authority, or be considered a solid found
 
 Minima takes inspiration from and combines much great previous work including
 
-- [Satoshi Nakomoto’s Bitcoin](https://bitcoin.modeapp.com/bitcoin-white-paper.pdf) (UTxO model); 
+- Satoshi Nakomoto’s Bitcoin (UTxO model);
 - [IOTA](https://www.iota.org/) (Removing miners - user based PoW security); 
 - [Adam Backs’ HashCash](http://www.hashcash.org/) (The Burn); 
 - [P2Pool](https://en.bitcoin.it/wiki/P2Pool) (TxPoW); 

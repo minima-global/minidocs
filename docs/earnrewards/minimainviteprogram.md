@@ -4,14 +4,11 @@ sidebar_position: 2
 
 # Invite Program
 
-:::info THE INCENTIVE INVITE PROGRAM IS NOW CLOSED
 The Incentive Rewards Program is now closed to new users.
 
-Existing users will continue to earn, however all Rewards due for 2023 will be received in March (prior to Token distribution) instead of daily, provided you continue to run your node.
+Please refer to the [Incentive Program](/docs/earnrewards/minimaincentiveprogram/) page for the latest information.
 
-Please refer to the [Mainnet Status](/docs/about/mainnetstatus/) page for the latest information.
-:::
-
+<!-- 
 ## What is the Minima Invite Program?
 The Minima Invite Program is designed to reward all Minima node runners that are registered with the Incentive Reward Program, for sharing us with your networks, encouraging your contacts to install and run a node and join the Minima Incentive Reward Program.
 
@@ -41,4 +38,4 @@ Yes! Simple as that. You will continue to earn your Invite Bonus Rewards right u
 
 The more people you get to sign up using your code, the better for everyone! After all, the greater the node count, the greater the security of the network and the greater the rewards.
 
-Don’t be tempted to cut corners though! It is important to remember that the Incentive Reward Program #1 rule is one account per human, we don’t want centralization of any kind. Anyone found to be running multiple accounts will lose all their rewards.
+Don’t be tempted to cut corners though! It is important to remember that the Incentive Reward Program #1 rule is one account per human, we don’t want centralization of any kind. Anyone found to be running multiple accounts will lose all their rewards. -->

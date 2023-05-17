@@ -25,9 +25,9 @@ Please note that by using an Archive node to re-sync your own node, you are **re
 
 There are two options when using an Archive node to re-sync your own node:
 
-- **Chain re-sync:** If you have been offline for too long and your node is not on the correct tip block, you can re-sync to the latest block by performing a [chain re-sync](#chain-resync) from an Archive node. **Your node will NOT be wiped during this process.**
+- **Chain re-sync:** If you have been offline for too long and your node is not on the correct tip block, you can re-sync to the latest block by performing a [chain re-sync](#how-to-perform-a-chain-re-sync) from an Archive node. **Your node will NOT be wiped during this process.**
 
-- **Seed re-sync:** If you do not have a valid backup or you have lost access to your node, you can restore access to your coins by performing a [seed re-sync](#seed-resync) from an Archive node using your 24 word seed phrase. **Your node will first be wiped before the re-sync begins.**
+- **Seed re-sync:** If you do not have a valid backup or you have lost access to your node, you can restore access to your coins by performing a [seed re-sync](#how-to-perform-a-seed-re-sync) from an Archive node using your 24 word seed phrase. **Your node will first be wiped before the re-sync begins.**
 
 
 ### How to perform a chain re-sync
