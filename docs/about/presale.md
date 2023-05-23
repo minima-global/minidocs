@@ -4,8 +4,22 @@ sidebar_position: 9
 
 # Public Presale FAQ
 
-*Last updated: 1st March 2023*
+*Last updated: 23rd May 2023*
 
+
+The public presale has now ended. 
+
+If you purchased via MetaMask, you can now redeem your tokens at https://livepresale.minima.global/redeem/
+
+You will need to add WMINIMA as a custom token in MetaMask to see your tokens.  
+
+<div onclick="asdasdasdasd">test</div>
+
+<a href="#" onclick="ethereum.request({ method: 'wallet_watchAsset', params: { type: 'ERC20', options: { address: '0x669c01CAF0eDcaD7c2b8Dc771474aD937A7CA4AF', decimals: 18, symbol: 'WMINIMA', }, }, });">
+  Click to add WMINIMA to MetaMask
+</a>
+
+<!-- 
 Our public Presale is an opportunity to purchase Minima ahead of coin distribution.
 
 The ONLY official websites for the presale are https://presale.minima.global/ or https://livepresale.minima.global/.
@@ -280,7 +294,7 @@ Unfortunately this means you cannot take part in this stage of the presale. You 
 
 ### What if I miss out on a tranche due to being in review?
 
-Unfortunately, as we can't predict how long KYC will take for each person, this is a risk. There's nothing we can do about it other than advise that you start the process as soon as possible to ensure you don't miss out - and, to ensure that your ID documents are ready. Please see the FAQ for more detail.
+Unfortunately, as we can't predict how long KYC will take for each person, this is a risk. There's nothing we can do about it other than advise that you start the process as soon as possible to ensure you don't miss out - and, to ensure that your ID documents are ready. Please see the FAQ for more detail. -->
 
 
 ## Still need help? 

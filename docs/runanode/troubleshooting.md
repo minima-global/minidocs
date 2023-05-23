@@ -119,7 +119,7 @@ You may prefer to [install Minima as a service](/docs/runanode/selectplatform/li
 
 For further assistance, you can contact a Team member in Discord or Telegram community channels
 
-- [Discord](https://discord.gg/ZQaUXPape5)
+- [Discord](https://discord.com/invite/minima)
 - [Telegram](https://t.me/Minima_Global) 
 
 

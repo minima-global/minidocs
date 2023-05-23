@@ -34,7 +34,7 @@ For help on setting up your firewall, see [Recommended Firewall settings](/docs/
 ### Remove nodes installed using the old script
 If you have been running a node using the install script provided, please remove these nodes following the instructions below.
 
-If you are a new user, continue to [Start your node](#start-a-new-minima-node).
+If you are a new user, continue to [Start your node](#start-your-node).
 
 1. Logon to your server as a non root user with sudo (admin) rights.
 
@@ -283,7 +283,7 @@ Consider cross checking your latest block with another node or checking the `sam
 
 :::warning 
 If the time shown is significantly behind, you should restart your node to resync to the chain. <br/> 
-If you have been offline for a long time or do not have a recent backup you may need to perform a [**chain resync**](/docs/runanode/restorefunds#how-to-perform-a-chain-re-sync) from an Archive node.
+If you have been offline for a long time or do not have a recent backup you may need to perform a [**chain resync**](/docs/runanode/restorefunds#from-desktopserver-using-the-terminal) from an Archive node.
 :::
 ------
 
@@ -409,7 +409,7 @@ To run a second node in Docker, you can create another container using different
 
 >docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_server=true -v ~/**minimadocker8001**:/home/minima/data -p **8001-8004**:9001-9004 --restart unless-stopped --name **minima8001** minimaglobal/minima:latest
 
-2. To access your MiniDapps on the second node, go to https://127.0.0.1:8003/ (8003 instead of 9003) and repeat the steps in [Access your MiniDapp hub](#access-your-minidapp-hub).
+2. To access your MiniDapps on the second node, go to https://YourServerIP:8003/ (8003 instead of 9003) and repeat the steps in [Access your MiniDapp hub](#access-your-minidapp-hub).
 
 ------
 

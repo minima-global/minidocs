@@ -284,4 +284,4 @@ export default Balance;
 And that's it! 
 
 Feel free to look at the rest of the Minima documentation and start building. <br/>
-We also advise looking at the React documentation which can be found here: https://beta.reactjs.org/
+We also advise looking at the React documentation which can be found here: https://react.dev/reference/react
