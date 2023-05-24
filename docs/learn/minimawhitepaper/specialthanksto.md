@@ -24,13 +24,13 @@ References
  
 [7] Secure High Rate Transaction Processing in Bitcoin: https://eprint.iacr.org/2013/881.pdf
  
-[8] IOTA: https://www.iota.org/
+[8] IOTA: https://wiki.iota.org/learn/about-iota/an-introduction-to-iota/
  
 [9] Adam Back, HashCash: http://www.hashcash.org/
  
-[10] P2Pool: http://p2pool.org/
+[10] P2Pool: https://en.bitcoin.it/wiki/P2Pool
  
-[11] GMSS signature scheme: https://www.cdc.informatik.tu-darmstadt.de/reports/reports/BDKOV07.pdf
+[11] GMSS signature scheme: https://link.springer.com/chapter/10.1007/978-3-540-72738-5_3
  
 [12] Eltoo: https://blockstream.com/eltoo.pdf
  

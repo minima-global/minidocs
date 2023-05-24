@@ -174,7 +174,7 @@ Consider cross checking your latest block with another node or checking the `sam
 
 :::warning 
 If the time shown is significantly behind, you should restart your node to resync to the chain. <br/> 
-If you have been offline for a long time or do not have a recent backup you may need to perform a [**chain resync**](/docs/runanode/restorefunds#how-to-perform-a-chain-re-sync) from an Archive node.
+If you have been offline for a long time or do not have a recent backup you may need to perform a [**chain resync**](/docs/runanode/restorefunds#from-desktopserver-using-the-terminal) from an Archive node.
 :::
 
 **Other useful commands:**<br/>

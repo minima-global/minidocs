@@ -46,6 +46,16 @@ const config = {
     ],
   ],
 
+  scripts: [
+    // String format.
+    'https://docusaurus.io/script.js',
+    // Object format.
+    {
+      src: 'https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.5/web3.min.js',
+      async: true,
+    },
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({

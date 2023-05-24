@@ -81,12 +81,12 @@ The Incentive Program was designed to reward people for installing and running a
 You will receive one Reward every day your node pings us to let us know it is connected.
 
 ## How do I report a bug?
-Please head to the #download-and-bugs channel on our [Discord Server](https://discord.gg/ZQaUXPape5). There you will find full instructions for raising your bug. Should you need help doing so, contact any of the Community Team who will be happy to assist.
+Please head to the #download-and-bugs channel on our [Discord Server](https://discord.com/invite/minima). There you will find full instructions for raising your bug. Should you need help doing so, contact any of the Community Team who will be happy to assist.
 
 ## How can I find out more?
 The best way to learn more and ask questions is to join our community channels below:
 
-- [Discord](https://discord.gg/ZQaUXPape5)
+- [Discord](https://discord.com/invite/minima)
 - [Telegram](https://t.me/Minima_Global) 
 
 For the full Terms & Conditions, please [click here](/docs/earnrewards/incentiveprogramtermsandconditions/applicationoftheseterms).
