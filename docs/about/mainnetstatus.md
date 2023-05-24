@@ -47,7 +47,7 @@ Please see [Securing your node](/docs/runanode/securefunds) before using your no
 
 ### ...the Incentive Program
 
-For details on how to withdraw your Rewards earned during Testnet, please see the [Incentive Program](/docs/earnrewards/minimaincentiveprogram) page.
+For details on how to withdraw your Rewards earned during Testnet, please see the [Incentive Program](/docs/earnrewards/minimaincentiveprogram#how-to-collect-your-incentive-program-rewards) page.
 
 #### Incentive Program Account Verification
 

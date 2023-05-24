@@ -31,7 +31,7 @@ Our values are our moral compass that guide how we interact with others in our c
 
 **Accountability:** With empowerment comes accountability. We trust each other to take responsibility when things go wrong, making sure that we first attempt to resolve any issues ourselves.
 
-We’re building a future where everyone can freely connect and prosper — [join us](https://linktr.ee/minima_global?utm_source=linktree_profile_share&ltsid=f5b69262-8b95-4bc2-abc9-abf28ce9f92b). 
+We’re building a future where everyone can freely connect and prosper — [join us](https://www.minima.global/our-community). 
 
 
 ## What are we working towards?
