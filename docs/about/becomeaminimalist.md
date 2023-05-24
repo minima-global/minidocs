@@ -28,10 +28,10 @@ We recommend first following these steps to get oriented:
 
 3. Learn the basics - the following articles will help you understand what we’re building
 
-- [What is Minima?](https://docs.minima.global/docs/about/whatisminima/)<br/>
+- [What is Minima?](/docs/about/whatisminima/)<br/>
 - [What’s our origin story?](https://www.minima.global/post/a-love-story-confessions-of-a-crypto-coder)<br/>
-- [What utility does Minima have?](https://docs.minima.global/docs/about/utility)<br/>
-- [How are tokens distributed?](https://docs.minima.global/docs/about/tokendistribution)
+- [What utility does Minima have?](/docs/about/utility)<br/>
+- [How are tokens distributed?](/docs/about/tokendistribution)
 
 
 ## How can I participate? 
@@ -56,7 +56,7 @@ Once you have set up your profile, [share your address](/docs/runanode/usingmaxi
 
 **3. Building decentralized apps**
 
-**Build the future.** If you’re a developer, check out the [Build section](https://docs.minima.global/docs/buildonminima/dapptutorial/buildintro) of our docs, then head to #role-picker on our [Discord](https://discord.com/invite/minima) and select ‘Community Developer’ to gain access to the #dev channel. 
+**Build the future.** If you’re a developer, check out the [Build section](/docs/buildonminima/dapptutorial/buildintro) of our docs, then head to #role-picker on our [Discord](https://discord.com/invite/minima) and select ‘Community Developer’ to gain access to the #dev channel. 
 
 Our core and community developers are active there, so if you have any questions, feel free to ask. We’re all learning this new world together, so there are no stupid questions!
 

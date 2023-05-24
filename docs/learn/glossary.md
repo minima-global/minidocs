@@ -71,7 +71,7 @@ In Minima, the term Coin can also be used to refer to a specific [UTxO](#utxo).
 Coin Mixers are services promising users more privacy when they transact on public blockchains. When using Coin Mixer, users' transactions are mixed with other transactions, obfuscating the path of the original transaction to increase its anonymity.
 
 ## Coin Proof (Minima)
-In Minima, coins are recorded as leaf nodes in a hash-sum tree (an [MMR](#mmr)), with each user only keeping the paths of the tree that point to their own coins. Users are required to present a Coin Proof for each coin when they wish to spend them, to prove it exists and is unspent. <br/>
+In Minima, coins are recorded as leaf nodes in a hash-sum tree (an [MMR](#mmr-minima)), with each user only keeping the paths of the tree that point to their own coins. Users are required to present a Coin Proof for each coin when they wish to spend them, to prove it exists and is unspent. <br/>
 A Coin Proof is a collection of entries (proof-chunks) in the MMR tree which, together, can be used by any other node in the network to calculate the path to a peak of the MMR tree, proving that a coin exists.
 
 ## Coloured Coins (Minima)	
@@ -181,7 +181,7 @@ The maximum amount of a token that will ever exist. By capping the supply, a tok
 Short for “memory pool”, the Mempool is a collection of valid, unconfirmed TxPoW units (Transactions) that nodes in the network have not yet included in a block. Nodes will order Mempool transactions by the amount they burn. 
 
 ## Metaverse
-The Metaverse is the latest buzzword in crypto, and a term put together from the greek meta for Beyond and Universe which describes everything that exists. While no agreed-upon definition of it exists, we believe that it will be an experience that combines the digital with the real world, contain its economy that connects to broader economies, spans different worlds together, leverages VR & AR, and provides a level of interoperability we’ve not seen so far. You can read more about the Metaverse [here](https://minima.global/blog/ready-for-the-metaverse).
+The Metaverse is the latest buzzword in crypto, and a term put together from the greek meta for Beyond and Universe which describes everything that exists. While no agreed-upon definition of it exists, we believe that it will be an experience that combines the digital with the real world, contain its economy that connects to broader economies, spans different worlds together, leverages VR & AR, and provides a level of interoperability we’ve not seen so far. You can read more about the Metaverse [here](https://www.minima.global/post/ready-for-the-metaverse).
 
 ## Minima
 Minima is a censorship resistant blockchain and network. See [Network Overview.](/docs/learn/networkoverview)
@@ -270,7 +270,7 @@ A term made up of a combination of "token" and economics, describing the structu
 A value influencing how much 'Proof-of-Work' a user's node must perform before being able to propagate their transaction to the network.
 
 ## TxBlock (Minima)
-A TxBlock is a [TxPoW unit](#txpow-unit) that met a difficulty level (in the process of 'mining') high enough to become a block and therefore be added to the blockchain. A TxBlock contains the TxPoW unit plus additional information including the MMR peaks from the previous block, coin proofs for all the spent coins in this block and a list of all newly created coins (UTxOs).
+A TxBlock is a [TxPoW unit](#txpow-unit-minima) that met a difficulty level (in the process of 'mining') high enough to become a block and therefore be added to the blockchain. A TxBlock contains the TxPoW unit plus additional information including the MMR peaks from the previous block, coin proofs for all the spent coins in this block and a list of all newly created coins (UTxOs).
 
 ## TxPoW	
 Transaction Proof-of-Work is Minima's unique Proof-of-Work mechanism which involves all users providing a small amount of hash power to the network when they want to send a transaction. <br/> 
@@ -299,16 +299,16 @@ WAGMI is an acronym for "We're all going to make it". It's expressing the sentim
 Wallets enable users to store their cryptocurrencies. Generally, we distinguish between hot and cold wallets. Hot wallets are software-based, and constantly connected to the internet, therefore hot. Cold wallets are either paper wallets or specialized hardware devices that keep crypto holdings offline. It's advised to keep crypto as much as possible in cold wallets.
 
 ## Web 1.0
-The first iteration of the Web, the so-called "Read-only Web", consisted of static websites, and had to be accessed through phone lines. You can learn more about it [here](https://minima.global/blog/a-short-history-of-the-internet).
+The first iteration of the Web, the so-called "Read-only Web", consisted of static websites, and had to be accessed through phone lines. You can learn more about it [here](https://minima.global/post/a-short-history-of-the-internet).
 
 ## Web 2.0
-The second version of the Web, the web as we currently use it. Web 2.0 enabled anyone to become a content creator and offered a much richer user experience. More details on it are also covered in our [blog](https://minima.global/blog/web-2-0-the-web-as-a-platform).
+The second version of the Web, the web as we currently use it. Web 2.0 enabled anyone to become a content creator and offered a much richer user experience. More details on it are also covered in our [blog](https://minima.global/post/web-2-0-the-web-as-a-platform).
 
 ## Web 3.0
-Web 3.0 doesn't have a clear-cut definition yet. It's used to refer to the next generation of the Web, a web that's not just read, and write, but also empowers individuals to own their data. You can learn more about the characteristics of Web 3.0 [here](https://minima.global/blog/web-3-0-more-than-just-crypto).
+Web 3.0 doesn't have a clear-cut definition yet. It's used to refer to the next generation of the Web, a web that's not just read, and write, but also empowers individuals to own their data. You can learn more about the characteristics of Web 3.0 [here](https://minima.global/post/web-3-0-more-than-just-crypto).
 
 ## Whitepaper
-In a Whitepaper blockchain, companies and crypto projects explain their project in-depth, outline the need for it, and the token structure. You can find the Minima WP [here](https://cdn.minima.global/media/2021/07/02/Minima_Whitepaper_v9.pdf).
+In a Whitepaper blockchain, companies and crypto projects explain their project in-depth, outline the need for it, and the token structure. You can find the Minima WP [here](https://docs.minima.global/docs/learn/minimawhitepaper/abstract).
 
 ## Winternitz Signature Scheme	
 Minima uses the, quantum secure, Winternitz One-Time-Use Signature Scheme to generate multiple, one-time-use, private and public key pairs and for generating digital signatures required for signing messages or transactions.
