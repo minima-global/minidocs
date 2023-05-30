@@ -200,7 +200,7 @@ const config = {
             ],
           },
         ],
-        copyright: `All rights reserved Minima Ltd © ${new Date().getFullYear()}`,
+        copyright: `All rights reserved Minima GmbH © ${new Date().getFullYear()}`,
       },
       prism: {
         theme: lightCodeTheme,
