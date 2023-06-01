@@ -432,7 +432,7 @@ You can also check the integrity of your archive db.
 
 *backup password:Longsecurepassword456 confirm:Longsecurepassword456*
 
-*backup password:Longsecurepassword456 file:my-backup-01-Jan-22.bak*
+*backup password:Longsecurepassword456 file:my-backup-01-Jan-22.bak maxhistory:100*
 
 *backup auto:true*
 
@@ -1531,10 +1531,6 @@ Enable detailed logs for script errors, mining activity, Maxima, network message
 *logs scripts:false mining:true*
 </details>
 
-<details>
-  <summary><strong>txnauto</strong><br></br>Create a send transaction automatically.</summary>
-</details>
-
 
 <details>
   <summary><strong>txnbasics</strong><br></br>Automatically set the MMR proofs and scripts for a transaction.</summary>
@@ -1558,6 +1554,19 @@ Verify whether the inputs, outputs, signatures, proofs, and scripts are valid.
 **Examples:**
 
 *txncheck id:multisig*
+</details>
+
+
+<details>
+  <summary><strong>txnclear</strong><br></br>Clear ALL the Witness data for a transaction.</summary>
+
+Clears signatures, mmr proofs and script proofs.
+
+**id:** <br></br> The ID of the transaction to clear.
+
+**Examples:**
+
+*txnclear id:multisig*
 </details>
 
 <details>
