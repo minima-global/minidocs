@@ -373,18 +373,6 @@ If you have been offline for a long time or do not have a recent backup you may 
 :::
 ------
 
-### How to check your MiniDapp System password
-If you cannot access MDS for any reason, you can use the RPC Client to interact with your node, for example to check your status, balance, MDS password or to create a backup.
-
-The `mds` command will show details about the MiniDapp System (MDS) including your password and the MiniDapps installed on your node.
-
-1. Log on to your server as the minima user (if not already logged in)
-2. Start the Minima Terminal by running the command
-```
-./minima
-``` 
-3. Type `mds` to see your password
-
 ### How to take a backup of your node
 
 Before backing up your node, consider encrypting your private keys. For more information, see [Vault](/docs/runanode/securefunds#vault).
@@ -447,6 +435,20 @@ If you encrypted your private keys before taking the backup that you are now res
 ::: 
 
 -------
+
+### How to check your MiniDapp System password
+If you cannot access MDS for any reason, you can use the RPC Client to interact with your node, for example to check your status, balance, MDS password or to create a backup.
+
+The `mds` command will show details about the MiniDapp System (MDS) including your password and the MiniDapps installed on your node.
+
+1. Log on to your server as the minima user (if not already logged in)
+2. Start the Minima Terminal by running the command
+```
+./minima
+``` 
+3. Type `mds` to see your password
+
+----------
 
 ## Useful Commands
 

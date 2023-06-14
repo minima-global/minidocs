@@ -197,18 +197,51 @@ If you have been offline for a long time or do not have a recent backup you may 
 ------
 
 ### How to check your MiniDapp System password
-You can use the Docker CLI/Terminal to interact with your node, for example to check your status, balance, password, incentive program setup or to create a backup.
 
-The `mds` command will show details about the MiniDapp System (MDS) including your password and the MiniDapps installed on your node.
+To check your MiniDapp system password, you will need to temporarily enable RPC (Remote Procedure Call) to access your node via the Docker Terminal, without logging into the MiniDapp hub. 
 
-1. From the Containers screen, click on **minima9001** to view the logs
-2. Click on **CLI** or **Terminal** (depending on the version)
-3. Type `minima` and press Enter, you will see the Minima Terminal appear
-4. Type `mds`
+1. In Docker desktop, click on the **minima9001** container and select the **Terminal** tab, type
+
+```
+/bin/bash
+```
+and press Enter
+
+2. Open and edit the minima.config file
+```
+nano minima.config
+```
+![Desktop_dockerlogs](/img/runanode/docker_desktopbinbash.png)
+
+3. Scroll to the bottom of the file and add a new line, insert `rpcenable=true`. 
+
+Example:
+```
+data=/home/minima/data/.minima/
+mdsenable=true
+basefolder=/home/minima/data/
+daemon=true
+rpcenable=true
+```
+
+4. Hold the ctrl+x buttons together to exit
+5. Save the file by selecting `y`, then press Enter
+6. Exit the container by typing 
+```
+exit
+```
+7. Restart the container using the Restart icon in the top right 
+
+8. Once running again, from the Terminal tab type `minima` and press Enter, you will see the Minima Terminal appear
+9. Type `mds` to see your password
 
 ![Desktop_dockerlogs](/img/runanode/docker_desktopterminal.png)
 
-**Useful commands:**<br/>
+:::note 
+RPC will be disabled the next time your docker container is updated to a new version.
+:::
+
+**Other useful commands:**<br/>
 `status` - see the status of your node including version and chain details<br/>
 `help` - show all commands
 

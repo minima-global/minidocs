@@ -32,9 +32,12 @@ For help on setting up your firewall, see [Recommended Firewall settings](/docs/
 ## Start a new Minima node
 
 ### Remove nodes installed using the old script
-If you have been running a node using the install script provided, please remove these nodes following the instructions below.
+
+If you were a user during Testnet and previously setup a node as a service using the script provided by us, you need to remove these nodes before starting a node using Docker. 
 
 If you are a new user, continue to [Start your node](#start-your-node).
+
+<details><summary>How to remove a node previously installed using our script</summary>
 
 1. Logon to your server as a non root user with sudo (admin) rights.
 
@@ -46,7 +49,7 @@ To check which nodes you currently have running, use the command `systemctl list
 
 2. To remove nodes which were installed using our install script, run the uninstall script below (all one line).
 
->```sudo wget -O minima_remove.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_remove.sh && sudo chmod +x minima_remove.sh && sudo ./minima_remove.sh -p 9001 -x```
+```sudo wget -O minima_remove.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_remove.sh && sudo chmod +x minima_remove.sh && sudo ./minima_remove.sh -p 9001 -x```
 
 <!--- ![VPS_removenodes](/img/runanode/docker_vps_3removeoldnodes.png#width50) --->
 
@@ -71,7 +74,7 @@ If there is an *“unable to delete minima user, minima user using process xxxxx
 <!---![VPS_removeuser](/img/runanode/docker_vps_6removeuser.png#width50)--->
 
 If you are having problems and Minima is the only application on your server, please start with a fresh instance of your server and continue to [Start your node](#start-your-node).
-
+</details>
 
 ### Start your node
 1. Log on as a non root user with sudo (admin) rights and add a new minima user, set a password and leave the remaining fields as default : 
@@ -204,10 +207,11 @@ Every 24 hours, the Watchtower will check whether there is a new version of Mini
 
 ![VPS_startwatchtower](/img/runanode/docker_vps_16startwatchtower.png)
 
-2. Check Minima and the Watchtower containers are running
+2. Check that Minima and the Watchtower containers are running
 ```
-docker ps
+docker ps -a
 ```
+This will show all running and stopped (Exited) containers. 
 
 Continue to secure your node.
 
@@ -223,7 +227,7 @@ Please visit the [Secure your Node](/docs/runanode/securefunds) page to learn ho
 
 ## Access your MiniDapp hub
 
-The first time accessing your MiniDapp hub, you may need to pass through the security warning - see below - as the MiniDapp system currently uses self-signed certificates.
+The first time accessing your MiniDapp hub, you may need to pass through the security warning - see below - as the MiniDapp system uses self-signed certificates.
 
 1. Go to **https://YourServerIP:9003/** in your web browser
 
@@ -270,9 +274,9 @@ Help: `docker --help`<br/>
 ------
 
 ### How to check the Status of your node
-To check the status of your node, you can either use the Minima Terminal via Docker (shown above) or log on to your MiniDapp hub and open the Minima Terminal minidapp.
+1. Log on to your MiniDapp hub and open the Minima Terminal minidapp.
 
-With the Minima Terminal open, run the `status` command to see the latest status of your node including version, last block and chain details.
+2. Run the `status` command to see the latest status of your node including version, last block and chain details.
 
 ![VPS_dockerterminal](/img/runanode/docker_vps_terminalstatus.png)
 
@@ -286,54 +290,6 @@ If the time shown is significantly behind, you should restart your node to resyn
 If you have been offline for a long time or do not have a recent backup you may need to perform a [**chain resync**](/docs/runanode/restorefunds#from-desktopserver-using-the-terminal) from an Archive node.
 :::
 ------
-
-### How to check your MiniDapp System password
-You can use the Docker CLI/Terminal to interact with your node, for example to check your status, balance, password, incentive program setup or to create a backup.
-
-The `mds` command will show details about the MiniDapp System (MDS) including your password and the MiniDapps installed on your node.
-
-1. Log on to your server as the minima user (if not already logged in)
-2. Start the Minima Terminal by running the command
-```
-docker exec -it minima9001 minima
-``` 
-![VPS_dockerterminal](/img/runanode/docker_vps_terminal.png)
-
-
-3. Type `mds` to see your password
-
-![VPS_dockerterminal](/img/runanode/docker_vps_terminalmds.png)
-
-
-**Useful commands:**<br/>
-`status` - see the status of your node including version and chain details<br/>
-`help` - show all commands
-
-------
-
-### How to change your MiniDapp System password
-
-To change the password to login to your MiniDapp System (MDS), you must stop and remove your **minima9001** container and restart it with a different password. 
-
-1. Stop the **minima9001** container
-```
-docker stop minima9001
-```
-2. Remove the **minima9001** container
-```
-docker rm minima9001
-```
-
-3. Repeat step 10 from [Start your node](#start-your-node), with a different password.  **Your password should be long using A-Z, a-z, 0-9 only.**
-
-:::important
-Deleting the container will not delete the `minimadocker9001` data folder so your coins will be safe during this process.
-
-When starting the new container, you must use the same `minimadocker9001` folder to ensure your coins and data are restored.
-:::
-
-
--------
 
 ### How to take a backup of your node
 
@@ -398,8 +354,95 @@ If successful, you will need to log out/log in from your Minima hub for the rest
 If you encrypted your private keys before taking the backup that you are now restoring, your private keys will still be encrypted and you will be required to decrypt them or enter your Vault password when sending funds
 ::: 
 
+------
+
+
+### How to check your MiniDapp System password
+
+To check your MiniDapp system password, you will need to temporarily enable RPC (Remote Procedure Call) to access your node via the Docker Command Line Interface, without logging into the MiniDapp hub. 
+
+1. Logon to your server as the **minima** user
+2. Access your docker container 
+
+```
+docker exec -it minima9001 /bin/bash
+```
+
+3. Edit the minima.config file
+```
+nano minima.config
+```
+
+4. Scroll to the bottom of the file and add a new line, insert `rpcenable=true`. 
+
+Example:
+```
+data=/home/minima/data/.minima/
+mdsenable=true
+basefolder=/home/minima/data/
+daemon=true
+rpcenable=true
+```
+
+5. Hold the ctrl+x buttons together to exit
+6. Save the file by selecting `y`, then press Enter
+7. Exit the container by typing 
+```
+exit
+```
+8. Restart the container
+```
+docker restart minima9001
+```
+
+9. Now you can access your node's Terminal using
+
+```
+docker exec -it minima9001 minima
+```
+
+![VPS_dockerterminal](/img/runanode/docker_vps_terminal.png)
+
+The `mds` command will show details about the MiniDapp System (MDS) including your password and the MiniDapps installed on your node.
+
+10. Type `mds` to see your password
+
+![VPS_dockerterminal](/img/runanode/docker_vps_terminalmds.png)
+
+:::note 
+RPC will be disabled the next time your docker container is updated to a new version, to enable RPC permanently, see [How to enable RPC (advanced users)](#how-to-enable-rpc-advanced-users) 
+:::
+
+**Useful commands:**<br/>
+`status` - see the status of your node including version and chain details<br/>
+`help` - show all commands
 
 ------
+
+### How to change your MiniDapp System password
+
+To change the password to login to your MiniDapp System (MDS), you must stop and remove your **minima9001** container and restart it with a different password. 
+
+1. Stop the **minima9001** container
+```
+docker stop minima9001
+```
+2. Remove the **minima9001** container
+```
+docker rm minima9001
+```
+
+3. Repeat step 10 from [Start your node](#start-your-node), with a different password.  **Your password should be long using A-Z, a-z, 0-9 only.**
+
+:::important
+Deleting the container will not delete the `minimadocker9001` data folder so your coins will be safe during this process.
+
+When starting the new container, you must use the same `minimadocker9001` folder to ensure your coins and data are restored.
+::: -->
+
+
+-------
+
 
 ### How to start a second node in Docker
 
