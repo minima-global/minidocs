@@ -99,13 +99,16 @@ Once complete, the app will shutdown, reopen it to start the node and check your
 
 1. Set up your new clean node that you wish to restore to and login to your MiniDapp System (MDS)
 2. Open the Terminal MiniDapp
-3. Enter the following command, providing your 24 word seed phrase.
-
-You can use the default **auto** option to use one of the pre-set Archive nodes, or optionally enter the ip:port of the Archive node you wish to resync from e.g. 10.198.89.98:9001
-
+3. Enter the following command, using the `phrase` parameter for your 24 word seed phrase and the `keyuses` parameter to set the maximum number of times you signed (i.e. sent) a transaction.
 ```
-archive action:resync phrase:"YOUR 24 WORD SEED PHRASE HERE" host:auto
+archive action:resync phrase:"YOUR 24 WORD SEED PHRASE HERE" host:auto keyuses:1000
 ```
+:::note Parameters
+- **host:** Enter the ip:port of an archive node you wish to re-sync from e.g. 10.198.89.98:9001. You can use the default **auto** option to use one of the pre-set Archive nodes.
+- **keyuses:** (optional) How many times at most did you use your keys for signing a transaction.. Every time you resync with seed phrase this needs to be higher as Minima Signatures are stateful. Defaults to 1000 - the max is 262144 for normal keys.
+- **keys:** (optional) The number of public/private key pairs to generate. All nodes are created with 64 addresses so 64 is the default, if you used `newaddress`, you can specify more. 
+:::
+
 4. Press Enter
 5. The restore will begin, please be patient
 6. Check the logs to see when the process is complete
