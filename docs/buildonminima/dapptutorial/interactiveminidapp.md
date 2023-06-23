@@ -83,6 +83,15 @@ JSON data returned: The TxPoW Object, true (if started)/false (if ended).
 
 `MINIMALOG`: A new log message is available
 
+`MAXIMA` : A Maxima message has been received.
+
+`MDS_TIMER_1HOUR` : A one hour timer.
+
+`MDS_TIMER_10SECONDS` : A 10 second timer.
+
+`MDS_SHUTDOWN` : A message which is sent when the MiniDapp system is about to be shutdown. Shuts down 2 seconds after the message is posted.
+
+
 
 **Example:**
 

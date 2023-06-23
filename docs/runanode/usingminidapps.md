@@ -6,15 +6,21 @@ sidebar_position: 5
 
 [MiniDapps](/docs/learn/minidapps/minidappsintro) are Minima's decentralized applications that run on your Minima node. 
 
-All the latest MiniDapps can be downloaded from our official [MiniDapp site](https://minidapps.minima.global/) or from the **DAPP Store** page in the Android app.
+To use MiniDapps, you must be running a node with the MiniDapp system enabled and be logged in.
+
+*Note: Android nodes have MiniDapps enabled by default and there is no extra login step unless connecting to your node via your Desktop.*
+
+:::tip
+All the latest MiniDapps can be downloaded from our official [MiniDapp site](https://minidapps.minima.global/) or from the **Dapp Store** MiniDapp installed on your node.
+:::
 
 :::note ANDROID USERS
 If running a node on Android, please see the [Using MiniDapps](/docs/runanode/selectplatform/android_v9_and_up#using-minidapps) section on the Android page instead. 
 :::
 
-## Accessing the MiniDapp Hub
+## Login to Minima
 
-Please refer to the following guides to learn how to access your MiniDapp hub:
+Please refer to the following guides to learn how to login to Minima:
 
 [Linux Server (Docker)](/docs/runanode/selectplatform/linux_vps#access-your-minidapp-hub)
 
@@ -34,7 +40,11 @@ Linux Desktop
 
 ## Installing MiniDapps
 
-1. Download and save the MiniDapps you wish to use from our [MiniDapp site.](https://minidapps.minima.global/)
+1. Login to Minima and open the **Dapp Store** MiniDapp
+
+2. Download and save the MiniDapps you wish to use 
+
+*Alternatively, MiniDapps can be downloaded from our [MiniDapp site.](https://minidapps.minima.global/)*
 
 :::info Safari users
 If using Safari, ensure the MiniDapps are not unzipped during the download by changing the setting as follows:
@@ -43,29 +53,50 @@ If using Safari, ensure the MiniDapps are not unzipped during the download by ch
 3. Under the **General** tab, uncheck the option **"Open “safe” files after downloading"**
 :::
 
-2. Login to your MiniDapp Hub and click on **Choose File** and select a MiniDapp 
-3. Click **Install** and return to the hub to open the app
+3. Return to Minima and click on the + icon in the top right 
 
-![Windows](/img/buildonminima/minihub.png)
+![MDS](/img/runanode/mds_installdapp.png)
+
+4. **Choose File**, select a MiniDapp that you just downloaded
+
+5. Click **Install** and return to the hub to open it
+
+![MDS](/img/runanode/mds_installdapp2.png)
 
 -------
 
 ## MiniDapp Permissions
 
-By default, all MiniDapps will be given **READ** permission.
+By default, all MiniDapps will be given **READ** permission. This means that you must approve any transaction or command made by the MiniDapp that attempts to access your wallet.
 
-When a MiniDapp with READ permission attempts to run a command which would make changes to your node or require access to your funds, a PENDING command will be created which you will need to accept. 
+MiniDapps with **WRITE** permission can transact or run any command without asking for your approval. 
+
 :::warning 
-You should only give **WRITE** permissions to MiniDapps that you trust. <br/>
-Only the **Terminal** MiniDapp will need **WRITE** permission so you can approve/deny transactions.
+Before giving a MiniDapp WRITE permissions, ensure your node is locked with a password.<br/>
+**You should only give WRITE permissions to MiniDapps that you trust.**
 :::
 
 
-### Setting the Terminal permissions to WRITE 
+### Setting MiniDapp permissions 
 
-1. Login and install the Terminal MiniDapp
-2. Return to your desktop/server command line and run the `mds` command again (see above) to list your MiniDapps and check their existing permissions
-3. You will see the Terminal MiniDapp listed, **copy the uid from YOUR node**
+To change the permissions for a MiniDapp:
+
+1. Right click on a MiniDapp (or long press on mobile)
+2. Select **Write mode** (or Read mode)
+
+![MDS](/img/runanode/mds_updateperms.png#width40)
+
+3. Click **Confirm**
+
+![MDS](/img/runanode/mds_writeaccess.png#width40)
+<!-- 
+#### Setting MiniDapp permissions - using Terminal
+
+To change MiniDapp permissions from the Terminal:
+
+1. Open the Terminal MiniDapp
+2. Run the `mds` command to list your MiniDapps and check their existing permissions (If Terminal is in read mode, you will have to accept the Pending command from the Pending MiniDapp)
+3. Copy the uid from YOUR node
 ```
     {
       "uid":"0xB4C47D4AD267C3D2D4EF6E086FD12845",
@@ -114,14 +145,26 @@ Output:
   }
 }
 ```
-**You may now use the Terminal MiniDapp to execute all commands** - you will no longer need to use your desktop command line interface/server RPC commands. 
-
+ -->
 
 ### Accepting/Denying Pending Commands
 
-When using MiniDapps that have READ permissions, you will be asked to **accept/deny** commands that require access to your funds e.g. Sending funds from the Wallet or MaxSolo
+When using MiniDapps that have READ permissions, you will need to **accept/deny** commands that require access to your wallet e.g. Sending funds from the Wallet or MaxSolo
 
-To review your pending commands, open the Terminal MiniDapp and run:
+To review and Accept/deny your Pending actions:
+
+1. Open the Pending MiniDapp
+
+![MDS](/img/runanode/mds_pendingicon.png#width10)
+
+2. All actions pending approval will be listed
+
+3. Review each action and select **Approve** to run the command or **Deny** to discard the command and remove it from the list
+
+![MDS](/img/runanode/mds_pending.png)
+
+
+<!-- 
 ```
 mds action:pending 
 ```
@@ -159,23 +202,37 @@ Copy the `uid` of the pending command, then **to accept/deny the command** write
 mds action:accept/deny uid:0x4D020F84762AAB4EF593B6E6DACE7064
 ```
 
-Accepting the command will execute the command; denying will remove the pending command from the list and will not be executed.
+Accepting the command will execute the command; denying will remove the pending command from the list and will not be executed. -->
 
 -------
 ## Updating MiniDapps
 
 MiniDapps do not automatically update when a new version is released to the DAPP store, this gives you the flexibility to decide which version of a MiniDapp you wish to use and ensures that MiniDapp distribution is not centralized. 
-:::note
+
 When a new version of a MiniDapp becomes available, it is generally best practice to **update** a MiniDapp instead of installing the new one and deleting the old one, as each MiniDapp contains it's own data which is lost when deleting a MiniDapp.
 
 By updating a MiniDapp, all data will be transferred automatically to the new MiniDapp, preventing loss of data. 
 
-**On-chain data will not be lost** as a result of deleting a MiniDapp, this means that deleting the Wallet MiniDapp for example, will not result in any loss of coins.
-:::
-
 **To update a MiniDapp to a new version:**
 
-1. Download the new MiniDapp from https://minidapps.minima.global
+1. Login to Minima and open the **Dapp Store** MiniDapp
+
+2. Download the new version of the MiniDapp you wish to update
+
+*Alternatively, MiniDapps can be downloaded from our [MiniDapp site.](https://minidapps.minima.global/)*
+
+3. Right click on the MiniDapp you wish to update (or long press on mobile)
+
+![MDS](/img/runanode/mds_dappoptions.png#width40)
+
+4. Select **Update**
+
+5. Find and select the MiniDapp you just downloaded 
+
+6. Click **Update**
+
+
+<!-- 
 2. Save it to your node's basefolder. If using Docker, this will be the `minimadocker9001` folder for example. Desktop users can set their basefolder when starting their node using the `-basefolder` parameter.
 3. From the Minima Terminal, run 
 ```
@@ -245,11 +302,26 @@ Output:
 }
 ```
 
-6. The MiniDapp will be updated, retaining it's previous data and permissions.
+6. The MiniDapp will be updated, retaining it's previous data and permissions. -->
 
 -------
-## Uninstalling MiniDapps
+## Deleting MiniDapps
 
+**Deleting a MiniDapp is irreversible. Any data stored in the MiniDapp's database will be lost when deleted.**
+
+**On-chain data will not be lost** as a result of deleting a MiniDapp, this means that deleting the Wallet MiniDapp for example, will not result in any loss of coins.
+
+To delete a MiniDapp:
+
+1. Right click on the MiniDapp to uninstall (or long press on mobile)
+
+2. Select **Delete MiniDapp** 
+
+![MDS](/img/runanode/mds_dappoptions.png#width40)
+
+3. Select **Confirm**
+
+<!-- 
 1. From the Command Line where Minima is running, type 
 ```
 mds
@@ -281,4 +353,4 @@ mds
 **Example** 
 ```
 mds action:uninstall uid:0xFE2750C4186CF82FB4E91D5FEA21839F
-```
+``` -->
