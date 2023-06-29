@@ -16,9 +16,9 @@ Incentive Program members will need to take action to ensure you receive your ac
 
 ## What you need to know about… 
 
-### ...Mainnet Bootstrap Phase
+### ...Moving your node to Mainnet
 
-The Bootstrap phase for Mainnet has started. This involves gradually moving all node runners to Mainnet from Testnet. 
+If you were running a node during our Testnet, you will need to uninstall your node and start a node on Mainnet. 
 
 :::info Checking your version
 To check the version of Minima you are running, you can run the `status` command on your node.
@@ -33,17 +33,11 @@ Mainnet is a hardfork and therefore Testnet (0.103 and below) and Mainnet versio
 
 **You will also have a different Seed Phrase on Mainnet to your Testnet node.**
 
-Mainnet Version 1.0 (or above) is now available for:
+Please visit the [Get Started](/docs/runanode/get_started) page to set up a node on Mainnet. 
 
-- [Server users](/docs/runanode/selectplatform/linux_vps) 
-- [Docker users](/docs/runanode/get_started) 
-- [Manual node runners](/docs/runanode/selectplatform/manualnode) (on Desktop)
-- [Android users](/docs/runanode/selectplatform/android_v9_and_up) (from 1st Feb 2023)
-
-If you have installed Minima from the Google Play store, you can set your app to update automatically from the Play Store settings, otherwise check the Play store to Update manually.
-
+:::warning
 Please see [Securing your node](/docs/runanode/securefunds) before using your node for the first time. 
-
+:::
 
 ### ...the Incentive Program
 

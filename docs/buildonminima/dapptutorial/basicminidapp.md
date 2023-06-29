@@ -50,7 +50,7 @@ Your folder should now contain 2 files
 
 Your config file and icon used will determine what is visible when your MiniDapp is loaded into the MiniDapp Hub, as shown below.
 
-![Accessing the MiniDapp Hub](/img/buildonminima/helloworld.png)
+![Accessing the MiniDapp Hub](/img/runanode/mds_pendingicon.png#width10)
 
 ## Basic interface for your MiniDapp
 

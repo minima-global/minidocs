@@ -10,6 +10,8 @@ We are excited to announce the highly anticipated release of our new MiniDapp Sy
 
 Before you get stuck in, here is an introduction to the MiniDapp System and explanation of what MiniDapps are.
 
+![MDS](/img/runanode/mds_hub.png)
+
 ## What is the MiniDapp System?
 The MiniDapp system is an open application ecosystem.<br/>
 Similar to the Operating System on your phone that enables you to use Android apps, the MiniDapp System enables you to use MiniDapps on your Minima node.

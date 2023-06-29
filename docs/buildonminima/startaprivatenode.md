@@ -11,7 +11,7 @@ To start a private node from genesis:
 **Node 1:**
 
 ```
-java -jar minima.jar -data minidata1 -basefolder minidata1 -test -nop2p -genesis
+java -jar minima.jar -data minidata1 -basefolder minidata1 -test -nop2p -mdsenable -mdspassword INSERTNODE1PASSWORD -genesis
 ```
 
 This will start a node on the default ports of 9001-5. 
@@ -22,7 +22,7 @@ To create a second node to test transactions between two nodes
 **Node 2:**
 
 ```
-java -jar minima.jar -data minidata2 -basefolder minidata2 -test -nop2p -clean -port 10001 -connect 127.0.0.1:9001
+java -jar minima.jar -data minidata2 -basefolder minidata2 -test -nop2p -clean -mdsenable -mdspassword INSERTNODE2PASSWORD -port 10001 -connect 127.0.0.1:9001
 ```
 
 If you need to quit Minima and wish to restart it without deleting old data, use:
@@ -30,11 +30,11 @@ If you need to quit Minima and wish to restart it without deleting old data, use
 **Node 1:**
 
 ```
-java -jar minima.jar -data minidata1 -basefolder minidata1 -test -nop2p
+java -jar minima.jar -data minidata1 -basefolder minidata1 -test -nop2p -mdsenable -mdspassword INSERTNODE1PASSWORD
 ```
 **Node 2:**
 ```
-java -jar minima.jar -data minidata2 -basefolder minidata2 -test -nop2p -connect 127.0.0.1:9001
+java -jar minima.jar -data minidata2 -basefolder minidata2 -test -nop2p -mdsenable -mdspassword INSERTNODE2PASSWORD -connect 127.0.0.1:9001
 ```
 :::note Parameters used
 
@@ -43,6 +43,7 @@ java -jar minima.jar -data minidata2 -basefolder minidata2 -test -nop2p -connect
 - **`-nop2p`** : Disable the automatic P2P system<br/>
 - **`-test`** : uses test parameters e.g. faster block times<br/>
 - **`-genesis`** : start the node from the genesis block (automatically uses -clean)<br/>
+- **`-mdsenable`** : start the MiniDapp system
 - **`-connect [ip:port]`** : Disable the automatic P2P system and create your own network by manually connecting to this list of host:port<br/>
 :::
 
