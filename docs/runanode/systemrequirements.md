@@ -12,11 +12,22 @@ The following information is for Server or Desktop users.
 
 ## Minimum hardware requirement
 
+### Standard full node
+
 **Processing:** 2 CPU <br/>
 **Memory:** 2GB RAM<br/>
 **Storage:** 2GB*
 
 *High MiniDapp usage may require higher availability of Storage
+
+
+### Archive node
+
+**Processing:** 2 CPU <br/>
+**Memory:** 4GB RAM<br/>
+**Storage:** 5GB*
+
+*This may change over time.
 
 GPU is not necessary
 
