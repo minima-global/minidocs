@@ -103,15 +103,35 @@ sudo ufw default allow outgoing
 ```
 sudo ufw allow ssh
 ```
+
+3. Allow inbound connections to 9001 from anywhere
 ```
 sudo ufw allow in 9001
 ```
+
+4. Allow inbound connections to your MiniDapp system only from your home IP address (replace xx.xx.xx.xx with your home ip)
+*Note that most home IP addresses are not fixed and if your router is reset, this IP address can change, so you may have to redo this rule at a later date.*
+
+You can find your home IP address by going to [ipchicken](https://ipchicken.com/) when connected to your home wifi network.
+
+```
+sudo ufw allow from xx.xx.xx.xx to any port 9003
+```
+```
+sudo ufw allow from xx.xx.xx.xx to any port 9004
+```
+
+
+or to allow connections to your MiniDapp system from anywhere. **This will expose your login screen publicly.**
+
 ```
 sudo ufw allow in 9003
 ```
 ```
 sudo ufw allow in 9004
 ```
+
+5. Enable the firewall
 ```
 sudo ufw enable
 ```
@@ -124,3 +144,5 @@ y
 :::warning custom ports
 If you install Minima on custom ports, ensure the correct ports are open/closed.
 :::
+
+For more information about ufw, see [here.](https://wiki.debian.org/Uncomplicated%20Firewall%20%28ufw%29)

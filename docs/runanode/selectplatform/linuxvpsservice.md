@@ -60,6 +60,8 @@ y
 ```
 **MAKE SURE YOU HAVE NOT SKIPPED THE `ufw allow ssh` STEP, OR YOU WILL BE LOCKED OUR OF YOUR SERVER!**
 
+For more information see [here](https://wiki.debian.org/Uncomplicated%20Firewall%20%28ufw%29)
+
 </details>
 
 After installing Minima, you will finish setting up the Firewall rules.
@@ -192,6 +194,10 @@ By default, Minima uses ports 9001-9005.
 If you install Minima on custom ports, ensure the correct ports are open/closed.
 :::
 
+If using Uncomplicated Firewall (UFW), expand the instructions below.
+
+<details><summary> UFW final setup instructions</summary>
+
 As a user with sudo privileges:
 
 1. Allow inbound connections to 9001 from anywhere
@@ -228,7 +234,7 @@ sudo ufw enable
 ```
 y
 ```
-
+</details>
 
 You are now ready to use Minima!
 
