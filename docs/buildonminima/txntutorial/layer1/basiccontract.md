@@ -12,4 +12,4 @@ You can view your current default addresses with `keys` and your custom scripts 
 
 If you need help with the parameters - use `help`
 
-A default address in Minima: `RETURN SIGNEDBY(0xFFEE67F7C..)`
+A default script in Minima: `RETURN SIGNEDBY(0xFFEE67F7C..)`

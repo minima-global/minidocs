@@ -14,16 +14,6 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Learn',
-    link: 'docs/learn/ataglance',
-    icon: 'icons/learn_icon.svg',
-    description: (
-      <>
-        A deep dive into the Minima protocol and its architecture
-      </>
-    ),
-  },
-  {
     title: 'Run a Node',
     link: 'docs/runanode/get_started',
     icon: 'icons/run_icon.svg',
@@ -34,8 +24,18 @@ const FeatureList = [
     ),
   },
   {
+    title: 'Learn',
+    link: 'docs/learn/ataglance',
+    icon: 'icons/learn_icon.svg',
+    description: (
+      <>
+        A deep dive into the Minima protocol and its architecture
+      </>
+    ),
+  },
+  {
     title: 'Build',
-    link: 'docs/buildonminima/startaprivatenode',
+    link: 'docs/buildonminima/buildintro',
     icon: 'icons/build_icon.svg',
     description: (
       <>

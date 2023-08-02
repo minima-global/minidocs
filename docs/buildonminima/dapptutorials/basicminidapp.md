@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Basic MiniDapp
@@ -20,13 +20,6 @@ In your code editor, create a new file called `dapp.conf` and save it into your 
 
 The dapp.conf file is the configuration file for your MiniDapp and is where we provide the MiniDapp metadata in JSON format which will be required by the MiniDapp Hub later. 
 
-Metadata options:
-- **name**: Name of your MiniDapp
-- **icon**: name of icon file (located in the same folder)
-- **version**: MiniDapp version number
-- **description**: MiniDapp description
-- **browser**: internal or external (for mobile interface), depending on whether your MiniDapp should be launched within the app or in an external browser
-
 Following the HelloWorld example, your dapp.conf file should look something like this:
 ```
 {
@@ -34,7 +27,6 @@ Following the HelloWorld example, your dapp.conf file should look something like
 "icon" :"favicon.ico",
 "version" : "1.0",
 "description": "My Hello World MiniDapp",
-"browser": "internal"
 }
 ```
 
@@ -109,6 +101,7 @@ We now have a complete helloworld folder containing:
 4. styling.css (optional)
 
 Zip up the contents of this folder (not the folder itself) 
+
 ![Accessing the MiniDapp Hub](/img/buildonminima/zipup.png)
 
 Name the folder as `helloworld.mds.zip` or if you are using a zip library through your cli run `zip -r helloworld.mds.zip`.   
@@ -132,8 +125,7 @@ To install the MiniDapp on your phone:
 
 ### Installing onto a desktop node
 
-
-1. Login to your MiniDapp Hub and click on **Choose a file**
+1. Login to your MiniDapp Hub and click on the `+` in the top right
 2. Select your `helloworld.mds.zip` MiniDapp
 3. Click on **Install**, then return to the Hub
 
@@ -165,7 +157,7 @@ Minima @ 06/07/2022 12:49:44 [233.9 MB] : unzipping package into C:\Users\minima
     }
   }
 ```
-2. Login to your MiniDapp Hub (see [accessing the MiniDapp Hub](/docs/buildonminima/dapptutorial/accesshub))
+2. Login to your MiniDapp Hub (see [accessing the MiniDapp Hub](/docs/buildonminima/dapptutorials/accesshub))
 3. Click on your MiniDapp to open it
 
 **Congratulations! You have created your first MiniDapp!**

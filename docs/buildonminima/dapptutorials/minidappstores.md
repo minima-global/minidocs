@@ -1,18 +1,15 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 # MiniDapp Stores
 
-:::note
-MiniDapp stores are currently only available on Android.
-:::
+Dapp stores are a collection of MiniDapps that can be shared with users.
 
-MiniDapp stores are a collection of MiniDapps that can be shared with users.
-
-By installing a MiniDapp store, you can choose to download and install any MiniDapps within the store. 
+By installing a Dapp store, you can choose to download and install any MiniDapps within the store. 
 
 ## Creating a MiniDapp Store
+
 To create a MiniDapp store, create a `.json` file containing your list of MiniDapps. 
 
 Your `.json` file can be hosted on a server, this could even be a Raspberry Pi with a public, static IP. 

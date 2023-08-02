@@ -56,7 +56,7 @@ Once you have set up your profile, [share your address](/docs/runanode/usingmaxi
 
 **3. Building decentralized apps**
 
-**Build the future.** If you’re a developer, check out the [Build section](/docs/buildonminima/dapptutorial/buildintro) of our docs, then head to #role-picker on our [Discord](https://discord.com/invite/minima) and select ‘Community Developer’ to gain access to the #dev channel. 
+**Build the future.** If you’re a developer, check out the [Build section](/docs/buildonminima/buildintro) of our docs, then head to #role-picker on our [Discord](https://discord.com/invite/minima) and select ‘Community Developer’ to gain access to the #dev channel. 
 
 Our core and community developers are active there, so if you have any questions, feel free to ask. We’re all learning this new world together, so there are no stupid questions!
 

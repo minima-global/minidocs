@@ -35,7 +35,7 @@ There are no other dependencies.
 ### 1. Start two test nodes
 To set up your two test nodes, open two new command prompt sessions and change directory into the folder where your minima.jar file is.
 
-Follow the guidance [here](https://docs.minima.global/docs/buildonminima/startaprivatenode) to start the nodes.
+Follow the guidance [here](/docs/buildonminima/dapptutorials/startaprivatenode) to start the nodes.
 
 ### 2. Create a transaction
 

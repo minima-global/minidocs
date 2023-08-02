@@ -73,17 +73,17 @@ const config = {
           //   position: "left" 
           // },
           {
-            to: "docs/learn/ataglance",
-            label: "Learn",
-            position: "left",
-          },
-          {
             to: "docs/runanode/get_started",
             label: "Run a Node",
             position: "left",
           },
           {
-            to: "docs/buildonminima/startaprivatenode",
+            to: "docs/learn/ataglance",
+            label: "Learn",
+            position: "left",
+          },
+          {
+            to: "docs/buildonminima/buildintro",
             label: "Build",
             position: "left",
           },

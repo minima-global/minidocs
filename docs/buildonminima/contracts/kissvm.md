@@ -1,8 +1,8 @@
 ---
-sidebar_position: 7
+sidebar_position: 5
 ---
 
-# Appendix
+# KISS VM
 
 Here is a breakdown of the simple and complete KISSVM language.
 
@@ -54,7 +54,7 @@ Here is a breakdown of the simple and complete KISSVM language.
 | Function | Description |
 | --- | --- |
 | CONCAT ( HEX_1 HEX_2 ... HEX_n ) | Concatenate the HEX values. | 
-| LEN ( HEX / SCRIPT ) | Length of the data |
+| LEN ( HEX \| SCRIPT ) | Length of the data |
 | REV ( HEX ) | Reverse the data |
 | SUBSET ( HEX NUMBER NUMBER ) | Return the HEX subset of the data - start - length |
 | OVERWRITE ( HEX NUMBER HEX NUMBER NUMBER) | Copy bytes from the first HEX and pos to the second HEX and pos, length the last NUMBER |
