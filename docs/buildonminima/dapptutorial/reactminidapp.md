@@ -18,7 +18,7 @@ This boilerplate has been created with `Create React App`. You can use this boil
 
 To create your application, open the folder in your code editor and edit the files in the `/src` folder.
 
-If you need some guidance, please follow the [Balance tutorial](/docs/buildonminima/dapptutorials/reactminidapp#balance-tutorial) below.
+If you need some guidance, please follow the [Balance tutorial](/docs/buildonminima/dapptutorial/reactminidapp#balance-tutorial) below.
 
 ## How to build and install your app
 

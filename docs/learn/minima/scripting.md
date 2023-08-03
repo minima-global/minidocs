@@ -145,7 +145,7 @@ Return the address of the script
 REPLACE ( STRING STRING STRING )
 Replace in 1st string all occurrence of 2nd string with 3rd
 
-SUBSTR ( STRING NUMBER NUMBER )
+SUBSTR ( NUMBER NUMBER STRING )
 Get the substring
 
 CLEAN ( STRING )

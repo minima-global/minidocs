@@ -12,7 +12,7 @@ MiniDapps are zip files (.mds.zip) with the following basic structure:
 - **icon.png** : icon for the MiniDapp
 - **index.html** : html web page 
 - **mds.js** : JavaScript library for a simple Minima API
-- **service.js** : Optional JavaScript library for running background services
+- **service.js** : Optional JavaScript file for running a background service that handles Main messages
 - **assets** : folder containing assets used by the MiniDapp
 
 All items must be zipped together and use the `.mds.zip` extension. Once zipped, it becomes a MiniDapp that can be installed onto any Minima node. 

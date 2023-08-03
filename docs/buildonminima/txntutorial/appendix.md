@@ -62,7 +62,7 @@ Here is a breakdown of the simple and complete KISSVM language.
 | EXISTS ( NUMBER NUMBER .. NUMBER ) | Does the array value exists |
 | ADDRESS ( STRING ) | Return the address of the script |
 | REPLACE ( STRING STRING STRING ) | Replace in 1st string all occurrence of 2nd string with 3rd |
-| SUBSTR ( STRING NUMBER NUMBER ) | Get the substring |
+| SUBSTR ( NUMBER NUMBER STRING) | Get the substring |
 | CLEAN ( STRING ) | Return a CLEAN version of the script |
 | UTF8 ( HEX ) | Convert the HEX value to a UTF8 string |
 | ASCII ( HEX ) | Convert the HEX value to an ASCII string |

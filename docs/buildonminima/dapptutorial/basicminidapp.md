@@ -157,7 +157,7 @@ Minima @ 06/07/2022 12:49:44 [233.9 MB] : unzipping package into C:\Users\minima
     }
   }
 ```
-2. Login to your MiniDapp Hub (see [accessing the MiniDapp Hub](/docs/buildonminima/dapptutorials/accesshub))
+2. Login to your MiniDapp Hub (see [accessing the MiniDapp Hub](/docs/buildonminima/dapptutorial/accesshub))
 3. Click on your MiniDapp to open it
 
 **Congratulations! You have created your first MiniDapp!**

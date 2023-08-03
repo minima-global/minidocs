@@ -147,7 +147,7 @@ zip -r helloworld2.mds.zip
 ```
 
 ## Installing your MiniDapp
-Please refer to the [Installing your MiniDapp](/docs/buildonminima/dapptutorials/basicminidapp#installing-your-minidapp) section.
+Please refer to the [Installing your MiniDapp](/docs/buildonminima/dapptutorial/basicminidapp#installing-your-minidapp) section.
 
 ## MiniDapp Downloads
 
