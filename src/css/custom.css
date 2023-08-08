@@ -141,6 +141,14 @@ img[src$='#width40']{
   width: 40%;
 }
 
+img[src$='#width30']{
+  width: 30%;
+}
+
+img[src$='#width20']{
+  width: 20%;
+}
+
 img[src$='#width10']{
   width: 10%;
 }

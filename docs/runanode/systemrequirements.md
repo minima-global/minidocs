@@ -70,7 +70,8 @@ If your inbound connection is closed, your node will only make outgoing connecti
 <!-- Docker will overwrite UFW firewall rules, so i -->
 If running Minima on a server with an external IP you must ensure:
 
-1. Your MDS password is long and secure
+1. Inbound connections are denied by default
+2. Your MDS password is long and secure, using a combination of lowercase, uppercase letters numbers and symbols 
 2. If enabling RPC, you have used the correct start up parameters for your ports and set a password on your RPC connection 
 
 Follow the guidance on the [Linux (Docker)](/docs/runanode/selectplatform/linux_vps) page for the correct configuration.

@@ -16,11 +16,11 @@ The Minima blockchain uses the Minima coin as its currency. It is a store of val
 ## How is Minima different from other blockchains?
 
 All design decisions for Minima aim to ensure the protocol remains decentralized over time and can be attributed to three elements:
-- Everyone builds the chain
-- No reliance on fees 
-- It must be finished
+1. Everyone builds the chain
+2. No reliance on fees 
+3. It must be finished
 
-### Everyone builds the chain
+### 1. Everyone builds the chain
 
 > *Every user must participate in **constructing** the blockchain*
 
@@ -33,7 +33,7 @@ They help to ensure that *invalid* transactions cannot get into a block. However
 
 **With Minima, every user validates and constructs the chain.**
 
-### No reliance on fees
+### 2. No reliance on fees
 
 > *There must be no entity that is paid to construct the chain*
 
@@ -45,7 +45,7 @@ Financial incentives are vectors for centralization over time, as those with a w
 
 **No users are paid to construct the Minima blockchain.** Another mechanism, the Burn, is used to benefit all.
 
-### It must be finished
+### 3. It must be finished
 
 > *The parts of the protocol critical for consensus must not require changes*
 

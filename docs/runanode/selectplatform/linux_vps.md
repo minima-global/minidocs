@@ -213,17 +213,7 @@ docker ps -a
 ```
 This will show all running and stopped (Exited) containers. 
 
-Continue to secure your node.
-
-## Secure your node 
-
-Before using your node for the first time, you must:
-
-1. Write down your Seed Phrase
-2. Take a backup
-3. Set a Vault password to encrypt your Keys (optional)
-
-Please visit the [Secure your Node](/docs/runanode/securefunds) page to learn how. 
+Next, access your MiniDapp hub and secure your node.
 
 ## Access your MiniDapp hub
 
@@ -244,6 +234,17 @@ You will see your MiniDapp System (MDS) login page.
 3. Enter your password to login, if you don't remember, you can check [here](#how-to-check-your-minidapp-system-password).
 
 4. You will see your MiniDapp hub!
+
+## Secure your node 
+
+Before using your node for the first time, you must:
+
+1. Write down your Seed Phrase
+2. Take a backup
+3. Set a Vault password to encrypt your Keys (optional)
+
+Please visit the [Secure your Node](/docs/runanode/securefunds) page to learn how. 
+
 
 ## FAQ 
 
