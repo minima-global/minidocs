@@ -8,29 +8,31 @@ Here is a breakdown of the simple and complete KISSVM language.
 
 ## Grammar
 
+
 | Grammar | Description |
 | :--- | :------------------------------- |
 | ADDRESS | ADDRESS ( BLOCK ) |
 | BLOCK | STATEMENT_1 STATEMENT_2 ... STATEMENT_n |
-| STATEMENT | LET VARIABLE = EXPRESSION \| LET ( EXPRESSION_1 EXPRESSION_2 ... EXPRESSION_n ) = EXPRESSION \| IF EXPRESSION THEN BLOCK [ELSEIF EXPRESSION THEN BLOCK]* [ELSE BLOCK] ENDIF \| WHILE EXPRESSION DO BLOCK ENDWHILE \| EXEC EXPRESSION \| MAST EXPRESSION \| ASSERT EXPRESSION \| RETURN EXPRESSION |
+| STATEMENT | LET VARIABLE = EXPRESSION **\|** <br/> LET ( EXPRESSION_1 EXPRESSION_2 ... EXPRESSION_n ) = EXPRESSION **\|**<br/> IF EXPRESSION THEN BLOCK [ELSEIF EXPRESSION THEN BLOCK]* [ELSE BLOCK] ENDIF **\|**<br/> WHILE EXPRESSION DO BLOCK ENDWHILE **\|**<br/> EXEC EXPRESSION **\|** <br/>MAST EXPRESSION **\|** <br/>ASSERT EXPRESSION **\|** <br/>RETURN EXPRESSION |
 | EXPRESSION | RELATION |
-| LOGIC | OPERATION EQ OPERATION  \| OPERATION NEQ OPERATION  \| OPERATION GT OPERATION  \| OPERATION GTE OPERATION  \| OPERATION LT OPERATION  \| OPERATION LTE OPERATION  \| OPERATION |
-| OPERATION | ADDSUB & ADDSUB \| ADDSUB \| ADDSUB \| ADDSUB ^ ADDSUB \| ADDSUB |
-| ADDSUB | MULDIV + MULDIV \| MULDIV - MULDIV \| MULDIV % MULDIV \| MULDIV << MULDIV \| MULDIV >> MULDIV \| MULDIV |
-| MULDIV | PRIME * PRIME \| PRIME / PRIME \| PRIME |
-| PRIME | NOT PRIME \|  NEG PRIME \| NOT BASEUNIT \| NEG BASEUNIT \| BASEUNIT |
-| BASEUNIT | VARIABLE \| VALUE \| -NUMBER \| GLOBAL \| FUNCTION \| ( EXPRESSION ) |
+| RELATION |  LOGIC AND LOGIC  **\|**  LOGIC OR LOGIC  **\|** <br/> LOGIC XOR LOGIC  **\|**  LOGIC NAND LOGIC **\|**<br/> LOGIC NOR LOGIC  **\|** LOGIC NXOR LOGIC **\|** LOGIC<br/>
+| LOGIC | OPERATION EQ OPERATION  **\|** OPERATION NEQ OPERATION  **\|** <br/>OPERATION GT OPERATION  **\|** OPERATION GTE OPERATION  **\|** <br/>OPERATION LT OPERATION  **\|** OPERATION LTE OPERATION  **\|** OPERATION |
+| OPERATION | ADDSUB & ADDSUB **\|** <br/>ADDSUB \| ADDSUB **\|** <br/> ADDSUB ^ ADDSUB **\|** <br/> ADDSUB |
+| ADDSUB | MULDIV + MULDIV **\|** <br/> MULDIV - MULDIV **\|** <br/> MULDIV % MULDIV **\|**<br/> MULDIV << MULDIV **\|** <br/> MULDIV >> MULDIV **\|** <br/>MULDIV |
+| MULDIV | PRIME * PRIME **\|**<br/> PRIME / PRIME **\|** <br/>PRIME |
+| PRIME | NOT PRIME **\|**  <br/>NEG PRIME **\|** <br/> ~PRIME **\|**<br/> BASEUNIT |
+| BASEUNIT | VARIABLE **\|** VALUE **\|** -NUMBER **\|** GLOBAL **\|** FUNCTION **\|** ( EXPRESSION ) |
 | VARIABLE | [a-z]+ |
-| VALUE | NUMBER \| HEX \| STRING \| BOOLEAN |
+| VALUE | NUMBER **\|** HEX **\|** STRING **\|** BOOLEAN |
 | NUMBER | ^[0-9]+(\\.[0-9]+)? |
 | HEX | 0x[0-9a-fA-F]+ |
 | STRING | [UTF8_String] |
-| BOOLEAN | TRUE \| FALSE |
+| BOOLEAN | TRUE **\|** FALSE |
 | FALSE | 0 |
 | TRUE | NOT FALSE |
-| GLOBAL | @BLOCK \| @BLOCKMILLI \| @CREATED \| @COINAGE \| @INPUT \| @AMOUNT \| @ADDRESS \| @TOKENID \| @COINID \| @SCRIPT \| @TOTIN \| @TOTOUT |
+| GLOBAL | @BLOCK **\|** @BLOCKMILLI **\|** @CREATED **\|** @COINAGE **\|** @INPUT **\|**<br/> @AMOUNT **\|** @ADDRESS **\|** @TOKENID **\|** @COINID **\|** <br/> @SCRIPT **\|** @TOTIN **\|** @TOTOUT |
 | FUNCTION | FUNC ( EXPRESSION_1 EXPRESSION_2 .. EXPRESSION_n ) |
-| FUNC | CONCAT \| LEN \| REV \| SUBSET \| GET \| EXISTS \| OVERWRITE \| CLEAN \| UTF8 \| ASCII \| REPLACE \| SUBSTR \| BOOL \| HEX \| NUMBER \| STRING \| ADDRESS \| ABS \| CEIL \| FLOOR \| MIN \| MAX \| INC \| DEC \| SIGDIG \| POW \| BITSET \| BITGET \| BITCOUNT \| PROOF \| KECCAK \| SHA2 \| SHA3 \| FUNCTION \| SUMINPUT \| SUMOUTPUT \| SIGNEDBY \| MULTISIG \| CHECKSIG \| GETOUTADDR \| GETOUTAMT \| GETOUTTOK \| GETOUTKEEPSTATE \| VERIFYOUT \| GETINADDR \| GETINAMT \| GETINTOK \| GETINID \| VERIFYIN \| STATE \| PREVSTATE \| SAMESTATE |
+| FUNC | CONCAT **\|** LEN **\|** REV **\|** SUBSET **\|** GET **\|** EXISTS **\|** OVERWRITE **\|** <br/> REPLACE **\|** SUBSTR **\|** ADDRESS **\|** SETLEN **\|** <br/> BOOL **\|** HEX **\|** NUMBER **\|** STRING **\|** UTF8 **\|** ASCII **\|**   <br/> ABS **\|** CEIL **\|** FLOOR **\|** MIN **\|** MAX **\|** INC **\|** DEC **\|** SIGDIG **\|** POW **\|** SQRT **\|**<br/> BITSET **\|** BITGET **\|** BITCOUNT **\|** PROOF **\|** SHA2 **\|** SHA3 **\|** <br/> SIGNEDBY **\|** MULTISIG **\|** CHECKSIG **\|** <br/>  FUNCTION **\|** SUMINPUT **\|** SUMOUTPUT **\|** <br/> GETOUTADDR **\|** GETOUTAMT **\|** GETOUTTOK **\|** GETOUTKEEPSTATE **\|** VERIFYOUT **\|** <br/>  GETINADDR **\|** GETINAMT **\|** GETINTOK **\|** GETINID **\|** VERIFYIN **\|** <br/> STATE **\|** PREVSTATE **\|** SAMESTATE |
 
 ## Globals
 
@@ -58,10 +60,10 @@ Here is a breakdown of the simple and complete KISSVM language.
 | REV ( HEX ) | Reverse the data |
 | SUBSET ( HEX NUMBER NUMBER ) | Return the HEX subset of the data - start - length |
 | OVERWRITE ( HEX NUMBER HEX NUMBER NUMBER) | Copy bytes from the first HEX and pos to the second HEX and pos, length the last NUMBER |
-| GET ( NUMBER NUMBER .. NUMBER ) | Return the array value set with LET ( EXPRESSION EXPRESSION .. EXPRESSION )1 |
+| GET (NUMBER NUMBER .. NUMBER) | Return the array value set with LET ( EXPRESSION EXPRESSION .. EXPRESSION )1 |
 | EXISTS ( NUMBER NUMBER .. NUMBER ) | Does the array value exists |
 | ADDRESS ( STRING ) | Return the address of the script |
-| REPLACE ( STRING STRING STRING ) | Replace in 1st string all occurrence of 2nd string with 3rd |
+| REPLACE ( STRING STRING STRING) | Replace in 1st string all occurrence of 2nd string with 3rd |
 | SUBSTR ( NUMBER NUMBER STRING ) | Get the substring |
 | CLEAN ( STRING ) | Return a CLEAN version of the script |
 | UTF8 ( HEX ) | Convert the HEX value to a UTF8 string |
