@@ -33,30 +33,33 @@ JSON data returned: The TxPoW Object, true (if started)/false (if ended).
 
 ```
 MDS.init(function(msg) {
-
-// inited means Minima API is ready to be used
-Switch(msg.event)
-case: "inited":
-
-// do Minima dependent initializations
-
-break;
-case "newblock":
-console.log(msg);
-// newblock message data
-
-break;
-case:"mining":
-// mining messages
-console.log(msg);
-// mining message data
-
-break;
-case:"newbalance":
-console.log(msg);
-// newbalance msg data
-
-...
-            }
+    console.log(msg);
+    // inited means Minima API is ready to be used
+    switch(msg.event) {
+      case "inited":
+        // do Minima dependent initializations
+        break;
+      case "NEWBLOCK":
+        // new block message event
+        console.log(msg);
+        // new block message data
+        console.log(msg.data);
+        break;
+      case "MINING":
+        // mining message event
+        console.log(msg);
+        // mining message data
+        console.log(msg.data);
+        break;
+      case "NEWBALANCE":
+        // new balance message event
+        console.log(msg);
+        // there is no data for a new balance event, but you can
+        // call MDS.cmd('balance') to retrieve the balance changes
+        MDS.cmd('balance', function (msg) {
+          console.log(msg.response);
+        });
+    }
+});
 ```
 

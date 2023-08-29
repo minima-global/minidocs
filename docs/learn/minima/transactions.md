@@ -126,7 +126,7 @@ When checking the validity of transactions, the *monotonicity* is checked to det
 
 Scripts of **Monotonic** transactions only need to be checked once i.e. they are either valid or not e.g. a simple RETURN(SIGNEDBY(..))
 
-Scripts of **Non Monotonic** transactions need to be checked multiple times. Any script in a transaction that references global variables @BLKNUM, @BLKDIFF or @INBLKNUM is not monotonic as its validity will change depending on these variables. 
+Scripts of **Non Monotonic** transactions need to be checked multiple times. Any script in a transaction that references global variables @BLOCK, @COINAGE or @CREATED is not monotonic as its validity will change depending on these variables. 
 
 
 

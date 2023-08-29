@@ -319,11 +319,11 @@ Amount to burn with the tokencreate minting transaction.
 
 *tokencreate name:newtoken amount:1000000*
 
-*tokencreate amount:10 name:{\"name\":\"newcoin\",\"link\":\"http:mysite.com\",\"description\":\"A very cool token\"}*
+*tokencreate amount:10 name:{"name":"newcoin","link":"http:mysite.com","description":"A very cool token"}*
 
 *tokencreate name:mynft amount:10 decimals:0 webvalidate:https://www.mysite.com/nftvalidation.txt signtoken:0xFF.. burn:0.1*
 
-*tokencreate name:charitycoin amount:1000 script:\"ASSERT VERIFYOUT(@TOTOUT-1 0xMyAddress 1 0x00 TRUE)\"*
+*tokencreate name:charitycoin amount:1000 script:"ASSERT VERIFYOUT(@TOTOUT-1 0xMyAddress 1 0x00 TRUE)"*
 </details>
 
 <details>

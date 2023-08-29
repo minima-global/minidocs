@@ -17,24 +17,22 @@ tokencreate name:mycoin amount:1000
 This constructs a special transaction, and will convert a fractional amount of Minima into a Token. You can see this with `balance`.
 
 ~~~~
-.. {
-},
+...
 "tokenid":"0x0C5EEB946E8C18B610AFA1D9A9F7EB05688E21A72608D5F43C925D1D6804A16E ",
 "confirmed":"1000", "unconfirmed":"0", "sendable":"1000", "total":1000
-}] }
+...
 ~~~~
 
 And if you use `tokens`
 
 ~~~~
-.. {
-},
+...
 "coinid":"0x8C8DB5BA960C8AC2CD3BD314BDBC280E941C2D45469C7685083D19387024CA54 ",
 "total":"1000",
 "decimals":8,
 "script":"RETURN TRUE", "totalamount":"0.000000000000000000000000000000001", "scale":36,
 "tokenid":"0x0C5EEB946E8C18B610AFA1D9A9F7EB05688E21A72608D5F43C925D1D6804A16E "
-}] }
+...
 ~~~~
 
 The Token details tell you how many tokens there are in total, the number of decimal places - which defaults to 8, the Script for the token, and the total amount of Minima used to create the token. 
