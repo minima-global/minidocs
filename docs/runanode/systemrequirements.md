@@ -140,7 +140,7 @@ sudo ufw enable
 y
 ```
 
-**MAKE SURE YOU HAVE NOT SKIPPED THE `ufw allow ssh` STEP, OR YOU WILL BE LOCKED OUR OF YOUR SERVER!**
+**MAKE SURE YOU HAVE NOT SKIPPED THE `ufw allow ssh` STEP, OR YOU WILL BE LOCKED OUT OF YOUR SERVER!**
 
 :::warning custom ports
 If you install Minima on custom ports, ensure the correct ports are open/closed.

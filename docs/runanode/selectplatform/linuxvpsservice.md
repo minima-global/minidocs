@@ -58,7 +58,7 @@ sudo ufw enable
 ```
 y
 ```
-**MAKE SURE YOU HAVE NOT SKIPPED THE `ufw allow ssh` STEP, OR YOU WILL BE LOCKED OUR OF YOUR SERVER!**
+**MAKE SURE YOU HAVE NOT SKIPPED THE `ufw allow ssh` STEP, OR YOU WILL BE LOCKED OUT OF YOUR SERVER!**
 
 For more information see [here](https://wiki.debian.org/Uncomplicated%20Firewall%20%28ufw%29)
 

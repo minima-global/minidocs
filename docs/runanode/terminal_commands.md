@@ -631,7 +631,9 @@ The ip:port to send a message to. Use with 'action:send'.
 *mds action:permission uid:0xABA3.. trust:write*
 </details>
 
-<details><summary><strong>checkmode</strong><br></br>Show if a MiniDAPP is READ or WRITE mode</summary>
+<details><summary><strong>checkmode</strong><br></br>Show if this MiniDAPP is READ or WRITE mode</summary>
+
+Can be called from a MiniDapp to check whether it is in READ or WRITE mode.
 
 **Examples:**
 
@@ -643,6 +645,15 @@ The ip:port to send a message to. Use with 'action:send'.
 **Examples:**
 
 *checkpending uid:0xFF..*
+</details>
+
+<details><summary><strong>checkrestore</strong><br></br>Check if the system is restoring</summary>
+
+Check whether Minima is currently being restored, is shutting down and if shutdown is complete.
+
+**Examples:**
+
+*checkrestore*
 </details>
 
 ## Network
