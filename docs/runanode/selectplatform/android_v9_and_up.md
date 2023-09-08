@@ -8,14 +8,16 @@ sidebar_position: 1
 
 1. Install the Minima App on your Android device from the [Google Play store](https://play.google.com/store/apps/details?id=com.minima.android&hl=en&gl=US)
 2. Set your Google Play store settings to enable [auto-update](https://support.google.com/googleplay/answer/113412?hl=en) for the Minima app. 
+3. Open the Minima App and allow the battery settings for Minima to run in the background
+
+**Congratulations - your node is now installed & running!**
+
+Continue to [secure your node](#secure-your-node).
 
 :::note Don't have a Google Play account?
 The latest Android apk file can also be downloaded directly from Github [here.](https://github.com/minima-global/Minima/tree/master/jar) <br/>
 :::
 
-3. Open the Minima App and allow the battery settings for Minima to run in the background
-
-**Congratulations - your node is now installed & running!** Continue to [secure your node](#secure-your-node).
 <details><summary> <strong> Huawei,Redmi,ZTE Battery settings</strong> </summary>
 
 Please check the battery settings for the Minima app and ensure that **"Manage Automatically"** is **disabled**. This will ensure that Minima remains in sync and running in the background.<br/>
@@ -43,6 +45,43 @@ This is all done within the **Security MiniDapp.**
 
 ![security](/img/app/security.png#width10)
 
+Please see [Securing your node](/docs/runanode/securefunds) for detailed guidance.
+
+
+## Using Desktop Connect (Android)
+
+Android users can connect to their phone node from a computer that is connected to the same WiFi network. 
+
+1. Open Minima and find **Settings** 
+
+![settings](/img/app/settingsicon.png#width10)
+
+2. Select **Desktop Connect**
+3. If you have recently joined a WiFi network, refresh the URL
+4. From your computer's web browser, go to the URL shown
+
+![desktopconnect](/img/app/desktopconnect.png#width30)
+
+5. Accept the security warning shown 
+6. Enter the password shown to login 
+
+Voila! You can now use your node on your computer!
+
+### Set your own password
+
+To set your own password for Desktop Connect:
+
+1. Open the Minima app on your phone
+2. Tap at the top of the screen to show the MinimaOS title bar
+3. Tap on the 3 dots and select **Startup Params**
+4. Enter `-mdspassword yOurp@ssw0rdhere` to set your own password
+5. Select **Save**
+5. Tap at the top of the screen to show the MinimaOS title bar again
+6. Select **Shutdown** to restart Minima
+
+When you reopen Minima, go to **Settings > Desktop Connect** to confirm your password has been set.
+
+<!-- 
 ### How to view your 24 word seed phrase
 
 1. Open the **Security** MiniDapp
@@ -120,9 +159,9 @@ If you do not have a file, visit our Discord server or choose to restore without
 2. Select **Unlock private keys**
 3. Enter the password you used to lock your node
 
-Your private keys will be decrypted and you will be able to view your seed phrase and send funds without entering a password.
+Your private keys will be decrypted and you will be able to view your seed phrase and send funds without entering a password. -->
 
-## How to check the Status of your node
+<!-- ## How to check the Status of your node
 
 ![dappmenu](/img/app/HealthIcon.png#width10)
 
@@ -130,9 +169,9 @@ From the **Health** MiniDapp, you can:
 
 1. Check your **version** number
 2. Check your latest block and block time
-3. Check your node's full status
+3. Check your node's full status -->
 
-
+<!--
 ## Using MiniDapps
 
 Once your node running, you can use Minima's decentralized applications - **MiniDapps.** 
@@ -140,7 +179,7 @@ Once your node running, you can use Minima's decentralized applications - **Mini
 MiniDapps are simply zip files containing a web application that interacts with Minima. 
 
 Learn more about MiniDapps [here](/docs/learn/minidapps/minidappsintro) <br/>
-
+ 
 ### Installing MiniDapps
 
 MiniDapps can be shared or downloaded from our MiniDapp Store. Once downloaded onto your device, they can be installed onto your node. 
@@ -151,15 +190,9 @@ MiniDapps can be shared or downloaded from our MiniDapp Store. Once downloaded o
 
 ![dappmenu](/img/app/dappstore.png#width30)
 
-<!-- 2. Select **Minima Global** to open the official Minima DAPP Store 
-
-![dapppage](/img/app/dappstorepage.png#width40) -->
-
 2. Find the MiniDapp you would like to download and tap **Get**. 
 
 The MiniDapp will be downloaded to your phone's Downloads folder.
-
-<!-- ![downloaddapp](/img/app/getdapp.png#width40) -->
 
 #### Installing a MiniDapp
 
@@ -253,7 +286,7 @@ A Pending action will be triggered which must be approved from the **Pending Min
 3. Confirm the approval 
 
 ![longpress](/img/app/pendingapproved.png#width30)
-
+ -->
 
 
 

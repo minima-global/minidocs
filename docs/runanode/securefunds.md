@@ -1,8 +1,8 @@
 ---
-sidebar_position: 7
+sidebar_position: 6
 ---
 
-# Securing your funds
+# Securing your node
 
 Keeping your funds secure involves 
 
@@ -15,12 +15,12 @@ Keeping your funds secure involves
 
 **Immediately after starting your node,** write down your 24 word seed phrase and store it somewhere offline and safe. 
 
-The following functionality is using the Security MiniDapp from the MiniDapp hub.
+The following functionality can be found in the Security MiniDapp.
 
 ![dappmenu](/img/app/security.png#width10)
 
 
-## Seed Phrase
+## Write down your seed phrase
 
 <!-- **To view your 24 word Seed Phrase (Android)**
 1. From the menu on the Home page, select **Vault**
@@ -32,13 +32,15 @@ The following functionality is using the Security MiniDapp from the MiniDapp hub
 2. Type `vault` and press Enter
 3. Accept the pending command (if required) -->
 
-Your seed phrase will be required to restore your funds if you lose access to your node and do not have a valid backup.
+Your seed phrase will be required to restore your funds if you lose access to your node and do not have a backup.
 
 To view your 24 word seed phrase:
 
-1. Open the Security MiniDapp
-
-2. Select **Seed Phrase**
+1. Open the **Security** MiniDapp
+2. Select **Manage Seed Phrase**
+3. Ensure your node is unlocked
+4. Select **Show seed phrase**
+5. Grab a pen and paper and write down your Seed Phrase in the order specified  
 
 **Write down your seed phrase carefully, in the _correct order_ and store it in a safe place offline.**
 
@@ -52,99 +54,71 @@ It is also possible to view your seed phrase by running the `vault` command usin
 6. For large amounts, consider signing your transactions offline. To do this you will need to run a node on an offline device and one node on an online device. See [Cold Storage Solution](#cold-storage-solution).
 :::
 
-## Backups
 
-Using a backup is the fastest and most convenient way to restore your funds if you lose access to your node.
+## Lock your node
 
-Backups include your private keys and the proofs to your coins which must be recent (within 2 weeks) to ensure a successful restore.
+Locking your node ensures that if someone gets access to your node, your seed phrase is not accessible and your coins cannot be spent. Your seed phrase and private keys will be encrypted with the password you set.
 
+You will able to receive funds as normal but will need to unlock your node when transacting.
+
+You can unlock your node at any time with the same password.
+
+**To lock your node:**
+ 
+1. Ensure you have **taken note of your seed phrase** and are storing it somewhere safe.
+2. Open the Security MiniDapp
+3. Select **Lock private keys**
+4. Enter the same password twice
+
+:::important
+Your password should be over 12 characters and can use alphanumeric characters and the symbols provided. Do not use spaces.
+
+**It is NOT POSSIBLE to view/change this password once you have set it**, so make sure you write it down and store it somewhere secure - treat it in the same way that you would your seed phrase!
+
+**If you forget it, you will need to [restore from an Archive node](/docs/runanode/restorefunds#how-to-perform-a-seed-re-sync) using your 24 word seed phrase.**
+:::
+
+
+## Backup your node
+
+Using a backup is the fastest and most convenient way to restore your funds if you lose access to your node. 
 If you lose your device and do not have a valid backup, you will need to import your seed phrase.
 
+:::warning unlocked backups
+If your node is not locked, your backups will contain your seed phrase. Backups of unlocked nodes must be kept as safe as your seed phrase!
+:::
+
+If your node is locked, your seed phrase will remain encrypted in the backup. If you restore a locked backup your node will remain locked after restoring. 
 
 
-Consider locking your node before taking a backup, see [Locking your node](#locking-your-node).
+### How to take a backup
 
-
-### How to manually back up your node
-
-1. Open the Security MiniDapp
-
+1. Open the **Security** MiniDapp
 2. Select **Backup node**
+3. Set a **password** for the backup that will be required if you need to restore it (your password should be at least 12 characters and can use alphanumeric characters and the symbols provided. Do not use spaces.)
+4. A backup file will be created and you will be prompted to download and **choose a location** to save it.
 
-3. Set a name and password for the backup. You must remember or write down this password as it cannot be recovered once set. 
+:::important
+**Please note:**
+Your password will be required if you restore this backup at a later date, **it cannot be changed or recovered** so you must remember it!
+
+Once you have saved your backup file, we recommend you send it to a USB drive to keep it secure.
+:::
 
 ### How to enable auto backups
 
 1. Open the Security MiniDapp
-
 2. Select **Backup node**
-
 3. Enable auto backups
-
 4. Set a password for the auto backups. You must remember or write down this password as it cannot be recovered once set. 
 
-Backups will be taken every 48 hours. The latest 14 backups will be kept on the node. You should periodically download these backups and store them on a different device to your node.
+Backups will be taken every 24 hours. The latest 14 backups will be kept on the node. You should periodically download these backups and store them on a different device to your node.
 
 #### Points to remember 
 - Take regular backups
-- Consider locking your node before taking a backup - when restoring the backup, the node will remain locked. Note that the password used to lock the node can be different to the password used when taking the backup)
-- Regularly download your backups and store them on a different device to your node.
-
-<!-- For details on how to take a backup, select your platform of choice from the [Get Started](/docs/runanode/get_started) page and see the **FAQ** section. -->
-
-## Locking your node
-
-Locking your node ensures that if someone gets access to your node, your seed phrase is not accessible and your coins cannot be spent.
-
-You will able to receive funds as normal but will need to enter your password when transacting. 
-
-To lock your node:
-
-1. Open the **Security** MiniDapp
-
-2. Select **Lock node**
-
-3. Set a password for your node. You must remember or write down this password as there is no way to recover it if forgotten.
-
-
-<!-- 
-
-Your node stores your 24 word seed phrase which generates all your public and private keys.
-
-Your private keys are required for signing and executing transactions. If someone else gets access to your node, they may be able to view your seed phrase, putting your funds at risk!
-
-The Vault command can either ***encrypt*** or ***wipe*** your seed phrase and private keys, which can only be restored with a password or by entering your seed phrase. -->
-<!-- 
-### Private Keys Encryption
-
-Encrypting your private keys involves setting a Vault password so that you will not be able to spend funds without first decrypting your keys or by inserting your Vault password.
-
-You will still be able to receive funds as usual.
-
-You can decrypt your keys at any time with the same Vault password you used to encrypt them.
-
-:::important Vault password
-Your Vault password should use A-Z, a-z and 0-9 characters ONLY, do NOT use symbols. <br/>
-This password should be different to the password you use to access your MiniDapp system.
-
-**It is NOT POSSIBLE to view/change this password once you have set it**, so make sure you write it down and store it somewhere secure - treat it in the same way that you would your seed phrase!
-:::
-
-#### Android
-
-**To encrypt your private keys (Android):**
-> 
-> 1. Ensure you have **taken note of your seed phrase** and are storing it somewhere safe.
-> 2. Click on **Encrypt Private Keys**
-> 3. Enter the same password twice **(using A-Z, a-z, 0-9 characters only, **no symbols**)**
-> 
-> **If you forget it, you will need to restore from an Archive node using your 24 word seed phrase.**
-
-**To decrypt your keys (Android):**
-> 1. Click on **Decrypt Private Keys**
-> 2. Enter the password you used to encrypt your keys.
-> 
-> Your keys will be decrypted and you will be able to view your seed phrase and send funds without entering a password. -->
+- Consider locking your node before taking a backup - when restoring the backup, the node will remain locked
+- The password used to lock the node can be different to the password used for a backup
+- Regularly download your backups and store them on a different device to your node
 
 <details><summary> How to lock/unlock your node using the command line </summary>
 
@@ -154,17 +128,17 @@ This password should be different to the password you use to access your MiniDap
  2. Run the `vault` command
  
 ```
-vault action:passwordlock password:123abcXYZ
+vault action:passwordlock password:123@bcXYZM1n1m@
 ```
 
 Example:
 ```
- vault action:passwordlock password:123abcXYZ
+ vault action:passwordlock password:123@bcXYZM1n1m@
  {
   "command":"vault",
   "params":{
     "action":"passwordlock",
-    "password":"123abcXYZ"
+    "password":"123@bcXYZM1n1m@"
   },
   "status":true,
   "pending":false,
@@ -178,17 +152,17 @@ Your seed phrase is now encrypted and password protected.
 #### To unlock your node using commands:
 
 ```
-vault action:passwordunlock password:123abcXYZ!
+vault action:passwordunlock password:123@bcXYZM1n1m@
 ```
 
 Example:
 ```
-vault action:passwordunlock password:123abcXYZ!
+vault action:passwordunlock password:123@bcXYZM1n1m@
 {
   "command":"vault",
   "params":{
     "action":"passwordunlock",
-    "password":"123abcXYZ"
+    "password":"123@bcXYZM1n1m@"
   },
   "status":true,
   "pending":false,
@@ -200,13 +174,11 @@ Your seed phrase will be decrypted and your funds will no longer be password pro
 
 #### Transacting with a password locked node
 
-Some MiniDapps will prompt you to enter your password when attempting to transact with a locked node. 
-
-Equally you may transact directly from the Terminal minidapp using the `send` function with the password parameter.
+You may transact directly from the Terminal MiniDapp using the `send` function with the password parameter.
 
 Example:
 ```
-send password:123abcXYZ amount:5 address:MxG082FFHWG31QANAY66W2HK8CVGBRB3Z5RVTARY7T3Q75CGHB1A6CZH0B1KNDU
+send password:123@bcXYZM1n1m@ amount:5 address:MxG082FFHWG31QANAY66W2HK8CVGBRB3Z5RVTARY7T3Q75CGHB1A6CZH0B1KNDU
 ```
 
 This will sign and then execute the transaction, only unlocking the node for that single transaction. Once complete, the node will be locked again automatically.
@@ -230,11 +202,21 @@ Minima transactions require recent coin proofs of your funds and up-to-date data
 
 However, to create a truly secure solution it is imperative that the private keys are NEVER online EVER. This can be achieved by using an offline device to sign your transactions.
 
-This method involves: 
-1. initially creating your node on an offline device, 
+This setup involves: 
+1. Creating your node for the first time on an offline device, 
 2. wiping your private keys from the node,
-3. backing up and restoring the keyless backup to an online device 
-4. Creating and posting your transactions on your online device, and using your offline device to sign
+3. backing up and restoring the keyless backup to an online device,
+4. restoring the private keys to the offline device 
+5. locking the node with a password - this prevents you needing to input the seed phrase to unlock and sign your transactions.
+
+You will be able to see your wallet addresses and receive funds as normal on the online device.
+
+To transact:
+1. Create your transactions on your online device
+2. Export the transaction and transfer it to the offline device
+3. Sign the transaction on your offline device, providing the password used to lock the node
+4. Export the signed transaction and transfer it to the online device
+5. Post your transaction on your online device
 
 ### Setup
 

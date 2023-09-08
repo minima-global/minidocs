@@ -1,47 +1,30 @@
 ---
-sidebar_position: 5
+sidebar_position: 7
 ---
 
-# Using MiniDapps
+# Managing MiniDapps
 
-[MiniDapps](/docs/learn/minidapps/minidappsintro) are Minima's decentralized applications that run on your Minima node. 
+Once your node running, you can use Minima's decentralized applications - **MiniDapps.** 
+
+MiniDapps are simply zip files (.mds.zip) containing a web application that interacts with Minima. 
+
+Learn more about MiniDapps [here](/docs/learn/minidapps/minidappsintro) <br/>
 
 To use MiniDapps, you must be running a node with the MiniDapp system enabled and be logged in.
-
-*Note: Android nodes have MiniDapps enabled by default and there is no extra login step unless connecting to your node via your Desktop.*
-
+<!-- 
 :::tip
 All the latest MiniDapps can be downloaded from our official [MiniDapp site](https://minidapps.minima.global/) or from the **Dapp Store** MiniDapp installed on your node.
 :::
 
 :::note ANDROID USERS
 If running a node on Android, please see the [Using MiniDapps](/docs/runanode/selectplatform/android_v9_and_up#using-minidapps) section on the Android page instead. 
-:::
-
-## Login to Minima
-
-Please refer to the following guides to learn how to login to Minima:
-
-[Linux Server (Docker)](/docs/runanode/selectplatform/linux_vps#access-your-minidapp-hub)
-
-Windows
-- [Windows (Docker)](/docs/runanode/selectplatform/windows#access-your-minidapp-hub)
-- [Windows (Non-Docker)](/docs/runanode/selectplatform/manualnode#access-your-minidapp-hub)
-
-Mac
-- [Mac (Docker)](/docs/runanode/selectplatform/mac#access-your-minidapp-hub)
-- [Mac (Non-Docker)](/docs/runanode/selectplatform/manualnode#access-your-minidapp-hub)
-
-Linux Desktop
-- [Linux Desktop (Docker)](/docs/runanode/selectplatform/linux_desktop#access-your-minidapp-hub)
-- [Linux Desktop (Non-Docker)](/docs/runanode/selectplatform/manualnode#access-your-minidapp-hub)
+::: -->
 
 -------
 
 ## Installing MiniDapps
 
 1. Login to Minima and open the **Dapp Store** MiniDapp
-
 2. Download and save the MiniDapps you wish to use 
 
 *Alternatively, MiniDapps can be downloaded from our [MiniDapp site.](https://minidapps.minima.global/)*

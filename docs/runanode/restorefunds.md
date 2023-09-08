@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# Restoring a node
+# Restoring your node
 
 If you lose access to your node or you become out of sync with the chain, you can either:
 1. **Restore a backup** to a new or existing node
