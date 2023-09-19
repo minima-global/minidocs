@@ -88,14 +88,16 @@ If you access our Website or purchase our Services whilst abroad then your perso
 
 ## How we keep your information safe
 
-We have implemented security measures to prevent your personal data from being accidentally or illegally lost, used or accessed by those who do not have permission. These measures include:
+We have implemented security measures to prevent your personal data from being accidentally or illegally lost, used or accessed by those who do not have permission. 
 
-• access controls and user authentication
-• internal IT and network security
-• regular testing and review of our security measures
-• staff policies and training
-• incident and breach reporting processes
-• business continuity and disaster recovery processes
+These measures include:
+
+- access controls and user authentication
+- internal IT and network security
+- regular testing and review of our security measures
+- staff policies and training
+- incident and breach reporting processes
+- business continuity and disaster recovery processes
 
 If there is an incident that has affected your personal data and we are the controller, we will notify the regulator and keep you informed (where required under data protection law). Where we act as the processor for the affected personal data, we notify the controller and support them with investigating and responding to the incident.
 If you notice any unusual activity on the Website, please contact us at info@minima.global.

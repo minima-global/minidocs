@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# Maintaining your node
+# Maintain your node
 
 From time to time you should check on the status of your node to ensure it continues to run smoothly.
 

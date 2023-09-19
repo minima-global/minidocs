@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Securing your node
+# Secure your node
 
 Keeping your funds secure involves 
 

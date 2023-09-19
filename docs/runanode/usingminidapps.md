@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Managing MiniDapps
+# Manage your MiniDapps
 
 Once your node running, you can use Minima's decentralized applications - **MiniDapps.** 
 

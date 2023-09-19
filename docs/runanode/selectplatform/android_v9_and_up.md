@@ -12,7 +12,7 @@ sidebar_position: 1
 
 **Congratulations - your node is now installed & running!**
 
-Continue to [secure your node](#secure-your-node).
+Continue to [join the network](#joining-the-network) then [secure your node](#secure-your-node).
 
 :::note Don't have a Google Play account?
 The latest Android apk file can also be downloaded directly from Github [here.](https://github.com/minima-global/Minima/tree/master/jar) <br/>
@@ -33,6 +33,16 @@ To ensure that Minima continues to run as expected, please ensure that you have 
 
 </details>
 
+## Join the network
+
+The first time you install Minima, you will need to connect to the network before you can send or receive coins.
+
+To join the network, simply
+- ask someone else running Minima to share their connections with you, or
+- google search for **minimapeers.txt**
+
+Please see [Joining the network](/docs/runanode/jointhenetwork) to learn more.
+
 ## Secure your node 
 
 Before using your node for the first time, you should:
@@ -48,7 +58,7 @@ This is all done within the **Security MiniDapp.**
 Please see [Securing your node](/docs/runanode/securefunds) for detailed guidance.
 
 
-## Using Desktop Connect (Android)
+## Desktop Connect
 
 Android users can connect to their phone node from a computer that is connected to the same WiFi network. 
 
