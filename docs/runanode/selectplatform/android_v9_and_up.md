@@ -6,7 +6,10 @@ sidebar_position: 1
 
 ## Installing Minima
 
-1. Install the Minima App on your Android device from the [Google Play store](https://play.google.com/store/apps/details?id=com.minima.android&hl=en&gl=US)
+1. Install the Minima App on your Android device from the Google Play store.
+
+[![GooglePlay](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png#width20)](https://play.google.com/store/apps/details?id=com.minima.android)
+
 2. Set your Google Play store settings to enable [auto-update](https://support.google.com/googleplay/answer/113412?hl=en) for the Minima app. 
 3. Open the Minima App and allow the battery settings for Minima to run in the background
 
