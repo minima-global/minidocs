@@ -8,19 +8,12 @@ Minima can be installed as a desktop application, launched from a JNLP file, the
 
 1. Download and install [Open Web Start](https://openwebstart.com/download/) - the new updated version of Java Web Start, using the default options.
 
-2. Download the Minima JNLP file from the Launch button below, and open / double-click it, this will install as an application and update Minima automagically when you start it in future.
-
-[![JNLP](/img/runanode/jws-launch-button.png#width10)](https://www.spartacusrex.com/javaws/minima.jnlp) 
-
-:::note
-The JNLP should be opened automatically by Open Web Start and start your Minima node. If not, right click on the JNLP file in your downloads folder, choose 'Open With' then select **Open Web Start**.
-
-A desktop shortcut will be created for you and you will be shown a security warning, select **Run**.
-:::
-
+2. Download the Minima JNLP file from the Launch button below, and open / double-click it, this will install as an application and update Minima automagically when you start it in future.<br/>
+A desktop shortcut will be created for you and you will be shown a security warning, select **Run**.<br/><br/>
+[![JNLP](/img/runanode/jws-launch-button.png#width10)](https://www.spartacusrex.com/javaws/minima.jnlp) <br/><br/>
+*The JNLP should be opened automatically by Open Web Start and start your Minima node. If not, right click on the JNLP file in your downloads folder, choose 'Open With' then select **Open Web Start**.*
 
 3. Set Minima to start automatically when your PC starts by referring to [this guide.](https://support.microsoft.com/en-us/windows/add-an-app-to-run-automatically-at-startup-in-windows-10-150da165-dcd9-7230-517b-cf3c295d89dd)
-
 
 4. Set your own password - on the **Settings** tab, use the `-mdspassword` parameter in the **Advanced params** section, then close the window and restart the app for this to take effect. <br/><br/>
 ![JNLP](/img/runanode/custompw.png#width40)

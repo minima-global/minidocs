@@ -8,14 +8,14 @@ Minima can be installed as a desktop application, launched from a JNLP file, the
 
 1. Download and install [Open Web Start](https://openwebstart.com/download/) - the new updated version of Java Web Start, using the default options.
 :::note not sure which version to download?
-Click on the Apple icon in the top left corner of your Mac then click on “About This Mac”. If the processor says **Intel** select the **OpenWebStart_macos-x64** option, if you see **M1** or **M2**, select the **OpenWebStart_macos-aarch64** option.
+From the Apple icon in the top left of your Mac, select “About This Mac”. If the processor says **Intel**, choose the **OpenWebStart_macos-x64** option, if you see **M1** or **M2**, choose **OpenWebStart_macos-aarch64**.
 :::
 
 2. Download the JNLP file from the Launch button below, then from your downloads folder **Command+Right click** the minima.jnlp file and choose **Open With** , **Other...**, scroll to find **OpenWebStart** then check the **Always Open With** box, then select **Open**. If you don't do this, it will try to open Minima incorrectly with Java. <br/><br/>
 This will install Minima as an application and update automagically when you start it in future. <br/><br/>
 [![JNLP](/img/runanode/jws-launch-button.png#width10)](https://www.spartacusrex.com/javaws/minima.jnlp) <br/>
 
-3. Create a desktop shortcut for Minima if it was not created automatically. Right-click on the minima.jnlp file and select **Make Alias**, then drag the alias file to your desktop. You may also wish to move the original minima.jnlp file out of the downloads folder for safe keeping.
+3. Create a desktop shortcut for Minima if it was not created automatically. Right-click on the minima.jnlp file and select **Make Alias**, then drag the alias file to your desktop.
 
 4. Set Minima to start automatically when your Mac starts by referring to [this guide.](https://support.apple.com/en-gb/guide/mac-help/mh15189/14.0/mac/14.0)
 
