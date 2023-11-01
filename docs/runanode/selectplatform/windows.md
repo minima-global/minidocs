@@ -1,9 +1,39 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # Windows
 
+Minima can be installed as a desktop application, launched from a JNLP file, the Java Network Launch Protocol.
+
+1. Download and install [Open Web Start](https://openwebstart.com/download/) - the new updated version of Java Web Start, using the default options.
+
+2. Download the Minima JNLP file from the Launch button below, and open / double-click it, this will install as an application and update Minima automagically when you start it in future.
+
+[![JNLP](/img/runanode/jws-launch-button.png#width10)](https://www.spartacusrex.com/javaws/minima.jnlp) 
+
+:::note
+The JNLP should be opened automatically by Open Web Start and start your Minima node. If not, right click on the JNLP file in your downloads folder, choose 'Open With' then select **Open Web Start**.
+
+A desktop shortcut will be created for you and you will be shown a security warning, select **Run**.
+:::
+
+
+3. Set Minima to start automatically when your PC starts by referring to [this guide.](https://support.microsoft.com/en-us/windows/add-an-app-to-run-automatically-at-startup-in-windows-10-150da165-dcd9-7230-517b-cf3c295d89dd)
+
+
+4. Set your own password - on the **Settings** tab, use the `-mdspassword` parameter in the **Advanced params** section, then close the window and restart the app for this to take effect. <br/><br/>
+![JNLP](/img/runanode/custompw.png#width40)
+
+Once restarted, select **Launch MinimaOS** to access your node and login with your password.
+
+Congratulations on starting your node!
+
+After logging in for the first time, you will need to [Join the network](/docs/runanode/jointhenetwork). 
+
+**When shutting down your PC, please shutdown Minima first by closing the launcher window and waiting for the shutdown to complete. This ensures your node does not get corrupted by an unexpected shutdown.**
+
+<!-- 
 We will be using Docker software to make running a Minima node simple. 
 
 *We recommend Docker for ease of use and automatic updates for your node. However, if you experience issues with Docker, the [manual method](/docs/runanode/selectplatform/manualnode) is also available.*
@@ -61,7 +91,7 @@ This will be the password to access your Minidapp Hub.
 - `-d`: daemon mode, Minima will run in the background
 - `-e minima_mdspassword=INSERTPASSWORD` : sets the password for your MiniDapp system. **YOU MUST USE A SECURE PASSWORD USING UPPERCASE, LOWERCASE LETTERS AND NUMBERS ONLY**
 - `-e minima_desktop=true` : sets your node type as a desktop node that does not receive incoming connections 
-- `-v C:\Users\INSERTUSERNAME\minimadocker9001:/home/minima/data` : creates a local folder called **minimadocker9001** in your home directory and maps it to the **/home/minima/data** directory in Docker. The **minimadocker9001** folder is where the Minima database and is also where your backups will be stored.
+- `-v C:\Users\INSERTUSERNAME\minimadocker9001:/home/minima/data` : creates a local folder called **minimadocker9001** in your home directory and maps it to the /home/minima/data** directory in Docker. The **minimadocker9001** folder is where the Minima database and is also where your backups will be stored.
 - `-p 9001-9004:9001-9004` : the port number mapping from your desktop to the Docker container
 - `--restart unless-stopped` : ensures your container automatically restarts unless you stop it
 - `--name minima9001` : sets the name of your Minima container to minima9001
@@ -382,5 +412,5 @@ Check out our [MiniDapp store](https://minidapps.minima.global/) to stay up to d
 
 ### Need help?
 
-See [Using MiniDapps](/docs/runanode/usingminidapps) for more information or find us in [Discord](https://discord.gg/minima) or [Telegram](https://t.me/Minima_Global).
+See [Using MiniDapps](/docs/runanode/usingminidapps) for more information or find us in [Discord](https://discord.gg/minima) or [Telegram](https://t.me/Minima_Global). -->
 

@@ -2,36 +2,12 @@
 sidebar_position: 9
 ---
 
-# Presale
-
-import AddWMINIMA from '../../src/components/AddWMINIMA/index.js';
-
-The public presale has now ended. You can now claim your purchase or get your refund if you did not pass KYC.
-
-## How to claim your tokens
-
-### MetaMask 
-If you purchased via MetaMask, you can now claim your tokens from the [redeem page](https://livepresale.minima.global/redeem/).
-
-You will need to connect the same account you purchased with and add WMINIMA as a custom token in MetaMask to see your tokens. Click on the button below to add WMINIMA as a custom token automatically. 
-
-<AddWMINIMA/>
-
-### Switchere
-
-If you purchased through Switchere, your tokens will be available immediately in your wallet. 
-
-## How to get a refund
-
-If you did not successfully complete KYC, you can refund your USDT from the [refund page](https://livepresale.minima.global/refund/).
+# FAQ
 
 ## Where can I buy and sell WMINIMA? 
 
 You can buy and sell WMINIMA on [Bitfinex](https://trading.bitfinex.com/t/WMINIMA:USD), [MEXC](https://www.mexc.com/exchange/WMINIMA_USDT) or [Uniswap](https://app.uniswap.org/#/swap)
 
-## Still need help? 
-
-If you have any other issues related to KYC, please contact us via our [Contact page](https://www.minima.global/contact). 
 
 <!-- 
 Our public Presale is an opportunity to purchase Minima ahead of coin distribution.

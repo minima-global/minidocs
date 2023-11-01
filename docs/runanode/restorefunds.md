@@ -65,6 +65,63 @@ Once restarted, your seed phrase and coins will have been restored.
 
 Once restarted, your seed phrase and coins will have been restored.
 
+### Restore a backup via Terminal
+
+<details><summary> Expand for details </summary>
+
+There are 3 options for restoring a backup:
+
+**restore** : For backups less than 1 month old, restore the backup and use the network to catch up to the chain.
+**restoresync** : For backups older than 1 month, restore the backup and use an archive host to sync the latest blocks.
+**reset** : For backups older than 1 month, restore the backup and use an archive file to resync ALL blocks from genesis.
+
+If you locked your node before taking the backup that you are now restoring, your private keys will still be encrypted after restoring. 
+
+If successful, you will need to restart your node for the restore to take effect.
+
+**restore**
+
+```
+restore file: password:
+```
+
+**file:** the name of the backup to restore, e.g. mybackup.bak
+
+**password:** (optional) the password of the backup. Can be left blank if restoring a non password protected backup.
+
+**restoresync**
+
+```
+restoresync file: password: host:
+```
+
+**file:**
+    Specify the filename or local path of the backup to restore
+
+**password:** (optional)
+    The password of the backup. Can be left blank if restoring a non password protected backup.
+
+**host:** (optional)
+    ip:port of the archive node to sync from.
+
+
+**reset**
+
+```
+reset archivefile:archiveexport-jul23.gz action:restore file:backup-jul23.bak password:Longsecurepassword456
+```
+
+**archivefile:**
+    Specify the the archive gzip file. Should be recently exported from an archive node.
+
+**file:**
+    Specify the filename or local path of the backup to restore
+
+**password:** (optional)
+    (optional) the password of the backup. Can be left blank if restoring a non password protected backup. 
+
+</details>
+
 ## Chain re-sync
 
 Your coins will all be re-synced using the existing seed phrase.
@@ -99,13 +156,11 @@ Once complete, you will be on the correct tip block.
 Example using an archive file (recommended)
 ```
 archive action:import file:archive-export.gzip
-
 ```
 
 Example using an host
 ```
 archive action:resync file:xx.xxx.xx.xx:9001
-
 ```
 
 4. Press Enter

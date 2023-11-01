@@ -55,12 +55,12 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Mainnet',
-    link: 'docs/about/mainnetstatus',
+    title: 'Tokenomics',
+    link: 'docs/about/tokendistribution',
     icon: 'icons/mainnet_icon.svg',
     description: (
       <>
-        Check the latest updates as we transition from Testnet to Mainnet
+        Understand Minima's token allocation and distribution schedule.
       </>
     ),
   },

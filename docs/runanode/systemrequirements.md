@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# System Requirements
+# System requirements
 
 Minima is a lightweight blockchain that can be run on any Android device (version 9 or above), general purpose computer or server (VPS).
 
@@ -14,17 +14,17 @@ The following information is for Server or Desktop users.
 
 ### Standard full node
 
-**Processing:** 2 CPU <br/>
-**Memory:** 2GB RAM<br/>
-**Storage:** 2GB*
+**Processing:** 2 CPU (4 if using Docker) <br/>
+**Memory:** 2GB RAM (4GB if using Docker) <br/>
+**Storage:** 2GB (4GB if using Docker)*
 
 *High MiniDapp usage may require higher availability of Storage
 
 
 ### Archive node
 
-**Processing:** 2 CPU <br/>
-**Memory:** 4GB RAM<br/>
+**Processing:** 2 CPU (4 CPU if using Docker) <br/>
+**Memory:** 4GB RAM <br/>
 **Storage:** 5GB*
 
 *This may change over time.
@@ -32,7 +32,7 @@ The following information is for Server or Desktop users.
 GPU is not necessary
 
 ## Ports used
-By default, Minima uses ports **9001-9005**, although an alternate 5-port range can be chosen by specifying a different main port on start up e.g. 8001.
+By default, Minima reserves ports **9001-9005**, although an alternate 5-port range can be chosen by specifying a different main port on start up e.g. 8001.
 
 If specifying a different main port e.g. 8001, the port range used will be the next consecutive 4 ports. e.g 8001-8005.
 
@@ -42,41 +42,46 @@ If specifying a different main port e.g. 8001, the port range used will be the n
 
 **9003 TCP** (or main port +2): MiniDapp System (MDS) Web Server
 
-**9004 TCP** (or main port +3): MiniDapp System (MDS) Command server 
+**9004 TCP** (or main port +3): No longer used after v 1.0.37
 
 **9005 TCP** (or main port +4) : JSON-RPC over HTTP
 
 Desktop nodes are not required to configure any port forwarding to use Minima.
 
-### Inbound connections on server nodes:
-
-**9001**: Server nodes should accept inbound connections on port 9001 (or other specified main port). 
-If this port is open, your node will be able to receive incoming connections, acting as a relay node. 
-If your inbound connection is closed, your node will only make outgoing connections.
-
-**9002**: Closed 
-
-**9003**: Must be open to use the MiniDapp System (MDS) outside of the server, otherwise can be closed to inbound connections.
-
-**9004**: Must be open to use the MiniDapp System (MDS) outside of the server, otherwise can be closed to inbound connections. 
-
-**9005**: The RPC Port must **ALWAYS be closed** to inbound connections
-
 
 ### Recommended Firewall settings (VPS users)
 
-#### Docker users
+**If using Docker to run your node on a VPS, you must not rely on UFW as your firewall, Docker will overwrite UFW firewall rules. You must use your VPS provider's firewall manager.**
 
-<!-- Docker will overwrite UFW firewall rules, so i -->
-If running Minima on a server with an external IP you must ensure:
+After configuring your firewall, you should check they are enforced as expected. 
 
-1. Inbound connections are denied by default
-2. Your MDS password is long and secure, using a combination of lowercase, uppercase letters numbers and symbols 
-2. If enabling RPC, you have used the correct start up parameters for your ports and set a password on your RPC connection 
+#### Ingress
 
-Follow the guidance on the [Linux (Docker)](/docs/runanode/selectplatform/linux_vps) page for the correct configuration.
+All inbound connections should be denied by default.
 
-#### Non-Docker users
+**22 tcp** : allow all 
+
+Allows ssh access to the server, optionally only allow this from your home IP address.
+
+**9001 tcp**: allow all 
+
+If this port is open, your node will be able to receive incoming connections, acting as a relay node. 
+If your inbound connection is closed, your node will only make outgoing connections.
+
+**9003 tcp**: allow only from your home IP address 
+
+You may need to update this if your home IP is dynamic. Alternatively you can allow from anywhere but your login screen will be public facing, so your login password must be long and secure, using a combination of lowercase, uppercase letters numbers and symbols.
+
+**9002 tcp**: deny all
+
+**9004 tcp**: deny all 
+
+**9005 tcp**: deny all 
+
+If you wish to enable RPC, ensure this is only allowed from your home IP address.
+
+<!-- 
+<details> <summary> UFW setup - NOT FOR DOCKER USERS </summary>
 
 Assuming a new server with nothing else installed and that Minima will be installed on the default ports 9001-9005:
 
@@ -147,3 +152,5 @@ If you install Minima on custom ports, ensure the correct ports are open/closed.
 :::
 
 For more information about ufw, see [here.](https://wiki.debian.org/Uncomplicated%20Firewall%20%28ufw%29)
+
+</details> -->

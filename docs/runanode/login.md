@@ -4,18 +4,22 @@ sidebar_position: 6
 
 # Login to Minima
 
-Please refer to the guide for your platform of choice:
 
-**Docker nodes**
-- [Windows (Docker)](/docs/runanode/selectplatform/windows#access-your-minidapp-hub)
-- [Mac (Docker)](/docs/runanode/selectplatform/mac#access-your-minidapp-hub)
-- [Linux Server (Docker)](/docs/runanode/selectplatform/linux_vps#access-your-minidapp-hub)
-- [Linux Desktop (Docker)](/docs/runanode/selectplatform/linux_desktop#access-your-minidapp-hub)
+## Desktop
 
-**Manual nodes**
-- [Manual nodes](/docs/runanode/selectplatform/manualnode#access-your-minidapp-hub)
+If you are using the JNLP on desktop, simply click on the `Launch MinimaOS` button or go to https://127.0.0.1:9003/ in your web browser. If you have any trouble logging in, close the window and restart Minima. 
 
-## Using Desktop Connect (Android)
+Similarly, if using docker desktop go to https://127.0.0.1:9003/ 
+
+If you installed Minima on a different port to 9001, your login page can be accessed from this base port +2. 
+
+## Server
+
+Access your login screen by going to https://YourserverIP:9003/
+
+**We recommend configuring your server's firewall to only having the mds port (9003) accessible from your home IP address.**
+
+## Android - Desktop connect
 
 Android users can connect to their phone node from a computer that is connected to the same WiFi network. 
 
@@ -23,7 +27,7 @@ Android users can connect to their phone node from a computer that is connected 
 
 ![settings](/img/app/settingsicon.png#width10)
 
-2. Select **Desktop Connect**
+2. Select **Desktop connect**
 3. If you have recently joined a WiFi network, refresh the URL
 4. From your computer's web browser, go to the URL shown
 

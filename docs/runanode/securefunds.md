@@ -7,9 +7,9 @@ sidebar_position: 7
 Keeping your funds secure involves 
 
 1. Keeping the device your node is running on secure
-2. Writing down your [seed phrase](#seed-phrase)
-3. [Backing up](#backups) your node
-4. [Locking your node](#locking-your-node) with a password
+2. Writing down your [seed phrase](#write-down-your-seed-phrase)
+3. [Locking your node](#lock-your-node) with a password
+4. [Backing up](#backup-your-node) your node
 
 **Before starting your node,** ensure your device is not accessible by anyone other than you and if running on a desktop or server, ensure you have configured your ports correctly.
 
@@ -66,9 +66,8 @@ You can unlock your node at any time with the same password.
 **To lock your node:**
  
 1. Ensure you have **taken note of your seed phrase** and are storing it somewhere safe.
-2. Open the Security MiniDapp
-3. Select **Lock private keys**
-4. Enter the same password twice
+2. Open the Security MiniDapp and select **Lock private keys**
+3. Enter the same password twice
 
 :::important
 Your password should be over 12 characters and can use alphanumeric characters and the symbols provided. Do not use spaces.
@@ -77,48 +76,6 @@ Your password should be over 12 characters and can use alphanumeric characters a
 
 **If you forget it, you will need to [restore from an Archive node](/docs/runanode/restorefunds#how-to-perform-a-seed-re-sync) using your 24 word seed phrase.**
 :::
-
-
-## Backup your node
-
-Using a backup is the fastest and most convenient way to restore your funds if you lose access to your node. 
-If you lose your device and do not have a valid backup, you will need to import your seed phrase.
-
-:::warning unlocked backups
-If your node is not locked, your backups will contain your seed phrase. Backups of unlocked nodes must be kept as safe as your seed phrase!
-:::
-
-If your node is locked, your seed phrase will remain encrypted in the backup. If you restore a locked backup your node will remain locked after restoring. 
-
-
-### How to take a backup
-
-1. Open the **Security** MiniDapp
-2. Select **Backup node**
-3. Set a **password** for the backup that will be required if you need to restore it (your password should be at least 12 characters and can use alphanumeric characters and the symbols provided. Do not use spaces.)
-4. A backup file will be created and you will be prompted to download and **choose a location** to save it.
-
-:::important
-**Please note:**
-Your password will be required if you restore this backup at a later date, **it cannot be changed or recovered** so you must remember it!
-
-Once you have saved your backup file, we recommend you send it to a USB drive to keep it secure.
-:::
-
-### How to enable auto backups
-
-1. Open the Security MiniDapp
-2. Select **Backup node**
-3. Enable auto backups
-4. Set a password for the auto backups. You must remember or write down this password as it cannot be recovered once set. 
-
-Backups will be taken every 24 hours. The latest 14 backups will be kept on the node. You should periodically download these backups and store them on a different device to your node.
-
-#### Points to remember 
-- Take regular backups
-- Consider locking your node before taking a backup - when restoring the backup, the node will remain locked
-- The password used to lock the node can be different to the password used for a backup
-- Regularly download your backups and store them on a different device to your node
 
 <details><summary> How to lock/unlock your node using the command line </summary>
 
@@ -184,6 +141,69 @@ send password:123@bcXYZM1n1m@ amount:5 address:MxG082FFHWG31QANAY66W2HK8CVGBRB3Z
 This will sign and then execute the transaction, only unlocking the node for that single transaction. Once complete, the node will be locked again automatically.
 
 The above solution is more secure than an unprotected node but the wallet is still effectively hot as it is connected to the internet and should not be used to store large amounts of funds.
+</details>
+
+## Backup your node
+
+Using a backup is the fastest and most convenient way to restore your funds if you lose access to your node. 
+If you lose your device and do not have a valid backup, you will need to import your seed phrase.
+
+:::warning unlocked backups
+If your node is not locked, your backups will contain your seed phrase. Backups of unlocked nodes must be kept as safe as your seed phrase!
+:::
+
+If your node is locked, your seed phrase will remain encrypted in the backup. If you restore a locked backup your node will remain locked after restoring. 
+
+
+### How to take a backup
+
+1. Open the **Security** MiniDapp and select **Backup node**
+2. Set a **password** for the backup that will be required if you need to restore it (your password should be at least 12 characters and can use alphanumeric characters and the symbols provided. Do not use spaces.)
+3. A backup file will be created and you will be prompted to download and **choose a location** to save it.
+
+:::important
+**Please note:**
+Your password will be required if you restore this backup at a later date, **it cannot be changed or recovered** so you must remember it!
+
+Once you have saved your backup file, we recommend you send it to a USB drive to keep it secure.
+:::
+
+### How to enable auto backups
+
+1. Open the **Security** MiniDapp and select **Backup node**
+2. Enable auto backups
+3. Set a password for the auto backups. You must remember or write down this password as it cannot be recovered once set. 
+
+Backups will be taken every 24 hours. The latest 14 backups will be kept on the node. You should periodically download these backups and store them on a different device to your node.
+
+#### Points to remember 
+- Take regular backups
+- Consider locking your node before taking a backup - when restoring the backup, the node will remain locked
+- The password used to lock the node can be different to the password used for a backup
+- Regularly download your backups and store them on a different device to your node
+
+
+<details><summary> How to backup your node using the command line </summary>
+
+#### To backup node using commands:
+
+
+
+```
+backup password: (optional) file: (optional) auto: (optional)
+```
+
+:::note backup parameters
+**password:** set a long secure password for your backup, this will be required when restoring it
+
+**file:** backup name / path
+
+**auto:** **true** or **false**. Will set the backup to repeat every 24 hours.
+
+:::
+
+Setting `auto:true` will backup your node every 24 hours however these backups cannot be password protected so we recommend locking your node first. To password protect your auto backups, you must use the Security minidapp.
+
 </details>
 
 <!-- ## Multi-sig coin

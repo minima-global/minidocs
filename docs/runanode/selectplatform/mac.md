@@ -1,9 +1,36 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # Mac
 
+Minima can be installed as a desktop application, launched from a JNLP file, the Java Network Launch Protocol.
+
+1. Download and install [Open Web Start](https://openwebstart.com/download/) - the new updated version of Java Web Start, using the default options.
+:::note not sure which version to download?
+Click on the Apple icon in the top left corner of your Mac then click on “About This Mac”. If the processor says **Intel** select the **OpenWebStart_macos-x64** option, if you see **M1** or **M2**, select the **OpenWebStart_macos-aarch64** option.
+:::
+
+2. Download the JNLP file from the Launch button below, then from your downloads folder **Command+Right click** the minima.jnlp file and choose **Open With** , **Other...**, scroll to find **OpenWebStart** then check the **Always Open With** box, then select **Open**. If you don't do this, it will try to open Minima incorrectly with Java. <br/><br/>
+This will install Minima as an application and update automagically when you start it in future. <br/><br/>
+[![JNLP](/img/runanode/jws-launch-button.png#width10)](https://www.spartacusrex.com/javaws/minima.jnlp) <br/>
+
+3. Create a desktop shortcut for Minima if it was not created automatically. Right-click on the minima.jnlp file and select **Make Alias**, then drag the alias file to your desktop. You may also wish to move the original minima.jnlp file out of the downloads folder for safe keeping.
+
+4. Set Minima to start automatically when your Mac starts by referring to [this guide.](https://support.apple.com/en-gb/guide/mac-help/mh15189/14.0/mac/14.0)
+
+5. Set your own password - on the **Settings** tab, use the `-mdspassword` parameter in the **Advanced params** section, then close the window and restart the app for this to take effect. <br/><br/>
+![JNLP](/img/runanode/custompw.png#width40)
+
+Once restarted, select **Launch MinimaOS** to access your node and login with your password.
+
+Congratulations on starting your node!
+
+When logging in for the first time, you will need to [Join the network](/docs/runanode/jointhenetwork). 
+
+**When shutting down your Mac, please shutdown Minima first by closing the launcher window and waiting for the shutdown to complete. This ensures your node does not get corrupted by an unexpected shutdown.**
+
+<!-- 
 We will be using Docker software to make running a Minima node simple.
 
 Once your node is set up, you will be able to use Minima's decentralized applications.
@@ -44,7 +71,7 @@ docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_desktop=true -v ~/m
 - `-d`: daemon mode, Minima will run in the background
 - `-e minima_mdspassword=INSERTPASSWORD` : sets the password for your MiniDapp system. **YOU MUST USE A SECURE PASSWORD TO PROTECT YOUR NODE**
 - `-e minima_desktop=true` : sets your node type as a desktop node that does not receive incoming connections 
-- `-v ~/minimadocker8001:/home/minima/data` : creates a local folder called **minimadocker8001** in your home directory and maps it to the **/home/minima/data** directory in Docker. The **minimadocker8001** folder is where the Minima database and is also where your backups will be stored.
+- `-v ~/minimadocker8001:/home/minima/data` : creates a local folder called **minimadocker8001** in your home directory and maps it to the /home/minima/data** directory in Docker. The **minimadocker8001** folder is where the Minima database and is also where your backups will be stored.
 - `-p 8001-8004:9001-9004` : the port number mapping from your desktop to the Docker container
 - `--restart unless-stopped` : ensures your container automatically restarts unless you stop it
 - `--name minima8001` : sets the name of your Minima container to minima8001
@@ -370,4 +397,4 @@ Check out our [MiniDapp store](https://minidapps.minima.global/) to stay up to d
 ### Need help?
 
 See [Using MiniDapps](/docs/runanode/usingminidapps) for more information or find us in [Discord](https://discord.gg/minima) or [Telegram](https://t.me/Minima_Global).
-
+ -->

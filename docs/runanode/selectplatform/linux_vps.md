@@ -1,82 +1,26 @@
 ---
-sidebar_position: 2
+sidebar_position: 5
 ---
 
 # Linux VPS (Docker)
 
-We will be using Docker software to make running a Minima node simple.
-
-If you prefer not to use Docker, you can create a script to run [Minima as a service](/docs/runanode/selectplatform/linuxvpsservice).
-
-Once your node is set up, you will be able to use Minima's decentralized applications.
+We will be using Docker software to make running a Minima node simple. If you prefer not to use Docker, you can create a script to run [Minima as a service](/docs/runanode/selectplatform/linuxvpsservice).
 
 :::note What is Docker?
 Docker is an open-source software platform that simplifies the process of running, testing and managing applications. 
 It uses the operating system of the computer on which it’s installed to provide an independent computing environment for an application to run on.
 ::: 
 
-<!-- ## Setup your Firewall 
+## Setup your Firewall 
 
-By default Minima is installed on ports 9001-9005. Only ports 9001,9003,9004 need to be open to use Minima and the MiniDapp system. 
+**If using Docker to run your node on a VPS, you must not rely on UFW as your firewall, Docker will overwrite UFW firewall rules. You must use your VPS provider's firewall manager.**
 
-**The RPC Port (default 9005) must never be opened to incoming connections**
+After configuring your firewall, you should check they are enforced as expected. 
 
-:::warning custom ports
-If you install Minima on custom ports, ensure the correct ports are open/closed.
-:::
-
-For more information, see [System Requirements.](/docs/runanode/systemrequirements)
-
-For help on setting up your firewall, see [Recommended Firewall settings](/docs/runanode/systemrequirements#recommended-firewall-settings) -->
+For more information, see [System Requirements.](/docs/runanode/systemrequirements#recommended-firewall-settings-vps-users)
 
 ## Start a new Minima node
 
-### Remove nodes installed using the old script
-
-If you were a user during Testnet and previously setup a node as a service using the script provided by us, you need to remove these nodes before starting a node using Docker. 
-
-If you are a new user, continue to [Start your node](#start-your-node).
-
-<details><summary>How to remove a node previously installed using our script</summary>
-
-1. Logon to your server as a non root user with sudo (admin) rights.
-
-:::tip Check running nodes
-To check which nodes you currently have running, use the command `systemctl list-units --type=service`. 
-:::
-
-![VPS_checknodes](/img/runanode/docker_vps_2checkoldnodes.png#width50)
-
-2. To remove nodes which were installed using our install script, run the uninstall script below (all one line).
-
-```sudo wget -O minima_remove.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_remove.sh && sudo chmod +x minima_remove.sh && sudo ./minima_remove.sh -p 9001 -x```
-
-<!--- ![VPS_removenodes](/img/runanode/docker_vps_3removeoldnodes.png#width50) --->
-
-:::tip Multiple nodes?
- If you started multiple nodes, run the uninstall script for each node changing the port number each time.
-:::
-
-3. Remove all existing folders: 
-```
-sudo rm -r /home/minima/
-```
-<!--- ![VPS_removefolder](/img/runanode/docker_vps_5removefolder.png#width50) --->
-
-4. Delete the existing minima user: 
-```
-sudo userdel minima
-```
-:::note
-If there is an *“unable to delete minima user, minima user using process xxxxxxx”* error, please reboot the server, log back in as root  then do `userdel minima` immediately on login.
-:::
-
-<!---![VPS_removeuser](/img/runanode/docker_vps_6removeuser.png#width50)--->
-
-If you are having problems and Minima is the only application on your server, please start with a fresh instance of your server and continue to [Start your node](#start-your-node).
-</details>
-
-### Start your node
 1. Log on as a non root user with sudo (admin) rights and add a new minima user, set a password and leave the remaining fields as default : 
 ```
 sudo adduser minima
@@ -126,32 +70,28 @@ su - minima
 ```
 ![VPS_switchuser](/img/runanode/docker_vps_14switchuser.png#width50)
 
-10. Start your node:
+10. Start the container for your node:
 
 :::important SET YOUR PASSWORD
-Make sure to change the password below from `INSERTPASSWORD` to a long password using A-Z, a-z and 0-9 characters only.<br/>
-This will be the password to access your Minidapp Hub.
+Set your password below to at least 12 characters using alphanumeric characters and symbols.
 :::
 
 ```
 docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_server=true -v ~/minimadocker9001:/home/minima/data -p 9001:9001 -p 127.0.0.1:9003:9003 --restart unless-stopped --name minima9001 minimaglobal/minima:latest
 ```
 
-:::note What do all the parameters mean?
+<details><summary>What do all the parameters mean?</summary>
+-d: daemon mode, Minima will run in the background <br/><br/>
+-e minima_mdspassword=IN$ERTPA$$WORD : sets the password to login to your node.<br/><br/>
+-e minima_desktop=true : sets your node type as a desktop node that does not receive incoming connections <br/><br/>
+-v ~/minimadocker9001:/home/minima/data : creates a local folder called minimadocker9001 in your home directory and maps it to the /home/minima/data directory in Docker. The minimadocker9001 folder is where the Minima database and is also where your backups will be stored.<br/><br/>
+-p 9001-9003:9001-9003 : the port number mapping from your desktop to the Docker container<br/><br/>
+--restart unless-stopped : ensures your container automatically restarts unless you stop it<br/><br/>
+--name minima9001 : sets the name of your Minima container to minima9001<br/><br/>
+minimaglobal/minima:latest : specifies the Minima docker image<br/><br/>
+</details>
 
-- `-d`: daemon mode, Minima will run in the background
-- `-e minima_mdspassword=INSERTPASSWORD` : sets the password for your MiniDapp system. **YOU MUST USE A LONG SECURE PASSWORD USING UPPERCASE, LOWERCASE LETTERS AND NUMBERS ONLY**
-- `-e minima_server=true` : sets your node type as a server node that receives incoming connections
-- `-v ~/minimadocker9001:/home/minima/data` : creates a local folder called **minimadocker9001** in your home directory and maps it to the **/home/minima/data** directory in Docker. The **minimadocker9001** folder is where the Minima database and is also where your backups will be stored.
-- `-p 9001-9004:9001-9004` : the port number mapping from your server to the Docker container
-- `--restart unless-stopped` : ensures your container automatically restarts unless you stop it
-- `--name minima9001` : sets the name of your Minima container to minima9001
-- `minimaglobal/minima:latest` : specifies where to pull the Minima code from
-:::
-
-#### Optional start up parameters
-
-<details><summary>Expand to see full list of start up parameters</summary>
+<details><summary>Optional additional startup parameters</summary>
 
 The following start up parameters can optionally be specified when starting your Docker node. 
 
@@ -167,6 +107,7 @@ As long as you use the same minimadocker8001 folder, your previous node will be 
 - `-e minima_isclient=true` : Tells the P2P System that this node can't accept incoming connections<br/>
 - `-e minima_server=true` : Use Server settings - this node can accept incoming connections<br/>
 - `-e minima_desktop=true` : Use Desktop settings - this node can't accept incoming connections<br/>
+- `-e minima_connect=ip:port` : Disable the automatic P2P system and create your own network by manually connecting to this list of host:port<br/>
 
 #### MiniDapp System (mds)
 - `-e minima_mdsenable=true/false` : enable the MiniDapp System (default port 9003). Enabled by default.<br/>
@@ -215,7 +156,7 @@ This will show all running and stopped (Exited) containers.
 
 Next, access your MiniDapp hub and secure your node.
 
-## Access your MiniDapp hub
+## Login to your node
 
 The first time accessing your MiniDapp hub, you may need to pass through the security warning - see below - as the MiniDapp system uses self-signed certificates.
 
@@ -223,17 +164,11 @@ The first time accessing your MiniDapp hub, you may need to pass through the sec
 
 Click on **Advanced**, then **Proceed**. Or in Google Chrome, you may have to click anywhere on the page and type `thisisunsafe` to proceed. Details for other browsers can be found [**here**](https://www.vultr.com/docs/how-to-bypass-the-https-warning-for-self-signed-ssl-tls-certificates/).<br/>
 
-:::info trouble accessing MDS?
-If you are having trouble accessing https://YourServerIP:9003/, please first go to https://YourServerIP:9004/ and accept the security warning. Then return to https://YourServerIP:9003/.
-:::
-
-You will see your MiniDapp System (MDS) login page. 
-
 ![mds_login](/img/runanode/mds_login.png#width50)
 
-3. Enter your password to login, if you don't remember, you can check [here](#how-to-check-your-minidapp-system-password).
+2. Enter your password to login, if you don't remember, you can check [here](#how-to-check-your-login-password).
 
-4. You will see your MiniDapp hub!
+You will see your MiniDapp hub!
 
 ## Secure your node 
 
@@ -273,7 +208,7 @@ Remove listed containers: `docker rm minima9001 minima8001 minima7001`<br/>
 Help: `docker --help`<br/>
 
 ------
-
+<!-- 
 ### How to check the Status of your node
 1. Log on to your MiniDapp hub and open the Minima Terminal minidapp.
 
@@ -290,8 +225,8 @@ Consider cross checking your latest block with another node or checking the `sam
 If the time shown is significantly behind, you should restart your node to resync to the chain. <br/> 
 If you have been offline for a long time or do not have a recent backup you may need to perform a [**chain resync**](/docs/runanode/restorefunds#from-desktopserver-using-the-terminal) from an Archive node.
 :::
-------
-
+------ -->
+<!-- 
 ### How to take a backup of your node
 
 Before backing up your node, consider encrypting your private keys. For more information, see [Vault](/docs/runanode/securefunds#vault).
@@ -321,9 +256,8 @@ Your backups will go to the **minimadocker9001** folder in your home directory.
 **file:** (optional) backup name 
 
 **auto:** (optional) **true** or **false**. Will set the backup to repeat every 24 hours. 
-:::
-
-------
+::: -->
+<!-- 
 
 ### How to restore your node from a backup
 
@@ -354,13 +288,10 @@ If successful, you will need to log out/log in from your Minima hub for the rest
 :::warning
 If you encrypted your private keys before taking the backup that you are now restoring, your private keys will still be encrypted and you will be required to decrypt them or enter your Vault password when sending funds
 ::: 
+ -->
 
-------
 
-
-### How to check your MiniDapp System password
-
-To check your MiniDapp system password, you will need to temporarily enable RPC (Remote Procedure Call) to access your node via the Docker Command Line Interface, without logging into the MiniDapp hub. 
+### How to check your login password
 
 1. Logon to your server as the **minima** user
 2. Access your docker container 
@@ -420,7 +351,7 @@ RPC will be disabled the next time your docker container is updated to a new ver
 
 ------
 
-### How to change your MiniDapp System password
+### How to change your login password
 
 To change the password to login to your MiniDapp System (MDS), you must stop and remove your **minima9001** container and restart it with a different password. 
 
@@ -433,13 +364,13 @@ docker stop minima9001
 docker rm minima9001
 ```
 
-3. Repeat step 10 from [Start your node](#start-your-node), with a different password.  **Your password should be long using A-Z, a-z, 0-9 only.**
+3. Repeat step 10 from [Start your node](#start-your-node), with a different password.  **Your password should be at least 12 characters using alphanumeric characters and symbols.**
 
 :::important
 Deleting the container will not delete the `minimadocker9001` data folder so your coins will be safe during this process.
 
 When starting the new container, you must use the same `minimadocker9001` folder to ensure your coins and data are restored.
-::: -->
+:::
 
 
 -------
@@ -451,48 +382,54 @@ To run a second node in Docker, you can create another container using different
 
 1. To create a node on port 8001:
 
->docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_server=true -v ~/**minimadocker8001**:/home/minima/data -p **8001-8004**:9001-9004 --restart unless-stopped --name **minima8001** minimaglobal/minima:latest
+```
+docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_server=true -v ~/minimadocker8001:/home/minima/data -p 8001-9003:9001-9003 --restart unless-stopped --name minima8001 minimaglobal/minima:latest
+```
 
-2. To access your MiniDapps on the second node, go to https://YourServerIP:8003/ (8003 instead of 9003) and repeat the steps in [Access your MiniDapp hub](#access-your-minidapp-hub).
+To login to your node, go to https://YourServerIP:8003/ 
 
 ------
 
 ### How to start a test node as a developer
-To create a private test node from Genesis on ports 10001-10004, use the following start up command:
 
-> ```docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_server=true -e minima_genesis=true -e minima_test=true -e minima_nop2p=true -v ~/minimadocker10001_dev:/home/minima/data -p 10001-10004:9001-9004 --restart unless-stopped --name minima10001_dev minimaglobal/minima:latest```
+To create a private test node from Genesis on ports 10001-10003, use the following start up command.
 
-:::note test parameters
+```
+docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_server=true -e minima_genesis=true -e minima_test=true -e minima_nop2p=true -v ~/minimadocker10001_dev:/home/minima/data -p 10001-10003:9001-9003 --restart unless-stopped --name minima10001_dev minimaglobal/minima:latest
+```
+<details><summary> Test parameters </summary>
 The additional test parameters used are:
 
-`-p 10001-10004:9001-9004` : Local ports 10001-10004 will be forwarded to 9001-9004 on Docker. <br/>
-You can change 10001-10004 to another set of unused ports however the Docker ports must remain as 9001-9004.
+`-p 10001-10003:9001-9003` : Local ports 10001-10003 will be forwarded to 9001-9003 on Docker. <br/>
+You can change 10001-10003 to another set of unused ports however the Docker ports must remain as 9001-9003.
 
 `-e minima_genesis=true` : Start a node from the Genesis block<br/>
 
 `-e minima_test=true` : Use test parameters e.g. blocks are automined and block times are faster<br/>
 
 `-e minima_nop2p=true` : Do not start the p2p system<br/>
-:::
+</details>
 
 ### How to enable RPC (advanced users)
 
 :::warning
-If enabling RPC by opening the 9005 port, you must ensure you use the following additional parameters and set an RPC password for connecting over RPC on the start up line.
-```
--e minima_rpcpassword=INSERTRPCPASSWORD -p 9001-9004:9001-9004 -p 127.0.0.1:9005:9005
-```
-You will only be able to use RPC commands if SSH'd into the server.
+Only enable RPC if you understand the risks and have appropriate firewalls in place to prevent unauthorised access to your node!
 :::
+
+If enabling RPC by opening the 9005 port, use the following additional parameters and set an RPC password for connecting over RPC on the start up line. You will only be able to use RPC commands if SSH'd into the server.
+
+```
+-e minima_rpcpassword=INSERTRPCPASSWORD -p 9001-9003:9001-9003 -p 127.0.0.1:9005:9005
+```
 
 Example:
 ```
-docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_rpcpassword=INSERTRPCPASSWORD -e minima_server=true -v ~/minimadocker9001:/home/minima/data -p 9001-9004:9001-9004 -p 127.0.0.1:9005:9005 --restart unless-stopped --name minima9001 minimaglobal/minima:latest
+docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_rpcpassword=INSERTRPCPASSWORD -e minima_server=true -v ~/minimadocker9001:/home/minima/data -p 9001-9003:9001-9003 -p 127.0.0.1:9005:9005 --restart unless-stopped --name minima9001 minimaglobal/minima:latest
 ```
 
 On a second node running on ports 8001-8005, this would be: 
 ```
-docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_rpcpassword=INSERTRPCPASSWORD -e minima_server=true -v ~/minimadocker8001:/home/minima/data -p 8001-8004:9001-9004 -p 127.0.0.1:8005:9005 --restart unless-stopped --name minima8001 minimaglobal/minima:latest
+docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_rpcpassword=INSERTRPCPASSWORD -e minima_server=true -v ~/minimadocker8001:/home/minima/data -p 8001-9003:9001-9003 -p 127.0.0.1:8005:9005 --restart unless-stopped --name minima8001 minimaglobal/minima:latest
 ```
 
 #### RPC commands
@@ -598,14 +535,6 @@ sudo rm -rf minimadocker9001
 ```
 
 ----------------
-
-## Next Steps
-
-Once your node running, see [Using MiniDapps](/docs/runanode/usingminidapps) to start using Minima's decentralized applications!
-
-### Stay up to date
-
-Check out our [MiniDapp store](https://minidapps.minima.global/) to stay up to date with the latest MiniDapps.
 
 ### Need help?
 

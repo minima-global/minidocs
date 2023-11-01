@@ -93,11 +93,6 @@ const config = {
             position: "left",
           },
           {
-            to: "docs/about/mainnetstatus/",
-            label: "Mainnet Status",
-            position: "left",
-          },
-          {
             href: "https://www.minima.global/our-community",
             label: "Community",
             position: "right",

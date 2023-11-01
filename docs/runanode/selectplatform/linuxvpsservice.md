@@ -1,14 +1,10 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 # Linux VPS (as a Service)
 
-Installing Minima as a background process with SystemD is an alternative to using Docker.
-
-SystemD is a daemon server that enables applications to run as background processes. 
-
-Once your node is set up, you will be able to use Minima's decentralized applications.
+Installing Minima as a background process with SystemD is an alternative to using Docker. SystemD is a daemon server that enables applications to run as background processes. 
 
 The following instructions assume your server is using **Debian OS with no existing installations.**
 
@@ -183,16 +179,7 @@ You must now finish setting up your firewall rules.
 
 ## Finish firewall setup 
 
-By default, Minima uses ports 9001-9005. 
-
-- Port 9001 should be open to inbound (ingress) traffic from anywhere. This allows any other Minima node to initiate a connection to your node.
-- Port 9002 should remain **closed** to inbound traffic (currently not used)
-- Ports 9003 and 9004 should only be opened to your home IP address for accessing Minima and the MiniDapp system. 
-- Port 9005 should remain **closed** - this is the RPC port which can be used to communicate with your node!
-
-:::warning custom ports
-If you install Minima on custom ports, ensure the correct ports are open/closed.
-:::
+By default, Minima uses ports 9001-9005. Please refer to the [recommended firewall settings](/docs/runanode/systemrequirements#recommended-firewall-settings-vps-users)
 
 If using Uncomplicated Firewall (UFW), expand the instructions below.
 
@@ -213,18 +200,12 @@ You can find your home IP address by going to [ipchicken](https://ipchicken.com/
 ```
 sudo ufw allow from xx.xx.xx.xx to any port 9003
 ```
-```
-sudo ufw allow from xx.xx.xx.xx to any port 9004
-```
 
 
 or to allow connections to your MiniDapp system from anywhere. **This will expose your login screen publicly.**
 
 ```
 sudo ufw allow in 9003
-```
-```
-sudo ufw allow in 9004
 ```
 
 3. Enable the firewall
@@ -239,122 +220,22 @@ y
 You are now ready to use Minima!
 
 
-## Access your MiniDapp hub
+## Login to your node
 
-The first time accessing your MiniDapp hub, you may need to pass through the security warning as the MiniDapp system uses self-signed certificates.
+The first time accessing your MiniDapp hub, you may need to pass through the security warning as the MiniDapp system uses self-signed certificates. Learn how [here](https://www.vultr.com/docs/how-to-bypass-the-https-warning-for-self-signed-ssl-tls-certificates/).
 
-1. Go to **https://YourServerIP:9003/** in your web browser
-
-Click on **Advanced**, then **Proceed**. Or in Google Chrome, you may have to click anywhere on the page and type `thisisunsafe` to proceed. Details for other browsers can be found [**here**](https://www.vultr.com/docs/how-to-bypass-the-https-warning-for-self-signed-ssl-tls-certificates/).<br/>
-
-:::info trouble accessing MDS?
-If you are having trouble accessing https://YourServerIP:9003/, please first go to https://YourServerIP:9004/ and accept the security warning. Then return to https://YourServerIP:9003/.
-:::
-
-You will see your MiniDapp System (MDS) login page. 
+1. Go to **https://YourServerIP:9003/** in your web browser, you will see your login screen. 
 
 ![mds_login](/img/runanode/mds_login.png#width50)
 
-3. Enter your password to login, if you don't remember, you can check [here](#how-to-check-your-minidapp-system-password).
+2. Enter your password to login, if you don't remember, you can check [here](#how-to-check-your-minidapp-system-password).
 
-4. You will see your MiniDapp hub!
+**After logging in for the first time, you will need to [join the network](/docs/runanode/jointhenetwork) and [secure your node](/docs/runanode/securefunds).**
 
-------
-## Secure your node 
-
-Before using your node for the first time, you should:
-
-1. Write down your Seed Phrase
-2. Take a backup
-3. Lock your node to encrypt your private keys
-
-Please visit the [Secure your Node](/docs/runanode/securefunds) page to learn how. 
 
 -------
 
-### How to check the Status of your node
-
-To check the status of your node, you can either use the Minima RPC Client or log on to your MiniDapp hub and open the Minima Terminal minidapp.
-
-With the Minima Terminal open, run the `status` command to see the latest status of your node including version, last block and chain details.
-
-![VPS_dockerterminal](/img/runanode/docker_vps_terminalstatus.png)
-
-:::info checking your node is in sync
-Having a recent block time is not a guarantee that you are on the right chain. <br/>
-Consider cross checking your latest block with another node or checking the `samechain` response of your Maxima Contacts by running the `maxcontacts` command.
-:::
-
-:::warning 
-If the time shown is significantly behind, you should restart your node to resync to the chain. <br/> 
-If you have been offline for a long time or do not have a recent backup you may need to perform a [**chain resync**](/docs/runanode/restorefunds#from-desktopserver-using-the-terminal) from an Archive node.
-:::
-------
-
-### How to take a backup of your node
-
-Before backing up your node, consider encrypting your private keys. For more information, see [Vault](/docs/runanode/securefunds#vault).
-
-1. Start the Minima RPC Client or login to your Minima Hub at https://yourserverIP:9003/ and open the Terminal MiniDapp
-2. Enter the `backup` command with a password containing **uppercase, lowercase letters and numbers only**
-
-```
-backup password: 
-```
-:::warning
-This password cannot be retrieved at a later date, so remember it or write it down somewhere secure.
-:::
-
-####  Auto backups
-You can create automatic backups every 24 hours however these backups cannot be password protected so we recommend encrypting your private keys before enabling auto backups.
-
-```
-backup auto:true
-```
-Your backups will go to the base directory you specified in your Minima service script (/home/minima)
-
-:::note backup parameters
-**password:** set a password for your backup **uppercase, lowercase letters and numbers only**, this will be required when restoring it
-
-**file:** (optional) backup name 
-
-**auto:** (optional) **true** or **false**. Will set the backup to repeat every 24 hours. 
-:::
-
-------
-
-### How to restore your node from a backup
-
-Your backup must be in your minima base folder (the /home/minima directory or as specified at start up).
-
-1. Start the Minima RPC Client or login to your Minima Hub at https://yourserverIP:9003/ and open the Terminal MiniDapp
-2. Enter the `restore` or `restoresync` command, completing the parameters
-
-The `restore` command will restore your backup and then attempt to catch up to the top block by syncing from your peers. If your backup is older than 1 month, we recommend using `restoresync` instead. 
-```
-restore file: password:
-```
-
-The `restoresync` command will restore your backup and then attempt to catch up to the top block by syncing from a default archive node. If your backup is not recent, `restoresync` may be more effective for ensuring your node returns to the top block.
-
-```
-restoresync file: password:
-```
-:::note restore parameters
-**file:** the name of the backup to restore, e.g. mybackup.bak
-
-**password:** (optional) the password of the backup. Can be left blank if restoring an auto backup or non password protected backup.
-:::
-
-If successful, you will need to log out/log in from your Minima hub for the restore to take effect.
-
-:::warning
-If you encrypted your private keys before taking the backup that you are now restoring, your private keys will still be encrypted and you will be required to decrypt them or enter your Vault password when sending funds
-::: 
-
--------
-
-### How to check your MiniDapp System password
+### How to check your login password
 
 If you forgot the password you set in step 7 above, you can check the password you set in the minima.service file.
 

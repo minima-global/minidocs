@@ -52,7 +52,7 @@ Some of the types of contracts possible:
 
 Each token has a separate script that must also return TRUE when attempting to spend a UTxO. 
 
-A token by default has RETURN TRUE as it's script. This token structure is added to any transaction wishing to use that token so every user can know how many, what scripts, name etc of the Token is correct and valid.
+A token by default has RETURN TRUE as its script. This token structure is added to any transaction wishing to use that token so every user can know how many, what scripts, name etc of the Token is correct and valid.
 
 **Both the coin address script and the token script must return TRUE.**
 

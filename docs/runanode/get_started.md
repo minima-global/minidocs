@@ -2,21 +2,16 @@
 sidebar_position: 1
 ---
 
-# Get Started
+# Get started
 
-Running a Minima node couldn't be easier; to start your node, check out the [Quick Start](/docs/runanode/quickstart) guide. 
-
-Alternatively, for detailed guidance, select your platform of choice:
+Check out our [Quick Start](/docs/runanode/quickstart) guide, or alternatively, for detailed guidance, select your platform of choice:
 
 - [Android](/docs/runanode/selectplatform/android_v9_and_up)<br/>
 - Linux Server (VPS): choose [Docker](/docs/runanode/selectplatform/linux_vps) or a [Script](/docs/runanode/selectplatform/linuxvpsservice) setup
 - [Windows](/docs/runanode/selectplatform/windows)
 - [Mac](/docs/runanode/selectplatform/mac)
-- [Linux Desktop](/docs/runanode/selectplatform/linux_desktop)
-
-### Stay up to date
-
-Check out our [MiniDapp store](https://minidapps.minima.global/) to stay up to date with the latest MiniDapps.
+- [Docker Desktop](/docs/runanode/selectplatform/dockerdesktop)
+- [Desktop Command Line](/docs/runanode/selectplatform/manualnode)
 
 ### Need help?
 

@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Desktop (Manual method)
+# Desktop Command Line
 
 :::note Please Note
 The following process is for running a Minima node manually. You must leave your desktop running at all times for Minima to continue running and must update your node manually when new versions become available.
@@ -132,7 +132,7 @@ Please visit the [Secure your Node](/docs/runanode/securefunds) page to learn ho
 
 ---------
 
-## Access your MiniDapp Hub
+## Login to your node
 
 The first time accessing your MiniDapp hub, you may need to pass through the security warning - see below - as the MiniDapp system currently uses self-signed certificates.
 
@@ -140,18 +140,9 @@ The first time accessing your MiniDapp hub, you may need to pass through the sec
 Note that **9003** is the default port for accessing your MiniDapp system - if you installed Minima on custom ports, you will need to use your custom base port + 2. E.g. If you installed Minima on 8001, you will need to use **https://127.0.0.1:8003/**
 :::
 
-**Windows/Linux Desktop** 
+Go to **https://127.0.0.1:9003/** in your web browser. You may have to proceed past the security warning, since Minima uses self-signed certificates. Learn how [**here**](https://www.vultr.com/docs/how-to-bypass-the-https-warning-for-self-signed-ssl-tls-certificates/).
 
-- Go to **https://127.0.0.1:9003/** in your web browser (Firefox is not supported)
-- Click on **Advanced**, then **Proceed**. Or in Google Chrome, you may have to click anywhere on the page and type `thisisunsafe` to proceed. Details for other browsers can be found [**here**](https://www.vultr.com/docs/how-to-bypass-the-https-warning-for-self-signed-ssl-tls-certificates/).
-
-**Mac** 
-
-- In Safari, go to **https://127.0.0.1:9004/**, click on **Show Details** then **Visit this website**
-- Go to **https://127.0.0.1:9003/** and repeat, you should see the MiniDapp System login page
-- Close **https://127.0.0.1:9004/**
-
-You will see your MiniDapp System (MDS) login page. 
+You will see the login page to your node.
 
 ![mds_login](/img/runanode/mds_login.png#width50)
 
@@ -232,18 +223,14 @@ The `status` command will show details of your node including version, last bloc
 :::info checking your node is in sync
 Having a recent block time is not a guarantee that you are on the right chain. <br/>
 Consider cross checking your latest block with another node or checking the `samechain` response of your Maxima Contacts by running the `maxcontacts` command.
-:::
 
-:::warning 
-If the time shown is significantly behind, you should restart your node to resync to the chain. <br/> 
-If you have been offline for a long time or do not have a recent backup you may need to perform a [**chain resync**](/docs/runanode/restorefunds#from-desktopserver-using-the-terminal) from an Archive node.
+If the time shown is significantly behind, you should restart your node to resync to the chain. If it doesn't catch up automatically, youu may need to perform a [**chain resync**](/docs/runanode/restorefunds#chain-re-sync) from an Archive node.
 :::
 
 **Other useful commands:**<br/>
 `mds` - find the password for your node<br/>
 `help` - show all commands
 
-------
 
 ## How to update your node
 
@@ -259,68 +246,6 @@ e.g. java -jar C:\Users\Username\Downloads\minima.jar -mdsenable -clean
 :::
 
 
-------
-
-## How to take a backup of your node
-
-Before backing up your node, consider encrypting your private keys. For more information, see [Vault](/docs/runanode/securefunds#vault).
-
-1. Login to your Minima Hub 
-2. Open the Terminal MiniDapp
-3. Enter the `backup` command with a password containing **uppercase, lowercase letters and numbers only**
-
-```
-backup password: 
-```
-
-###  Auto backups
-You can create automatic backups every 24 hours however these backups cannot be password protected so we recommend encrypting your private keys before enabling auto backups.
-```
-backup auto:true
-```
-Your backups will go to your default home directory.
-
-:::note backup parameters
-**password:** set a password for your backup **uppercase, lowercase letters and numbers only**, this will be required when restoring it
-
-**file:** (optional) backup name 
-
-**auto:** (optional) **true** or **false**. Will set the backup to repeat every 24 hours.
-:::
-
-------
-
-## How to restore your node from a backup
-
-1. Login to your Minima Hub 
-2. Open the Terminal MiniDapp
-3. Enter the `restore` or `restoresync` command, completing the parameters
-
-The `restore` command will restore your backup and then attempt to catch up to the top block by syncing from your peers. If your backup is older than 1 month, we recommend using `restoresync` instead. 
-```
-restore file: password:
-```
-
-The `restoresync` command will restore your backup and then attempt to catch up to the top block by syncing from a default archive node. If your backup is not recent, `restoresync` may be more effective for ensuring your node returns to the top block.
-
-```
-restoresync file: password:
-```
-
-:::note restore parameters
-**file:** the name and file path of the backup to restore, e.g. C:\Users\Minima\mybackup.bak
-
-**password:** (optional) the password of the backup. Can be left blank if restoring an auto backup or non password protected backup.
-:::
-
-If successful, you will need to log out/log in from your Minima hub for the restore to take effect.
-
-:::warning
-If you encrypted your private keys before taking the backup that you are now restoring, your private keys will still be encrypted and you will be required to decrypt them or enter your Vault password when sending funds
-::: 
-
----------
-
 ## How to remove your node
 :::important
 **Removing a node without taking a backup will delete all your coins! Only remove a node if you have taken a backup or are running a test node.**
@@ -330,14 +255,8 @@ If you encrypted your private keys before taking the backup that you are now res
 2. Delete the minima.jar file you downloaded
 3. (Optional) Remove the minima database files located in your home directory (you may need to show hidden files)
 
-----------------
 
 ## Next Steps
 
-Once your node running, see [Using MiniDapps](/docs/runanode/usingminidapps) to start using Minima's decentralized applications!
-
-Learn more:<br/>
-
-[What are MiniDapps?](/docs/learn/minidapps/minidappsintro) <br/>
-[Download the latest MiniDapps](https://minidapps.minima.global/) <br/>
+Once your node running, you will need to [join the network](/docs/runanode/jointhenetwork) and [secure your node](/docs/runanode/securefunds).
 
