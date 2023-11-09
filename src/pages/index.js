@@ -11,7 +11,7 @@ function HomepageHeader() {
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">Welcome to the {siteConfig.themeConfig.navbar.title}</h1>
-        <h2>Learn all you need to know about Minima</h2>
+        <h2>Learn all there is to know about Minima</h2>
       </div>
     </header>
   );

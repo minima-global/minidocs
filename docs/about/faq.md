@@ -4,10 +4,19 @@ sidebar_position: 9
 
 # FAQ
 
+import AddWMINIMA from '../../src/components/AddWMINIMA/index.js';
+
 ## Where can I buy and sell WMINIMA? 
 
 You can buy and sell WMINIMA on [Bitfinex](https://trading.bitfinex.com/t/WMINIMA:USD), [MEXC](https://www.mexc.com/exchange/WMINIMA_USDT) or [Uniswap](https://app.uniswap.org/#/swap)
 
+
+## How do I see WMINIMA in Metamask?
+
+WMINIMA needs to be added as a custom token in MetaMask before you can view your balance. 
+If you have Metamask enabled on this browser page, click on the button below to add it automatically. 
+
+<AddWMINIMA/>
 
 <!-- 
 Our public Presale is an opportunity to purchase Minima ahead of coin distribution.

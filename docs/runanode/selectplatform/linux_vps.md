@@ -471,7 +471,7 @@ Each request will also require your server password.
 To use your Docker CLI, you must add your RPC password:
 
 ```
-docker exec -it minima -password YOURRPCPASSWORD
+docker exec -it minima9001 minima -password YOURRPCPASSWORD
 ```
 
 <!-- :::warning

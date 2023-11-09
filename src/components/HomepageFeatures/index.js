@@ -60,7 +60,7 @@ const FeatureList = [
     icon: 'icons/mainnet_icon.svg',
     description: (
       <>
-        Understand Minima's token allocation and distribution schedule.
+        Understand Minima's token allocation and distribution schedule
       </>
     ),
   },
