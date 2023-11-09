@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Maxima Contacts
+# Contacts
 
 Your Maxima Contacts are your friends, family or other connections that you wish to communicate with, peer-to-peer, without a centralised third-party being able to manage, collect or intercept your messages.
 

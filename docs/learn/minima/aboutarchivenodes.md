@@ -4,8 +4,6 @@ sidebar_position: 11
 
 # Archive nodes
 
-*Only available from Mainnet (v1.0) onwards*
-
 ## Overview
 
 All Minima nodes have a **txpow database** and an **archive database**.

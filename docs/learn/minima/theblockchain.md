@@ -18,14 +18,18 @@ Diagram: Cascading Chain + TxPoW tree (Blockchain)
 
 If a TxPoW unit becomes a block (TxBlock), it will be added to the blockchain and become a node in the TxPoW tree. The TxPoW Tree Node provides the structure required to hold the TxBlock in the tree. 
 
+<details><summary> <strong> TxPoW tree node attributes </strong> </summary>
+
 Every TxPoW Tree Node has the following attributes:
 
-| TxPoW Tree Node Attribute | Description | Type/Size |
-| :------------------------ | :---------- | :-------- |
-| TxBlock | A syncblock representing this node | TxBlock |
-| MMR Set | The MMR (with blocktime, entry number, and entries) can be constructed from the TxBlock | MMR | 
-| Coins | ALL The Coins - both spent and unspent | ArrayList&#60;Coins&#62; |
-| RelevantMMRCoins | The Coins that are relevant to THIS USER | ArrayList&#60;MMREntryNumber&#62; |
+**TxBlock:** A syncblock representing this node
+
+**MMR Set:** The MMR (with blocktime, entry number, and entries) can be constructed from the TxBlock
+
+**Coins:** Array of all The Coins - both spent and unspent
+
+**RelevantMMRCoins:** Array of MMR entry numbers for the Coins that are relevant to THIS USER 
+</details>
 
 ## TxPoW Tree
 
@@ -47,7 +51,7 @@ Proof-of-Work is provided, in the form of electric energy, by all users running 
 1. Mines their transaction before forwarding to peers
 2. Mines a ‘Pulse’ TxPoW before forwarding to peers
 
-### Attributes of the Cascading Chain: 
+### Attributes
 
 1. The Cascading Chain consists of 32 levels (0-31), with a maximum of 128 blocks at each level.
 2. The Cascading Chain grows logarithmically, as each level is twice as difficult to achieve as the previous level.
@@ -55,7 +59,8 @@ Proof-of-Work is provided, in the form of electric energy, by all users running 
 4. The Cascading Chain is unbroken. Each block in the Cascade references its previous super parent block in the Cascade.
 5. At 100 block intervals, the heaviest chain (consisting of all levels in the Cascade and the heaviest branch) is processed and the Cascading Chain is updated. 
 
-### Definitions:
+
+<details><summary> <strong> Terminology </strong> </summary>
 
 **Block Difficulty Target:** A system set parameter influencing the average number of hashes required for the network to mine a block every 50 seconds (or as close to). The higher the difficulty, the more PoW (energy) required to mine a block.
 
@@ -76,6 +81,7 @@ The Cascade does not include the TxPoW tree and has no branches.
 **Current Weight:** The base weight multiplied by a factor dependant on the level in the Cascade the block is currently positioned in, such that Current Weight = Base weight * 2 <sup>Current level no.</sup>.
 
 **Branch:** The main chain (TxPoW Tree) starts at the tip of the Cascade and consists of the most recent 1024 blocks which have not yet been committed to the Cascade. If, due to network latency, two blocks with the same block number are found, there may be multiple branches off the main chain.
+</details>
 
 **Diagram of the Cascading Chain at a point in time**
 
@@ -85,7 +91,9 @@ Diagram: Cascading Chain and Main chain
 
 ![The Blockchain](/img/blockchain/cascadingChain2Lm.svg#gh-light-mode-only)![The Blockchain](/img/blockchain/cascadingChain2Dm.svg#gh-dark-mode-only)
 
-The corresponding Cascading Chain in the Minima Terminal. Actual output of **printtree cascade:true** (using Test parameters of 2 blocks at each level and a default weight of 1000)
+<details><summary> <strong> printtree command output </strong> </summary>
+
+The corresponding Cascading Chain to the image above, in the Minima Terminal. Actual output of **printtree cascade:true** (using Test parameters of 2 blocks at each level and a default weight of 1000)
 
 ```
     "command":"printtree", 
@@ -150,12 +158,9 @@ Where:
 
 `119839 [0/0] 0x0000012767305A327C2F1B4E8F729B64AACFEFA932443156604E7B6EC845BA3C txns:0 weight:1.412993E+7/1.412993E+7 @ Wed Jan 26 16:24:40 GMT 2022`
 
-### Attributes 1-3:
-> *The Cascading Chain consists of 32 levels (0-31), with a maximum of 128 blocks at each level.* <br/>
+</details>
 
-> *The Cascading Chain grows logarithmically, as each level is twice as difficult to achieve as the previous level.*<br/>
-
-> *Over time, the cumulative sum of the PoW (the ‘weight’) recorded in the Cascading Chain will tend towards the weight of the chain that would have existed had no blocks been pruned.*
+### Super levels, growth & weight 
 
 **Difficulty levels in the Cascading chain** 
 
@@ -208,9 +213,7 @@ For Levels 0-30:
 - There are half as many Level L+1 Super Blocks as Level L
 - The sum of the difficulty of Level L+1 Super Blocks =The sum of the difficulty of Level L Super Blocks
 
-### Attribute 4:
-
->*The Cascading Chain is unbroken. Each block in the Cascade references its previous super parent block in the Cascade.*
+### How super blocks are connected 
 
 In every block, there exists a header which contains a reference (hash) to a parent at every existing Super level in the Cascade.
 
@@ -229,12 +232,11 @@ The resulting output is that all super blocks in the Cascade will have an immuta
 1. Their immediate previous block in the Cascade
 2. Previous super blocks in the Cascade which have different maximum levels to their immediate previous super parent.
 
-**Terminal output showing Super Parent references**
+<details><summary> <strong> Terminal output showing Super Parent references </strong> </summary>
 
-Minima command: **txpow txpowid:**[insertTxPoWID]
+Using the command `txpow txpowid:insertTxPoWID`, we can see the full details of the TxPoW including its Super Parents.
 
-The above command will show for the given block, the full details of the TxPoW including its Super Parents.<br />
-*Example (cropped) showing 5 Super Parents of this block at levels 4, 11, 14, 16, 18 and the genesis block.*
+*Example showing 5 Super Parents of this block at levels 4, 11, 14, 16, 18 and the genesis block (cropped).*
 
 ```
 txpow txpowid:Ox0000001062CF8287735998368D9828D0DAC6B158D596507F6A41F46E40F946F0 
@@ -305,9 +307,10 @@ txpow txpowid:Ox0000001062CF8287735998368D9828D0DAC6B158D596507F6A41F46E40F946F0
             "txn":{
                 "inputs":[], 
 ```
-### Attribute 5:
 
->*At 100 block intervals, the heaviest chain (consisting of all levels in the Cascade and the heaviest branch in the TxPoW Tree) is processed and the Cascading Chain is updated. *
+</details>
+
+### Updating the cascade
 
 Once the main chain (heaviest branch) reaches 1124 (1024 + 100) blocks in length, the cascading process begins.
 

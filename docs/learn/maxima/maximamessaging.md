@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 ---
-# Maxima Messaging
+# Messaging
 
 ## Maxima Hosts 
 
