@@ -2,21 +2,23 @@
 sidebar_position: 12
 ---
 
-# Run an Archive node
+# Run an archive node
 
 *Only available from Mainnet (v1.0) onwards*
 
-To learn more about archive nodes, please see the [Archive nodes](/docs/learn/minima/aboutarchivenodes) page.
+To learn more about archive nodes, please see the [archive nodes](/docs/learn/minima/aboutarchivenodes) page.
 
 ## System Requirements
 
-Anyone can run an Archive node from Android, desktop or server.
+Anyone can run an archive node from Android, desktop or server.
 
 
 ### Minimum Hardware Requirements
 
+The following assumes that only Minima is running on the server, you should consider increasing the RAM and storage depending on the requirements for other software you install e.g. virus protection etc
+
 **Processing:** 2 CPU <br/>
-**Memory:** 2GB RAM<br/>
+**Memory:** 4GB RAM<br/>
 **Storage:** 5GB*
 
 *This may change over time.
@@ -26,17 +28,17 @@ Anyone can run an Archive node from Android, desktop or server.
 Archive nodes wishing to run as a service must be open to inbound connections on port 9001 (or the main custom Minima port you have chosen).
 
 
-## Starting an Archive Node
+## Starting an archive Node
 
-When you start an Archive node, you will start storing the archive data from that point onwards, therefore you can only re-sync coins for users that are created after this point.
+When you start an archive node, you will start storing the archive data from that point onwards, therefore you can only re-sync coins for users that are created after this point.
 
-It is possible to run an Archive node from the Genesis block if you either start your Archive node within 2 months of the Genesis block or by doing a chain re-sync for your Archive node off an Archive node that was started at Genesis.
+It is possible to run an archive node from the Genesis block if you either start your archive node within 2 months of the Genesis block or by doing a chain re-sync for your archive node off an archive node that was started at Genesis.
 
 
-### Manual Archive node (desktop)
-To start a Minima Archive node manually, you need to add the `-archive` parameter to the start up command. 
+### Manual archive node (desktop)
+To start a Minima archive node manually, you need to add the `-archive` parameter to the start up command. 
 
-If you have an existing node that you wish to change to an Archive node, you can `quit` your current node from the Terminal and restart the same node, adding in the archive parameter on the start up line.<br/> It is always a good idea to take a backup of your node before stopping it. 
+If you have an existing node that you wish to change to an archive node, you can `quit` your current node from the Terminal and restart the same node, adding in the archive parameter on the start up line.<br/> It is always a good idea to take a backup of your node before stopping it. 
 
 
 #### Examples 
@@ -55,19 +57,19 @@ sudo java -jar /home/INSERTUSERNAME/minima.jar -mdsenable -archive
 ```
 
 :::important
-If you used the `-data` parameter to specify a data folder when starting your existing node, you must make sure you start the Archive node using the same data folder you chose originally.
+If you used the `-data` parameter to specify a data folder when starting your existing node, you must make sure you start the archive node using the same data folder you chose originally.
 :::
 
-### Docker Archive node
+### Docker archive node
 
-To start a Minima Archive node container, you need to add the `-e minima_archive=true` environment variable to the start up command. 
+To start a Minima archive node container, you need to add the `-e minima_archive=true` environment variable to the start up command. 
 
 If you originally started your node without the `-e minima_archive=true` environment variable, you can either:
-- start a new separate container for your Archive node,
+- start a new separate container for your archive node,
 - backup your existing node, the restore it to a new archive container you create, 
 - backup your existing node, then stop and remove your existing Minima container and start a new Minima container including `-e minima_archive=true`, using the **SAME** data folder as your old node e.g. minimadocker9001 or minimadocker8001
 
-#### Examples: Starting a new Archive node
+#### Examples: Starting a new archive node
 
 #### Linux VPS
 ```
@@ -87,14 +89,18 @@ docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_desktop=true -e min
 ```
 
 
-## How to check your Archive data
+## Check your archive data
 
-From the Terminal MiniDapp or Docker CLI, you can check the integrity of your Archive data by running the command:
+From the Terminal MiniDapp or Docker CLI, you can check the integrity of your archive data by running the command:
+
+This checks your archive data for missing or broken blocks and tells you the first block you can sync from. If there is an error, you will need to re-sync from another archive node.
 
 ```
 archive action:integrity
 ```
-Example
+
+<details> <summary> Example output </summary>
+
 ```
 archive action:integrity
 {
@@ -115,25 +121,40 @@ archive action:integrity
 }
 ```
 
-This checks your archive data for missing or broken blocks.
+</details>
 
-If there is an error, you will need to re-sync from another Archive node.
+## Export your archive data to a file
 
+You can export your archive data to a .gzip file that can be used for resyncing a node with the [reset](/docs/runanode/terminal_commands#backup) command (to either chain re-sync, import seed phrase or restore a backup with chain re-sync).
 
-## MySQL Archive Exports
+```
+archive action:export file:archiveexport-ddmmyy.gzip
+```
+
+## MySQL workbench exports
  
-It is possible to export your node's archive database to an external MySQL database for offline storage. 
+It is possible to export your node's archive blocks to an external MySQL database for storage. 
 
-Using a MySQL database to hold a backup of your archive db means you can:
-- export the data from MySQL database to an SQL file;
-- import the SQL file to another MySQL database;
-- perform a chain or seed re-sync from the MySQL database for any Minima node (if made publicly available)
+Using a MySQL database to hold a backup of your archive data means you can:
+- update the MySQL db with the archive blocks from your node
+- chain or seed re-sync directly from the MySQL database for any Minima node (if made publicly available);
+- export the archive blocks from MySQL to a .dat or .gzip file to be shared for re-syncing purposes;
+- execute SQL queries on all coins since the Genesis block (NEW for v 1.0.39);
+- export the tables from MySQL to a SQL file;
+- import the SQL file to another MySQL database
 
-In this setup, we will be using Docker desktop to run a Minima Archive node container and a MySQL database container which will hold the archive db data. 
+This setup uses two Docker containers
+1. a Minima archive node 
+2. a MySQL database to hold the archive blocks and coins
+
+The archive database in MySQL will contain 3 tables:
+1. cascadedata - if your archive node does not start at the genesis block, there may be cascade data
+2. syncblocks - the archive blocks
+3. coins (NEW v1.0.39) - a coins table of all coins in the archive blocks
 
 ### Prerequisites
 
-- An existing Archive node running in Docker
+- An existing archive node running in Docker
 
 ### Minima - MySQL setup
 
@@ -170,7 +191,7 @@ This will create a Docker container called **minimySQL** which runs your MySQL d
 It will run on your port 3307 (mapped to 3306 in Docker); create the user specified and give them access to the database; connect the MySQL db to the **minimanetwork** Docker network; and disable Watchtower updates for the container. 
 
 
-5. Connect your Minima Archive node container to the **minimanetwork** Docker network
+5. Connect your Minima archive node container to the **minimanetwork** Docker network
 
 ```
 docker network connect minimanetwork minimaarchive
@@ -216,18 +237,20 @@ docker network inspect minimanetwork
 
 This will setup a connection to the MySQL database running in Docker.
 
-### How to sync the archive data to MySQL
+### Update MySQL
 
-To sync your Minima archive database to your MySQL data:
+To update the MySQL tables with the archive blocks from your node:
 
 1. Open Minima Docker CLI or Minima Terminal MiniDapp
 
-2. Run the command
+2. Optional - run the command `mysql action:info` with your login details to check the current status 
 
 ```
-mysql host:minimysql database:archivedb user:archiveuser password:youruserpassword action:info
+mysql action:info host:minimysql database:archivedb user:archiveuser password:youruserpassword
 ```
-Example output:
+
+<details> <summary> Example output </summary>
+
 ```
 {
   "command":"mysql",
@@ -257,18 +280,22 @@ Example output:
 
 In the above example, the Minima archive db contains 72105 blocks and the mysql has 0 blocks, as expected.
 
-:::important before syncing
+</details>
+
+
+
+:::important before updating
 Before running an update, you must check your node is on the correct tip block. Run the `status` command to check your tip block is up to date.
 :::
 
-To update the MySQL database with the Minima archive data:
+3. Update the MySQL database with the Minima archive data and wait for it to finish
 
 ```
-mysql host:minimysql database:archivedb user:archiveuser password:youruserpassword action:update
+mysql action:update host:minimysql database:archivedb user:archiveuser password:youruserpassword
 ```
-Wait for the sync to finish
 
-Example output:
+<details> <summary> Example output </summary>
+
 ```
 {
   "command":"mysql",
@@ -295,48 +322,43 @@ Example output:
   }
 }
 ```
+</details>
 
 Future updates will be incremental, only syncing the new blocks that are not already in the MySQL database.
 
-To check the integrity of the data: 
+### Check the integrity
+
+To check that there are no missing blocks in the MySQL database, you can run:
 
 ```
-mysql host:minimysql database:archivedb user:archiveuser password:youruserpassword action:integrity
+mysql action:integrity host:minimysql database:archivedb user:archiveuser password:youruserpassword
 ```
 
-This will ensure there are no missing blocks in the MySQL database.
+### Export to an archive file
 
-### Exporting from MySQL Workbench
+#### .dat file export
 
-To Export the archive data from MySQL to a file:
+From v1.0.39 onwards, this raw **.dat** export can be used by users to archive reset their node via the Security minidapp or with the [reset](/docs/runanode/terminal_commands) command. This is the recommended method.
 
-1. Open MySQL workbench
+```
+mysql action:rawexport file:archiveexport.gzip host:minimysql database:archivedb user:archiveuser password:youruserpassword
+```
 
-2. Double click on **minimaarchive** to open the database
+#### .gzip file export 
 
-3. From the **Administration** tab, select **Data Export** (also available from the Server dropdown menu)
+This .gzip export can be used by users to archive reset their node via the Security minidapp or with the [reset](/docs/runanode/terminal_commands) command.
 
-![sql](/img/archivenode/F.AdminExportData.png#width50) 
+```
+mysql  action:h2export file:archiveexport.gzip host:minimysql database:archivedb user:archiveuser password:youruserpassword
+```
 
-4. Check the box for **archivedb** and check the boxes for **cascadedata** and **syncblock** 
-
-5. Under Export Options, select **Export to self-contained file** and **Include Create Schema**. Optionally change the file path.
-
-![sql](/img/archivenode/G.DataExportSelection.png) 
-
-6. Click **Start Export**
-
-The exported file will be unzipped, you should zip the exported file to reduce your storage requirement. 
-
-This file can be imported to MySQL if required.
-
-### Restoring from MySQL Workbench
+### Resync from MySQL
 
 If a user has been offline for too long and cannot resync to the chain from the IBD alone, or has lost access to their node, they can connect to a MySQL database to perform a chain or seed resync, provided it is publicly accessible.
 
-This is an alternative option to re-syncing from an Archive node.
+This is an alternative option to re-syncing from an archive node.
 
-As with Archive nodes, there are two options when using a MySQL database to re-sync your a node:
+As with archive nodes, there are two options when using a MySQL database to re-sync your a node:
 
 - **Chain re-sync:** If a user has been offline for too long and their node is not on the correct tip block, they can re-sync to the latest block by performing a [chain re-sync](#to-perform-a-chain-re-sync) from a MySQL database. **The node will NOT be wiped during this process.**
 
@@ -344,7 +366,7 @@ As with Archive nodes, there are two options when using a MySQL database to re-s
 
 #### To perform a chain re-sync
 
-1. On the node requiring a re-sync, connect to the MySQL archive database
+1. On the node requiring a re-sync, check the connection to the MySQL database, changing the ip:port as required
 
 ```
 mysql host:127.0.0.1:3307 database:archivedb user:archiveuser password:youruserpassword action:info
@@ -377,15 +399,84 @@ Optionally set the number of keys and keyuses relevant to you. If not specified,
 ```
 mysql host:mysqlhost:port database:archivedb user:archiveuser password:youruserpassword action:resync phrase:\"24 WORDS HERE\" keys:90 keyuses:2000
 ```
+### Check an address history
 
-
-
-### How to check the coins for an address
-
-It is possible to check the archive and display all spent and unspent coins for a chosen address using
+To check the unspent and spent coins for an address, run 
 
 ```
 mysql host:127.0.0.1:3307 database:archivedb user:archiveuser password:youruserpassword action:addresscheck address:0x79...
 ```
 
+### Create a coins table
 
+To create a table in your MySQL archive database for all spent and unspent coins, you can use the `mysqlcoins` command. 
+
+The coins table will be populated from the syncblock table, so this must be populated first. You can then run any SQL command against it to query the coins. 
+
+:::note
+The coins database is large and will take a while to populate, optionally you can create a second database in mysql workbench to keep the coinsdb separate to your existing archivedb.
+:::
+
+To populate the coins table, you can choose to specify the number of coins to update in one go by using the `maxcoins` parameter. To update the table will all the coins, remove the `maxcoins` parameter.
+
+The example below adds the first 100 coins to the database. Next time, it will start from where it left off. 
+
+**From any node**
+```
+mysqlcoins action:update maxcoins:100 host:127.0.0.1:3307 database:archivedb user:archiveuser password:youruserpassword 
+```
+
+**From docker**
+```
+mysqlcoins action:update maxcoins:100 host:minimysql database:archivedb user:archiveuser password:youruserpassword 
+```
+
+### Query the coins table
+
+To search for all coins at an address or with the address in a state variable:
+
+```
+mysqlcoins action:search address: host:minimysql database:archivedb user:archiveuser password:youruserpassword 
+```
+
+To run a WHERE query on the coins table, string data MUST be in single quotes and you can use multiple parameters.
+
+```
+mysqlcoins action:search where: host:minimysql database:archivedb user:archiveuser password:youruserpassword 
+```
+
+To run a full SQL query on the coins table:
+
+```
+mysqlcoins action:search query: host:minimysql database:archivedb user:archiveuser password:youruserpassword 
+```
+
+For full help, use `help command:mysqlcoins` or see [here](/docs/runanode/terminal_commands).
+
+### Export the tables from MySQL
+
+To Export the archive data from MySQL to a file:
+
+1. Open MySQL workbench
+
+2. Double click on **minimaarchive** to open the database
+
+3. From the **Administration** tab, select **Data Export** (also available from the Server dropdown menu)
+
+![sql](/img/archivenode/F.AdminExportData.png#width50) 
+
+4. Check the box for **archivedb** and check the boxes for **cascadedata** and **syncblock** 
+
+:::warning
+We do not recommend exporting the coins table as this will be very large.
+:::
+
+5. Under Export Options, select **Export to self-contained file** and **Include Create Schema**. Optionally change the file path.
+
+![sql](/img/archivenode/G.DataExportSelection.png) 
+
+6. Click **Start Export**
+
+The exported file will be unzipped, you should zip the exported file to reduce your storage requirement. 
+
+This file can be imported to MySQL if required.

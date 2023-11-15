@@ -381,11 +381,18 @@ You can also check the integrity of your archive db.
 
 **action:** <br></br>
  &ensp;   **resync** : do a resync. If you wish to perform a chain re-sync only, do not provide your 24 word seed phrase.<br></br>
- &ensp;   **integrity** : on an Archive node, check the integrity of your Archive db. No host required.
+ &ensp; **integrity** : on an Archive node, check the integrity of your Archive db. No host required.<br></br>
+ &ensp; **export** : Export your archive db to a gzip file.<br></br>
+ &ensp;   **import** : do a chain or seed re-sync using an archive gzip file. Use with 'file'.<br></br>
+ &ensp;   **inspect** : inspect an archive export gzip file. If 'last:1' then the file can re-sync any node from genesis.<br></br>
+ &ensp;   **addresscheck** : check your archive db for spent and unspent coins at a specific address.
 
 **host:** (optional)<br></br>
     ip:port of the archive node to sync from or check the integrity of.<br></br>
     Use 'auto' to connect to a default archive node.
+
+**file:** (optional)<br></br>
+    name or path of the archive export gzip file to export/import/inspect<br></br>
 
 **phrase:** (optional)<br></br>
     Your 24 word seed phrase in double quotes, to perform a seed re-sync. Use with action:resync.<br></br>
@@ -396,9 +403,12 @@ You can also check the integrity of your archive db.
     Number of keys to create if you need to do a seed re-sync. Default is 64.
 
 **keyuses:** (optional)<br></br>
-    How many times at most you used your keys..<br></br>
+    How many times at most you used your keys.<br></br>
     Every time you re-sync with seed phrase this needs to be higher as Minima Signatures are stateful.<br></br>
     Defaults to 1000 - the max is 262144 for normal keys.
+
+**address:** (optional)<br></br>
+    The wallet address to check. Use with 'action:addresscheck'.
 
 **Examples:**
 
@@ -409,6 +419,14 @@ You can also check the integrity of your archive db.
 *archive action:resync host:89.98.89.98:8888 phrase:\"YOUR 24 WORD SEED PHRASE\" keys:90 keyuses:2000*
 
 *archive action:integrity*
+
+*archive action:export file:archiveexport-ddmmyy.gzip*
+
+*archive action:import file:archiveexport-ddmmyy.gzip*
+
+*archive action:inspect file:archiveexport-ddmmyy.gzip*
+
+*archive action:addresscheck address:Mx..*
 </details>
 
 <details><summary><strong>backup</strong><br></br>Backup your node. Uses a timestamped name by default.</summary>
@@ -440,9 +458,15 @@ You can also check the integrity of your archive db.
 
 <details><summary><strong>mysql</strong><br></br>Export the archive data of your node to a MySQL database.</summary>
 
-The MySQL db can be used to perform a chain re-sync to put users on the correct chain, or a seed re-sync to restore access to lost funds, using the 24 word seed phrase.
+Export your archive data and coins data to a mysql database.
 
-Can also be used to query an address for its history of spent and unspent coins.
+The MySQL archive export (in .dat or .gzip format) can be used to perform a chain re-sync to put users on the correct chain or a seed re-sync to restore access to lost funds, using the 24 word seed phrase.
+
+Query an address for its history of spent and unspent coins.
+
+Additionally export the MySQL db to a .dat or .gzip file for resyncing with 'reset' or 'archive' command.
+
+You can also create a coins db in MySQL to search for coins using SQL queries.
 
 **host:**<br></br>
     The ip:port (or name of Docker container) running the MySQL db.
@@ -456,6 +480,9 @@ Can also be used to query an address for its history of spent and unspent coins.
 **password:**<br></br>
     MySQL password for the user provided.
 
+**readonly:**<br></br>
+    true or false, connect in readonly mode.
+
 **action:**<br></br>
  &ensp;    **info** : Show the blocks stored in the archive db and compare to the MySQL db.<br></br>
  &ensp;    **integrity** : Check the block order and block parents are correct in the MySQL db.<br></br>
@@ -464,6 +491,9 @@ Can also be used to query an address for its history of spent and unspent coins.
  &ensp;    **autobackup** : Automatically save archive data to MySQL DB. Use with enable.<br></br>
  &ensp;    **resync** : Perform a chain or seed re-sync from the specified MySQL db. Will shutdown the node so you must restart it once complete.<br></br>
 &ensp;   **wipe** :  Be careful. Wipe the MySQL db.<br></br>
+&ensp;    **h2export** : export the MySQL db to an archive gzip file which can be used to resync a node.
+&ensp;    **h2import** : import an archive gzip file to the MySQL db.
+&ensp;    **rawexport** : export the MySQL db to an archive .dat file which can be used to resync a node. (v1.0.39 onwards)
 
 **phrase:** (optional)<br></br>
      Use with action:resync. The BIP39 seed phrase of the node to re-sync.<br></br>
@@ -502,6 +532,108 @@ Can also be used to query an address for its history of spent and unspent coins.
 
 </details>
 
+
+<details><summary><strong>mysqlcoins</strong><br></br>Create and search a coins database from your MySQL Archive.</summary>
+
+Create a coins db from your mysql data and search it.
+
+Use the same database you already use for your TxBlocks. This creates a new table.
+
+You can then search for coins using SQL queries.
+
+**host:**<br></br>
+    The ip:port (or name of Docker container) running the MySQL db.
+
+**database:**<br></br>
+    name of the MySQL db being used to store the archive db data.
+
+**user:**<br></br>
+    MySQL user to login to as.
+
+**password:**<br></br>
+    MySQL password for the user provided.
+
+**readonly:**(optional) <br></br>
+    true or false, connect in readonly mode.
+
+**logs:** (optional) <br></br>
+    true or false, show detailed logs, default true.
+
+**action:**<br></br>
+ &ensp;    **info** : Get information about the Coins DB.<br></br>
+ &ensp;    **update** : Update the coins db from the latest coin added with MySQL data. <br></br>
+&ensp;   **wipe** :  Wipe the Coins DB.<br></br>
+&ensp;    **search** : Perform a search on the data. You can specify any valid query params.
+
+**maxcoins:** (optional) <br></br>
+    The maximum number of coins to add. The update can take a VERY long time so this way you can limit it.
+
+**where:** (optional) <br></br>
+    The search criteria. String data MUST be in single quotes. You can use multiple parameters.
+
+**query:** (optional)<br></br>
+    the full sql query
+
+**address:** (optional)<br></br>
+     the address to check for
+
+**spent:** (optional)<br></br>
+    true or false, if the coin is spent or unspent
+
+**limit:** (optional)<br></br>
+    limit the number of rows returned
+
+**Examples:**
+
+mysqlcoins action:update maxcoins:100 host:127.0.0.1:3307 database:coinsdb user:myuser password:myuser 
+
+mysqlcoins action:search where:"address='0x791E78C60652B0E19B8FE9EB035B122B261490C477FD76E38C0C928187076103'" host:127.0.0.1:3307 database:coinsdb user:myuser password:myuser 
+
+mysqlcoins action:search query:"address='0x791E78C60652B0E19B8FE9EB035B122B261490C477FD76E38C0C928187076103' AND state LIKE '%0xFFEEDD%' LIMIT 10" host:127.0.0.1:3307 database:coinsdb user:myuser password:myuser 
+
+</details>
+
+<details><summary><strong>reset</strong><br></br>Reset your node in various ways. </summary>
+
+You MUST wait until all your original keys are created before this is allowed.
+
+**archivefile:** <br></br>
+    Specify the the archive **.dat** or **.gzip** file. Should be recently exported from an archive node.
+
+**action:** <br></br>
+ &ensp;   **chainsync** : Re-sync all blocks from the archivefile to get back onto the right chain. Seed phrase is not required, the private keys will remain unchanged. <br></br>
+ &ensp;   **seedsync** : Wipe the wallet and re-generate your keys from your seed phrase. Your coins will be restored.<br></br>
+ &ensp;   **restore** : Restore a backup and re-sync the entire chain from the archivefile.
+
+
+**file:** (optional) <br></br>
+    Specify the filename or local path of the backup to restore
+
+**password:** (optional) <br></br>
+    Enter the password of the backup
+
+**phrase:** (optional)<br></br>
+    Your 24 word seed phrase in double quotes, to import a seed phrase and sync the entire chain. Use with action:seedsync.<br></br>
+    This will wipe the wallet of this node. You do NOT have to do this if you still have access to your wallet. 
+    In this case, just do a chainsync without 'phrase' to get on the correct chain.
+
+**keys:** (optional)<br></br>
+    Number of keys to create if you need to do a seed re-sync. Default is 64.
+
+**keyuses:** (optional)<br></br>
+    How many times at most you used your keys..<br></br>
+    Every time you re-sync with seed phrase this needs to be higher as Minima Signatures are stateful.<br></br>
+    Defaults to 1000 - the max is 262144 for normal keys.
+
+**Examples:**
+
+*reset archivefile:archiveexport-jul23.gz action:chainsync*
+
+*reset archivefile:archiveexport-jul23.gz action:seedsync keyuses:1000 phrase:"ENTER 24 WORDS HERE"*
+
+*reset archivefile:archiveexport-jul23.gz action:restore file:backup-jul23.bak password:Longsecurepassword456*
+
+</details>
 
 <details><summary><strong>restore</strong><br></br>Restore your node from a backup.</summary>
 
