@@ -6,13 +6,14 @@ sidebar_position: 3
 
 Minima can be installed as a desktop application, launched from a JNLP file, the Java Network Launch Protocol.
 
+## Setting up your node
+
 1. Download and install [Open Web Start](https://openwebstart.com/download/) - the new updated version of Java Web Start, using the default options.
 :::note not sure which version to download?
 From the Apple icon in the top left of your Mac, select “About This Mac”. If the processor says **Intel**, choose the **OpenWebStart_macos-x64** option, if you see **M1** or **M2**, choose **OpenWebStart_macos-aarch64**.
 :::
 
 2. Download the JNLP file from the Launch button below, then from your downloads folder **Command+Right click** the minima.jnlp file and choose **Open With** , **Other...**, scroll to find **OpenWebStart** then check the **Always Open With** box, then select **Open**. If you don't do this, it will try to open Minima incorrectly with Java. <br/><br/>
-This will install Minima as an application and update automagically when you start it in future. <br/><br/>
 [![JNLP](/img/runanode/jws-launch-button.png#width10)](https://www.spartacusrex.com/javaws/minima.jnlp) <br/>
 
 3. Create a desktop shortcut for Minima if it was not created automatically. Right-click on the minima.jnlp file and select **Make Alias**, then drag the alias file to your desktop.
@@ -24,11 +25,14 @@ This will install Minima as an application and update automagically when you sta
 
 Once restarted, select **Launch MinimaOS** to access your node and login with your password.
 
-Congratulations on starting your node!
-
+Congratulations on starting your node! 
 When logging in for the first time, you will need to [Join the network](/docs/runanode/jointhenetwork). 
 
 **When shutting down your Mac, please shutdown Minima first by closing the launcher window and waiting for the shutdown to complete. This ensures your node does not get corrupted by an unexpected shutdown.**
+
+## Updating your node
+
+To update your node to the latest version of Minima, simply close the dialog box to shut it down, then relaunch the JNLP. Any updates will be checked for and downloaded automatically. 
 
 <!-- 
 We will be using Docker software to make running a Minima node simple.

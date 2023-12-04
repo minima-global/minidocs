@@ -6,9 +6,11 @@ sidebar_position: 2
 
 Minima can be installed as a desktop application, launched from a JNLP file, the Java Network Launch Protocol.
 
+## Setting up your node
+
 1. Download and install [Open Web Start](https://openwebstart.com/download/) - the new updated version of Java Web Start, using the default options.
 
-2. Download the Minima JNLP file from the Launch button below, and open / double-click it, this will install as an application and update Minima automagically when you start it in future.<br/>
+2. Download the Minima JNLP file from the Launch button below, and open / double-click it to install Minima as an application.<br/>
 A desktop shortcut will be created for you and you will be shown a security warning, select **Run**.<br/><br/>
 [![JNLP](/img/runanode/jws-launch-button.png#width10)](https://www.spartacusrex.com/javaws/minima.jnlp) <br/><br/>
 *The JNLP should be opened automatically by Open Web Start and start your Minima node. If not, right click on the JNLP file in your downloads folder, choose 'Open With' then select **Open Web Start**.*
@@ -20,11 +22,15 @@ A desktop shortcut will be created for you and you will be shown a security warn
 
 Once restarted, select **Launch MinimaOS** to access your node and login with your password.
 
-Congratulations on starting your node!
-
-After logging in for the first time, you will need to [Join the network](/docs/runanode/jointhenetwork). 
+Congratulations on starting your node! After logging in for the first time, you will need to [Join the network](/docs/runanode/jointhenetwork). 
 
 **When shutting down your PC, please shutdown Minima first by closing the launcher window and waiting for the shutdown to complete. This ensures your node does not get corrupted by an unexpected shutdown.**
+
+## Updating your node
+
+To update your node to the latest version of Minima, simply close the dialog box to shut it down, then relaunch the JNLP. Any updates will be checked for and downloaded automatically. 
+
+
 
 <!-- 
 We will be using Docker software to make running a Minima node simple. 
