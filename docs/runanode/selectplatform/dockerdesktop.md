@@ -136,7 +136,7 @@ You will see the login screen for your node.
 To check your password, click on the name of your Minima node (e.g. minima9001) in Docker desktop. On the **Inspect** tab, check the parameter for **mdspassword**.
 :::
 
-After logging in for the first time, you will need to [join the network](/docs/userguides/jointhenetwork) and [secure your node.](/docs/userguides/securefunds)
+After logging in for the first time, you will need to [join the network](/docs/userguides/newusers/jointhenetwork) and [write down your seed phrase](/docs/userguides/newusers/seedphrase).
 
 
 ## FAQ 

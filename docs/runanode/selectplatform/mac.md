@@ -26,7 +26,7 @@ From the Apple icon in the top left of your Mac, select “About This Mac”. If
 Once restarted, select **Launch MinimaOS** to access your node and login with your password.
 
 Congratulations on starting your node! 
-When logging in for the first time, you will need to [Join the network](/docs/userguides/jointhenetwork). 
+When logging in for the first time, you will need to [Join the network](/docs/userguides/newusers/jointhenetwork). 
 
 **When shutting down your Mac, please shutdown Minima first by closing the launcher window and waiting for the shutdown to complete. This ensures your node does not get corrupted by an unexpected shutdown.**
 

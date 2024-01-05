@@ -538,6 +538,6 @@ sudo rm -rf minimadocker9001
 
 ### Need help?
 
-See [Using MiniDapps](/docs/userguides/usingminidapps) for more information or find us in [Discord](https://discord.gg/minima) or [Telegram](https://t.me/Minima_Global).
+For help and support, find us in [Discord](https://discord.gg/minima) or [Telegram](https://t.me/Minima_Global).
 
 

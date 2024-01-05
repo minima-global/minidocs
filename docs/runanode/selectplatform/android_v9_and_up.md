@@ -44,7 +44,7 @@ To join the network, simply
 - ask someone else running Minima to share their connections with you, or
 - google search for **minimapeers.txt**
 
-Please see [Joining the network](/docs/userguides/jointhenetwork) to learn more.
+Please see [Joining the network](/docs/userguides/newusers/jointhenetwork) to learn more.
 
 ## Secure your node 
 

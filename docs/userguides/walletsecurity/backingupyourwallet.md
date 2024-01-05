@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Using a backup is the fastest and most convenient way to restore your wallet if you lose access to your node. 
 
-**If you lose your device and do not have a valid backup, you will need to restore your wallet by [importing your seed phrase](/docs/userguides/restoring/restorefunds).**
+**If you lose your device and do not have a valid backup, you will need to restore your wallet by [importing your seed phrase](/docs/userguides/recovery/importseed).**
 
 :::warning unlocked backups
 If your node is not locked, your backups will contain your unencrypted seed phrase. Backups of unlocked nodes must be kept as safe as your seed phrase!
