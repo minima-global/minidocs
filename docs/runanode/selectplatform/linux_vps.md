@@ -176,9 +176,9 @@ Before using your node for the first time, you must:
 
 1. Write down your Seed Phrase
 2. Take a backup
-3. Set a Vault password to encrypt your Keys (optional)
+3. Lock your wallet (optional)
 
-Please visit the [Secure your Node](/docs/runanode/securefunds) page to learn how. 
+Please visit the User guides section to learn how. 
 
 
 ## FAQ 
@@ -229,7 +229,7 @@ If you have been offline for a long time or do not have a recent backup you may 
 <!-- 
 ### How to take a backup of your node
 
-Before backing up your node, consider encrypting your private keys. For more information, see [Vault](/docs/runanode/securefunds#vault).
+Before backing up your node, consider encrypting your private keys. For more information, see [Vault](/docs/userguides/securefunds#vault).
 
 1. Login to your Minima Hub at https://yourserverIP:9003/
 2. Open the Terminal MiniDapp
@@ -538,6 +538,6 @@ sudo rm -rf minimadocker9001
 
 ### Need help?
 
-See [Using MiniDapps](/docs/runanode/usingminidapps) for more information or find us in [Discord](https://discord.gg/minima) or [Telegram](https://t.me/Minima_Global).
+See [Using MiniDapps](/docs/userguides/usingminidapps) for more information or find us in [Discord](https://discord.gg/minima) or [Telegram](https://t.me/Minima_Global).
 
 

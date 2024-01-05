@@ -22,7 +22,7 @@ A desktop shortcut will be created for you and you will be shown a security warn
 
 Once restarted, select **Launch MinimaOS** to access your node and login with your password.
 
-Congratulations on starting your node! After logging in for the first time, you will need to [Join the network](/docs/runanode/jointhenetwork). 
+Congratulations on starting your node! After logging in for the first time, you will need to [Join the network](/docs/userguides/newusers/jointhenetwork). 
 
 **When shutting down your PC, please shutdown Minima first by closing the launcher window and waiting for the shutdown to complete. This ensures your node does not get corrupted by an unexpected shutdown.**
 
@@ -175,7 +175,7 @@ Before using your node for the first time, you must:
 2. Take a backup
 3. Set a Vault password to encrypt your Keys (optional)
 
-Please visit the [Secure your Node](/docs/runanode/securefunds) page to learn how. 
+Please visit the [Secure your Node](/docs/userguides/securefunds) page to learn how. 
 
 Continue to access your MiniDapp hub.
 
@@ -298,7 +298,7 @@ When starting the new container, you must use the same `minimadocker9001` folder
 
 ### How to take a backup of your node
 
-Before backing up your node, consider encrypting your private keys. For more information, see [Vault](/docs/runanode/securefunds#vault).
+Before backing up your node, consider encrypting your private keys. For more information, see [Vault](/docs/userguides/securefunds#vault).
 
 1. Login to your Minima Hub 
 2. Open the Terminal MiniDapp

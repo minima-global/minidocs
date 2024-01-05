@@ -98,7 +98,7 @@ console.log(res);
 });
 ```
 
-For the full list of terminal commands, run `help` from the Minima Command Line, or see [Terminal commands](/docs/runanode/terminal_commands).
+For the full list of terminal commands, run `help` from the Minima Command Line, or see [Terminal commands](/docs/userg/terminal_commands).
 
 
 ### sql

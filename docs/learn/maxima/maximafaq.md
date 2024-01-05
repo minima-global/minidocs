@@ -38,6 +38,6 @@ For privacy, your Maxima contact address changes periodically. When you choose t
 ## How can I use Maxima for messaging?
 Every Minima node includes Maxima. To use Maxima, you must first set your Maxima Profile name and create your Maxima Contacts, then you will be able to communicate with your contacts using any MiniDapp that uses Maxima, for example, MaxSolo.
 
-For setup instructions, please follow the instructions in the [Using Maxima](/docs/runanode/usingmaxima) section.
+For setup instructions, please see the [Using Maxima](/docs/userguides/usingmaxima/yourprofile) section.
 
 For more information on MiniDapps, please see the [MiniDapps](/docs/learn/minidapps/minidappsintro) section.

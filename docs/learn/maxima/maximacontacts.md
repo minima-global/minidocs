@@ -12,11 +12,9 @@ As a result, currently, it is reasonable for a node to have around 20 contacts. 
 
 ## Contact Addresses
 
-Similar to a wallet address used to receive funds on Minima, all users have a Contact Address which can be used to receive messages, over Maxima. 
+Similar to a wallet address used to receive funds on Minima, all users have a **contact address** which can be used to receive messages over Maxima. This communication is off-chain and uses peers on the network to ensure the encrypted message reaches the desired node. 
 
-Knowing someone’s Maxima Contact Address will enable you to send messages to their node. This communication is off-chain and uses peers on the network to ensure the encrypted message reaches the desired node. 
-
-Contact addresses change every 20 minutes, therefore contacts must be added shortly after an address is shared. 
+Contact addresses change at random time intervals, therefore contacts must always be added shortly after an address is shared. 
 
 Once a contact is added, a user's [Maxima Location Service host (mls)](#maxima-location-service) manages the connection between a user and their contacts to ensure they remain connected to their latest contact address.
 
@@ -27,23 +25,15 @@ YAH34AJ1PZ4GWHCW7SEDQ0HQ9R4TU2G7NS8N816V13ERQ532PYWK9Z732RBZ7KFCQCENAMAJP9V7EH3R
 TB5VUJRV6QYVK1060800712NCHC@187.220.305.194:9001
 ```
 
-
-*Your Contact Address can be found and shared from the MaxContacts MiniDapp or by running the `maxima` command from the Minima Terminal and finding the `contact` address.*
-
-
 ## Privacy
 
-Both parties have control over their Contact list; if User A no longer wants to be connected to User B, User A can remove User B from their Contact list, which also removes them from User B’s Contact list. 
+Both parties have control over their contact list; if User A no longer wants to be connected to User B, User A can remove User B from their contact list, which also removes them from User B’s ontact list. 
 
-Furthermore, Contact Addresses change periodically, preventing User B from being able to reach User A at the same Contact address again, and allowing User A to become unreachable on Maxima, to avoid unwanted messages.
+Furthermore, the expiring nature of contact addresses prevents User B from being able to reach User A at the same contact address again, and allowing User A to become unreachable on Maxima if desired to avoid unwanted messages.
 
 
-## Maxima Location Service 
+## Contact management
 
-The connection between you and your Contacts is maintained by your **Maxima Location Service (MLS)**, a randomly selected node on the Minima network.
-
-Your MLS ensures that, although your Contact Address periodically changes, you will still remain connected to your Contacts, provided that you connect to the network at least once in a 24-hour period. 
-
-![MaximaContacts](/img/maxima/MaximaContactsLM.svg#gh-light-mode-only-width50)![MaximaContacts](/img/maxima/MaximaContactsDM.svg#gh-dark-mode-only-width50)
+The connection between you and your Contacts is maintained by your **Maxima Location Service (MLS)** host, a randomly selected server node on the Minima network.
 
 To learn more about MLS, see the [Maxima Location Service](/docs/learn/maxima/mls) page.

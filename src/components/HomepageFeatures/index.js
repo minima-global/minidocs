@@ -24,6 +24,16 @@ const FeatureList = [
     ),
   },
   {
+    title: 'User Guides',
+    link: 'docs/userguides/login',
+    icon: 'icons/ambassador_icon.svg',
+    description: (
+      <>
+        Guidance for using and managing your Minima node
+      </>
+    ),
+  },
+  {
     title: 'Learn',
     link: 'docs/learn/ataglance',
     icon: 'icons/learn_icon.svg',
@@ -44,16 +54,16 @@ const FeatureList = [
               // Old tokenomics copy - Find out how a fixed supply of 1 billion Minima coins have been distributed
     ),
   },
-  {
-    title: 'Ambassadors',
-    link: 'docs/earnrewards/ambassador',
-    icon: 'icons/ambassador_icon.svg',
-    description: (
-      <>
-        Become a Minima Ambassador!
-      </>
-    ),
-  },
+  // {
+  //   title: 'Ambassadors',
+  //   link: 'docs/earnrewards/ambassador',
+  //   icon: 'icons/ambassador_icon.svg',
+  //   description: (
+  //     <>
+  //       Become a Minima Ambassador!
+  //     </>
+  //   ),
+  // },
   {
     title: 'Tokenomics',
     link: 'docs/about/tokendistribution',

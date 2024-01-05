@@ -230,7 +230,7 @@ The first time accessing your MiniDapp hub, you may need to pass through the sec
 
 2. Enter your password to login, if you don't remember, you can check [here](#how-to-check-your-minidapp-system-password).
 
-**After logging in for the first time, you will need to [join the network](/docs/runanode/jointhenetwork) and [secure your node](/docs/runanode/securefunds).**
+**After logging in for the first time, you will need to [join the network](/docs/userguides/newusers/jointhenetwork) and [secure your node](/docs/userguides/walletsecurity/lockingyourwallet).**
 
 
 -------

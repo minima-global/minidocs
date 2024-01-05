@@ -126,9 +126,9 @@ Before using your node for the first time, you must:
 
 1. Write down your Seed Phrase
 2. Take a backup
-3. Set a Vault password to encrypt your Keys (optional)
+3. Lock your wallet (optional)
 
-Please visit the [Secure your Node](/docs/runanode/securefunds) page to learn how. 
+Please visit the User guides section to learn how. 
 
 ---------
 
@@ -224,7 +224,7 @@ The `status` command will show details of your node including version, last bloc
 Having a recent block time is not a guarantee that you are on the right chain. <br/>
 Consider cross checking your latest block with another node or checking the `samechain` response of your Maxima Contacts by running the `maxcontacts` command.
 
-If the time shown is significantly behind, you should restart your node to resync to the chain. If it doesn't catch up automatically, youu may need to perform a [**chain resync**](/docs/runanode/restorefunds#chain-re-sync) from an Archive node.
+If the time shown is significantly behind, you should restart your node to resync to the chain. If it doesn't catch up automatically, youu may need to perform a [**chain resync**](/docs/userguides/recovery/chainresync) from an Archive node.
 :::
 
 **Other useful commands:**<br/>
@@ -258,5 +258,5 @@ e.g. java -jar C:\Users\Username\Downloads\minima.jar -mdsenable -clean
 
 ## Next Steps
 
-Once your node running, you will need to [join the network](/docs/runanode/jointhenetwork) and [secure your node](/docs/runanode/securefunds).
+Once your node running, you will need to [join the network](/docs/userguides/newusers/jointhenetwork).
 

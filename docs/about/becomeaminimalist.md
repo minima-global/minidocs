@@ -50,9 +50,9 @@ If your participation is beneficial, new opportunities will open up to complete 
 
 **2. Set up your Maxima profile** 
 
-We are stronger together. [Setting up your Maxima profile](/docs/runanode/usingmaxima) will enable other Minimalists to easily recognise you when you share your Maxima address with them, so you can communicate peer-2-peer via Minima’s decentralized apps (MiniDapps). 
+We are stronger together. [Setting up your Maxima profile](/docs/userguides/usingmaxima/yourprofile) will enable other Minimalists to easily recognise you when you share your Maxima address with them, so you can communicate peer-2-peer via Minima’s decentralized apps (MiniDapps). 
 
-Once you have set up your profile, [share your address](/docs/runanode/usingmaxima#sharing-your-contact-address) with other Minimalists and connect with them via a MiniDapp!
+Once you have set up your profile, [share your address](/docs/userguides/usingmaxima/managingcontacts) with other Minimalists and connect with them via a MiniDapp!
 
 **3. Building decentralized apps**
 

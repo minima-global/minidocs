@@ -87,7 +87,7 @@ Let's dive into a short tutorial that will show you how to show the balance of y
 
 Open `/src/App.jsx`, this is the main application file. 
 
-The first thing we have to do is call the MDS `balance` command. The full list of commands can be found [here](/docs/runanode/terminal_commands)
+The first thing we have to do is call the MDS `balance` command. The full list of commands can be found [here](/docs/userguides/usingyournode/terminal_commands).
 
 The first step is to create a new component file, lets call it `Balance.jsx` in the `/src` folder.
 

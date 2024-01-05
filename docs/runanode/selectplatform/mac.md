@@ -26,7 +26,7 @@ From the Apple icon in the top left of your Mac, select “About This Mac”. If
 Once restarted, select **Launch MinimaOS** to access your node and login with your password.
 
 Congratulations on starting your node! 
-When logging in for the first time, you will need to [Join the network](/docs/runanode/jointhenetwork). 
+When logging in for the first time, you will need to [Join the network](/docs/userguides/jointhenetwork). 
 
 **When shutting down your Mac, please shutdown Minima first by closing the launcher window and waiting for the shutdown to complete. This ensures your node does not get corrupted by an unexpected shutdown.**
 
@@ -161,7 +161,7 @@ Before using your node for the first time, you must:
 2. Take a backup
 3. Set a Vault password to encrypt your Keys (optional)
 
-Please visit the [Secure your Node](/docs/runanode/securefunds) page to learn how. 
+Please visit the [Secure your Node](/docs/userguides/securefunds) page to learn how. 
 
 ## Access your MiniDapp hub
 
@@ -216,7 +216,7 @@ If you have been offline for a long time or do not have a recent backup you may 
 
 ### How to take a backup of your node
 
-Before backing up your node, consider encrypting your private keys. For more information, see [Vault](/docs/runanode/securefunds#vault).
+Before backing up your node, consider encrypting your private keys. For more information, see [Vault](/docs/userguides/securefunds#vault).
 
 1. Login to your Minima Hub 
 2. Open the Terminal MiniDapp

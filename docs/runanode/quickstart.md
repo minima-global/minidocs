@@ -78,7 +78,7 @@ Further guidance on starting a node in Docker desktop can be found [here](/docs/
 
 You should only run a node on a server if you have experience setting up VPS instances and understand how to set up firewall rules.
 
-Please see [firewall rules] before starting a node on a VPS.
+Please see [recommended firewall rules](/docs/runanode/systemrequirements#recommended-firewall-settings-vps-users) before starting a node on a VPS.
 
 Then choose whether to run a node using [Docker](/docs/runanode/selectplatform/linux_vps) or a [Script](/docs/runanode/selectplatform/linuxvpsservice).
 

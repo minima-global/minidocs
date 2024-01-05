@@ -20,7 +20,8 @@ Similar to the Operating System on your phone that enables you to use Android ap
 MiniDapps are Minima’s **Decentralized Applications** running over Minima’s blockchain network. They are web applications that utilise the functionality enabled by the Minima blockchain and peer-to-peer network. This includes our Information Layer - Maxima and, in future, our Layer 2 - Omnia. <br/>
 They are your gateway to a true Web 3 economy, open and free.
 
-A MiniDapp can be created for almost anything - some examples include decentralized finance, games, voting, marketplaces, messaging, social media - the world is your oyster.      
+They are simply zip files (.mds.zip) containing a web application that interacts with your Minima node and can be created for almost anything - some examples include decentralized finance, games, voting, marketplaces, messaging, social media - the world is your oyster.      
+
 
 ## How do MiniDapps differ from other decentralized applications (dApps)?
 Other ‘decentralized’ applications are decentralized in name only, often relying on centralized services to run effectively. MiniDapps are not. MiniDapps are installed on and run directly from your node, and because every Minima user runs a complete node, there is no need to rely on centralized websites or companies to use MiniDapps. They are permissionless and borderless.
@@ -31,7 +32,7 @@ You will find the latest MiniDapps, developed by the Minima Team, available to d
 In future, we expect the majority of MiniDapps to be built by the open-source community—that could be you!
 
 ## How do I use MiniDapps?
-For help using MiniDapps, please see [Using MiniDapps](/docs/runanode/usingminidapps).
+For help using MiniDapps, please see [Using MiniDapps](/docs/userguides/usingminidapps).
 
 ## Who can build a MiniDapp?
 Anyone can learn to build a MiniDapp. <br/>

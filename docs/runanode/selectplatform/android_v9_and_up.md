@@ -44,7 +44,7 @@ To join the network, simply
 - ask someone else running Minima to share their connections with you, or
 - google search for **minimapeers.txt**
 
-Please see [Joining the network](/docs/runanode/jointhenetwork) to learn more.
+Please see [Joining the network](/docs/userguides/jointhenetwork) to learn more.
 
 ## Secure your node 
 
@@ -58,7 +58,7 @@ This is all done within the **Security MiniDapp.**
 
 ![security](/img/app/security.png#width10)
 
-Please see [Securing your node](/docs/runanode/securefunds) for detailed guidance.
+Please see the User Guides section for detailed guidance.
 
 
 ## Desktop Connect

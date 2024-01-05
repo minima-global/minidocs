@@ -1,0 +1,180 @@
+---
+sidebar_position: 2
+---
+
+# Managing contacts
+
+Your Maxima Contacts are your friends, family or other connections that you wish to communicate with peer-to-peer.
+
+Only one person needs to add the contact address, both users will see their new contact immediately after adding.
+
+Currently a node can support between 10-20 contacts.
+
+## Sharing your Contact Address
+
+Contact addresses change randomly so they must be added as soon as they are shared. Once added, the Minima network will ensure that you remain connected to your contacts when their contact address changes, provided both people are online.
+
+If your friend has trouble adding you, refresh and re-share your latest contact address with them.
+
+1. In MaxContacts, go to the **Profile** page and select **Share Contact** 
+2. Share your contact address with a friend and ask them to add you immediately
+
+Once they have added you, you will see your new contact on the **Contacts** page.
+
+That's it! You can now communicate with your contact over MaxSolo or Chatter!
+
+
+## Adding a new Maxima Contact
+
+1. In MaxContacts, go to the **Contacts** page and select **Add Contact** or **Add your first contact** 
+
+![addcontact](/img/maxima/addcontact.png#width40)
+
+2. Ask your friend for their contact address and paste it in the box shown
+
+![addcontact2](/img/maxima/addcontact2.png#width40)
+
+Once added, you will see your new contact on the **Contacts** page and they will see you in their app.
+
+That's it! You can now communicate with your contact over MaxSolo or Chatter!
+
+
+## Checking the connection to your Contacts
+
+When you or a contact goes offline for a period of time, the connection between the two of you may be interrupted. 
+
+When the connection is good you will see a green icon for network and a green icon for chain - this indicates you have recently been able to connect and are both on the same chain. 
+
+**If the connection is yellow**, you and your contact may temporarily be disconnected. If this happens, one of you may be offline, simply wait some time and the connection will be re-established.
+
+**If the connection is red**, you and your contact may be temporarily or permanently disconnected. If this happens, you or your contact may have been offline for too long and the connection was broken. If the connection is not re-established automatically after 24 hours, you should delete and re-add your contact with their latest contact address.
+
+Provided you and your contact are online at least once every 24 hours, you should remain connected.
+
+![addcontact2](/img/maxima/contactlist.png#width40)
+
+
+## Managing contacts via Terminal (advanced)
+
+Contacts can also be managed using commands via the Terminal MiniDapp.
+
+### Sharing your Contact Address (Terminal)
+
+To find your Maxima Contact Address
+
+1. Open the Terminal MiniDapp or Command Line interface where Minima is running
+2. Enter the following command
+```
+maxima
+```
+
+<details><summary>Expand for example output</summary>
+
+```
+{
+  "command":"maxima",
+  "status":true,
+  "response":{
+    "logs":false,
+    "name":"Alice",
+    "publickey":"0x30819F300D06092A864886F70D010101050003818D00308189028181009645EF9BB7B4A3E98B87C6C68C072903EE4379DA8DF18AE8082B879A60147043977114E00AA3AE2BBDE380D356352E62D5FBCCB916C4F9EC27AC18D24B7A41F4ED26D63AD21578C421E0D303D7815253EF3EA6CB9410B1F439E8528FC0DDC99724F42937D756B4439ABDCDB485000DE42F16861957761EEB88F44AEA391D65EB0203010001",
+    "localidentity":"MxG18HGG6FJ038614Y8CW46US6G20810K0070CD00Z83282G60G15W5TUDRFD53T65ZFHM6HG3WW0VE8DSTY3FHHBK0GAS7J9G18S23WTZH9Z0AKEN2NFF3G39YCD9ECBAVNJ5P2R2FJR17YGCD4WRQ87QEQ9MM7B91AU6447GD60UNG5957RPUKR5P845HUGSUGKKFZ3ESJ5P4UGKJFYQMMH1PYFEDMW2G03F45SB8C6ANEZFEN27K9BY3W7B5TC10608005FCUPAE@192.168.0.33:9001",
+    "contact":"MxG18HGG6FJ038614Y8CW46US6G20810K0070CD00Z83282G60G15AU3QK5NKMR3NW3YCM4EZ99JMFQ5ZPK7ZC5CREZDC52W2NSRQWSJP8DHNC9DR2AP517RVET05JTW89BM1F6FBK2QN3YQ7CVJDARRBHY3Y08FQ99JSNW68D50KVD02UQKK8BJKMHAUAGG3JBCEFBDZGYBPMJJRQAYQSYDH7KR19M2J4P9ZASNEP1240J7SUZB0MCK0DBWB34WS10608007M53YUH@78.141.235.153:9001"
+  }
+}
+```
+
+</details>
+
+3. Copy the **"contact:"** address (from the last line) **including the IP address** and share it with your friends via a platform of your choice. **Ensure your friend adds you immediately.**
+
+
+### Adding a new Maxima Contact (Terminal)
+
+1. Ask your friend to send you their Contact Address
+2. Copy it
+3. Open the Minima Terminal MiniDapp or the Command Line interface where Minima is running
+4. Enter the following command, pasting their Contact Address on the end
+
+```
+maxcontacts action:add contact:
+```
+**Example**
+```
+maxcontacts action:add contact:MxG18HGG6FJ038614Y8CW46US6G20810K0070CD00Z83282G60G15AU3QK5NKMR3NW3YCM4EZ99JMFQ5ZPK7ZC5CREZDC52W2NSRQWSJP8DHNC9DR2AP517RVET05JTW89BM1F6FBK2QN3YQ7CVJDARRBHY3Y08FQ99JSNW68D50KVD02UQKK8BJKMHAUAGG3JBCEFBDZGYBPMJJRQAYQSYDH7KR19M2J4P9ZASNEP1240J7SUZB0MCK0DBWB34WS10608007M53YUH@78.141.235.153:9001
+```
+
+<details><summary>Expand for example output</summary>
+
+```
+{
+  "command":"maxcontacts",
+  "params":{
+    "action":"add",
+    "contact":"MxG18HGG6FJ038614Y8CW46US6G20810K0070CD00Z83282G60G15AU3QK5NKMR3NW3YCM4EZ99JMFQ5ZPK7ZC5CREZDC52W2NSRQWSJP8DHNC9DR2AP517RVET05JTW89BM1F6FBK2QN3YQ7CVJDARRBHY3Y08FQ99JSNW68D50KVD02UQKK8BJKMHAUAGG3JBCEFBDZGYBPMJJRQAYQSYDH7KR19M2J4P9ZASNEP1240J7SUZB0MCK0DBWB34WS10608007M53YUH@78.141.235.153:9001"
+  },
+  "status":true,
+  "response":{
+    "maxima":{
+      "from":"0x30819F300D06092A864886F70D010101050003818D00308189028181009645EF9BB7B4A3E98B87C6C68C072903EE4379DA8DF18AE8082B879A60147043977114E00AA3AE2BBDE380D356352E62D5FBCCB916C4F9EC27AC18D24B7A41F4ED26D63AD21578C421E0D303D7815253EF3EA6CB9410B1F439E8528FC0DDC99724F42937D756B4439ABDCDB485000DE42F16861957761EEB88F44AEA391D65EB0203010001",
+      "to":"0x30819F300D06092A864886F70D010101050003818D0030818902818100955E1EA85BD2DB1DE43AB2C4761299D9FA2E3343E18566DD86B0A290AFCDEA5C9E50D8DD896EC4AC9427DFDDD0167D9212BB05E67AE82D5C75D1D9F9B55BDAE351D4087E9299F2F2321A5053ED00BDAA510B9D2D15795080E6B639EB6E2155E6D39EF4AAEB956C4F4D853614C994E15CBBB21110133F3D8582CCA01AB92C64970203010001",
+      "time":"Thu Jun 30 14:09:08 BST 2022",
+      "timemilli":1656594548748,
+      "random":"0x71B501272FE27F565973998A284DD2FBAC83BE56F9D3BBFC9D6DF4608085BE2E",
+      "application":"**maxima_contact_ctrl**",
+      "data":"0x7B2264656C657465223A66616C73652C22696E74726F223A747275652C227075626C69636B6579223A223078333038313946333030443036303932413836343838364637304430313031303130353030303338313844303033303831383930323831383130303936343545463942423742344133453938423837433643363843303732393033454534333739444138444631384145383038324238373941363031343730343339373731313445303041413341453242424445333830443335363335324536324435464243434239313643344639454332374143313844323442374134314634454432364436334144323135373843343231453044333033443738313532353345463345413643423934313042314634333945383532384643304444433939373234463432393337443735364234343339414244434442343835303030444534324631363836313935373736314545423838463434414541333931443635454230323033303130303031222C2261646472657373223A224D7847313848474736464A3033383631345938435734365553364732303831304B30303730434430305A38333238324736304731355231345631355348315455383852363239533946444B35324A354E42453336315148383644374E454B30555659344D4643354B38334631464E455433473933483544455957574E35444E4A3135574D4356384A535230463753573641594555304659524134365A3939484D4355305A4E50433333473643325652344859354A5943514A524D59514744525050545148563756414A4447593839545455315736574833563936514A4A33315A43514D4A4E47514A364D313054434A553544344637364634464D4D545A474459533130363038303036314738454B47403137382E3137302E33392E39363A39303031222C226E616D65223A22416C696365222C226D696E696D6161646472657373223A224D784730383642503256534D5932554B544D54554E4845545746395A4D55553433364253374E445648343043573552535639504655454A574641434B573352222C22746F70626C6F636B223A223635333134222C22636865636B626C6F636B223A223635323634222C22636865636B68617368223A22307830303030303037443745453931393431314532314544373242453830384433313441314537363435313138444638443432354239384530374136443841393730227D",
+      "msgid":"0xD900B339DE228141302C9759B39639517C4933C4B518A33255715E0D8F60C740",
+      "delivered":true
+    }
+  }
+}
+```
+
+</details>
+
+5. Check they have been added by running the `maxcontacts` command.
+
+That's it! You can return to the Home screen and open MaxSolo to start a conversation with your new Contact!
+
+
+### Checking the connection to your Contacts (Terminal)
+
+You must be properly connected to your contacts to successfully send messages. 
+
+To check you are connected:
+1. Open the Minima Terminal MiniDapp or the Command Line interface where Minima is running
+2. Enter the following command
+
+```
+maxcontacts
+```
+
+For each contact, ensure the **samechain** parameter is **true**. If it is false, you should re-add your contact.
+
+<details><summary>Expand for example output</summary>
+
+```
+{
+  "command":"maxcontacts",
+  "status":true,
+  "response":{
+    "contacts":[{
+      "id":1,
+      "publickey":"0x30819F300D06092A864886F70D010101050003818D00308189028181008F2B6054A85102087C7E43A3A06026804FE28723265C97CB8A6B3262BC54E0FDF6CE37854654A87841260D8814F3286555FEEAF00BA039C5822C101C60C3410AC2AEC91ABC823C4A829CF2EF13208A717F5DE86932B057356AECE8AC34AA3D0FE090C1ACD8ED583F820E3F566CFA907AA3FA5B53C0498C75BC3989F9D6B57FC90203010001",
+      "currentaddress":"MxG18HGG6FJ038614Y8CW46US6G20810K0070CD00Z83282G60G1KHEJ2RCN1FDE843E66DP0E3DF43Q6QWAM5GJ4RU1A555CNR0SA5UR1YCBJ4P0PA3BYBFNGM41FRRH0GM91KANT3JD7KR32Z03WNFD4BK1JG7SCDZHEDG8F6U1MUFR35UJPWN755VDSCH97GNP9TMFFWJ5A42RK57Z6H2D097S2RH4MS3MNRJBNE1Z1B9TTU4SVM1H4FSH876C10608007FDQQ94@31.125.188.214:5001",
+      "myaddress":"MxG18HGG6FJ038614Y8CW46US6G20810K0070CD00Z83282G60G15R14V15SH1TU88R629S9FDK52J5NBE361QH86D7NEK0UVY4MFC5K83F1FNET3G93H5DEYWWN5DNJ15WMCV8JSR0F7SW6AYEU0FYRA46Z99HMCU0ZNPC33G6C2VR4HY5JYCQJRMYQGDRPPTQHV7VAJDGY89TTU1W6WH3V96QJJ31ZCQMJNGQJ6M10TCJU5D4F76F4FMMTZGDYS106080061G8EKG@178.170.39.96:9001",
+      "lastseen":1656174927269,
+      "date":"Sat Jun 25 17:35:27 BST 2022",
+      "extradata":{
+        "name":"Bob",
+        "minimaaddress":"MxG086JH4F7R41CNEW5ZJA4VVBET0H66AQZPC3UJ42SFPBYAC999U7EVBNTARKC",
+        "topblock":"30664",
+        "checkblock":"30614",
+        "checkhash":"0x000000259DF90A73F54A36C28FC38009DA30D99F2D6E05E824BD6ED5C3191A62"
+      },
+      "chaintip":"65319",
+      "samechain":true
+    },
+```
+
+</details>
