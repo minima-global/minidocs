@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'User Guides',
-    link: 'docs/userguides/login',
+    link: 'docs/userguides/',
     icon: 'icons/ambassador_icon.svg',
     description: (
       <>
