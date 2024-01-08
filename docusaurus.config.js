@@ -78,6 +78,11 @@ const config = {
             position: "left",
           },
           {
+            to: "docs/userguides",
+            label: "User Guides",
+            position: "left",
+          },
+          {
             to: "docs/learn/ataglance",
             label: "Learn",
             position: "left",
