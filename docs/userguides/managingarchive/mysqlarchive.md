@@ -120,7 +120,8 @@ To update the MySQL tables with the archive blocks from your node:
 mysql action:info host:minimysql database:archivedb user:archiveuser password:youruserpassword
 ```
 
-<details> <summary> Example output </summary>
+<details>
+<summary> Example output </summary>
 
 ```
 {
@@ -165,7 +166,8 @@ Before running an update, you must check your node is on the correct tip block. 
 mysql action:update host:minimysql database:archivedb user:archiveuser password:youruserpassword
 ```
 
-<details> <summary> Example output </summary>
+<details>
+<summary> Example output </summary>
 
 ```
 {

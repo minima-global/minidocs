@@ -22,7 +22,8 @@ You may use the default Firewall manager for your server or alternatively use Un
 
 If you wish to use UFW, expand the instructions below:
 
-<details><summary> UFW initial setup instructions</summary>
+<details>
+<summary> UFW initial setup instructions</summary>
 
 As a user with sudo privileges:
 
@@ -183,7 +184,8 @@ By default, Minima uses ports 9001-9005. Please refer to the [recommended firewa
 
 If using Uncomplicated Firewall (UFW), expand the instructions below.
 
-<details><summary> UFW final setup instructions</summary>
+<details>
+<summary> UFW final setup instructions</summary>
 
 As a user with sudo privileges:
 
@@ -432,7 +434,8 @@ ctrl-`c` : Exits the Minima logs (Minima will continue to run in the background)
 
 ### Optional start up parameters
 
-<details><summary>Expand to see full list of start up parameters</summary>
+<details>
+<summary>Expand to see full list of start up parameters</summary>
 
 The parameters used in this script:
 

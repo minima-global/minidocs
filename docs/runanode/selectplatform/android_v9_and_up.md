@@ -21,14 +21,16 @@ Continue to [join the network](#joining-the-network) then [secure your node](#se
 The latest Android apk file can also be downloaded directly from Github [here.](https://github.com/minima-global/Minima/tree/master/jar) <br/>
 :::
 
-<details><summary> <strong> Huawei,Redmi,ZTE Battery settings</strong> </summary>
+<details>
+<summary> <strong> Huawei,Redmi,ZTE Battery settings</strong> </summary>
 
 Please check the battery settings for the Minima app and ensure that **"Manage Automatically"** is **disabled**. This will ensure that Minima remains in sync and running in the background.<br/>
 The settings should be set as shown below.<br/>
 ![android_battery](/img/runanode/batterysetting.png#width30)
 
 </details>
-<details><summary> <strong> OPPO Battery settings </strong> </summary>
+<details>
+<summary> <strong> OPPO Battery settings </strong> </summary>
 
 OPPO have a strict background policy which means that even if Minima is allowed to run in the background, it may be force closed if there are too many apps with this permission.
 

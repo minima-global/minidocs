@@ -137,7 +137,8 @@ This checks your archive data for missing or broken blocks and tells you the fir
 archive action:integrity
 ```
 
-<details> <summary> Example output </summary>
+<details>
+<summary> Example output </summary>
 
 ```
 archive action:integrity

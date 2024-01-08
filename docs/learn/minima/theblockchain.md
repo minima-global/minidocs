@@ -18,7 +18,8 @@ Diagram: Cascading Chain + TxPoW tree (Blockchain)
 
 If a TxPoW unit becomes a block (TxBlock), it will be added to the blockchain and become a node in the TxPoW tree. The TxPoW Tree Node provides the structure required to hold the TxBlock in the tree. 
 
-<details><summary> <strong> TxPoW tree node attributes </strong> </summary>
+<details>
+<summary> <strong> TxPoW tree node attributes </strong> </summary>
 
 Every TxPoW Tree Node has the following attributes:
 
@@ -60,7 +61,8 @@ Proof-of-Work is provided, in the form of electric energy, by all users running 
 5. At 100 block intervals, the heaviest chain (consisting of all levels in the Cascade and the heaviest branch) is processed and the Cascading Chain is updated. 
 
 
-<details><summary> <strong> Terminology </strong> </summary>
+<details>
+<summary> <strong> Terminology </strong> </summary>
 
 **Block Difficulty Target:** A system set parameter influencing the average number of hashes required for the network to mine a block every 50 seconds (or as close to). The higher the difficulty, the more PoW (energy) required to mine a block.
 
@@ -91,7 +93,8 @@ Diagram: Cascading Chain and Main chain
 
 ![The Blockchain](/img/blockchain/cascadingChain2Lm.svg#gh-light-mode-only)![The Blockchain](/img/blockchain/cascadingChain2Dm.svg#gh-dark-mode-only)
 
-<details><summary> <strong> printtree command output </strong> </summary>
+<details>
+<summary> <strong> printtree command output </strong> </summary>
 
 The corresponding Cascading Chain to the image above, in the Minima Terminal. Actual output of **printtree cascade:true** (using Test parameters of 2 blocks at each level and a default weight of 1000)
 
@@ -175,7 +178,7 @@ Given that each level in the Cascading Chain consists of blocks which are twice 
 
 We can calculate the probabilities of finding a block of each level as follows:
 
-Let a block at level L be denoted as B<sub>L</sub>(x) where L are the levels {0,...,31} and x is the block number (height), then the probability of finding a block at each level is:
+Let a block at level L be denoted as B<sub>L</sub>(x) where L are the levels \{0,...,31} and x is the block number (height), then the probability of finding a block at each level is:
 
 **Level 0:** P(B<sub>0</sub>(x))  = 1/(2<sup>0</sup>) = 1<br />
 **Level 1:** P(B<sub>1</sub>(x)) = 1/(2<sup>1</sup>) = 1/2   i.e. the probability of finding a level 1 block is 1 in 2<br />
@@ -222,7 +225,7 @@ In every block, there exists a header which contains a reference (hash) to a par
 Each new block in the chain **B<sub>0</sub>(n)** *where n = latest block number* contains a reference to the following set of blocks:
 
 - **Its previous block:** B<sub>0</sub>(n-1)
-- **Its set of Super Parents {B<sub>s</sub>(x<sub>max</sub>)}** where <br />
+- **Its set of Super Parents \{B<sub>s</sub>(x<sub>max</sub>)}** where <br />
     **x<sub>max</sub>** is the highest block number (most recent) at any Super level<br />
     **s** is the Super level of the block **B(x<sub>max</sub>)**<br />
 
@@ -232,7 +235,8 @@ The resulting output is that all super blocks in the Cascade will have an immuta
 1. Their immediate previous block in the Cascade
 2. Previous super blocks in the Cascade which have different maximum levels to their immediate previous super parent.
 
-<details><summary> <strong> Terminal output showing Super Parent references </strong> </summary>
+<details>
+<summary> <strong> Terminal output showing Super Parent references </strong> </summary>
 
 Using the command `txpow txpowid:insertTxPoWID`, we can see the full details of the TxPoW including its Super Parents.
 
@@ -339,7 +343,7 @@ The weight of the Super Blocks on the Cascade are also recalculated as follows:
 A Super Block’s Current Weight (CW) is its ‘Base Weight’ (BW) multiplied by a factor proportional to the current level the Super Block is positioned (irrespective of its maximum Super Level):
 
 **CW of Super Blocks on Level 0** = BW&#42;2<sup>0</sup> *i.e.  Base weight&#42;1*<br />
-**CW of Super Blocks on Level 1** = BW&#42;2<sup>1</sup> *i.e.  Base weight&#42;2)*<br />
+**CW of Super Blocks on Level 1** = BW&#42;2<sup>1</sup> *i.e.  Base weight&#42;2*<br />
 **CW of Super Blocks on Level 2** = BW&#42;2<sup>2</sup> *i.e.  Base weight&#42;4*<br />
 **CW of Super Blocks on Level 3** = BW&#42;2<sup>3</sup> *i.e.  Base weight&#42;8*<br />
 **CW of Super Blocks on Level 4** = BW&#42;2<sup>4</sup> *i.e.  Base weight&#42;16*<br />

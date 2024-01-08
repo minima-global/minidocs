@@ -80,7 +80,8 @@ Set your password below to at least 12 characters using alphanumeric characters 
 docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_server=true -v ~/minimadocker9001:/home/minima/data -p 9001:9001 -p 127.0.0.1:9003:9003 --restart unless-stopped --name minima9001 minimaglobal/minima:latest
 ```
 
-<details><summary>What do all the parameters mean?</summary>
+<details>
+<summary>What do all the parameters mean?</summary>
 -d: daemon mode, Minima will run in the background <br/><br/>
 -e minima_mdspassword=IN$ERTPA$$WORD : sets the password to login to your node.<br/><br/>
 -e minima_desktop=true : sets your node type as a desktop node that does not receive incoming connections <br/><br/>
@@ -91,7 +92,8 @@ docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_server=true -v ~/mi
 minimaglobal/minima:latest : specifies the Minima docker image<br/><br/>
 </details>
 
-<details><summary>Optional additional startup parameters</summary>
+<details>
+<summary>Optional additional startup parameters</summary>
 
 The following start up parameters can optionally be specified when starting your Docker node. 
 
@@ -397,7 +399,8 @@ To create a private test node from Genesis on ports 10001-10003, use the followi
 ```
 docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_server=true -e minima_genesis=true -e minima_test=true -e minima_nop2p=true -v ~/minimadocker10001_dev:/home/minima/data -p 10001-10003:9001-9003 --restart unless-stopped --name minima10001_dev minimaglobal/minima:latest
 ```
-<details><summary> Test parameters </summary>
+<details>
+<summary> Test parameters </summary>
 The additional test parameters used are:
 
 `-p 10001-10003:9001-9003` : Local ports 10001-10003 will be forwarded to 9001-9003 on Docker. <br/>

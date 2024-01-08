@@ -16,7 +16,7 @@ The tree is **append-only** and is updated as coins are spent and created. For e
 
 Coins are hashed in pairs, building up the largest **binary tree** possible until a new tree is required. As new trees are required, they start to look like a range of mountains - giving the MMR its name.
 
-When the total number of leaf nodes (Coins/TxOs) are not equal to *2 <sup>n</sup> where n = int{*0,...,256*}*, there will be multiple trees of different heights, creating multiple peak nodes as shown below.
+When the total number of leaf nodes (Coins/TxOs) are not equal to *2 <sup>n</sup> where n = int\{*0,...,256*}*, there will be multiple trees of different heights, creating multiple peak nodes as shown below.
 
 *Diagram: Merkle Mountain Range (MMR) with 11 coins (green) and three peaks (blue)*
 
@@ -109,7 +109,7 @@ Each block has its own set of MMR entries with the following attributes:
 | **Block Time** | The blocktime for the MMR set | MiniNumber |
 | **Elen** | How many entries in this MMR set | MiniNumber |
 | **Entry Number** | The latest entry number | MMREntryNumber |
-| **Set Entries** | The **hash table** elements for all the MMR Entries in this set.<br />HashTable<0,1> is the entry on Row 0, Entry index 1 | Enumeration of MMR Entries |
+| **Set Entries** | The **hash table** elements for all the MMR Entries in this set.<br/>HashTable&lt;0,1> is the entry on Row 0, Entry index 1 | Enumeration of MMR Entries |
 
 ## Traversing the MMR
 

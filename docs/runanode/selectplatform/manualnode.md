@@ -37,7 +37,8 @@ sudo java -jar /home/INSERTUSERNAME/minima.jar -mdsenable
 
 #### Optional start up parameters
 
-<details><summary>Expand to see full list of start up parameters</summary>
+<details>
+<summary>Expand to see full list of start up parameters</summary>
 
 The following start up parameters can optionally be specified when starting your node. 
 

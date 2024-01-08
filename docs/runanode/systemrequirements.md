@@ -81,7 +81,8 @@ You may need to update this if your home IP is dynamic. Alternatively you can al
 If you wish to enable RPC, ensure this is only allowed from your home IP address.
 
 <!-- 
-<details> <summary> UFW setup - NOT FOR DOCKER USERS </summary>
+<details>
+<summary> UFW setup - NOT FOR DOCKER USERS </summary>
 
 Assuming a new server with nothing else installed and that Minima will be installed on the default ports 9001-9005:
 

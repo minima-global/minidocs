@@ -40,7 +40,8 @@ Once complete the node will shutdown and on restarting the node your wallet will
 
 ## From the Terminal (advanced)
 
-<details><summary> Expand for details </summary>
+<details>
+<summary> Expand for details </summary>
 
 There are 3 options for restoring a backup:
 

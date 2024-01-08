@@ -18,7 +18,7 @@ Here is a breakdown of the simple and complete KISSVM language.
 | RELATION |  LOGIC AND LOGIC  **\|**  LOGIC OR LOGIC  **\|** <br/> LOGIC XOR LOGIC  **\|**  LOGIC NAND LOGIC **\|**<br/> LOGIC NOR LOGIC  **\|** LOGIC NXOR LOGIC **\|** LOGIC<br/>
 | LOGIC | OPERATION EQ OPERATION  **\|** OPERATION NEQ OPERATION  **\|** <br/>OPERATION GT OPERATION  **\|** OPERATION GTE OPERATION  **\|** <br/>OPERATION LT OPERATION  **\|** OPERATION LTE OPERATION  **\|** OPERATION |
 | OPERATION | ADDSUB & ADDSUB **\|** <br/>ADDSUB \| ADDSUB **\|** <br/> ADDSUB ^ ADDSUB **\|** <br/> ADDSUB |
-| ADDSUB | MULDIV + MULDIV **\|** <br/> MULDIV - MULDIV **\|** <br/> MULDIV % MULDIV **\|**<br/> MULDIV << MULDIV **\|** <br/> MULDIV >> MULDIV **\|** <br/>MULDIV |
+| ADDSUB | MULDIV + MULDIV **\|** <br/> MULDIV - MULDIV **\|** <br/> MULDIV % MULDIV **\|**<br/> MULDIV &lt;&lt; MULDIV **\|** <br/> MULDIV >> MULDIV **\|** <br/>MULDIV |
 | MULDIV | PRIME * PRIME **\|**<br/> PRIME / PRIME **\|** <br/>PRIME |
 | PRIME | NOT PRIME **\|**  <br/>NEG PRIME **\|** <br/> ~PRIME **\|**<br/> BASEUNIT |
 | BASEUNIT | VARIABLE **\|** VALUE **\|** -NUMBER **\|** GLOBAL **\|** FUNCTION **\|** ( EXPRESSION ) |
