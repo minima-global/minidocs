@@ -23,7 +23,8 @@ Your password should be over 12 characters and can use alphanumeric characters a
 **If you forget it, you will need to [restore from an Archive node](/docs/userguides/recovery/importseed) using your 24 word seed phrase.**
 :::
 
-<details><summary> How to lock/unlock your node using the command line </summary>
+<details>
+<summary> How to lock/unlock your node using the command line </summary>
 
 #### To lock your wallet using commands (advanced)
 

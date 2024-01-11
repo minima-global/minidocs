@@ -18,7 +18,8 @@ logs scripts:true
 
 ## Minima connection logs 
 
-<details> <summary> Connected attempt success to ... </summary>
+<details>
+<summary> Connected attempt success to ... </summary>
 
 
 **Details:** Your node has successfully connected to another node at the specified host:port.
@@ -28,7 +29,8 @@ logs scripts:true
 **Action required?:** No 
 </details>
 
-<details> <summary> [+] Connected to the blockchain Initial Block Download received. size:x bytes blocks:x </summary>
+<details>
+<summary> [+] Connected to the blockchain Initial Block Download received. size:x bytes blocks:x </summary>
 
 **Details:** Your node has received an IBD (Initial Blockchain Download) after connecting to another node. If your node is not up to date with the top block in the chain, you will receive the blocks your node is missing.
 
@@ -38,7 +40,8 @@ logs scripts:true
 </details>
 
 ## Chain logs
-<details> <summary>
+<details>
+<summary>
 Your chain tip is up to date - no TxBlocks accepted - only FULL TxPoW
 </summary>
 
@@ -49,7 +52,8 @@ Your chain tip is up to date - no TxBlocks accepted - only FULL TxPoW
 **Action required?:** No
 </details>
 
-<details> <summary>
+<details>
+<summary>
 Warning : Chain tip hasn't changed in 180 seconds 0x.. x
 </summary>
 
@@ -64,7 +68,8 @@ Warning : Chain tip hasn't changed in 180 seconds 0x.. x
 
 </details>
 
-<details> <summary>
+<details>
+<summary>
 [!] No Crossover found whilst syncing with new node. They are on a different chain. Please check you are on the correct chain.. disconnecting from ...
 </summary>
 
@@ -78,7 +83,8 @@ Warning : Chain tip hasn't changed in 180 seconds 0x.. x
 
 </details>
 
-<details> <summary> [!] CONNECTED TO HEAVIER CHAIN.. from ... </summary>
+<details>
+<summary> [!] CONNECTED TO HEAVIER CHAIN.. from ... </summary>
 
 **Details:** You connected to a node that in on a heavier chain. The client uid of the other node is provided.
 
@@ -93,7 +99,8 @@ Warning : Chain tip hasn't changed in 180 seconds 0x.. x
 
 </details>
 
-<details> <summary> We are Too old to sync new user! greetroot:x mytip:x </summary>
+<details>
+<summary> We are Too old to sync new user! greetroot:x mytip:x </summary>
 
 **Details:** You connected to a new node but are too far behind so cannot provide any blocks to sync the user. The `greetroot` is the user's root block of their chain, `mytip` is your top block.
 
@@ -108,7 +115,8 @@ Warning : Chain tip hasn't changed in 180 seconds 0x.. x
 
 </details>
 
-<details> <summary> [!] Failed block check @ x txpowid:x root:x tip:x </summary>
+<details>
+<summary> [!] Failed block check @ x txpowid:x root:x tip:x </summary>
 
 **Details:** Your node could not complete the block check
 
@@ -125,7 +133,8 @@ Warning : Chain tip hasn't changed in 180 seconds 0x.. x
 
  
 
-<details> <summary> Invalid TxPoW Super Parents </summary>
+<details>
+<summary> Invalid TxPoW Super Parents </summary>
 
 **Details:** The TxPoW being validated does not have valid Super Parents in the cascade.
 
@@ -140,7 +149,8 @@ Warning : Chain tip hasn't changed in 180 seconds 0x.. x
 
 </details>
 
-<details> <summary> [!] Received IBD with cascade even though we have one.. from </summary>
+<details>
+<summary> [!] Received IBD with cascade even though we have one.. from </summary>
 
 **Details:** You connected to a node which sent you a cascade
 
@@ -151,7 +161,8 @@ Warning : Chain tip hasn't changed in 180 seconds 0x.. x
 
 ## Maxima logs
 
-<details> <summary>
+<details>
+<summary>
 MAXIMA NEW connection : ...
 </summary>
 
@@ -163,7 +174,8 @@ MAXIMA NEW connection : ...
 
 </details>
 
-<details> <summary>
+<details>
+<summary>
 MAXIMA EXISTING connection
 </summary>
 
@@ -175,7 +187,8 @@ MAXIMA EXISTING connection
 
 </details>
 
-<details> <summary>
+<details>
+<summary>
 MAXIMA Check if connected : ...
 </summary>
 
@@ -188,7 +201,8 @@ MAXIMA Check if connected : ...
 
 </details>
 
-<details> <summary> TIMED Maxima connect as no chain yet.. </summary>
+<details>
+<summary> TIMED Maxima connect as no chain yet.. </summary>
 
 **Details:** The node does not have any blocks yet so will not attempt to connect to a Maxima host. Will reattempt in 10 seconds.
 
@@ -200,7 +214,8 @@ MAXIMA Check if connected : ...
 
 </details>
 
-<details> <summary> MAXIMA disconnecting from 185.103.110.69:9001 reconnecting to random host </summary>
+<details>
+<summary> MAXIMA disconnecting from 185.103.110.69:9001 reconnecting to random host </summary>
 
 **Details:** A connection could not be established with the host and a new connection will be made.
 
@@ -214,7 +229,8 @@ MAXIMA Check if connected : ...
 
 ## Script logs 
 
-<details> <summary>
+<details>
+<summary>
 Script FAIL input:x ...
 </summary>
 
@@ -230,7 +246,8 @@ Script FAIL input:x ...
 
 </details>
 
-<details> <summary>
+<details>
+<summary>
 Token Script FAIL input:x ...
 </summary>
 
@@ -246,7 +263,8 @@ Token Script FAIL input:x ...
 
 </details>
 
-<details> <summary>
+<details>
+<summary>
 Error Monotonic TxPoW failed script check from Client: ... 
 </summary>
 
@@ -258,7 +276,8 @@ Error Monotonic TxPoW failed script check from Client: ...
 
 </details>
 
-<details> <summary>
+<details>
+<summary>
 NON-Monotonic TxPoW failed script check from Client ...
 </summary>
 

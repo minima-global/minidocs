@@ -37,7 +37,8 @@ sudo java -jar /home/INSERTUSERNAME/minima.jar -mdsenable
 
 #### Optional start up parameters
 
-<details><summary>Expand to see full list of start up parameters</summary>
+<details>
+<summary>Expand to see full list of start up parameters</summary>
 
 The following start up parameters can optionally be specified when starting your node. 
 
@@ -167,6 +168,18 @@ mds
 ```
 3. Copy and Paste your password into the field and click **Enter**
 4. You will see your MiniDapp hub!
+
+Please see the [first steps](#first-steps) to complete now your node is running.
+
+## First steps
+
+The first time you install Minima, you will need to 
+
+1. Connect to the network
+2. Write down your seed phrase
+
+Please refer to the [user guides](/docs/userguides/newusers/jointhenetwork) to learn how.
+
 
 -------
 

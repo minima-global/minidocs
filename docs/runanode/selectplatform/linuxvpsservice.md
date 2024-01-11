@@ -22,7 +22,8 @@ You may use the default Firewall manager for your server or alternatively use Un
 
 If you wish to use UFW, expand the instructions below:
 
-<details><summary> UFW initial setup instructions</summary>
+<details>
+<summary> UFW initial setup instructions</summary>
 
 As a user with sudo privileges:
 
@@ -183,7 +184,8 @@ By default, Minima uses ports 9001-9005. Please refer to the [recommended firewa
 
 If using Uncomplicated Firewall (UFW), expand the instructions below.
 
-<details><summary> UFW final setup instructions</summary>
+<details>
+<summary> UFW final setup instructions</summary>
 
 As a user with sudo privileges:
 
@@ -230,8 +232,16 @@ The first time accessing your MiniDapp hub, you may need to pass through the sec
 
 2. Enter your password to login, if you don't remember, you can check [here](#how-to-check-your-minidapp-system-password).
 
-**After logging in for the first time, you will need to [join the network](/docs/userguides/newusers/jointhenetwork) and [secure your node](/docs/userguides/walletsecurity/lockingyourwallet).**
+Please see the [first steps](#first-steps) to complete now your node is running.
 
+## First steps
+
+The first time you install Minima, you will need to 
+
+1. Connect to the network
+2. Write down your seed phrase
+
+Please refer to the [user guides](/docs/userguides/newusers/jointhenetwork) to learn how.
 
 -------
 
@@ -432,7 +442,8 @@ ctrl-`c` : Exits the Minima logs (Minima will continue to run in the background)
 
 ### Optional start up parameters
 
-<details><summary>Expand to see full list of start up parameters</summary>
+<details>
+<summary>Expand to see full list of start up parameters</summary>
 
 The parameters used in this script:
 

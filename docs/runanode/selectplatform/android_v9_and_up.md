@@ -13,22 +13,24 @@ sidebar_position: 1
 2. Set your Google Play store settings to enable [auto-update](https://support.google.com/googleplay/answer/113412?hl=en) for the Minima app. 
 3. Open the Minima App and allow the battery settings for Minima to run in the background
 
-**Congratulations - your node is now installed & running!**
+**Congratulations - your node is now installed & running!** 
 
-Continue to [join the network](#joining-the-network) then [secure your node](#secure-your-node).
+Please see the [first steps](#first-steps) to complete now your node is running.
 
 :::note Don't have a Google Play account?
 The latest Android apk file can also be downloaded directly from Github [here.](https://github.com/minima-global/Minima/tree/master/jar) <br/>
 :::
 
-<details><summary> <strong> Huawei,Redmi,ZTE Battery settings</strong> </summary>
+<details>
+<summary> <strong> Huawei,Redmi,ZTE Battery settings</strong> </summary>
 
 Please check the battery settings for the Minima app and ensure that **"Manage Automatically"** is **disabled**. This will ensure that Minima remains in sync and running in the background.<br/>
 The settings should be set as shown below.<br/>
 ![android_battery](/img/runanode/batterysetting.png#width30)
 
 </details>
-<details><summary> <strong> OPPO Battery settings </strong> </summary>
+<details>
+<summary> <strong> OPPO Battery settings </strong> </summary>
 
 OPPO have a strict background policy which means that even if Minima is allowed to run in the background, it may be force closed if there are too many apps with this permission.
 
@@ -36,29 +38,14 @@ To ensure that Minima continues to run as expected, please ensure that you have 
 
 </details>
 
-## Join the network
+## First steps
 
-The first time you install Minima, you will need to connect to the network before you can send or receive coins.
+The first time you install Minima, you will need to 
 
-To join the network, simply
-- ask someone else running Minima to share their connections with you, or
-- google search for **minimapeers.txt**
+1. Connect to the network
+2. Write down your seed phrase
 
-Please see [Joining the network](/docs/userguides/newusers/jointhenetwork) to learn more.
-
-## Secure your node 
-
-Before using your node for the first time, you should:
-
-1. Write down your seed phrase
-2. Lock your node with a password 
-3. Take a backup and set up auto-backups
-
-This is all done within the **Security MiniDapp.**
-
-![security](/img/app/security.png#width10)
-
-Please see the User Guides section for detailed guidance.
+Please refer to the [user guides](/docs/userguides/newusers/jointhenetwork) to learn how.
 
 
 ## Desktop Connect

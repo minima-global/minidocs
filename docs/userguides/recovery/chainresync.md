@@ -28,7 +28,8 @@ Once complete, you will be on the correct top block.
 
 ## From the Terminal (advanced)
 
-<details><summary> Expand for details </summary>
+<details>
+<summary> Expand for details </summary>
 
 1. From an existing node that is out of sync with the latest tip block, login to Minima
 2. Open the Terminal MiniDapp

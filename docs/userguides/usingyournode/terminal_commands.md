@@ -12,7 +12,8 @@ For detailed help, use `help command:` followed by the command.
 
 ## General
 
-<details><summary><strong>balance</strong><br></br>Show your total balance of Minima and tokens.</summary>
+<details>
+<summary><strong>balance</strong><br></br>Show your total balance of Minima and tokens.</summary>
 
 **address:** (optional)
     Show the balance for a specific 0x or Mx address.
@@ -33,13 +34,15 @@ For detailed help, use `help command:` followed by the command.
 </details>
 
 
-<details><summary><strong>block</strong><br></br>Return the top block</summary>
+<details>
+<summary><strong>block</strong><br></br>Return the top block</summary>
 
 **Examples:**
 *block*
 </details>
 
-<details><summary><strong>checkaddress</strong><br></br>Check the validity of an address and whether it belongs to your node.</summary>
+<details>
+<summary><strong>checkaddress</strong><br></br>Check the validity of an address and whether it belongs to your node.</summary>
 
 **address:**<br></br>
     The 0x or Mx address to check.
@@ -49,7 +52,8 @@ For detailed help, use `help command:` followed by the command.
 *checkaddress address:0xFED...*
 </details>
 
-<details><summary><strong>coincheck</strong><br></br>Check a coin exists and is valid. Can only check unspent coins.</summary>
+<details>
+<summary><strong>coincheck</strong><br></br>Check a coin exists and is valid. Can only check unspent coins.</summary>
 
 Returns the coin details and whether the MMR proof is valid.
 
@@ -61,7 +65,8 @@ Returns the coin details and whether the MMR proof is valid.
 *coincheck data:0x00000..*
 </details>
 
-<details><summary><strong>coinexport</strong><br></br>Export a coin including its MMR proof.</summary>
+<details>
+<summary><strong>coinexport</strong><br></br>Export a coin including its MMR proof.</summary>
 
 A coin can then be imported and tracked on another node using the 'coinimport' command.
 
@@ -75,7 +80,8 @@ This does not allow the spending of a coin - just the knowledge of its existence
 *coinexport coinid:0xCD34..*
 </details>
 
-<details><summary><strong>coinimport</strong><br></br>Import a coin including its MMR proof.</summary>
+<details>
+<summary><strong>coinimport</strong><br></br>Import a coin including its MMR proof.</summary>
 
 Optionally you can track the coin to add it to your relevant coins list and know when it becomes spent.
 
@@ -93,7 +99,8 @@ Importing does not allow the spending of a coin - just the knowledge of its exis
 </details>
 
 
-<details><summary><strong>cointrack</strong><br></br>Track or untrack a coin.</summary>
+<details>
+<summary><strong>cointrack</strong><br></br>Track or untrack a coin.</summary>
 
 Track a coin to keep its MMR proof up-to-date and know when it becomes spent. Stop tracking to remove it from your relevant coins list.
 
@@ -108,7 +115,8 @@ Track a coin to keep its MMR proof up-to-date and know when it becomes spent. St
 *cointrack enable:true coinid:0xCD34..*
 </details>
 
-<details><summary><strong>consolidate</strong><br></br> Consolidate multiple coins (UTxOs) into one by sending them back to yourself.</summary>
+<details>
+<summary><strong>consolidate</strong><br></br> Consolidate multiple coins (UTxOs) into one by sending them back to yourself.</summary>
 
 Must have at least 3 coins.
 
@@ -150,7 +158,8 @@ Useful to prevent having many coins of tiny value and to manage the number of co
 </details>
 
 
-<details><summary><strong>getaddress</strong><br></br>Returns an existing default Minima address to receive funds, use as a change address etc.</summary>
+<details>
+<summary><strong>getaddress</strong><br></br>Returns an existing default Minima address to receive funds, use as a change address etc.</summary>
 
 Each address can be used securely 262144 (64^3) times.
 
@@ -160,7 +169,8 @@ Then you can wipe the private keys from your online node using the 'vault' comma
 *getaddress*
 </details>
 
-<details><summary><strong>hashtest</strong><br></br>Check the speed of hashing of this device.</summary>
+<details>
+<summary><strong>hashtest</strong><br></br>Check the speed of hashing of this device.</summary>
 
 Defaults to 1 million hashes.
 
@@ -176,7 +186,8 @@ E.g. A speed of 0.5 MH/s indicates 500000 hashes per second.
 *hashtest*
 </details>
 
-<details><summary><strong>history</strong><br></br>Return all TxPoW relevant to you.</summary>
+<details>
+<summary><strong>history</strong><br></br>Return all TxPoW relevant to you.</summary>
 
 **max:** (optional)<br></br>
     Maximum number of TxPoW to retrieve.
@@ -188,7 +199,8 @@ E.g. A speed of 0.5 MH/s indicates 500000 hashes per second.
 *history max:20*
 </details>
 
-<details>  <summary><strong>keys</strong><br></br>Get a list of all your public keys or create a new key.</summary>
+<details>
+<summary><strong>keys</strong><br></br>Get a list of all your public keys or create a new key.</summary>
 
 Each public key can be used for signing securely 262144 (64^3) times.
 
@@ -214,7 +226,8 @@ Search for a specific public key.
 </details>
 
 
-<details><summary><strong>newaddress</strong><br></br>Create a new address that will not be not used for anything else (not one of the 64 default change address).</summary>
+<details>
+<summary><strong>newaddress</strong><br></br>Create a new address that will not be not used for anything else (not one of the 64 default change address).</summary>
 
 Can be used for a specific use case or for improved privacy.
 
@@ -224,7 +237,8 @@ Can be used for a specific use case or for improved privacy.
 
 </details>
 
-<details><summary><strong>printmmr</strong><br></br>Print the MMR set of the tip block and the total number of entries in the MMR. </summary>
+<details>
+<summary><strong>printmmr</strong><br></br>Print the MMR set of the tip block and the total number of entries in the MMR. </summary>
 
 Returns the tip block number, latest entrynumber and latest set of MMR entries.
 
@@ -257,7 +271,8 @@ true or false, true shows the cascade.
 *printtree cascade:true*
 </details>
 
-<details><summary><strong>quit</strong><br></br>Shutdown Minima safely. </summary>
+<details>
+<summary><strong>quit</strong><br></br>Shutdown Minima safely. </summary>
 
 Ensure you have a backup before shutting down.
 
@@ -303,7 +318,7 @@ Add a custom script that must return 'TRUE' when spending any coin of this token
 Both the token script and coin script must return 'TRUE' for a coin to be sendable.
 
 **state:** (optional)<br></br>
-List of state variables, if adding a script. A JSON object in the format {\"port\":\"value\",..}
+List of state variables, if adding a script. A JSON object in the format \{"port":"value",..}
 
 **signtoken:** (optional)<br></br>
 Provide a public key to sign the token with. Useful for proving you are the creator of the token/NFT.
@@ -319,7 +334,7 @@ Amount to burn with the tokencreate minting transaction.
 
 *tokencreate name:newtoken amount:1000000*
 
-*tokencreate amount:10 name:{"name":"newcoin","link":"http:mysite.com","description":"A very cool token"}*
+*tokencreate amount:10 name:\{"name":"newcoin","link":"http:mysite.com","description":"A very cool token"}*
 
 *tokencreate name:mynft amount:10 decimals:0 webvalidate:https://www.mysite.com/nftvalidation.txt signtoken:0xFF.. burn:0.1*
 
@@ -367,7 +382,8 @@ A case-sensitive string to filter the messages by.
 
 ## Backup
 
-<details><summary><strong>archive</strong><br></br>Perform a chain or seed re-sync from an archive node.</summary>
+<details>
+<summary><strong>archive</strong><br></br>Perform a chain or seed re-sync from an archive node.</summary>
 
 A chain re-sync will put your node on the correct chain so you are in sync with the latest tip block.
 
@@ -429,7 +445,8 @@ You can also check the integrity of your archive db.
 *archive action:addresscheck address:Mx..*
 </details>
 
-<details><summary><strong>backup</strong><br></br>Backup your node. Uses a timestamped name by default.</summary>
+<details>
+<summary><strong>backup</strong><br></br>Backup your node. Uses a timestamped name by default.</summary>
 
 **password:** (optional)<br></br>
     Set a password using letters and numbers only.
@@ -456,7 +473,8 @@ You can also check the integrity of your archive db.
 
 </details>
 
-<details><summary><strong>mysql</strong><br></br>Export the archive data of your node to a MySQL database.</summary>
+<details>
+<summary><strong>mysql</strong><br></br>Export the archive data of your node to a MySQL database.</summary>
 
 Export your archive data and coins data to a mysql database.
 
@@ -533,7 +551,8 @@ You can also create a coins db in MySQL to search for coins using SQL queries.
 </details>
 
 
-<details><summary><strong>mysqlcoins</strong><br></br>Create and search a coins database from your MySQL Archive.</summary>
+<details>
+<summary><strong>mysqlcoins</strong><br></br>Create and search a coins database from your MySQL Archive.</summary>
 
 Create a coins db from your mysql data and search it.
 
@@ -593,7 +612,8 @@ mysqlcoins action:search query:"address='0x791E78C60652B0E19B8FE9EB035B122B26149
 
 </details>
 
-<details><summary><strong>reset</strong><br></br>Reset your node in various ways. </summary>
+<details>
+<summary><strong>reset</strong><br></br>Reset your node in various ways. </summary>
 
 You MUST wait until all your original keys are created before this is allowed.
 
@@ -635,7 +655,8 @@ You MUST wait until all your original keys are created before this is allowed.
 
 </details>
 
-<details><summary><strong>restore</strong><br></br>Restore your node from a backup.</summary>
+<details>
+<summary><strong>restore</strong><br></br>Restore your node from a backup.</summary>
 
 You MUST wait until all your original keys are created before this is allowed.
 
@@ -650,7 +671,8 @@ You MUST wait until all your original keys are created before this is allowed.
 *restore file:my-full-backup-01-Jan-22 password:Longsecurepassword456*
 </details>
 
-<details><summary><strong>restoresync</strong><br></br>Restore the entire system AND perform an archive chain sync. Use when the backup is old.</summary>
+<details>
+<summary><strong>restoresync</strong><br></br>Restore the entire system AND perform an archive chain sync. Use when the backup is old.</summary>
 
 The node will be restored and an archive chain sync will commence from the last block in the backup.
 
@@ -673,7 +695,8 @@ You MUST wait until all your original keys are created before this is allowed.
 </details>
 
 
-<details><summary><strong>vault</strong><br></br> View, encrypt/decrypt or wipe/restore your seed phrase and private keys.</summary>
+<details>
+<summary><strong>vault</strong><br></br> View, encrypt/decrypt or wipe/restore your seed phrase and private keys.</summary>
 
  DO NOT SHARE YOUR SEED PHRASE WITH ANYONE.
 
@@ -763,7 +786,8 @@ The ip:port to send a message to. Use with 'action:send'.
 *mds action:permission uid:0xABA3.. trust:write*
 </details>
 
-<details><summary><strong>checkmode</strong><br></br>Show if this MiniDAPP is READ or WRITE mode</summary>
+<details>
+<summary><strong>checkmode</strong><br></br>Show if this MiniDAPP is READ or WRITE mode</summary>
 
 Can be called from a MiniDapp to check whether it is in READ or WRITE mode.
 
@@ -772,14 +796,16 @@ Can be called from a MiniDapp to check whether it is in READ or WRITE mode.
 *checkmode*
 </details>
 
-<details><summary><strong>checkpending</strong><br></br>Show if a pending transaction UID is in the pending list</summary>
+<details>
+<summary><strong>checkpending</strong><br></br>Show if a pending transaction UID is in the pending list</summary>
 
 **Examples:**
 
 *checkpending uid:0xFF..*
 </details>
 
-<details><summary><strong>checkrestore</strong><br></br>Check if the system is restoring</summary>
+<details>
+<summary><strong>checkrestore</strong><br></br>Check if the system is restoring</summary>
 
 Check whether Minima is currently being restored, is shutting down and if shutdown is complete.
 
@@ -875,7 +901,8 @@ uid can be found from the 'network' command.
 *peers action:addpeers peerslist:["31.125.188.214:9001","94.0.239.117:9001"]*
 </details>
 
-<details><summary><strong>ping</strong><br></br>Ping a host and get back Minima Node info.</summary>
+<details>
+<summary><strong>ping</strong><br></br>Ping a host and get back Minima Node info.</summary>
 
 **Examples:**
 
@@ -1168,23 +1195,23 @@ Scripts will be auto cleaned for you.
 
 **script:** <br></br> The script to run, surrounded by double quotes.
 
-**state:** (optional) <br></br> State variable values to use when running the script. JSON object in the format {0:value,1:value,..}.
+**state:** (optional) <br></br> State variable values to use when running the script. JSON object in the format \{0:value,1:value,..}.
 
-**prevstate:** (optional) <br></br> The previous state variable values (for the input coin) to use when running the script. JSON object in the format {0:value,1:value,..}.
+**prevstate:** (optional) <br></br> The previous state variable values (for the input coin) to use when running the script. JSON object in the format \{0:value,1:value,..}.
 
-**globals:** (optional) <br></br> The Global variable values to use when running the script. JSON object in the format {@GLOBAL:value,..}.
+**globals:** (optional) <br></br> The Global variable values to use when running the script. JSON object in the format \{@GLOBAL:value,..}.
 
 **signatures:** (optional) <br></br>The signatures required for the script. JSON array.
 
-**extrascripts:** (optional) <br></br>Extra scripts required for MAST contracts. JSON object in the format {script:proof,..}.
+**extrascripts:** (optional) <br></br>Extra scripts required for MAST contracts. JSON object in the format \{script:proof,..}.
 
 **Examples:**
 
-*runscript script:"RETURN SIGNEDBY(0xFF..) AND @BLOCK GT 100" globals:{"@BLOCK":"101"} signatures:["0xFF"]*
+*runscript script:"RETURN SIGNEDBY(0xFF..) AND @BLOCK GT 100" globals:\{"@BLOCK":"101"} signatures:["0xFF"]*
 
-*runscript script:"LET st=STATE(99) LET ps=PREVSTATE(99) IF st EQ ps AND @COINAGE GT 20 AND SIGNEDBY(0xFF) THEN RETURN TRUE ELSEIF st GT ps AND SIGNEDBY(0xEE) THEN RETURN TRUE ENDIF" globals:{"@COINAGE":"23"} state:{"99":"0"} prevstate:{"99":"0"} signatures:["0xFF"]*
+*runscript script:"LET st=STATE(99) LET ps=PREVSTATE(99) IF st EQ ps AND @COINAGE GT 20 AND SIGNEDBY(0xFF) THEN RETURN TRUE ELSEIF st GT ps AND SIGNEDBY(0xEE) THEN RETURN TRUE ENDIF" globals:\{"@COINAGE":"23"} state:\{"99":"0"} prevstate:\{"99":"0"} signatures:["0xFF"]*
 
-*runscript script:"MAST 0x0E3.." extrascripts:{"RETURN TRUE":"0x000.."}*
+*runscript script:"MAST 0x0E3.." extrascripts:\{"RETURN TRUE":"0x000.."}*
 </details>
 
 
@@ -1210,7 +1237,8 @@ Scripts will be auto cleaned for you.
 
 ## Search
 
-<details><summary><strong>coins</strong><br></br>Search for coins that are relevant to you or in the unpruned chain.</summary>
+<details>
+<summary><strong>coins</strong><br></br>Search for coins that are relevant to you or in the unpruned chain.</summary>
 
 **relevant:** (optional)<br></br>
    true or false, true will only return coins you are tracking. <br></br>
@@ -1261,7 +1289,8 @@ Scripts will be auto cleaned for you.
 </details>
 
 
-<details><summary><strong>history</strong><br></br>Return all TxPoW relevant to you.</summary>
+<details>
+<summary><strong>history</strong><br></br>Return all TxPoW relevant to you.</summary>
 
 **max:** (optional)<br></br>
     Maximum number of TxPoW to retrieve.
@@ -1273,7 +1302,8 @@ Scripts will be auto cleaned for you.
 </details>
 
 
-<details><summary><strong>keys</strong><br></br>Get a list of all your public keys or create a new key.</summary>
+<details>
+<summary><strong>keys</strong><br></br>Get a list of all your public keys or create a new key.</summary>
 
 Each public key can be used for signing securely 262144 (64^3) times.
 
@@ -1299,7 +1329,8 @@ Search for a specific public key.
 
 </details>
 
-<details><summary><strong>tokens</strong><br></br>List all tokens in the unpruned chain.</summary>
+<details>
+<summary><strong>tokens</strong><br></br>List all tokens in the unpruned chain.</summary>
 
 Optionally import or export tokens to share token data.
 
@@ -1324,7 +1355,8 @@ Optionally import or export tokens to share token data.
 *tokens action:import data:0x000..*
 
 </details>
-<details><summary><strong>txpow</strong><br></br> Search for a specific TxPoW in the unpruned chain or your mempool.</summary>
+<details>
+<summary><strong>txpow</strong><br></br> Search for a specific TxPoW in the unpruned chain or your mempool.</summary>
 
 Search by txpowid, block or 0x / Mx address.
 
@@ -1352,7 +1384,8 @@ Search by txpowid, block or 0x / Mx address.
 
 ## Send
 
-<details><summary><strong>multisig</strong><br></br> Create a multisig coin that can only be used in a txn signed by root OR n of m given public keys.</summary>
+<details>
+<summary><strong>multisig</strong><br></br> Create a multisig coin that can only be used in a txn signed by root OR n of m given public keys.</summary>
 
 Provide your Vault password to temporarily decrypt the private keys when creating the coin or signing a transaction.
 
@@ -1420,7 +1453,8 @@ Provide your Vault password to temporarily decrypt the private keys when creatin
 
 </details>
 
-<details><summary><strong>send</strong><br></br> Send Minima or custom tokens to a wallet or custom script address.</summary>
+<details>
+<summary><strong>send</strong><br></br> Send Minima or custom tokens to a wallet or custom script address.</summary>
 
 Optionally, send to multiple addresses in one transaction; split UTxOs; add state variables or include a burn.
 
@@ -1438,7 +1472,7 @@ Optionally, send to multiple addresses in one transaction; split UTxOs; add stat
     If sending a custom token, you must specify its tokenid. Defaults to Minima (0x00).
 
 **state:** (optional)<br></br> 
-    List of state variables, if sending coins to a script. A JSON object in the format {"port":"value",..}
+    List of state variables, if sending coins to a script. A JSON object in the format \{"port":"value",..}
 
 **burn:** (optional)<br></br> 
     The amount of Minima to burn with this transaction.
@@ -1474,11 +1508,12 @@ Optionally, send to multiple addresses in one transaction; split UTxOs; add stat
 
 *send multi:["0xFF..:10","0xEE..:10","0xDD..:10"] split:20*
 
-*send amount:1 address:0xFF.. state:{"0":"0xEE..","1":"0xDD.."}*
+*send amount:1 address:0xFF.. state:\{"0":"0xEE..","1":"0xDD.."}*
 
 </details>
 
-<details><summary><strong>sendpoll</strong><br></br> Send function that adds 'send' commands to a list and polls every 30 seconds until the return status is 'true'.</summary>
+<details>
+<summary><strong>sendpoll</strong><br></br> Send function that adds 'send' commands to a list and polls every 30 seconds until the return status is 'true'.</summary>
 
 **action:** (optional)<br></br>
 &ensp;**list** : list all the 'send' commands in the polling list.<br></br>
@@ -1499,7 +1534,8 @@ Optionally, send to multiple addresses in one transaction; split UTxOs; add stat
 
 </details>
 
-<details><summary><strong>sendnosign</strong><br></br> Create a txn but don't sign it.</summary>
+<details>
+<summary><strong>sendnosign</strong><br></br> Create a txn but don't sign it.</summary>
 
 Constructs and outputs an unsigned transaction to a file in the base folder. 
 
@@ -1520,7 +1556,7 @@ Useful when the keys on an online node are wiped or password locked.
     If sending a custom token, you must specify its tokenid. Defaults to Minima (0x00).
 
 **state:** (optional)<br></br> 
-    List of state variables, if sending coins to a script. A JSON object in the format {\"port\":\"value\",..}
+    List of state variables, if sending coins to a script. A JSON object in the format \{"port":"value",..}
 
 **burn:** (optional)<br></br> 
     The amount of Minima to burn with this transaction.
@@ -1544,7 +1580,7 @@ Useful when the keys on an online node are wiped or password locked.
 
 *sendnosign multi:["0xFF..:10","0xEE..:10","0xDD..:10"] split:20*
 
-*sendnosign amount:1 address:0xFF.. state:{\"0\":\"0xEE..\",\"1\":\"0xDD..\"}*
+*sendnosign amount:1 address:0xFF.. state:\{"0":"0xEE..","1":"0xDD.."}*
 
 </details>
 
@@ -1602,7 +1638,8 @@ Must be posted from an online node within approximately 24 hours of creation to 
 
 
 ## Signatures
-<details><summary><strong>sign</strong><br></br> Sign the data with the publickey.</summary>
+<details>
+<summary><strong>sign</strong><br></br> Sign the data with the publickey.</summary>
 
 Returns the signature of the data, signed with the corresponding private key.
 
@@ -1616,7 +1653,8 @@ Returns the signature of the data, signed with the corresponding private key.
 </details>
 
 
-<details><summary><strong>verify</strong><br></br> Verify a signature.</summary>
+<details>
+<summary><strong>verify</strong><br></br> Verify a signature.</summary>
 
 Returns valid true or false.
 
@@ -1637,7 +1675,8 @@ Returns valid true or false.
 
 ## Transactions
 
-<details><summary><strong>burn</strong><br></br>View the latest Burn metrics</summary>
+<details>
+<summary><strong>burn</strong><br></br>View the latest Burn metrics</summary>
 
 View the number of burn transactions and the maximum, median, average and minimum burn metrics for the last 1, 10 and 50 blocks.
 
@@ -1841,7 +1880,7 @@ If the sum of inputs > outputs, the difference will be burned unless change to t
 
 **id:** <br></br>The id of the transaction.
 
-**scripts:** <br></br>JSON holds the script and the proof in the format {script:proof}
+**scripts:** <br></br>JSON holds the script and the proof in the format \{script:proof}
 
 If it is a single script, and not one created with mmrcreate, leave the proof blank.
 
@@ -1849,9 +1888,9 @@ If it is an mmrcreate script, include the proof.
 
 **Examples:**
 
-*txnscript id:txnmast scripts:{"RETURN TRUE":""}*
+*txnscript id:txnmast scripts:\{"RETURN TRUE":""}*
 
-*txnscript id:txnmast scripts:{"RETURN TRUE":"0x000.."}*
+*txnscript id:txnmast scripts:\{"RETURN TRUE":"0x000.."}*
 </details>
 
 <details>

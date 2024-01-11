@@ -22,7 +22,8 @@ By running your own MLS, your online Contacts will always remain connected to yo
 
 To set your own static MLS host, from your **server-based Minima node**, find its `P2P identity` using the `maxima` command via the Minima Terminal. 
 
-<details><summary>Expand for example output from server node</summary>
+<details>
+<summary>Expand for example output from server node</summary>
 
 ```
 maxima
@@ -51,7 +52,8 @@ On the primary node being used to communicate with your contacts, set your stati
 maxextra action:staticmls host:serverp2pidentity
 ```
 
-<details><summary>Expand for example output from primary node</summary>
+<details>
+<summary>Expand for example output from primary node</summary>
 
 ```
 maxextra action:staticmls host:MxG18HGG6FJ038614Y8CW46US6G20810K0070CD00Z83282G60G16YEDA34PYMJS7MC82PYEHB2Q5G2SEKGYP5AA6YFABH6S6PKV63ER84ZGVV7TU2RZKHJYPZ5PZD2E7VE8EPR5S6547YAR38SNRPHR9B74QAVK5FEGYEB21QVNE3E28VBB6C46J6NC1JD80AG3T4JW49D7BKWT55GJQGU5FYKUQVBBDEF4GGNN779NTSBK5VRYS604N02BVGPDC10608004W3G98C@5.64.39.56:9001
@@ -88,7 +90,8 @@ To enable a permanent address for your node, you must set the Maxima Public Key 
 
 **On the primary node you use for communication** which you have already configured to use a static MLS, find your Maxima Public Key using the `maxima` command.
 
-<details><summary>Expand for example output </summary>
+<details>
+<summary>Expand for example output </summary>
 
 ```
 maxima
@@ -118,7 +121,8 @@ Copy your Public Key, then **on the server static MLS node** enter the command:
 maxextra action:addpermanent publickey:INSERTPUBKEY
 ```
 
-<details><summary>Expand for example output </summary>
+<details>
+<summary>Expand for example output </summary>
 
 ```
 maxextra action:addpermanent publickey:0x30819F300D06092A864886F70D010101050003818D0030818902818100958DD8EA74BD3CBEE4D1D8F030781A665AA062ADDE749951BFD45BCA43A3A315BF46788B9BEF67472203893C996FEC2E35C974CD01CEDE3B3BBF62D5B6B00FB546FD77094F07022FBAF82E7766D92EBFBE14623D4A1B677CF2F7EB42A6CCFC5F82530B061914FA22BA0F9D2458B4E4FDC51C843B96F2F77E9617F42979EC240B0203010001

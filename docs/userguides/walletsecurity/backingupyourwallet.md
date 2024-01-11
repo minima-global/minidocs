@@ -43,7 +43,8 @@ Backups will be taken every 24 hours. The latest 14 backups will be kept on the 
 - Regularly download your backups and store them on a different device to your node
 
 
-<details><summary> How to backup your node using the command line </summary>
+<details>
+<summary> How to backup your node using the command line </summary>
 
 #### From the Terminal (advanced)
 

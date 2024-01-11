@@ -22,7 +22,7 @@ A desktop shortcut will be created for you and you will be shown a security warn
 
 Once restarted, select **Launch MinimaOS** to access your node and login with your password.
 
-Congratulations on starting your node! After logging in for the first time, you will need to [Join the network](/docs/userguides/newusers/jointhenetwork). 
+Congratulations on starting your node! 
 
 **When shutting down your PC, please shutdown Minima first by closing the launcher window and waiting for the shutdown to complete. This ensures your node does not get corrupted by an unexpected shutdown.**
 
@@ -30,6 +30,16 @@ Congratulations on starting your node! After logging in for the first time, you 
 
 To update your node to the latest version of Minima, simply close the dialog box to shut it down, then relaunch the JNLP. Any updates will be checked for and downloaded automatically. 
 
+Please see the [first steps](#first-steps) to complete now your node is running.
+
+## First steps
+
+The first time you install Minima, you will need to 
+
+1. Connect to the network
+2. Write down your seed phrase
+
+Please refer to the [user guides](/docs/userguides/newusers/jointhenetwork) to learn how.
 
 
 <!-- 
@@ -99,7 +109,8 @@ This will be the password to access your Minidapp Hub.
 
 #### Optional start up parameters
 
-<details><summary>Expand to see full list of start up parameters</summary>
+<details>
+<summary>Expand to see full list of start up parameters</summary>
 
 The following start up parameters can optionally be specified when starting your Docker node. 
 

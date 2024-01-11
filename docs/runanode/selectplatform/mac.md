@@ -26,13 +26,24 @@ From the Apple icon in the top left of your Mac, select “About This Mac”. If
 Once restarted, select **Launch MinimaOS** to access your node and login with your password.
 
 Congratulations on starting your node! 
-When logging in for the first time, you will need to [Join the network](/docs/userguides/newusers/jointhenetwork). 
 
 **When shutting down your Mac, please shutdown Minima first by closing the launcher window and waiting for the shutdown to complete. This ensures your node does not get corrupted by an unexpected shutdown.**
 
 ## Updating your node
 
 To update your node to the latest version of Minima, simply close the dialog box to shut it down, then relaunch the JNLP. Any updates will be checked for and downloaded automatically. 
+
+Please see the [first steps](#first-steps) to complete now your node is running.
+
+## First steps
+
+The first time you install Minima, you will need to 
+
+1. Connect to the network
+2. Write down your seed phrase
+
+Please refer to the [user guides](/docs/userguides/newusers/jointhenetwork) to learn how.
+
 
 <!-- 
 We will be using Docker software to make running a Minima node simple.
@@ -84,7 +95,8 @@ docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_desktop=true -v ~/m
 
 #### Optional start up parameters
 
-<details><summary>Expand to see full list of start up parameters</summary>
+<details>
+<summary>Expand to see full list of start up parameters</summary>
 
 The following start up parameters can optionally be specified when starting your Docker node. 
 

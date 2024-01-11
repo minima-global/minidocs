@@ -24,7 +24,8 @@ Performing a seed re-sync will **WIPE your node completely** before re-syncing y
 
 ## From the Terminal (advanced)
 
-<details><summary> Expand for details </summary>
+<details>
+<summary> Expand for details </summary>
 
 **This process requires you to type your 24 word seed phrase into an online device. Please ensure your device contains no malware before proceeding. This process should ONLY be used if you have no backup!** 
 

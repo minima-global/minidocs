@@ -10,7 +10,7 @@ Keeping your wallet secure involves
 3. Locking your node with a password. See [Locking your node](/docs/userguides/walletsecurity/lockingyourwallet).
 4. Backing up your node. See [Backing up your node](/docs/userguides/walletsecurity/backingupyourwallet).
 
-Your seed phrase will be required to restore your wallet= if you lose access to your node and do not have a backup. It can be found in the Security MiniDapp.
+Your seed phrase will be required to restore your wallet if you lose access to your node and do not have a backup. It can be found in the Security MiniDapp.
 
 ![dappmenu](/img/app/security.png#width10)
 

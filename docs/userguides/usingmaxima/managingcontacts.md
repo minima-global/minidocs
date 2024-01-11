@@ -68,7 +68,8 @@ To find your Maxima Contact Address
 maxima
 ```
 
-<details><summary>Expand for example output</summary>
+<details>
+<summary>Expand for example output</summary>
 
 ```
 {
@@ -104,7 +105,8 @@ maxcontacts action:add contact:
 maxcontacts action:add contact:MxG18HGG6FJ038614Y8CW46US6G20810K0070CD00Z83282G60G15AU3QK5NKMR3NW3YCM4EZ99JMFQ5ZPK7ZC5CREZDC52W2NSRQWSJP8DHNC9DR2AP517RVET05JTW89BM1F6FBK2QN3YQ7CVJDARRBHY3Y08FQ99JSNW68D50KVD02UQKK8BJKMHAUAGG3JBCEFBDZGYBPMJJRQAYQSYDH7KR19M2J4P9ZASNEP1240J7SUZB0MCK0DBWB34WS10608007M53YUH@78.141.235.153:9001
 ```
 
-<details><summary>Expand for example output</summary>
+<details>
+<summary>Expand for example output</summary>
 
 ```
 {
@@ -151,7 +153,8 @@ maxcontacts
 
 For each contact, ensure the **samechain** parameter is **true**. If it is false, you should re-add your contact.
 
-<details><summary>Expand for example output</summary>
+<details>
+<summary>Expand for example output</summary>
 
 ```
 {

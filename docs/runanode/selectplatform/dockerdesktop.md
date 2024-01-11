@@ -35,7 +35,8 @@ Windows (Set a password and the correct path)
 docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_desktop=true -v C:\Users\INSERTUSERNAME\minimadocker9001:/home/minima/data -p 9001-9003:9001-9003 --restart unless-stopped --name minima9001 minimaglobal/minima:latest
 ```
 
-<details><summary>What do all the parameters mean?</summary>
+<details>
+<summary>What do all the parameters mean?</summary>
 -d: daemon mode, Minima will run in the background <br/><br/>
 -e minima_mdspassword=IN$ERTPA$$WORD : sets the password to login to your node.<br/><br/>
 -e minima_desktop=true : sets your node type as a desktop node that does not receive incoming connections <br/><br/>
@@ -46,7 +47,8 @@ docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_desktop=true -v C:\
 minimaglobal/minima:latest : specifies the Minima docker image<br/><br/>
 </details>
 
-<details><summary>Optional additional startup parameters</summary>
+<details>
+<summary>Optional additional startup parameters</summary>
 
 The following start up parameters can optionally be specified when starting your Docker node. 
 
@@ -136,7 +138,16 @@ You will see the login screen for your node.
 To check your password, click on the name of your Minima node (e.g. minima9001) in Docker desktop. On the **Inspect** tab, check the parameter for **mdspassword**.
 :::
 
-After logging in for the first time, you will need to [join the network](/docs/userguides/newusers/jointhenetwork) and [write down your seed phrase](/docs/userguides/newusers/seedphrase).
+Please see the [first steps](#first-steps) to complete now your node is running.
+
+## First steps
+
+The first time you install Minima, you will need to 
+
+1. Connect to the network
+2. Write down your seed phrase
+
+Please refer to the [user guides](/docs/userguides/newusers/jointhenetwork) to learn how.
 
 
 ## FAQ 

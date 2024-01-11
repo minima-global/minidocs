@@ -49,7 +49,8 @@ java -jar minima.jar -data minidata2 -basefolder minidata2 -test -nop2p -mdsenab
 
 #### Optional start up parameters
 
-<details><summary>Expand to see full list of start up parameters</summary>
+<details>
+<summary>Expand to see full list of start up parameters</summary>
 
 The following start up parameters can optionally be specified when starting your node. 
 
