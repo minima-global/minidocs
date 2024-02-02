@@ -10,19 +10,19 @@ In this tutorial, we will build a MiniDapp using React.
 - Node.js https://nodejs.org/en/download/
 - A Code Editor, we recommend Visual Studio code https://code.visualstudio.com/ 
 - A running Minima node
-- Download the boilerplate provided [here](https://github.com/minima-global/innovation-challenge/blob/main/Resources/create-minima-app.zip?raw=true)
+- Download the create-react-minidapp boilerplate [here](https://github.com/minima-global/awesome-minima/tree/main/boilerplates/react/create-react-minidapp).
 
 ## Getting Started with Create Minima App
 
 This boilerplate has been created with `Create React App`. You can use this boilerplate to build Minima MiniDapps.
 
-To create your application, open the folder in your code editor and edit the files in the `/src` folder.
+To create your application, unzip and the open the folder in your code editor. We will edit the files in the `/src` folder.
 
 If you need some guidance, please follow the [Balance tutorial](/docs/buildonminima/dapptutorial/reactminidapp#balance-tutorial) below.
 
 ## How to build and install your app
 
-To build your app, please run the following command in the `create-minima-app` directory:
+To build your app, open the Terminal and run the following commands in the `create-minima-app` directory:
 
 ```
 npm i
@@ -32,19 +32,17 @@ and then run
 npm run build
 ```
 
-Once the app has been built, you can run
+Once the app has been built, you can run the following to create a **my-minima-app.mds.zip** file in the `/minidapp` folder. This is the zipped minidapp that can be installed onto a node.
 
 ```
 npm run zip
 ```
 
-to create a MiniDapp.mds.zip file in the `/minidapp` folder.
-
 ### Installing on a Desktop node
 
-1. Login to your MiniDapp Hub by going to `https://localhost:9003` (default MDS port) and log in. You must log in using a password that you can retrieve by running `mds` in the Minima Terminal.
+1. Login to Minima by going to `https://localhost:9003` (9003 is the default MiniDapp System port). Use the password you set when starting the node or run `mds` in the Minima Terminal to check the password.
 
-2. Once you are logged in, click on the `+` in the top right, locate your zip file and click the `install` button and your app should be installed. 
+2. Once logged in, click on the `+` in the top right, locate your **my-minima-app.mds.zip** zip file and click the `install` button. Your app should be installed. 
 
 3. Click on your app to open it.
 
@@ -66,7 +64,7 @@ No, we have a solution that allows you to get around the issue to take advantage
 
 2. Duplicate the `.env.example` file and rename it to `.env` (this is your project root)
 
-3. Configure the environment values, you can leave everything default unless you are running Minima on a custom port. If connecting to a phone node, change the IP address to that as shown in the Health section of your Minima app.
+3. Configure the environment values, you can leave everything default unless you are running Minima on a custom port. If connecting to a phone node, change the IP address to that as shown in Settings > Desktop Connect in your Minima app.
 
 4. Open your MiniDapp on Desktop, your url will look something like: `https://localhost:9003/{APP_ID}/index.html?uid=YOUR_UID`
 
@@ -74,7 +72,7 @@ No, we have a solution that allows you to get around the issue to take advantage
 
 6. Replace `REACT_APP_DEBUG_UID` in the env file with the uid you copied
 
-7. Run `npm run start`
+7. From the Terminal, run `npm run start`
 
 8. Edit `/src/App.jsx` and the browser window will automatically reload and should be connected to Minima
 
@@ -95,7 +93,7 @@ The first step is to create a new component file, lets call it `Balance.jsx` in 
 import React from 'react';
 
 const Balance = () => {
-  return <div>Balance</div>
+  return <div>Balance Tutorial</div>
 }
 
 export default Balance;
@@ -120,9 +118,6 @@ function App() {
     <div className="App">
       <section className="container">
         <img src={minimaLogo} className="logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code>.
-        </p>
         <Balance />
       </section>
     </div>
@@ -132,12 +127,13 @@ function App() {
 export default App;
 ```
 
-You should now see `Balance` printed in the browser window. 
+You should now see `Balance Tutorial` printed in the browser window. 
 
-Now let's go back to the `/src/Balance.jsx` and add:
+Now let's go back to the `/src/Balance.jsx` and add the following inside `const Balance`:
 
 ``` jsx
 const getBalance = React.useCallback(() => {
+  //run the balance command
   window.MDS.cmd('balance', function (balance) {
     console.log(balance.response);
   })
@@ -156,13 +152,15 @@ const Balance = () => {
     })
   }, []);
 
-  return <div>Balance</div>
+  return <div>Balance Tutorial</div>
 }
 
 export default Balance;
 ```
 
-> `React.useCallback` ensures the function is not re-run unless one of the dependencies change, you can read more about it in the React documentation: https://react.dev/reference/react/useCallback
+:::note
+`React.useCallback` ensures the function is not re-run unless one of the dependencies change, you can read more about it in the React documentation: https://react.dev/reference/react/useCallback
+:::
 
 To run our function we need to add a `useEffect`, this is a function that is called when the component is rendered to the screen.
 
@@ -188,10 +186,12 @@ const Balance = () => {
     getBalance();
   }, [getBalance]);
 
-  return <div>Balance</div>
+  return <div>Balance Tutorial</div>
 }
 
 export default Balance;
+
+
 ```
 
 Now go to the browser and open the developer tools, open the `Console` tab and reload the page to refresh the logs. You should see an array being printed to the logs.
@@ -213,10 +213,10 @@ Now we need to update our component so that we can store the balance for it to s
 ```jsx
 const [balance, setBalance] = React.useState(null);
 ```
-
-> `React.useState` allows us to create a value that will cause React to re-render when the value changes. <br/>
-> We can use `setBalance` in this case to change the value of `balance`.
-
+:::note
+ `React.useState` allows us to create a value that will cause React to re-render when the value changes. <br/>
+ We can use `setBalance` in this case to change the value of `balance`.
+:::
 Our file should now look like this:
 
 ```jsx
@@ -235,7 +235,7 @@ const Balance = () => {
     getBalance();
   }, [getBalance]);
 
-  return <div>Balance</div>
+  return <div>Balance Tutorial</div>
 }
 
 export default Balance;
@@ -275,7 +275,7 @@ const Balance = () => {
     getBalance();
   }, [getBalance]);
 
-  return <div>Balance</div>
+  return <div>Balance Tutorial</div>
 }
 
 export default Balance;
@@ -308,7 +308,7 @@ const Balance = () => {
     getBalance();
   }, [getBalance]);
 
-  return <div>Balance: {balance}</div>
+  return <div>Balance Tutorial <br/> Your confirmed balance is: {balance}</div>
 }
 
 export default Balance;

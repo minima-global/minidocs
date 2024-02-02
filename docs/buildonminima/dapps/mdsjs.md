@@ -6,7 +6,7 @@ sidebar_position: 4
 
 The MiniDapp System library mds.js provides access to an MDS object that enables useful functionality when building MiniDapps.
 
-The latest mds.js can be downloaded from GitHub [here](https://raw.githubusercontent.com/minima-global/Minima/master/mds/mds.js)
+The latest mds.js can be downloaded from GitHub [here](https://github.com/minima-global/Minima/blob/master/mds/mds.js).
 
 The following functions exist on the MDS object.  
 

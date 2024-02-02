@@ -684,14 +684,17 @@ You MUST wait until all your original keys are created before this is allowed.
 **password:** (optional)<br></br>
     Enter the password of the backup
 
-**keyuses: (optional**)<br></br>
+**host:** (optional)
+    ip:port of the archive node to sync from.
+
+**keyuses:** (optional)<br></br>
     Increment (not set) the number of key uses per key.
 
 **Examples:**
 
-*restoresync file:my-full-backup-01-Jan-22 password:Longsecurepassword456*
+*restoresync file:my-full-backup-01-Jan-22 password:Longsecurepassword456  host:89.98.89.98:9001*
 
-*restoresync file:my-full-backup-01-Jan-22 password:Longsecurepassword456 keyuses:1000*
+*restoresync file:my-full-backup-01-Jan-22 password:Longsecurepassword456 keyuses:1000  host:89.98.89.98:9001*
 </details>
 
 
