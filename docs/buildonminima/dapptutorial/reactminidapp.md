@@ -89,6 +89,8 @@ The first thing we have to do is call the MDS `balance` command. The full list o
 
 The first step is to create a new component file, lets call it `Balance.jsx` in the `/src` folder.
 
+**Balance.jsx:**
+
 ```jsx
 import React from 'react';
 
@@ -103,8 +105,10 @@ Now let's import this component in our `App.jsx`.
 
 We need to add `import Balance from './Balance';` and `<Balance />` in the return, feel free to put it anywhere you like, we have just put it after the `<p>` tag.
 
+**App.jsx:**
+
 ```jsx
-import { useEffect } from "react";
+import React, { useEffect } from 'react';
 import minimaLogo from './minima_logo.png';
 import './App.css';
 import Balance from './Balance';
@@ -140,7 +144,9 @@ const getBalance = React.useCallback(() => {
 }, []);
 ```
 
-Our file should look like this now:
+Our file should now look like this:
+
+**Balance.jsx:**
 
 ```jsx
 import React from 'react';
@@ -170,7 +176,9 @@ React.useEffect(() => {
 }, [getBalance]);
 ```
 
-Our file should look like this now:
+Our file should now look like this:
+
+**Balance.jsx:**
 
 ```jsx
 import React from 'react';
@@ -219,6 +227,8 @@ const [balance, setBalance] = React.useState(null);
 :::
 Our file should now look like this:
 
+**Balance.jsx:**
+
 ```jsx
 import React from 'react';
 
@@ -256,6 +266,8 @@ const getBalance = React.useCallback(() => {
 
 Our file should now look like this:
 
+**Balance.jsx:**
+
 ```jsx
 import React from 'react';
 
@@ -284,10 +296,12 @@ export default Balance;
 Now we can use the getter to print the value to the screen:
 
 ```jsx
-return <div>Balance: {balance}</div>
+return <div>Balance Tutorial <br/> Your confirmed balance is: {balance}</div>
 ```
 
 Our file should now look like this:
+
+**Balance.jsx:**
 
 ```jsx
 import React from 'react';
