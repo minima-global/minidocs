@@ -177,19 +177,15 @@ The chart below shows how coins allocated for the Node Incentives category will 
 
 23% of Minima's total supply (230,000,000 coins) is allocated to the Loyalty Program & Grants category, that includes both Loyalty Program and Grants subcategories. 
 
-#### Loyalty Program
+#### Loyalty Program 
 
-After the Token Generation Event, Minima will launch an innovative Loyalty Program that will be open to all. Unlike traditional farming schemes, Minima’s Loyalty Program will be a non-custodial, fully-collateralised yield product. 
-
-The Loyalty Program will offer excellent rewards in the form of Native Minima ($MINIMA), paid to participants who lock up their holdings for set periods of time. Encouraging continued node running, and reducing the total circulating supply of Minima while creating genuine demand for coins. 
+Although the loyalty program has now ended, users can earn a yield on their native Minima coins via the [Maximize](https://minidapps.minima.global/) MiniDapp. Yield is in the form of native Minima, paid to participants who lock up their holdings for set periods of time - encouraging continued node running and reducing the total circulating supply of Minima while creating genuine demand for coins. 
 
 #### Grants 
 
-Will be available to enable interesting and novel use cases to be built on Minima. They will be awarded to developers and entrepreneurs through a series of scheduled application rounds, in collaboration with a range of Minima partners, to accelerate the growth of the network. 
+[Grants](https://www.minima.global/apply-for-grant) are available for building interesting and novel use cases on Minima. They will be awarded to developers and entrepreneurs, in collaboration with a range of Minima partners, to accelerate the growth of the network. 
 
-Grants will also be available for individuals who discover critical bugs and report them to the #support channel on [Discord](https://discord.gg/minima), before anyone else. 
-
-Subscribe to our announcement channel on [Discord](https://discord.gg/minima) or [Telegram](https://t.me/MinimaGlobal) to be the first to know once the Loyalty Program and Grants become available. 
+Bounties are also be available for individuals who discover critical bugs and report them to the #bug-reports channel on [Discord](https://discord.gg/minima), before anyone else. 
 
 #### Circulating Supply
 

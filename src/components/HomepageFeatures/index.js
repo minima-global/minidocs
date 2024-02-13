@@ -9,7 +9,7 @@ const FeatureList = [
     icon: 'icons/minima_symbol.svg',
     description: (
       <>
-        Learn about the purpose and values of Minima and what our vision is
+        Learn about Minima and how to get involved 
       </>
     ),
   },

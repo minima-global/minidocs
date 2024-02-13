@@ -13,25 +13,25 @@ The benefits for each broad use case are highlighted below as well as the [utili
 ## Enterprise
 
 Benefits for Enterprise:
-- Quickly prove the value or concept of a project before building and scaling on Minima,
-- Reduction of infrastructure costs as the solution runs on the end users' devices,
-- Ability to deploy a large number of nodes via an OTA (over the air) update,
-- A method for transferring tokens and data between any set of devices in a sub-network,
-- Specialised hardware is not required,
-- Use of custom tokens or NFTs for rewards or loyalty,
-- Use of smart contracts to program rules and use cases for custom tokens. 
+- Quickly prove the value or concept of a project before building and scaling on Minima
+- Reduction of infrastructure costs as the solution runs on the end users' devices
+- Ability to deploy a large number of nodes via an OTA (over the air) update
+- A method for transferring tokens and data between any set of devices in a sub-network
+- Specialised hardware is not required
+- Use of custom tokens or NFTs for rewards or loyalty
+- Use of smart contracts to program rules and use cases for custom tokens
 
 
 ## DePIN
 
 Benefits for DePIN:
-- Quickly prove the value or concept of a project before building and scaling on Minima,
-- Access to a large, decentralised, peer-to-peer network of users,
-- Ability to deploy a solution that runs on users' mobile devices or on IoT devices,
-- A method for transferring tokens and data between any set of devices in a sub-network,
-- Specialised hardware is not required,
-- Use of custom tokens or NFTs for rewards or loyalty,
-- Use of smart contracts to program rules and use cases for custom tokens 
+- Quickly prove the value or concept of a project before building and scaling on Minima
+- Access to a large, decentralised, peer-to-peer network of users
+- Ability to deploy a solution that runs on users' mobile devices or on IoT devices
+- A method for transferring tokens and data between any set of devices in a sub-network
+- Specialised hardware is not required
+- Use of custom tokens or NFTs for rewards or loyalty
+- Use of smart contracts to program rules and use cases for custom tokens
 
 
 ## Developers 
@@ -41,11 +41,11 @@ Benefits for developers:
 - Instantly and easily start a local private testnet 
 - Creating dapps is very accessible and can be created with standard html, css and javascript knowledge
 - Instantly mint custom tokens and NFTs
-- Access to a large, decentralised, peer-to-peer network of users,
-- Decentralised protocols developed for Minima will scale naturally with the user base, 
-- Ability to create censorship-resistant applications that provide utility only achievable on a decentralised network,
-- Ability to develop Minima and non-Minima based applications via the MiniDapp system,
-- Ability to create and share a suite of MiniDapps via a MiniDapp store. 
+- Access to a large, decentralised, peer-to-peer network of users
+- Decentralised protocols developed for Minima will scale naturally with the user base
+- Ability to create censorship-resistant applications that provide utility only achievable on a decentralised network
+- Ability to develop Minima and non-Minima based applications via the MiniDapp system
+- Ability to create and share a suite of MiniDapps via a MiniDapp store
 
 
 ## Individuals

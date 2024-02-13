@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# How to participate
+# Get Involved
 
 import AddWMINIMA from '../../src/components/AddWMINIMA/index.js';
 
@@ -10,7 +10,7 @@ import AddWMINIMA from '../../src/components/AddWMINIMA/index.js';
 
 Start by [running your own Minima node](/docs/runanode/get_started)!
 
-You will get a non-custodial, native Minima wallet; a suite of of default MiniDapps to start using; and direct access to the blockchain.  
+You will get a non-custodial native Minima wallet; a suite of of default MiniDapps to start using; and direct access to the blockchain.  
 
 Once up and running, you can participate by interacting in the community, and using the social MiniDapps like Chatter. Simply [set up your profile](/docs/userguides/usingmaxima/yourprofile) and then [share your contact address](/docs/userguides/usingmaxima/managingcontacts) with other users.
 
@@ -46,3 +46,8 @@ The WMINIMA contract address is: `0x669c01CAF0eDcaD7c2b8Dc771474aD937A7CA4AF`
 Alternatively, if you have Metamask enabled on this browser page, click on the button below to add it automatically. 
 
 <AddWMINIMA/>
+
+## Join us on socials
+
+Subscribe to our announcement channel on [Discord](https://discord.gg/minima) or [Telegram](https://t.me/MinimaGlobal), and follow us on [LinkedIn](https://www.linkedin.com/company/minimaglobal/) or [X](https://twitter.com/Minima_Global) to be the first to hear about the latest updates!
+

@@ -28,4 +28,4 @@ Minima primarily caters to four groups, creating value for each in different way
 
 **Individuals** interested in decentralised and trustless payments can [start a Minima node](/docs/runanode/quickstart) and launch projects, tokenise real-world assets, and participate in constructing and validating blocks.
 
-**Learn [how you can participate](/docs/about/participate).**
+**Learn [how you can get involved](/docs/about/getinvolved).**
