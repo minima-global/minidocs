@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Our Tokenomics
+# Tokenomics
 
 ## Allocation Overview
 

@@ -10,7 +10,8 @@ In this tutorial, we will build a MiniDapp using React.
 - Node.js https://nodejs.org/en/download/
 - A Code Editor, we recommend Visual Studio code https://code.visualstudio.com/ 
 - A running Minima node
-- Download the create-react-minidapp boilerplate [here](https://github.com/minima-global/awesome-minima/tree/main/boilerplates/react/create-react-minidapp).
+- Download the create-react-minidapp boilerplate [here](https://github.com/minima-global/awesome-minima/tree/main/boilerplates/react/create-react-minidapp)
+- Download the latest mds.js file [here](https://github.com/minima-global/Minima/blob/master/mds/mds.js)
 
 ## Getting Started with Create Minima App
 
@@ -66,15 +67,38 @@ No, we have a solution that allows you to get around the issue to take advantage
 
 3. Configure the environment values, you can leave everything default unless you are running Minima on a custom port. If connecting to a phone node, change the IP address to that as shown in Settings > Desktop Connect in your Minima app.
 
-4. Open your MiniDapp on Desktop, your url will look something like: `https://localhost:9003/{APP_ID}/index.html?uid=YOUR_UID`
+4. Open your MiniDapp on Desktop, your url will look something like: `https://127.0.0.1:9003/{APP_ID}/index.html?uid=YOUR_UID`
 
 5. Copy the value at the end where YOUR_UID is in the URL e.g. `0xD497A626EF65C24417D4F7AE0CC48289BCB1062FB9763D47A20326984E099299`
 
 6. Replace `REACT_APP_DEBUG_UID` in the env file with the uid you copied
 
-7. From the Terminal, run `npm run start`
+7. Ensure the following code is included in **mds.js**
 
-8. Edit `/src/App.jsx` and the browser window will automatically reload and should be connected to Minima
+**mds.js:**
+
+```
+// env overrides
+if (window.DEBUG) {
+   host = window.DEBUG_HOST;
+   port = Math.floor(window.DEBUG_PORT);
+   MDS.minidappuid = window.DEBUG_UID;
+}
+```
+the above code should be added directly below this existing code
+```
+//HARD SET if debug mode - running from a file
+if(MDS.DEBUG_HOST != null){
+	MDS.log("DEBUG Settings Found..");
+	host=MDS.DEBUG_HOST;
+	port=MDS.DEBUG_PORT;	
+}
+```
+
+8. From the Terminal, run `npm run start`
+
+9. Edit `/src/App.jsx` and the browser window will automatically reload and should be connected to Minima
+
 
 
 ## Balance Tutorial

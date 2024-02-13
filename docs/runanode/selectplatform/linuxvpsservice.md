@@ -79,7 +79,7 @@ sudo apt install git -y
 sudo apt install jq -y
 ```
 ```
-sudo apt install openjdk-11-jre -y
+sudo apt install default-jdk -y
 ```
 ```
 sudo apt install wget -y
