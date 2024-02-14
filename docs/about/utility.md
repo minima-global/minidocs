@@ -4,11 +4,11 @@ sidebar_position: 5
 
 # Use Cases
 
-The utility of the Minima network and [currency will be a key driver influencing the growth of the network. 
+The utility of the Minima network and currency will be a key driver influencing the growth of the network. 
 
 Visit the [website](https://www.minima.global/) to learn about the specific use cases we are currently working on.
 
-The benefits for each broad use case are highlighted below as well as the [utility of the Minima currency](#utility-of-the-minima-coin).
+The benefits for each broad use case are highlighted below as well as the [utility of the Minima coin](#utility-of-the-minima-coin).
 
 ## Enterprise
 
@@ -16,7 +16,7 @@ Benefits for Enterprise:
 - Quickly prove the value or concept of a project before building and scaling on Minima
 - Reduction of infrastructure costs as the solution runs on the end users' devices
 - Ability to deploy a large number of nodes via an OTA (over the air) update
-- A method for transferring tokens and data between any set of devices in a sub-network
+- Ability to transfer tokens and data between any set of nodes
 - Specialised hardware is not required
 - Use of custom tokens or NFTs for rewards or loyalty
 - Use of smart contracts to program rules and use cases for custom tokens
@@ -28,7 +28,7 @@ Benefits for DePIN:
 - Quickly prove the value or concept of a project before building and scaling on Minima
 - Access to a large, decentralised, peer-to-peer network of users
 - Ability to deploy a solution that runs on users' mobile devices or on IoT devices
-- A method for transferring tokens and data between any set of devices in a sub-network
+- Ability to transfer tokens and data between any set of nodes
 - Specialised hardware is not required
 - Use of custom tokens or NFTs for rewards or loyalty
 - Use of smart contracts to program rules and use cases for custom tokens
