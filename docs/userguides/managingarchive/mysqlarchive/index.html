@@ -18,7 +18,7 @@
 
 <script src="https://docusaurus.io/script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.5/web3.min.js" async></script><link rel="stylesheet" href="/assets/css/styles.7eeb14cb.css">
-<script src="/assets/js/runtime~main.bc350ced.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.beb95f42.js" defer="defer"></script>
 <script src="/assets/js/main.57bc50a7.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard" data-theme="light">
@@ -140,6 +140,7 @@
 <p><strong>Seed re-sync:</strong> If a user does not have a valid backup or has lost access to their node, they can restore access to their coins by performing a <a href="#to-perform-a-seed-re-sync">seed re-sync</a> from a MySQL database using their 24 word seed phrase. <strong>The node will first be wiped before the re-sync begins.</strong></p>
 </li>
 </ul>
+<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>read-only access</div><div class="admonitionContent_BuS1"><p>To re-sync using credentials for a read-only user,  set the <code>user</code> and <code>password</code> parameters as the credentials for the read-only user you have set up in MySQL, and add <code>readonly:true</code> as a parameter in the following commands.</p></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="to-perform-a-chain-re-sync">To perform a chain re-sync<a href="#to-perform-a-chain-re-sync" class="hash-link" aria-label="Direct link to To perform a chain re-sync" title="Direct link to To perform a chain re-sync">​</a></h3>
 <ol>
 <li>On the node requiring a re-sync, check the connection to the MySQL database, changing the ip<!-- -->:port<!-- --> as required</li>
