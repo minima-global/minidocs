@@ -239,6 +239,11 @@ As with archive nodes, there are two options when using a MySQL database to re-s
 
 - **Seed re-sync:** If a user does not have a valid backup or has lost access to their node, they can restore access to their coins by performing a [seed re-sync](#to-perform-a-seed-re-sync) from a MySQL database using their 24 word seed phrase. **The node will first be wiped before the re-sync begins.**
 
+:::important read-only access
+To re-sync using credentials for a read-only user,  set the `user` and `password` parameters as the credentials for the read-only user you have set up in MySQL, and add `readonly:true` as a parameter in the following commands.
+:::
+
+
 ### To perform a chain re-sync
 
 1. On the node requiring a re-sync, check the connection to the MySQL database, changing the ip:port as required
@@ -274,6 +279,9 @@ Optionally set the number of keys and keyuses relevant to you. If not specified,
 ```
 mysql host:mysqlhost:port database:archivedb user:archiveuser password:youruserpassword action:resync phrase:\"24 WORDS HERE\" keys:90 keyuses:2000
 ```
+
+
+
 ## Check an address history
 
 To check the unspent and spent coins for an address, run 
