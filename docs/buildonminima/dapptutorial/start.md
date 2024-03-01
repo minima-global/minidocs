@@ -4,17 +4,19 @@ sidebar_position: 1
 
 # Start
 
-There is no “right” way to create decentralized applications on Minima.  We leave it up to you, the developer, to choose your path and technology that you are most comfortable using.
+There is no “right” way to create decentralized applications on Minima. You may choose your own path and technologies that you are most comfortable using.
 
-Before we begin, let's define MiniDapps. MiniDapps are essentially web applications that run locally on a device. They communicate over RPC (Remote Procedure Call) with a local Minima node and provide an easier user experience.
+It is likely more desirable and of interest to build dApps to be as decentralised as possible which is what Minima facilitates by having complete nodes on mobile devices. **Pure sovereignty over your data.**
 
-The **MiniDapp System (mds)** enables node runners to install, uninstall and run MiniDapps from their node.
+As developers, we must be extra creative while developing MiniDapps, considering efficient methods to distribute and store data, lower power usage, and grant the smoothest user experience.
 
-It is likely more desirable and of interest to build dApps to be as decentralised as possible which is what Minima facilitates by having complete nodes on mobile devices. 
 
-Pure sovereignty over your data. 
+## Pre-requisites
 
-As developers we must be extra creative while developing MiniDapps where we must consider efficient methods to distribute and store data, lower power usage as much as possible and grant the SMOOTHEST user experience.
+There are no special hardware requirements for building a MiniDapp. 
 
-Let’s begin.
- 
+Before you start to create MiniDapps, you will need a code editor to write your code, for example [VS code](https://code.visualstudio.com/download), but this is your own preference.
+
+If you haven't already, we recommend you gain a thorough understanding of the Minima Protocol by reading the [Learn](/docs/learn/ataglance) section. 
+
+**Let’s begin.**

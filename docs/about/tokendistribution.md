@@ -119,29 +119,23 @@ Represents 87.5% of the total supply and has the following release schedules per
 
 #### Public Presale
 
-Join the Waitlist for the Public Presale [here](https://presale.minima.global/)
+6% of Minima's total supply (60,000,000 coins) was allocated to the Public Presale. 
 
-6% of Minima's total supply (60,000,000 coins) is allocated to the Public Presale. 
+The Public Presale was for Wrapped Minima ($WMINIMA) which is an ERC-20 token on the Ethereum blockchain. This enabled Minima to be tradable on exchanges shortly after the Token Generation Event, without waiting for technical integration of Native Minima ($MINIMA) onto exchanges, scheduled for Q3/Q4 2024.
 
-The Public Presale will be for Wrapped Minima ($WMINIMA). This enables Minima to be tradable on exchanges shortly after the Token Generation Event, without waiting for technical integration of Native Minima ($MINIMA) onto exchanges, scheduled for Q3/Q4 2023.
+The Public Presale had two ‘tranches’ with a limited volume of coins in each, as shown below:
 
-The Public Presale will have four ‘tranches’ between 10:00 UTC 14th February 2023 and 10:00 UTC 21st March 2023, with a limited volume of coins in each tranche. 
-
-Across all tranches the minimum investment size is USD $150, to enable as many people as possible to participate. Tranche 1 has a maximum investment size of USD $25,000, whereas tranches 2, 3 and 4 have a maximum investment size of USD $100,000. 
-
-Earlier tranches benefit from a greater discount, as shown below:
-
-| | Start | | |End | 
-|:-------|:-----------|:-----------|:-----------|:-----------|
-|**Date** | 14th Feb 2023 |||21st March 2023|
-|**Time** | 10:00 UTC | ||10:00 UTC |
-|**Tranche** | Tranche 1 |Tranche 2| Tranche 3|Tranche 4|
-|**Coins for sale** | 10,000,000 |10,000,000|20,000,000 |20,000,000|
-|**Discount** | 30% |20%|10%|None|
-|**Price (USD)** | $0.21 |$0.24| $0.27|$0.30|
-|**Min investment size (USD)** | $50|$50|$50|$50|
-|**Max investment size (USD)** | $25,000|$100,000|$100,000|$100,000|
-|**Release schedule** |100% at launch|100% at launch|100% at launch|100% at launch|
+| | Start |End | 
+|:-------|:-----------|:-----------|
+|**Date** | 14th Feb 2023 |21st March 2023|
+|**Time** | 10:00 UTC |10:00 UTC |
+|**Tranche** | Tranche 1 |Tranche 2|
+|**Coins for sale** | 10,000,000 |10,000,000|
+|**Discount** | 30% |20%|
+|**Price (USD)** | $0.21 |$0.24|
+|**Min investment size (USD)** | $50|$50|
+|**Max investment size (USD)** | $25,000|$100,000|
+|**Release schedule** |100% at launch|100% at launch|
 
 #### Treasury 
 

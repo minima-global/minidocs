@@ -24,15 +24,15 @@ Before starting, ensure you have the latest version of Java installed from https
 
 #### Windows
 ```
-java -jar C:\Users\INSERTUSERNAME\Downloads\minima.jar -mdsenable
+java -jar C:\Users\INSERTUSERNAME\Downloads\minima.jar -mdsenable -mdspassword [insertpasswordhere]
 ```
 #### Mac
 ```
-sudo java -jar /Users/INSERTUSERNAME/Downloads/minima.jar -mdsenable
+sudo java -jar /Users/INSERTUSERNAME/Downloads/minima.jar -mdsenable -mdspassword [insertpasswordhere]
 ```
 #### Linux
 ```
-sudo java -jar /home/INSERTUSERNAME/minima.jar -mdsenable
+sudo java -jar /home/INSERTUSERNAME/minima.jar -mdsenable -mdspassword [insertpasswordhere]
 ```
 
 #### Optional start up parameters
@@ -147,7 +147,7 @@ You will see the login page to your node.
 
 ![mds_login](/img/runanode/mds_login.png#width50)
 
-2. To get your **password** - return to your desktop command line/terminal where the Minima logs are running and enter 
+2. If you set one, use the password you set as your `-mdspassword` when starting the node. To check your **password** you can return to your desktop command line/terminal where the Minima logs are running and enter 
 
 ```
 mds
@@ -173,7 +173,7 @@ Please see the [first steps](#first-steps) to complete now your node is running.
 
 ## First steps
 
-The first time you install Minima, you will need to 
+The first time you install Minima, you must 
 
 1. Connect to the network
 2. Write down your seed phrase
