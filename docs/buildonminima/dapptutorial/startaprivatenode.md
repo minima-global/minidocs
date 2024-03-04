@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Start a Private testnet
+# Start a Testnet node
 
 At its core, Minima is a Java application, so first make sure you have Java installed. Download from [here](https://www.java.com/en/download/).
 
@@ -10,51 +10,48 @@ You will need the latest release of the minima.jar file which can be downloaded 
 
 We will be using a server or desktop command line interface (CLI) to start Minima.
 
-For development purposes, it is useful to run one or more private test nodes stimulating network traffic. Starting the first node with `-genesis` will give you 1 billion coins to test transactions with. 
+Starting the node with `-genesis`, you will have your own private chain, you will be sent the genesis Minima with 1 billion coins to spend, and you can enter commands directly into the console. 
 
-## Start the genesis node 
-
-1. Move your minima.jar file from your Downloads folder to a new file location of your choice
-2. Copy the path to the minima.jar file, including the file name
-3. Open up your CLI and enter the following command
-
-**Node 1:**
+1. Create a new folder and copy the minima.jar into that folder. We will run everything from there.
+2. Copy the path to the file and from the command line, `cd` into that folder
+3. Enter the following command
 
 ```
-java -jar [path to minima.jar] -data minidata1 -basefolder minidata1 -genesis -test -nop2p -mdsenable -mdspassword [INSERT NODE1 PASSWORD]
+java -jar minima.jar -data minidata -basefolder minidata -genesis -test -nop2p -mdsenable -mdspassword [INSERT PASSWORD]
 ```
 
-- Replace placeholder `[path to minima.jar]` with the path to the minima.jar file location
-- Replace placeholder `[INSERT NODE1 PASSWORD]` with a custom password for your node 1
-
-Example : 
-```
-java -jar C:\Users\me\Minima\minima.jar -data minidata1 -basefolder minidata1 -genesis -test -nop2p -mdsenable -mdspassword setthispassword
-```
+- Replace placeholder `[INSERT PASSWORD]` with a custom password for your node
 
 This will start a node on the default ports of 9001-5. 
 
-## Start the second node 
+You should see the node starting as below, if you type `help` then press enter, you should see the full list of Minima commands. Check your balance with `balance`.
 
-We create a second node to test transactions between two nodes, note that we will need to:
-- change the data and base folders, 
-- add the `-port` parameter to start it on a different port, 
-- add the `-connect 127.0.0.1:9001` parameter to connect this node to the genesis node.
+![MDS](/img/buildonminima/TestTerminalstartup.png) 
 
-**Node 2:**
+To **login to your MiniDapp hub**, open up your web browser and navigate to the MiniDapp Hub via https://127.0.0.1:9003. Login with the password you set.
 
-1. Open a new command line window and enter the following command
+*Minima uses self-signed certificates. For this reason you may be shown a security certificate warning when accessing Minima, to which you can click on **Advanced**, then **Proceed**. This may be different depending on the browser and OS you are using.*
+
+
+## Restarting the node
+
+You can shutdown the node by running `quit` from the command line window. 
+
+To **restart** the same node from where you left off, re run the command above **removing the `-genesis` parameter. **
 
 ```
-java -jar [path to minima.jar] -data minidata2 -basefolder minidata2 -genesis -test -nop2p -mdsenable -mdspassword [INSERT NODE2 PASSWORD] -port 10001 -connect 127.0.0.1:9001
+java -jar minima.jar -data minidata -basefolder minidata -test -nop2p -mdsenable -mdspassword [INSERT PASSWORD]
 ```
 
-- Replace placeholder `[path to minima.jar]` with the path to the minima.jar file location
-- Replace placeholder `[INSERT NODE2 PASSWORD]` with a custom password for your node 2
-- Optionally set a port of your choice, we use 10001 here
+To **delete** the data and start a new clean node, re run the command from step 3 above, adding the `-clean` parameter. 
 
-**You should now have two nodes up and running that are connected to eachother! **
+**ALL DATA WILL BE LOST AND A NEW SEED PHRASE WILL BE GENERATED.**
 
+```
+java -jar minima.jar -data minidata -basefolder minidata -genesis -test -nop2p -mdsenable -mdspassword [INSERT PASSWORD] -clean
+```
+
+## Start up parameters
 
 #### Start up parameters used
 
@@ -63,9 +60,9 @@ java -jar [path to minima.jar] -data minidata2 -basefolder minidata2 -genesis -t
 
 - `-data [foldername/path]` : the data folder where all the config files for this node are stored. Default is a hidden .minima folder under the user's home directory. If you want to specify a folder not in the user's home directory, you must use the complete path.<br/>
 - `-basefolder [foldername/path]` : specify a default file creation / backup / restore folder. Default is the user's home directory. Can be the same as the data folder provided.<br/>
-- `-genesis` : start the node from the genesis block (automatically uses -clean)<br/>
+- `-genesis` : delete all old data and start the node from the genesis block<br/>
 - `-nop2p` : Disable the automatic P2P system<br/>
-- `-test` : uses test parameters e.g. faster block times<br/>
+- `-test` : this uses test settings which have a faster blocktime and only keep a shorter chain in memory. If you are compiling Minima yourself you can edit these to your needs.<br/>
 - `-mdsenable` : start the MiniDapp system
 - `-mdspassword` : set the password to login to the MiniDapp system
 - `-port` : set the starting port
@@ -113,8 +110,8 @@ To add/remove parameters after a node has been started, you must `quit` the node
 - `-rpcclrf` : use CRLF at the end of the RPC headers (NodeJS)<br/>
 
 #### Test nodes
-- `-genesis` : start the node from the genesis block (automatically uses -clean)<br/>
-- `-test` : uses test parameters e.g. faster block times<br/>
+- `-genesis` : delete all old data and start the node from the genesis block<br/>
+- `-test` : this uses test settings which have a faster blocktime and only keep a shorter chain in memory. If you are compiling Minima yourself you can edit these to your needs.<br/>
 - `-connect [ip:port,ip:port]` : Disable the automatic P2P system and create your own network by manually connecting to this list of host:port<br/>
 - `-nop2p` : Disable the automatic P2P system<br/>
 - `-noconnect` : Stops the P2P system from connecting to other nodes until it has been connected to<br/>
@@ -134,27 +131,3 @@ To add/remove parameters after a node has been started, you must `quit` the node
 - `-help` : print help for the start up parameters
 
 </details>
-
-## Restarting the nodes
-
-You can stop the nodes by running `quit` in the command line window. 
-
-To restart the same node, re run the commands for node1 or node2 above.
-
-To delete the data and start new clean nodes, re run the commands for node1 or node2 above, adding the `-clean` parameter. **ALL DATA WILL BE LOST AND A NEW SEED PHRASE WILL BE GENERATED.**
-
-
-## Logging in to your MiniDapp Hub
-
-Open up your web browser and navigate to the MiniDapp Hub via 
-
-Node 1 - https://127.0.0.1:9003
-
-Node 2 -  https://127.0.0.1:10003
-
-Login with the password you set.
-
-:::note Browser WARNING
-Minima uses self-signed certificates. For this reason you may be shown a security certificate warning when accessing Minima, to which you can click on **Advanced**, then **Proceed**.
-This may be different depending on the browser and OS you are using.
-:::
