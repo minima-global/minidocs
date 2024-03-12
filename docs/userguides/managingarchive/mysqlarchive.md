@@ -83,7 +83,7 @@ docker network inspect minimanetwork
         "ConfigOnly": false,
         "Containers": {
             "182c4041ad365669b365ee6e0691e5488596ab1e974b791bba1306c74643bd03": {
-                "Name": "minimadev",
+                "Name": "minimaarchive",
 ...""
             },
             "38906df591a5ba642e755509e8c162e114b6dd56abc2ec2e76a0c673f5187b09": {
@@ -117,7 +117,7 @@ To update the MySQL tables with the archive blocks from your node:
 2. Optional - run the command `mysql action:info` with your login details to check the current status 
 
 ```
-mysql action:info host:minimysql database:archivedb user:archiveuser password:youruserpassword
+mysql host:minimysql database:archivedb user:archiveuser password:youruserpassword action:info
 ```
 
 <details>
@@ -163,7 +163,7 @@ Before running an update, you must check your node is on the correct tip block. 
 3. Update the MySQL database with the Minima archive data and wait for it to finish
 
 ```
-mysql action:update host:minimysql database:archivedb user:archiveuser password:youruserpassword
+mysql host:minimysql database:archivedb user:archiveuser password:youruserpassword action:update
 ```
 
 <details>
@@ -198,6 +198,14 @@ mysql action:update host:minimysql database:archivedb user:archiveuser password:
 </details>
 
 Future updates will be incremental, only syncing the new blocks that are not already in the MySQL database.
+
+### Auto update
+
+To automatically update the MySQL database daily, run:
+
+```
+mysql host:minimysql database:archivedb user:archiveuser password:youruserpassword action:autobackup enable:true
+```
 
 ## Check the integrity
 

@@ -41,7 +41,7 @@ In addition, the following table shows Minima’s total circulating supply at ke
 
 The exchange tradable liquidity of Minima coins will only be via Wrapped Minima ($WMINIMA) at the Token Generation Event (TGE). 
 
-Prior to launching Native Minima on exchanges in Q3/Q4 2023, Native Minima ($MINIMA) will be tradable peer-2-peer for ETH or any ERC-20 token via the MiniSwap MiniDapp that will be available soon.
+Prior to launching Native Minima on exchanges in Q3/Q4 2024, Native Minima ($MINIMA) will be tradable peer-to-peer for ETH or any ERC-20 token via the MiniSwap MiniDapp that is available.
 
 The following pie chart demonstrates that only 9.81% (98,100,000 coins) of the Total Circulating Supply of Minima coins will be available on exchanges at TGE as $WMINIMA: 
 
@@ -51,8 +51,7 @@ The following pie chart demonstrates that only 9.81% (98,100,000 coins) of the T
 
 100% of Native Minima (1,000,000,000 $MINIMA coins) will be minted at the Token Generation Event, and 12.5% of these coins will be wrapped on the Ethereum blockchain as ERC-20 tokens (125,000,000 $WMINIMA coins), in order for Wrapped Minima to be tradable on exchanges shortly after the event. 
 
-
-Native Minima (875,000,000 $MINIMA coins) will be available to trade peer-2-peer via a MiniSwap MiniDapp and then on exchanges once the necessary middleware integration has been implemented, expected Q3/Q4 2023. 
+Native Minima (875,000,000 $MINIMA coins) is available to trade peer-to-peer via the MiniSwap MiniDapp and then on exchanges once the necessary middleware integration has been implemented, expected Q3/Q4 2024. 
 
 | | Supply | Process | 
 |:-------|:-----------|:-----------|
