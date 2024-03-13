@@ -133,7 +133,7 @@ As long as you use the same minimadocker8001 folder, your previous node will be 
 - `-e minima_mdspassword=yourmdspassword` : specify the mds login password <br/>
 
 #### RPC
-- `-e minima_rpcenable=true/false` : enable remote procedure call. Enabled by default.<br/>
+- `-e minima_rpcenable=true/false` : enable remote procedure call. Disabled by default.<br/>
 - `-e minima_rpcssl=true` : use Self Signed SSL cert to run RPC<br/>
 - `-e minima_rpcpassword=yourrpcpassword` : set Basic Auth password for RPC calls ( Use with SSL / stunnel ). Only secure if used with SSL.<br/>
 - `-e minima_rpcclrf=true` : use CRLF at the end of the RPC headers (NodeJS)<br/>
