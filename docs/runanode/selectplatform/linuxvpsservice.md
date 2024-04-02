@@ -4,6 +4,10 @@ sidebar_position: 5
 
 # Linux VPS (as a Service)
 
+Running a node on a server and allowing inbound connections on port 9001 will ensure your node acts as a **relay node**.
+
+Relay nodes are the backbone of the Minima peer-to-peer network that faciliate the transmission of transactions and blocks across the network and support the network to scale. 
+
 Installing Minima as a background process with SystemD is an alternative to using Docker. SystemD is a daemon server that enables applications to run as background processes. 
 
 The following instructions assume your server is using **Debian OS with no existing installations.**
@@ -20,7 +24,9 @@ Before starting, please ensure your server firewall rules:
 
 You may use the default Firewall manager for your server or alternatively use Uncomplicated Firewall (UFW). 
 
-If you wish to use UFW, expand the instructions below:
+If you wish to use UFW, expand the instructions below.
+
+**After installing Minima, you must finish setting up the Firewall rules to ensure your node runs as expected.**
 
 <details>
 <summary> UFW initial setup instructions</summary>
@@ -61,7 +67,8 @@ For more information see [here](https://wiki.debian.org/Uncomplicated%20Firewall
 
 </details>
 
-After installing Minima, you will finish setting up the Firewall rules.
+
+
 
 ## Setup Minima as a background process
 
@@ -175,7 +182,7 @@ Congratulations, your node is now running!
 Your node will **not** auto-update so you will need to [update your node](#updating-your-node) when a new version becomes available.
 :::
 
-You must now finish setting up your firewall rules.
+**You must now finish setting up your firewall rules to ensure your node runs as expected.**
 
 
 ## Finish firewall setup 
@@ -219,7 +226,7 @@ y
 ```
 </details>
 
-You are now ready to use Minima!
+**You are now ready to use Minima!**
 
 
 ## Login to your node

@@ -51,7 +51,9 @@ Desktop nodes are not required to configure any port forwarding to use Minima.
 
 ### Recommended Firewall settings (VPS users)
 
-**If using Docker to run your node on a VPS, you must not rely on UFW as your firewall, Docker will overwrite UFW firewall rules. You must use your VPS provider's firewall manager.**
+:::warning docker users
+If using **Docker** to run your node on a VPS, you **must not rely on UFW** as your firewall, Docker will overwrite UFW firewall rules. You must use your VPS provider's firewall manager.
+:::
 
 After configuring your firewall, you should check they are enforced as expected. 
 
@@ -65,8 +67,10 @@ Allows ssh access to the server, optionally only allow this from your home IP ad
 
 **9001 tcp**: allow all 
 
-If this port is open, your node will be able to receive incoming connections, acting as a relay node. 
-If your inbound connection is closed, your node will only make outgoing connections.
+:::note Relay nodes
+Allowing inbound connections on port 9001 will ensure your node acts as a relay node. Relay nodes are the backbone of the Minima peer-to-peer network that faciliate the transmission of transactions and blocks across the network and support the network to scale. 
+If your inbound connection is closed, your node will only make outgoing connections and will not act as a relay node.
+:::
 
 **9003 tcp**: allow only from your home IP address 
 
