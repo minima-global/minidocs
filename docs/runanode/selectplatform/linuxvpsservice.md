@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Linux VPS (as a Service)
+# Linux VPS (systemd service)
 
 Running a node on a server and allowing inbound connections on port 9001 will ensure your node acts as a **relay node**.
 
@@ -22,14 +22,11 @@ Before starting, please ensure your server firewall rules:
 - do not allow any inbound (Ingress) traffic from anywhere (we will change this later)
 - allow ssh connections (inbound on port 22)
 
-You may use the default Firewall manager for your server or alternatively use Uncomplicated Firewall (UFW). 
+If you wish to use the default Firewall manager for your server, please refer to the [recommended firewall settings](/docs/runanode/systemrequirements#recommended-firewall-settings-vps-users). Alternatively to use Uncomplicated Firewall (UFW), see the instructions below.
 
-If you wish to use UFW, expand the instructions below.
-
-**After installing Minima, you must finish setting up the Firewall rules to ensure your node runs as expected.**
 
 <details>
-<summary> UFW initial setup instructions</summary>
+<summary> UFW setup instructions</summary>
 
 As a user with sudo privileges:
 
@@ -52,21 +49,46 @@ sudo ufw default deny incoming
 ```
 sudo ufw default allow outgoing
 ```
+**DO NOT SKIP THE FOLLOWING STEP, OR YOU WILL BE LOCKED OUT OF YOUR SERVER!**
 ```
 sudo ufw allow ssh
 ```
+
+
+
+
+
+3. Allow inbound connections to 9001 from anywhere
+```
+sudo ufw allow in 9001
+```
+
+4. Allow inbound connections to your MiniDapp system only from your home IP address (replace xx.xx.xx.xx with your home ip)
+
+*Note that most home IP addresses are not fixed and change, so you may have to redo this rule at a later date. You can find your home IP address by going to [ipchicken](https://ipchicken.com/) when connected to your home wifi network.*
+
+```
+sudo ufw allow from xx.xx.xx.xx to any port 9003
+```
+
+
+or to allow connections to your MiniDapp system from anywhere. **This will expose your login screen publicly.**
+
+```
+sudo ufw allow in 9003
+```
+
+5. Enable the firewall
 ```
 sudo ufw enable
 ```
 ```
 y
 ```
-**MAKE SURE YOU HAVE NOT SKIPPED THE `ufw allow ssh` STEP, OR YOU WILL BE LOCKED OUT OF YOUR SERVER!**
 
 For more information see [here](https://wiki.debian.org/Uncomplicated%20Firewall%20%28ufw%29)
 
 </details>
-
 
 
 
@@ -182,49 +204,6 @@ Congratulations, your node is now running!
 Your node will **not** auto-update so you will need to [update your node](#updating-your-node) when a new version becomes available.
 :::
 
-**You must now finish setting up your firewall rules to ensure your node runs as expected.**
-
-
-## Finish firewall setup 
-
-By default, Minima uses ports 9001-9005. Please refer to the [recommended firewall settings](/docs/runanode/systemrequirements#recommended-firewall-settings-vps-users)
-
-If using Uncomplicated Firewall (UFW), expand the instructions below.
-
-<details>
-<summary> UFW final setup instructions</summary>
-
-As a user with sudo privileges:
-
-1. Allow inbound connections to 9001 from anywhere
-```
-sudo ufw allow in 9001
-```
-
-2. Allow inbound connections to your MiniDapp system only from your home IP address (replace xx.xx.xx.xx with your home ip)
-*Note that most home IP addresses are not fixed and if your router is reset, this IP address can change, so you may have to redo this rule at a later date.*
-
-You can find your home IP address by going to [ipchicken](https://ipchicken.com/) when connected to your home wifi network.
-
-```
-sudo ufw allow from xx.xx.xx.xx to any port 9003
-```
-
-
-or to allow connections to your MiniDapp system from anywhere. **This will expose your login screen publicly.**
-
-```
-sudo ufw allow in 9003
-```
-
-3. Enable the firewall
-```
-sudo ufw enable
-```
-```
-y
-```
-</details>
 
 **You are now ready to use Minima!**
 

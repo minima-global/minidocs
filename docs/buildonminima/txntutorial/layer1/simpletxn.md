@@ -610,7 +610,7 @@ NEW Unspent Coin : {"coinid":"0x9AA61717A9190419F4C617AF10FC5A014621E86076784111
 ```
 
 So you can see the process:
- 1. node 1 created a txpow unit containing the transation
+ 1. node 1 created a txpow unit containing the transaction
  2. node 1 mined the txpow unit 
  3. the txpow unit became a block*
  4. node 1 spent the 1 billion coin and received a new coin of 999999990

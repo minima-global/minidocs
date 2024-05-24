@@ -20,7 +20,7 @@ From the Apple icon in the top left of your Mac, select “About This Mac”. If
 
 4. Set Minima to start automatically when your Mac starts by referring to [this guide.](https://support.apple.com/en-gb/guide/mac-help/mh15189/14.0/mac/14.0)
 
-5. Set your own password - on the **Settings** tab, use the `-mdspassword` parameter in the **Advanced params** section, then close the window and restart the app for this to take effect. <br/><br/>
+5. Set your own password - on the **Settings** tab, use the `-mdspassword` parameter in the **Advanced params** section. <br/>*Enter a password over 12 characters using `a-z, A-Z, 0-9, !@#=?+<>,.-_ '()/` characters only and without spaces, then close the window and **restart the app** for this to take effect.* <br/><br/>
 ![JNLP](/img/runanode/custompw.png#width40)
 
 Once restarted, select **Launch MinimaOS** to access your node and login with your password.
@@ -33,7 +33,7 @@ Congratulations on starting your node!
 
 To update your node to the latest version of Minima, simply close the dialog box to shut it down, then relaunch the JNLP. Any updates will be checked for and downloaded automatically. 
 
-Please see the [first steps](#first-steps) to complete now your node is running.
+Please see the essential [first steps](#first-steps) to complete now your node is running.
 
 ## First steps
 

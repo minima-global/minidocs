@@ -7,6 +7,14 @@ Performing a seed re-sync will **WIPE your node completely** before re-syncing y
 
 **Do not attempt to use any other MiniDapps whilst syncing is in progress.**
 
+:::warning
+If your device is connected to Microsoft Onedrive, iCloud or another app which automatically syncs locally changed files to the cloud, please pause syncing for the duration of your node recovery process as they can interfere.
+:::
+
+:::warning transaction history
+Transaction history will be deleted so you may wish to download this from the Wallet MiniDapp before proceeding.
+:::
+
 ## From the Security MiniDapp
 
 ![dappmenu](/img/app/security.png#width10)

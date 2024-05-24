@@ -387,7 +387,7 @@ To run a second node in Docker, you can create another container using different
 1. To create a node on port 8001:
 
 ```
-docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_server=true -v ~/minimadocker8001:/home/minima/data -p 8001-9003:9001-9003 --restart unless-stopped --name minima8001 minimaglobal/minima:latest
+docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_server=true -v ~/minimadocker8001:/home/minima/data -p 8001-8003:9001-9003 --restart unless-stopped --name minima8001 minimaglobal/minima:latest
 ```
 
 To login to your node, go to https://YourServerIP:8003/ 
@@ -434,7 +434,7 @@ docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_rpcpassword=INSERTR
 
 On a second node running on ports 8001-8005, this would be: 
 ```
-docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_rpcpassword=INSERTRPCPASSWORD -e minima_server=true -v ~/minimadocker8001:/home/minima/data -p 8001-9003:9001-9003 -p 127.0.0.1:8005:9005 --restart unless-stopped --name minima8001 minimaglobal/minima:latest
+docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_rpcpassword=INSERTRPCPASSWORD -e minima_server=true -v ~/minimadocker8001:/home/minima/data -p 8001-8003:9001-9003 -p 127.0.0.1:8005:9005 --restart unless-stopped --name minima8001 minimaglobal/minima:latest
 ```
 
 #### RPC commands
