@@ -175,7 +175,7 @@ const config = {
             items: [
               {
                 label: "Discord",
-                href: "https://discord.com/invite/minima",
+                href: "https://discord.com/invite/minimaglobal",
               },
               {
                 label: "Telegram",

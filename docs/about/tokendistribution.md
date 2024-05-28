@@ -178,7 +178,7 @@ Although the loyalty program has now ended, users can earn a yield on their nati
 
 [Grants](https://www.minima.global/apply-for-grant) are available for building interesting and novel use cases on Minima. They will be awarded to developers and entrepreneurs, in collaboration with a range of Minima partners, to accelerate the growth of the network. 
 
-Bounties are also be available for individuals who discover critical bugs and report them to the #bug-reports channel on [Discord](https://discord.gg/minima), before anyone else. 
+Bounties are also be available for individuals who discover critical bugs and report them to the #bug-reports channel on [Discord](https://discord.com/invite/minimaglobal), before anyone else. 
 
 #### Circulating Supply
 

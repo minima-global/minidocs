@@ -22,7 +22,7 @@ Transaction history will be deleted so you may wish to download this from the Wa
 1. Open the Security MiniDapp
 2. Select **Archive reset**
 3. Select **Import seed phrase**
-4. Upload an archive file. If you do not have one, you can visit our [Discord server](https://discord.com/invite/minima) to get one or go to https://spartacusrex.com/archive and download the latest file.
+4. Upload an archive file. If you do not have one, you can visit our [Discord server](https://discord.com/invite/minimaglobal) to get one or go to https://spartacusrex.com/archive and download the latest file.
 5. Continue to enter your seed phrase carefully 
 6. Start the re-sync process, please be patient and leave the process to finish
 
@@ -43,7 +43,7 @@ Transaction history will be deleted so you may wish to download this from the Wa
 
 **Using an archive file (recommended):**
 
-Download an archive file and move it into your Minima data folder (the default location for exported files and backups). If you do not have one, you can visit our [Discord server](https://discord.com/invite/minima) or go to https://spartacusrex.com/archive and download the latest file, then run the following command entering your seed phrase and setting your key uses.
+Download an archive file and move it into your Minima data folder (the default location for exported files and backups). If you do not have one, you can visit our [Discord server](https://discord.com/invite/minimaglobal) or go to https://spartacusrex.com/archive and download the latest file, then run the following command entering your seed phrase and setting your key uses.
 
 ```
 reset archivefile:archiveexport.gzip action:seedsync phrase:"TWENTY FOUR WORDS HERE" keyuses:

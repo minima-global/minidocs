@@ -29,7 +29,7 @@ If your backup is older than 1-2 weeks for Android or 4-6 weeks on desktop/serve
 1. Open the Security MiniDapp
 2. Select **Archive reset**
 3. Select **Restore a backup**
-4. Upload an archive file. If you do not have one, you can visit our [Discord server](https://discord.com/invite/minima) to get one or go to https://spartacusrex.com/archive and download the latest file.
+4. Upload an archive file. If you do not have one, you can visit our [Discord server](https://discord.com/invite/minimaglobal) to get one or go to https://spartacusrex.com/archive and download the latest file.
 5. Upload your backup and enter the password used when generating the backup 
 6. Select **Restore** 
 7. Wait for the restore to finish, this can take a long time. 

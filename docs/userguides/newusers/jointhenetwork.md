@@ -14,7 +14,7 @@ To achieve Minima's vision of complete decentralisation, there are no centralise
 
 When running a node for the first time, you will need one or more connections to join the network. To get a list of connections, use one of the following methods:
 - ask another node runner to [share their connections](#sharing-connections) with you
-- enter `/minimapeers` into any channel in our [Discord server](https://discord.gg/minima) 
+- enter `/minimapeers` into any channel in our [Discord server](https://discord.com/invite/minimaglobal) 
 - Google search for **minimapeers.txt** 
 - use a public URL that returns a list of Minima peers, for example https://www.spartacusrex.com/minimapeers.txt
 

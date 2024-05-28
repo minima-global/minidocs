@@ -19,7 +19,7 @@ Once up and running, you can participate by interacting in the community, and us
 If you’re a developer, check out the [Build section](/docs/buildonminima/buildintro) of our docs to learn about how to build your own MiniDapps and how to write smart contracts on Minima.
 
 :::note join the developers on discord!
-To access to the **dev** channel in [Discord](https://discord.com/invite/minima), head the **#role-picker** channel and select the **Community Developer** role. Our core and community developers are active there, so if you have any questions, feel free to ask. There are no stupid questions!
+To access to the **dev** channel in [Discord](https://discord.com/invite/minimaglobal), head the **#role-picker** channel and select the **Community Developer** role. Our core and community developers are active there, so if you have any questions, feel free to ask. There are no stupid questions!
 :::
 
 ## Purchasing Minima
@@ -49,5 +49,5 @@ Alternatively, if you have Metamask enabled on this browser page, click on the b
 
 ## Join us on socials
 
-Subscribe to our announcement channel on [Discord](https://discord.gg/minima) or [Telegram](https://t.me/MinimaGlobal), and follow us on [LinkedIn](https://www.linkedin.com/company/minimaglobal/) or [X](https://twitter.com/Minima_Global) to be the first to hear about the latest updates!
+Subscribe to our announcement channel on [Discord](https://discord.com/invite/minimaglobal) or [Telegram](https://t.me/MinimaGlobal), and follow us on [LinkedIn](https://www.linkedin.com/company/minimaglobal/) or [X](https://twitter.com/Minima_Global) to be the first to hear about the latest updates!
 

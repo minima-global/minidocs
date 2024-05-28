@@ -20,7 +20,7 @@ Transaction history will be deleted so you may wish to download this from the Wa
 1. Open the Security MiniDapp
 2. Select **Archive reset**
 3. Select **Chain re-sync**
-4. Select a recent internal archive file or upload a new one. If you do not have one, you can visit our [Discord server](https://discord.com/invite/minima) or go to https://spartacusrex.com/archive and download the latest file.
+4. Select a recent internal archive file or upload a new one. If you do not have one, you can visit our [Discord server](https://discord.com/invite/minimaglobal) or go to https://spartacusrex.com/archive and download the latest file.
 
 :::important
 For a successful re-sync to the latest block, you must use an archive file from within the last week.

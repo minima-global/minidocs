@@ -33,4 +33,4 @@ Check out our [Quick Start](/docs/runanode/quickstart) guide, or alternatively, 
 
 ### Need help?
 
-You can find us in [Discord](https://discord.gg/minima) or [Telegram](https://t.me/Minima_Global).
+You can find us in [Discord](https://discord.com/invite/minimaglobal) or [Telegram](https://t.me/Minima_Global).

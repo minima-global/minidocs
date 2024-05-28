@@ -543,6 +543,6 @@ sudo rm -rf minimadocker9001
 
 ### Need help?
 
-For help and support, find us in [Discord](https://discord.gg/minima) or [Telegram](https://t.me/Minima_Global).
+For help and support, find us in [Discord](https://discord.com/invite/minimaglobal) or [Telegram](https://t.me/Minima_Global).
 
 
