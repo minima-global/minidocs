@@ -1509,7 +1509,7 @@ Optionally, send to multiple addresses in one transaction; split UTxOs; add stat
 
 *send address:0xFF.. amount:10 split:5 burn:0.1*
 
-*send multi:["0xFF..:10","0xEE..:10","0xDD..:10"] split:20*
+*send multi:["0xFF..:10","0xEE..:10","0xDD..:10"] split:10*
 
 *send amount:1 address:0xFF.. state:\{"0":"0xEE..","1":"0xDD.."}*
 
@@ -1581,7 +1581,7 @@ Useful when the keys on an online node are wiped or password locked.
 
 *sendnosign address:0xFF.. amount:10 split:5 burn:0.1*
 
-*sendnosign multi:["0xFF..:10","0xEE..:10","0xDD..:10"] split:20*
+*sendnosign multi:["0xFF..:10","0xEE..:10","0xDD..:10"] split:10*
 
 *sendnosign amount:1 address:0xFF.. state:\{"0":"0xEE..","1":"0xDD.."}*
 
