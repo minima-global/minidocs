@@ -421,6 +421,8 @@ You can change 10001-10003 to another set of unused ports however the Docker por
 Only enable RPC if you understand the risks and have appropriate firewalls in place to prevent unauthorised access to your node!
 :::
 
+By default Minima is installed on ports 9001-9005. The default RPC port is 9005.
+
 If enabling RPC by opening the 9005 port, use the following additional parameters and set an RPC password for connecting over RPC on the start up line. You will only be able to use RPC commands if SSH'd into the server.
 
 ```
@@ -437,9 +439,16 @@ On a second node running on ports 8001-8005, this would be:
 docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_rpcpassword=INSERTRPCPASSWORD -e minima_server=true -v ~/minimadocker8001:/home/minima/data -p 8001-8003:9001-9003 -p 127.0.0.1:8005:9005 --restart unless-stopped --name minima8001 minimaglobal/minima:latest
 ```
 
-#### RPC commands
+#### Accessing the Minima RPC client via Docker
 
-By default Minima is installed on ports 9001-9005. The default RPC port is 9005.
+To access the Minima Terminal via Docker, you must add your RPC password:
+
+```
+docker exec -it minima9001 minima -password YOURRPCPASSWORD
+```
+
+#### Curl commands
+
  
 You can send commands to your Minima node using curl to the RPC port. 
 
@@ -471,13 +480,7 @@ ssh root@YourServerIP curl -k -u minima:INSERTRPCPASSWORD 127.0.0.1:9005/status
 
 Each request will also require your server password.
 
-#### Using the Docker CLI
 
-To use your Docker CLI, you must add your RPC password:
-
-```
-docker exec -it minima9001 minima -password YOURRPCPASSWORD
-```
 
 <!-- :::warning
 If you have other applications on your server other than Minima - please review your existing firewall settings before proceeding.

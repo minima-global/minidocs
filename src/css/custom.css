@@ -547,3 +547,10 @@ article{
 .hidden {
   display: none !important;
   }
+
+/* Custom CSS for Docusaurus tab content */
+
+  .tabs__item--active {
+    background-color: #ececec; /* Active tab background color */
+    color: #181818; /* Active tab text color */
+  }

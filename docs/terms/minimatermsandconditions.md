@@ -17,7 +17,7 @@ The following terminology applies to these Terms and Conditions: “Client”, �
 This Website may place and access certain Cookies on your computer or device. By accessing this Website, you agree to the use of Cookies in agreement with the Privacy Policy. If you do not agree to our Privacy Policy or the use of Cookies, please stop using this Website immediately.
 Most interactive websites use Cookies to retrieve the user’s details for each visit. Cookies are used by our Website to enable the functionality of certain areas and to make it easier for people visiting our Website. Some of our affiliate/advertising partners may also use Cookies.
 
-## License
+## Intellectual Property
 
 Unless otherwise stated, Minima GmbH and/or its licensors own the intellectual property rights for all material on this Website. All intellectual property rights are reserved.
 

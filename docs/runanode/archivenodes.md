@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Run an archive node
+# Run an Archive node
 
 Archive nodes serve an important function of being able to recover any Minima user if they lose access to their node or require a re-sync to the chain.
 

@@ -12,6 +12,8 @@ The following information is for Server or Desktop users.
 
 ## Minimum hardware requirement
 
+The following requirements are separate to any specs required for non Minima related processes. GPU is not necessary.
+
 ### Standard full node
 
 **Processing:** 2 CPU (4 if using Docker) <br/>
@@ -29,7 +31,16 @@ The following information is for Server or Desktop users.
 
 *This may change over time.
 
-GPU is not necessary
+### Mega node
+
+**Processing:** 2 CPU <br/>
+**Memory:** 8GB RAM<br/>
+**Storage:** 5GB
+
+We do not recommend running a Mega node from an Android device as the RAM consumption is considerably higher than a standard node.
+
+The Mega node **must be online** constantly to remain in sync with the chain. Downtime of less than 24 hours is acceptable.
+
 
 ## Ports used
 By default, Minima reserves ports **9001-9005**, although an alternate 5-port range can be chosen by specifying a different main port on start up e.g. 8001.
@@ -67,22 +78,28 @@ Allows ssh access to the server, optionally only allow this from your home IP ad
 
 **9001 tcp**: allow all 
 
-:::note Relay nodes
+:::note 9001 - Relay nodes
 Allowing inbound connections on port 9001 will ensure your node acts as a relay node. Relay nodes are the backbone of the Minima peer-to-peer network that faciliate the transmission of transactions and blocks across the network and support the network to scale. 
 If your inbound connection is closed, your node will only make outgoing connections and will not act as a relay node.
 :::
 
-**9003 tcp**: allow only from your home IP address 
+**9003 tcp**: 
+- if enabling the MiniDapp system, **allow only from your home IP address** 
+- if running Minima headlessly, **deny inbound connections**
 
-You may need to update this if your home IP is dynamic. Alternatively you can allow from anywhere but your login screen will be public facing, so your login password must be long and secure, using a combination of lowercase, uppercase letters numbers and symbols.
+:::important 9003 - MiniDapp Port
+If your home IP is dynamic, you will need to maintain this firewall rule to your latest IP. If you choose to allow inbound connections from anywhere, your login screen will be public facing, so your login password (mdspassword) must be long and secure, using a combination of lowercase, uppercase letters numbers and symbols.
+:::
 
-**9002 tcp**: deny all
+**9002 tcp (not in use)**: deny all
 
-**9004 tcp**: deny all 
+**9004 tcp (not in use)**: deny all 
 
-**9005 tcp**: deny all 
+**9005 tcp (RPC port)**: 
+- deny all, or 
+- if you want to `curl` into the node remotely, ensure this is **only allowed inbound from your home IP address**. **You should only do this if you are an advanced user and understand the risks!**
 
-If you wish to enable RPC, ensure this is only allowed from your home IP address.
+**Opening port 9005 is __extremely risky__ as it exposes your node and seed phrase if you have not [set a secure password for RPC access](/docs/runanode/selectplatform/linuxvpsservice#rpc-client-setup).**
 
 <!-- 
 <details>

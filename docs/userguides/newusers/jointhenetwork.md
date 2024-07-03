@@ -9,10 +9,9 @@ sidebar_position: 7
 --- -->
 
 
+To achieve Minima's vision of complete decentralisation, there are no centralised servers that control access to the network. Therefore, when running a node for the first time, you will need one or more connections to join the network. 
 
-To achieve Minima's vision of complete decentralisation, there are no centralised servers that control access to the network.
-
-When running a node for the first time, you will need one or more connections to join the network. To get a list of connections, use one of the following methods:
+To get a list of connections, use one of the following methods:
 - ask another node runner to [share their connections](#sharing-connections) with you
 - enter `/minimapeers` into any channel in our [Discord server](https://discord.com/invite/minimaglobal) 
 - Google search for **minimapeers.txt** 
@@ -28,7 +27,7 @@ If you are restoring a backup to a new node, select "I'll do this later" and con
 
 ### Adding connections
 
-Connections (or 'peers') are simply other node runners that can share the blockchain with new users, enabling them to join the network. 
+Connections (or 'peers') are simply other nodes that can share the blockchain with new users, enabling them to join the network. 
 
 **To add connections for the first time:**
 

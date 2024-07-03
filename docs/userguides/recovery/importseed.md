@@ -1,23 +1,80 @@
 ---
 sidebar_position: 4
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Importing your seed phrase
 
-Performing a seed re-sync will **WIPE your node completely** before re-syncing your wallet using an archive file.
+Performing a seed re-sync will **WIPE your node completely** before restoring your wallet from the given 24 word seed phrase.
 
 **Do not attempt to use any other MiniDapps whilst syncing is in progress.**
-
-:::warning
-If your device is connected to Microsoft Onedrive, iCloud or another app which automatically syncs locally changed files to the cloud, please pause syncing for the duration of your node recovery process as they can interfere.
-:::
 
 :::warning transaction history
 Transaction history will be deleted so you may wish to download this from the Wallet MiniDapp before proceeding.
 :::
 
-## From the Security MiniDapp
+
+## Restore your Seed phrase with QuickSync
+
+<Tabs
+  defaultValue="security"
+  values={[
+    {label: 'Security MiniDapp', value: 'security'},
+    {label: 'Terminal/Command Line/RPC Client', value: 'cli'},  
+  ]}>
+
+<TabItem value="security">
 
 ![dappmenu](/img/app/security.png#width10)
+
+1. Login to your MiniHub and open the Security MiniDapp
+2. Select **Restore node**
+3. Select **Import Seed Phrase**
+4. Enter the IP:port of a Mega node. If you do not have one, you can use the example IP provided, 34.32.59.133:9001. Then select **Next**.
+5. Enter your Seed Phrase carefully. Then select **Next**.
+6. Enter the number of Keys to create, if unsure then leave this as the default of 64. Then select **Next**.
+7. Enter Key Uses, if you have never restored your seed phrase before, use the default of 1000. If you have, enter a higher number e.g. 2000. This should be the highest number of times you could possibly have used your keys r.g. for signing transactions. Then select **Next**.
+8. Select **Restore**
+9. Wait for the sync to complete, please be patient whilst the keys are recreated and the wallet is restored. The node will shutdown when complete.
+10. Restart the node for the restore to take effect. Then allow a few minutes for the node to connect to the network.
+
+You will then be on the correct top block.
+
+</TabItem>
+
+<TabItem value="cli">
+
+1. Access the Minima Terminal via the MiniDapp, Docker CLI, Command Line or RPC Client
+2. Enter the following command, then press Enter
+
+Example
+```
+megammrsync action:resync host:34.32.59.133:9001 phrase:"YOUR 24 WORD SEED PHRASE" keyuses:2000
+```
+
+The re-sync will begin, please be patient whilst the keys are recreated and the wallet is restored.
+
+3. Check the logs to see when the process is complete. The node will shutdown automatically.
+
+4. Restart the node for the restore to take effect. Then allow a few minutes for the node to connect to the network.
+
+You will then be on the correct top block.
+
+For further help using the `megammrsync` command, use `help command:megammrsync` from the Terminal.
+
+</TabItem>
+</Tabs>
+
+-------
+
+## Legacy method (using an Archive file)
+
+:::warning
+If your device is connected to Microsoft Onedrive, iCloud or another app which automatically syncs locally changed files to the cloud, please pause syncing for the duration of your node recovery process as they can interfere.
+:::
+
 
 1. Open the Security MiniDapp
 2. Select **Archive reset**
