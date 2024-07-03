@@ -141,6 +141,8 @@ You can either:
 
 2. Import a MegaMMR `.mmr` file shared from another Mega node runner by running the following command from the Minima Terminal, RPC Client or Terminal MiniDapp. 
 
+Daily .mmr exports can be found [here](https://spartacusrex.com/megaarchive/). 
+
 The .mmr file must have been generated no longer than 1 week ago.
 
 **Mega MMR import**
