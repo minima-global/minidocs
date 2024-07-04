@@ -11,6 +11,11 @@ Performing a seed re-sync will **WIPE your node completely** before restoring yo
 
 **Do not attempt to use any other MiniDapps whilst syncing is in progress.**
 
+:::warning MiniSwap restore
+If you have funds in MiniSwap, and you are importing your seed phrase, you will need to resync **TWICE**. <br/>
+First restore your seed phrase with QuickSync, then open the MiniSwap app, put it in WRITE mode and set up your API keys. This will add the MiniSwap script to your node. You must then perform a [chain re-sync](/docs/userguides/recovery/chainresync) to restore your MiniSwap coins.  
+:::
+
 :::warning transaction history
 Transaction history will be deleted so you may wish to download this from the Wallet MiniDapp before proceeding.
 :::

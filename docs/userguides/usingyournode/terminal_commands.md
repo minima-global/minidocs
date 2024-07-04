@@ -192,11 +192,15 @@ E.g. A speed of 0.5 MH/s indicates 500000 hashes per second.
 **max:** (optional)<br></br>
     Maximum number of TxPoW to retrieve.
 
+**offset: (optional)**<br></br> 
+    Start the list from this point. *(v1.0.41 onwards)*
+
 **Examples:**
 
-*history*
-
 *history max:20*
+
+*history max:20 offset:45*
+
 </details>
 
 <details>
@@ -281,6 +285,18 @@ Ensure you have a backup before shutting down.
 *quit*
 
 *quit compact:true*
+</details>
+
+<details>
+<summary><strong>seedrandom (from v1.0.41)</strong><br></br>Generate a random value, based on your SEED and a modifier.</summary>
+
+**modifier:**<br></br>
+    The modifier - added to seed before hash.
+
+**Examples:**
+
+*seedrandom modifier:"Hello you"*
+
 </details>
 
 <details>
@@ -473,6 +489,87 @@ You can also check the integrity of your archive db.
 
 </details>
 
+
+<details>
+<summary><strong>megammr (from v1.0.41) </strong><br></br>View information about your MegaMMR. Export and Import complete MegaMMR data.</summary>
+
+You must be running with the -megammr start up parameter.
+
+**action:** (optional)<br></br>
+&ensp;   **info**   : Shows info about your MegaMMR.<br></br>
+&ensp;   **export** : Export a MegaMMR data file.<br></br>
+&ensp;   **import** : Import a MegaMMR data file.<br></br>
+
+**file:** (optional)<br></br>
+    A .mmr file. Use with export and import. 
+
+**Examples:**
+
+*megammr*
+
+*megammr action:export*
+
+*megammr action:export file:mmrfile.mmr*
+
+*megammr action:import file:mmrfile.mmr*
+
+</details>
+
+
+
+<details>
+<summary><strong>megammrsync (from v1.0.41) </strong><br></br>Perform a quick chain sync, seed re-sync or restore a backup from a MegaMMR node. Fast.</summary>
+
+If you are on the wrong chain - all you need to provide is the 'host' to connect to.
+
+If you are on a fresh node, with different seed phrase, provide 'host' and 'phrase' to resync with that Wallet.
+
+You can load an old backup and resync to the chain tip aswell.
+
+The host you connect to MUST be running with -megammr.
+
+**action:** (optional)<br></br>
+&ensp;   **mydetails**   : Shows which addresses and public keys you are searching for.<br></br>
+&ensp;   **resync** : Perform the actual MegaMMR resync. (i.e. QuickSync) <br></br>
+
+**host:**<br></br>
+    ip:port of the node to sync from. Use with action:resync.
+
+**phrase:** (optional)<br></br>
+    To seed re-sync, enter your seed phrase in double quotes. Use with action:resync.
+    This will replace the current seed phrase of this node. You do NOT have to do this if you still have access to your wallet.
+
+**anyphrase:** (optional)<br></br>
+    true or false. If you set a custom seed phrase on startup, you can set this to true. Default is false.
+
+**keys:** (optional)<br></br>
+    Number of keys to create if you need to do a seed re-sync. Default is 64.
+
+**keyuses:** (optional)<br></br>
+    How many times at most you used your keys..
+    Every time you re-sync with seed phrase this needs to be higher as Minima Signatures are stateful.
+    Defaults to 1000 - the max is 262144 for normal keys.
+
+**file:** (optional)<br></br>
+    Specify the filename or local path of the backup to restore
+
+**password:** (optional)
+    Enter the password of the backup
+
+
+**Examples:**
+
+*megammrsync action:mydetails*
+
+*megammrsync action:resync host:34.32.59.133:9001*
+
+*megammrsync action:resync host:34.32.59.133:9001 file:myoldbackup.bak password:backup_password*
+
+*megammrsync action:resync host:34.32.59.133:9001 phrase:"YOUR 24 WORD SEED PHRASE" keyuses:2000*
+
+</details>
+
+
 <details>
 <summary><strong>mysql</strong><br></br>Export the archive data of your node to a MySQL database.</summary>
 
@@ -506,12 +603,13 @@ You can also create a coins db in MySQL to search for coins using SQL queries.
  &ensp;    **integrity** : Check the block order and block parents are correct in the MySQL db.<br></br>
  &ensp;    **update** : Update the MySQL db with the latest syncblocks from the node's archive db.<br></br>
  &ensp;    **addresscheck** : Check the history of all the spent and unspent coins from an address.<br></br>
- &ensp;    **autobackup** : Automatically save archive data to MySQL DB. Use with enable.<br></br>
+ &ensp;    **autobackup** : Automatically save archive and txpow data to the MySQL DB. Use with enable.<br></br>
  &ensp;    **resync** : Perform a chain or seed re-sync from the specified MySQL db. Will shutdown the node so you must restart it once complete.<br></br>
 &ensp;   **wipe** :  Be careful. Wipe the MySQL db.<br></br>
 &ensp;    **h2export** : export the MySQL db to an archive gzip file which can be used to resync a node.
 &ensp;    **h2import** : import an archive gzip file to the MySQL db.
-&ensp;    **rawexport** : export the MySQL db to an archive .dat file which can be used to resync a node. (v1.0.39 onwards)
+&ensp;    **rawexport** : export the MySQL db to an archive .dat file which can be used to resync a node. *(v1.0.39 onwards)*
+&ensp;    **findtxpow** : if autobackup is enabled, find a specific txpow in the MySQL DB. *(v1.0.41 onwards)*
 
 **phrase:** (optional)<br></br>
      Use with action:resync. The BIP39 seed phrase of the node to re-sync.<br></br>
@@ -755,7 +853,8 @@ Accept/deny pending commands from MiniDapps with READ permissions.
 &ensp; **pending** : List all pending commands waiting to be accepted or denied.<br></br>
 &ensp; **accept** : Accept a pending command. Must specify 'uid' of the pending command.<br></br>
 &ensp; **deny** : Deny a pending command. Must specify 'uid' of the pending command.<br></br>
-&ensp; **permission** : Set permission for a MiniDapp to READ or WRITE. Must specify existing MiniDapp 'uid' and 'trust'.
+&ensp; **permission** : Set permission for a MiniDapp to READ or WRITE. Must specify existing MiniDapp 'uid' and 'trust'.<br></br>
+&ensp; **publicmds** : Turn publicly accessible wallet on or off. *(v1.0.41 onwards)*
 
 **file:** (optional)<br></br>
 The file name of the MiniDapp to install. Can either be in the Minima folder or specify the file path.
@@ -765,6 +864,9 @@ The uid of the MiniDapp to update, uninstall.
 
 **trust:** (optional)<br></br>
 The ip:port to send a message to. Use with 'action:send'.
+
+**enable:** (optional)<br></br>
+true or false, default is false. Enable the public wallet on https://nodeip:port/publicmds/.
 
 **Examples:**
 
@@ -800,7 +902,10 @@ Can be called from a MiniDapp to check whether it is in READ or WRITE mode.
 </details>
 
 <details>
-<summary><strong>checkpending</strong><br></br>Show if a pending transaction UID is in the pending list</summary>
+<summary><strong>checkpending</strong><br></br>Show if a pending command UID is in the pending list</summary>
+
+**uid:** (optional)<br></br>
+    The uid of a pending command. *See mds action:pending*.
 
 **Examples:**
 
@@ -906,6 +1011,9 @@ uid can be found from the 'network' command.
 
 <details>
 <summary><strong>ping</strong><br></br>Ping a host and get back Minima Node info.</summary>
+
+**host:**
+    ip:port to ping.
 
 **Examples:**
 
@@ -1293,19 +1401,6 @@ Scripts will be auto cleaned for you.
 
 
 <details>
-<summary><strong>history</strong><br></br>Return all TxPoW relevant to you.</summary>
-
-**max:** (optional)<br></br>
-    Maximum number of TxPoW to retrieve.
-
-**Examples:**
-
-*history max:20*
-
-</details>
-
-
-<details>
 <summary><strong>keys</strong><br></br>Get a list of all your public keys or create a new key.</summary>
 
 Each public key can be used for signing securely 262144 (64^3) times.
@@ -1489,17 +1584,26 @@ Optionally, send to multiple addresses in one transaction; split UTxOs; add stat
     You can split your own coins by sending to your own address.<br></br> 
     Useful if you want to send multiple transactions without waiting for change to be confirmed.
 
-**coinage:** (optional)
+**coinage:** (optional)<br></br> 
     How old must the coins be in blocks.
 
-**debug:** (optional)
+**debug:** (optional)<br></br> 
     true or false, true will print more detailed logs.
 
-**dryrun:** (optional)
+**dryrun:** (optional)<br></br> 
     true or false, true will simulate the send transaction but not execute it.
 
-**mine:** (optional)
+**mine:** (optional)<br></br> 
     true or false - should you mine the transaction immediately.
+
+**fromaddress:** (optional)<br></br> 
+    Only use this address for input coins.
+
+**signkey:** (optional)<br></br>
+    Sign the txn with only this key (use with fromaddress).
+
+**storestate:** (optional)<br></br>
+    true or false - defaults to true. Should the output coins store the state (will still appear in NOTIFYCOIN messages).
 
 **Examples:**
 
@@ -1639,6 +1743,89 @@ Must be posted from an online node within approximately 24 hours of creation to 
 *sendpost file:C:\Users\signedtransaction-1674907380057.txn*
 </details>
 
+<!-- ### Send - custom txn -->
+
+<details>
+<summary><strong>sendfrom (from v1.0.41)</strong><br></br> Send Minima or Tokens from a certain address.</summary>
+
+
+**fromaddress:** <br></br>
+Wallet address to send from.
+
+**address:** <br></br>
+Wallet address to send to.
+
+**amount:** <br></br>
+Amount to send.
+
+**tokenid:** (optional) <br></br>
+tokenid of the token to send. Default is Minima 0x00.
+
+**script:**<br></br>
+The script of the fromaddress.
+
+**privatekey:** <br></br>
+The private key to sign with.
+ 
+**keyuses:** <br></br>
+ Set the key uses for this privatekey.
+
+**mine:** (optional)<br></br> 
+    true or false - should you mine the transaction immediately.
+
+**Examples:**
+
+*sendfrom fromaddress:0xFEEED.. address:0xABCD.. script:"INSERT SCRIPT" privatekey:0xGHFK.. keyuses:5*
+
+</details>
+
+<!-- 
+
+<details>
+<summary><strong>createfrom</strong><br></br> Create and export an unsigned txn from a certain address.</summary>
+
+
+**fromaddress:** <br></br>
+Wallet address to send from.
+
+**address:** <br></br>
+Wallet address to send to.
+
+**amount:** <br></br>
+Amount to send.
+
+**tokenid:** (optional) <br></br>
+tokenid of the token to send. Default is Minima 0x00.
+
+**script:**<br></br>
+The script of the fromaddress.
+
+**Examples:**
+
+*createfrom fromaddress:0xFEEED.. address:0xABCD.. script:"INSERT SCRIPT"*
+
+</details>
+
+
+
+<details>
+<summary><strong>signfrom</strong><br></br>Sign a createfrom txn.</summary>
+
+
+**data:** <br></br>
+transaction data output from createfrom.
+
+**privatekey:** <br></br>
+The private key to sign with.
+ 
+**keyuses:** <br></br>
+ Set the key uses for this privatekey.
+
+**Examples:**
+
+*signfrom data:0x000000.. address:0xABCD.. script:"INSERT SCRIPT"*
+
+</details> -->
 
 ## Signatures
 <details>
