@@ -27,7 +27,7 @@ Before starting, please ensure your server firewall rules:
 
 Once your node is running, you should open port 9001 from anywhere and, if you are enabling minidapps, 9003 from your home IP.
 
-We recommend using the default Firewall manager for your server, please refer to the [recommended firewall settings](/docs/runanode/systemrequirements#recommended-firewall-settings-vps-users). Alternatively to use Uncomplicated Firewall (UFW), see the instructions below.
+We highly recommend using the default Firewall manager for your server. Alternatively to use Uncomplicated Firewall (UFW), see the instructions below.
 
 <Tabs
   defaultValue="custom"
@@ -38,7 +38,6 @@ We recommend using the default Firewall manager for your server, please refer to
 
 <TabItem value="custom">
 
-
 After configuring your firewall, you should check they are enforced as expected. 
 
 #### Ingress
@@ -46,8 +45,6 @@ After configuring your firewall, you should check they are enforced as expected.
 All inbound connections except for SSH should be **denied by default.**
 
 - Inbound connections from **all IPs** can be **allowed** for 
-
-  - **22 tcp** : Allows SSH access to the server, optionally only allow this from your home IP address.
 
   - **9001 tcp**: Allowing inbound connections on port 9001 ensures your node acts as a relay node. Relay nodes are the backbone of the Minima peer-to-peer network that faciliate the transmission of transactions and blocks across the network and support the network to scale. 
 If your inbound connection is closed, your node will only make outgoing connections and will not act as a relay node.
@@ -60,6 +57,8 @@ If your inbound connection is closed, your node will only make outgoing connecti
   - **9005 tcp**: RPC Port
 
 - Inbound connections from your **HOME IP** can be **allowed** for 
+
+  - **22 tcp** : Allows SSH access to the server, we recommend only allowing this from your home IP address but ensure that you can update this if your home IP dynamically changes, otherwise you could be locked out.
 
   - **9003 tcp**: if you intend to enable the MiniDapp system. If your home IP is dynamic, you will need to maintain this firewall rule to your latest IP. If you choose to allow inbound connections from anywhere, your login screen will be public facing, so your login password (mdspassword) must be long and secure, using a combination of lowercase, uppercase letters numbers and symbols.
 
@@ -231,7 +230,7 @@ sudo systemctl restart systemd-journald
 5. Create the Minima systemd file:
 
 :::important password options
-Edit the file to change the password, use the arrow keys to go to `yourpasswordhere` and set a secure password of **at least 12 characters using a-z, A-Z and 0-9 characters only.** <br/>
+Edit the file to change the password, use the arrow keys to go to `yourpasswordhere` and set a secure password of over 12 characters using a-z, A-Z, 0-9 and !@#=?+><,.-_'()/ symbols only. <br/>
 Alternatively, if you would like a random login password generated for you, remove `-mdspassword yourpasswordhere` completely, then [setup the RPC client](#setup-the-rpc-client) to find it. 
 :::
 
@@ -266,7 +265,7 @@ sudo su minima
 cd /home/minima
 ```
 
-7.. Download the minima jar file from Github
+7. Download the minima jar file from Github
 
 ```
 wget https://github.com/minima-global/Minima/raw/master/jar/minima.jar
@@ -352,7 +351,7 @@ then `ctrl+c` to exit the logs
 6. Create a file and paste in the script below, ensuring that you **change the password**
 
 ```
-nano minima
+sudo nano minima
 ```
 
 ```
@@ -454,7 +453,7 @@ sudo su minima
 cd /home/minima
 ```
 
-7.. Download the minima jar file from Github
+7. Download the minima jar file from Github
 
 ```
 wget https://github.com/minima-global/Minima/raw/master/jar/minima.jar
@@ -492,7 +491,7 @@ Now that your node is running, you can setup the RPC client to interact with you
 ***Enter a password over 12 characters using a-z, A-Z, 0-9 and !@#=?+><,.-_'()/ symbols only.***
 
 ```
-nano minima
+sudo nano minima
 ```
 
 ```
@@ -544,7 +543,7 @@ Your node will **not** auto-update so [prepare for future releases](#3-prepare-f
 
 Your node will not update to new versions of Minima automatically. 
 
-You can check the version of your node by running the `status` command from the RPC Client. (See [how to check the status of your node](#how-to-check-the-status-of-your-node).)
+You can check the version of your node by running the `status` command from the RPC Client. See [How to use the RPC client](/docs/runanode/selectplatform/linuxvpsservice#using-the-rpc-client).
 
 To create a script that you can run everytime you wish to update your node:
 
@@ -553,7 +552,7 @@ To create a script that you can run everytime you wish to update your node:
 2. Create the update script
 
 ```
-nano updateminimajar.sh
+sudo nano updateminimajar.sh
 ```
 
 3. Paste in the script:
