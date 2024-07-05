@@ -130,8 +130,31 @@ docker run -d -e minima_mdspassword=INSERTPASSWORD -e minima_desktop=true -e min
 </TabItem>
 </Tabs>
 
+### 2. Join the network
 
-### 2. Chain sync or import historical data
+Once the node is running, you will need to join the Peer-to-Peer network, enter the following command from the Minima terminal/RPC client:
+
+`peers action:addpeers peerslist:https://spartacusrex.com/minimapeers.txt`
+
+Alternatively use your own list of peers.
+
+You should see the response below, wait a few moments to receive the initial blockchain download.
+```
+{
+  "command":"peers",
+  "params":{
+    "action":"addpeers",
+    "peerslist":"https://spartacusrex.com/minimapeers.txt"
+  },
+  "status":true,
+  "pending":false,
+  "response":{
+    "message":"Peers added to checking queue.."
+  }
+}
+```
+
+### 3. Chain sync or import historical data
 
 A Mega node should be backfilled with the chain history so that the node has a complete database of all the coins since the blockchain started.
 
