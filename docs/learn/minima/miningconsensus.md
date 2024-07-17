@@ -62,7 +62,7 @@ The actual transaction difficulty for a node considers the achievable hash rate 
 
 The purpose of the block difficulty level is to regulate the frequency at which blocks are found on the network ensuring block intervals remain as close to 50 seconds as possible. TxPoW units only require the minimum amount of work before they are sent across the network, however these TxPoW units can become blocks and get added to the chain if, by chance, the TxPoW ID hash is also less than the network block difficulty target. 
 
-The block target is much lower (harder) than the transaction target, and fluctuates with the number of nodes on the network and their hash rate, so that 50 block intervals are maintained.
+The block target is much lower (harder) than the transaction target, and fluctuates with the number of nodes on the network and their hash rate, so that 50 second block intervals are maintained.
 
 If block times deviate from 50 second intervals, the difficulty will be adjusted proportionally, by a maximum of 10% up or down.
 
