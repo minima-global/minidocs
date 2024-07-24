@@ -45,7 +45,7 @@ Diagram: The structure of a TxPoW Unit
 | Header Field | Description | Size/Format |
 | :------------| :-----------| :-----------|
 | **Nonce** | The final nonce (number) that was included in the TxPoW header so that, when hashed, the required difficulty was achieved. | MiniNumber |
-| **Chain ID** | The Chain ID - This defines the rules this block was made under, MUST be 0x01 | MiniData |
+| **Chain ID** | The Chain ID - This defines the rules this block was made under, MUST be 0x00 for Mainnet | MiniData |
 | **TimeMilli** | Time this TxPoW was created in milliseconds since the epoch of 1970-01-01T00:00:00Z | MiniNumber |
 | **Block Number** | Block height to be used if this TxPoW unit becomes a block | MiniNumber |
 | **Block Difficulty** | The Difficulty required for this unit to be considered a valid block | MiniData |
