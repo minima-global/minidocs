@@ -212,9 +212,13 @@ Each public key can be used for signing securely 262144 (64^3) times.
 &ensp; **list** : List your existing public keys. The default.<br></br>
 &ensp; **checkkeys** : Checks if your Public and Private keys are correct.<br></br>
 &ensp; **new** : Create a new key pair.<br></br>
+&ensp; **genkey** : Generate a new private/public key pair from a new random seed phrase or from a given phrase. This is independent from the node's wallet.<br></br>
 
 **publickey:** (optional)<br></br>
 Search for a specific public key.
+
+**phrase:** (optional)<br></br>
+The phrase to use to generate the private/public key pair.
 
 **Examples:**
 
@@ -1743,89 +1747,6 @@ Must be posted from an online node within approximately 24 hours of creation to 
 *sendpost file:C:\Users\signedtransaction-1674907380057.txn*
 </details>
 
-<!-- ### Send - custom txn -->
-
-<details>
-<summary><strong>sendfrom (from v1.0.41)</strong><br></br> Send Minima or Tokens from a certain address.</summary>
-
-
-**fromaddress:** <br></br>
-Wallet address to send from.
-
-**address:** <br></br>
-Wallet address to send to.
-
-**amount:** <br></br>
-Amount to send.
-
-**tokenid:** (optional) <br></br>
-tokenid of the token to send. Default is Minima 0x00.
-
-**script:**<br></br>
-The script of the fromaddress.
-
-**privatekey:** <br></br>
-The private key to sign with.
- 
-**keyuses:** <br></br>
- Set the key uses for this privatekey.
-
-**mine:** (optional)<br></br> 
-    true or false - should you mine the transaction immediately.
-
-**Examples:**
-
-*sendfrom fromaddress:0xFEEED.. address:0xABCD.. script:"INSERT SCRIPT" privatekey:0xGHFK.. keyuses:5*
-
-</details>
-
-<!-- 
-
-<details>
-<summary><strong>createfrom</strong><br></br> Create and export an unsigned txn from a certain address.</summary>
-
-
-**fromaddress:** <br></br>
-Wallet address to send from.
-
-**address:** <br></br>
-Wallet address to send to.
-
-**amount:** <br></br>
-Amount to send.
-
-**tokenid:** (optional) <br></br>
-tokenid of the token to send. Default is Minima 0x00.
-
-**script:**<br></br>
-The script of the fromaddress.
-
-**Examples:**
-
-*createfrom fromaddress:0xFEEED.. address:0xABCD.. script:"INSERT SCRIPT"*
-
-</details>
-
-
-
-<details>
-<summary><strong>signfrom</strong><br></br>Sign a createfrom txn.</summary>
-
-
-**data:** <br></br>
-transaction data output from createfrom.
-
-**privatekey:** <br></br>
-The private key to sign with.
- 
-**keyuses:** <br></br>
- Set the key uses for this privatekey.
-
-**Examples:**
-
-*signfrom data:0x000000.. address:0xABCD.. script:"INSERT SCRIPT"*
-
-</details> -->
 
 ## Signatures
 <details>
@@ -2078,9 +1999,9 @@ If it is an mmrcreate script, include the proof.
 
 **Examples:**
 
-*txnscript id:txnmast scripts:\{"RETURN TRUE":""}*
+*txnscript id:txnmast scripts:{"RETURN TRUE":""}*
 
-*txnscript id:txnmast scripts:\{"RETURN TRUE":"0x000.."}*
+*txnscript id:txnmast scripts:{"RETURN TRUE":"0x000.."}*
 </details>
 
 <details>
@@ -2125,4 +2046,113 @@ If it is an mmrcreate script, include the proof.
 *txnstate id:multisig port:1 value:100*
 
 *txnstate id:multisig port:1 value:"string"*
+</details>
+
+## Mega MMR transactions (from v1.0.41)
+
+The following commands are available for nodes using the `-megammr` startup parameter.
+
+These can be used alongside the `keys action:genkey` command which generates a new private/public key pair from a random or given seed phrase.
+
+
+<details>
+<summary><strong>sendfrom </strong><br></br> Send Minima or Tokens from a certain address with a given private key.</summary>
+
+Must be used from an ONLINE node. 
+
+**fromaddress:** <br></br>
+Wallet address to send from.
+
+**address:** <br></br>
+Wallet address to send to.
+
+**amount:** <br></br>
+Amount to send.
+
+**tokenid:** (optional) <br></br>
+tokenid of the token to send. Default is Minima 0x00.
+
+**script:**<br></br>
+The script of the fromaddress.
+
+**privatekey:** <br></br>
+The private key to sign with. From `keys action:genkey`.
+ 
+**keyuses:** <br></br>
+ Set the key uses for this privatekey.
+
+**mine:** (optional)<br></br> 
+    true or false - should you mine the transaction immediately to get the correct txpowid.
+
+**Examples:**
+
+*sendfrom fromaddress:0xFEEED.. address:0xABCD.. script:"INSERT SCRIPT" privatekey:0xGHFK.. keyuses:5*
+
+</details>
+
+
+<details>
+<summary><strong>createfrom</strong><br></br> Create and export an unsigned txn from a certain address.</summary>
+
+Can be used from an ONLINE or OFFLINE node. 
+
+**fromaddress:** <br></br>
+Wallet address to send from.
+
+**address:** <br></br>
+Wallet address to send to.
+
+**amount:** <br></br>
+Amount to send.
+
+**tokenid:** (optional) <br></br>
+tokenid of the token to send. Default is Minima 0x00.
+
+**script:**<br></br>
+The script of the fromaddress. 
+
+**Examples:**
+
+*createfrom fromaddress:0xFEEED.. address:0xABCD.. script:"INSERT SCRIPT"*
+
+</details>
+
+
+<details>
+<summary><strong>signfrom</strong><br></br>Sign a createfrom txn.</summary>
+
+Can be used from an ONLINE or OFFLINE node. 
+
+**data:** <br></br>
+transaction data output from createfrom. 
+
+**privatekey:** <br></br>
+The private key to sign with. 
+ 
+**keyuses:** <br></br>
+ Set the key uses for this privatekey.
+
+**Examples:**
+
+*signfrom data:0x000000.. address:0xABCD.. script:"INSERT SCRIPT" keyuses:5*
+
+</details>
+
+
+<details>
+<summary><strong>postfrom</strong><br></br>Post a signfrom txn to the network</summary>
+
+Must be used from an ONLINE node. 
+
+**data:** <br></br>
+transaction data output from createfrom.
+
+**mine:** (optional) <br></br>
+true or false, to mine the transaction immediately. Useful if requiring the final txpow id of the transaction. Default is false.
+ 
+
+**Examples:**
+
+*postfrom data:0x000000.. mine:true*
+
 </details>

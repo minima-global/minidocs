@@ -49,6 +49,16 @@ shareFile(String zFilePath, String zMimeType)
 
 This will display Androids native share menu with the attached file (filepath must be specified). This is useful for attaching a file to an email for sharing.
 
+Example:
+
+```
+if ((window as any).navigator.userAgent.includes('Minima Browser')) {
+return Android.shareFile(saveLocation, '/');
+}
+```
+
+Where saveLocation is the absolute path of the file on the operating system. This will pop up with the share options for other apps on the phone.
+
 ## Disable default content menu
 
 ```
