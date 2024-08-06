@@ -2048,9 +2048,9 @@ If it is an mmrcreate script, include the proof.
 *txnstate id:multisig port:1 value:"string"*
 </details>
 
-## Mega MMR transactions (from v1.0.41)
+## Mega MMR transactions
 
-The following commands are available for nodes using the `-megammr` startup parameter.
+The following commands are available for nodes using the `-megammr` startup parameter (from v1.0.41).
 
 These can be used alongside the `keys action:genkey` command which generates a new private/public key pair from a random or given seed phrase.
 
