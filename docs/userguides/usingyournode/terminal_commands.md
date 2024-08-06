@@ -2048,11 +2048,15 @@ If it is an mmrcreate script, include the proof.
 *txnstate id:multisig port:1 value:"string"*
 </details>
 
-## Mega MMR transactions
+## External wallet transactions
 
-The following commands are available for nodes using the `-megammr` startup parameter (from v1.0.41).
+These are available from v1.0.41 onwards.
 
-The following commands can be used alongside the `keys action:genkey` OR `keys action:genkey phrase:"MY SEED PHRASE"` command which generate a new private/public key pair and wallet address from a random or given seed phrase that is independent from the node itself. 
+The following commands allow you to construct, sign (online or offline) and post transactions on behalf of specific wallets that are separate from the node's own wallet.
+
+They should be used alongside the `keys action:genkey` OR `keys action:genkey phrase:"MY SEED PHRASE"` command which generate a new private/public key pair and wallet address from a random or given seed phrase that is independent from the node itself. 
+
+Note that `createfrom` requires a [Mega MMR node](/docs/runanode/meganode).
 
 <details>
 <summary><strong>sendfrom </strong><br></br> Send Minima or Tokens from a certain address with a given private key.</summary>
@@ -2092,7 +2096,7 @@ The private key to sign with. From `keys action:genkey`.
 <details>
 <summary><strong>createfrom</strong><br></br> Create and export an unsigned txn from a certain address.</summary>
 
-Can be used from an ONLINE or OFFLINE node. 
+Must be run from a node using the `-megammr` start up parameter. Can be used from an ONLINE or OFFLINE node. 
 
 **fromaddress:** <br></br>
 Wallet address to send from.
