@@ -4,6 +4,8 @@ sidebar_position: 5
 
 # Terminal Commands
 
+Last updated: 6th August 2024
+
 The following commands can be run directly from a Minima Terminal. They can also be viewed by typing `help` into the Minima Terminal.
 
 For detailed help, use `help command:` followed by the command.
@@ -2056,7 +2058,7 @@ The following commands allow you to construct, sign (online or offline) and post
 
 They should be used alongside the `keys action:genkey` OR `keys action:genkey phrase:"MY SEED PHRASE"` command which generate a new private/public key pair and wallet address from a random or given seed phrase that is independent from the node itself. 
 
-Note that `createfrom` requires a [Mega MMR node](/docs/runanode/meganode).
+Note that `sendfrom` and `createfrom` require a [Mega MMR node](/docs/runanode/meganode).
 
 <details>
 <summary><strong>sendfrom </strong><br></br> Send Minima or Tokens from a certain address with a given private key.</summary>
