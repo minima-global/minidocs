@@ -212,7 +212,7 @@ Each public key can be used for signing securely 262144 (64^3) times.
 &ensp; **list** : List your existing public keys. The default.<br></br>
 &ensp; **checkkeys** : Checks if your Public and Private keys are correct.<br></br>
 &ensp; **new** : Create a new key pair.<br></br>
-&ensp; **genkey** : Generate a new private/public key pair from a new random seed phrase or from a given phrase. This is independent from the node's wallet.<br></br>
+&ensp; **genkey** : Generate a new private/public key pair and wallet address from a new random seed phrase or from a given phrase. This is independent from the node's wallet.<br></br>
 
 **publickey:** (optional)<br></br>
 Search for a specific public key.
@@ -2052,8 +2052,7 @@ If it is an mmrcreate script, include the proof.
 
 The following commands are available for nodes using the `-megammr` startup parameter (from v1.0.41).
 
-These can be used alongside the `keys action:genkey` command which generates a new private/public key pair from a random or given seed phrase.
-
+The following commands can be used alongside the `keys action:genkey` OR `keys action:genkey phrase:"MY SEED PHRASE"` command which generate a new private/public key pair and wallet address from a random or given seed phrase that is independent from the node itself. 
 
 <details>
 <summary><strong>sendfrom </strong><br></br> Send Minima or Tokens from a certain address with a given private key.</summary>
@@ -2089,7 +2088,6 @@ The private key to sign with. From `keys action:genkey`.
 *sendfrom fromaddress:0xFEEED.. address:0xABCD.. script:"INSERT SCRIPT" privatekey:0xGHFK.. keyuses:5*
 
 </details>
-
 
 <details>
 <summary><strong>createfrom</strong><br></br> Create and export an unsigned txn from a certain address.</summary>
